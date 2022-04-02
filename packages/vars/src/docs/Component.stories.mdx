@@ -1,0 +1,22 @@
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs';
+import { ComponentHeader, CssVars } from 'storybook/blocks';
+
+import { name, version } from '../../package.json';
+
+<Meta
+  title="Guidelines/CSS-vars"
+  parameters={{ previewTabs: { canvas: { hidden: true } } }}
+/>
+
+<!-- Docs -->
+
+<ComponentHeader
+  name="vars"
+  version={version}
+  package="@hey-ui/vars"
+  stage={3}
+/>
+
+```css
+@import '@hey-ui/vars';
+```
