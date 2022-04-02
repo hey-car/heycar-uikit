@@ -1,0 +1,165 @@
+{
+  "name": "@hey-ui/core",
+  "version": "0.0.1",
+  "description": "The React UI library from HeyCar",
+  "author": "HeyCar Team",
+  "main": "index.js",
+  "scripts": {
+    "build": "./bin/build.sh",
+    "clean": "rimraf packages/*/{tsconfig.tsbuildinfo,dist} && rimraf {dist,build}",
+    "start": "start-storybook -p 9009 -c .storybook",
+    "build-storybook": "build-storybook -o build -s ./.storybook/public --quiet",
+    "lint:js": "eslint ./packages --ext .ts,.tsx,.js,.jsx",
+    "test": "jest --watchAll=false"
+  },
+  "browserslist": {
+    "production": [
+      "last 2 versions",
+      "ie >= 11",
+      "Android >= 5",
+      "iOS >= 9"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hey-car/hey-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hey-car/hey-ui/issues"
+  },
+  "homepage": "https://github.com/hey-car/hey-ui#readme",
+  "keywords": [
+    "ui",
+    "kit",
+    "react",
+    "components",
+    "heycar"
+  ],
+  "license": "UNLICENSED",
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "classnames": "^2.3.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.16.7",
+    "@babel/plugin-transform-modules-commonjs": "^7.17.7",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/preset-typescript": "^7.16.7",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-multi-entry": "^4.1.0",
+    "@semantic-release/changelog": "5.0.1",
+    "@semantic-release/commit-analyzer": "8.0.1",
+    "@semantic-release/git": "9.0.0",
+    "@semantic-release/github": "7.0.0",
+    "@semantic-release/npm": "7.0.5",
+    "@semantic-release/release-notes-generator": "9.0.1",
+    "@storybook/addon-controls": "^6.4.19",
+    "@storybook/addon-docs": "^6.4.19",
+    "@storybook/addon-knobs": "^6.4.0",
+    "@storybook/addons": "^6.4.19",
+    "@storybook/builder-webpack5": "^6.5.0-alpha.49",
+    "@storybook/manager-webpack5": "^6.5.0-alpha.49",
+    "@storybook/preset-create-react-app": "^4.1.0",
+    "@storybook/preset-typescript": "^3.0.0",
+    "@storybook/react": "^6.4.20",
+    "@pmmmwh/react-refresh-webpack-plugin": "github:pmmmwh/react-refresh-webpack-plugin",
+    "@testing-library/dom": "^8.11.4",
+    "@testing-library/jest-dom": "^5.16.3",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/react-hooks": "^7.0.2",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/classnames": "^2.3.1",
+    "@types/jest": "^27.4.1",
+    "@types/jest-image-snapshot": "^4.3.1",
+    "@types/react": "^17.0.40",
+    "@typescript-eslint/eslint-plugin": "^5.15.0",
+    "@typescript-eslint/parser": "5.15.0",
+    "babel-jest": "^27.5.1",
+    "copyfiles": "^2.4.1",
+    "css-loader": "^6.7.1",
+    "css-minimizer-webpack-plugin": "^3.4.1",
+    "date-fns": "^2.28.0",
+    "eslint": "8.11.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-airbnb-typescript": "16.1.2",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "2.5.0",
+    "eslint-plugin-cypress": "2.12.1",
+    "eslint-plugin-dirnames": "1.0.3",
+    "eslint-plugin-import": "2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.1.0",
+    "eslint-plugin-simple-import-sort": "5.0.3",
+    "eslint-plugin-unicorn": "37.0.1",
+    "fork-ts-checker-webpack-plugin": "^7.2.1",
+    "glob": "^7.2.0",
+    "globby": "^11.0.1",
+    "husky": "4.2.5",
+    "jest": "^27.5.1",
+    "jest-image-snapshot": "^4.5.1",
+    "lerna": "^4.0.0",
+    "lint-staged": "11.2.3",
+    "mini-css-extract-plugin": "^2.6.0",
+    "postcss-cli": "^9.1.0",
+    "postcss-color-mod-function": "^3.0.3",
+    "postcss-custom-media": "^8.0.0",
+    "postcss-custom-properties": "^12.1.5",
+    "postcss-each": "^1.1.0",
+    "postcss-for": "^2.1.1",
+    "postcss-import": "^14.0.2",
+    "postcss-mixins": "^9.0.2",
+    "postcss-preset-env": "^7.4.3",
+    "prettier": "^2.4.1",
+    "prettier-eslint": "^13.0.0",
+    "prettier-eslint-cli": "^5.0.1",
+    "raw-loader": "^4.0.2",
+    "react": "^17.0.2",
+    "react-docgen-typescript-loader": "^3.7.2",
+    "react-dom": "^17.0.2",
+    "react-github-btn": "^1.2.1",
+    "rollup": "^2.70.1",
+    "rollup-plugin-copy": "^3.4.0",
+    "rollup-plugin-multi-input": "^1.3.1",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-ts": "^2.0.5",
+    "semantic-release": "17.1.1",
+    "shelljs": "^0.8.5",
+    "storybook-addon-live-examples": "^0.0.25",
+    "string-hash": "^1.1.3",
+    "stylelint": "^14.6.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^25.0.0",
+    "stylelint-prettier": "^2.0.0",
+    "ts-jest": "^27.1.4",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.3.0",
+    "typescript": "4.4.4",
+    "webpack": "^5.70.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "lint-staged": {
+    "{packages,bin}/**/*.{js,jsx,ts,tsx}": [
+      "prettier --write",
+      "eslint --fix --quiet"
+    ],
+    "*.{js,json}": [
+      "prettier --write",
+      "eslint --fix --quiet"
+    ],
+    "*.css": [
+      "prettier --write",
+      "stylelint"
+    ]
+  }
+}
