@@ -1,7 +1,5 @@
 :root {
   --font-family-system: Objektiv, sans-serif, 'Helvetica Neue', Helvetica, Arial;
-  --font-family-styrene: Objektiv, sans-serif, 'Helvetica Neue', Helvetica,
-    Arial;
 }
 
 /*
@@ -12,7 +10,7 @@
   line-height: 68px;
   font-weight: bold;
   letter-spacing: -2.5px;
-  font-family: var(--font-family-styrene);
+  font-family: var(--font-family-system);
 }
 
 @define-mixin heading01_large__bold {
@@ -20,7 +18,7 @@
   line-height: 56px;
   font-weight: bold;
   letter-spacing: -2%;
-  font-family: var(--font-family-styrene);
+  font-family: var(--font-family-system);
 }
 
 @define-mixin heading01_large__medium {
@@ -28,7 +26,7 @@
   line-height: 56px;
   font-weight: 500;
   letter-spacing: -2%;
-  font-family: var(--font-family-styrene);
+  font-family: var(--font-family-system);
 }
 
 /*
@@ -38,19 +36,19 @@
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 2%;
-  font-family: var(--font-family-styrene);
+  font-family: var(--font-family-system);
 }
 
 @define-mixin button_medium__bold {
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 2%;
-  font-family: var(--font-family-styrene);
+  font-family: var(--font-family-system);
 }
 
 @define-mixin button_small__medium {
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 2%;
-  font-family: var(--font-family-styrene);
+  font-family: var(--font-family-system);
 }
