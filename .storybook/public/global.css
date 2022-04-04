@@ -3,13 +3,6 @@
  * Don't mess with Voodoo
  */
 
-/* stylelint-disable */
-@font-face {
-  font-family: 'Objektiv';
-  font-weight: 400;
-  font-style: normal;
-}
-
 html {
   height: 100%;
 }

@@ -8,7 +8,7 @@ export default create({
   colorSecondary: '#EF3124',
   appContentBg: '#fff',
   appBorderColor: 'rgba(11, 31, 53, 0.1)',
-  fontBase:'Helvetica, sans-serif',
+  fontBase:'Objektiv',
   fontCode: 'Monaco, Menlo, monospace',
   textColor: '#0B1F35',
   barTextColor: '#6D7986',
