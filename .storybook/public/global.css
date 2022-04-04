@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  font-family: var(--font-family);
+  font-family: var(--font-family-system);
   height: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -40,5 +40,10 @@ div[id*='story--'] {
 }
 
 .sidebar-item svg {
-  color: #00cea5;
+  /* Variables not accessible in sidebar for some reason */
+  color: #00846a;
+}
+
+a {
+  color: var(--color-min-700);
 }
