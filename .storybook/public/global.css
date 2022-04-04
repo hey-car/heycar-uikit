@@ -1,0 +1,47 @@
+/*
+ * Dirty magic here
+ * Don't mess with Voodoo
+ */
+
+/* stylelint-disable */
+@font-face {
+  font-family: 'Objektiv';
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-family);
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body.sb-show-main {
+  margin: 0;
+  padding: var(--gap-xs);
+  overflow-x: hidden;
+}
+
+#docs-root > .sbdocs-wrapper {
+  padding: var(--gap-5xl) var(--gap-m);
+}
+
+.tool {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.label {
+  display: inline-block;
+  margin-right: var(--gap-xs);
+  font-size: 13px;
+}
+
+div[id*='story--'] {
+  display: none;
+}

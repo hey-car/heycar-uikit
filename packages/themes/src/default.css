@@ -1,0 +1,15 @@
+@import '../../vars/src/index.css';
+
+:root {
+  /*
+    Invert colors
+  */
+  --color-light-text-primary-inverted: #fff;
+
+  /*
+    Sizes
+  */
+  --size-s-height: var(--gap-3xl);
+  --size-m-height: var(--gap-5xl);
+  --size-l-height: var(--gap-7xl);
+}

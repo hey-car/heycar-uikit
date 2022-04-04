@@ -1,0 +1,56 @@
+import { Meta, Story, Props } from '@storybook/addon-docs';
+import { ComponentHeader, Tabs, CssVars } from 'storybook/blocks';
+
+import Button from '../';
+import { version } from '../../package.json';
+import Description from './Description.mdx';
+import Changelog from '../../CHANGELOG.md';
+import styles from '!!raw-loader!../styles/default.module.css';
+
+export const VIEWS = ['primary', 'secondary'];
+export const SIZES = ['small', 'middle', 'large'];
+
+<Meta
+  title="Components/Button"
+  component={Button}
+  argTypes={{
+    children: {
+      control: 'text',
+      type: { name: 'string', required: false },
+    },
+  }}
+/>
+
+export const ButtonTemplate = args => <Button {...args} />;
+
+<!-- Canvas -->
+
+<Story
+  name="Button"
+  args={{ children: 'button click', variant: 'secondary', size: 'middle' }}
+>
+  {ButtonTemplate.bind({})}
+</Story>
+
+<!-- Docs -->
+
+<ComponentHeader
+  name="Button"
+  version={version}
+  stage={3}
+  design="https://www.figma.com/"
+/>
+
+```tsx
+import { Button } from '@hey-ui/button';
+```
+
+<Props of={Button} />
+
+<CssVars css={styles} />
+
+<hr />
+
+<Description />
+
+<Changelog />

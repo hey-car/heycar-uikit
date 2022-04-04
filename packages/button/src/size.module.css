@@ -1,0 +1,25 @@
+@import '../../themes/src/default.css';
+
+:root {
+  --button-small-height: var(--size-s-height);
+  --button-middle-height: var(--size-m-height);
+  --button-large-height: var(--size-l-height);
+}
+
+.small {
+  padding: var(--gap-xl);
+  height: var(--button-small-height);
+  font-size: 16px;
+}
+
+.middle {
+  padding: var(--gap-xl);
+  height: var(--button-middle-height);
+  font-size: 16px;
+}
+
+.large {
+  padding: var(--gap-xl);
+  height: var(--button-large-height);
+  font-size: 18px;
+}

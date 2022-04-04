@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "target": "ES5",
+    "module": "commonjs",
+    "jsx": "react",
+    "rootDir": ".",
+    "outDir": "dist",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "typeRoots": ["./typings", "./node_modules/@types"],
+    "composite": true,
+    "declaration": true,
+    "baseUrl": ".",
+    "paths": {
+      "@hey-ui/*": ["packages/*/src"]
+    }
+  },
+  "exclude": ["node_modules", "dist", "**/*.stories*"],
+  "include": [
+    "./typings",
+    "**/*.js",
+    "./.eslintrc.js",
+    "**/*.ts",
+    "**/*.test.tsx",
+    "**/*.tsx"
+  ]
+}
