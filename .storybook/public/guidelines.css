@@ -43,3 +43,7 @@ div.lib {
 
   font-family: inherit;
 }
+
+.sidebar-item svg {
+  color: #00cea5;
+}

@@ -38,3 +38,7 @@ body.sb-show-main {
 div[id*='story--'] {
   display: none;
 }
+
+.sidebar-item svg {
+  color: #00cea5;
+}
