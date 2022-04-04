@@ -161,5 +161,9 @@
       "prettier --write",
       "stylelint"
     ]
+  },
+  "engines": {
+    "npm": ">=8.0.0",
+    "node": ">=17.0.0"
   }
 }
