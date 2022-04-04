@@ -1,0 +1,21 @@
+:root {
+  --color-mica-blue-50: #e8edf6;
+  --color-mica-blue-100: #d0dbed;
+  --color-mica-blue-200: #a2b7da;
+  --color-mica-blue-300: #7394c8;
+  --color-mica-blue-400: #164ca3;
+  --color-mica-blue-500: #052962;
+  --color-mica-blue-600: #04214e;
+  --color-mica-blue-800: #021027;
+  --color-mica-blue-900: #010814;
+  --color-min-50: #e6faf6;
+  --color-min-100: #ccf5ed;
+  --color-min-200: #99eddb;
+  --color-min-300: #66e2c9;
+  --color-min-400: #33d8b7;
+  --color-min-500: #00cea5;
+  --color-min-600: #00a584;
+  --color-min-700: #00846a;
+  --color-min-800: #0f6554;
+  --color-min-900: #054236;
+}

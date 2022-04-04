@@ -1,0 +1,54 @@
+:root {
+  --font-family-system: Objektiv, sans-serif, 'Helvetica Neue', Helvetica, Arial;
+}
+
+/*
+  Heading
+*/
+@define-mixin display_large__bold {
+  font-size: 60px;
+  line-height: 68px;
+  font-weight: bold;
+  letter-spacing: -2.5px;
+  font-family: var(--font-family-system);
+}
+
+@define-mixin heading01_large__bold {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: bold;
+  letter-spacing: -2%;
+  font-family: var(--font-family-system);
+}
+
+@define-mixin heading01_large__medium {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 500;
+  letter-spacing: -2%;
+  font-family: var(--font-family-system);
+}
+
+/*
+  Button
+*/
+@define-mixin button_large__bold {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2%;
+  font-family: var(--font-family-system);
+}
+
+@define-mixin button_medium__bold {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2%;
+  font-family: var(--font-family-system);
+}
+
+@define-mixin button_small__medium {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 2%;
+  font-family: var(--font-family-system);
+}

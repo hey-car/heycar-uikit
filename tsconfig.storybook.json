@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "moduleResolution": "node",
+    "allowJs": true,
+    "noEmit": true,
+    "strict": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "outDir": "build",
+    "module": "commonjs",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "jsx": "react",
+    "rootDirs": ["packages"],
+    "baseUrl": "./",
+    "paths": {
+      "@hey-ui/*": ["packages/*/src"]
+    }
+  },
+  "exclude": ["node_modules", "build", "coverage"],
+  "include": [
+    ".storybook/**/*.js",
+    ".storybook/**/*.tsx",
+    ".storybook/**/*.ts",
+    "./.eslintrc.js",
+    "*.ts",
+    "*.tsx"
+  ]
+}
