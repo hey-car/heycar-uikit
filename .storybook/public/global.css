@@ -12,12 +12,14 @@ body {
   height: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #ecf7ff !important;
 }
 
 body.sb-show-main {
   margin: 0;
   padding: var(--gap-xs);
   overflow-x: hidden;
+  background-color: white !important;
 }
 
 #docs-root > .sbdocs-wrapper {
