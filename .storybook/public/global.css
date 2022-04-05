@@ -49,3 +49,7 @@ div[id*='story--'] {
 a {
   color: var(--color-min-700);
 }
+
+button {
+  font-family: var(--font-family-system);
+}
