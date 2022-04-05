@@ -1,15 +1,14 @@
 import { addons } from '@storybook/addons';
 import { addParameters, configure } from '@storybook/react';
-import theme from 'prism-react-renderer/themes/oceanicNext';
 import { LIVE_EXAMPLES_ADDON_ID } from 'storybook-addon-live-examples';
 
 import scope from './scope';
 import alfaTheme from './theme';
-
+import { editorTheme } from './editor-theme';
 
 addons.setConfig({
   [LIVE_EXAMPLES_ADDON_ID]: {
-    editorTheme: theme,
+    editorTheme,
     sandboxPath: '/docs/sandbox',
     copyText: ['Copy', 'Copied'],
     expandText: ['Show code', 'Hide code'],
