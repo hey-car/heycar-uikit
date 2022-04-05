@@ -37,11 +37,6 @@ addParameters({
   docs: {
     theme: alfaTheme,
   },
-  // previewTabs: {
-  //   'storybook/docs/panel': {
-  //     hidden: true,
-  //   },
-  // },
   options: {
     storySort: {
       method: 'alphabetical',
