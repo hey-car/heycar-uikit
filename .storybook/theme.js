@@ -4,7 +4,7 @@ import { version } from '../package.json';
 
 export default create({
   base: 'light',
-  colorPrimary: '#0B1F35',
+  colorPrimary: 'var(--color-mica-blue-500)',
   colorSecondary: '#052962',
   appContentBg: '#fff',
   appBorderColor: 'rgba(11, 31, 53, 0.1)',
