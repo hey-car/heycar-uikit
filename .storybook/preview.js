@@ -42,7 +42,7 @@ addParameters({
       method: 'alphabetical',
       order: [
         'Guidelines',
-        ['How get started', 'vars', 'Changelog', 'FAQ'],
+        ['How to get started', 'vars', 'Changelog', 'FAQ'],
         'Components',
       ],
     },
