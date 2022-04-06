@@ -4,7 +4,7 @@ import { LIVE_EXAMPLES_ADDON_ID } from 'storybook-addon-live-examples';
 
 import scope from './scope';
 import alfaTheme from './theme';
-import { editorTheme } from './editor-theme';
+import { editorTheme } from './editorTheme';
 
 addons.setConfig({
   [LIVE_EXAMPLES_ADDON_ID]: {
