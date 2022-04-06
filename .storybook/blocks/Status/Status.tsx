@@ -13,7 +13,7 @@ type StatusProps = {
 export const Status: React.FC<StatusProps> = ({ stage }) => (
   <div>
     <a
-      href="./?path=/docs/guidelines-status-page"
+      href="./?path=/docs/guidelines-component-statuses--page"
     >
       {STATUS[stage]}
     </a>
