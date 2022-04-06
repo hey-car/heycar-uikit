@@ -1,4 +1,4 @@
-### Get stared
+### Get started
 
 ```bash
 $ npm i

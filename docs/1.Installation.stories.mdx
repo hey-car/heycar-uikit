@@ -1,0 +1,43 @@
+import { Meta } from '@storybook/addon-docs';
+import GitHubButton from 'react-github-btn';
+import Readme from '../README.md';
+import { version } from '../package.json';
+
+<Meta
+  title="Get started/Installation"
+  parameters={{
+    previewTabs: {
+      canvas: { hidden: true },
+      'storybook/docs/panel': { hidden: true },
+    },
+  }}
+/>
+
+<div>
+  <div className="github">
+    <GitHubButton
+      href="https://github.com/hey-car/hey-ui.git"
+      data-size="large"
+      data-show-count="true"
+      aria-label="Star hey-car/hey-ui on GitHub"
+    >
+      GitHub
+    </GitHubButton>
+  </div>
+  <h1>Installation 🛠</h1>
+  <section>
+    <h3>Adding the library to your application</h3>
+    <p>
+      In order to start using <strong>hey-ui</strong>, please add this project
+      as a dependency of your project with:
+    </p>
+    <p>
+      //TODO: commands to install library and example including component in a
+      file
+    </p>
+  </section>
+  <section>
+    <h3>Troubleshooting</h3>
+    <p>//TODO: explain known issues and frequent questions</p>
+  </section>
+</div>

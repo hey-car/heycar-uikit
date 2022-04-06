@@ -40,8 +40,9 @@ addParameters({
     storySort: {
       method: 'alphabetical',
       order: [
-        'Guidelines',
-        ['How get started', 'vars', 'Changelog', 'FAQ'],
+        'Introduction',
+        'Get started',
+        ['Installation', 'Contributing'],
         'Components',
       ],
     },
