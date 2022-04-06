@@ -15,16 +15,18 @@ html {
 }
 
 body {
-  font-family: var(--font-family);
+  font-family: var(--font-family-system);
   height: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #ecf7ff !important;
 }
 
 body.sb-show-main {
   margin: 0;
   padding: var(--gap-xs);
   overflow-x: hidden;
+  background-color: white !important;
 }
 
 #docs-root > .sbdocs-wrapper {
@@ -44,4 +46,17 @@ body.sb-show-main {
 
 div[id*='story--'] {
   display: none;
+}
+
+.sidebar-item svg {
+  /* Variables not accessible in sidebar for some reason */
+  color: #00846a;
+}
+
+a {
+  color: var(--color-min-700);
+}
+
+button {
+  font-family: var(--font-family-system);
 }
