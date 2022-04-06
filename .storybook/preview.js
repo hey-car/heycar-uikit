@@ -1,26 +1,25 @@
 import { addons } from '@storybook/addons';
 import { addParameters, configure } from '@storybook/react';
-import theme from 'prism-react-renderer/themes/oceanicNext';
 import { LIVE_EXAMPLES_ADDON_ID } from 'storybook-addon-live-examples';
 
 import scope from './scope';
 import alfaTheme from './theme';
-
+import { editorTheme } from './editorTheme';
 
 addons.setConfig({
   [LIVE_EXAMPLES_ADDON_ID]: {
-    editorTheme: theme,
+    editorTheme,
     sandboxPath: '/docs/sandbox',
     copyText: ['Copy', 'Copied'],
     expandText: ['Show code', 'Hide code'],
     shareText: ['Share', 'Share'],
-    borderColor: 'var(--color-light-border-secondary)',
-    borderRadius: 'var(--border-radius-s)',
-    actionBg: 'var(--color-light-bg-primary)',
-    actionColor: 'var(--color-light-text-primary)',
+    borderColor: 'none',
+    borderRadius: '5px',
+    actionBg: 'var(--color-mica-blue-400)',
+    actionColor: 'white',
     actionAccent: 'var(--color-light-bg-accent)',
-    errorsBg: 'var(--color-light-bg-negative-muted)',
-    errorsColor: 'var(--color-light-text-accent)',
+    errorsBg: 'var(--color-red-400)',
+    errorsColor: 'var(--color-red-700)',
     fontBase: 'var(--font-family-system)',
     fontCode: 'Monaco, Menlo, monospace',
     fontSizeBase: 16,
