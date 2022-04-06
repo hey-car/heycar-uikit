@@ -1,5 +1,7 @@
 import React from 'react';
 
+import styles from './Status.module.css';
+
 const STATUS = {
   0: 'Proposal',
   1: 'In Development',
@@ -13,12 +15,18 @@ type StatusProps = {
 
 type Index = keyof typeof STATUS;
 
-export const Status: React.FC<StatusProps> = ({ stage }) => (
+export const Status: React.FC<StatusProps> = ({ stage }) => {
+  const status = STATUS[stage as Index];
+  // Convert string to snake case
+  const statusClassName = status.toLowerCase().replace(' ','_');
+  return (
     <div>
       <a
         href="./?path=/docs/guidelines-component-statuses--page"
+        className={`${styles.status} ${styles[statusClassName]}`}
       >
-        {STATUS[stage as Index]}
+        {status}
       </a>
     </div>
-);
+  );
+};
