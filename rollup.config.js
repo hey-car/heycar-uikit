@@ -1,21 +1,19 @@
 import path from 'path';
 
 import json from '@rollup/plugin-json';
-// import multiInput from '@rollup/plugin-multi-entry';
 import copy from 'rollup-plugin-copy';
 import multiInput from 'rollup-plugin-multi-input';
-import postcss from 'rollup-plugin-postcss';
 import typescript from 'rollup-plugin-ts';
 import { ScriptTarget } from 'typescript';
 
 import addCssImports from './tools/rollup/addCssImports';
+import bundleCss from './tools/rollup/bundleCss';
 import {
   coreComponentsResolver,
   coreComponentsRootPackageResolver,
 } from './tools/rollup/coreComponentsResolver';
 import coreComponentsTypingsResolver from './tools/rollup/coreComponentsTypingsResolver';
 import createPackageJson from './tools/rollup/createPackageJson';
-import generateClassNameHash from './tools/rollup/generateClassNameHash';
 import ignoreCss from './tools/rollup/ignoreCss';
 import processCss from './tools/rollup/processCss';
 
@@ -23,16 +21,20 @@ const currentPackageDir = process.cwd();
 
 const currentPkgPath = path.join(currentPackageDir, 'package.json');
 const rootPkgPath = path.resolve(currentPackageDir, '../../package.json');
-
+const tsBuildInfoFile = 'tsconfig.tsbuildinfo';
 const rootPkg = require(rootPkgPath);
 const pkg = require(currentPkgPath);
-
 const currentComponentName = pkg.name.replace('@hey-ui/', '');
+const baseDist = 'dist';
+const modernDist = `${baseDist}/modern`;
+const cssmDist = `${baseDist}/cssm`;
+const esmDist = `${baseDist}/esm`;
+const rootDir = `../../${baseDist}/${currentComponentName}`;
 
 const baseConfig = {
   input: [
     'src/**/*.{ts,tsx}',
-    '!src/**/*.{test,stories}.{ts,tsx}',
+    '!src/**/*.{test,types,stories}.{ts,tsx}',
     '!src/**/*.mdx',
     '!src/**/*.d.ts',
   ],
@@ -41,9 +43,7 @@ const baseConfig = {
     ...Object.keys(pkg.peerDependencies || {}),
   ],
 };
-
 const multiInputPlugin = multiInput();
-
 const copyPlugin = dest =>
   copy({
     flatten: false,
@@ -55,34 +55,14 @@ const copyPlugin = dest =>
     ],
   });
 
-const postcssPlugin = postcss({
-  modules: {
-    generateScopedName: function (name, fileName) {
-      const relativeFileName = path.relative(currentPackageDir, fileName);
-
-      const hash = generateClassNameHash(
-        pkg.name,
-        rootPkg.version,
-        relativeFileName,
-      );
-
-      return `${currentComponentName}__${name}_${hash}`;
-    },
-  },
-  extract: true,
-  separateCssFiles: true,
-  packageName: pkg.name,
-  packageVersion: pkg.version,
-});
-
 /**
- * ES5 build with commonjs modules.
+ * `ES5` build with CommonJS modules
  */
 const es5 = {
   ...baseConfig,
   output: [
     {
-      dir: 'dist',
+      dir: baseDist,
       format: 'cjs',
       plugins: [addCssImports({ currentPackageDir })],
     },
@@ -92,124 +72,122 @@ const es5 = {
     typescript({
       tsconfig: resolvedConfig => ({
         ...resolvedConfig,
-        tsBuildInfoFile: 'tsconfig.tsbuildinfo',
+        tsBuildInfoFile,
       }),
     }),
     json(),
-    postcssPlugin,
-    copyPlugin('dist'),
+    ...bundleCss(pkg.name, rootPkg.version, currentComponentName, baseDist),
+    copyPlugin(baseDist),
   ],
 };
 
 /**
- * Building ES2020 with esm modules.
+ * `ES2020` build with esm modules.
  */
 const modern = {
   ...baseConfig,
   output: [
     {
-      dir: 'dist/modern',
+      dir: modernDist,
       format: 'esm',
       plugins: [
         addCssImports({ currentPackageDir }),
-        coreComponentsResolver({ importFrom: 'dist/modern' }),
+        coreComponentsResolver({ importFrom: modernDist }),
       ],
     },
   ],
   plugins: [
     multiInputPlugin,
     typescript({
-      outDir: 'dist/modern',
+      outDir: modernDist,
       tsconfig: resolvedConfig => ({
         ...resolvedConfig,
         target: ScriptTarget.ES2020,
-        tsBuildInfoFile: 'tsconfig.tsbuildinfo',
+        tsBuildInfoFile,
       }),
     }),
     json(),
-    postcssPlugin,
-    copyPlugin('dist/modern'),
+    ...bundleCss(pkg.name, rootPkg.version, currentComponentName, modernDist),
+    copyPlugin(modernDist),
   ],
 };
 
 /**
- * ES5 build with commonjs modules.
- * CSS modules are supplied as is, not compiled.
+ * `ES5` build with commonjs modules.
+ * `CSS` modules are supplied as is, not compiled.
  */
 const cssm = {
   ...baseConfig,
   output: [
     {
-      dir: 'dist/cssm',
+      dir: cssmDist,
       format: 'cjs',
-      plugins: [coreComponentsResolver({ importFrom: 'dist/cssm' })],
+      plugins: [coreComponentsResolver({ importFrom: cssmDist })],
     },
   ],
   plugins: [
     multiInputPlugin,
     ignoreCss(),
     typescript({
-      outDir: 'dist/cssm',
+      outDir: cssmDist,
       tsconfig: resolvedConfig => ({
         ...resolvedConfig,
-        tsBuildInfoFile: 'tsconfig.tsbuildinfo',
+        tsBuildInfoFile,
       }),
     }),
     json(),
     processCss(),
-    copyPlugin('dist/cssm'),
+    copyPlugin(cssmDist),
   ],
 };
 
 /**
- * Building ES5 with esm modules.
+ * `ES5` build with esm modules.
  */
 const esm = {
   ...baseConfig,
   output: [
     {
-      dir: 'dist/esm',
+      dir: esmDist,
       format: 'esm',
       plugins: [
         addCssImports({ currentPackageDir }),
-        coreComponentsResolver({ importFrom: 'dist/esm' }),
+        coreComponentsResolver({ importFrom: esmDist }),
       ],
     },
   ],
   plugins: [
     multiInputPlugin,
     typescript({
-      outDir: 'dist/esm',
+      outDir: esmDist,
       tsconfig: resolvedConfig => ({
         ...resolvedConfig,
-        tsBuildInfoFile: 'tsconfig.tsbuildinfo',
+        tsBuildInfoFile,
       }),
     }),
     json(),
-    postcssPlugin,
-    copyPlugin('dist/esm'),
+    ...bundleCss(pkg.name, rootPkg.version, currentComponentName, esmDist),
+    copyPlugin(esmDist),
   ],
 };
-
-const rootDir = `../../dist/${currentComponentName}`;
 
 /**
  * Building a root package
  */
 const root = {
-  input: ['dist/**/*.js'],
+  input: [`${baseDist}/**/*.js`],
   external: baseConfig.external,
   plugins: [
     multiInput({
-      relative: 'dist',
+      relative: baseDist,
     }),
     copy({
       flatten: false,
       targets: [
-        { src: ['dist/**/*', '!**/*.js'], dest: rootDir },
+        { src: [`${baseDist}/**/*`, '!**/*.js'], dest: rootDir },
         {
           src: 'package.json',
-          dest: `../../dist/${currentComponentName}`,
+          dest: rootDir,
           transform: () => createPackageJson('./esm/index.js'),
         },
       ],
@@ -226,22 +204,10 @@ const root = {
 
 const configs = [
   es5,
-  // modern,
-  // esm,
-  // currentComponentName !== 'themes' && cssm,
-  // root,
+  modern,
+  esm,
+  currentComponentName !== 'themes' && cssm,
+  root,
 ].filter(Boolean);
 
 export default configs;
-
-// export default [
-//   {
-//     ...baseConfig,
-//     input: '*.ts',
-//     plugins: [typescript(), postcssPlugin],
-//     output: {
-//       file: 'dist/bundle.js',
-//       format: 'cjs',
-//     },
-//   },
-// ];
