@@ -1,17 +1,15 @@
 .table {
   width: 100%;
   border-collapse: collapse;
-}
-
-.table th, .table td {
-  text-align: left;
-  padding: 8px;
-}
-
-.table, .table th, .table td {
   border: 1px solid var(--color-mica-blue-200);
-}
 
-.table thead {
-  background-color: var(--color-mica-blue-50);
+  & th, & td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid var(--color-mica-blue-200);
+  }
+
+  & thead {
+      background-color: var(--color-mica-blue-50);
+  }
 }
