@@ -133,7 +133,6 @@
     "rollup-plugin-ts": "^2.0.5",
     "semantic-release": "17.1.1",
     "shelljs": "^0.8.5",
-    "storybook-addon-docs-tabs": "^1.0.2",
     "storybook-addon-live-examples": "^0.0.25",
     "string-hash": "^1.1.3",
     "stylelint": "^14.6.0",
