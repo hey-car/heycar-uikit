@@ -6,17 +6,19 @@ import { version } from '../package.json';
 
 <Meta
   title="Guidelines/Component Statuses"
-  parameters={{ previewTabs: { canvas: { hidden: true } } }}
+  parameters={{ previewTabs: { canvas: { hidden: true }, 'storybook/docs/panel': { hidden: true } } }}
 />
 
 <ComponentHeader
   name="Component Statuses"
 />
 
+<p>The component status represents which stage the component is at. The component status should be visible in the story under the component title.</p>
+
 <Table
   header={['Stage', 'Status', 'Criteria']}
   rows={[
-    [0, <Status stage={0} />, 'Issue with a description of the requirements for the new component'],
+    [0, <Status stage={0} />, 'Component is still under discussion, should have a description of the requirements for the new component'],
     [1, <Status stage={1} />, 'Component not published yet or still under implementation'],
     [2, <Status stage={2} />, 'Implemented published component, not tested in products'],
     [3, <Status stage={3} />, 'Tested in at least one of the products, clear documentation with examples of use, ready for implementation'],
