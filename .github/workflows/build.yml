@@ -33,6 +33,9 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Jest coverage report
+        uses: ArtiomTr/jest-coverage-report-action@v2.0.5
+
   build:
     name: build packages
 
