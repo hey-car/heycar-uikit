@@ -19,6 +19,16 @@ export const SIZES = ['small', 'middle', 'large'];
       type: { name: 'string', required: false },
     },
   }}
+  parameters={{
+    tabs: [
+        {label: 'Description', component: <Description />},
+        {label: 'Props', component: <Props of={Button} />},
+        {label: 'CSS tokens', component: <CssVars css={styles} />},
+        {label: 'Changelogs', component: <Changelog />}],
+    version,
+    stage: 3,
+    design: "https://www.figma.com/"
+  }}
 />
 
 export const ButtonTemplate = args => <Button {...args} />;
@@ -34,23 +44,6 @@ export const ButtonTemplate = args => <Button {...args} />;
 
 <!-- Docs -->
 
-<ComponentHeader
-  name="Button"
-  version={version}
-  stage={3}
-  design="https://www.figma.com/"
-/>
-
 ```tsx
 import { Button } from '@hey-ui/button';
 ```
-
-<Props of={Button} />
-
-<CssVars css={styles} />
-
-<hr />
-
-<Description />
-
-<Changelog />

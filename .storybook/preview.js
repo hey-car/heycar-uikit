@@ -1,10 +1,12 @@
 import { addons } from '@storybook/addons';
 import { addParameters, configure } from '@storybook/react';
 import { LIVE_EXAMPLES_ADDON_ID } from 'storybook-addon-live-examples';
+import { DocsContainer } from '@storybook/addon-docs';
 
 import scope from './scope';
 import alfaTheme from './theme';
 import { editorTheme } from './editorTheme';
+import { ComponentHeader, TabContainer } from './blocks';
 
 addons.setConfig({
   [LIVE_EXAMPLES_ADDON_ID]: {
@@ -35,6 +37,20 @@ addParameters({
   viewMode: 'docs',
   docs: {
     theme: alfaTheme,
+    container: ({ children, context }) => {
+      console.log({context, children})
+      return (
+        <DocsContainer context={context}>
+          <ComponentHeader
+            name={context.name}
+            version={context.parameters.version}
+            stage={context.parameters.stage}
+            design={context.parameters.design}
+          />
+          {children}
+          <TabContainer tabs={context.parameters.tabs} />
+        </DocsContainer>
+      );},
   },
   options: {
     storySort: {
