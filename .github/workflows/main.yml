@@ -1,0 +1,45 @@
+name: Demo build
+
+on: [push]
+
+jobs:
+  build:
+    name: Demo build
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: npm i
+
+      - name: Run lint
+        run: npm run lint
+
+      - name: Run build
+        id: demo_build
+        run: node ./bin/demoBuild.js
+
+      - name: Publish storybook
+        run: |
+          cd ./storybook-demo
+          git push -q -f "https://hey-ui-bot:${{ secrets.BOT_AUTH_TOKEN }}@github.com/hey-car/hey-ui.git" master:gh-pages
+
+      # Looking for open PR
+      - name: Find open PR
+        uses: jwalton/gh-find-current-pr@v1
+        id: find_pr
+        with:
+          github-token: ${{ secrets.BOT_AUTH_TOKEN }}
+
+      # If found an open PR, then add a comment with a link to the demo.
+      # storybook_url is populated in demo-build.js
+      - name: Create comment
+        if: success() && steps.find_pr.outputs.number
+        uses: peter-evans/create-or-update-comment@v1
+        with:
+          token: ${{ secrets.BOT_AUTH_TOKEN }}
+          issue-number: ${{ steps.find_pr.outputs.pr }}
+          body: |
+            Compiled a new version [demo](${{ steps.demo_build.outputs.storybook_url }}).
+          reaction-type: 'rocket'
