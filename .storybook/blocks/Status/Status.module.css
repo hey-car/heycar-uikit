@@ -1,0 +1,25 @@
+.status {
+  text-decoration: none;
+  font-size: 12px;
+  padding: 2px 8px;
+}
+
+.proposal {
+  color: var(--color-grey-700);
+  background-color: var(--color-grey-50);
+}
+
+.in_development {
+  color: var(--color-sunbeam-900);
+  background-color: var(--color-sunbeam-100);
+}
+
+.in_review {
+  color: var(--color-yellow-900);
+  background-color: var(--color-yellow-200);
+}
+
+.recommendation {
+  color: var(--color-min-600);
+  background-color: var(--color-green-50);
+}
