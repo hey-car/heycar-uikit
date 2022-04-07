@@ -1,3 +1,7 @@
+#HeyCar
+
+[![Coverage Status](https://coveralls.io/repos/github/hey-car/hey-ui/badge.svg)](https://coveralls.io/github/hey-car/hey-ui)
+
 ## Get started with the storybook
 
 ```bash
