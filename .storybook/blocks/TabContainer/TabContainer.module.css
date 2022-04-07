@@ -8,8 +8,10 @@
     cursor: pointer;
     padding: 8px;
     position: relative;
+
     &.active {
        color: var(--color-grey-700);
+
       &:after {
           content: '';
           background: var(--color-min-700);
