@@ -1,5 +1,4 @@
 import { Meta } from '@storybook/addon-docs';
-import GitHubButton from 'react-github-btn';
 import Readme from '../README.md';
 import { version } from '../package.json';
 
@@ -13,31 +12,34 @@ import { version } from '../package.json';
   }}
 />
 
-<div>
-  <div className="github">
-    <GitHubButton
-      href="https://github.com/hey-car/hey-ui.git"
-      data-size="large"
-      data-show-count="true"
-      aria-label="Star hey-car/hey-ui on GitHub"
-    >
-      GitHub
-    </GitHubButton>
-  </div>
-  <h1>Installation 🛠</h1>
-  <section>
-    <h3>Adding the library to your application</h3>
-    <p>
-      In order to start using <strong>hey-ui</strong>, please add this project
-      as a dependency of your project with:
-    </p>
-    <p>
-      //TODO: commands to install library and example including component in a
-      file
-    </p>
-  </section>
-  <section>
-    <h3>Troubleshooting</h3>
-    <p>//TODO: explain known issues and frequent questions</p>
-  </section>
-</div>
+# Installation 🛠
+
+---
+
+In order to start using **hey-ui**, please add this project
+as a dependency of your project with
+
+`npm install --save @hey-car/hey-ui`
+
+### Importing components
+
+You can import components to your project with
+
+`import { Button, Input } from '@hey-car/hey-ui';`
+
+and use them like so
+
+```
+  const component = () => (
+    <div>
+      <Button variant="primary" onClick={handleOnClick}>Do something</Button>
+      <Input placeholder="Write something" onClick={handleInputClick} />
+    </div>
+  )
+```
+
+### Troubleshooting
+
+This space is dedicated to known issues related to the installation of **hey-ui**.
+
+So far, there are no known issues 😎👍
