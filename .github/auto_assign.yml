@@ -1,0 +1,11 @@
+addReviewers: true
+
+reviewers:
+  - derek-heycar
+  - hey-igor
+  - mwagdi
+
+skipKeywords:
+  - wip
+
+numberOfReviewers: 0
