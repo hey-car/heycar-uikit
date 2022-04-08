@@ -45,7 +45,7 @@ const gitPagesUrl = `https://${parsedGitUrl.owner}.github.io/${parsedGitUrl.name
 
 console.log('Publish storybook demo for github');
 console.log('=> Build storybook');
-shell.exec(`npm run build-storybook -o ${tempOutputDir}`, { fatal: true });
+shell.exec(`npm run build-storybook -- -o ${tempOutputDir}`, { fatal: true });
 
 // Prepare temporary gh-pages dir
 console.log('=> Prepare temporary dir');
