@@ -23,7 +23,7 @@ jobs:
       - name: Publish storybook
         run: |
           cd ./storybook-demo
-          git push -q -f "https://hey-ui-bot:${{ secrets.BOT_AUTH_TOKEN }}@github.com/hey-car/hey-ui.git" main:gh-pages
+          git push -q -f "https://hey-ui-bot:${{ secrets.BOT_AUTH_TOKEN }}@github.com/hey-car/hey-ui.git" develop:gh-pages
 
       # Looking for open PR
       - name: Find open PR
