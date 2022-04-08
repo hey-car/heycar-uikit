@@ -4,8 +4,8 @@ const parseGitUrl = require('git-url-parse');
 
 /** Config for github */
 const defaultConfig = {
-  gitUsername: 'hey-ui-bot',
-  gitEmail: 'ds@heycar.com',
+  gitUsername: 'supcar',
+  gitEmail: 'team-engineering@hey.car',
   commitMessage: 'Deploy Storybook to GitHub Pages',
   gitRemote: 'origin',
   targetBranch: 'gh-pages',
