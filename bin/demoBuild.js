@@ -22,7 +22,7 @@ const tempOutputDir = shell
   .exec('git rev-parse HEAD', execOptions)
   .stdout.trim();
 
-console.log(`tempOutputDir ->> ${tempOutputDir}`);
+console.log(`=> tempOutputDir ${tempOutputDir}`);
 
 /** Current git branch */
 const sourceBranch = shell
@@ -71,7 +71,7 @@ shell.exec(
 
 // Merge builded storybook
 console.log('=> Merge builded storybook');
-console.log(`sourceBranch ==> ${sourceBranch}`);
+console.log(`=> sourceBranch ${sourceBranch}`);
 
 shell.cp('-rf', `../${tempOutputDir}`, './');
 
