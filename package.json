@@ -8,7 +8,7 @@
     "build": "./bin/build.sh",
     "clean": "rimraf packages/*/{tsconfig.tsbuildinfo,dist} && rimraf {dist,build}",
     "start": "start-storybook -p 9009 -c .storybook",
-    "build-storybook": "build-storybook -o build -s ./.storybook/public --quiet",
+    "build-storybook": "build-storybook -o build --quiet",
     "serve-storybook": "http-server build -p 9009",
     "lint": "npm run lint:css && npm run lint:js",
     "lint:css": "stylelint ./packages/**/*.css",
