@@ -20,17 +20,84 @@ Thank you for your interest in contributing to our library! Before coding, pleas
 
 ### Guidelines
 
-//TODO: explain code guidelines, structure, and principles.
-//TODO: explain branch naming.
+You are welcome to create new components or update existing ones. But, before you start, please take some time and **read carefully the guidelines explained in this page 🥸**
+
+If you are a new developer at **heycar**, make sure to check the **[Front-end Quickstart Guide](https://heycar.atlassian.net/wiki/spaces/DEP/pages/691146/Frontend+Onboarding)** in the Front-end Onboarding documentation. There you will see specific tips on accessing and configuring your environment specifically to Front-end development.
+
+#### Basic requirements
+
+There are some requirements and criteria for the whole **hey-ui** library. Make sure you are aware of them before starting development.
+
+- It must support all required browsers.
+
+- It must provide React components ready to use by all of **heycar's** web applications.
+
+- Components should be simple, i.e., they must not contain any business logic, state management, or dependencies that would conflict with or dictate web applications development.
+
+- Components must have sufficient high-quality documentation. This means that each new component must have their corresponding Story, containing examples, available props, and ways of using the component.
+
+- Components must be fully accessible and WCAG-compliant.
+
+- The component library must allow brand customization and theme.
+
+- The component library must provide global styles and typography.
+
+- Components must easily support internationalization
+
+#### Release cycle
+
+For proper release cycle and code support in this repository, you must use the **[git-flow](https://www.gitkraken.com/learn/git/git-flow)** workflow when creating new branches and releasing new code.
+Below is a brief explanation of branch naming:
+
+`main` - Contains only tested code. Сode gets here from `release/*` and `hotfix/*` branches.
+
+`release/*` - Contains branches formed from the `develop` branch, for future release, e.g. `release/0.0.1`.
+
+`develop` - General branch for developing. Сode gets here from `feature/*` and `bugfix/*` branches.
+
+`feature/*` - Branches are created based on ticket name, e.g. `feature/HEYUI-999-status-button-component`. Every individual ticket must have its corresponding branch, even for small tasks.
+
+`hotfix/*` - These are branches that contains very urgent fixes for production, e.g. `hotfix/HEYUI-999-fix-button-attribute`.
+
+`bugfix/*` - These branches contain bug fixes and can be merged into `develop`, `release` or `feature` braches, e.g. `bugfix/HEYUI-999-fix-button-attribute`.
 
 ### Main scripts
 
-//TODO: explain main scripts
+This is the list of scrips that will be helpful to you during development.
+//TODO: include more scripts after they're created
 
-### Testing components locally
+- Get started with the storybook
+
+```bash
+$ npm i
+$ npm run start
+```
+
+- Building packages
+
+```bash
+$ npm i
+$ npm run build
+```
+
+### Testing
+
+// TODO: include information about unit/... testing
+
+### Trying out components locally
 
 //TODO: explain how to test components locally e.g. yalc, yarn-link etc
 
 ### Creating a pull request
 
-//TODO: remember to follow PR template
+When creating your pull request, pay attention to the PR template and the requirements described there.
+
+If your PR is not yet ready to be reviewed, make sure it is a draft or labeled as a `work in progress`.
+
+Don't forget to properly name and label your PR. Examples: `feature: new button [#HEYUI-999]`, `bugfix: fixing header props [#HEYUI-000]`.
+
+In order for it to be merged, at least two approvals are necessary.
+
+### More information
+
+If you have questions or need more information about **hey-ui**, please go to **#global-design-system** on Slack.
