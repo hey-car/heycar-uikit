@@ -1,0 +1,15 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid var(--color-mica-blue-200);
+
+  & th, & td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid var(--color-mica-blue-200);
+  }
+
+  & thead {
+      background-color: var(--color-mica-blue-50);
+  }
+}
