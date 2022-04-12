@@ -1,0 +1,45 @@
+import { Meta } from '@storybook/addon-docs';
+import Readme from '../README.md';
+import { version } from '../package.json';
+
+<Meta
+  title="Get started/Installation"
+  parameters={{
+    previewTabs: {
+      canvas: { hidden: true },
+      'storybook/docs/panel': { hidden: true },
+    },
+  }}
+/>
+
+# Installation 🛠
+
+---
+
+In order to start using **hey-ui**, please add this project
+as a dependency of your project with
+
+`npm install --save @hey-car/hey-ui`
+
+### Importing components
+
+You can import components to your project with
+
+`import { Button, Input } from '@hey-car/hey-ui';`
+
+and use them like so
+
+```
+  const component = () => (
+    <div>
+      <Button variant="primary" onClick={handleOnClick}>Do something</Button>
+      <Input placeholder="Write something" onClick={handleInputClick} />
+    </div>
+  )
+```
+
+### Troubleshooting
+
+This space is dedicated to known issues related to the installation of **hey-ui**.
+
+So far, there are no known issues 😎👍
