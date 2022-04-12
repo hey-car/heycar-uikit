@@ -2,6 +2,9 @@
 
 [![Tests](https://github.com/hey-car/hey-ui/actions/workflows/build.yml/badge.svg)](https://github.com/hey-car/hey-ui/actions/workflows/build.yml)
 [![Coverage Status](https://coveralls.io/repos/github/hey-car/hey-ui/badge.svg)](https://coveralls.io/github/hey-car/hey-ui)
+[![Demo build](https://github.com/hey-car/hey-ui/actions/workflows/main.yml/badge.svg)](https://github.com/hey-car/hey-ui/actions/workflows/main.yml)
+
+[Storybook](https://hey-car.github.io/hey-ui/master/) documentation and sandbox
 
 ## Get started with the storybook
 
