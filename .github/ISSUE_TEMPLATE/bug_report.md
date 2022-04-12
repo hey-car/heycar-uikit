@@ -1,3 +1,10 @@
+---
+name: Bug Report
+about: Create a report to help us improve global design library
+title: 'BUG: Short description of the problem'
+labels: bug
+---
+
 ## Bug Report
 ### Steps to reproduce the issue
 - Add steps to reproduce the issue
