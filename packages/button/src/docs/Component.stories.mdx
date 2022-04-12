@@ -1,5 +1,5 @@
 import { Meta, Story, Props } from '@storybook/addon-docs';
-import { ComponentHeader, Tabs, CssVars, Status } from 'storybook/blocks';
+import { ComponentHeader, CssVars, TabContainer } from 'storybook/blocks';
 
 import Button from '../';
 import { version } from '../../package.json';
@@ -45,12 +45,11 @@ export const ButtonTemplate = args => <Button {...args} />;
 import { Button } from '@hey-ui/button';
 ```
 
-<Props of={Button} />
-
-<CssVars css={styles} />
-
-<hr />
-
-<Description />
-
-<Changelog />
+<TabContainer
+    tabs={[
+        {label: 'Description', component: <Description />},
+        {label: 'Props', component: <Props of={Button} />},
+        {label: 'CSS tokens', component: <CssVars css={styles} />},
+        {label: 'Changelog', component: <Changelog />}
+    ]}
+/>
