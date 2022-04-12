@@ -1,15 +1,7 @@
-import React, { ReactNode, useState } from 'react';
+import React, { useState } from 'react';
 
 import styles from './TabContainer.module.css';
-
-type Tab = {
-  label: string;
-  component: ReactNode;
-};
-
-type TabContainerProps = {
-  tabs: Tab[];
-};
+import { TabContainerProps } from './TabContainer.types';
 
 export const TabContainer: React.FC<TabContainerProps> = ({tabs}) => {
   const [viewedTab, setViewedTab] = useState<number>(0);
