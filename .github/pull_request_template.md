@@ -10,6 +10,12 @@ Describe your changes (or add ticket description) and add relevant screenshots
 - [ ] New feature (non-breaking change which adds functionality)
 - [ ] Documentation change
 
+### How do I test this
+
+- Add steps to test
+- in bullet point format
+- preferably you can add link to the storybook build in the PR
+
 ## Checklist
 
 ### Did you remember to take care of the following?
