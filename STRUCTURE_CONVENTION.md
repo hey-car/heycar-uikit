@@ -1,4 +1,4 @@
-# Structure convention
+# Package structure convention
 
 ## Filename & Folders
 
