@@ -22,5 +22,5 @@ State the desired outcome
 
 ### Additional details / Screenshots
 
-- Add possibly relevant details
+- Add possible relevant details
 - Add screenshots that you feel would be descriptive

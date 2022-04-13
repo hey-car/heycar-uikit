@@ -21,7 +21,7 @@ State the proposed solution
 
 ### Alternative solutions
 
-State other solutions you
+State other solutions you might propose
 
 ### Acceptance criteria
 
