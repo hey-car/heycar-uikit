@@ -3,6 +3,7 @@
 [![Tests](https://github.com/hey-car/hey-ui/actions/workflows/build.yml/badge.svg)](https://github.com/hey-car/hey-ui/actions/workflows/build.yml)
 [![Coverage Status](https://coveralls.io/repos/github/hey-car/hey-ui/badge.svg)](https://coveralls.io/github/hey-car/hey-ui)
 [![Demo build](https://github.com/hey-car/hey-ui/actions/workflows/main.yml/badge.svg)](https://github.com/hey-car/hey-ui/actions/workflows/main.yml)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 [Storybook](https://hey-car.github.io/hey-ui/master/) documentation and sandbox
 
