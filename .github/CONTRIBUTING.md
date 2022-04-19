@@ -14,7 +14,7 @@ All work on Hey-UI happens directly on [GitHub](https://github.com/hey-car/hey-u
 
 ## Branch Organization
 
-According to our [release schedule](changelog#Release-Schedule), we maintain two branches, `master` and `feature`. If you send a bugfix pull request, please do it against the `master` branch, if it's a feature pull request, please do it against the `feature` branch.
+According to our [release schedule](changelog#Release-Schedule), we maintain two branches, `main` and `feature`. If you send a bugfix pull request, please do it against the `main` branch, if it's a feature pull request, please do it against the `feature` branch.
 
 `main` - Contains only tested code. Сode gets here from `release/*` and `hotfix/*` branches.
 

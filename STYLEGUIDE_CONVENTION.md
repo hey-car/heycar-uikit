@@ -31,7 +31,7 @@ function Listing({ hello }) {
 }
 ```
 
-### Extract Login from jsx
+### Use extra event handler
 
 ```JSX
 //bad
@@ -121,13 +121,13 @@ const handleClick = (event) => ...
 // good
 const handleButtonClick = (event) => ...
 
-// else good
+// also good
 const handleFormSubmit = (event) => ...
 ```
 
 ### Variable Naming
 
-boolean variables staring with prefix `is`, `should`, `has`, `can`, `did`, `will`.
+Boolean variables should start with one of these prefixes: `is`, `should`, `has`, `can`, `did`, `will`.
 
 ### Function Naming
 
@@ -169,7 +169,7 @@ A functionally independent page component that can be reused. In HTML, blocks ar
 ### Element
 
 A composite part of a block that can't be used separately from it.
-Identical elements in the same block have the same names. For example, all menu items in the menu block are called `search-form__input`.
+Identical elements in the same block have the same names. For example, all input fields in the search block are called `search-form__input`.
 
 ```HTML
 <!-- `search-form` block -->
