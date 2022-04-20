@@ -173,7 +173,7 @@ module.exports = {
     'react/jsx-indent': ['error', 2],
     'react/jsx-indent-props': ['error', 2],
     'react/jsx-curly-spacing': ['error'],
-    'react/jsx-fragments': ['warn', 'element'],
+    'react/jsx-fragments': ['error', 'element'],
     'react/static-property-placement': ['error', 'static public field'],
     'react/state-in-constructor': ['error', 'never'],
     'react/prop-types': 'off',
@@ -188,6 +188,8 @@ module.exports = {
     'react/destructuring-assignment': ['error', 'always'],
     'react/jsx-filename-extension': [1, { extensions: ['.jsx', '.tsx'] }],
     'react/jsx-one-expression-per-line': 'off',
+    'react/no-array-index-key': ['error'],
+    'react/jsx-closing-bracket-location': 1,
 
     // A11Y
     'jsx-a11y/anchor-is-valid': ['warn', { aspects: ['invalidHref'] }],

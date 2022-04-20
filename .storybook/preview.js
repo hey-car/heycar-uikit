@@ -41,8 +41,8 @@ addParameters({
       method: 'alphabetical',
       order: [
         'Introduction',
-        'Get started',
-        ['Installation', 'Contributing'],
+        'Guidelines',
+        ['Installation', 'Contributing', 'Package structure convention', 'Code style guide convention'],
         'Components',
       ],
     },
