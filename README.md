@@ -31,3 +31,24 @@ Build results in the `dist` folder on the root and in the folder `dist` in each 
 - `modern` - `ES2020` build with esm modules.
 - `cssm` - `ES5` build with commonjs modules. `CSS modules` are supplied as is, not compiled.
 - `esm` - `ES5` build with esm modules.
+
+## Commit Message Guidelines
+
+We have very precise rules over how our git commit messages can be formatted. This leads to **more
+readable messages** that are easy to follow when looking through the **project history**. But also,
+we use the git commit messages to **generate the AngularJS change log**.
+
+The commit message formatting can be added using a typical git workflow or through the use of a CLI wizard ([Commitizen](https://github.com/commitizen/cz-cli)).
+To use the wizard, run `npm run cm` in your terminal after staging your changes in git.
+
+Follow this commands:
+
+```bash
+$ git add .
+$ npm run cm # run the commitizen utility to create a commit
+$ git push
+```
+
+### Commit Message Scope
+
+The scope could be following the name of the package of the commit change. For example `button`, `input`, etc...
