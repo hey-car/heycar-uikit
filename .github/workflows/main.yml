@@ -1,6 +1,6 @@
 name: Demo build
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
   build:
@@ -27,7 +27,7 @@ jobs:
 
       # Looking for open PR
       - name: Find open PR
-        uses: jwalton/gh-find-current-pr@v1
+        uses: jwalton/gh-find-current-pr@v1.2.1
         id: find_pr
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
