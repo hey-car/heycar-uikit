@@ -4,7 +4,12 @@ import { version } from '../package.json';
 
 <Meta
   title="Introduction"
-  parameters={{ previewTabs: { canvas: { hidden: true } } }}
+  parameters={{
+    previewTabs: {
+      canvas: { hidden: true },
+      'storybook/docs/panel': { hidden: true },
+    },
+  }}
 />
 
 <div className="github">
