@@ -51,13 +51,13 @@ The core team is monitoring for pull requests. We will review your pull request 
 **Before submitting a pull request**, please make sure the following is done:
 
 1. Fork the repository and create your branch from the [correct branch](#Branch-Organization).
-1. Run `npm install` in the repository root.
+2. Run `npm install` in the repository root.
    > For Windows 10 development environment, if you run into error `gyp err! find vs msvs_version not set from command line or npm config`, please install [the latest Python v3](https://www.python.org/downloads/) and **Desktop development with C++** through [Visual Studio Installer](https://docs.microsoft.com/en-us/visualstudio/install/install-visual-studio?view=vs-2019#step-3---install-the-visual-studio-installer) before running `npm install`
-1. If you've fixed a bug or added code that should be tested, add tests!
-1. Ensure the test suite passes (npm run test). Tip: `npm test -- --watch TestName` is helpful in development.
-1. Run `npm test -- -u` to update the [jest snapshots](http://facebook.github.io/jest/docs/en/snapshot-testing.html#snapshot-testing-with-jest) and commit these changes as well (if there are any updates).
-1. Ensure the UI change passes `npm run test:screenshots`，Run `npm run test:screenshots -- -u` to update UI snapshots and commit these changes as well (if there are any updates).
-1. Make sure your code lints (npm run lint). Tip: Lint runs automatically when you `git commit` (Use [Git Hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks)).
+3. If you've fixed a bug or added code that should be tested, add tests!
+4. Ensure the test suite passes (npm run test). Tip: `npm test -- --watch TestName` is helpful in development.
+5. Run `npm test -- -u` to update the [jest snapshots](http://facebook.github.io/jest/docs/en/snapshot-testing.html#snapshot-testing-with-jest) and commit these changes as well (if there are any updates).
+6. Ensure the UI change passes `npm run test:screenshots`，Run `npm run test:screenshots -- -u` to update UI snapshots and commit these changes as well (if there are any updates).
+7. Make sure your code lints (npm run lint). Tip: Lint runs automatically when you `git commit` (Use [Git Hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks)).
 
 Sending a Pull Request to [react-component](https://github.com/react-component/):
 
@@ -68,6 +68,6 @@ Since Hey-UI's components are based on react-component, sometimes you may need t
 After cloning Hey-UI, run `npm install` to fetch its dependencies. Then, you can run several commands:
 
 1. `npm start` runs Storybook Hey-UI website locally.
-1. `npm run lint` checks the code style.
-1. `npm test` runs the complete test suite. (Make sure the `NODE_ENV` environment variable is unset, or it may causing some problems.)
-1. `npm run build` build packages to the `dist` directory.
+2. `npm run lint` checks the code style.
+3. `npm test` runs the complete test suite. (Make sure the `NODE_ENV` environment variable is unset, or it may causing some problems.)
+4. `npm run build` build packages to the `dist` directory.

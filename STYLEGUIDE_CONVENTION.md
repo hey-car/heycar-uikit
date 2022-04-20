@@ -131,7 +131,7 @@ Boolean variables should start with one of these prefixes: `is`, `should`, `has`
 
 ### Function Naming
 
-A function or method that returns something must start with a prefix get
+A function or method that returns something must start with a prefix `get`
 
 ```typescript
 function getNumber7() {
