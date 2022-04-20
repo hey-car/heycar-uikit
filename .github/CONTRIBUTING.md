@@ -4,8 +4,8 @@ The following is a set of guidelines for contributing to Hey-UI. Please spend se
 
 ## Code of Conduct
 
-We have adopted a [Code of Conduct](https://github.com/hey-car/hey-ui/blob/main/CODE_OF_CONDUCT.md) that we expect project participants to adhere to
-elso please read our [Structure Convention](https://github.com/hey-car/hey-ui/blob/main/STRUCTURE_CONVENTION.md) and [Style Guide](https://github.com/hey-car/hey-ui/blob/main/STYLEGUIDE_CONVENTION.).
+We have adopted a [Code of Conduct](https://github.com/hey-car/hey-ui/blob/main/CODE_OF_CONDUCT.md) that we expect project participants to follow.
+Also, please read our [Structure Convention](https://github.com/hey-car/hey-ui/blob/main/STRUCTURE_CONVENTION.md) and [Style Guide](https://github.com/hey-car/hey-ui/blob/main/STYLEGUIDE_CONVENTION.).
 Please read the full text so that you can understand what actions will and will not be tolerated.
 
 ## Open Development
