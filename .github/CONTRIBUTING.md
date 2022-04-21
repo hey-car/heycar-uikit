@@ -12,6 +12,27 @@ Please read the full text so that you can understand what actions will and will 
 
 All work on Hey-UI happens directly on [GitHub](https://github.com/hey-car/hey-ui). Both core team members and external contributors send pull requests which go through the same review process.
 
+## Commit Message Guidelines
+
+We have very precise rules over how our git commit messages can be formatted. This leads to **more
+readable messages** that are easy to follow when looking through the **project history**. But also,
+we use the git commit messages to **generate the AngularJS change log**.
+
+The commit message formatting can be added using a typical git workflow or through the use of a CLI wizard ([Commitizen](https://github.com/commitizen/cz-cli)).
+To use the wizard, run `npm run cm` in your terminal after staging your changes in git.
+
+Follow this commands:
+
+```bash
+$ git add .
+$ npm run cm # run the commitizen utility to create a commit
+$ git push
+```
+
+### Commit Message Scope
+
+The scope could be following the name of the package of the commit change. For example `button`, `input`, etc...
+
 ## Branch Organization
 
 According to our [release schedule](changelog#Release-Schedule), we maintain two branches, `main` and `feature`. If you send a bugfix pull request, please do it against the `main` branch, if it's a feature pull request, please do it against the `feature` branch.
