@@ -1,5 +1,26 @@
 :root {
+  /* TODO: typography is not yet completely decided by the design team. this must be checked in the future */
+
+  /* Font families */
   --font-family-system: Objektiv, sans-serif, 'Helvetica Neue', Helvetica, Arial;
+
+  /* Font sizes */
+  --font-size-10: 10px;
+  --font-size-12: 12px;
+  --font-size-14: 14px;
+  --font-size-16: 16px;
+  --font-size-20: 20px;
+  --font-size-24: 24px;
+  --font-size-28: 28px;
+  --font-size-32: 32px;
+  --font-size-48: 48px;
+  --font-size-60: 60px;
+
+  /* Font weights */
+  --font-weight-regular: 300;
+  --font-weight-medium: 400;
+  --font-weight-bold: 500;
+  --font-weight-xbold: 600;
 }
 
 /*

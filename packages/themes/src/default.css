@@ -1,10 +1,43 @@
 @import '../../vars/src/index.css';
 
+/* Defaul theme (light) */
+
 :root {
   /*
-    Invert colors
+    Colors
   */
-  --color-light-text-primary-inverted: #fff;
+  --color-primary-50-surface: var(--color-heycar-mint-50);
+  --color-primary-500-default: var(--color-heycar-mint-500);
+  --color-primary-600-hover: var(--color-heycar-mint-600);
+  --color-primary-700-press: var(--color-heycar-mint-700);
+  --color-secondary-50-surface: var(--color-mica-blue-50);
+  --color-secondary-500-default: var(--color-mica-blue-500);
+  --color-secondary-600-hover: var(--color-mica-blue-600);
+  --color-secondary-700-press: var(--color-mica-blue-700);
+  --color-tertiary-50-surface: var(--color-sunbeam-blue-50);
+  --color-tertiary-500-default: var(--color-sunbeam-blue-500);
+  --color-tertiary-600-hover: var(--color-sunbeam-blue-600);
+  --color-tertiary-700-press: var(--color-sunbeam-blue-700);
+  --color-highlight-1-50-surface: var(--color-mustang-yellow-50);
+  --color-highlight-1-500-default: var(--color-mustang-yellow-500);
+  --color-highlight-1-600-hover: var(--color-mustang-yellow-600);
+  --color-highlight-1-700-press: var(--color-mustang-yellow-700);
+  --color-highlight-2-50-surface: var(--color-old-ferrari-red-50);
+  --color-highlight-2-500-default: var(--color-old-ferrari-red-500);
+  --color-highlight-2-600-hover: var(--color-old-ferrari-red-600);
+  --color-highlight-2-700-press: var(--color-old-ferrari-red-700);
+  --color-success-50-surface: var(--color-green-50);
+  --color-success-500-default: var(--color-green-500);
+  --color-success-600-hover: var(--color-green-600);
+  --color-success-700-press: var(--color-green-700);
+  --color-error-50-surface: var(--color-red-50);
+  --color-error-500-default: var(--color-red-500);
+  --color-error-600-hover: var(--color-red-600);
+  --color-error-700-press: var(--color-red-700);
+  --color-neutral-50-surface: var(--color-tarmac-grey-50);
+  --color-neutral-500-default: var(--color-tarmac-grey-500);
+  --color-neutral-600-hover: var(--color-tarmac-grey-600);
+  --color-neutral-700-press: var(--color-tarmac-grey-700);
 
   /*
     Sizes
