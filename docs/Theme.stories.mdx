@@ -1,6 +1,7 @@
 import { Meta } from '@storybook/addon-docs';
 import GitHubButton from 'react-github-btn';
 import { version } from '../package.json';
+import styles from './styles/Theme.module.css';
 
 <Meta
   title="Guidelines/Theme"
@@ -12,8 +13,82 @@ import { version } from '../package.json';
   }}
 />
 
-# Theme ✨
+export const Colors = () => {
+  const colors = ['primary', 'secondary'];
+  const shades = [
+    { value: '50', altName: 'light' },
+    { value: '100', altName: '' },
+    { value: '200', altName: '' },
+    { value: '300', altName: '' },
+    { value: '400', altName: '' },
+    { value: '500', altName: 'default' },
+    { value: '600', altName: 'dark' },
+    { value: '700', altName: 'darker' },
+    { value: '800', altName: '' },
+    { value: '900', altName: '' },
+  ];
+  const ColorBlock = ({ name, color }) => (
+    <div className={`${styles.colorBlock}`}>
+      <h3>{name}</h3>
+      <div>
+        {shades.map(shade => {
+          const colorName = `${name.toLowerCase()}-${shade.value}`;
+          return (
+            <div className={`${styles.colorShade} ${styles[colorName]}`}>
+              <span>{shade.value}</span>
+              {shade.altName && <span>({shade.altName})</span>}
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+  return (
+    <div>
+      <ColorBlock name="Primary" />
+      <ColorBlock name="Secondary" />
+      <ColorBlock name="Tertiary" />
+      <ColorBlock name="Highlight-1" />
+      <ColorBlock name="Highlight-2" />
+      <ColorBlock name="Success" />
+      <ColorBlock name="Error" />
+      <ColorBlock name="Neutral" />
+    </div>
+  );
+};
 
----
+<Story name="Colors">
+  <h1>Colors</h1>
+  <p>
+    Listed below are all of the color names and their following possible shades
+    available as CSS variables on this design system. Some shades have
+    alternative names, that can be found in between parenthesis right below
+    their value.
+  </p>
+  <p>
+    In order to use the colors of the <strong>hey-ui</strong> design system as
+    CSS variables, start the name of the variable with `--color`, followed by
+    the color name that you want (e.g. `-primary`, `-success`), and the shade
+    value/alternative name (e.g. `-500`, `-default`).
+  </p>
+  <p>
+    Here are some examples:
+    <code>
+      var(--color-primary-300); var(--color-secondary-500);
+      var(--color-secondary-default); var(--color-success-light);
+    </code>
+  </p>
+  <Colors />
+</Story>
 
-// TODO: colors, typography, spacing
+<Story name="Typography">
+  <h1>Typography</h1>
+</Story>
+
+<Story name="Shadows">
+  <h1>Shadows</h1>
+</Story>
+
+<Story name="Gaps">
+  <h1>Gaps</h1>
+</Story>
