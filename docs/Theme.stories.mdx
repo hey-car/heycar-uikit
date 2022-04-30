@@ -57,38 +57,76 @@ export const Colors = () => {
   );
 };
 
+export const Typography = () => {
+  return <span>lorem</span>;
+};
+
+export const Shadows = () => {
+  return <span>lorem</span>;
+};
+
+export const Spacing = () => {
+  return <span>lorem</span>;
+};
+
+export const Icons = () => {
+  return <span>lorem</span>;
+};
+
+# Theme
+
+## Colors
+
+Listed below are all of the color names and their following possible shades
+available as CSS variables on this design system. **Some shades have
+alternative names**, that can be found in between parenthesis right below
+their value.
+
+In order to use the colors of the **hey-ui** design system as
+CSS variables, start the name of the variable with `--color`, followed by
+the color name that you want (e.g. `-primary`, `-success`) and the shade
+value or alternative name (e.g. `-500`, `-default`).
+
+```css
+background-color: var(--color-primary-300);
+color: var(--color-secondary-500);
+
+background: var(--color-secondary-default);
+box-shadow: 10px 5px 5px var(--color-success-light);
+```
+
 <Story name="Colors">
-  <h1>Colors</h1>
-  <p>
-    Listed below are all of the color names and their following possible shades
-    available as CSS variables on this design system. Some shades have
-    alternative names, that can be found in between parenthesis right below
-    their value.
-  </p>
-  <p>
-    In order to use the colors of the <strong>hey-ui</strong> design system as
-    CSS variables, start the name of the variable with `--color`, followed by
-    the color name that you want (e.g. `-primary`, `-success`), and the shade
-    value/alternative name (e.g. `-500`, `-default`).
-  </p>
-  <p>
-    Here are some examples:
-    <code>
-      var(--color-primary-300); var(--color-secondary-500);
-      var(--color-secondary-default); var(--color-success-light);
-    </code>
-  </p>
   <Colors />
 </Story>
 
+## Typography
+
+Typography
+
 <Story name="Typography">
-  <h1>Typography</h1>
+  <Typography />
 </Story>
+
+## Shadows
+
+Shadows
 
 <Story name="Shadows">
-  <h1>Shadows</h1>
+  <Shadows />
 </Story>
 
-<Story name="Gaps">
-  <h1>Gaps</h1>
+## Spacing
+
+Spacing
+
+<Story name="Spacing">
+  <Spacing />
+</Story>
+
+## Icons
+
+Icons
+
+<Story name="Icons">
+  <Icons />
 </Story>
