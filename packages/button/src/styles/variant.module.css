@@ -2,14 +2,14 @@
 
 :root {
   /* primary */
-  --button-primary-base-bg-color: var(--color-primary-500);
-  --button-primary-hover-bg-color: var(--color-primary-600);
-  --button-primary-active-bg-color: var(--color-primary-700);
+  --button-primary-base-bg-color: var(--color-primary-main);
+  --button-primary-hover-bg-color: var(--color-primary-hover);
+  --button-primary-active-bg-color: var(--color-primary-pressed);
 
   /* secondary */
-  --button-secondary-base-bg-color: var(--color-secondary-500);
-  --button-secondary-hover-bg-color: var(--color-secondary-600);
-  --button-secondary-active-bg-color: var(--color-secondary-700);
+  --button-secondary-base-bg-color: var(--color-secondary-main);
+  --button-secondary-hover-bg-color: var(--color-secondary-hover);
+  --button-secondary-active-bg-color: var(--color-secondary-pressed);
 }
 
 .primary {
