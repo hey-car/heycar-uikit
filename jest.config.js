@@ -18,7 +18,10 @@ module.exports = {
     '@hey-ui/(.*)$': '<rootDir>/packages/$1/src',
     '\\.css$': 'identity-obj-proxy',
   },
-  testMatch: ['**/*.test.ts?(x)', '!**/*.screenshots.test.ts?(x)'],
+  testMatch: [
+    '**/*.test.ts?(x)',
+    '**/*.snapshot.test.ts?(x)',
+    '!**/*.screenshots.test.ts?(x)',
+  ],
   coverageReporters: ['lcov', 'text', 'text-summary', 'clover'],
-  coveragePathIgnorePatterns: ['index.ts'],
 };

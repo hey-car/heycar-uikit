@@ -1,0 +1,48 @@
+<Meta
+  title="Guidelines/Screenshot testing"
+  parameters={{ previewTabs: { canvas: { hidden: true } } }}
+/>
+
+## Screenshot testing
+
+For the starting work with the screenshot test locally you need to start `storybook`:
+
+```bash
+$ npm run start
+```
+
+After that run the tests:
+
+```bash
+$ npm run test:screenshots
+```
+
+### Screenshot files
+
+Screenshot files are stored in [git-lfs](https://git-lfs.github.com/).
+
+Installing `git-lfs` on MacOS:
+
+```bash
+$ brew install git-lfs
+```
+
+**Then you need to install the `git hook`:**
+
+```bash
+git lfs install --force
+```
+
+Further, you can work with screenshot files in the git as with regular files.
+
+### Screenshot comparison
+
+Screenshot comparison is made using the plugin [jest-image-snapshot](https://github.com/americanexpress/jest-image-snapshot).
+
+When you change the screenshot, a folder appears`__diff_output__`, where you can see the changes.
+
+If the changes need to be accepted, then update the screenshots:
+
+```bash
+$ npm run test:screenshots -- -u
+```
