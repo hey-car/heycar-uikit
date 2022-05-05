@@ -45,7 +45,7 @@ jobs:
         if: failure()
         id: diff_artifacts
         run: |
-          images="${for file $(find . --type=file -path \*packages/**/__diff_output__/*.png); do "<li>$file</li>" done}"
+          images=$(find . -type f -name 'packages/**/__diff_output__/*.png' -exec printf "<li>%s</li>\n" {} \;)
           echo "::set-output name=images::$images"
 
       - name: Create comment
