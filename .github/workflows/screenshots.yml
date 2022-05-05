@@ -22,7 +22,7 @@ jobs:
       - name: Install dependencies
         run: npm i
 
-      - uses: microsoft/playwright-github-action@v1
+      - uses: microsoft/playwright-github-action@v1.5.1
 
       - name: Build storybook
         run: npm run build-storybook
@@ -33,13 +33,20 @@ jobs:
       - name: Run screenshots tests
         run: npm run test:screenshots
 
-      - name: Upload failed tests
-        if: ${{ failure() }}
-        uses: edunad/actions-image@v1.0.1
+      - name: Collect diff image artifacts
+        id: diff_artifacts
+        run: |
+          images="${for file $(find . --type=file -path \*packages/**/__diff_output__/*.png); do "<li>$file</li>" done}"
+
+      - name: Create comment
+        if: failure()
+        uses: peter-evans/create-or-update-comment@v2.0.0
         with:
-          path: packages/**/__diff_output__/*.png'
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          title: 'Failed screenshots tests 🙀'
+          token: ${{ secrets.BOT_AUTH_TOKEN }}
+          body: |
+            Failed screenshots tests 🙀
+            <ul>(${{ steps.diff_artifacts.outputs.images }})</ul>
+          reaction-type: 'eyes'
 
       - uses: actions/upload-artifact@v3
         if: failure()

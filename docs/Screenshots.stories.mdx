@@ -11,10 +11,17 @@ For the starting work with the screenshot test locally you need to start `storyb
 $ npm run start
 ```
 
-After that run the tests:
+For the matching testing screenshots correctly, they should create in a similar OS (Ubuntu),
+to generate and update testing screenshots locally need to install the [docker](https://www.docker.com/) on the local machine and run the next command.
 
 ```bash
-$ npm run test:screenshots
+$ npm run test:sh:docker
+```
+
+For the updating screenshots images locally:
+
+```bash
+$ npm run test:sh:update
 ```
 
 ### Screenshot files
