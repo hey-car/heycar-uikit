@@ -42,12 +42,14 @@ jobs:
           body-includes: Build output
 
       - name: Collect diff image artifacts
+        if: failure()
         id: diff_artifacts
         run: |
           images="${for file $(find . --type=file -path \*packages/**/__diff_output__/*.png); do "<li>$file</li>" done}"
+          echo "::set-output name=images::$images"
 
       - name: Create comment
-        if: failure()
+        if: steps.diff_artifacts.outputs.images
         uses: peter-evans/create-or-update-comment@v2.0.0
         with:
           token: ${{ secrets.BOT_AUTH_TOKEN }}
