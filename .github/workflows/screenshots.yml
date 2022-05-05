@@ -33,6 +33,14 @@ jobs:
       - name: Run screenshots tests
         run: npm run test:screenshots
 
+      - name: Find Comment
+        uses: peter-evans/find-comment@v2
+        id: fc
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          comment-author: 'github-actions[bot]'
+          body-includes: Build output
+
       - name: Collect diff image artifacts
         id: diff_artifacts
         run: |
@@ -43,6 +51,8 @@ jobs:
         uses: peter-evans/create-or-update-comment@v2.0.0
         with:
           token: ${{ secrets.BOT_AUTH_TOKEN }}
+          comment-id: ${{ steps.fc.outputs.comment-id }}
+          issue-number: ${{ github.event.pull_request.number }}
           body: |
             Failed screenshots tests 🙀
             <ul>(${{ steps.diff_artifacts.outputs.images }})</ul>
