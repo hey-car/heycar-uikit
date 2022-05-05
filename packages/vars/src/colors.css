@@ -95,6 +95,9 @@
   --color-tarmac-grey-800: #262626;
   --color-tarmac-grey-900: #1d1d1d;
 
-  /* white */
+  /* brand colors */
+  --color-heycar-mint: var(--color-heycar-mint-500);
+  --color-mica-blue: #052962;
+  --color-sunbeam-blue: var(--color-sunbeam-blue-500);
   --color-championship-white: #fff;
 }
