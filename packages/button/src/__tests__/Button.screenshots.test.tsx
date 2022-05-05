@@ -35,7 +35,7 @@ describe(
   }),
 );
 
-describe('Button | hover test', () => {
+describe('Button hover test', () => {
   test('Open sheet', async () => {
     const pageUrl = createStorybookUrl({
       packageName,
@@ -58,7 +58,7 @@ describe('Button | hover test', () => {
   });
 });
 
-describe('Button | clicks tests', () => {
+describe('Button clicks tests', () => {
   test('Open sheet', async () => {
     const pageUrl = createStorybookUrl({
       packageName,
