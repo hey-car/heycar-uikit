@@ -33,6 +33,14 @@ jobs:
       - name: Run screenshots tests
         run: npm run test:screenshots
 
+      - name: Upload failed tests
+        if: ${{ failure() }}
+        uses: edunad/actions-image@v1.0.1
+        with:
+          path: packages/**/__diff_output__/*.png'
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          title: 'Failed screenshots tests 🙀'
+
       - uses: actions/upload-artifact@v3
         if: failure()
         with:
