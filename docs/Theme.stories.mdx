@@ -31,7 +31,6 @@ export const Colors = () => {
     'Mica Blue',
     'Sunbeam Blue',
     'Championship White',
-    'Disabled',
   ];
   const ColorBlock = ({ name, color }) => (
     <div className={`${styles.colorBlock}`}>
@@ -39,13 +38,13 @@ export const Colors = () => {
       <div>
         {name.includes('Brand')
           ? brandColors.map(color => {
-              const colorName = `${color.toLowerCase()}`;
+              const colorName = `${color.toLowerCase().replace(' ', '-')}`;
               return (
                 <div
                   className={`${styles.colorShade} ${styles.brandColor} ${styles[colorName]}`}
                 >
                   <span>{color}</span>
-                  <span>({color})</span>
+                  <span>--color-{colorName}</span>
                 </div>
               );
             })
@@ -62,7 +61,7 @@ export const Colors = () => {
   );
   return (
     <div>
-      {/* <ColorBlock name="Brand colors" /> */}
+      <ColorBlock name="Brand colors" />
       <ColorBlock name="Primary" />
       <ColorBlock name="Secondary" />
       <ColorBlock name="Tertiary" />
@@ -103,12 +102,26 @@ CSS variables, start the name of the variable with `--color`, followed by
 the color name that you want (e.g. `-primary`, `-success`) and the shade
 value (e.g. `-50`, `-600`).
 
-```css
-background-color: var(--color-primary-50);
-color: var(--color-secondary-500);
+If you need to use **brand colors**, simply use the variable name described right below their names on the palette below.
 
-background: var(--color-secondary-200);
-box-shadow: 10px 5px 5px var(--color-success-400);
+You can find a few examples on the code block to follow:
+
+```css
+.exampleClass {
+  background-color: var(--color-primary-50);
+  color: var(--color-secondary-500);
+}
+
+.anotherExampleClass {
+  background: var(--color-secondary-200);
+  box-shadow: 10px 5px 5px var(--color-success-400);
+}
+
+.exampleWithBrandColor {
+  color: var(--color-heycar-mint);
+  background: var(--color-primary-50);
+  border: 1px solid var(--color-mica-blue);
+}
 ```
 
 <Story name="Colors">

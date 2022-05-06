@@ -22,7 +22,7 @@
 }
 
 .brandColor {
-  width: 100px;
+  width: 195px;
   font-size: 12px;
 }
 
@@ -280,4 +280,21 @@
 }
 .neutral-900 {
   background-color: var(--color-neutral-900);
+}
+
+/* Brand colors */
+.heycar-mint {
+  background-color: var(--color-heycar-mint);
+}
+
+.mica-blue {
+  background-color: var(--color-mica-blue);
+}
+
+.sunbeam-blue {
+  background-color: var(--color-sunbeam-blue);
+}
+
+.championship-white {
+  background-color: var(--color-championship-white);
 }
