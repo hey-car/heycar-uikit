@@ -1,0 +1,41 @@
+name: Screenshots
+
+on:
+  push:
+    branches-ignore:
+      - main
+
+jobs:
+  test:
+    name: run screenshots tests
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          lfs: true
+
+      - name: Checkout LFS objects
+        run: git lfs checkout
+
+      - name: Install dependencies
+        run: npm i
+
+      - uses: microsoft/playwright-github-action@v1.5.1
+
+      - name: Build storybook
+        run: npm run build-storybook
+
+      - name: Serve storybook
+        run: npm run serve-storybook &
+
+      - name: Run screenshots tests
+        run: npm run test:screenshots
+
+      - uses: actions/upload-artifact@v3
+        if: failure()
+        with:
+          name: diffs
+          path: packages/**/__diff_output__/*
+          if-no-files-found: ignore

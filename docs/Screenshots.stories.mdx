@@ -1,0 +1,55 @@
+<Meta
+  title="Guidelines/Screenshot testing"
+  parameters={{ previewTabs: { canvas: { hidden: true } } }}
+/>
+
+## Screenshot testing
+
+In order to start working with screenshot testing locally, you need to start `Storybook`:
+
+```bash
+$ npm run start
+```
+
+So that screenshot tests are matched correctly, they should be created in a similar OS (Ubuntu).
+In order to generate and update screenshot tests locally, you need to install [docker](https://www.docker.com/) on your local machine, then run the next command.
+
+```bash
+$ npm run test:sh:docker
+```
+
+Then use the following command to update the screenshot images locally:
+
+```bash
+$ npm run test:sh:update
+```
+
+### Screenshot files
+
+Screenshot files are stored in [git-lfs](https://git-lfs.github.com/).
+
+Installing `git-lfs` on MacOS:
+
+```bash
+$ brew install git-lfs
+```
+
+**Then you need to install the `git hook`:**
+
+```bash
+git lfs install --force
+```
+
+Finally, you are able to work with screenshot files in git as well as with regular files.
+
+### Screenshot comparison
+
+Screenshot comparison is made using the plugin [jest-image-snapshot](https://github.com/americanexpress/jest-image-snapshot).
+
+When you change the screenshot, a folder appears`__diff_output__`, where you can see the changes.
+
+If the changes need to be accepted, then update the screenshots:
+
+```bash
+$ npm run test:screenshots -- -u
+```
