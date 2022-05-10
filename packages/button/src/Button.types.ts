@@ -1,28 +1,55 @@
-import React, { ButtonHTMLAttributes } from 'react';
+import React, { AnchorHTMLAttributes, ButtonHTMLAttributes } from 'react';
 
 export interface ComponentProps {
   /**
-   * `children` of the element
+   * The content of the button
    */
   children: React.ReactNode;
   /**
-   * `variant` - variant of element
+   * Set the size of the button
    */
-  variant?: 'primary' | 'secondary';
+  size?: 'small' | 'large';
   /**
-   * `size` - variant of element
+   * Set the color of the button
    */
-  size?: 'small' | 'middle' | 'large';
-
+  color?: 'primary' | 'secondary' | 'tertiary';
   /**
-   * `dataTestId` - the id for testing lab.
+   * View of the button
+   */
+  variant?: 'contained' | 'outlined' | 'text';
+  /**
+   * If `true`, the button will take up the full width of its container.
+   */
+  fullWidth?: boolean;
+  /**
+   * Element placed after the children.
+   */
+  leftIcon?: React.ReactNode;
+  /**
+   * 	Element before after the children.
+   */
+  rightIcon?: React.ReactNode;
+  /**
+   * Text will not wrap to the next line
+   */
+  nowrap?: boolean;
+  /**
+   * The component used for the root node. Either a string to use a HTML element or a component
+   */
+  Component?: React.ElementType;
+  /**
+   * If true, the component is disabled.
+   */
+  disabled?: boolean;
+  /**
+   * The id for testing
    */
   dataTestId?: string;
 }
 
-// type AnchorButtonProps = ComponentProps &
-//   AnchorHTMLAttributes<HTMLAnchorElement>;
+type AnchorButtonProps = ComponentProps &
+  AnchorHTMLAttributes<HTMLAnchorElement>;
 type NativeButtonProps = ComponentProps &
   ButtonHTMLAttributes<HTMLButtonElement>;
 
-export type ButtonProps = Partial<NativeButtonProps>;
+export type ButtonProps = Partial<NativeButtonProps | AnchorButtonProps>;

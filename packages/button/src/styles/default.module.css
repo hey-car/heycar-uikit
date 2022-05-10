@@ -4,8 +4,22 @@
   --button-inverted-primary-color: var(--color-light-text-primary-inverted);
 }
 
-.component {
+.button {
+  font-weight: var(--button-font-weight);
+  font-family: var(--font-family);
+  position: relative;
+  display: inline-flex;
+  vertical-align: middle;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 0;
   border: 0;
-  color: var(--button-inverted-primary-color);
-  font-weight: bold;
+  outline: none;
+  box-shadow: none;
+  user-select: none;
+  cursor: pointer;
+  box-sizing: border-box;
 }
