@@ -1,5 +1,12 @@
 :root {
+  /* Font families */
   --font-family-system: Objektiv, sans-serif, 'Helvetica Neue', Helvetica, Arial;
+
+  /* Font weights */
+  --font-weight-regular: 300;
+  --font-weight-medium: 400;
+  --font-weight-bold: 500;
+  --font-weight-xbold: 600;
 }
 
 /*

@@ -2,21 +2,21 @@
 
 :root {
   /* primary */
-  --button-primary-base-bg-color: var(--color-mica-blue-400);
-  --button-primary-hover-bg-color: var(--color-mica-blue-300);
-  --button-primary-active-bg-color: var(--color-mica-blue-600);
+  --button-primary-base-bg-color: var(--color-primary-500);
+  --button-primary-hover-bg-color: var(--color-primary-600);
+  --button-primary-active-bg-color: var(--color-primary-700);
 
   /* secondary */
-  --button-secondary-base-bg-color: var(--color-min-400);
-  --button-secondary-hover-bg-color: var(--color-min-300);
-  --button-secondary-active-bg-color: var(--color-min-600);
+  --button-secondary-base-bg-color: var(--color-secondary-500);
+  --button-secondary-hover-bg-color: var(--color-secondary-600);
+  --button-secondary-active-bg-color: var(--color-secondary-700);
 }
 
 .primary {
   background-color: var(--button-primary-base-bg-color);
 
   &:hover {
-    background-color: var(--button-primarys-hover-bg-color);
+    background-color: var(--button-primary-hover-bg-color);
   }
 
   &:active {
