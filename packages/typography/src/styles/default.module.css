@@ -1,0 +1,99 @@
+@import '../../../themes/src/default.css';
+
+h1 {
+  font-size: 48px;
+
+  &.mobile {
+    font-size: 32px;
+  }
+}
+
+h2 {
+  font-size: 32px;
+
+  &.mobile {
+    font-size: 28px;
+  }
+}
+
+h3 {
+  font-size: 28px;
+
+  &.mobile {
+    font-size: 24px;
+  }
+}
+
+h4 {
+  font-size: 24px;
+
+  &.mobile {
+    font-size: 20px;
+  }
+}
+
+h5 {
+  font-size: 20px;
+
+  &.mobile {
+    font-size: 16px;
+  }
+}
+
+h6 {
+  font-size: 16px;
+}
+
+.display {
+  font-size: 60px;
+
+  &.mobile {
+    font-size: 48px;
+  }
+}
+
+.xbold {
+  font-weight: var(--font-weight-xbold);
+}
+
+.bold {
+  font-weight: var(--font-weight-bold);
+}
+
+.medium {
+  font-weight: var(--font-weight-medium);
+}
+
+.regular {
+  font-weight: var(--font-weight-regular);
+}
+
+.size_1 {
+  font-size: 18px;
+}
+
+.size_2 {
+  font-size: 16px;
+}
+
+.size_3 {
+  font-size: 14px;
+}
+
+.size_4 {
+  font-size: 12px;
+}
+
+.size_5 {
+  font-size: 10px;
+}
+
+.highlight {
+  background-color: var(--color-primary-700);
+  color: var(--color-championship-white);
+  padding: 1px 4px;
+}
+
+.overline {
+  text-transform: uppercase;
+}
