@@ -1,0 +1,17 @@
+@import '../../../themes/src/default.css';
+
+.xbold {
+  font-weight: var(--font-weight-xbold);
+}
+
+.bold {
+  font-weight: var(--font-weight-bold);
+}
+
+.medium {
+  font-weight: var(--font-weight-medium);
+}
+
+.regular {
+  font-weight: var(--font-weight-regular);
+}

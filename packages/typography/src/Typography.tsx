@@ -4,14 +4,14 @@ import cn from 'classnames';
 import type { TypographyProps } from './Typography.types';
 
 import styles from './styles/default.module.css';
-// import stylesSize from './styles/size.module.css';
-// import stylesVariant from './styles/variant.module.css';
+import stylesSize from './styles/size.module.css';
+import stylesVariant from './styles/variant.module.css';
+import stylesWeight from './styles/weight.module.css';
 
 export const Typography: React.FC<TypographyProps> = ({
   variant = 'body',
   size = 2,
   weight = 'regular',
-  isMobile = false,
   isHighlighted = false,
   dataTestId,
   className,
@@ -30,12 +30,13 @@ export const Typography: React.FC<TypographyProps> = ({
 
   const classNames = cn(
     styles.typography,
-    styles[variant],
-    styles[weight],
-    variant !== 'heading' && variant !== 'display' && styles[`size_${size}`],
+    stylesVariant[variant],
+    stylesWeight[weight],
+    variant !== 'heading' &&
+      variant !== 'display' &&
+      stylesSize[`size_${size}`],
     {
       [styles.highlight]: isHighlighted,
-      [styles.mobile]: isMobile,
     },
     className,
   );

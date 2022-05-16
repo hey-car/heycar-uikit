@@ -7,7 +7,6 @@ export interface ComponentProps {
     | 'display'
     | 'heading'
     | 'subHeading'
-    | 'heading'
     | 'body'
     | 'caption'
     | 'overline'
@@ -16,8 +15,6 @@ export interface ComponentProps {
   size?: 1 | 2 | 3 | 4 | 5 | 6;
   /* `weight` - variant font weight */
   weight?: 'xbold' | 'bold' | 'medium' | 'regular';
-  /* `isMobile` - defines if the text is being displayed on a mobile version */
-  isMobile?: boolean;
   /* `isHighlighted` - defines if the text is being displayed should be highlighted */
   isHighlighted?: boolean;
   /* `dataTestId` - the id for testing lab */

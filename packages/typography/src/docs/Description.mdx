@@ -1,15 +1,45 @@
-A button is used as a trigger to perform a specific action.
-The button unambiguously tells the user what will happen after clicking on it.
+The **Typography** component is used to display any types of text present on the **hey-ui** design system.
 
-## Type of the buttons
+In the design prototypes, when clicking on text, you will find a variable name like `H1-Bold`, `SH2-ExtraBold`, `Body4-Regular`.
+They describe the text variant (`H`: heading, `SH`: sub heading, `Body`: body, etc) followed by their size (`1`, `2`... `6`), and weight (`Extra bold`, `Bold`, `Regular`, etc).
 
-Several types of buttons (view) are available in the library.
+In our `<Typography>` component, there are four important props that need to me included so you can successfully implement the typography required by the designers.
+The props are `variant`, `size`, `weight`, and `isHighlighted`. You can find an explanation on how to use them below.
 
-- <b>Primary</b>. Indicates a key action. There can be only one on the screen
-  main button.
+## Typography variants
 
-- <b>Secondary</b>. Secondary button. Can be used for any actions.
+Several typography elements are available in the library. They are listed below.
 
-```tsx live
-const SIZES = ['s', 'm', 'l'];
-```
+- Display (`variant=display`)
+- Heading (`variant=heading`)
+- Sub heading (`variant=subHeading`)
+- Body (`variant=body`)
+- Caption (`variant=caption`)
+- Overline (`variant=overline`)
+- Button (`variant=button`)
+
+The variant `heading` will generate an `<h...>` HTML tag corresponding to its size (e.g. `<h1>`, `<h2>`, etc).
+
+The variant caption will generate an HTML tag `<caption>`.
+
+The variant `body` will generate an HTML tag `<p>`.
+
+The variants `display`, `subHeading`, `overline`, and `button` will generate `<span>` HTML tags.
+
+## Typography sizes
+
+In the design prototypes, you will find the text variable accompanied by a number. This is the size and it ranges from `1` to `6`, where `1` is the biggest and `6` is the smallest.
+Simply include the desired number (e.g. `size=1`, `size=6`, etc) and it will match the font size requested by the designers.
+
+⚠️ **Important**: the font size will change automatically for variants **heading** and **display**, if necessary, on mobile devices. You don't need to worry about that!
+
+⚠️ **Important**: the `size` prop is not necessary for the variant `display`, as it will always be the same size.
+
+## Tyopography weights
+
+In the design prototypes, you will find the text variable accompanied by a number and a weight. They are descibed below.
+
+- Xbold (`weight=xbold`)
+- Bold (`weight=bold`)
+- Medium (`weight=medium`)
+- Regular (`weight=regular`)

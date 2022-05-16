@@ -1,0 +1,79 @@
+@import '../../../themes/src/default.css';
+
+h1 {
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.04em;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 46px;
+  letter-spacing: -0.02em;
+}
+
+h3 {
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: -0.02em;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 35px;
+  letter-spacing: -0.02em;
+}
+
+h5 {
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+}
+
+h6 {
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: -0.01em;
+}
+
+.display {
+  font-size: 60px;
+  line-height: 68px;
+  letter-spacing: -2.5px;
+}
+
+.highlight {
+  background-color: var(--color-primary-700);
+  color: var(--color-championship-white);
+  padding: 1px 4px;
+}
+
+.overline {
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  h5 {
+    font-size: 16px;
+  }
+
+  .display {
+    font-size: 48px;
+  }
+}

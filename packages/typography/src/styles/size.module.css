@@ -1,0 +1,21 @@
+@import '../../../themes/src/default.css';
+
+.size_1 {
+  font-size: 18px;
+}
+
+.size_2 {
+  font-size: 16px;
+}
+
+.size_3 {
+  font-size: 14px;
+}
+
+.size_4 {
+  font-size: 12px;
+}
+
+.size_5 {
+  font-size: 10px;
+}

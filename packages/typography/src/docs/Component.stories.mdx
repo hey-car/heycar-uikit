@@ -27,7 +27,7 @@ export const TypographyTemplate = args => <Typography {...args} />;
 
 <Story
   name="Typography"
-  args={{ children: 'hallo', variant: 'secondary', size: 'middle' }}
+  args={{ children: 'hallo', variant: 'secondary', size: 1 }}
 >
   {TypographyTemplate.bind({})}
 </Story>
@@ -49,7 +49,6 @@ import { Typography } from '@hey-ui/typography';
   tabs={[
     { label: 'Description', component: <Description /> },
     { label: 'Props', component: <Props of={Typography} /> },
-    { label: 'CSS tokens', component: <CssVars css={styles} /> },
     { label: 'Changelog', component: <Changelog /> },
   ]}
 />
