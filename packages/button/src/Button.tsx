@@ -1,6 +1,8 @@
 import React from 'react';
 import cn from 'classnames';
 
+import ButtonIcon from './components/ButtonIcon';
+import ButtonLoader from './components/ButtonLoader';
 import { ButtonProps } from './Button.types';
 
 import styles from './styles/default.module.css';
@@ -14,36 +16,45 @@ const Button = React.forwardRef<
   (
     {
       children,
-      size = 'middle',
-      // color = 'primary',
-      variant = 'secondary',
-      // fullWidth,
-      // leftIcon,
-      // rightIcon,
-      // nowrap,
+      size = 'small',
+      color = 'secondary',
+      variant = 'contained',
+      fullWidth = false,
+      leftIcon,
+      rightIcon,
+      className,
+      loading,
       Component = 'button',
-      disabled,
-      onClick,
-      dataTestId,
+      ...restProps
     },
     ref,
   ) => {
     const classNames = cn(
       styles.button,
-      stylesSize[size],
+      stylesVariant[color],
       stylesVariant[variant],
+      stylesSize[size],
+      {
+        [styles.loading]: loading,
+        [styles.fullWidth]: fullWidth,
+      },
+      className,
     );
 
     return (
-      <Component
-        className={classNames}
-        data-test-id={dataTestId}
-        disabled={disabled}
-        onClick={onClick}
-        ref={ref}
-        type="button"
-      >
-        {children}
+      <Component {...restProps} className={classNames} ref={ref}>
+        {loading && <ButtonLoader className={styles.loader} />}
+        {leftIcon && (
+          <ButtonIcon className={styles.icon} side="left">
+            {leftIcon}
+          </ButtonIcon>
+        )}
+        <span className={styles.text}>{children}</span>
+        {rightIcon && (
+          <ButtonIcon className={styles.icon} side="right">
+            {rightIcon}
+          </ButtonIcon>
+        )}
       </Component>
     );
   },
@@ -56,7 +67,6 @@ Button.defaultProps = {
   color: 'secondary',
   variant: 'contained',
   fullWidth: false,
-  nowrap: false,
 };
 
 export default Button;

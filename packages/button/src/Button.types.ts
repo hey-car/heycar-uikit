@@ -8,7 +8,7 @@ export interface ComponentProps {
   /**
    * Set the size of the button
    */
-  size?: 'small' | 'large';
+  size?: 'small' | 'middle' | 'large';
   /**
    * Set the color of the button
    */
@@ -16,7 +16,7 @@ export interface ComponentProps {
   /**
    * View of the button
    */
-  variant?: 'contained' | 'outlined' | 'text';
+  variant?: 'contained' | 'outlined' | 'link';
   /**
    * If `true`, the button will take up the full width of its container.
    */
@@ -30,10 +30,6 @@ export interface ComponentProps {
    */
   rightIcon?: React.ReactNode;
   /**
-   * Text will not wrap to the next line
-   */
-  nowrap?: boolean;
-  /**
    * The component used for the root node. Either a string to use a HTML element or a component
    */
   Component?: React.ElementType;
@@ -41,6 +37,10 @@ export interface ComponentProps {
    * If true, the component is disabled.
    */
   disabled?: boolean;
+  /**
+   * If true, the button will show a spinner.
+   */
+  loading?: boolean;
   /**
    * The id for testing
    */

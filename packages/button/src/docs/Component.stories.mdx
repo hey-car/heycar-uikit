@@ -7,8 +7,10 @@ import Description from './Description.mdx';
 import Changelog from '../../CHANGELOG.md';
 import styles from '!!raw-loader!../styles/default.module.css';
 
-export const VIEWS = ['primary', 'secondary'];
-export const SIZES = ['small', 'middle', 'large'];
+import CallSvg from './Call';
+import MailSvg from './Mail';
+
+<!-- Meta -->
 
 <Meta
   title="Components/Button"
@@ -16,7 +18,26 @@ export const SIZES = ['small', 'middle', 'large'];
   argTypes={{
     children: {
       control: 'text',
-      type: { name: 'string', required: false },
+    },
+    Component: {
+      table: {
+        disable: true,
+      },
+    },
+    dataTestId: {
+      table: {
+        disable: true,
+      },
+    },
+    leftIcon: {
+      table: {
+        disable: true,
+      },
+    },
+    rightIcon: {
+      table: {
+        disable: true,
+      },
     },
   }}
 />
@@ -27,7 +48,14 @@ export const ButtonTemplate = args => <Button {...args} />;
 
 <Story
   name="Button"
-  args={{ children: 'button click', variant: 'secondary', size: 'middle' }}
+  args={{
+    children: 'Button CTA',
+    leftIcon: <MailSvg />,
+    variant: 'contained',
+    color: 'secondary',
+    size: 'small',
+    loading: true,
+  }}
 >
   {ButtonTemplate.bind({})}
 </Story>
@@ -37,13 +65,15 @@ export const ButtonTemplate = args => <Button {...args} />;
 <ComponentHeader
   name="Button"
   version={version}
-  stage={3}
+  stage={1}
   design="https://www.figma.com/"
 />
 
 ```tsx
 import { Button } from '@hey-ui/button';
 ```
+
+<!-- Description -->
 
 <TabContainer
   tabs={[

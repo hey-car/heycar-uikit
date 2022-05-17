@@ -90,7 +90,7 @@
   /*
     Sizes
   */
-  --size-s-height: var(--gap-3xl);
-  --size-m-height: var(--gap-5xl);
-  --size-l-height: var(--gap-7xl);
+  --size-small-height: var(--gap-3xl);
+  --size-middle-height: var(--gap-5xl);
+  --size-large-height: var(--gap-7xl);
 }

@@ -1,12 +1,11 @@
 @import '../../../themes/src/default.css';
 
-:root {
-  --button-inverted-primary-color: var(--color-light-text-primary-inverted);
-}
-
+/*
+* Base
+*/
 .button {
-  font-weight: var(--button-font-weight);
-  font-family: var(--font-family);
+  font-family: var(--font-family-system);
+  padding: var(--gap-2xs) var(--gap-xl);
   position: relative;
   display: inline-flex;
   vertical-align: middle;
@@ -22,4 +21,36 @@
   user-select: none;
   cursor: pointer;
   box-sizing: border-box;
+  text-decoration: none;
+  line-height: 1.2;
+  border-style: solid;
+
+  &:disabled,
+  &[disabled] {
+    cursor: default;
+    pointer-events: none;
+  }
+}
+
+/* Full width */
+.fullWidth {
+  display: flex;
+  width: 100%;
+}
+
+/* Loading */
+.loading .text,
+.loading .icon {
+  opacity: 0;
+}
+
+a.loading {
+  pointer-events: none;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
