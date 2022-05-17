@@ -1,1 +1,3 @@
-@import '../../../themes/src/default.css';
+.typography {
+  color: var(--color-text);
+}

@@ -3,8 +3,21 @@ The **Typography** component is used to display any types of text present on the
 In the design prototypes, when clicking on text, you will find a variable name like `H1-Bold`, `SH2-ExtraBold`, `Body4-Regular`.
 They describe the text variant (`H`: heading, `SH`: sub heading, `Body`: body, etc) followed by their size (`1`, `2`... `6`), and weight (`Extra bold`, `Bold`, `Regular`, etc).
 
-In our `<Typography>` component, there are four important props that need to me included so you can successfully implement the typography required by the designers.
-The props are `variant`, `size`, `weight`, and `isHighlighted`. You can find an explanation on how to use them below.
+In our `<Typography>` component, there are four important props that should be considered so you can successfully implement the typography required by the designers.
+
+The props are `variant`, `size`, `weight`, `color`, and `isHighlighted`.
+
+```tsx
+<Typography variant="heading" size="2" weight="xbold" color="primary-500">
+  Your heading here!
+</Typography>
+
+<Typography variant="caption" size="5">
+  Your caption here!
+</Typography>
+```
+
+You can find an explanation on how to use the props below.
 
 ## Typography variants
 
@@ -18,15 +31,21 @@ Several typography elements are available in the library. They are listed below.
 - Overline (`variant=overline`)
 - Button (`variant=button`)
 
-The variant `heading` will generate an `<h...>` HTML tag corresponding to its size (e.g. `<h1>`, `<h2>`, etc).
+If this prop is not set, the default is `variant=body`.
 
-The variant caption will generate an HTML tag `<caption>`.
+### HTML Tags
+
+The variant `heading` will generate an HTML tag `<h{size}>` corresponding to its size (e.g. `<h1>`, `<h2>`, etc).
+
+The variant `caption` will generate an HTML tag `<caption>`.
 
 The variant `body` will generate an HTML tag `<p>`.
 
 The variants `display`, `subHeading`, `overline`, and `button` will generate `<span>` HTML tags.
 
-## Typography sizes
+All variants consider the `font-weight` and `letter-spacing` properties according to what's required by the design system.
+
+## Typography font sizes
 
 In the design prototypes, you will find the text variable accompanied by a number. This is the size and it ranges from `1` to `6`, where `1` is the biggest and `6` is the smallest.
 Simply include the desired number (e.g. `size=1`, `size=6`, etc) and it will match the font size requested by the designers.
@@ -35,7 +54,9 @@ Simply include the desired number (e.g. `size=1`, `size=6`, etc) and it will mat
 
 ⚠️ **Important**: the `size` prop is not necessary for the variant `display`, as it will always be the same size.
 
-## Typography weights
+If this prop is not set, the default is `size=2`.
+
+## Typography font weights
 
 In the design prototypes, you will find the text variable accompanied by a number and a weight. They are descibed below.
 
@@ -44,6 +65,20 @@ In the design prototypes, you will find the text variable accompanied by a numbe
 - Medium (`weight=medium`)
 - Regular (`weight=regular`)
 
+If this prop is not set, the default is `weight=regular`.
+
+## Typography font colors
+
+You are able to assign any color from **hey-ui** to your text.
+
+In order to do this, simply include the name of the color and shade that you want as the prop `color`, e.g. `color="primary-500"`, `color="warning-700"`, `color="highlight-300"`, etc.
+
+You can find all available colors in the Theme documentation of this Storybook.
+
+If this prop is not set, the default is `color=neutral-700`.
+
 ## Typography highlight
 
-If you want to highlight a text, simply include the `isHighlighted` prop and the text will be highlighted in green.
+If you want to highlight a text, simply include the `isHighlighted` prop and the text will be highlighted in default green color.
+
+If this prop is not set, the default is `false`.

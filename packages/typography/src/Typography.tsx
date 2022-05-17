@@ -12,6 +12,7 @@ export const Typography: React.FC<TypographyProps> = ({
   variant = 'body',
   size = 2,
   weight = 'regular',
+  color = 'neutral-700',
   isHighlighted = false,
   dataTestId,
   className,
@@ -36,10 +37,17 @@ export const Typography: React.FC<TypographyProps> = ({
       variant !== 'display' &&
       stylesSize[`size_${size}`],
     {
-      [styles.highlight]: isHighlighted,
+      [stylesVariant.highlight]: isHighlighted,
     },
     className,
   );
+
+  if (color !== 'neutral-700') {
+    document.documentElement.style.setProperty(
+      '--color-text',
+      `var(--color-${color})`,
+    );
+  }
 
   return (
     <TypographyTag className={classNames} data-test-id={dataTestId}>

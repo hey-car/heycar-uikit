@@ -27,7 +27,11 @@ export const TypographyTemplate = args => <Typography {...args} />;
 
 <Story
   name="Typography"
-  args={{ children: 'hallo', variant: 'secondary', size: 1 }}
+  args={{
+    children: 'The quick brown fox jumps over the lazy dog',
+    variant: 'heading',
+    size: 1,
+  }}
 >
   {TypographyTemplate.bind({})}
 </Story>
