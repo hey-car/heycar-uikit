@@ -42,15 +42,12 @@ export const Typography: React.FC<TypographyProps> = ({
     className,
   );
 
-  if (color !== 'neutral-700') {
-    document.documentElement.style.setProperty(
-      '--color-text',
-      `var(--color-${color})`,
-    );
-  }
-
   return (
-    <TypographyTag className={classNames} data-test-id={dataTestId}>
+    <TypographyTag
+      className={classNames}
+      data-test-id={dataTestId}
+      style={{ color: `var(--color-${color})` }}
+    >
       {children}
     </TypographyTag>
   );
