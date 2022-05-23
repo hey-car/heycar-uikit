@@ -4,6 +4,7 @@
 * Vars
 */
 :root {
+  /* Sizes */
   --button-small-height: var(--size-small-height);
   --button-middle-height: var(--size-middle-height);
   --button-large-height: var(--size-large-height);

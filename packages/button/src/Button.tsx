@@ -16,7 +16,7 @@ const Button = React.forwardRef<
   (
     {
       children,
-      size = 'small',
+      size = 'middle',
       color = 'secondary',
       variant = 'contained',
       fullWidth = false,
@@ -63,7 +63,7 @@ const Button = React.forwardRef<
 Button.displayName = 'Button';
 
 Button.defaultProps = {
-  size: 'small',
+  size: 'middle',
   color: 'secondary',
   variant: 'contained',
   fullWidth: false,

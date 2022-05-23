@@ -1,11 +1,13 @@
 import { Meta, Story, Props } from '@storybook/addon-docs';
 import { ComponentHeader, CssVars, TabContainer } from 'storybook/blocks';
 
-import Button from '../';
+import Button from '../Button';
 import { version } from '../../package.json';
 import Description from './Description.mdx';
 import Changelog from '../../CHANGELOG.md';
 import styles from '!!raw-loader!../styles/default.module.css';
+import sizeStyles from '!!raw-loader!../styles/size.module.css';
+import variantStyles from '!!raw-loader!../styles/variant.module.css';
 
 import CallSvg from './Call';
 import MailSvg from './Mail';
@@ -66,11 +68,11 @@ export const ButtonTemplate = args => <Button {...args} />;
   name="Button"
   version={version}
   stage={1}
-  design="https://www.figma.com/"
+  design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Design-System?node-id=1111%3A116509"
 />
 
 ```tsx
-import { Button } from '@hey-ui/button';
+import Button from '@hey-ui/button';
 ```
 
 <!-- Description -->
@@ -79,7 +81,16 @@ import { Button } from '@hey-ui/button';
   tabs={[
     { label: 'Description', component: <Description /> },
     { label: 'Props', component: <Props of={Button} /> },
-    { label: 'CSS tokens', component: <CssVars css={styles} /> },
+    {
+      label: 'CSS tokens',
+      component: (
+        <CssVars
+          css={`
+            ${styles}${sizeStyles}${variantStyles}
+          `}
+        />
+      ),
+    },
     { label: 'Changelog', component: <Changelog /> },
   ]}
 />

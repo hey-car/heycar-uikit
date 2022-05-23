@@ -44,8 +44,12 @@
   opacity: 0;
 }
 
-a.loading {
+.loading {
   pointer-events: none;
+
+  &:hover {
+    background: currentColor;
+  }
 }
 
 .loader {
