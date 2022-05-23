@@ -13,10 +13,12 @@ const componentsContext = require.context(
 const requireComponents = (context: __WebpackModuleApi.RequireContext) =>
   context.keys().reduce((acc: Record<string, ComponentType<unknown>>, key) => {
     Object.entries(context(key)).forEach(
-      ([componentName, component]: [string, any]) => {
-        if (['default', '__esModule'].includes(componentName)) return;
+      ([, component]: [string, any]) => {
+        const { displayName } = component;
 
-        acc[componentName] = component;
+        if (['default', '__esModule'].includes(displayName)) return;
+
+        acc[displayName] = component;
       },
     );
 
