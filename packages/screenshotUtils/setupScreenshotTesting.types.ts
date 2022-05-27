@@ -1,4 +1,4 @@
-import { MatchHtmlParams } from './helpers';
+import { MatchHtmlParams } from './helpers.types';
 
 export type ScreenshotTestingParams = Omit<
   MatchHtmlParams,
