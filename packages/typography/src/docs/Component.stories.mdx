@@ -7,9 +7,6 @@ import Description from './Description.mdx';
 import Changelog from '../../CHANGELOG.md';
 import styles from '!!raw-loader!../styles/default.module.css';
 
-export const VIEWS = ['primary', 'secondary'];
-export const SIZES = ['small', 'middle', 'large'];
-
 <Meta
   title="Components/Typography"
   component={Typography}
@@ -39,8 +36,7 @@ export const TypographyTemplate = args => <Typography {...args} />;
   name="Typography"
   args={{
     children: 'The quick brown fox jumps over the lazy dog',
-    variant: 'heading',
-    size: 1,
+    variant: 'body.1',
   }}
 >
   {TypographyTemplate.bind({})}
@@ -52,7 +48,7 @@ export const TypographyTemplate = args => <Typography {...args} />;
   name="Typography"
   version={version}
   stage={3}
-  design="https://www.figma.com/"
+  design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Design-System?node-id=1369%3A39089"
 />
 
 ```tsx

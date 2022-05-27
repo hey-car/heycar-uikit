@@ -4,50 +4,40 @@ import cn from 'classnames';
 import type { TypographyProps } from './Typography.types';
 
 import styles from './styles/default.module.css';
-import stylesSize from './styles/size.module.css';
 import stylesVariant from './styles/variant.module.css';
-import stylesWeight from './styles/weight.module.css';
 
 export const Typography: React.FC<TypographyProps> = ({
-  variant = 'body',
-  size = 2,
-  weight = 'regular',
-  color = 'neutral-700',
-  isHighlighted = false,
+  variant = 'body.3',
+  highlighted = false,
   dataTestId,
   className,
+  customTag,
   children,
 }) => {
-  const getTypographyTag = (variantType: string) => {
-    if (variantType === 'heading') return `h${size}`;
-    else if (variantType === 'body') return 'p';
-    else if (variantType === 'caption') return 'caption';
+  const [variantName, variantSize] = variant.toLowerCase().split('.');
+  const getTypographyTag = (name: string, size: string) => {
+    if (name === 'h') return `h${size}`;
+    else if (name === 'body' || name === 'display') return 'p';
+    else if (name === 'caption') return 'caption';
 
     return 'span';
   };
-  const TypographyTag = getTypographyTag(
-    variant,
-  ) as keyof JSX.IntrinsicElements;
+  const TypographyTag =
+    customTag ||
+    (getTypographyTag(variantName, variantSize) as keyof JSX.IntrinsicElements);
 
   const classNames = cn(
     styles.typography,
-    stylesVariant[variant],
-    stylesWeight[weight],
-    variant !== 'heading' &&
-      variant !== 'display' &&
-      stylesSize[`size_${size}`],
+    stylesVariant[`typography__${variantName}`],
+    stylesVariant[`typography__${variantName}_${variantSize}`],
     {
-      [stylesVariant.highlight]: isHighlighted,
+      [stylesVariant.typography__highlight]: highlighted,
     },
     className,
   );
 
   return (
-    <TypographyTag
-      className={classNames}
-      data-test-id={dataTestId}
-      style={{ color: `var(--color-${color})` }}
-    >
+    <TypographyTag className={classNames} data-test-id={dataTestId}>
       {children}
     </TypographyTag>
   );
