@@ -9,9 +9,6 @@ import styles from '!!raw-loader!../styles/default.module.css';
 import sizeStyles from '!!raw-loader!../styles/size.module.css';
 import variantStyles from '!!raw-loader!../styles/variant.module.css';
 
-import CallSvg from './Call';
-import MailSvg from './Mail';
-
 <!-- Meta -->
 
 <Meta
@@ -52,11 +49,10 @@ export const ButtonTemplate = args => <Button {...args} />;
   name="Button"
   args={{
     children: 'Button CTA',
-    leftIcon: <MailSvg />,
     variant: 'contained',
     color: 'secondary',
     size: 'small',
-    loading: true,
+    loading: false,
   }}
 >
   {ButtonTemplate.bind({})}

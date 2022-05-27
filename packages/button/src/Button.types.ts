@@ -8,7 +8,7 @@ export interface ComponentProps {
   /**
    * Set the size of the button
    */
-  size?: 'small' | 'middle' | 'large';
+  size?: 'small' | 'large';
   /**
    * Set the color of the button
    */
