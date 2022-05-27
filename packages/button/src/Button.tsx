@@ -16,13 +16,14 @@ const Button = React.forwardRef<
   (
     {
       children,
-      size = 'middle',
+      size = 'large',
       color = 'secondary',
       variant = 'contained',
-      fullWidth = false,
+      fullWidth,
       leftIcon,
       rightIcon,
       className,
+      dataTestId,
       loading,
       Component = 'button',
       ...restProps
@@ -42,7 +43,12 @@ const Button = React.forwardRef<
     );
 
     return (
-      <Component {...restProps} className={classNames} ref={ref}>
+      <Component
+        data-test-id={dataTestId}
+        {...restProps}
+        className={classNames}
+        ref={ref}
+      >
         {loading && <ButtonLoader className={styles.loader} />}
         {leftIcon && (
           <ButtonIcon className={styles.icon} side="left">
@@ -63,7 +69,7 @@ const Button = React.forwardRef<
 Button.displayName = 'Button';
 
 Button.defaultProps = {
-  size: 'middle',
+  size: 'large',
   color: 'secondary',
   variant: 'contained',
   fullWidth: false,
