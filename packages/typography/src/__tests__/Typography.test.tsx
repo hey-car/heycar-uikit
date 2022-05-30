@@ -27,7 +27,7 @@ describe('Typography', () => {
 
     it('should have correct html tag', () => {
       const { container } = render(
-        <Typography customTag="span" variant="h.1">
+        <Typography Component="span" variant="h.1">
           {pangram}
         </Typography>,
       );

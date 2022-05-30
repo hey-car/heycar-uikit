@@ -14,6 +14,7 @@
     "lint:css": "stylelint ./packages/**/*.css",
     "lint:js": "eslint ./packages --ext .ts,.tsx,.js,.jsx",
     "test": "jest --watchAll=false",
+    "coverage": "jest --coverage",
     "test:screenshots": "jest --config=jest.screenshots.config.js",
     "test:sh:docker": "docker run -it --entrypoint /app/bin/dockerTestScreenshots.sh --rm -v ${PWD}:/app --ipc=host mcr.microsoft.com/playwright:focal /bin/bash",
     "test:sh:update": "docker run -it --env SCREENSHOTS_UPDATE=1 --entrypoint /app/bin/dockerTestScreenshots.sh --rm -v ${PWD}:/app --ipc=host mcr.microsoft.com/playwright:focal /bin/bash",
