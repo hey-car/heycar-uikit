@@ -1,11 +1,10 @@
 import {
-  closeBrowser,
   createStorybookUrl,
-  matchHtml,
-  openBrowserPage,
   setupScreenshotTesting,
 } from '../../../screenshotUtils';
 
+const packageName = 'typography';
+const buttonVariants = ['display.1', 'h.1', 'h.2', 'h.3', 'h.4', 'h.5', 'h.6'];
 const screenshotTesting = setupScreenshotTesting({
   it,
   beforeAll,
@@ -13,44 +12,18 @@ const screenshotTesting = setupScreenshotTesting({
   expect,
 });
 
-const packageName = 'typography';
-
 describe(
-  'Typography',
+  'Typography variants',
   screenshotTesting({
-    cases: [
-      [
-        'sprite',
-        createStorybookUrl({
-          packageName,
-          knobs: {
-            children: 'text example',
-            variant: 'h.1',
-            dataTestId: 'typography',
-          },
-        }),
-      ],
-    ],
+    cases: buttonVariants.map(variant => [
+      'sprite',
+      createStorybookUrl({
+        packageName,
+        knobs: {
+          variant,
+          children: 'typography text',
+        },
+      }),
+    ]),
   }),
 );
-
-describe('Typography test', () => {
-  test('Typography general', async () => {
-    const pageUrl = createStorybookUrl({
-      packageName,
-    });
-
-    const { browser, context, page } = await openBrowserPage(pageUrl);
-
-    try {
-      await matchHtml({
-        page,
-        expect,
-      });
-    } catch (error: unknown) {
-      console.error(error);
-    } finally {
-      await closeBrowser({ browser, context, page });
-    }
-  });
-});
