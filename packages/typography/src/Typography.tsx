@@ -4,7 +4,6 @@ import cn from 'classnames';
 import type { TypographyProps } from './Typography.types';
 import { defaultVariantMapping } from './Typography.types';
 
-import styles from './styles/default.module.css';
 import stylesVariant from './styles/variant.module.css';
 
 export const Typography: React.FC<TypographyProps> = ({
@@ -18,7 +17,6 @@ export const Typography: React.FC<TypographyProps> = ({
   const [variantName, variantSize] = variant.toLowerCase().split('.');
 
   const classNames = cn(
-    styles.typography,
     stylesVariant[`typography__${variantName}`],
     stylesVariant[`typography__${variantName}_${variantSize}`],
     {
