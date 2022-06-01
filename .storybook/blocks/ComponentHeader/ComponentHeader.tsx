@@ -27,7 +27,7 @@ export const ComponentHeader: React.FC<ComponentHeaderProps> = ({
     .replace(/([a-z0-9])([A-Z])/g, '$1-$2')
     .replace(/([A-Z])([A-Z])(?=[a-z])/g, '$1-$2')
     .toLowerCase();
-  const githubLink = `https://github.com/master/packages/${packageName}`;
+  const githubLink = `https://github.com/hey-car/hey-ui/tree/main/packages/${packageName}`;
 
   return (
     <div className={styles.component}>

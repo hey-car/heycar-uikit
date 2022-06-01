@@ -1,5 +1,10 @@
 import { MatchImageSnapshotOptions } from 'jest-image-snapshot';
-import { Browser, BrowserContext, Page } from 'playwright';
+import {
+  Browser,
+  BrowserContext,
+  Page,
+  PageScreenshotOptions,
+} from 'playwright';
 
 export type CustomSnapshotIdentifierParams = {
   currentTestName: string;
@@ -20,4 +25,5 @@ export type MatchHtmlParams = {
   page: Page;
   expect: jest.Expect;
   matchImageSnapshotOptions?: MatchImageSnapshotOptions;
+  screenshotOpts?: PageScreenshotOptions;
 };

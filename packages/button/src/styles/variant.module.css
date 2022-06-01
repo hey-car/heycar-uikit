@@ -1,37 +1,178 @@
 @import '../../../themes/src/default.css';
 
+/*
+* Vars
+*/
 :root {
+  /* disabled */
+  --button-disabled-color: var(--color-neutral-300);
+  --button-disabled-bg-color: var(--color-neutral-50);
+
   /* primary */
+  --button-primary-color: #fff;
   --button-primary-base-bg-color: var(--color-primary-500);
   --button-primary-hover-bg-color: var(--color-primary-600);
   --button-primary-active-bg-color: var(--color-primary-700);
 
   /* secondary */
+  --button-secondary-color: #fff;
   --button-secondary-base-bg-color: var(--color-secondary-500);
   --button-secondary-hover-bg-color: var(--color-secondary-600);
   --button-secondary-active-bg-color: var(--color-secondary-700);
+
+  /* tertiary */
+  --button-tertiary-color: var(--color-neutral-700);
+  --button-tertiary-base-bg-color: var(--color-tertiary-500);
+  --button-tertiary-hover-bg-color: var(--color-tertiary-600);
+  --button-tertiary-active-bg-color: var(--color-tertiary-700);
 }
 
+/*
+* Mixins
+*/
+@define-mixin button_color $color {
+  background: $color;
+  border-color: $color;
+  color: $color;
+
+  &:after {
+    border-color: $color;
+  }
+}
+
+/*
+* Colors
+*/
+
+/* primary */
 .primary {
-  background-color: var(--button-primary-base-bg-color);
+  @mixin button_color var(--button-primary-base-bg-color);
 
   &:hover {
-    background-color: var(--button-primary-hover-bg-color);
+    @mixin button_color var(--button-primary-hover-bg-color);
   }
 
   &:active {
-    background-color: var(--button-primary-active-bg-color);
+    @mixin button_color var(--button-primary-active-bg-color);
   }
 }
 
+/* secondary */
 .secondary {
-  background-color: var(--button-secondary-base-bg-color);
+  @mixin button_color var(--button-secondary-base-bg-color);
 
   &:hover {
-    background-color: var(--button-secondary-hover-bg-color);
+    @mixin button_color var(--button-secondary-hover-bg-color);
   }
 
   &:active {
-    background-color: var(--button-secondary-active-bg-color);
+    @mixin button_color var(--button-secondary-active-bg-color);
+  }
+}
+
+/* tertiary */
+.tertiary {
+  @mixin button_color var(--button-tertiary-base-bg-color);
+
+  &:hover {
+    @mixin button_color var(--button-tertiary-hover-bg-color);
+  }
+
+  &:active {
+    @mixin button_color var(--button-tertiary-active-bg-color);
+  }
+}
+
+/*
+* Variants
+*/
+
+/* contained */
+.contained {
+  &.primary {
+    color: var(--button-primary-color);
+  }
+
+  &.secondary {
+    color: var(--button-secondary-color);
+  }
+
+  &.tertiary {
+    color: var(--button-tertiary-color);
+  }
+
+  &:disabled,
+  &[disabled] {
+    background: var(--button-disabled-bg-color);
+    border-color: var(--button-disabled-bg-color);
+    color: var(--button-disabled-color);
+  }
+}
+
+/* outlined */
+.outlined {
+  background: transparent;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+    border-width: 1px;
+    border-colot: currentColor;
+    box-sizing: border-box;
+    z-index: 0;
+  }
+
+  &:hover {
+    background: transparent;
+
+    &:after {
+      border-width: 2px;
+    }
+  }
+
+  &:active {
+    background: none;
+  }
+
+  &.tertiary {
+    color: var(--button-tertiary-color);
+  }
+
+  &:disabled,
+  &[disabled] {
+    color: var(--button-disabled-color);
+    background: none;
+
+    &:after {
+      border-color: var(--button-disabled-bg-color);
+    }
+  }
+}
+
+.link {
+  min-height: auto;
+  padding: 0;
+  background: transparent;
+  text-decoration: underline;
+  text-underline-offset: 1px;
+
+  &:hover {
+    background: transparent;
+    text-decoration-thickness: 2px;
+  }
+
+  &:active {
+    background: transparent;
+  }
+
+  &:disabled,
+  &[disabled] {
+    border-color: var(--button-disabled-color);
+    color: var(--button-disabled-color);
   }
 }

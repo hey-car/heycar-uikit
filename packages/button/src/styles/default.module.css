@@ -1,11 +1,60 @@
 @import '../../../themes/src/default.css';
 
-:root {
-  --button-inverted-primary-color: var(--color-light-text-primary-inverted);
+/*
+* Base
+*/
+.button {
+  font-family: var(--font-family-system);
+  padding: var(--gap-2xs) var(--gap-xl);
+  position: relative;
+  display: inline-flex;
+  vertical-align: middle;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 0;
+  border: 0;
+  outline: none;
+  box-shadow: none;
+  user-select: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  text-decoration: none;
+  line-height: 1.2;
+  border-style: solid;
+
+  &:disabled,
+  &[disabled] {
+    cursor: default;
+    pointer-events: none;
+  }
 }
 
-.component {
-  border: 0;
-  color: var(--button-inverted-primary-color);
-  font-weight: bold;
+/* Full width */
+.fullWidth {
+  display: flex;
+  width: 100%;
+}
+
+/* Loading */
+.loading .text,
+.loading .icon {
+  opacity: 0;
+}
+
+.loading {
+  pointer-events: none;
+
+  &:hover {
+    background: currentColor;
+  }
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
