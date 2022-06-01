@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <button
-        class="button secondary contained large"
+        class="button primary contained large"
       >
         <span
           class="text"
@@ -16,7 +16,7 @@ Object {
   </body>,
   "container": <div>
     <button
-      class="button secondary contained large"
+      class="button primary contained large"
     >
       <span
         class="text"
@@ -83,7 +83,7 @@ Object {
   "baseElement": <body>
     <div>
       <button
-        class="button secondary contained large"
+        class="button primary contained large"
         href="https://someurl.com"
       >
         <span
@@ -94,7 +94,7 @@ Object {
   </body>,
   "container": <div>
     <button
-      class="button secondary contained large"
+      class="button primary contained large"
       href="https://someurl.com"
     >
       <span
@@ -162,7 +162,7 @@ Object {
   "baseElement": <body>
     <div>
       <button
-        class="button secondary contained large"
+        class="button primary contained large"
       >
         <span
           class="text"
@@ -172,7 +172,7 @@ Object {
   </body>,
   "container": <div>
     <button
-      class="button secondary contained large"
+      class="button primary contained large"
     >
       <span
         class="text"
@@ -239,7 +239,7 @@ Object {
   "baseElement": <body>
     <div>
       <button
-        class="button secondary contained large"
+        class="button primary contained large"
       >
         <span
           class="icon icon icon_left"
@@ -254,7 +254,7 @@ Object {
   </body>,
   "container": <div>
     <button
-      class="button secondary contained large"
+      class="button primary contained large"
     >
       <span
         class="icon icon icon_left"
@@ -326,7 +326,7 @@ Object {
   "baseElement": <body>
     <div>
       <button
-        class="button secondary contained large loading"
+        class="button primary contained large loading"
         href="https://someurl.com"
       >
         <div
@@ -344,7 +344,7 @@ Object {
   </body>,
   "container": <div>
     <button
-      class="button secondary contained large loading"
+      class="button primary contained large loading"
       href="https://someurl.com"
     >
       <div
@@ -419,7 +419,7 @@ Object {
   "baseElement": <body>
     <div>
       <button
-        class="button secondary contained large loading"
+        class="button primary contained large loading"
       >
         <div
           class="loader loader"
@@ -436,7 +436,7 @@ Object {
   </body>,
   "container": <div>
     <button
-      class="button secondary contained large loading"
+      class="button primary contained large loading"
     >
       <div
         class="loader loader"
@@ -510,7 +510,7 @@ Object {
   "baseElement": <body>
     <div>
       <button
-        class="button secondary contained large"
+        class="button primary contained large"
       >
         <span
           class="text"
@@ -525,7 +525,7 @@ Object {
   </body>,
   "container": <div>
     <button
-      class="button secondary contained large"
+      class="button primary contained large"
     >
       <span
         class="text"
