@@ -1,25 +1,24 @@
 @import '../../../themes/src/default.css';
 
+/*
+* Vars
+*/
 :root {
-  --button-small-height: var(--size-s-height);
-  --button-middle-height: var(--size-m-height);
-  --button-large-height: var(--size-l-height);
+  /* Sizes */
+  --button-small-height: var(--size-small-height);
+  --button-large-height: var(--size-large-height);
 }
 
+/*
+* Sizes
+*/
 .small {
-  padding: var(--gap-xl);
-  height: var(--button-small-height);
-  font-size: 16px;
-}
-
-.middle {
-  padding: var(--gap-xl);
-  height: var(--button-middle-height);
-  font-size: 16px;
+  min-height: var(--button-small-height);
+  padding: var(--gap-2xs) var(--gap-s);
+  @mixin button_small__medium;
 }
 
 .large {
-  padding: var(--gap-xl);
-  height: var(--button-large-height);
-  font-size: 18px;
+  min-height: var(--button-large-height);
+  @mixin button_large__bold;
 }

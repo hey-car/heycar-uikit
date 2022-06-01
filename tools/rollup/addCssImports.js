@@ -13,7 +13,7 @@ const addCssImports = ({ currentPackageDir }) => {
         if (searchResult && searchResult.length) {
           searchResult.forEach(match => {
             const cssFileName = match.replace(/,"cssfilepath":"(.*?)"/g, '$1');
-            const distDir = path.resolve(currentPackageDir, 'dist/styles');
+            const distDir = path.resolve(currentPackageDir, 'dist');
             const bundleAbsPath = path.join(distDir, bundleName);
             const bundleDir = path.dirname(bundleAbsPath);
             const cssRelativePath = path.relative(bundleDir, cssFileName);
