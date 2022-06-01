@@ -17,7 +17,7 @@ const Button = React.forwardRef<
     {
       children,
       size = 'large',
-      color = 'secondary',
+      color = 'primary',
       variant = 'contained',
       fullWidth,
       leftIcon,
@@ -70,7 +70,7 @@ Button.displayName = 'Button';
 
 Button.defaultProps = {
   size: 'large',
-  color: 'secondary',
+  color: 'primary',
   variant: 'contained',
   fullWidth: false,
 };

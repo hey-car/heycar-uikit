@@ -1,14 +1,17 @@
 import { Container, Row, Col } from 'storybook/blocks';
 import Button from '../Button';
 
-## Variants of the button
+## Variants
+
+Use the `variant` prop to change the visual style of the Button.
+You can set the value to solid, `contained` (default), `outlined`, and `link`.
 
 ```tsx live
 const buttonVariants = ['contained', 'outlined', 'link'];
 
 render(
   <Container>
-    <Row align="large">
+    <Row align="middle">
       {buttonVariants.map(variant => (
         <Col key={variant}>
           <Button size="large" variant={variant}>
@@ -21,7 +24,9 @@ render(
 );
 ```
 
-## Sizes of the button
+## Sizes
+
+Use the size prop to change the size of the button. You can set the value to `large` or `small`.
 
 ```tsx live
 const buttonSizes = ['large', 'small'];
@@ -59,7 +64,41 @@ render(
 );
 ```
 
-## Button with icons
+## Colors
+
+Use the `color` prop to change the color of the Button.
+You can set the value to solid, `primary` (default), `secondary`, and `tertiary`.
+
+```tsx live
+const buttonColors = ['primary', 'secondary', 'tertiary'];
+
+render(
+  <Container>
+    <Row align="middle">
+      {buttonColors.map(color => (
+        <Col key={color}>
+          <Button size="large" color={color}>
+            Button CTA
+          </Button>
+        </Col>
+      ))}
+    </Row>
+    <Row align="middle">
+      {buttonColors.map(color => (
+        <Col key={color}>
+          <Button size="large" variant="outlined" color={color}>
+            Button CTA
+          </Button>
+        </Col>
+      ))}
+    </Row>
+  </Container>,
+);
+```
+
+## Button with icon
+
+You can add left and right icons to the Button component using the `leftIcon` and `rightIcon` props respectively.
 
 ```tsx live
 const buttonSizes = ['large', 'small'];
@@ -97,6 +136,8 @@ render(
 
 ## Button loading state
 
+Pass the `loading` prop to show its loading state. By default, the button will show a spinner and leave the button's width unchanged.
+
 ```tsx live
 const buttonSizes = ['large', 'small'];
 
@@ -124,7 +165,9 @@ render(
 );
 ```
 
-## Full width button
+## Full width Button
+
+Pass the `fullWidth` prop to the button will take up the full width of its container.
 
 ```tsx live
 const buttonSizes = ['large', 'small'];
