@@ -5,7 +5,7 @@
 [![Demo build](https://github.com/hey-car/hey-ui/actions/workflows/main.yml/badge.svg)](https://github.com/hey-car/hey-ui/actions/workflows/main.yml)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
-[Storybook](https://hey-car.github.io/hey-ui/master/) documentation and sandbox
+[Storybook](https://hey-car.github.io/hey-ui/main/) documentation and sandbox
 
 ## Get started with the storybook
 
