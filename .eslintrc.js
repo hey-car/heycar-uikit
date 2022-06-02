@@ -26,7 +26,6 @@ module.exports = {
     'prettier',
     'cypress',
     'simple-import-sort',
-    'dirnames',
     'unicorn',
     'jsx-a11y',
   ],
@@ -243,7 +242,6 @@ module.exports = {
         noUselessIndex: true,
       },
     ],
-    'dirnames/match-kebab-case': 'error',
     'unicorn/filename-case': [
       'error',
       {

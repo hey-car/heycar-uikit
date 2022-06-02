@@ -16,11 +16,12 @@ const bundleCss = (packageName, packageVersion, currentComponentName, dist) => {
       .substring(file.lastIndexOf('/') + 1, file.length)
       .toLowerCase()
       .replace('.module', '');
+    const folderName = path.basename(file.substring(0, file.lastIndexOf('/')));
 
     config.push(
       postcss({
         include: file,
-        extract: path.resolve(`${dist}/${filename}`),
+        extract: path.resolve(`${dist}/${folderName}/${filename}`),
         modules: {
           generateScopedName: function (name, fileName) {
             const relativeFileName = path.relative(currentPackageDir, fileName);

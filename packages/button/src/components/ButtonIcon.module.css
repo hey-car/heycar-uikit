@@ -1,0 +1,21 @@
+@import '../../../themes/src/default.css';
+
+/* Icon */
+.icon {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  margin: 0;
+
+  &:only-child {
+    margin: 0;
+  }
+}
+
+.icon_left {
+  padding-right: var(--gap-xs);
+}
+
+.icon_right {
+  padding-left: var(--gap-xs);
+}

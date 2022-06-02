@@ -1,33 +1,77 @@
 :root {
+  /* heycar mint color */
+  --color-heycar-mint-50: #e6faf6;
+  --color-heycar-mint-100: #ccf5ed;
+  --color-heycar-mint-200: #99ebdb;
+  --color-heycar-mint-300: #66e2c9;
+  --color-heycar-mint-400: #33d8b7;
+  --color-heycar-mint-500: #00cea5;
+  --color-heycar-mint-600: #00a584;
+  --color-heycar-mint-700: #007c63;
+  --color-heycar-mint-800: #005242;
+  --color-heycar-mint-900: #002921;
+
+  /* mica blue color */
   --color-mica-blue-50: #e8edf6;
   --color-mica-blue-100: #d0dbed;
   --color-mica-blue-200: #a2b7da;
   --color-mica-blue-300: #7394c8;
-  --color-mica-blue-400: #164ca3;
-  --color-mica-blue-500: #052962;
-  --color-mica-blue-600: #04214e;
-  --color-mica-blue-800: #021027;
-  --color-mica-blue-900: #010814;
-  --color-min-50: #e6faf6;
-  --color-min-100: #ccf5ed;
-  --color-min-200: #99eddb;
-  --color-min-300: #66e2c9;
-  --color-min-400: #33d8b7;
-  --color-min-500: #00cea5;
-  --color-min-600: #00a584;
-  --color-min-700: #00846a;
-  --color-min-800: #0f6554;
-  --color-min-900: #054236;
-  --color-grey-50: #f5f5f5;
-  --color-grey-100: #d6d6d6;
-  --color-grey-200: #c1c1c1;
-  --color-grey-300: #acacac;
-  --color-grey-400: #989898;
-  --color-grey-500: #838383;
-  --color-grey-600: #595959;
-  --color-grey-700: #303030;
-  --color-grey-800: #262626;
-  --color-grey-900: #1d1d1d;
+  --color-mica-blue-400: #4570b5;
+  --color-mica-blue-500: #164ca3;
+  --color-mica-blue-600: #123d82;
+  --color-mica-blue-700: #0d2e62;
+  --color-mica-blue-800: #091e41;
+  --color-mica-blue-900: #040f21;
+
+  /* sunbeam blue color */
+  --color-sunbeam-blue-50: #f9fdff;
+  --color-sunbeam-blue-100: #f2faff;
+  --color-sunbeam-blue-200: #e6f5ff;
+  --color-sunbeam-blue-300: #d9f0ff;
+  --color-sunbeam-blue-400: #cdebff;
+  --color-sunbeam-blue-500: #c0e6ff;
+  --color-sunbeam-blue-600: #9bd1f4;
+  --color-sunbeam-blue-700: #73b6e1;
+  --color-sunbeam-blue-800: #4499cf;
+  --color-sunbeam-blue-900: #2b6f99;
+
+  /* mustang yellow color */
+  --color-mustang-yellow-50: #fef8eb;
+  --color-mustang-yellow-100: #fef0d8;
+  --color-mustang-yellow-200: #fde1b0;
+  --color-mustang-yellow-300: #fbd289;
+  --color-mustang-yellow-400: #fac361;
+  --color-mustang-yellow-500: #f9b43a;
+  --color-mustang-yellow-600: #e29a1a;
+  --color-mustang-yellow-700: #c9850c;
+  --color-mustang-yellow-800: #ae7000;
+  --color-mustang-yellow-900: #895800;
+
+  /* old ferrari red color */
+  --color-old-ferrari-red-50: #fff1ef;
+  --color-old-ferrari-red-100: #ffe3df;
+  --color-old-ferrari-red-200: #ffc8be;
+  --color-old-ferrari-red-300: #ffac9e;
+  --color-old-ferrari-red-400: #ff917d;
+  --color-old-ferrari-red-500: #ff755d;
+  --color-old-ferrari-red-600: #f46147;
+  --color-old-ferrari-red-700: #e24529;
+  --color-old-ferrari-red-800: #d73013;
+  --color-old-ferrari-red-900: #c7270a;
+
+  /* -- fantasy name of "green" color to be defined -- */
+  --color-green-50: #e9f3ed;
+  --color-green-100: #d2e8db;
+  --color-green-200: #a5d1b8;
+  --color-green-300: #79b994;
+  --color-green-400: #4ca271;
+  --color-green-500: #1f8b4d;
+  --color-green-600: #196f3e;
+  --color-green-700: #13532e;
+  --color-green-800: #0c381f;
+  --color-green-900: #061c0f;
+
+  /* -- fantasy name of "red" color to be defined -- */
   --color-red-50: #fdeeee;
   --color-red-100: #fbdddd;
   --color-red-200: #f7bcbc;
@@ -38,34 +82,22 @@
   --color-red-700: #c61a1a;
   --color-red-800: #b90606;
   --color-red-900: #a00;
-  --color-sunbeam-50: #f9fdff;
-  --color-sunbeam-100: #f2faff;
-  --color-sunbeam-200: #e6f5ff;
-  --color-sunbeam-300: #d9f0ff;
-  --color-sunbeam-400: #cdebff;
-  --color-sunbeam-500: #c0e6ff;
-  --color-sunbeam-600: #9bd1f4;
-  --color-sunbeam-700: #73b6e1;
-  --color-sunbeam-800: #4499cf;
-  --color-sunbeam-900: #388dc2;
-  --color-green-50: #e9f7ef;
-  --color-green-100: #d4efdf;
-  --color-green-200: #a9dfbf;
-  --color-green-300: #7dcea0;
-  --color-green-400: #52be80;
-  --color-green-500: #27ae60;
-  --color-green-600: #1f8b4d;
-  --color-green-700: #17683a;
-  --color-green-800: #104626;
-  --color-green-900: #082313;
-  --color-yellow-50: #fef8eb;
-  --color-yellow-100: #fde9c4;
-  --color-yellow-200: #fde1b0;
-  --color-yellow-300: #fbd289;
-  --color-yellow-400: #fac361;
-  --color-yellow-500: #f9b43a;
-  --color-yellow-600: #c7902e;
-  --color-yellow-700: #956c23;
-  --color-yellow-800: #644817;
-  --color-yellow-900: #32240c;
+
+  /* tarmac grey color */
+  --color-tarmac-grey-50: #f3f3f3;
+  --color-tarmac-grey-100: #e6e6e6;
+  --color-tarmac-grey-200: #cdcdcd;
+  --color-tarmac-grey-300: #b5b5b5;
+  --color-tarmac-grey-400: #9c9c9c;
+  --color-tarmac-grey-500: #838383;
+  --color-tarmac-grey-600: #595959;
+  --color-tarmac-grey-700: #303030;
+  --color-tarmac-grey-800: #262626;
+  --color-tarmac-grey-900: #1d1d1d;
+
+  /* brand colors */
+  --color-heycar-mint: var(--color-heycar-mint-500);
+  --color-mica-blue: #052962;
+  --color-sunbeam-blue: var(--color-sunbeam-blue-500);
+  --color-championship-white: #fff;
 }

@@ -1,14 +1,15 @@
 import { Meta, Story, Props } from '@storybook/addon-docs';
 import { ComponentHeader, CssVars, TabContainer } from 'storybook/blocks';
 
-import Button from '../';
+import Button from '../Button';
 import { version } from '../../package.json';
 import Description from './Description.mdx';
 import Changelog from '../../CHANGELOG.md';
 import styles from '!!raw-loader!../styles/default.module.css';
+import sizeStyles from '!!raw-loader!../styles/size.module.css';
+import variantStyles from '!!raw-loader!../styles/variant.module.css';
 
-export const VIEWS = ['primary', 'secondary'];
-export const SIZES = ['small', 'middle', 'large'];
+<!-- Meta -->
 
 <Meta
   title="Components/Button"
@@ -16,7 +17,26 @@ export const SIZES = ['small', 'middle', 'large'];
   argTypes={{
     children: {
       control: 'text',
-      type: { name: 'string', required: false },
+    },
+    Component: {
+      table: {
+        disable: true,
+      },
+    },
+    dataTestId: {
+      table: {
+        disable: true,
+      },
+    },
+    leftIcon: {
+      table: {
+        disable: true,
+      },
+    },
+    rightIcon: {
+      table: {
+        disable: true,
+      },
     },
   }}
 />
@@ -27,7 +47,13 @@ export const ButtonTemplate = args => <Button {...args} />;
 
 <Story
   name="Button"
-  args={{ children: 'button click', variant: 'secondary', size: 'middle' }}
+  args={{
+    children: 'Button CTA',
+    variant: 'contained',
+    color: 'primary',
+    size: 'large',
+    loading: false,
+  }}
 >
   {ButtonTemplate.bind({})}
 </Story>
@@ -37,19 +63,32 @@ export const ButtonTemplate = args => <Button {...args} />;
 <ComponentHeader
   name="Button"
   version={version}
-  stage={3}
-  design="https://www.figma.com/"
+  stage={1}
+  design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Design-System?node-id=1111%3A116509"
 />
 
+The Button component is used to trigger an action or event, such as submitting a form, opening a dialog, canceling an action, or performing a delete operation.
+
 ```tsx
-import { Button } from '@hey-ui/button';
+import Button from '@hey-ui/button';
 ```
 
+<!-- Description -->
+
 <TabContainer
-    tabs={[
-        {label: 'Description', component: <Description />},
-        {label: 'Props', component: <Props of={Button} />},
-        {label: 'CSS tokens', component: <CssVars css={styles} />},
-        {label: 'Changelog', component: <Changelog />}
-    ]}
+  tabs={[
+    { label: 'Description', component: <Description /> },
+    { label: 'Props', component: <Props of={Button} /> },
+    {
+      label: 'CSS tokens',
+      component: (
+        <CssVars
+          css={`
+            ${styles}${sizeStyles}${variantStyles}
+          `}
+        />
+      ),
+    },
+    { label: 'Changelog', component: <Changelog /> },
+  ]}
 />

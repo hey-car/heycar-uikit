@@ -5,21 +5,21 @@
 }
 
 .proposal {
-  color: var(--color-grey-700);
-  background-color: var(--color-grey-50);
+  color: var(--color-tarmac-grey-700);
+  background-color: var(--color-tarmac-grey-50);
 }
 
 .in_development {
-  color: var(--color-sunbeam-900);
-  background-color: var(--color-sunbeam-100);
+  color: var(--color-sunbeam-blue-900);
+  background-color: var(--color-sunbeam-blue-100);
 }
 
 .in_review {
-  color: var(--color-yellow-900);
-  background-color: var(--color-yellow-200);
+  color: var(--color-mustang-yellow-900);
+  background-color: var(--color-mustang-yellow-200);
 }
 
 .recommendation {
-  color: var(--color-min-600);
+  color: var(--color-heycar-mint-600);
   background-color: var(--color-green-50);
 }

@@ -1,0 +1,7 @@
+:root {
+  /* TODO: shadows are not yet completely decided by the design team. this must be checked in the future */
+  --shadow-none: 'none';
+  --shadow-xs: 0 2px 4px rgba(2, 16, 39, 0.04);
+  --shadow-s: 0 4px 8px rgba(2, 16, 39, 0.06);
+  --shadow-sm: 0 6px 12px rgba(2, 16, 39, 0.1);
+}
