@@ -39,15 +39,11 @@ According to our [release schedule](changelog#Release-Schedule), we maintain two
 
 `main` - Contains only tested code. Сode gets here from `release/*` and `hotfix/*` branches.
 
-`release/*` - Contains branches formed from the `develop` branch, for future release, e.g. `release/0.0.1`.
-
-`develop` - General branch for developing. Сode gets here from `feature/*` and `bugfix/*` branches.
-
 `feature/*` - Branches are created based on ticket name, e.g. `feature/HEYUI-999-status-button-component`. Every individual ticket must have its corresponding branch, even for small tasks.
 
 `hotfix/*` - These are branches that contains very urgent fixes for production, e.g. `hotfix/HEYUI-999-fix-button-attribute`.
 
-`bugfix/*` - These branches contain bug fixes and can be merged into `develop`, `release` or `feature` braches, e.g. `bugfix/HEYUI-999-fix-button-attribute`.
+`bugfix/*` - These branches contain bug fixes and can be merged into `main`, `release` or `feature` braches, e.g. `bugfix/HEYUI-999-fix-button-attribute`.
 
 ## Bugs
 
