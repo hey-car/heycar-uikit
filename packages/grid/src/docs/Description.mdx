@@ -1,0 +1,23 @@
+import { Container } from 'storybook/blocks';
+import { Row, Column } from '../';
+
+A flex based 12 column grid system using two components, `Row` and `Column`.
+
+## Components
+
+#### Row
+
+Container component that occupies the screen width
+
+#### Column
+
+Child component of row that can have a max. width of 12 columns (100%)
+
+``` tsx live
+render (
+  <Row align="center" reverse={false}>
+    <Column widths={[6]}>First column</Column>
+    <Column widths={[6]}>Second column</Column>
+  </Row>
+);
+```
