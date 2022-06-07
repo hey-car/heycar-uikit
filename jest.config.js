@@ -15,7 +15,7 @@ module.exports = {
     },
   },
   moduleNameMapper: {
-    '@hey-ui/(.*)$': '<rootDir>/packages/$1/src',
+    '@heycar-uikit/(.*)$': '<rootDir>/packages/$1/src',
     '\\.css$': 'identity-obj-proxy',
   },
   testMatch: [

@@ -1,5 +1,5 @@
 {
-  "name": "@hey-ui/core",
+  "name": "@heycar-uikit/core",
   "version": "1.0.0",
   "description": "The React UI library from HeyCar",
   "author": "HeyCar Team",
@@ -42,12 +42,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hey-car/hey-ui.git"
+    "url": "git+https://github.com/hey-car/heycar-uikit.git"
   },
   "bugs": {
-    "url": "https://github.com/hey-car/hey-ui/issues"
+    "url": "https://github.com/hey-car/heycar-uikit/issues"
   },
-  "homepage": "https://github.com/hey-car/hey-ui#readme",
+  "homepage": "https://github.com/hey-car/heycar-uikit#readme",
   "keywords": [
     "ui",
     "kit",

@@ -6,5 +6,5 @@ module.exports = {
     ['@semantic-release/npm', { pkgRoot: './' }],
   ],
   branches: ['main'],
-  repositoryUrl: 'https://github.com/hey-car/hey-ui',
+  repositoryUrl: 'https://github.com/hey-car/heycar-uikit',
 };

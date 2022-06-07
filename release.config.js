@@ -9,5 +9,5 @@ module.exports = {
     '@semantic-release/github',
   ],
   branches: ['main'],
-  repositoryUrl: 'https://github.com/hey-car/hey-ui',
+  repositoryUrl: 'https://github.com/hey-car/heycar-uikit',
 };

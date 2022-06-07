@@ -4,7 +4,7 @@ import globby from 'globby';
 
 import { checkOrCreateDir, readFile, writeFile } from './common';
 
-const importTypesRegexp = /((?:from |import\()['"])@hey-ui\/(.+?)(['"])/;
+const importTypesRegexp = /((?:from |import\()['"])@heycar-uikit\/(.+?)(['"])/;
 
 async function transformTypings(source, rootDir) {
   const rootAbsDir = path.resolve(rootDir);

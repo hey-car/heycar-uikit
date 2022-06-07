@@ -6,7 +6,7 @@
     "rootDirs": ["src"],
     "baseUrl": ".",
     "paths": {
-      "@hey-ui/*": ["../*/src"]
+      "@heycar-uikit/*": ["../*/src"]
     }
   }
 }

@@ -27,7 +27,7 @@
     "declaration": true,
     "baseUrl": ".",
     "paths": {
-      "@hey-ui/*": ["packages/*/src"]
+      "@heycar-uikit/*": ["packages/*/src"]
     }
   },
   "exclude": ["node_modules", "dist", "**/*.stories*"],

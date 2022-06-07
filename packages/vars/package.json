@@ -1,7 +1,7 @@
 {
-  "name": "@hey-ui/vars",
+  "name": "@heycar-uikit/vars",
   "version": "0.0.1",
-  "description": "hey-ui css vars",
+  "description": "HeyCar-UIKit css vars",
   "keywords": [],
   "style": "index.css",
   "publishConfig": {
