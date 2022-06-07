@@ -14,7 +14,7 @@ const justifyOptions = [
 ];
 const alignOptions = ['start', 'end', 'center', 'stretch', 'baseline'];
 const reverseOptions = [true, false];
-const clip = { x: 0, y: 0, width: 200, height: 100 };
+const clip = { x: 0, y: 0, width: 1200, height: 100 };
 const screenshotTesting = setupScreenshotTesting({
   it,
   beforeAll,
@@ -67,6 +67,7 @@ describe(
       'sprite',
       createStorybookUrl({
         packageName,
+        moduleName: 'row',
         knobs: {
           reverse,
           align: 'stretch',

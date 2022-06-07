@@ -40,15 +40,15 @@ export const ColumnTemplate = args => (
 <Story
   name="Row"
   args={{
-    justifyContent: 'start',
-    alignItems: 'stretch',
+    justify: 'start',
+    align: 'stretch',
     reverse: false
   }}
     argTypes={{
-        justifyContent: {
+        justify: {
           control: { type: 'select', options: ['start', 'end', 'center', 'space-between', 'space-evenly', 'space-around'] }
         },
-        alignItems: {
+        align: {
           control: { type: 'select', options: ['start', 'end', 'center', 'stretch', 'baseline'] }
         }
       }}
