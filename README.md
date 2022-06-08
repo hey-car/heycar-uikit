@@ -9,7 +9,7 @@
 
 ## Docs
 
-- [Intallation](https://hey-car.github.io/heycar-uikit/main/?path=/docs/guidelines-installation--page)
+- [Installation](https://hey-car.github.io/heycar-uikit/main/?path=/docs/guidelines-installation--page)
 - [Contributing](https://hey-car.github.io/heycar-uikit/main/?path=/docs/guidelines-contributing--page)
 - [Package structure convention](https://hey-car.github.io/heycar-uikit/main/?path=/docs/guidelines-package-structure-convention--page)
 - [Code style guide](https://hey-car.github.io/heycar-uikit/main/?path=/docs/guidelines-code-style-guide-convention--page)
@@ -19,22 +19,22 @@
 ## Get started with the storybook
 
 ```bash
-$ npm i
-$ npm start
+npm i
+npm start
 ```
 
 ## Building packages
 
 ```bash
-$ npm i
-$ npm run build
+npm i
+npm run build
 ```
 
-#### Building result
+### Building result
 
 Build results in the `dist` folder on the root and in the folder `dist` in each package in the packages folder.
 
-#### Build format support
+### Build format support
 
 - `es5` - `ES5` build with CommonJS modules
 - `modern` - `ES2020` build with esm modules.
@@ -53,9 +53,9 @@ To use the wizard, run `npm run cm` in your terminal after staging your changes 
 Follow this commands:
 
 ```bash
-$ git add .
-$ npm run cm # run the commitizen utility to create a commit
-$ git push
+git add .
+npm run cm # run the commitizen utility to create a commit
+git push
 ```
 
 ### Commit Message Scope
