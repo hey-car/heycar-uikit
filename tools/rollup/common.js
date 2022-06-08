@@ -15,5 +15,5 @@ export async function checkOrCreateDir(dir) {
 }
 
 export const requireRegExp = new RegExp(
-  /(\b(?:require\(|import |from )['"])@hey-ui\/(.*?)(['"])/,
+  /(\b(?:require\(|import |from )['"])@heycar-uikit\/(.*?)(['"])/,
 );

@@ -9,6 +9,21 @@ const matches = glob.sync('dist/**/*.css', {
   ignore: 'dist/+(themes|vars)/**',
 });
 
+const whitelistPatternsChildren = [/component/, /filled/, /focused/, /svg/];
+const safelist = [
+  /^class$/,
+  /^dir$/,
+  /^disabled$/,
+  /^draggable$/,
+  /^hidden$/,
+  /^open$/,
+  /^required$/,
+  /^role$/,
+  /^tabindex$/,
+  /^data-/,
+  /^aria-/,
+];
+
 matches.forEach(match => {
   const purge = new PurgeCSS();
 
@@ -17,6 +32,8 @@ matches.forEach(match => {
       content: ['dist/**/*.js'],
       css: [match],
       variables: true,
+      safelist,
+      whitelistPatternsChildren,
     })
     .then(result => {
       result.forEach(({ css, file }) => {

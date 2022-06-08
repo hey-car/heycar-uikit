@@ -1,6 +1,6 @@
 {
-  "name": "@hey-ui/core",
-  "version": "0.0.1",
+  "name": "@heycar-uikit/core",
+  "version": "1.0.0",
   "description": "The React UI library from HeyCar",
   "author": "HeyCar Team",
   "main": "index.js",
@@ -14,7 +14,6 @@
     "lint:css": "stylelint ./packages/**/*.css",
     "lint:js": "eslint ./packages --ext .ts,.tsx,.js,.jsx",
     "test": "jest --watchAll=false",
-    "coverage": "jest --coverage",
     "test:screenshots": "jest --config=jest.screenshots.config.js",
     "test:sh:docker": "docker run -it --entrypoint /app/bin/dockerTestScreenshots.sh --rm -v ${PWD}:/app --ipc=host mcr.microsoft.com/playwright:focal /bin/bash",
     "test:sh:update": "docker run -it --env SCREENSHOTS_UPDATE=1 --entrypoint /app/bin/dockerTestScreenshots.sh --rm -v ${PWD}:/app --ipc=host mcr.microsoft.com/playwright:focal /bin/bash",
@@ -43,12 +42,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hey-car/hey-ui.git"
+    "url": "git+https://github.com/hey-car/heycar-uikit.git"
   },
   "bugs": {
-    "url": "https://github.com/hey-car/hey-ui/issues"
+    "url": "https://github.com/hey-car/heycar-uikit/issues"
   },
-  "homepage": "https://github.com/hey-car/hey-ui#readme",
+  "homepage": "https://github.com/hey-car/heycar-uikit#readme",
   "keywords": [
     "ui",
     "kit",
@@ -61,8 +60,7 @@
     "packages/*"
   ],
   "dependencies": {
-    "classnames": "^2.3.1",
-    "react-scripts": "^5.0.1"
+    "classnames": "^2.3.1"
   },
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.16.7",
@@ -129,7 +127,6 @@
     "globby": "^11.0.1",
     "http-server": "^14.1.0",
     "husky": "^7.0.4",
-    "identity-obj-proxy": "^3.0.0",
     "jest": "^27.5.1",
     "jest-image-snapshot": "^4.5.1",
     "json": "^11.0.0",

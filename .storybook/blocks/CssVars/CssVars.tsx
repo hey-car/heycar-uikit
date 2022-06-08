@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useState } from 'react';
+import React, { FC } from 'react';
 import cn from 'classnames';
 import { Example } from 'storybook-addon-live-examples';
 
@@ -10,11 +10,9 @@ type Props = {
 const rootBlockRegexp = /:root {([^}]*)}/g;
 
 export const CssVars: FC<Props> = ({ css, title }) => {
-  const [vars, setVars] = useState('');
+  const getVars = () => {
 
-  useEffect(() => {
     let rootBlockMatch = rootBlockRegexp.exec(css);
-
     const rootBlocks = [];
 
     while (rootBlockMatch) {
@@ -29,15 +27,13 @@ export const CssVars: FC<Props> = ({ css, title }) => {
       return `${acc}${item}${divider}`;
     }, ':root {');
 
-    result += '}';
-
-    setVars(result);
-  }, [css]);
+   return  result += '}';
+  }
 
   return (
     <div>
       {title && <h2 className={cn('sbdocs', 'sbdocs-h2')}>{title}</h2>}
-      <Example code={vars} language="css" />
+      <Example code={getVars()} language="css" />
     </div>
   );
 };

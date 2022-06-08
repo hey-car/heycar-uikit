@@ -16,12 +16,12 @@ mkdir -p dist
 copy_css="npx copyfiles -u 1 \"src/**/*.{css,js}\" dist"
 copy_package="npx copyfiles package.json dist"
 lerna exec \
-    --scope @hey-ui/vars \
-    --scope @hey-ui/themes \
+    --scope @heycar-uikit/vars \
+    --scope @heycar-uikit/themes \
     -- "$copy_css && $copy_package"
 
 # compiling the themes package
-lerna exec --scope @hey-ui/themes -- node $(pwd)/bin/buildThemes.js
+lerna exec --scope @heycar-uikit/themes -- node $(pwd)/bin/buildThemes.js
 
 # collect all subpackages with components
 lerna exec --concurrency $CONCURRENCY \
@@ -31,8 +31,8 @@ lerna exec --concurrency $CONCURRENCY \
 # copy the collected css packages to the root package
 copy_to_root="cp -rp dist/ ../../dist/\${PWD##*/}"
 lerna exec \
-    --scope @hey-ui/vars \
-    --scope @hey-ui/themes \
+    --scope @heycar-uikit/vars \
+    --scope @heycar-uikit/themes \
     -- $copy_to_root
 
 # copy package.json to root package assembly

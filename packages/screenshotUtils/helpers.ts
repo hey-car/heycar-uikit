@@ -13,6 +13,17 @@ import {
 } from './helpers.types';
 
 export const defaultViewport = { width: 1024, height: 768 };
+const screenshotDefaultOpts = {
+  clip: {
+    x: 0,
+    y: 0,
+    width: 1920,
+    height: 500,
+  },
+  fullPage: false,
+  omitBackground: false,
+};
+
 export const customSnapshotIdentifier = ({
   currentTestName,
   counter,
@@ -24,8 +35,9 @@ export const matchHtml = async ({
   page,
   expect,
   matchImageSnapshotOptions,
+  screenshotOpts = screenshotDefaultOpts,
 }: MatchHtmlParams) => {
-  const image = await page.screenshot();
+  const image = await page.screenshot(screenshotOpts);
 
   try {
     expect(image).toMatchImageSnapshot({

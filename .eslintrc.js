@@ -263,7 +263,7 @@ module.exports = {
           // Packages. `react` related packages come first.
           ['^react', '^redux', '^@?\\w'],
           // Components.
-          ['@hey-ui/*', '^(feather|private)(/?.*|$)'],
+          ['@heycar-uikit/*', '^(feather|private)(/?.*|$)'],
           // Root path for project
           ['^#'],
           // Parent imports. Put `..` last.

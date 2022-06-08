@@ -1,6 +1,6 @@
 const path = require('path');
 
-const componentsPrefix = '@hey-ui/';
+const componentsPrefix = '@heycar-uikit/';
 const componentsDir = path.resolve(__dirname, '../../packages');
 
 /**

@@ -1,16 +1,16 @@
 # Contributing
 
-The following is a set of guidelines for contributing to Hey-UI. Please spend several minutes reading these guidelines before you create an issue or pull request.
+The following is a set of guidelines for contributing to heycar-uikit. Please spend several minutes reading these guidelines before you create an issue or pull request.
 
 ## Code of Conduct
 
-We have adopted a [Code of Conduct](https://github.com/hey-car/hey-ui/blob/main/CODE_OF_CONDUCT.md) that we expect project participants to follow.
-Also, please read our [Structure Convention](https://github.com/hey-car/hey-ui/blob/main/STRUCTURE_CONVENTION.md) and [Style Guide](https://github.com/hey-car/hey-ui/blob/main/STYLEGUIDE_CONVENTION.).
+We have adopted a [Code of Conduct](https://github.com/hey-car/heycar-uikit/blob/main/CODE_OF_CONDUCT.md) that we expect project participants to follow.
+Also, please read our [Structure Convention](https://github.com/hey-car/heycar-uikit/blob/main/STRUCTURE_CONVENTION.md) and [Style Guide](https://github.com/hey-car/heycar-uikit/blob/main/STYLEGUIDE_CONVENTION.).
 Please read the full text so that you can understand what actions will and will not be tolerated.
 
 ## Open Development
 
-All work on Hey-UI happens directly on [GitHub](https://github.com/hey-car/hey-ui). Both core team members and external contributors send pull requests which go through the same review process.
+All work on heycar-uikit happens directly on [GitHub](https://github.com/hey-car/heycar-uikit). Both core team members and external contributors send pull requests which go through the same review process.
 
 ## Commit Message Guidelines
 
@@ -39,19 +39,15 @@ According to our [release schedule](changelog#Release-Schedule), we maintain two
 
 `main` - Contains only tested code. Сode gets here from `release/*` and `hotfix/*` branches.
 
-`release/*` - Contains branches formed from the `develop` branch, for future release, e.g. `release/0.0.1`.
-
-`develop` - General branch for developing. Сode gets here from `feature/*` and `bugfix/*` branches.
-
 `feature/*` - Branches are created based on ticket name, e.g. `feature/HEYUI-999-status-button-component`. Every individual ticket must have its corresponding branch, even for small tasks.
 
 `hotfix/*` - These are branches that contains very urgent fixes for production, e.g. `hotfix/HEYUI-999-fix-button-attribute`.
 
-`bugfix/*` - These branches contain bug fixes and can be merged into `develop`, `release` or `feature` braches, e.g. `bugfix/HEYUI-999-fix-button-attribute`.
+`bugfix/*` - These branches contain bug fixes and can be merged into `main`, `release` or `feature` braches, e.g. `bugfix/HEYUI-999-fix-button-attribute`.
 
 ## Bugs
 
-We are using [GitHub Issues](https://github.com/hey-car/hey-ui/issues) for bug tracking.
+We are using [GitHub Issues](https://github.com/hey-car/heycar-uikit/issues) for bug tracking.
 
 Before you report a bug, please make sure you've searched existing issues, and read our [FAQ](/docs/react/faq).
 
@@ -82,13 +78,13 @@ The core team is monitoring for pull requests. We will review your pull request 
 
 Sending a Pull Request to [react-component](https://github.com/react-component/):
 
-Since Hey-UI's components are based on react-component, sometimes you may need to send pull request to the corresponding react-component repository. If it's a bugfix pull request, after it's merged, the core team will release a patch release for that component as soon as possible, then you only need to reinstall Hey-ui in your project to get the latest patch release. If it's a feature pull request, after it's merged, the core team will release a minor release, then you need raise another pull request to [Hey-UI](https://github.com/hey-car/hey-ui/) to update dependencies, document and TypeScript interfaces (if needed).
+Since heycar-uikit's components are based on react-component, sometimes you may need to send pull request to the corresponding react-component repository. If it's a bugfix pull request, after it's merged, the core team will release a patch release for that component as soon as possible, then you only need to reinstall heycar-uikit in your project to get the latest patch release. If it's a feature pull request, after it's merged, the core team will release a minor release, then you need raise another pull request to [heycar-uikit](https://github.com/hey-car/heycar-uikit/) to update dependencies, document and TypeScript interfaces (if needed).
 
 ## Development Workflow
 
-After cloning Hey-UI, run `npm install` to fetch its dependencies. Then, you can run several commands:
+After cloning heycar-uikit, run `npm install` to fetch its dependencies. Then, you can run several commands:
 
-1. `npm start` runs Storybook Hey-UI website locally.
+1. `npm start` runs Storybook heycar-uikit website locally.
 2. `npm run lint` checks the code style.
 3. `npm test` runs the complete test suite. (Make sure the `NODE_ENV` environment variable is unset, or it may causing some problems.)
 4. `npm run build` build packages to the `dist` directory.

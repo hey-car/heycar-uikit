@@ -75,10 +75,6 @@ console.log(`=> sourceBranch ${sourceBranch}`);
 
 shell.cp('-rf', `../${tempOutputDir}`, './');
 
-if (sourceBranch === 'develop') {
-  shell.rm('-rf', './develop');
-  shell.mv('-f', `./${tempOutputDir}`, './develop');
-}
 if (sourceBranch === 'main') {
   shell.rm('-rf', './main');
   shell.mv('-f', `./${tempOutputDir}`, './main');
