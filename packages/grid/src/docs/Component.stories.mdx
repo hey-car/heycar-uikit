@@ -1,11 +1,12 @@
 import { Meta, Story } from '@storybook/addon-docs';
-import { ComponentHeader, TabContainer } from 'storybook/blocks';
+import { ComponentHeader, TabContainer, CssVars } from 'storybook/blocks';
 
 import { Row, Column } from '../';
 import { version } from '../../package.json';
 import Description from './Description.mdx';
 import Props from './Props.mdx';
 import Changelog from '../../CHANGELOG.md';
+import styles from '!!raw-loader!../styles/column.module.css';
 
 <Meta
   title="Components/Grid"
