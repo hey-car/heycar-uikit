@@ -37,6 +37,7 @@ module.exports = {
       options: { transcludeMarkdown: true },
     },
     'storybook-addon-live-examples',
+    '@storybook/addon-viewport'
   ],
   webpackFinal: async config => {
     addPackagesDir(config);
