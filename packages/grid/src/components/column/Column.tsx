@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import cn from 'classnames';
 
 import { getColumnClasses } from '../../utils/getColumnClasses';
@@ -15,11 +15,18 @@ function Column({
   offset = [],
   order = [],
 }: ColumnProps): JSX.Element {
-  const widthClasses = getColumnClasses(widths, styles);
-
-  const offsetClasses = getColumnClasses(offset, styles, 'offset');
-
-  const orderClasses = getColumnClasses(order, styles, 'order');
+  const widthClasses = useMemo(
+    () => getColumnClasses(widths, styles),
+    [widths],
+  );
+  const offsetClasses = useMemo(
+    () => getColumnClasses(offset, styles, 'offset'),
+    [offset],
+  );
+  const orderClasses = useMemo(
+    () => getColumnClasses(order, styles, 'order'),
+    [order],
+  );
 
   const classNames = cn(
     styles.column,
