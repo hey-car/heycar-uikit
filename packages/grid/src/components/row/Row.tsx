@@ -18,7 +18,7 @@ function Row({
     styles[`justify-${justify}`],
     styles[`align-${align}`],
     className,
-    reverse && styles.reverse,
+    { [styles.reverse]: !!reverse },
   );
 
   return <Component className={classNames}>{children}</Component>;
