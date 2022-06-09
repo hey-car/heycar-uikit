@@ -14,25 +14,25 @@ import styles from '!!raw-loader!../styles/column.module.css';
 
 export const RowTemplate = args => (
     <Row {...args}>
-      {[...Array(12).keys()].map(i => {
-        const isOdd = i % 2 === 0;
-        return (
-          <>
-            <Column widths={[i + 1]}>
-              <div style={{ padding: 8, color: 'white', background: 'red', height: '100%', textAlign: 'center', boxSizing: 'border-box', marginBottom: 8 }}>
-                <strong>{i + 1}</strong><br />
-              </div>
-            </Column>
-            {i !== 11 && (
-              <Column widths={[11 - i]}>
-                <div style={{ padding: 8, color: 'white', background: 'red', height: '100%', textAlign: 'center', boxSizing: 'border-box', marginBottom: 8 }}>
-                  <strong>{11 - i}</strong><br />
-                </div>
-              </Column>
-            )}
-          </>
-        )
-      })}
+      <Column widths={[12, 6, 8, 7]}>
+        <div style={{ padding: 8, color: 'white', background: '#00a584', height: '100%', textAlign: 'center', boxSizing: 'border-box', marginBottom: 8 }}>
+          <strong>1</strong><br />
+          SM-12 MD-6 LG-8 XL-7
+        </div>
+      </Column>
+      <Column widths={[12, 6, 4, 5]}>
+        <div style={{ padding: 8, color: 'white', background: '#123d82', height: '100%', textAlign: 'center', boxSizing: 'border-box', marginBottom: 8 }}>
+          <strong>2</strong><br />
+          SM-12 MD-6 LG-4 XL-5<br />
+          Some extra text
+        </div>
+      </Column>
+      <Column widths={[8, 6, 4]}>
+        <div style={{ padding: 8, color: 'white', background: '#303030', height: '100%', textAlign: 'center', boxSizing: 'border-box', marginBottom: 8 }}>
+          <strong>3</strong><br />
+          SM-8 MD-6 LG-4
+        </div>
+      </Column>
     </Row>
 );
 
