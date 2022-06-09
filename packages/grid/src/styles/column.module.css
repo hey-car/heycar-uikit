@@ -1,9 +1,9 @@
+@use postcss-for;
+
 :root {
   --column-gap: var(--gap-m);
   --column-width: calc((100% - (11 * var(--column-gap))) / 12);
 }
-
-@use postcss-for;
 
 @media (min-width: 1024px) {
   :root {

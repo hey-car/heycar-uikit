@@ -1,3 +1,5 @@
+@use postcss-each;
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -15,20 +17,10 @@
   justify-content: flex-end;
 }
 
-.justify-center {
-  justify-content: center;
-}
-
-.justify-space-between {
-  justify-content: space-between;
-}
-
-.justify-space-evenly {
-  justify-content: space-evenly;
-}
-
-.justify-space-around {
-  justify-content: space-around;
+@each $justify in center, space-between, space-evenly, space-around {
+  .justify-$(justify) {
+    justify-content: $justify;
+  }
 }
 
 .align-start {
@@ -39,16 +31,10 @@
   align-items: flex-end;
 }
 
-.align-center {
-  align-items: center;
-}
-
-.align-stretch {
-  align-items: stretch;
-}
-
-.align-baseline {
-  align-items: baseline;
+@each $align in center, stretch, baseline {
+  .align-$(align) {
+    align-items: $align;
+  }
 }
 
 .reverse {
