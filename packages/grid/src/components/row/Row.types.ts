@@ -53,5 +53,8 @@ export interface RowProps {
    * Reverse order of row items
    */
   reverse?: boolean;
+  /**
+   * Gap between rows in pixels
+   */
   rowGap?: GapOptions;
 }
