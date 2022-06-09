@@ -1,25 +1,25 @@
 @use postcss-for;
 
 :root {
-  --column-gap: var(--gap-m);
-  --column-width: calc((100% - (11 * var(--column-gap))) / 12);
+  --grid-column-gap: var(--gap-m);
+  --grid-column-width: calc((100% - (11 * var(--grid-column-gap))) / 12);
 }
 
 @media (min-width: 1024px) {
   :root {
-    --column-gap: var(--gap-xl);
+    --grid-column-gap: var(--gap-xl);
   }
 }
 
 @define-mixin classes $breakpoint, $count {
   .$(breakpoint)-$(count) {
     width: calc(
-      (var(--column-width) * $count) + (($count - 1) * var(--column-gap))
+      (var(--grid-column-width) * $count) + (($count - 1) * var(--grid-column-gap))
     );
   }
   .$(breakpoint)-offset-$(count) {
     transform: translateX(
-      calc((var(--column-width) * $count) + (($count - 1) * var(--column-gap)))
+      calc((var(--grid-column-width) * $count) + (($count - 1) * var(--grid-column-gap)))
     );
   }
   .$(breakpoint)-order-$(count) {
