@@ -1,5 +1,5 @@
 {
-  "name": "@hey-ui/grid",
+  "name": "@heycar-uikit/grid",
   "version": "0.0.1",
   "description": "hey-ui grid",
   "main": "dist/index.js",

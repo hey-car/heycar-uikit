@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-props-no-spreading,@typescript-eslint/naming-convention */
 import React from 'react';
 import { render } from '@testing-library/react';
 
@@ -56,6 +55,7 @@ describe('Row', () => {
 
       cb.mockReturnValue(null);
 
+      /* eslint-disable-next-line @typescript-eslint/naming-convention */
       renderTestRow({ Component: cb });
 
       expect(cb).toBeCalled();
@@ -111,6 +111,7 @@ describe('Column', () => {
 
       cb.mockReturnValue(null);
 
+      /* eslint-disable-next-line @typescript-eslint/naming-convention */
       renderTestColumn({ Component: cb, widths: [0] });
 
       expect(cb).toBeCalled();
