@@ -10,6 +10,23 @@ type JustifyOptions =
 
 type AlignOptions = BaseAlignmentOptions | 'stretch' | 'baseline';
 
+type GapOptions =
+  | 2
+  | 4
+  | 8
+  | 12
+  | 16
+  | 20
+  | 24
+  | 28
+  | 32
+  | 36
+  | 40
+  | 44
+  | 48
+  | 56
+  | 64;
+
 export interface RowProps {
   /**
    * The content of the row
@@ -35,4 +52,5 @@ export interface RowProps {
    * Reverse order of row items
    */
   reverse?: boolean;
+  rowGap?: GapOptions;
 }
