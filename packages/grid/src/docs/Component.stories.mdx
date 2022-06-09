@@ -14,7 +14,7 @@ import styles from '!!raw-loader!../styles/column.module.css';
 
 export const RowTemplate = args => (
     <Row {...args}>
-      <Column widths={[12, 6, 4, 4]}>
+      <Column widths={[12, 6, 8, 7]}>
         <div style={{ padding: 8, color: 'white', background: '#00a584', height: '100%', textAlign: 'center', boxSizing: 'border-box', marginBottom: 8 }}>
           <strong>1</strong><br />
           SM-12 MD-6 LG-8 XL-7
@@ -53,7 +53,7 @@ export const ColumnTemplate = args => (
   args={{
     justify: 'start',
     align: 'stretch',
-    rowGap: 2,
+    rowGap: 0,
     reverse: false
   }}
     argTypes={{

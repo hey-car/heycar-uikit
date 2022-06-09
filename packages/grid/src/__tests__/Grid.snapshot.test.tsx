@@ -13,4 +13,61 @@ describe('Grid Snapshots tests', () => {
       ),
     ).toMatchSnapshot();
   });
+
+  it('should render row with centered elements', () => {
+    expect(
+      render(
+        <Row justify="center">
+          <Column widths={[3]}>Hello</Column>
+          <Column widths={[3]}>World!</Column>
+        </Row>,
+      ),
+    ).toMatchSnapshot();
+  });
+
+  it('should render row with centered elements', () => {
+    expect(
+      render(
+        <Row justify="center">
+          <Column widths={[3]}>Hello</Column>
+          <Column widths={[3]}>World!</Column>
+        </Row>,
+      ),
+    ).toMatchSnapshot();
+  });
+
+  it('should render row with vertically centered elements', () => {
+    expect(
+      render(
+        <Row align="center">
+          <Column widths={[3]}>Hello</Column>
+          <Column widths={[3]}>
+            World!<div>Extra text</div>
+          </Column>
+        </Row>,
+      ),
+    ).toMatchSnapshot();
+  });
+
+  it('should render row with reversed elements', () => {
+    expect(
+      render(
+        <Row reverse={true}>
+          <Column widths={[3]}>Hello</Column>
+          <Column widths={[3]}>World!</Column>
+        </Row>,
+      ),
+    ).toMatchSnapshot();
+  });
+
+  it('should render row with row gap', () => {
+    expect(
+      render(
+        <Row rowGap={8}>
+          <Column widths={[12]}>Hello</Column>
+          <Column widths={[12]}>World!</Column>
+        </Row>,
+      ),
+    ).toMatchSnapshot();
+  });
 });
