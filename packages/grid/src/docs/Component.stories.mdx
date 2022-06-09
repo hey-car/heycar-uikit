@@ -13,15 +13,14 @@ import Changelog from '../../CHANGELOG.md';
 
 export const RowTemplate = args => (
     <Row {...args}>
-        <Column widths={[12, 8, 6]}>
-             <div style={{ padding: 8, color: 'white', background: 'red', height: '100%' }}>
-                SM-12 MD-8 LG-6<br />
-                First Column
-             </div>
+      {[...Array(12).keys()].map(i => (
+        <Column widths={[6, 4, 1]}>
+          <div style={{ padding: 8, color: 'white', background: 'red', height: '100%' }}>
+            {i + 1}<br />
+            {i % 2 === 0 && 'Lorem ipsum'}
+          </div>
         </Column>
-        <Column widths={[12, 4, 6]}>
-            <div style={{ padding: 8, color: 'white', background: 'blue', height: '100%' }}>SM-12 MD-4 LG-6</div>
-        </Column>
+      ))}
     </Row>
 );
 
