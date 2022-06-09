@@ -14,12 +14,16 @@
 @define-mixin classes $breakpoint, $count {
   .$(breakpoint)-$(count) {
     width: calc(
-      (var(--grid-column-width) * $count) + (($count - 1) * var(--grid-column-gap))
+      (var(--grid-column-width) * $count) +
+        (($count - 1) * var(--grid-column-gap))
     );
   }
   .$(breakpoint)-offset-$(count) {
     transform: translateX(
-      calc((var(--grid-column-width) * $count) + (($count - 1) * var(--grid-column-gap)))
+      calc(
+        (var(--grid-column-width) * $count) +
+          (($count - 1) * var(--grid-column-gap))
+      )
     );
   }
   .$(breakpoint)-order-$(count) {
