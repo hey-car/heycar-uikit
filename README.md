@@ -1,31 +1,40 @@
-# Heycar-UI
+# HeyCar-UIKit
 
-[![Tests](https://github.com/hey-car/hey-ui/actions/workflows/build.yml/badge.svg)](https://github.com/hey-car/hey-ui/actions/workflows/build.yml)
-[![Coverage Status](https://coveralls.io/repos/github/hey-car/hey-ui/badge.svg)](https://coveralls.io/github/hey-car/hey-ui)
-[![Demo build](https://github.com/hey-car/hey-ui/actions/workflows/main.yml/badge.svg)](https://github.com/hey-car/hey-ui/actions/workflows/main.yml)
+[![Tests](https://github.com/hey-car/heycar-uikit/actions/workflows/build.yml/badge.svg)](https://github.com/hey-car/heycar-uikit/actions/workflows/build.yml)
+[![Coverage Status](https://coveralls.io/repos/github/hey-car/heycar-uikit/badge.svg)](https://coveralls.io/github/hey-car/heycar-uikit)
+[![Demo build](https://github.com/hey-car/heycar-uikit/actions/workflows/main.yml/badge.svg)](https://github.com/hey-car/heycar-uikit/actions/workflows/main.yml)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
-[Storybook](https://hey-car.github.io/hey-ui/main/) documentation and sandbox
+[Storybook](https://hey-car.github.io/heycar-uikit/main/) documentation and sandbox
+
+## Docs
+
+- [Installation](https://hey-car.github.io/heycar-uikit/main/?path=/docs/guidelines-installation--page)
+- [Contributing](https://hey-car.github.io/heycar-uikit/main/?path=/docs/guidelines-contributing--page)
+- [Package structure convention](https://hey-car.github.io/heycar-uikit/main/?path=/docs/guidelines-package-structure-convention--page)
+- [Code style guide](https://hey-car.github.io/heycar-uikit/main/?path=/docs/guidelines-code-style-guide-convention--page)
+- [Component Statuses](https://hey-car.github.io/heycar-uikit/main/?path=/docs/guidelines-component-statuses--page)
+- [Screenshot testing](https://hey-car.github.io/heycar-uikit/main/?path=/docs/guidelines-screenshot-testing--page)
 
 ## Get started with the storybook
 
 ```bash
-$ npm i
-$ npm start
+npm i
+npm start
 ```
 
 ## Building packages
 
 ```bash
-$ npm i
-$ npm run build
+npm i
+npm run build
 ```
 
-#### Building result
+### Building result
 
 Build results in the `dist` folder on the root and in the folder `dist` in each package in the packages folder.
 
-#### Build format support
+### Build format support
 
 - `es5` - `ES5` build with CommonJS modules
 - `modern` - `ES2020` build with esm modules.
@@ -44,9 +53,9 @@ To use the wizard, run `npm run cm` in your terminal after staging your changes 
 Follow this commands:
 
 ```bash
-$ git add .
-$ npm run cm # run the commitizen utility to create a commit
-$ git push
+git add .
+npm run cm # run the commitizen utility to create a commit
+git push
 ```
 
 ### Commit Message Scope

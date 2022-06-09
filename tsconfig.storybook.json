@@ -15,7 +15,7 @@
     "rootDirs": ["packages"],
     "baseUrl": "./",
     "paths": {
-      "@hey-ui/*": ["packages/*/src"]
+      "@heycar-uikit/*": ["packages/*/src"]
     }
   },
   "exclude": ["node_modules", "build", "coverage"],

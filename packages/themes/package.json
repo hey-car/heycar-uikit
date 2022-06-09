@@ -1,7 +1,7 @@
 {
-  "name": "@hey-ui/themes",
-  "version": "0.0.1",
-  "description": "hey-ui themes",
+  "name": "@heycar-uikit/themes",
+  "version": "1.0.1",
+  "description": "HeyCar-UIKit themes",
   "keywords": [],
   "publishConfig": {
     "access": "public",

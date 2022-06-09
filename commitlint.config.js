@@ -2,7 +2,7 @@ const {
   utils: { getPackages },
 } = require('@commitlint/config-lerna-scopes');
 
-const packageNamePrefixRegExp = /^hey-ui-/;
+const packageNamePrefixRegExp = /^heycar-uikit-/;
 
 function deletePackagesPrefix(arr) {
   return arr.map(packageName =>

@@ -44,7 +44,7 @@ export const coreComponentsResolver = ({ importFrom }) => ({
       let code = bundles[bundleName].code;
 
       const requireRegExp = new RegExp(
-        /(\b(?:require\(|import |from )['"])(@hey-ui\/[^\/\n]+)(['"])/,
+        /(\b(?:require\(|import |from )['"])(@heycar-uikit\/[^\/\n]+)(['"])/,
       );
 
       while (requireRegExp.exec(code)) {

@@ -92,7 +92,7 @@ export * from './ExampleComponent.types.ts';
 import ExampleComponent, {
   ExampleComponentProps,
   AnyThing,
-} from '@hey-ui/ExampleComponent';
+} from '@heycar-uikit/ExampleComponent';
 ```
 
 ## Component Naming

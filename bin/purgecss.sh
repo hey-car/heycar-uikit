@@ -5,6 +5,6 @@ node bin/purgecss.js
 
 # remove unused css variables from build in all subpackages
 lerna exec --parallel \
-    --ignore @hey-ui/vars \
-    --ignore @hey-ui/themes \
+    --ignore @heycar-uikit/vars \
+    --ignore @heycar-uikit/themes \
     -- node ../../bin/purgecss.js

@@ -11,7 +11,7 @@ echo $semantic_output
 # Check that semantic-release has released the root package (I don't know how else to do it yet)
 if [[ $semantic_output =~ "Publishing version" ]]
 then
-    git remote set-url origin https://semantic-release-bot:$GITHUB_TOKEN@github.com/hey-car/hey-ui.git
+    git remote set-url origin https://semantic-release-bot:$GITHUB_TOKEN@github.com/hey-car/heycar-uikit.git
     git checkout main
     git pull origin main --rebase
     git fetch --tags
