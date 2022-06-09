@@ -11,6 +11,7 @@ type JustifyOptions =
 type AlignOptions = BaseAlignmentOptions | 'stretch' | 'baseline';
 
 type GapOptions =
+  | 0
   | 2
   | 4
   | 8

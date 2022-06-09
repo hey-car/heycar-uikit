@@ -12,7 +12,7 @@ function Row({
   justify = 'start',
   align = 'stretch',
   reverse,
-  rowGap = 2,
+  rowGap = 0,
 }: RowProps): JSX.Element {
   const classNames = cn(
     styles.row,

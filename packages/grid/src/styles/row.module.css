@@ -9,7 +9,7 @@
   box-sizing: border-box;
 }
 
-@each $row-gap in 2, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 56, 64 {
+@each $row-gap in 0, 2, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 56, 64 {
   .row-gap-$(row-gap) {
     row-gap: $(row-gap)px;
   }
