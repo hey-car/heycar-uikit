@@ -1,31 +1,23 @@
 import Typography from '../';
 
-The **Typography** component is used to display any types of text present on the **hey-ui** design system.
+The **Typography** component is used to display any types of text present on the **heycar-uikit** design system.
 
-In the design prototypes, when clicking on text, you will find a variant name like `h.1`, `sh.2`, `body.4`. That's all that you need to get your text component ready.
+In the design prototypes, when clicking on text, you will find a variant name like `h1`, `subheading2`, `body4`. That's all that you need to get your text component ready.
 Each variant contains already the expected font size, font weight, letter spacing, line height, and text transform.
 
 If you need to highlight a text, simply include the prop `highlighted`. In case you want to change the HTML tag the text should be wrapped, you can set a new one with `Component`. Feel free to include customized styles with `className`.
 
 ```tsx
-<Typography variant="h.1">
+<Typography variant="h1">
   Your heading here!
 </Typography>
 
-<Typography variant="caption.2" highlighted>
+<Typography variant="caption2">
   Your highlighted caption here!
 </Typography>
 
-<Typography variant="body.2" highlighted Component="span">
+<Typography variant="body2" Component="span">
   Your highlighted body text wrapped in `span` here!
-</Typography>
-
-<Typography variant="body.1">
-  Your body text comes here
-  <Typography variant="body.1" highlighted>
-    and this part is important, so it should be highlighted.
-  </Typography>
-  And then we go back to the body text.
 </Typography>
 ```
 
@@ -33,28 +25,29 @@ If you need to highlight a text, simply include the prop `highlighted`. In case 
 
 Several typography elements are available in the library. They are listed below.
 
-- Display (`variant="display.1"`)
-- Heading (`variant="h.1|2|3|4|5|6"`)
-- Sub heading (`variant="sh.1|2|3"`)
-- Body (`variant="body.1|2|3|4|5|6"`)
-- Caption (`variant="caption.1|2|3|4|5"`)
-- Overline (`variant="overline.1|2"`)
-- Button (`variant="button.1|2|3"`)
+- Display (`variant="display1"`)
+- Heading (`variant="h1|h2|h3|h4|h5|h6"`)
+- Sub heading (`variant="subheading1|subheading2"`)
+- Body (`variant="body1|body2|body3|body4"`)
+- Caption (`variant="caption1|caption2|caption3|caption4|caption5"`)
+- Overline (`variant="overline1|overline2"`)
 
-If this prop is not set, the default is `variant="body.3"`. You can try the different variants in the playground below.
+If this prop is not set, the default is `variant="body3"`. You can try the different variants in the playground below.
 
 ```tsx live
 render(
   <Container>
-    <Typography variant="h.2">Your big heading is here 🤩</Typography>
+    <Typography variant="h2">Your big heading is here 🤩</Typography>
     <br />
     <br />
-    <Typography variant="sh.2">Your sub heading comes right after.</Typography>
+    <Typography variant="subheading2">
+      Your sub heading comes right after.
+    </Typography>
     <br />
     <br />
-    <Typography variant="body.5" Component="span">
+    <Typography variant="body5" Component="span">
       Your body text wrapped in `span` here,
-      <Typography variant="body.5" highlighted Component="span">
+      <Typography variant="body5" highlighted Component="span">
         ⚠️ followed by some highlighted text.
       </Typography>
     </Typography>
@@ -77,30 +70,6 @@ If you need to customize the HTML tag, simply change it with the prop `Component
 ## Mobile versions
 
 The heading and display variants should change properties on mobile views. This is already covered in this component.
-
-## Typography highlight
-
-If you want to highlight a text, simply include the `highlighted` prop and the text will be highlighted in the default color.
-
-In the playground below you can find a simple highlight example and another showing how to include highlighted text inside another block of text.
-
-```tsx live
-render(
-  <Container>
-    <Typography variant="body.2" highlighted Component="span">
-      Your highlighted body text wrapped in `span` here!
-    </Typography>
-
-    <Typography variant="body.1">
-      Your body text comes here
-      <Typography variant="body.1" highlighted>
-        and this part is important, so it should be highlighted.
-      </Typography>
-      And then we go back to the body text.
-    </Typography>
-  </Container>,
-);
-```
 
 ## Customized styles and testing
 

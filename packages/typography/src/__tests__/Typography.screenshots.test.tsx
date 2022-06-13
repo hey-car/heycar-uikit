@@ -2,9 +2,11 @@ import {
   createStorybookUrl,
   setupScreenshotTesting,
 } from '../../../screenshotUtils';
+import { defaultVariantMapping } from '../Typography.constants';
 
 const packageName = 'typography';
-const buttonVariants = ['display.1', 'h.1', 'h.2', 'h.3', 'h.4', 'h.5', 'h.6'];
+const clip = { x: 0, y: 0, width: 500, height: 300 };
+const buttonVariants = Object.keys(defaultVariantMapping);
 const screenshotTesting = setupScreenshotTesting({
   it,
   beforeAll,
@@ -13,10 +15,10 @@ const screenshotTesting = setupScreenshotTesting({
 });
 
 describe(
-  'Typography variants',
+  'Typography',
   screenshotTesting({
     cases: buttonVariants.map(variant => [
-      'sprite',
+      `variant ${variant}`,
       createStorybookUrl({
         packageName,
         knobs: {
@@ -25,5 +27,6 @@ describe(
         },
       }),
     ]),
+    screenshotOpts: { clip },
   }),
 );

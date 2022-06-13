@@ -1,204 +1,90 @@
 @import '../../../themes/src/default.css';
 
-.typography__display {
-  font-size: 60px;
-  line-height: 68px;
-  letter-spacing: -0.04em;
-  font-weight: var(--font-weight-xbold);
-}
-
-.typography__h_1 {
-  font-size: 48px;
-  line-height: 56px;
-  letter-spacing: -0.02em;
-  font-weight: var(--font-weight-bold);
-}
-
-.typography__h_2 {
-  font-size: 32px;
-  letter-spacing: -0.02em;
-  font-weight: var(--font-weight-bold);
-}
-
-.typography__h_3 {
-  font-size: 28px;
-  letter-spacing: -0.02em;
-  font-weight: var(--font-weight-bold);
-}
-
-.typography__h_4 {
-  font-size: 24px;
-  letter-spacing: -0.01em;
-  font-weight: var(--font-weight-bold);
-}
-
-.typography__h_5 {
-  font-size: 20px;
-  letter-spacing: -0.01em;
-  font-weight: var(--font-weight-bold);
-}
-
-.typography__h_6 {
-  font-size: 16px;
-  letter-spacing: -0.01em;
-  font-weight: var(--font-weight-bold);
-}
-
-.typography__sh {
-  line-height: normal;
-
-  &.typography__sh_1 {
-    font-size: 14px;
-    font-weight: var(--font-weight-bold);
-  }
-
-  &.typography__sh_2 {
-    font-size: 16px;
-    font-weight: var(--font-weight-medium);
-  }
-
-  &.typography__sh_3 {
-    font-size: 14px;
-    font-weight: var(--font-weight-medium);
-  }
-}
-
-.typography__body {
-  line-height: 160%;
-
-  &.typography__body_1 {
-    font-size: 16px;
-    font-weight: var(--font-weight-medium);
-  }
-
-  &.typography__body_2 {
-    font-size: 14px;
-    font-weight: var(--font-weight-medium);
-  }
-
-  &.typography__body_3 {
-    font-size: 16px;
-    font-weight: var(--font-weight-regular);
-  }
-
-  &.typography__body_4 {
-    font-size: 14px;
-    font-weight: var(--font-weight-regular);
-  }
-
-  &.typography__body_5 {
-    font-size: 12px;
-    font-weight: var(--font-weight-regular);
-    text-transform: uppercase;
-  }
-
-  &.typography__body_6 {
-    font-size: 10px;
-    font-weight: var(--font-weight-regular);
-    text-transform: uppercase;
-  }
-}
-
-.typography__caption {
-  line-height: normal;
-  display: inline;
-
-  &.typography__caption_1 {
-    font-size: 12px;
-    font-weight: var(--font-weight-medium);
-  }
-
-  &.typography__caption_2 {
-    font-size: 12px;
-    font-weight: var(--font-weight-regular);
-  }
-
-  &.typography__caption_3 {
-    font-size: 10px;
-    font-weight: var(--font-weight-bold);
-  }
-
-  &.typography__caption_4 {
-    font-size: 10px;
-    font-weight: var(--font-weight-medium);
-  }
-
-  &.typography__caption_5 {
-    font-size: 10px;
-    font-weight: var(--font-weight-regular);
-  }
-}
-
-.typography__overline {
-  line-height: normal;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-
-  &.typography__overline_1 {
-    font-size: 12px;
-    font-weight: var(--font-weight-medium);
-  }
-
-  &.typography__overline_2 {
-    font-size: 10px;
-    font-weight: var(--font-weight-medium);
-  }
-}
-
-.typography__button {
-  line-height: normal;
-  letter-spacing: 0.02em;
-
-  &.typography__button_1 {
-    font-size: 16px;
-    font-weight: var(--font-weight-bold);
-  }
-
-  &.typography__button_2 {
-    font-size: 14px;
-    font-weight: var(--font-weight-bold);
-  }
-
-  &.typography__button_3 {
-    font-size: 12px;
-    font-weight: var(--font-weight-medium);
-  }
-}
-
-.typography__highlight {
+.typography::selection {
   background-color: var(--color-secondary-700);
-  display: inline;
   color: var(--color-championship-white);
-  padding: 2px 6px;
-  margin-right: 3px;
 }
 
+.display1 {
+  @mixin typography-display;
+}
+
+/*
+  Heading
+*/
+@for $i from 1 to 6 {
+  .h$(i) {
+    @mixin typography-heading-$(i);
+  }
+}
+
+/*
+  Sub-Heading
+*/
+@for $i from 1 to 2 {
+  .subheading$(i) {
+    @mixin typography-subheading-$(i);
+  }
+}
+
+/*
+  Body
+*/
+@for $i from 1 to 4 {
+  .body$(i) {
+    @mixin typography-body-$(i);
+  }
+}
+
+/*
+  Caption
+*/
+@for $i from 1 to 5 {
+  .caption$(i) {
+    @mixin typography-caption-$(i);
+  }
+}
+
+/*
+  Overline
+*/
+@for $i from 1 to 2 {
+  .overline$(i) {
+    @mixin typography-overline-$(i);
+  }
+}
+
+/*
+  Mobile
+*/
 @media screen and (max-width: 768px) {
-  .typography__display {
-    font-size: 48px;
-    line-height: 56px;
-    letter-spacing: -0.02em;
+  .display1 {
+    @mixin typography-display_mobile;
   }
 
-  .typography__h_1 {
-    font-size: 32px;
-    line-height: 40px;
+  /* @for $i from 1 to 5 {
+    .h1$(i) {
+      @mixin typography-heading-$(i) _mobile;
+    }
+  } */
+
+  .h1 {
+    @mixin typography-heading-1_mobile;
   }
 
-  .typography__h_2 {
-    font-size: 28px;
+  .h2 {
+    @mixin typography-heading-2_mobile;
   }
 
-  .typography__h_3 {
-    font-size: 24px;
+  .h3 {
+    @mixin typography-heading-3_mobile;
   }
 
-  .typography__h_4 {
-    font-size: 20px;
-    letter-spacing: -0.02em;
+  .h4 {
+    @mixin typography-heading-4_mobile;
   }
 
-  .typography__h_5 {
-    font-size: 16px;
+  .h5 {
+    @mixin typography-heading-5_mobile;
   }
 }

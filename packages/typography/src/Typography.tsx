@@ -1,29 +1,19 @@
 import React from 'react';
 import cn from 'classnames';
 
-import type { TypographyProps } from './Typography.types';
-import { defaultVariantMapping } from './Typography.types';
+import { defaultVariantMapping } from './Typography.constants';
+import { TypographyProps } from './Typography.types';
 
-import stylesVariant from './styles/variant.module.css';
+import styles from './styles/variant.module.css';
 
 export const Typography: React.FC<TypographyProps> = ({
-  variant = 'body.3',
-  highlighted = false,
-  dataTestId,
+  variant = 'body3',
   className,
   Component = defaultVariantMapping[variant],
   children,
+  dataTestId,
 }) => {
-  const [variantName, variantSize] = variant.toLowerCase().split('.');
-
-  const classNames = cn(
-    stylesVariant[`typography__${variantName}`],
-    stylesVariant[`typography__${variantName}_${variantSize}`],
-    {
-      [stylesVariant.typography__highlight]: highlighted,
-    },
-    className,
-  );
+  const classNames = cn(styles.typography, styles[variant], className);
 
   return (
     <Component className={classNames} data-test-id={dataTestId}>
@@ -33,5 +23,9 @@ export const Typography: React.FC<TypographyProps> = ({
 };
 
 Typography.displayName = 'Typography';
+
+Typography.defaultProps = {
+  variant: 'body3',
+};
 
 export default Typography;

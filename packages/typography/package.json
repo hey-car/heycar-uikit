@@ -1,7 +1,7 @@
 {
-  "name": "@hey-ui/typography",
+  "name": "@heycar-uikit/typography",
   "version": "0.0.1",
-  "description": "hey-ui typography",
+  "description": "HeyCar-UIKit typography",
   "main": "dist/index.js",
   "module": "./dist/esm/index.js",
   "scripts": {

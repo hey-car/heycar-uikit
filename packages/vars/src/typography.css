@@ -12,27 +12,181 @@
 /*
   Heading
 */
-@define-mixin display_large__bold {
+@define-mixin typography-display {
   font-size: 60px;
   line-height: 68px;
-  font-weight: bold;
-  letter-spacing: -2.5px;
+  letter-spacing: -0.04em;
+  font-family: var(--font-family-system);
+  font-weight: var(--font-weight-xbold);
+}
+
+@define-mixin typography-display_mobile {
+  @mixin typography-display;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.02em;
+}
+
+@define-mixin typography-heading-1 {
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.02em;
+  font-weight: var(--font-weight-bold);
   font-family: var(--font-family-system);
 }
 
-@define-mixin heading01_large__bold {
-  font-size: 48px;
-  line-height: 56px;
-  font-weight: bold;
-  letter-spacing: -2%;
+@define-mixin typography-heading-1_mobile {
+  @mixin typography-heading-1;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+@define-mixin typography-heading-2 {
+  font-size: 32px;
+  letter-spacing: -0.02em;
+  font-weight: var(--font-weight-bold);
   font-family: var(--font-family-system);
 }
 
-@define-mixin heading01_large__medium {
-  font-size: 48px;
-  line-height: 56px;
-  font-weight: 500;
-  letter-spacing: -2%;
+@define-mixin typography-heading-2_mobile {
+  @mixin typography-heading-2;
+  font-size: 28px;
+}
+
+@define-mixin typography-heading-3 {
+  font-size: 28px;
+  letter-spacing: -0.02em;
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-family-system);
+}
+
+@define-mixin typography-heading-3_mobile {
+  @mixin typography-heading-3;
+  font-size: 24px;
+}
+
+@define-mixin typography-heading-4 {
+  font-size: 24px;
+  letter-spacing: -0.01em;
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-family-system);
+}
+
+@define-mixin typography-heading-4_mobile {
+  @mixin typography-heading-4;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+}
+
+@define-mixin typography-heading-5 {
+  font-size: 20px;
+  letter-spacing: -0.01em;
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-family-system);
+}
+
+@define-mixin typography-heading-5_mobile {
+  @mixin typography-heading-5;
+  font-size: 16px;
+}
+@define-mixin typography-heading-6 {
+  font-size: 16px;
+  letter-spacing: -0.01em;
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-family-system);
+}
+
+/*
+  Sub-Heading
+*/
+@define-mixin typography-subheading-1 {
+  font-size: 14px;
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-family-system);
+}
+
+@define-mixin typography-subheading-2 {
+  font-size: 16px;
+  font-weight: var(--font-weight-medium);
+  font-family: var(--font-family-system);
+}
+
+/*
+  Body
+*/
+@define-mixin typography-body-1 {
+  font-size: 16px;
+  font-weight: var(--font-weight-medium);
+  font-family: var(--font-family-system);
+}
+
+@define-mixin typography-body-2 {
+  font-size: 14px;
+  font-weight: var(--font-weight-medium);
+  font-family: var(--font-family-system);
+}
+
+@define-mixin typography-body-3 {
+  font-size: 16px;
+  font-weight: var(--font-weight-regular);
+  font-family: var(--font-family-system);
+}
+
+@define-mixin typography-body-4 {
+  font-size: 14px;
+  font-weight: var(--font-weight-regular);
+  font-family: var(--font-family-system);
+}
+
+/*
+  Caption
+*/
+@define-mixin typography-caption-1 {
+  font-size: 12px;
+  font-weight: var(--font-weight-medium);
+  font-family: var(--font-family-system);
+}
+
+@define-mixin typography-caption-2 {
+  font-size: 12px;
+  font-weight: var(--font-weight-regular);
+  font-family: var(--font-family-system);
+}
+
+@define-mixin typography-caption-3 {
+  font-size: 10px;
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-family-system);
+}
+
+@define-mixin typography-caption-4 {
+  font-size: 10px;
+  font-weight: var(--font-weight-medium);
+  font-family: var(--font-family-system);
+}
+
+@define-mixin typography-caption-5 {
+  font-size: 10px;
+  font-weight: var(--font-weight-regular);
+  font-family: var(--font-family-system);
+}
+
+/*
+  Overline
+*/
+@define-mixin typography-overline-1 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: var(--font-weight-medium);
+  font-family: var(--font-family-system);
+}
+
+@define-mixin typography-overline-2 {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: var(--font-weight-medium);
   font-family: var(--font-family-system);
 }
 
