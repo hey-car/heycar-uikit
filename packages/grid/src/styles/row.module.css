@@ -1,4 +1,9 @@
 @use postcss-each;
+@use postcss-custom-media;
+
+@custom-media --tablet-large (min-width: 834px);
+@custom-media --desktop (min-width: 1024px);
+@custom-media --desktop-large (min-width: 1440px);
 
 .row {
   display: flex;
@@ -47,20 +52,20 @@
   flex-direction: row-reverse;
 }
 
-@media (min-width: 834px) {
+@media (--tablet-large) {
   .row {
     padding: 0 var(--gap-xl);
   }
 }
 
-@media (min-width: 1024px) {
+@media (--desktop) {
   .row {
     column-gap: var(--gap-xl);
     padding: 0 var(--gap-3xl);
   }
 }
 
-@media (min-width: 1440px) {
+@media (--desktop-large) {
   .row {
     padding: 0 var(--gap-9xl);
     max-width: 1440px;
