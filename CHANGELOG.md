@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/hey-car/heycar-uikit/compare/v1.0.0...v1.1.0) (2022-06-15)
+
+
+### Features
+
+* **typography:** typography component ([#34](https://github.com/hey-car/heycar-uikit/issues/34)) ([48aa261](https://github.com/hey-car/heycar-uikit/commit/48aa26142d3a0406c732bbe7e8624494172828b7))
+
 # 1.0.0 (2022-06-02)
 
 ### Bug Fixes
