@@ -1,4 +1,4 @@
-import React, { FC} from 'react';
+import React, { FC } from 'react';
 import cn from 'classnames';
 import { Example } from 'storybook-addon-live-examples';
 

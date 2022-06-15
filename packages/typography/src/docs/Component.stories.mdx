@@ -1,0 +1,69 @@
+import { Meta, Story, Props } from '@storybook/addon-docs';
+import { ComponentHeader, CssVars, TabContainer } from 'storybook/blocks';
+
+import Typography from '../';
+import { version } from '../../package.json';
+import Description from './Description.mdx';
+import Changelog from '../../CHANGELOG.md';
+import styles from '!!raw-loader!../styles/variant.module.css';
+
+<Meta
+  title="Components/Typography"
+  component={Typography}
+  argTypes={{
+    children: {
+      control: 'text',
+      type: { name: 'string', required: false },
+    },
+    dataTestId: {
+      table: {
+        disable: true,
+      },
+    },
+    Component: {
+      table: {
+        disable: true,
+      },
+    },
+    className: {
+      table: {
+        disable: true,
+      },
+    },
+  }}
+/>
+
+export const TypographyTemplate = args => <Typography {...args} />;
+
+<!-- Canvas -->
+
+<Story
+  name="Typography"
+  args={{
+    children: 'The quick brown fox jumps over the lazy dog 🦊',
+    variant: 'body1',
+  }}
+>
+  {TypographyTemplate.bind({})}
+</Story>
+
+<!-- Docs -->
+
+<ComponentHeader
+  name="Typography"
+  version={version}
+  stage={2}
+  design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Design-System?node-id=1369%3A39089"
+/>
+
+```tsx
+import { Typography } from '@heycar-uikit/typography';
+```
+
+<TabContainer
+  tabs={[
+    { label: 'Description', component: <Description /> },
+    { label: 'Props', component: <Props of={Typography} /> },
+    { label: 'Changelog', component: <Changelog /> },
+  ]}
+/>
