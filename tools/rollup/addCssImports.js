@@ -20,7 +20,7 @@ const addCssImports = ({ currentPackageDir }) => {
 
             code = code.replace(
               new RegExp(/,"cssfilepath":"(.*?)"};/),
-              `};\n require('./${cssRelativePath}')`,
+              `};\n require('./${cssRelativePath.toLowerCase()}')`,
             );
           });
         }
