@@ -56,5 +56,9 @@ export interface RowProps {
   /**
    * Gap between rows in pixels
    */
-  rowGap?: GapOptions;
+  rowGap?: GapOptions[];
+  /**
+   * Gap between columns in pixels
+   */
+  columnGap?: GapOptions[];
 }

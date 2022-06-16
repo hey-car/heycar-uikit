@@ -4,7 +4,7 @@ type Styles = {
   [className: string]: string;
 };
 
-export const getColumnClasses = (
+export const getClassesAccordingToBreakpoint = (
   values: number[],
   styles: Styles,
   prefix?: string,

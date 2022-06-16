@@ -1,6 +1,7 @@
 @use postcss-each;
 @use postcss-custom-media;
 
+@custom-media --tablet (min-width: 768px);
 @custom-media --tablet-large (min-width: 834px);
 @custom-media --desktop (min-width: 1024px);
 @custom-media --desktop-large (min-width: 1440px);
@@ -8,15 +9,45 @@
 .row {
   display: flex;
   flex-wrap: wrap;
-  column-gap: var(--gap-m);
   padding: 0 var(--gap-m);
   width: 100%;
   box-sizing: border-box;
 }
 
-@each $rowGap in 0, 2, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 56, 64 {
-  .row-gap-$(rowGap) {
-    row-gap: calc($rowGap * 1px);
+@define-mixin gapClasses $breakpoint, $value {
+  .$(breakpoint)-column-gap-$(value) {
+    --grid-column-gap: calc($value * 1px);
+    --grid-column-width: calc((100% - (11 * var(--grid-column-gap))) / 12);
+    column-gap: var(--grid-column-gap);
+  }
+  .$(breakpoint)-row-gap-$(value) {
+    row-gap: calc($value * 1px);
+  }
+}
+
+@each $gap in 0, 2, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 56, 64 {
+  /* Small Gap Classes */
+  @mixin gapClasses sm, $gap;
+}
+
+@media (--tablet) {
+  @each $gap in 0, 2, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 56, 64 {
+    /* Medium Gap Classes */
+    @mixin gapClasses md, $gap;
+  }
+}
+
+@media (--desktop) {
+  @each $gap in 0, 2, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 56, 64 {
+    /* Large Gap Classes */
+    @mixin gapClasses lg, $gap;
+  }
+}
+
+@media (--desktop-large) {
+  @each $gap in 0, 2, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 56, 64 {
+    /* Extra Large Gap Classes */
+    @mixin gapClasses xl, $gap;
   }
 }
 
@@ -60,7 +91,6 @@
 
 @media (--desktop) {
   .row {
-    column-gap: var(--gap-xl);
     padding: 0 var(--gap-3xl);
   }
 }

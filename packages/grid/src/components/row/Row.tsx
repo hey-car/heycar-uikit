@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import cn from 'classnames';
+
+import { getClassesAccordingToBreakpoint } from '../../utils/getClassesAccordingToBreakpoint';
 
 import { RowProps } from './Row.types';
 
@@ -12,13 +14,25 @@ function Row({
   justify = 'start',
   align = 'stretch',
   reverse,
-  rowGap = 0,
+  rowGap = [0],
+  columnGap = [0],
 }: RowProps): JSX.Element {
+  const columnGapClasses = useMemo(
+    () => getClassesAccordingToBreakpoint(columnGap, styles, 'column-gap'),
+    [columnGap],
+  );
+  const rowGapClasses = useMemo(
+    () => getClassesAccordingToBreakpoint(rowGap, styles, 'row-gap'),
+    [rowGap],
+  );
+
   const classNames = cn(
     styles.row,
     styles[`justify-${justify}`],
     styles[`align-${align}`],
     styles[`row-gap-${rowGap}`],
+    ...columnGapClasses,
+    ...rowGapClasses,
     className,
     { [styles.reverse]: !!reverse },
   );

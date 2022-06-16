@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import cn from 'classnames';
 
-import { getColumnClasses } from '../../utils/getColumnClasses';
+import { getClassesAccordingToBreakpoint } from '../../utils/getClassesAccordingToBreakpoint';
 
 import { ColumnProps } from './Column.types';
 
@@ -16,15 +16,15 @@ function Column({
   order = [],
 }: ColumnProps): JSX.Element {
   const widthClasses = useMemo(
-    () => getColumnClasses(widths, styles),
+    () => getClassesAccordingToBreakpoint(widths, styles),
     [widths],
   );
   const offsetClasses = useMemo(
-    () => getColumnClasses(offset, styles, 'offset'),
+    () => getClassesAccordingToBreakpoint(offset, styles, 'offset'),
     [offset],
   );
   const orderClasses = useMemo(
-    () => getColumnClasses(order, styles, 'order'),
+    () => getClassesAccordingToBreakpoint(order, styles, 'order'),
     [order],
   );
 

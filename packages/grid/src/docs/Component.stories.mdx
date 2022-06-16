@@ -53,7 +53,8 @@ export const ColumnTemplate = args => (
   args={{
     justify: 'start',
     align: 'stretch',
-    rowGap: 0,
+    rowGap: [0],
+    columnGap: [0],
     reverse: false
   }}
     argTypes={{
@@ -64,8 +65,11 @@ export const ColumnTemplate = args => (
           control: { type: 'select', options: ['start', 'end', 'center', 'stretch', 'baseline'] }
         },
         rowGap: {
-          control: { type: 'select', options: [0, 2, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 56, 64] }
-        }
+          control: { type: 'object' }
+        },
+      columnGap: {
+        control: { type: 'object' }
+      }
       }}
 >
   {RowTemplate.bind({})}
