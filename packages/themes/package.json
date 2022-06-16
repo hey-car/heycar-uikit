@@ -2,7 +2,22 @@
   "name": "@heycar-uikit/themes",
   "version": "1.1.0",
   "description": "HeyCar-UIKit themes",
-  "keywords": [],
+  "keywords": [
+    "ui",
+    "uikit",
+    "react",
+    "components",
+    "heycar",
+    "typescript",
+    "ui-components",
+    "design-systems",
+    "theme"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hey-car/heycar-uikit.git"
+  },
+  "homepage": "https://github.com/hey-car/heycar-uikit/tree/main/packages/themes#readme",
   "publishConfig": {
     "access": "public",
     "directory": "dist"

@@ -7,6 +7,22 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "ui",
+    "uikit",
+    "react",
+    "components",
+    "heycar",
+    "typescript",
+    "ui-components",
+    "design-systems",
+    "button"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hey-car/heycar-uikit.git"
+  },
+  "homepage": "https://github.com/hey-car/heycar-uikit/tree/main/packages/button#readme",
   "publishConfig": {
     "access": "public"
   },
