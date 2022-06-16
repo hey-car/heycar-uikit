@@ -10,7 +10,7 @@ type JustifyOptions =
 
 type AlignOptions = BaseAlignmentOptions | 'stretch' | 'baseline';
 
-type GapOptions =
+export type GapOptions =
   | 0
   | 2
   | 4

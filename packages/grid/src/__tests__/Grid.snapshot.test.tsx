@@ -63,7 +63,18 @@ describe('Grid Snapshots tests', () => {
   it('should render row with row gap', () => {
     expect(
       render(
-        <Row rowGap={8}>
+        <Row rowGap={[8]}>
+          <Column widths={[12]}>Hello</Column>
+          <Column widths={[12]}>World!</Column>
+        </Row>,
+      ),
+    ).toMatchSnapshot();
+  });
+
+  it('should render row with column gap', () => {
+    expect(
+      render(
+        <Row columnGap={[8]}>
           <Column widths={[12]}>Hello</Column>
           <Column widths={[12]}>World!</Column>
         </Row>,

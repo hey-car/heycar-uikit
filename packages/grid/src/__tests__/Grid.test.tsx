@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 
 import { ColumnProps } from '../components/column/Column.types';
-import { RowProps } from '../components/row/Row.types';
+import { GapOptions, RowProps } from "../components/row/Row.types";
 import { Column, Row } from '..';
 
 const renderTestRow = (props: Omit<RowProps, 'children'>) =>
@@ -18,6 +18,8 @@ const renderTestColumn = (props: Omit<ColumnProps, 'children'>) =>
       <div>Hello World!</div>
     </Column>,
   );
+
+const breakpoints = ['sm', 'md', 'lg', 'xl'];
 
 describe('Row', () => {
   describe('Classes tests', () => {
@@ -47,6 +49,26 @@ describe('Row', () => {
 
       expect(container.firstElementChild).toHaveClass('reverse');
     });
+
+    it('should set `rowGap` classes', () => {
+      const rowGap: GapOptions[] = [0, 2, 4];
+      const { container } = renderTestRow({ rowGap });
+      const rowGapClasses = rowGap.map(
+        (gap, index) => `${breakpoints[index]}-row-gap-${gap}`,
+      );
+
+      expect(container.firstElementChild).toHaveClass(...rowGapClasses);
+    });
+
+    it('should set `columnGap` classes', () => {
+      const columnGap: GapOptions[] = [0, 2, 4];
+      const { container } = renderTestRow({ columnGap });
+      const columnGapClasses = columnGap.map(
+        (gap, index) => `${breakpoints[index]}-column-gap-${gap}`,
+      );
+
+      expect(container.firstElementChild).toHaveClass(...columnGapClasses);
+    });
   });
 
   describe('Custom component', () => {
@@ -65,8 +87,6 @@ describe('Row', () => {
 
 describe('Column', () => {
   describe('Classes tests', () => {
-    const breakpoints = ['sm', 'md', 'lg', 'xl'];
-
     it('should set `className` class', () => {
       const className = 'test-class';
       const { container } = renderTestColumn({ className, widths: [0] });
