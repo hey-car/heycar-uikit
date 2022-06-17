@@ -14,9 +14,7 @@ const justifyOptions = [
 ];
 const alignOptions = ['start', 'end', 'center', 'stretch', 'baseline'];
 const reverseOptions = [true, false];
-const gapOptions = [
-  0, 2, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 56, 64,
-];
+const gapOptions = [0, 2, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 56, 64];
 const clip = { x: 0, y: 0, width: 1200, height: 200 };
 const screenshotTesting = setupScreenshotTesting({
   it,

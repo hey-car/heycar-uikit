@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 
 import { ColumnProps } from '../components/column/Column.types';
-import { GapOptions, RowProps } from "../components/row/Row.types";
+import { GapOptions, RowProps } from '../components/row/Row.types';
 import { Column, Row } from '..';
 
 const renderTestRow = (props: Omit<RowProps, 'children'>) =>
