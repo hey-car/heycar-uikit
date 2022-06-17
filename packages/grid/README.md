@@ -22,7 +22,7 @@ import { Row, Column } from '@heycar-uikit/grid';
 
 function App() {
   return (
-    <Row>
+    <Row columnGap={[0, 2, 4]} rowGap={[0, 2, 4]}>
       <Column widths={[12, 6, 5, 4]}>
         Some content
       </Column>

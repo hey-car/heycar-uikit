@@ -57,20 +57,20 @@ export const ColumnTemplate = args => (
     columnGap: [0],
     reverse: false
   }}
-    argTypes={{
-        justify: {
-          control: { type: 'select', options: ['start', 'end', 'center', 'space-between', 'space-evenly', 'space-around'] }
-        },
-        align: {
-          control: { type: 'select', options: ['start', 'end', 'center', 'stretch', 'baseline'] }
-        },
-        rowGap: {
-          control: { type: 'object' }
-        },
-      columnGap: {
-        control: { type: 'object' }
-      }
-      }}
+  argTypes={{
+    justify: {
+      control: { type: 'select', options: ['start', 'end', 'center', 'space-between', 'space-evenly', 'space-around'] }
+    },
+    align: {
+      control: { type: 'select', options: ['start', 'end', 'center', 'stretch', 'baseline'] }
+    },
+    rowGap: {
+      control: { type: 'object' }
+    },
+    columnGap: {
+      control: { type: 'object' }
+    }
+  }}
 >
   {RowTemplate.bind({})}
 </Story>
@@ -102,11 +102,11 @@ import { Row, Column } from '@heycar-uikit/grid';
 ```
 
 <TabContainer
-    tabs={[
-        {label: 'Description', component: <Description />},
-        {label: 'Props', component: <Props />},
-        {label: 'CSS tokens', component: <CssVars css={styles} />},
-        {label: 'Changelog', component: <Changelog />}
-    ]}
+  tabs={[
+    {label: 'Description', component: <Description />},
+    {label: 'Props', component: <Props />},
+    {label: 'CSS tokens', component: <CssVars css={styles} />},
+    {label: 'Changelog', component: <Changelog />}
+  ]}
 />
 
