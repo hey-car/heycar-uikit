@@ -28,6 +28,7 @@ npm start
 ```bash
 npm i
 npm run build
+
 ```
 
 ### Building result

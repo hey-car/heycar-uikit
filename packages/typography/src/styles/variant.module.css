@@ -1,0 +1,90 @@
+@import '../../../themes/src/default.css';
+
+.typography::selection {
+  background-color: var(--color-secondary-700);
+  color: var(--color-championship-white);
+}
+
+.display1 {
+  @mixin typography-display;
+}
+
+/*
+  Heading
+*/
+@for $i from 1 to 6 {
+  .h$(i) {
+    @mixin typography-heading-$(i);
+  }
+}
+
+/*
+  Sub-Heading
+*/
+@for $i from 1 to 2 {
+  .subheading$(i) {
+    @mixin typography-subheading-$(i);
+  }
+}
+
+/*
+  Body
+*/
+@for $i from 1 to 4 {
+  .body$(i) {
+    @mixin typography-body-$(i);
+  }
+}
+
+/*
+  Caption
+*/
+@for $i from 1 to 5 {
+  .caption$(i) {
+    @mixin typography-caption-$(i);
+  }
+}
+
+/*
+  Overline
+*/
+@for $i from 1 to 2 {
+  .overline$(i) {
+    @mixin typography-overline-$(i);
+  }
+}
+
+/*
+  Mobile
+*/
+@media screen and (max-width: 768px) {
+  .display1 {
+    @mixin typography-display_mobile;
+  }
+
+  /* @for $i from 1 to 5 {
+    .h1$(i) {
+      @mixin typography-heading-$(i) _mobile;
+    }
+  } */
+
+  .h1 {
+    @mixin typography-heading-1_mobile;
+  }
+
+  .h2 {
+    @mixin typography-heading-2_mobile;
+  }
+
+  .h3 {
+    @mixin typography-heading-3_mobile;
+  }
+
+  .h4 {
+    @mixin typography-heading-4_mobile;
+  }
+
+  .h5 {
+    @mixin typography-heading-5_mobile;
+  }
+}

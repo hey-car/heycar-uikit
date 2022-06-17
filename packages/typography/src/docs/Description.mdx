@@ -1,0 +1,76 @@
+import Typography from '../';
+
+The **Typography** component is used to display any types of text present on the **heycar-uikit** design system.
+
+In the design prototypes, when clicking on text, you will find a variant name like `h1`, `subheading2`, `body4`. That's all that you need to get your text component ready.
+Each variant contains already the expected font size, font weight, letter spacing, line height, and text transform.
+
+If you need to highlight a text, simply include the prop `highlighted`. In case you want to change the HTML tag the text should be wrapped, you can set a new one with `Component`. Feel free to include customized styles with `className`.
+
+```tsx
+<Typography variant="h1">
+  Your heading here!
+</Typography>
+
+<Typography variant="caption2">
+  Your highlighted caption here!
+</Typography>
+
+<Typography variant="body2" Component="span">
+  Your highlighted body text wrapped in `span` here!
+</Typography>
+```
+
+## Typography variants
+
+Several typography elements are available in the library. They are listed below.
+
+- Display (`variant="display1"`)
+- Heading (`variant="h1|h2|h3|h4|h5|h6"`)
+- Sub heading (`variant="subheading1|subheading2"`)
+- Body (`variant="body1|body2|body3|body4"`)
+- Caption (`variant="caption1|caption2|caption3|caption4|caption5"`)
+- Overline (`variant="overline1|overline2"`)
+
+If this prop is not set, the default is `variant="body3"`. You can try the different variants in the playground below.
+
+```tsx live
+render(
+  <Container>
+    <Typography variant="h2">Your big heading is here 🤩</Typography>
+    <br />
+    <br />
+    <Typography variant="subheading2">
+      Your sub heading comes right after.
+    </Typography>
+    <br />
+    <br />
+    <Typography variant="body5" Component="span">
+      Your body text wrapped in `span` here,
+      <Typography variant="body5" highlighted Component="span">
+        ⚠️ followed by some highlighted text.
+      </Typography>
+    </Typography>
+  </Container>,
+);
+```
+
+### HTML Tags
+
+The variant `heading` will generate an HTML tag `<h{size}>` corresponding to its size (e.g. `<h1>`, `<h2>`, etc).
+
+The variant `caption` will generate an HTML tag `<caption>`.
+
+The variants `body` and `display` will generate an HTML tag `<p>`.
+
+The variants `subHeading`, `overline`, and `button` will generate `<span>` HTML tags.
+
+If you need to customize the HTML tag, simply change it with the prop `Component`.
+
+## Mobile versions
+
+The heading and display variants should change properties on mobile views. This is already covered in this component.
+
+## Customized styles and testing
+
+In case you need to add customized styles, add a `className`. For testing purposes, the prop `dataTestId` is also available.
