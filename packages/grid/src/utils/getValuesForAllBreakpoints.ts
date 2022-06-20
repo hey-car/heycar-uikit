@@ -7,7 +7,9 @@ export const getValuesForAllBreakpoints = (
   return breakpoints.reduce(
     (obj, breakpoint, index) => ({
       ...obj,
-      ...(isNaN(obj[breakpoint] as number) && { [breakpoint]: obj[breakpoints[index - 1]] }),
+      ...(isNaN(obj[breakpoint] as number) && {
+        [breakpoint]: obj[breakpoints[index - 1]],
+      }),
     }),
     breakpointObject,
   );
