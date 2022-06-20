@@ -4,14 +4,25 @@ type Styles = {
   [className: string]: string;
 };
 
+type BreakpointType = typeof breakpoints[number];
+type BreakpointValues = {
+  [breakpoint in BreakpointType]?: number;
+};
+
 export const getClassesAccordingToBreakpoint = (
-  values: number[],
+  values: number[] | BreakpointValues,
   styles: Styles,
   prefix?: string,
 ) => {
   const addedPrefix = prefix ? `-${prefix}` : '';
 
-  return values.map(
-    (value, index) => styles[`${breakpoints[index]}${addedPrefix}-${value}`],
+  if (Array.isArray(values)) {
+    return values.map(
+      (value, index) => styles[`${breakpoints[index]}${addedPrefix}-${value}`],
+    );
+  }
+
+  return breakpoints.map(
+    breakpoint => styles[`${breakpoint}${addedPrefix}-${values[breakpoint]}`],
   );
 };

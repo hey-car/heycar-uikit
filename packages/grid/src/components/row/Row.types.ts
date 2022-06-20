@@ -9,7 +9,6 @@ type JustifyOptions =
   | 'space-around';
 
 type AlignOptions = BaseAlignmentOptions | 'stretch' | 'baseline';
-
 export type GapOptions =
   | 0
   | 2
@@ -27,6 +26,12 @@ export type GapOptions =
   | 48
   | 56
   | 64;
+const breakpoints = ['sm', 'md', 'lg', 'xl'] as const;
+
+type BreakpointType = typeof breakpoints[number];
+type BreakpointGaps = {
+  [breakpoint in BreakpointType]?: GapOptions;
+};
 
 export interface RowProps {
   /**
@@ -54,11 +59,11 @@ export interface RowProps {
    */
   reverse?: boolean;
   /**
-   * Gap between rows in pixels
+   * Gap between rows in pixels according to breakpoint
    */
-  rowGap?: GapOptions[];
+  rowGap?: BreakpointGaps;
   /**
-   * Gap between columns in pixels
+   * Gap between columns in pixels according to breakpoint
    */
-  columnGap?: GapOptions[];
+  columnGap?: BreakpointGaps;
 }

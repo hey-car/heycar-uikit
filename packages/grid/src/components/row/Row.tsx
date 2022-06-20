@@ -14,8 +14,8 @@ function Row({
   justify = 'start',
   align = 'stretch',
   reverse,
-  rowGap = [0],
-  columnGap = [0],
+  rowGap = { sm: 0 },
+  columnGap = { sm: 0 },
 }: RowProps): JSX.Element {
   const columnGapClasses = useMemo(
     () => getClassesAccordingToBreakpoint(columnGap, styles, 'column-gap'),
