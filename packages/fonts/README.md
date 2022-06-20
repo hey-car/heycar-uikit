@@ -1,6 +1,8 @@
 # HeyCar-UIKit - Fonts
 
-The Fonts component is used load Fonts
+The Fonts is a web fonts kit and is used host heycar fonts
+It hosts web fonts for heycar locally. It adds objecttiv family fonts to all available sizes and are in [ttf format](https://en.wikipedia.org/wiki/TrueType)
+It hosts all fonts in static folder we support thesse fonts with @font-face
 
 ## Installation
 
@@ -13,9 +15,13 @@ npm install @heycar-uikit/fonts
 ## Usage
 
 ```tsx
-import fonts from '@heycar-uikit/fonts';
+import '@heycar-uikit/fonts';
+
+p {
+     font-family: 'Objektiv';
+}
+
+h1 {
+     font-family: 'Objektiv';
+}
 ```
-
-## Documentation and sandbox
-
-[Storybook](https://hey-car.github.io/heycar-uikit/main/?path=/docs/components-Fonts--Fonts) documentation and sandbox
