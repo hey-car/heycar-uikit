@@ -1,5 +1,7 @@
 import { ElementType, ReactNode } from 'react';
 
+import { BreakpointType } from '../../Grid.types';
+
 type BaseAlignmentOptions = 'start' | 'end' | 'center';
 
 type JustifyOptions =
@@ -26,10 +28,8 @@ export type GapOptions =
   | 48
   | 56
   | 64;
-const breakpoints = ['sm', 'md', 'lg', 'xl'] as const;
 
-type BreakpointType = typeof breakpoints[number];
-type BreakpointGaps = {
+export type BreakpointGaps = {
   [breakpoint in BreakpointType]?: GapOptions;
 };
 

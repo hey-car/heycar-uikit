@@ -1,5 +1,11 @@
 import { ElementType, ReactNode } from 'react';
 
+import { BreakpointType } from '../../Grid.types';
+
+export type BreakpointValues = {
+  [breakpoint in BreakpointType]?: number;
+};
+
 export type ColumnProps = {
   /**
    * The content of the component
@@ -8,7 +14,7 @@ export type ColumnProps = {
   /**
    * Column spans of container (12 max) according to breakpoints
    */
-  widths: number[];
+  widths: BreakpointValues;
   /**
    * Additional class name
    */
@@ -20,9 +26,9 @@ export type ColumnProps = {
   /**
    * Column offset in columns according to breakpoint
    */
-  offset?: number[];
+  offset?: BreakpointValues;
   /**
    * Order of component in row according to breakpoint
    */
-  order?: number[];
+  order?: BreakpointValues;
 };

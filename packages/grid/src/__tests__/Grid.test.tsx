@@ -1,8 +1,12 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 
-import { ColumnProps } from '../components/column/Column.types';
-import { GapOptions, RowProps } from '../components/row/Row.types';
+import {
+  BreakpointValues,
+  ColumnProps,
+} from '../components/column/Column.types';
+import { BreakpointGaps, RowProps } from '../components/row/Row.types';
+import { breakpoints, BreakpointType } from '../Grid.types';
 import { Column, Row } from '..';
 
 const renderTestRow = (props: Omit<RowProps, 'children'>) =>
@@ -19,7 +23,19 @@ const renderTestColumn = (props: Omit<ColumnProps, 'children'>) =>
     </Column>,
   );
 
-const breakpoints = ['sm', 'md', 'lg', 'xl'];
+const generateClasses = (obj: BreakpointValues, prefix?: string) =>
+  breakpoints.reduce((classes: string[], breakpoint) => {
+    if (obj[breakpoint as BreakpointType]) {
+      return [
+        ...classes,
+        `${breakpoint}${prefix ? `-${prefix}` : ''}-${
+          obj[breakpoint as BreakpointType]
+        }`,
+      ];
+    }
+
+    return classes;
+  }, []);
 
 describe('Row', () => {
   describe('Classes tests', () => {
@@ -51,21 +67,18 @@ describe('Row', () => {
     });
 
     it('should set `rowGap` classes', () => {
-      const rowGap: GapOptions[] = [0, 2, 4];
+      const rowGap: BreakpointGaps = { sm: 0, md: 2, lg: 4 };
       const { container } = renderTestRow({ rowGap });
-      const rowGapClasses = rowGap.map(
-        (gap, index) => `${breakpoints[index]}-row-gap-${gap}`,
-      );
+
+      const rowGapClasses = generateClasses(rowGap, 'row-gap');
 
       expect(container.firstElementChild).toHaveClass(...rowGapClasses);
     });
 
     it('should set `columnGap` classes', () => {
-      const columnGap: GapOptions[] = [0, 2, 4];
+      const columnGap: BreakpointGaps = { sm: 0, md: 2, lg: 4 };
       const { container } = renderTestRow({ columnGap });
-      const columnGapClasses = columnGap.map(
-        (gap, index) => `${breakpoints[index]}-column-gap-${gap}`,
-      );
+      const columnGapClasses = generateClasses(columnGap, 'column-gap');
 
       expect(container.firstElementChild).toHaveClass(...columnGapClasses);
     });
@@ -89,37 +102,31 @@ describe('Column', () => {
   describe('Classes tests', () => {
     it('should set `className` class', () => {
       const className = 'test-class';
-      const { container } = renderTestColumn({ className, widths: [0] });
+      const { container } = renderTestColumn({ className, widths: { sm: 0 } });
 
       expect(container.firstElementChild).toHaveClass(className);
     });
 
     it('should set `widths` classes', () => {
-      const widths = [12, 6, 8, 7];
+      const widths = { sm: 12, md: 6, lg: 8, xl: 7 };
       const { container } = renderTestColumn({ widths });
-      const widthClasses = widths.map(
-        (width, index) => `${breakpoints[index]}-${width}`,
-      );
+      const widthClasses = generateClasses(widths);
 
       expect(container.firstElementChild).toHaveClass(...widthClasses);
     });
 
     it('should set `offset` classes', () => {
-      const offset = [1, 2, 3, 4];
-      const { container } = renderTestColumn({ offset, widths: [0] });
-      const offsetClasses = offset.map(
-        (off, index) => `${breakpoints[index]}-offset-${off}`,
-      );
+      const offset = { sm: 1, md: 2, lg: 3, xl: 4 };
+      const { container } = renderTestColumn({ offset, widths: { sm: 0 } });
+      const offsetClasses = generateClasses(offset, 'offset');
 
       expect(container.firstElementChild).toHaveClass(...offsetClasses);
     });
 
     it('should set `order` classes', () => {
-      const order = [1, 2, 3, 4];
-      const { container } = renderTestColumn({ order, widths: [0] });
-      const orderClasses = order.map(
-        (ord, index) => `${breakpoints[index]}-order-${ord}`,
-      );
+      const order = { sm: 1, md: 2, lg: 3, xl: 4 };
+      const { container } = renderTestColumn({ order, widths: { sm: 0 } });
+      const orderClasses = generateClasses(order, 'order');
 
       expect(container.firstElementChild).toHaveClass(...orderClasses);
     });
@@ -132,7 +139,7 @@ describe('Column', () => {
       cb.mockReturnValue(null);
 
       /* eslint-disable-next-line @typescript-eslint/naming-convention */
-      renderTestColumn({ Component: cb, widths: [0] });
+      renderTestColumn({ Component: cb, widths: { sm: 0 } });
 
       expect(cb).toBeCalled();
     });

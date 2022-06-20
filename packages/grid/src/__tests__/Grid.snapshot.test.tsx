@@ -8,7 +8,7 @@ describe('Grid Snapshots tests', () => {
     expect(
       render(
         <Row>
-          <Column widths={[6]}>Hello</Column>
+          <Column widths={{ sm: 6 }}>Hello</Column>
         </Row>,
       ),
     ).toMatchSnapshot();
@@ -18,8 +18,8 @@ describe('Grid Snapshots tests', () => {
     expect(
       render(
         <Row justify="center">
-          <Column widths={[3]}>Hello</Column>
-          <Column widths={[3]}>World!</Column>
+          <Column widths={{ sm: 3 }}>Hello</Column>
+          <Column widths={{ sm: 3 }}>World!</Column>
         </Row>,
       ),
     ).toMatchSnapshot();
@@ -29,8 +29,8 @@ describe('Grid Snapshots tests', () => {
     expect(
       render(
         <Row justify="center">
-          <Column widths={[3]}>Hello</Column>
-          <Column widths={[3]}>World!</Column>
+          <Column widths={{ sm: 3 }}>Hello</Column>
+          <Column widths={{ sm: 3 }}>World!</Column>
         </Row>,
       ),
     ).toMatchSnapshot();
@@ -40,8 +40,8 @@ describe('Grid Snapshots tests', () => {
     expect(
       render(
         <Row align="center">
-          <Column widths={[3]}>Hello</Column>
-          <Column widths={[3]}>
+          <Column widths={{ sm: 3 }}>Hello</Column>
+          <Column widths={{ sm: 3 }}>
             World!<div>Extra text</div>
           </Column>
         </Row>,
@@ -53,8 +53,8 @@ describe('Grid Snapshots tests', () => {
     expect(
       render(
         <Row reverse={true}>
-          <Column widths={[3]}>Hello</Column>
-          <Column widths={[3]}>World!</Column>
+          <Column widths={{ sm: 3 }}>Hello</Column>
+          <Column widths={{ sm: 3 }}>World!</Column>
         </Row>,
       ),
     ).toMatchSnapshot();
@@ -63,9 +63,9 @@ describe('Grid Snapshots tests', () => {
   it('should render row with row gap', () => {
     expect(
       render(
-        <Row rowGap={[8]}>
-          <Column widths={[12]}>Hello</Column>
-          <Column widths={[12]}>World!</Column>
+        <Row rowGap={{ sm: 8 }}>
+          <Column widths={{ sm: 12 }}>Hello</Column>
+          <Column widths={{ sm: 12 }}>World!</Column>
         </Row>,
       ),
     ).toMatchSnapshot();
@@ -74,9 +74,9 @@ describe('Grid Snapshots tests', () => {
   it('should render row with column gap', () => {
     expect(
       render(
-        <Row columnGap={[8]}>
-          <Column widths={[12]}>Hello</Column>
-          <Column widths={[12]}>World!</Column>
+        <Row columnGap={{ sm: 8 }}>
+          <Column widths={{ sm: 12 }}>Hello</Column>
+          <Column widths={{ sm: 12 }}>World!</Column>
         </Row>,
       ),
     ).toMatchSnapshot();

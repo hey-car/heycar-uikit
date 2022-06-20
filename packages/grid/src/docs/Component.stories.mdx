@@ -13,27 +13,51 @@ import styles from '!!raw-loader!../styles/column.module.css';
 />
 
 export const RowTemplate = args => (
-    <Row {...args}>
-      <Column widths={[12, 6, 8, 7]}>
-        <div style={{ padding: 8, color: 'white', background: '#00a584', height: '100%', textAlign: 'center', boxSizing: 'border-box', marginBottom: 8 }}>
-          <strong>1</strong><br />
-          SM-12 MD-6 LG-8 XL-7
-        </div>
-      </Column>
-      <Column widths={[12, 6, 4, 5]}>
-        <div style={{ padding: 8, color: 'white', background: '#123d82', height: '100%', textAlign: 'center', boxSizing: 'border-box', marginBottom: 8 }}>
-          <strong>2</strong><br />
-          SM-12 MD-6 LG-4 XL-5<br />
-          Some extra text
-        </div>
-      </Column>
-      <Column widths={[8, 6, 4]}>
-        <div style={{ padding: 8, color: 'white', background: '#303030', height: '100%', textAlign: 'center', boxSizing: 'border-box', marginBottom: 8 }}>
-          <strong>3</strong><br />
-          SM-8 MD-6 LG-4
-        </div>
-      </Column>
-    </Row>
+  <Row {...args}>
+    <Column widths={{ sm: 12, md: 6, lg: 8, xl: 7 }}>
+      <div style={{
+        padding: 8,
+        color: 'white',
+        background: '#00a584',
+        height: '100%',
+        textAlign: 'center',
+        boxSizing: 'border-box',
+        marginBottom: 8
+      }}>
+        <strong>1</strong><br />
+        SM-12 MD-6 LG-8 XL-7
+      </div>
+    </Column>
+    <Column widths={{ sm: 12, md: 6, lg: 4, xl: 5 }}>
+      <div style={{
+        padding: 8,
+        color: 'white',
+        background: '#123d82',
+        height: '100%',
+        textAlign: 'center',
+        boxSizing: 'border-box',
+        marginBottom: 8
+      }}>
+        <strong>2</strong><br />
+        SM-12 MD-6 LG-4 XL-5<br />
+        Some extra text
+      </div>
+    </Column>
+    <Column widths={{ sm: 8, md: 6, lg: 4 }}>
+      <div style={{
+        padding: 8,
+        color: 'white',
+        background: '#303030',
+        height: '100%',
+        textAlign: 'center',
+        boxSizing: 'border-box',
+        marginBottom: 8
+      }}>
+        <strong>3</strong><br />
+        SM-8 MD-6 LG-4
+      </div>
+    </Column>
+  </Row>
 );
 
 <!-- Canvas -->
@@ -49,10 +73,16 @@ export const RowTemplate = args => (
   }}
   argTypes={{
     justify: {
-      control: { type: 'select', options: ['start', 'end', 'center', 'space-between', 'space-evenly', 'space-around'] }
+      control: {
+        type: 'select',
+        options: ['start', 'end', 'center', 'space-between', 'space-evenly', 'space-around']
+      }
     },
     align: {
-      control: { type: 'select', options: ['start', 'end', 'center', 'stretch', 'baseline'] }
+      control: {
+        type: 'select',
+        options: ['start', 'end', 'center', 'stretch', 'baseline']
+      }
     },
     rowGap: {
       control: { type: 'object' }
@@ -80,10 +110,10 @@ import { Row, Column } from '@heycar-uikit/grid';
 
 <TabContainer
   tabs={[
-    {label: 'Description', component: <Description />},
-    {label: 'Props', component: <Props />},
-    {label: 'CSS tokens', component: <CssVars css={styles} />},
-    {label: 'Changelog', component: <Changelog />}
+    { label: 'Description', component: <Description /> },
+    { label: 'Props', component: <Props /> },
+    { label: 'CSS tokens', component: <CssVars css={styles} /> },
+    { label: 'Changelog', component: <Changelog /> }
   ]}
 />
 

@@ -30,7 +30,6 @@ function Row({
     styles.row,
     styles[`justify-${justify}`],
     styles[`align-${align}`],
-    styles[`row-gap-${rowGap}`],
     ...columnGapClasses,
     ...rowGapClasses,
     className,

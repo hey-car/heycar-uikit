@@ -6,10 +6,10 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="row justify-start align-stretch row-gap-0 sm-column-gap-0 sm-row-gap-0"
+        class="row justify-start align-stretch sm-column-gap-0 md-column-gap-0 lg-column-gap-0 xl-column-gap-0 sm-row-gap-0 md-row-gap-0 lg-row-gap-0 xl-row-gap-0"
       >
         <div
-          class="column sm-6"
+          class="column sm-6 md-6 lg-6 xl-6"
         >
           Hello
         </div>
@@ -18,10 +18,10 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="row justify-start align-stretch row-gap-0 sm-column-gap-0 sm-row-gap-0"
+      class="row justify-start align-stretch sm-column-gap-0 md-column-gap-0 lg-column-gap-0 xl-column-gap-0 sm-row-gap-0 md-row-gap-0 lg-row-gap-0 xl-row-gap-0"
     >
       <div
-        class="column sm-6"
+        class="column sm-6 md-6 lg-6 xl-6"
       >
         Hello
       </div>
@@ -87,15 +87,15 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="row justify-center align-stretch row-gap-0 sm-column-gap-0 sm-row-gap-0"
+        class="row justify-center align-stretch sm-column-gap-0 md-column-gap-0 lg-column-gap-0 xl-column-gap-0 sm-row-gap-0 md-row-gap-0 lg-row-gap-0 xl-row-gap-0"
       >
         <div
-          class="column sm-3"
+          class="column sm-3 md-3 lg-3 xl-3"
         >
           Hello
         </div>
         <div
-          class="column sm-3"
+          class="column sm-3 md-3 lg-3 xl-3"
         >
           World!
         </div>
@@ -104,15 +104,15 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="row justify-center align-stretch row-gap-0 sm-column-gap-0 sm-row-gap-0"
+      class="row justify-center align-stretch sm-column-gap-0 md-column-gap-0 lg-column-gap-0 xl-column-gap-0 sm-row-gap-0 md-row-gap-0 lg-row-gap-0 xl-row-gap-0"
     >
       <div
-        class="column sm-3"
+        class="column sm-3 md-3 lg-3 xl-3"
       >
         Hello
       </div>
       <div
-        class="column sm-3"
+        class="column sm-3 md-3 lg-3 xl-3"
       >
         World!
       </div>
@@ -178,15 +178,15 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="row justify-center align-stretch row-gap-0 sm-column-gap-0 sm-row-gap-0"
+        class="row justify-center align-stretch sm-column-gap-0 md-column-gap-0 lg-column-gap-0 xl-column-gap-0 sm-row-gap-0 md-row-gap-0 lg-row-gap-0 xl-row-gap-0"
       >
         <div
-          class="column sm-3"
+          class="column sm-3 md-3 lg-3 xl-3"
         >
           Hello
         </div>
         <div
-          class="column sm-3"
+          class="column sm-3 md-3 lg-3 xl-3"
         >
           World!
         </div>
@@ -195,15 +195,15 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="row justify-center align-stretch row-gap-0 sm-column-gap-0 sm-row-gap-0"
+      class="row justify-center align-stretch sm-column-gap-0 md-column-gap-0 lg-column-gap-0 xl-column-gap-0 sm-row-gap-0 md-row-gap-0 lg-row-gap-0 xl-row-gap-0"
     >
       <div
-        class="column sm-3"
+        class="column sm-3 md-3 lg-3 xl-3"
       >
         Hello
       </div>
       <div
-        class="column sm-3"
+        class="column sm-3 md-3 lg-3 xl-3"
       >
         World!
       </div>
@@ -269,15 +269,15 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="row justify-start align-stretch row-gap-0 sm-column-gap-8 sm-row-gap-0"
+        class="row justify-start align-stretch sm-column-gap-8 md-column-gap-8 lg-column-gap-8 xl-column-gap-8 sm-row-gap-0 md-row-gap-0 lg-row-gap-0 xl-row-gap-0"
       >
         <div
-          class="column sm-12"
+          class="column sm-12 md-12 lg-12 xl-12"
         >
           Hello
         </div>
         <div
-          class="column sm-12"
+          class="column sm-12 md-12 lg-12 xl-12"
         >
           World!
         </div>
@@ -286,15 +286,15 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="row justify-start align-stretch row-gap-0 sm-column-gap-8 sm-row-gap-0"
+      class="row justify-start align-stretch sm-column-gap-8 md-column-gap-8 lg-column-gap-8 xl-column-gap-8 sm-row-gap-0 md-row-gap-0 lg-row-gap-0 xl-row-gap-0"
     >
       <div
-        class="column sm-12"
+        class="column sm-12 md-12 lg-12 xl-12"
       >
         Hello
       </div>
       <div
-        class="column sm-12"
+        class="column sm-12 md-12 lg-12 xl-12"
       >
         World!
       </div>
@@ -360,15 +360,15 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="row justify-start align-stretch row-gap-0 sm-column-gap-0 sm-row-gap-0 reverse"
+        class="row justify-start align-stretch sm-column-gap-0 md-column-gap-0 lg-column-gap-0 xl-column-gap-0 sm-row-gap-0 md-row-gap-0 lg-row-gap-0 xl-row-gap-0 reverse"
       >
         <div
-          class="column sm-3"
+          class="column sm-3 md-3 lg-3 xl-3"
         >
           Hello
         </div>
         <div
-          class="column sm-3"
+          class="column sm-3 md-3 lg-3 xl-3"
         >
           World!
         </div>
@@ -377,15 +377,15 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="row justify-start align-stretch row-gap-0 sm-column-gap-0 sm-row-gap-0 reverse"
+      class="row justify-start align-stretch sm-column-gap-0 md-column-gap-0 lg-column-gap-0 xl-column-gap-0 sm-row-gap-0 md-row-gap-0 lg-row-gap-0 xl-row-gap-0 reverse"
     >
       <div
-        class="column sm-3"
+        class="column sm-3 md-3 lg-3 xl-3"
       >
         Hello
       </div>
       <div
-        class="column sm-3"
+        class="column sm-3 md-3 lg-3 xl-3"
       >
         World!
       </div>
@@ -451,15 +451,15 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="row justify-start align-stretch row-gap-8 sm-column-gap-0 sm-row-gap-8"
+        class="row justify-start align-stretch sm-column-gap-0 md-column-gap-0 lg-column-gap-0 xl-column-gap-0 sm-row-gap-8 md-row-gap-8 lg-row-gap-8 xl-row-gap-8"
       >
         <div
-          class="column sm-12"
+          class="column sm-12 md-12 lg-12 xl-12"
         >
           Hello
         </div>
         <div
-          class="column sm-12"
+          class="column sm-12 md-12 lg-12 xl-12"
         >
           World!
         </div>
@@ -468,15 +468,15 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="row justify-start align-stretch row-gap-8 sm-column-gap-0 sm-row-gap-8"
+      class="row justify-start align-stretch sm-column-gap-0 md-column-gap-0 lg-column-gap-0 xl-column-gap-0 sm-row-gap-8 md-row-gap-8 lg-row-gap-8 xl-row-gap-8"
     >
       <div
-        class="column sm-12"
+        class="column sm-12 md-12 lg-12 xl-12"
       >
         Hello
       </div>
       <div
-        class="column sm-12"
+        class="column sm-12 md-12 lg-12 xl-12"
       >
         World!
       </div>
@@ -542,15 +542,15 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="row justify-start align-center row-gap-0 sm-column-gap-0 sm-row-gap-0"
+        class="row justify-start align-center sm-column-gap-0 md-column-gap-0 lg-column-gap-0 xl-column-gap-0 sm-row-gap-0 md-row-gap-0 lg-row-gap-0 xl-row-gap-0"
       >
         <div
-          class="column sm-3"
+          class="column sm-3 md-3 lg-3 xl-3"
         >
           Hello
         </div>
         <div
-          class="column sm-3"
+          class="column sm-3 md-3 lg-3 xl-3"
         >
           World!
           <div>
@@ -562,15 +562,15 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="row justify-start align-center row-gap-0 sm-column-gap-0 sm-row-gap-0"
+      class="row justify-start align-center sm-column-gap-0 md-column-gap-0 lg-column-gap-0 xl-column-gap-0 sm-row-gap-0 md-row-gap-0 lg-row-gap-0 xl-row-gap-0"
     >
       <div
-        class="column sm-3"
+        class="column sm-3 md-3 lg-3 xl-3"
       >
         Hello
       </div>
       <div
-        class="column sm-3"
+        class="column sm-3 md-3 lg-3 xl-3"
       >
         World!
         <div>

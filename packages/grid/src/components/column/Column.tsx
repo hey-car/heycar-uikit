@@ -12,21 +12,27 @@ function Column({
   children,
   widths,
   className,
-  offset = [],
-  order = [],
+  offset,
+  order,
 }: ColumnProps): JSX.Element {
   const widthClasses = useMemo(
     () => getClassesAccordingToBreakpoint(widths, styles),
     [widths],
   );
-  const offsetClasses = useMemo(
-    () => getClassesAccordingToBreakpoint(offset, styles, 'offset'),
-    [offset],
-  );
-  const orderClasses = useMemo(
-    () => getClassesAccordingToBreakpoint(order, styles, 'order'),
-    [order],
-  );
+  const offsetClasses = useMemo(() => {
+    if (offset) {
+      return getClassesAccordingToBreakpoint(offset, styles, 'offset');
+    }
+
+    return [];
+  }, [offset]);
+  const orderClasses = useMemo(() => {
+    if (order) {
+      return getClassesAccordingToBreakpoint(order, styles, 'order');
+    }
+
+    return [];
+  }, [order]);
 
   const classNames = cn(
     styles.column,
