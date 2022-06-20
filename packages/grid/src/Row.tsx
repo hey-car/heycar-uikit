@@ -1,11 +1,11 @@
 import React, { useMemo } from 'react';
 import cn from 'classnames';
 
-import { getClassesAccordingToBreakpoint } from '../../utils/getClassesAccordingToBreakpoint';
+import { getClassesAccordingToBreakpoint } from './utils/getClassesAccordingToBreakpoint';
 
 import { RowProps } from './Row.types';
 
-import styles from '../../styles/row.module.css';
+import styles from './styles/row.module.css';
 
 function Row({
   Component = 'div',

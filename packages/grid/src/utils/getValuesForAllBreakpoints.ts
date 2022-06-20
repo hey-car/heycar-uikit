@@ -1,4 +1,4 @@
-import { BreakpointValues } from '../components/column/Column.types';
+import { BreakpointValues } from '../Column.types';
 import { breakpoints } from '../Grid.types';
 
 export const getValuesForAllBreakpoints = (

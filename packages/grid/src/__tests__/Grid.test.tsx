@@ -4,8 +4,8 @@ import { render } from '@testing-library/react';
 import {
   BreakpointValues,
   ColumnProps,
-} from '../components/column/Column.types';
-import { BreakpointGaps, RowProps } from '../components/row/Row.types';
+} from '../Column.types';
+import { BreakpointGaps, RowProps } from '../Row.types';
 import { breakpoints, BreakpointType } from '../Grid.types';
 import { Column, Row } from '..';
 

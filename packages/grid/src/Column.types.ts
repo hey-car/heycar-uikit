@@ -1,6 +1,6 @@
 import { ElementType, ReactNode } from 'react';
 
-import { BreakpointType } from '../../Grid.types';
+import { BreakpointType } from './Grid.types';
 
 export type BreakpointValues = {
   [breakpoint in BreakpointType]?: number;

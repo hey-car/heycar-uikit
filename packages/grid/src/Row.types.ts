@@ -1,6 +1,6 @@
 import { ElementType, ReactNode } from 'react';
 
-import { BreakpointType } from '../../Grid.types';
+import { BreakpointType } from './Grid.types';
 
 type BaseAlignmentOptions = 'start' | 'end' | 'center';
 

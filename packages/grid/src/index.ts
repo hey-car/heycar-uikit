@@ -1,2 +1,2 @@
-export { default as Column } from './components/column';
-export { default as Row } from './components/row';
+export { default as Column } from './Column';
+export { default as Row } from './Row';
