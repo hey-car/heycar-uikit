@@ -2,7 +2,6 @@ import React, { useMemo } from 'react';
 import cn from 'classnames';
 
 import { getClassesAccordingToBreakpoint } from './utils/getClassesAccordingToBreakpoint';
-
 import { ColumnProps } from './Column.types';
 
 import styles from './styles/column.module.css';
