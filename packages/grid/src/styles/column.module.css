@@ -1,8 +1,15 @@
 @import '../../../themes/src/default.css';
 
+.column {
+  max-width: 100%;
+  min-height: 1px;
+  flex-basis: 0;
+  box-sizing: border-box;
+}
+
 @define-mixin classes $breakpoint, $count {
   .$(breakpoint)-$(count) {
-    width: calc(
+    flex-basis: calc(
       (var(--grid-column-width) * $count) +
         (($count - 1) * var(--grid-column-gap))
     );

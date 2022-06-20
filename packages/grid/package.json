@@ -1,7 +1,7 @@
 {
   "name": "@heycar-uikit/grid",
   "version": "0.0.1",
-  "description": "hey-ui grid",
+  "description": "heycar-uikit grid",
   "main": "dist/index.js",
   "module": "./dist/esm/index.js",
   "scripts": {
