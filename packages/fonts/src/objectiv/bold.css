@@ -1,0 +1,14 @@
+/*
+  We use the same definition with font-weight: bold.
+  Otherwise this gets mapped to 700 which we don't support.
+  Instead the browser will take a lighter font and will just make it bolder.
+*/
+@font-face {
+  font-family: 'Objektiv';
+  font-display: swap;
+  src: url('./files/objektivmk3_bd.woff') format('woff2'),
+    url('./files/objektivmk3_bd.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 0;
+}

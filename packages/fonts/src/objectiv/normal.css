@@ -1,0 +1,14 @@
+/*
+  We use the same definition with font-weight: normal.
+  Otherwise this gets mapped to 400 which we don't support.
+  Instead the browser will make a lighter version bigger.
+*/
+@font-face {
+  font-family: 'Objektiv';
+  font-display: swap;
+  src: url('./files/objektivmk3_rg.woff') format('woff2'),
+    url('./files/objektivmk3_rg.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 0;
+}
