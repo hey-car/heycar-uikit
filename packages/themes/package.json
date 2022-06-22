@@ -2,6 +2,7 @@
   "name": "@heycar-uikit/themes",
   "version": "1.0.3",
   "description": "HeyCar-UIKit themes",
+  "main": "default.css",
   "keywords": [
     "ui",
     "uikit",
