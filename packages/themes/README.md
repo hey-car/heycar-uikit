@@ -5,6 +5,40 @@
 [![Demo build](https://github.com/hey-car/heycar-uikit/actions/workflows/main.yml/badge.svg)](https://github.com/hey-car/heycar-uikit/actions/workflows/main.yml)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
+## Installation
+
+To install and save in your package.json dependencies, run the command below using npm:
+
+```bash
+npm install @heycar-uikit/themes
+```
+
+## Usage
+
+```tsx
+// MyApp.js
+import '@heycar-uikit/themes/default.css';
+
+function MyApp({ Component, pageProps }) {
+  return <Component {...pageProps} />;
+}
+
+export default MyApp;
+```
+
+```tsx
+// Button.styles.js
+
+const styles = {
+  button: {
+    color: 'var(--color-primary-500)',
+    padding: 'var(--gap-m) var(--gap-s)',
+  },
+};
+
+export default styles;
+```
+
 ## Colors
 
 Listed below are all of the color names and their following possible shades
