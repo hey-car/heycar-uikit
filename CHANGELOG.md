@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/hey-car/heycar-uikit/compare/v1.1.0...v1.1.1) (2022-06-22)
+
+
+### Bug Fixes
+
+* **themes:** fixed build issues for default theme ([#37](https://github.com/hey-car/heycar-uikit/issues/37)) ([076c68e](https://github.com/hey-car/heycar-uikit/commit/076c68e73b027517ecbc989a9990f4edcc73d595))
+
 # [1.1.0](https://github.com/hey-car/heycar-uikit/compare/v1.0.0...v1.1.0) (2022-06-15)
 
 
