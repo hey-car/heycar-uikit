@@ -1,8 +1,8 @@
 @font-face {
   font-family: 'Objektiv';
   font-display: swap;
-  src: url('./files/objektivmk3_bd.woff') format('woff2'),
-    url('./files/objektivmk3_bd.woff') format('woff');
+  src: url('./assets/objektivmk3_bold.woff') format('woff2'),
+    url('./assets/objektivmk3_bd.woff2') format('woff');
   font-weight: 500;
   font-style: normal;
   letter-spacing: 0;
