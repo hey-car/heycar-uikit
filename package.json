@@ -1,6 +1,6 @@
 {
   "name": "@heycar-uikit/core",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "The React UI library from HeyCar",
   "author": "HeyCar Team",
   "main": "index.js",
