@@ -7,20 +7,36 @@
   box-sizing: border-box;
 }
 
+@define-mixin getWidth $count, $gap {
+  flex-basis: calc(
+    (((100% - (11px * $gap)) / 12) * $count) + (($count - 1) * ($gap * 1px))
+  );
+}
+
+@define-mixin getOffset $count, $gap {
+  transform: translateX(
+    calc(
+      (((100% - (11px * $gap)) / 12) * $count) + (($count - 1) * ($gap * 1px))
+    )
+  );
+}
+
 @define-mixin classes $breakpoint, $count {
   .$(breakpoint)-$(count) {
-    flex-basis: calc(
-      (var(--grid-column-width) * $count) +
-        (($count - 1) * var(--grid-column-gap))
-    );
+    @each $gap in 0, 2, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 56, 64 {
+      /* Adjust width according to column gap */
+      &.$(breakpoint)-with-gap-$(gap) {
+        @mixin getWidth $count, $gap;
+      }
+    }
   }
   .$(breakpoint)-offset-$(count) {
-    transform: translateX(
-      calc(
-        (var(--grid-column-width) * $count) +
-          (($count - 1) * var(--grid-column-gap))
-      )
-    );
+    @each $gap in 0, 2, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 56, 64 {
+      /* Adjust offset according to column gap */
+      &.$(breakpoint)-with-gap-$(gap) {
+        @mixin getOffset $count, $gap;
+      }
+    }
   }
   .$(breakpoint)-order-$(count) {
     order: $count;

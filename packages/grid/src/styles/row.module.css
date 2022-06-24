@@ -10,9 +10,7 @@
 
 @define-mixin gapClasses $breakpoint, $value {
   .$(breakpoint)-column-gap-$(value) {
-    --grid-column-gap: calc($value * 1px);
-    --grid-column-width: calc((100% - (11 * var(--grid-column-gap))) / 12);
-    column-gap: var(--grid-column-gap);
+    column-gap: calc($value * 1px);
   }
   .$(breakpoint)-row-gap-$(value) {
     row-gap: calc($value * 1px);

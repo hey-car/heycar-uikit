@@ -1,6 +1,6 @@
 import { ElementType, ReactNode } from 'react';
 
-import { BreakpointType } from './Grid.types';
+import { BreakpointGaps } from './Grid.types';
 
 type BaseAlignmentOptions = 'start' | 'end' | 'center';
 
@@ -11,27 +11,6 @@ type JustifyOptions =
   | 'space-around';
 
 type AlignOptions = BaseAlignmentOptions | 'stretch' | 'baseline';
-export type GapOptions =
-  | 0
-  | 2
-  | 4
-  | 8
-  | 12
-  | 16
-  | 20
-  | 24
-  | 28
-  | 32
-  | 36
-  | 40
-  | 44
-  | 48
-  | 56
-  | 64;
-
-export type BreakpointGaps = {
-  [breakpoint in BreakpointType]?: GapOptions;
-};
 
 export interface RowProps {
   /**

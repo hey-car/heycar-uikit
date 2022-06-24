@@ -9,7 +9,7 @@ Object {
         class="row justify-start align-stretch sm-column-gap-0 md-column-gap-0 lg-column-gap-0 xl-column-gap-0 sm-row-gap-0 md-row-gap-0 lg-row-gap-0 xl-row-gap-0"
       >
         <div
-          class="column sm-6 md-6 lg-6 xl-6"
+          class="column sm-6 md-6 lg-6 xl-6 sm-with-gap-0 md-with-gap-0 lg-with-gap-0 xl-with-gap-0"
         >
           Hello
         </div>
@@ -21,7 +21,7 @@ Object {
       class="row justify-start align-stretch sm-column-gap-0 md-column-gap-0 lg-column-gap-0 xl-column-gap-0 sm-row-gap-0 md-row-gap-0 lg-row-gap-0 xl-row-gap-0"
     >
       <div
-        class="column sm-6 md-6 lg-6 xl-6"
+        class="column sm-6 md-6 lg-6 xl-6 sm-with-gap-0 md-with-gap-0 lg-with-gap-0 xl-with-gap-0"
       >
         Hello
       </div>
@@ -90,12 +90,12 @@ Object {
         class="row justify-center align-stretch sm-column-gap-0 md-column-gap-0 lg-column-gap-0 xl-column-gap-0 sm-row-gap-0 md-row-gap-0 lg-row-gap-0 xl-row-gap-0"
       >
         <div
-          class="column sm-3 md-3 lg-3 xl-3"
+          class="column sm-3 md-3 lg-3 xl-3 sm-with-gap-0 md-with-gap-0 lg-with-gap-0 xl-with-gap-0"
         >
           Hello
         </div>
         <div
-          class="column sm-3 md-3 lg-3 xl-3"
+          class="column sm-3 md-3 lg-3 xl-3 sm-with-gap-0 md-with-gap-0 lg-with-gap-0 xl-with-gap-0"
         >
           World!
         </div>
@@ -107,12 +107,12 @@ Object {
       class="row justify-center align-stretch sm-column-gap-0 md-column-gap-0 lg-column-gap-0 xl-column-gap-0 sm-row-gap-0 md-row-gap-0 lg-row-gap-0 xl-row-gap-0"
     >
       <div
-        class="column sm-3 md-3 lg-3 xl-3"
+        class="column sm-3 md-3 lg-3 xl-3 sm-with-gap-0 md-with-gap-0 lg-with-gap-0 xl-with-gap-0"
       >
         Hello
       </div>
       <div
-        class="column sm-3 md-3 lg-3 xl-3"
+        class="column sm-3 md-3 lg-3 xl-3 sm-with-gap-0 md-with-gap-0 lg-with-gap-0 xl-with-gap-0"
       >
         World!
       </div>
@@ -181,12 +181,12 @@ Object {
         class="row justify-center align-stretch sm-column-gap-0 md-column-gap-0 lg-column-gap-0 xl-column-gap-0 sm-row-gap-0 md-row-gap-0 lg-row-gap-0 xl-row-gap-0"
       >
         <div
-          class="column sm-3 md-3 lg-3 xl-3"
+          class="column sm-3 md-3 lg-3 xl-3 sm-with-gap-0 md-with-gap-0 lg-with-gap-0 xl-with-gap-0"
         >
           Hello
         </div>
         <div
-          class="column sm-3 md-3 lg-3 xl-3"
+          class="column sm-3 md-3 lg-3 xl-3 sm-with-gap-0 md-with-gap-0 lg-with-gap-0 xl-with-gap-0"
         >
           World!
         </div>
@@ -198,12 +198,12 @@ Object {
       class="row justify-center align-stretch sm-column-gap-0 md-column-gap-0 lg-column-gap-0 xl-column-gap-0 sm-row-gap-0 md-row-gap-0 lg-row-gap-0 xl-row-gap-0"
     >
       <div
-        class="column sm-3 md-3 lg-3 xl-3"
+        class="column sm-3 md-3 lg-3 xl-3 sm-with-gap-0 md-with-gap-0 lg-with-gap-0 xl-with-gap-0"
       >
         Hello
       </div>
       <div
-        class="column sm-3 md-3 lg-3 xl-3"
+        class="column sm-3 md-3 lg-3 xl-3 sm-with-gap-0 md-with-gap-0 lg-with-gap-0 xl-with-gap-0"
       >
         World!
       </div>
@@ -272,12 +272,12 @@ Object {
         class="row justify-start align-stretch sm-column-gap-8 md-column-gap-8 lg-column-gap-8 xl-column-gap-8 sm-row-gap-0 md-row-gap-0 lg-row-gap-0 xl-row-gap-0"
       >
         <div
-          class="column sm-12 md-12 lg-12 xl-12"
+          class="column sm-12 md-12 lg-12 xl-12 sm-with-gap-8 md-with-gap-8 lg-with-gap-8 xl-with-gap-8"
         >
           Hello
         </div>
         <div
-          class="column sm-12 md-12 lg-12 xl-12"
+          class="column sm-12 md-12 lg-12 xl-12 sm-with-gap-8 md-with-gap-8 lg-with-gap-8 xl-with-gap-8"
         >
           World!
         </div>
@@ -289,12 +289,12 @@ Object {
       class="row justify-start align-stretch sm-column-gap-8 md-column-gap-8 lg-column-gap-8 xl-column-gap-8 sm-row-gap-0 md-row-gap-0 lg-row-gap-0 xl-row-gap-0"
     >
       <div
-        class="column sm-12 md-12 lg-12 xl-12"
+        class="column sm-12 md-12 lg-12 xl-12 sm-with-gap-8 md-with-gap-8 lg-with-gap-8 xl-with-gap-8"
       >
         Hello
       </div>
       <div
-        class="column sm-12 md-12 lg-12 xl-12"
+        class="column sm-12 md-12 lg-12 xl-12 sm-with-gap-8 md-with-gap-8 lg-with-gap-8 xl-with-gap-8"
       >
         World!
       </div>
@@ -363,12 +363,12 @@ Object {
         class="row justify-start align-stretch sm-column-gap-0 md-column-gap-0 lg-column-gap-0 xl-column-gap-0 sm-row-gap-0 md-row-gap-0 lg-row-gap-0 xl-row-gap-0 reverse"
       >
         <div
-          class="column sm-3 md-3 lg-3 xl-3"
+          class="column sm-3 md-3 lg-3 xl-3 sm-with-gap-0 md-with-gap-0 lg-with-gap-0 xl-with-gap-0"
         >
           Hello
         </div>
         <div
-          class="column sm-3 md-3 lg-3 xl-3"
+          class="column sm-3 md-3 lg-3 xl-3 sm-with-gap-0 md-with-gap-0 lg-with-gap-0 xl-with-gap-0"
         >
           World!
         </div>
@@ -380,12 +380,12 @@ Object {
       class="row justify-start align-stretch sm-column-gap-0 md-column-gap-0 lg-column-gap-0 xl-column-gap-0 sm-row-gap-0 md-row-gap-0 lg-row-gap-0 xl-row-gap-0 reverse"
     >
       <div
-        class="column sm-3 md-3 lg-3 xl-3"
+        class="column sm-3 md-3 lg-3 xl-3 sm-with-gap-0 md-with-gap-0 lg-with-gap-0 xl-with-gap-0"
       >
         Hello
       </div>
       <div
-        class="column sm-3 md-3 lg-3 xl-3"
+        class="column sm-3 md-3 lg-3 xl-3 sm-with-gap-0 md-with-gap-0 lg-with-gap-0 xl-with-gap-0"
       >
         World!
       </div>
@@ -454,12 +454,12 @@ Object {
         class="row justify-start align-stretch sm-column-gap-0 md-column-gap-0 lg-column-gap-0 xl-column-gap-0 sm-row-gap-8 md-row-gap-8 lg-row-gap-8 xl-row-gap-8"
       >
         <div
-          class="column sm-12 md-12 lg-12 xl-12"
+          class="column sm-12 md-12 lg-12 xl-12 sm-with-gap-0 md-with-gap-0 lg-with-gap-0 xl-with-gap-0"
         >
           Hello
         </div>
         <div
-          class="column sm-12 md-12 lg-12 xl-12"
+          class="column sm-12 md-12 lg-12 xl-12 sm-with-gap-0 md-with-gap-0 lg-with-gap-0 xl-with-gap-0"
         >
           World!
         </div>
@@ -471,12 +471,12 @@ Object {
       class="row justify-start align-stretch sm-column-gap-0 md-column-gap-0 lg-column-gap-0 xl-column-gap-0 sm-row-gap-8 md-row-gap-8 lg-row-gap-8 xl-row-gap-8"
     >
       <div
-        class="column sm-12 md-12 lg-12 xl-12"
+        class="column sm-12 md-12 lg-12 xl-12 sm-with-gap-0 md-with-gap-0 lg-with-gap-0 xl-with-gap-0"
       >
         Hello
       </div>
       <div
-        class="column sm-12 md-12 lg-12 xl-12"
+        class="column sm-12 md-12 lg-12 xl-12 sm-with-gap-0 md-with-gap-0 lg-with-gap-0 xl-with-gap-0"
       >
         World!
       </div>
@@ -545,12 +545,12 @@ Object {
         class="row justify-start align-center sm-column-gap-0 md-column-gap-0 lg-column-gap-0 xl-column-gap-0 sm-row-gap-0 md-row-gap-0 lg-row-gap-0 xl-row-gap-0"
       >
         <div
-          class="column sm-3 md-3 lg-3 xl-3"
+          class="column sm-3 md-3 lg-3 xl-3 sm-with-gap-0 md-with-gap-0 lg-with-gap-0 xl-with-gap-0"
         >
           Hello
         </div>
         <div
-          class="column sm-3 md-3 lg-3 xl-3"
+          class="column sm-3 md-3 lg-3 xl-3 sm-with-gap-0 md-with-gap-0 lg-with-gap-0 xl-with-gap-0"
         >
           World!
           <div>
@@ -565,12 +565,12 @@ Object {
       class="row justify-start align-center sm-column-gap-0 md-column-gap-0 lg-column-gap-0 xl-column-gap-0 sm-row-gap-0 md-row-gap-0 lg-row-gap-0 xl-row-gap-0"
     >
       <div
-        class="column sm-3 md-3 lg-3 xl-3"
+        class="column sm-3 md-3 lg-3 xl-3 sm-with-gap-0 md-with-gap-0 lg-with-gap-0 xl-with-gap-0"
       >
         Hello
       </div>
       <div
-        class="column sm-3 md-3 lg-3 xl-3"
+        class="column sm-3 md-3 lg-3 xl-3 sm-with-gap-0 md-with-gap-0 lg-with-gap-0 xl-with-gap-0"
       >
         World!
         <div>

@@ -1,6 +1,6 @@
 import { ElementType, ReactNode } from 'react';
 
-import { BreakpointType } from './Grid.types';
+import { BreakpointGaps, BreakpointType } from './Grid.types';
 
 export type BreakpointValues = {
   [breakpoint in BreakpointType]?: number;
@@ -31,4 +31,8 @@ export type ColumnProps = {
    * Order of component in row according to breakpoint
    */
   order?: BreakpointValues;
+  /**
+   * Gap between columns in pixels according to breakpoint
+   */
+  columnGap?: BreakpointGaps;
 };

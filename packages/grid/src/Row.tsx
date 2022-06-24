@@ -2,7 +2,6 @@ import React, { useMemo } from 'react';
 import cn from 'classnames';
 
 import { getClassesAccordingToBreakpoint } from './utils/getClassesAccordingToBreakpoint';
-
 import { RowProps } from './Row.types';
 
 import styles from './styles/row.module.css';
@@ -36,7 +35,15 @@ function Row({
     { [styles.reverse]: !!reverse },
   );
 
-  return <Component className={classNames}>{children}</Component>;
+  return (
+    <Component className={classNames}>
+      {React.Children.map(children, child => {
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
+        return React.cloneElement(child, { columnGap });
+      })}
+    </Component>
+  );
 }
 
 export default Row;

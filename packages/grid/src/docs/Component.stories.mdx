@@ -14,7 +14,7 @@ import styles from '!!raw-loader!../styles/column.module.css';
 
 export const RowTemplate = args => (
   <Row {...args}>
-    <Column widths={{ sm: 12, md: 6, lg: 8, xl: 7 }}>
+    <Column widths={args.widthsOf1}>
       <div style={{
         padding: 8,
         color: 'white',
@@ -25,10 +25,10 @@ export const RowTemplate = args => (
         marginBottom: 8
       }}>
         <strong>1</strong><br />
-        SM-12 MD-6 LG-8 XL-7
+        SM-{args.widthsOf1.sm} MD-{args.widthsOf1.md} LG-{args.widthsOf1.lg} XL-{args.widthsOf1.xl}
       </div>
     </Column>
-    <Column widths={{ sm: 12, md: 6, lg: 4, xl: 5 }}>
+    <Column widths={args.widthsOf2}>
       <div style={{
         padding: 8,
         color: 'white',
@@ -39,11 +39,11 @@ export const RowTemplate = args => (
         marginBottom: 8
       }}>
         <strong>2</strong><br />
-        SM-12 MD-6 LG-4 XL-5<br />
+        SM-{args.widthsOf2.sm} MD-{args.widthsOf2.md} LG-{args.widthsOf2.lg} XL-{args.widthsOf2.xl}<br />
         Some extra text
       </div>
     </Column>
-    <Column widths={{ sm: 8, md: 6, lg: 4 }}>
+    <Column widths={args.widthsOf3}>
       <div style={{
         padding: 8,
         color: 'white',
@@ -54,7 +54,7 @@ export const RowTemplate = args => (
         marginBottom: 8
       }}>
         <strong>3</strong><br />
-        SM-8 MD-6 LG-4
+        SM-{args.widthsOf3.sm} MD-{args.widthsOf3.md} LG-{args.widthsOf3.lg}
       </div>
     </Column>
   </Row>
@@ -69,7 +69,10 @@ export const RowTemplate = args => (
     align: 'stretch',
     rowGap: { sm: 0, md: 0, lg: 0, xl: 0 },
     columnGap: { sm: 0, md: 0, lg: 0, xl: 0 },
-    reverse: false
+    reverse: false,
+    widthsOf1: { sm: 12, md: 6, lg: 8, xl: 7 },
+    widthsOf2: { sm: 12, md: 6, lg: 4, xl: 5 },
+    widthsOf3: { sm: 8, md: 6, lg: 4 }
   }}
   argTypes={{
     justify: {

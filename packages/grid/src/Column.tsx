@@ -13,6 +13,7 @@ function Column({
   className,
   offset,
   order,
+  columnGap = { sm: 0 },
 }: ColumnProps): JSX.Element {
   const widthClasses = useMemo(
     () => getClassesAccordingToBreakpoint(widths, styles),
@@ -32,12 +33,17 @@ function Column({
 
     return [];
   }, [order]);
+  const columnGapClasses = useMemo(
+    () => getClassesAccordingToBreakpoint(columnGap, styles, 'with-gap'),
+    [columnGap],
+  );
 
   const classNames = cn(
     styles.column,
     ...widthClasses,
     ...offsetClasses,
     ...orderClasses,
+    ...columnGapClasses,
     className,
   );
 
