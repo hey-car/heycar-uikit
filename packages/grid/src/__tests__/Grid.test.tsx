@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 
 import { BreakpointValues, ColumnProps } from '../Column.types';
-import { BreakpointGaps, breakpoints, BreakpointType } from "../Grid.types";
+import { BreakpointGaps, breakpoints, BreakpointType } from '../Grid.types';
 import { RowProps } from '../Row.types';
 import { Column, Row } from '..';
 
