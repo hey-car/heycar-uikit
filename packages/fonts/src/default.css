@@ -6,6 +6,7 @@
   font-weight: 200;
   font-style: normal;
   letter-spacing: 0;
+  unicode-range: U+0000- U+007F;
 }
 
 /*
@@ -21,6 +22,7 @@
   font-weight: normal;
   font-style: normal;
   letter-spacing: 0;
+  unicode-range: U+0000- U+007F;
 }
 
 @font-face {
@@ -31,6 +33,7 @@
   font-weight: 300;
   font-style: normal;
   letter-spacing: 0;
+  unicode-range: U+0000- U+007F;
 }
 
 @font-face {
@@ -41,6 +44,7 @@
   font-weight: 500;
   font-style: normal;
   letter-spacing: 0;
+  unicode-range: U+0000- U+007F;
 }
 
 /*
@@ -56,4 +60,5 @@
   font-weight: bold;
   font-style: normal;
   letter-spacing: 0;
+  unicode-range: U+0000- U+007F;
 }
