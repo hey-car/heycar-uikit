@@ -1,0 +1,27 @@
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs';
+import { ComponentHeader, CssVars } from 'storybook/blocks';
+
+import { name, version } from '../../package.json';
+
+<Meta
+  title="Guidelines/Fonts"
+  parameters={{
+    previewTabs: {
+      canvas: { hidden: true },
+      'storybook/docs/panel': { hidden: true },
+    },
+  }}
+/>
+
+<!-- Docs -->
+
+<ComponentHeader
+  name="fonts"
+  version={version}
+  package="@heycar-uikit/fonts"
+  stage={3}
+/>
+
+```css
+@import '@heycar-uikit/fonts';
+```
