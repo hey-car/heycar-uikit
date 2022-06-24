@@ -7,16 +7,15 @@ The CSS and web font files to easily self-host the heycar web fonts. All fonts a
 To install and save in your package.json dependencies, run the command below using npm:
 
 ```bash
-npm install @heycar-uikit/fonts/hausschrift_objectiv
+npm install @heycar-uikit/fonts
 
-npm install @heycar-uikit/fonts/hausschrift_objectiv - it will import all list of the font.
-npm install @heycar-uikit/fonts/hausschrift_objectiv/[200|300|400][500][normal][bold] will be imported only in particular weight of the font
+npm install @heycar-uikit/fonts - it will import all list of the font.
+npm install @heycar-uikit/fonts/[200|300|400][500][normal][bold] will be imported only in particular weight of the font
 ```
 
 Supported variables:
 
 Weights: [200|300|400][500]
-Styles: [normal][bold]
 
 ## Usage
 

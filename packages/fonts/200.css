@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Objektiv';
+  font-display: swap;
+  src: url('./src/assets/objektivmk3_regular.woff2') format('woff2'),
+    url('./src/assets/objektivmk3_regular.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  letter-spacing: 0;
+}
