@@ -9,15 +9,13 @@ To install and save in your package.json dependencies, run the command below usi
 ```bash
 npm install @heycar-uikit/fonts
 
-npm install @heycar-uikit/fonts - it will import all list of the font.
-npm install @heycar-uikit/fonts/[200|300|400][500][normal][bold] will be imported only in particular weight of the font
+npm install @heycar-uikit/fonts  //it will import all list of the font.
+npm install @heycar-uikit/fonts/[200|300|500] //will be imported only in particular weight of the font
 ```
 
 Supported variables:
 
-Weights: [200|300|400][500]
-
-## Usage
+Weights: [200|300|500]
 
 Within your app entry file or site component, import it in.
 

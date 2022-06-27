@@ -16,12 +16,48 @@ import { name, version } from '../../package.json';
 <!-- Docs -->
 
 <ComponentHeader
-  name="fonts"
+  name="Fonts"
   version={version}
   package="@heycar-uikit/fonts"
-  stage={3}
+  stage={1}
+  design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Design-System"
 />
 
-```css
-@import '@heycar-uikit/fonts';
+The CSS and web font files to easily self-host the heycar web fonts. All fonts are in woff/woff2 format
+
+## Installation
+
+To install and save in your package.json dependencies, run the command below using npm:
+
+```bash
+npm install @heycar-uikit/fonts
+```
+
+or
+
+```bash
+npm install @heycar-uikit/fonts/[200|300|500]
+```
+
+### Supported variables:
+
+Weights: [200|300|500] will be imported only in particular weight of the font
+
+It's as simple as importing it globally into \_app.jsx or \_app.tsx. Alternatively, you could choose to import it into a page component, however, the CSS will only be present within the page and not globally.
+
+```
+import '@heycar-uikit/fonts';
+
+
+body {
+  font-family: 'Objektiv';
+}
+
+p {
+  font-family: 'Objektiv';
+}
+
+h1 {
+  font-family: 'Objektiv';
+}
 ```
