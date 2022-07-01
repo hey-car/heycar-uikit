@@ -1,15 +1,21 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 
-import { Column, Row } from '..';
+import Grid from '../Grid';
 
 describe('Grid Snapshots tests', () => {
   it('should match snapshot', () => {
     expect(
       render(
-        <Row>
-          <Column widths={{ sm: 6 }}>Hello</Column>
-        </Row>,
+        <Grid.Row>
+          <Grid.Col
+            width={{
+              mobile: { s: 12, m: 6 },
+            }}
+          >
+            Hello
+          </Grid.Col>
+        </Grid.Row>,
       ),
     ).toMatchSnapshot();
   });
@@ -17,10 +23,10 @@ describe('Grid Snapshots tests', () => {
   it('should render row with centered elements', () => {
     expect(
       render(
-        <Row justify="center">
-          <Column widths={{ sm: 3 }}>Hello</Column>
-          <Column widths={{ sm: 3 }}>World!</Column>
-        </Row>,
+        <Grid.Row justify="center">
+          <Grid.Col width={{ desktop: { m: 12 } }}>Hello</Grid.Col>
+          <Grid.Col width={{ desktop: { m: 6 } }}>World!</Grid.Col>
+        </Grid.Row>,
       ),
     ).toMatchSnapshot();
   });
@@ -28,10 +34,10 @@ describe('Grid Snapshots tests', () => {
   it('should render row with centered elements', () => {
     expect(
       render(
-        <Row justify="center">
-          <Column widths={{ sm: 3 }}>Hello</Column>
-          <Column widths={{ sm: 3 }}>World!</Column>
-        </Row>,
+        <Grid.Row justify="center">
+          <Grid.Col width={{ mobile: 12 }}>Hello</Grid.Col>
+          <Grid.Col width={{ mobile: 3 }}>World!</Grid.Col>
+        </Grid.Row>,
       ),
     ).toMatchSnapshot();
   });
@@ -39,23 +45,12 @@ describe('Grid Snapshots tests', () => {
   it('should render row with vertically centered elements', () => {
     expect(
       render(
-        <Row align="center">
-          <Column widths={{ sm: 3 }}>Hello</Column>
-          <Column widths={{ sm: 3 }}>
+        <Grid.Row align="middle">
+          <Grid.Col width={{ mobile: 12 }}>Hello</Grid.Col>
+          <Grid.Col width={{ mobile: 3 }}>
             World!<div>Extra text</div>
-          </Column>
-        </Row>,
-      ),
-    ).toMatchSnapshot();
-  });
-
-  it('should render row with reversed elements', () => {
-    expect(
-      render(
-        <Row reverse={true}>
-          <Column widths={{ sm: 3 }}>Hello</Column>
-          <Column widths={{ sm: 3 }}>World!</Column>
-        </Row>,
+          </Grid.Col>
+        </Grid.Row>,
       ),
     ).toMatchSnapshot();
   });
@@ -63,21 +58,21 @@ describe('Grid Snapshots tests', () => {
   it('should render row with row gap', () => {
     expect(
       render(
-        <Row rowGap={{ sm: 8 }}>
-          <Column widths={{ sm: 12 }}>Hello</Column>
-          <Column widths={{ sm: 12 }}>World!</Column>
-        </Row>,
+        <Grid.Row gutter={{ mobile: 8 }}>
+          <Grid.Col width={{ mobile: 12 }}>Hello</Grid.Col>
+          <Grid.Col width={{ mobile: 3 }}>World!</Grid.Col>
+        </Grid.Row>,
       ),
     ).toMatchSnapshot();
   });
 
-  it('should render row with column gap', () => {
+  it('should render row with Grid.Col gap', () => {
     expect(
       render(
-        <Row columnGap={{ sm: 8 }}>
-          <Column widths={{ sm: 12 }}>Hello</Column>
-          <Column widths={{ sm: 12 }}>World!</Column>
-        </Row>,
+        <Grid.Row gutter={{ mobile: 12 }}>
+          <Grid.Col width={{ mobile: 12 }}>Hello</Grid.Col>
+          <Grid.Col width={{ mobile: 3 }}>World!</Grid.Col>
+        </Grid.Row>,
       ),
     ).toMatchSnapshot();
   });

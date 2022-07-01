@@ -1,101 +1,72 @@
-import { Meta, Story } from '@storybook/addon-docs';
+import { Meta, Story, Props } from '@storybook/addon-docs';
 import { ComponentHeader, TabContainer, CssVars } from 'storybook/blocks';
 
-import { Row, Column } from '../';
+import Grid from '../Grid';
 import { version } from '../../package.json';
-import Description from './Description.mdx';
-import Props from './Props.mdx';
 import Changelog from '../../CHANGELOG.md';
-import styles from '!!raw-loader!../styles/column.module.css';
+import Description from './Description.mdx';
 
-<Meta
-  title="Components/Grid"
-/>
-
-export const RowTemplate = args => (
-  <Row {...args}>
-    <Column widths={args.widthsOf1}>
-      <div style={{
-        padding: 8,
-        color: 'white',
-        background: '#00a584',
-        height: '100%',
-        textAlign: 'center',
-        boxSizing: 'border-box',
-        marginBottom: 8
-      }}>
-        <strong>1</strong><br />
-        SM-{args.widthsOf1.sm} MD-{args.widthsOf1.md} LG-{args.widthsOf1.lg} XL-{args.widthsOf1.xl}
-      </div>
-    </Column>
-    <Column widths={args.widthsOf2}>
-      <div style={{
-        padding: 8,
-        color: 'white',
-        background: '#123d82',
-        height: '100%',
-        textAlign: 'center',
-        boxSizing: 'border-box',
-        marginBottom: 8
-      }}>
-        <strong>2</strong><br />
-        SM-{args.widthsOf2.sm} MD-{args.widthsOf2.md} LG-{args.widthsOf2.lg} XL-{args.widthsOf2.xl}<br />
-        Some extra text
-      </div>
-    </Column>
-    <Column widths={args.widthsOf3}>
-      <div style={{
-        padding: 8,
-        color: 'white',
-        background: '#303030',
-        height: '100%',
-        textAlign: 'center',
-        boxSizing: 'border-box',
-        marginBottom: 8
-      }}>
-        <strong>3</strong><br />
-        SM-{args.widthsOf3.sm} MD-{args.widthsOf3.md} LG-{args.widthsOf3.lg}
-      </div>
-    </Column>
-  </Row>
-);
+<Meta title="Components/Grid" component={Grid} />
 
 <!-- Canvas -->
 
-<Story
-  name="Grid"
-  args={{
-    justify: 'start',
-    align: 'stretch',
-    rowGap: { sm: 0, md: 0, lg: 0, xl: 0 },
-    columnGap: { sm: 0, md: 0, lg: 0, xl: 0 },
-    reverse: false,
-    widthsOf1: { sm: 12, md: 6, lg: 8, xl: 7 },
-    widthsOf2: { sm: 12, md: 6, lg: 4, xl: 5 },
-    widthsOf3: { sm: 8, md: 6, lg: 4 }
-  }}
-  argTypes={{
-    justify: {
-      control: {
-        type: 'select',
-        options: ['start', 'end', 'center', 'space-between', 'space-evenly', 'space-around']
-      }
-    },
-    align: {
-      control: {
-        type: 'select',
-        options: ['start', 'end', 'center', 'stretch', 'baseline']
-      }
-    },
-    rowGap: {
-      control: { type: 'object' }
-    },
-    columnGap: {
-      control: { type: 'object' }
-    }
-  }}
->
-  {RowTemplate.bind({})}
+<Story name="Grid">
+  {React.createElement(() => {
+    const style = {
+      height: 30,
+      lineHeight: '30px',
+      color: '#fff',
+      background: '#7394c8',
+      textAlign: 'center',
+      marginTop: 10,
+    };
+    return (
+      <div>
+        <Grid.Row>
+          <Grid.Col width={{ tablet: { m: 12 } }}>
+            <div style={{ ...style, background: '#164ca3', marginTop: 0 }}>
+              12
+            </div>
+          </Grid.Col>
+        </Grid.Row>
+        <Grid.Row>
+          {[1, 2].map(key => (
+            <Grid.Col width={{ tablet: { m: 6 } }} key={key}>
+              <div style={style}>6</div>
+            </Grid.Col>
+          ))}
+        </Grid.Row>
+        <Grid.Row>
+          {[1, 2, 3].map(key => (
+            <Grid.Col width={{ mobile: 12, desktop: 4 }} key={key}>
+              <div style={{ ...style, background: '#164ca3' }}>4</div>
+            </Grid.Col>
+          ))}
+        </Grid.Row>
+        <Grid.Row>
+          {[1, 2, 3, 4].map(key => (
+            <Grid.Col width="3" key={key}>
+              <div style={style}>3</div>
+            </Grid.Col>
+          ))}
+        </Grid.Row>
+        <Grid.Row>
+          {[1, 2, 3, 4, 5, 6].map(key => (
+            <Grid.Col width={{ desktop: 2, tablet: 6, mobile: 12 }} key={key}>
+              <div style={{ ...style, background: '#164ca3' }}>2</div>
+            </Grid.Col>
+          ))}
+        </Grid.Row>
+        <Grid.Row>
+          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map(key => (
+            <Grid.Col width={{ desktop: 1, tablet: 4, mobile: 6 }} key={key}>
+              <div style={style}>1</div>
+            </Grid.Col>
+          ))}
+        </Grid.Row>
+      </div>
+    );
+  })}
 </Story>
 
 <!-- Docs -->
@@ -107,16 +78,26 @@ export const RowTemplate = args => (
   design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Design-System?node-id=1370%3A39327"
 />
 
+A grid component that includes Row and Col.
+
 ```tsx
-import { Row, Column } from '@heycar-uikit/grid';
+import Grid from '@heycar-uikit/grid';
 ```
 
 <TabContainer
   tabs={[
     { label: 'Description', component: <Description /> },
-    { label: 'Props', component: <Props /> },
-    { label: 'CSS tokens', component: <CssVars css={styles} /> },
-    { label: 'Changelog', component: <Changelog /> }
+    {
+      label: 'Props',
+      component: (
+        <Props
+          components={{
+            Row: Grid.Row,
+            Col: Grid.Col,
+          }}
+        />
+      ),
+    },
+    { label: 'Changelog', component: <Changelog /> },
   ]}
 />
-
