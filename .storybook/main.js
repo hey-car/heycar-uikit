@@ -30,12 +30,12 @@ module.exports = {
     '../packages/**/*.stories.@(ts|md)x',
   ],
   addons: [
-    '@storybook/addon-controls',
     '@storybook/preset-create-react-app',
     {
       name: '@storybook/addon-docs',
       options: { transcludeMarkdown: true },
     },
+    '@storybook/addon-controls',
     'storybook-addon-live-examples',
     '@storybook/addon-viewport'
   ],

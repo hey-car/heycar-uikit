@@ -10,20 +10,21 @@ const componentsContext = require.context(
   /^\.\/(.*)\/src\/(index|desktop|mobile|responsive|circle|super-ellipse).ts$/,
 );
 
-const requireComponents = (context: __WebpackModuleApi.RequireContext) =>
-  context.keys().reduce((acc: Record<string, ComponentType<unknown>>, key) => {
-    Object.entries(context(key)).forEach(
-      ([, component]: [string, any]) => {
+const requireComponents = (context: __WebpackModuleApi.RequireContext) => {
+  return context
+    .keys()
+    .reduce((acc: Record<string, ComponentType<unknown>>, key) => {
+      Object.entries(context(key)).forEach(([, component]: [string, any]) => {
         const { displayName } = component;
 
         if (['default', '__esModule'].includes(displayName)) return;
 
         acc[displayName] = component;
-      },
-    );
+      });
 
-    return acc;
-  }, {});
+      return acc;
+    }, {});
+};
 
 export default {
   ...requireComponents(componentsContext),
