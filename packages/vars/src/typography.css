@@ -105,7 +105,7 @@
 }
 
 @define-mixin typography-subheading-2 {
-  font-size: 16px;
+  line-height: 23px;
   font-weight: var(--font-weight-medium);
   font-family: var(--font-family-system);
 }
@@ -115,24 +115,28 @@
 */
 @define-mixin typography-body-1 {
   font-size: 16px;
+  line-height: 26px;
   font-weight: var(--font-weight-medium);
   font-family: var(--font-family-system);
 }
 
 @define-mixin typography-body-2 {
   font-size: 14px;
+  line-height: 22px;
   font-weight: var(--font-weight-medium);
   font-family: var(--font-family-system);
 }
 
 @define-mixin typography-body-3 {
   font-size: 16px;
+  line-height: 26px;
   font-weight: var(--font-weight-regular);
   font-family: var(--font-family-system);
 }
 
 @define-mixin typography-body-4 {
   font-size: 14px;
+  line-height: 22px;
   font-weight: var(--font-weight-regular);
   font-family: var(--font-family-system);
 }
@@ -148,6 +152,7 @@
 
 @define-mixin typography-caption-2 {
   font-size: 12px;
+  line-height: 18px;
   font-weight: var(--font-weight-regular);
   font-family: var(--font-family-system);
 }
