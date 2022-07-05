@@ -1,11 +1,13 @@
+import React from 'react';
+
 import { LogoProps } from '../Logo.types';
 
-export function Primary({ size = 32, viewBox = '0 0 97 32' }: LogoProps) {
+export function Primary({ size = 32 }: LogoProps) {
   return (
     <svg
       fill="none"
       height={size}
-      viewBox={viewBox}
+      viewBox="0 0 199 65"
       width={size * 3}
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -25,12 +27,12 @@ export function Primary({ size = 32, viewBox = '0 0 97 32' }: LogoProps) {
   );
 }
 
-export function Secondary({ size = 32, viewBox = '0 0 97 32' }: LogoProps) {
+export function Secondary({ size = 32 }: LogoProps) {
   return (
     <svg
       fill="none"
       height={size}
-      viewBox={viewBox}
+      viewBox="0 0 199 65"
       width={size * 3}
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -50,12 +52,12 @@ export function Secondary({ size = 32, viewBox = '0 0 97 32' }: LogoProps) {
   );
 }
 
-export function Tertiary({ size = 32, viewBox = '0 0 97 32' }: LogoProps) {
+export function Tertiary({ size = 32 }: LogoProps) {
   return (
     <svg
       fill="none"
       height={size}
-      viewBox={viewBox}
+      viewBox="0 0 199 65"
       width={size * 3}
       xmlns="http://www.w3.org/2000/svg"
     >
