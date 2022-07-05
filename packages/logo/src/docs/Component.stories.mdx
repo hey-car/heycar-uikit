@@ -1,0 +1,50 @@
+import { Meta, Story, Props } from '@storybook/addon-docs';
+import { ComponentHeader, TabContainer } from 'storybook/blocks';
+
+import Logo from '../index';
+import { version } from '../../package.json';
+import Description from './Description.mdx';
+import Changelog from '../../CHANGELOG.md';
+
+<!-- Meta -->
+
+<Meta title="Components/Logo" component={Logo} argTypes={{}} />
+
+export const LogoTemplate = args => <Logo {...args} />;
+
+<!-- Canvas -->
+
+<Story
+  name="Logo"
+  args={{
+    color: 'secondary',
+    size: 65,
+  }}
+>
+  {LogoTemplate.bind({})}
+</Story>
+
+<!-- Docs -->
+
+<ComponentHeader
+  name="Logo"
+  version={version}
+  stage={1}
+  design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Global-Design-System?node-id=1073%3A116234"
+/>
+
+The Logo component is used to display heycar logos
+
+```tsx
+import Logo from '@heycar-uikit/logo';
+```
+
+<!-- Description -->
+
+<TabContainer
+  tabs={[
+    { label: 'Description', component: <Description /> },
+    { label: 'Props', component: <Props of={Logo} /> },
+    { label: 'Changelog', component: <Changelog /> },
+  ]}
+/>

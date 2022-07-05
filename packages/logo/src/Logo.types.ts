@@ -1,6 +1,5 @@
 export type LogoProps = {
   size: number;
-  fillColor: string;
-  underlineColor: string;
+  color?: string;
   viewBox: string;
 };
