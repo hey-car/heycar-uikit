@@ -6,6 +6,20 @@ import Logo from '../Logo';
 Use the `color` prop to change the visual color of the Logo.
 You can set the value to `primary`, `secondary` , `tertiary`
 
-```tsx
-<Logo />
+```tsx live
+const logoColors = ['primary', 'secondary', 'tertiary'];
+
+render(
+  <Container>
+    <Row align="middle">
+      {logoColors.map(color => (
+        <Col key={color}>
+          <div style={{ backgroundColor: 'grey' }}>
+            <Logo color={color} />
+          </div>
+        </Col>
+      ))}
+    </Row>
+  </Container>,
+);
 ```
