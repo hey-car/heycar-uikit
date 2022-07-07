@@ -7,18 +7,42 @@ Use the `color` prop to change the visual color of the Logo.
 You can set the value to `primary`, `secondary` , `tertiary`
 
 ```tsx live
-const logoColors = ['primary', 'secondary', 'tertiary'];
-
 render(
   <Container>
-    <Row align="middle">
-      {logoColors.map(color => (
-        <Col key={color}>
-          <div style={{ backgroundColor: 'grey' }}>
-            <Logo color={color} />
-          </div>
-        </Col>
-      ))}
+    <Row align="middle" style={{ width: '100%' }}>
+      <Col span={3}>
+        <div
+          style={{
+            backgroundColor: '#F1F4FA',
+            padding: '15px',
+            textAlign: 'center',
+          }}
+        >
+          <Logo size={65} color="primary" />
+        </div>
+      </Col>
+      <Col span={3}>
+        <div
+          style={{
+            backgroundColor: '#FFFFFF',
+            padding: '15px',
+            textAlign: 'center',
+          }}
+        >
+          <Logo size={65} color="secondary" />
+        </div>
+      </Col>
+      <Col span={3}>
+        <div
+          style={{
+            backgroundColor: '#052962',
+            padding: '15px',
+            textAlign: 'center',
+          }}
+        >
+          <Logo size={65} color="tertiary" />
+        </div>
+      </Col>
     </Row>
   </Container>,
 );

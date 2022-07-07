@@ -1,0 +1,26 @@
+@import '../../../vars/src/colors.css';
+
+/*
+* Colors
+*/
+
+.primary {
+  fill: var(--color-mica-blue);
+}
+.secondary {
+  fill: var(--color-mica-blue);
+}
+.tertiary {
+  fill: var(--color-championship-white);
+}
+
+.undermark_primary {
+  fill: var(--color-championship-white);
+}
+
+.undermark_secondary {
+  fill: var(--color-heycar-mint-500);
+}
+.undermark_tertiary {
+  fill: var(--color-heycar-mint-500);
+}
