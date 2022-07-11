@@ -1,12 +1,11 @@
 import React from 'react';
-import classNames from 'classnames';
 
 import { LogoProps } from './Logo.types';
 
 import styles from './styles/default.module.css';
 
 function Logo({
-  size = 32,
+  fontSize = 65,
   color = 'primary',
   ariaHidden = true,
   title,
@@ -17,12 +16,10 @@ function Logo({
     <svg
       aria-hidden={ariaHidden}
       aria-label={ariaLabel}
-      className={classNames()}
-      fill="none"
-      height={size}
+      className={styles.logo}
       role={role}
+      style={{ fontSize }}
       viewBox="0 0 199 65"
-      width={size * 2}
       xmlns="http://www.w3.org/2000/svg"
     >
       {title && <title>{title}</title>}

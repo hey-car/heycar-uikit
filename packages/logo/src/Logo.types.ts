@@ -1,5 +1,5 @@
 export type LogoProps = {
-  size: number;
+  fontSize: number;
   color?: string;
   ariaHidden?: boolean;
   title?: string;
