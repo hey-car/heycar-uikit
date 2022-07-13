@@ -1,0 +1,48 @@
+import { Meta, Story, Props } from '@storybook/addon-docs';
+import { ComponentHeader, TabContainer } from 'storybook/blocks';
+
+import Switch from '../';
+import { version } from '../../package.json';
+import Description from './Description.mdx';
+import Changelog from '../../CHANGELOG.md';
+
+<Meta
+    title="Components/Switch"
+    component={Switch}
+/>
+
+export const SwitchTemplate = args => <Switch {...args} />;
+
+<!-- Canvas -->
+
+<Story
+    name="Switch"
+    args={{
+        checked: true,
+    }}
+>
+    {SwitchTemplate.bind({})}
+</Story>
+
+<!-- Docs -->
+
+<ComponentHeader
+    name="Switch"
+    version={version}
+    stage={1}
+    design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Global-Design-System?node-id=1370%3A40765"
+/>
+
+The Switch component changes the state of a single boolean parameter to true or false.
+
+```tsx
+import { Switch } from '@heycar-uikit/switch';
+```
+
+<TabContainer
+    tabs={[
+        { label: 'Description', component: <Description /> },
+        { label: 'Props', component: <Props of={Switch} /> },
+        { label: 'Changelog', component: <Changelog /> },
+    ]}
+/>
