@@ -5,4 +5,5 @@ export type LogoProps = {
   title?: string;
   ariaLabel?: string;
   role?: string;
+  dataTestId?: string;
 };

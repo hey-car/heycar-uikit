@@ -11,12 +11,14 @@ function Logo({
   title,
   ariaLabel,
   role,
+  dataTestId,
 }: LogoProps) {
   return (
     <svg
       aria-hidden={ariaHidden}
       aria-label={ariaLabel}
       className={styles.logo}
+      data-test-id={dataTestId}
       role={role}
       style={{ fontSize }}
       viewBox="0 0 199 65"
