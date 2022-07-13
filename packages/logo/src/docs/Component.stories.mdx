@@ -16,9 +16,46 @@ export const LogoTemplate = args => <Logo {...args} />;
 
 <Story
   name="Logo"
-  args={{
-    color: 'secondary',
-    fontSize: 35,
+  argTypes={{
+    fontSize: {
+      control: 'number',
+    },
+    color: {
+      control: {
+        type: 'select',
+        options: ['primary', 'secondary', 'tertiary'],
+      },
+    },
+    role: {
+      table: {
+        disable: true,
+      },
+    },
+    dataTestId: {
+      table: {
+        disable: true,
+      },
+    },
+    title: {
+      table: {
+        disable: true,
+      },
+    },
+    children: {
+      table: {
+        disable: true,
+      },
+    },
+    ariaHidden: {
+      table: {
+        disable: true,
+      },
+    },
+    ariaLabel: {
+      table: {
+        disable: true,
+      },
+    },
   }}
 >
   {LogoTemplate.bind({})}
