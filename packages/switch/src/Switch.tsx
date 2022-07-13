@@ -10,7 +10,7 @@ export const Switch: React.FC<SwitchProps> = ({
   onChange
 }) => {
   const handleChange = useCallback(
-    (event: React.ChangeEvent<HTMLInputElement>) => onChange?.(event.target.checked),
+    event => onChange?.(event.target.checked),
     [onChange],
   );
   return (

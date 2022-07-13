@@ -7,27 +7,27 @@
   height: 24px;
 
   & .switch {
-      position: absolute;
-      cursor: pointer;
-      background-color: var(--color-neutral-500);
-      border-radius: 53px;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      transition: background-color 0.2s ease;
+    position: absolute;
+    cursor: pointer;
+    background-color: var(--color-neutral-500);
+    border-radius: 53px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: background-color 0.2s ease;
 
-      &::before {
-        position: absolute;
-        content: "";
-        left: 1px;
-        top: 1px;
-        width: 22px;
-        height: 22px;
-        background-color: var(--color-championship-white);
-        border-radius: 50%;
-        transition: transform 0.3s ease;
-      }
+    &::before {
+      position: absolute;
+      content: "";
+      left: 1px;
+      top: 1px;
+      width: 22px;
+      height: 22px;
+      background-color: var(--color-championship-white);
+      border-radius: 50%;
+      transition: transform 0.3s ease;
+    }
   }
 
   & input[type="checkbox"] {
