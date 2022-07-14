@@ -8,35 +8,28 @@ To install and save in your package.json dependencies, run the command below usi
 
 ```bash
 npm install @heycar-uikit/fonts
-
-npm install @heycar-uikit/fonts  //it will import all list of the font.
-npm install @heycar-uikit/fonts/[200|300|500] //will be imported only in particular weight of the font
+npm install @heycar-uikit/fonts/[200|300|500] // to be imported only in particular weight of the font
 ```
 
-Supported variables:
+Supported variables: [200|300|500] will be imported only in particular weight of the font
 
-Weights: [200|300|500]
-
-Within your app entry file or site component, import it in.
+It's as simple as importing it globally into \_app.jsx or \_app.tsx. Alternatively, you could choose to import it into a page component, however, the CSS will only be present within the page and not globally.
 
 ```
-import '@heycar-uikit/fonts';
+import "@heycar-uikit/fonts";
+import "@heycar-uikit/fonts/700.css";
 
+function MyApp({ Component, pageProps }) {
+  return <Component {...pageProps} />;
+}
+
+export default MyApp;
 ```
 
-You can reference the font name in a CSS stylesheet, CSS Module, or CSS-in-JS.
+And apply to elements like this
 
 ```
-
 body {
-  font-family: "Objektiv";
-}
-
-p {
-     font-family: 'Objektiv';
-}
-
-h1 {
-     font-family: 'Objektiv';
+  font-family: "Objektiv", sans-serif;
 }
 ```
