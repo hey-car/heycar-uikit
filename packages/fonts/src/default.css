@@ -1,10 +1,12 @@
 @font-face {
   font-family: 'Objektiv';
   font-display: swap;
-  src: url('./fonts/ObjektivMk3_W_Rg.woff2') format('woff2');
+  src: url('./assets/objektivmk3_regular.woff2') format('woff2'),
+    url('./assets/objektivmk3_regular.woff') format('woff');
   font-weight: 200;
   font-style: normal;
   letter-spacing: 0;
+  unicode-range: U+0000- U+007F;
 }
 
 /*
@@ -15,28 +17,34 @@
 @font-face {
   font-family: 'Objektiv';
   font-display: swap;
-  src: url('./fonts/ObjektivMk3_W_Rg.woff2') format('woff2');
+  src: url('./assets/objektivmk3_regular.woff2') format('woff2'),
+    url('./assets/objektivmk3_regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   letter-spacing: 0;
+  unicode-range: U+0000- U+007F;
 }
 
 @font-face {
   font-family: 'Objektiv';
   font-display: swap;
-  src: url('./fonts/ObjektivMk3_W_Md.woff2') format('woff2');
+  src: url('./assets/objektivmk3_medium.woff2') format('woff2'),
+    url('./assets/objektivmk3_medium.woff') format('woff');
   font-weight: 300;
   font-style: normal;
   letter-spacing: 0;
+  unicode-range: U+0000- U+007F;
 }
 
 @font-face {
   font-family: 'Objektiv';
   font-display: swap;
-  src: url('./fonts/ObjektivMk3_W_Bd.woff2') format('woff2');
+  src: url('./assets/objektivmk3_bold.woff2') format('woff2'),
+    url('./assets/objektivmk3_bold.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   letter-spacing: 0;
+  unicode-range: U+0000- U+007F;
 }
 
 /*
@@ -47,18 +55,10 @@
 @font-face {
   font-family: 'Objektiv';
   font-display: swap;
-  src: url('./fonts/ObjektivMk3_W_Bd.woff2') format('woff2');
+  src: url('./assets/objektivmk3_bold.woff2') format('woff2'),
+    url('./assets/objektivmk3_bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   letter-spacing: 0;
-}
-
-@font-face {
-  font-family: 'Objektiv';
-  font-display: swap;
-  src: url('./fonts/ObjektivMk3_W_XBd.woff2') format('woff2'),
-  url('./fonts/ObjektivMk3_W_XBd.woff') format('woff');
-  font-weight: 800;
-  font-style: normal;
-  letter-spacing: 0;
+  unicode-range: U+0000- U+007F;
 }

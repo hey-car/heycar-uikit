@@ -23,7 +23,8 @@ module.exports = {
     builder: 'webpack5',
   },
   staticDirs: [
-    '../.storybook/public'
+    '../packages/fonts/src',
+    '../.storybook/public',
   ],
   stories: [
     '../docs/**/*.stories.@(ts|md)x',
