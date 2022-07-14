@@ -2,7 +2,7 @@
   "name": "@heycar-uikit/fonts",
   "version": "1.0.0",
   "description": "HeyCar-UIKit fonts",
-  "main": "/src/default.css",
+  "main": "default.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
