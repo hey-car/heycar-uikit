@@ -50,7 +50,7 @@ const copyPlugin = dest =>
     targets: [
       {
         src: [
-          'src/**/*.{png,svg,jpg,jpeg,woff, woff2}',
+          'src/**/*.{png,svg,jpg,jpeg,woff,woff2}',
           '!**/__image_snapshots__/**',
         ],
         dest,
