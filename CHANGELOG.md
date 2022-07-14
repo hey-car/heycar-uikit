@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/hey-car/heycar-uikit/compare/v1.1.1...v1.2.0) (2022-06-22)
+
+
+### Features
+
+* **themes:** add the main path to package.json for the default theme ([8b72b48](https://github.com/hey-car/heycar-uikit/commit/8b72b48f3ea56eb72fbfbbae56d77f0141289227))
+
 ## [1.1.1](https://github.com/hey-car/heycar-uikit/compare/v1.1.0...v1.1.1) (2022-06-22)
 
 

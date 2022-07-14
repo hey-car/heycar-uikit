@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/themes@1.0.3...@heycar-uikit/themes@1.1.0) (2022-06-22)
+
+
+### Features
+
+* **themes:** add the main path to package.json for the default theme ([8b72b48](https://github.com/hey-car/heycar-uikit/commit/8b72b48f3ea56eb72fbfbbae56d77f0141289227))
+
+
+
+
+
 ## [1.0.3](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/themes@1.1.0...@heycar-uikit/themes@1.0.3) (2022-06-22)
 
 
