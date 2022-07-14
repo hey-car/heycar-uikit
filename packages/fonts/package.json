@@ -1,8 +1,11 @@
 {
-  "name": "@heycar-uikit/themes",
-  "version": "1.0.6",
-  "description": "HeyCar-UIKit themes",
+  "name": "@heycar-uikit/fonts",
+  "version": "1.0.4",
+  "description": "HeyCar-UIKit fonts",
   "main": "default.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "keywords": [
     "ui",
     "uikit",
@@ -12,18 +15,21 @@
     "typescript",
     "ui-components",
     "design-systems",
-    "theme"
+    "fonts"
   ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hey-car/heycar-uikit.git"
   },
-  "homepage": "https://github.com/hey-car/heycar-uikit/tree/main/packages/themes#readme",
+  "homepage": "https://github.com/hey-car/heycar-uikit/tree/main/packages/fonts#readme",
   "publishConfig": {
     "access": "public",
     "directory": "dist"
   },
   "postinstall": "node ./dist/send-stats.js > /dev/null 2>&1 || exit 0",
+  "peerDependencies": {
+    "react": "^17.0.1"
+  },
   "author": "HeyCar Team",
   "license": "UNLICENSED"
 }
