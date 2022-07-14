@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Switch from '../Switch';
-import {render, fireEvent} from "@testing-library/react";
+import { render, fireEvent } from '@testing-library/react';
 
 describe('Switch', () => {
   it('should set checked attribute', () => {
@@ -10,10 +10,12 @@ describe('Switch', () => {
     expect(input).toHaveAttribute('checked');
   });
   it('should invoke onChange function', () => {
-    const handleChange = jest.fn()
-    const { container } = render(<Switch checked={false} onChange={handleChange} />);
+    const handleChange = jest.fn();
+    const { container } = render(
+      <Switch checked={false} onChange={handleChange} />,
+    );
     const label = container.firstElementChild!;
-    fireEvent.click(label)
+    fireEvent.click(label);
     expect(handleChange).toHaveBeenCalledTimes(1);
     expect(handleChange).toHaveBeenCalledWith(true);
   });

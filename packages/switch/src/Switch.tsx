@@ -1,25 +1,22 @@
 import React from 'react';
-import {useCallback} from 'react';
+import { useCallback } from 'react';
 
 import styles from './styles/default.module.css';
 
-import {SwitchProps} from './Switch.types';
+import { SwitchProps } from './Switch.types';
 
 export const Switch: React.FC<SwitchProps> = ({
   checked = false,
-  onChange
+  onChange,
 }) => {
   const handleChange = useCallback(
     event => onChange?.(event.target.checked),
     [onChange],
   );
+
   return (
     <label className={styles.container}>
-      <input
-        type="checkbox"
-        checked={checked}
-        onChange={handleChange}
-      />
+      <input checked={checked} onChange={handleChange} type="checkbox" />
       <span className={styles.switch} />
     </label>
   );

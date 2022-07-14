@@ -1,4 +1,3 @@
-
 export interface SwitchProps {
   /**
    * If true, the switch is displayed as checked

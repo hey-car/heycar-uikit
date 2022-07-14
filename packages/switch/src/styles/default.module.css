@@ -17,9 +17,9 @@
     left: 0;
     transition: background-color 0.2s ease;
 
-    &::before {
+    &:before {
       position: absolute;
-      content: "";
+      content: '';
       left: 1px;
       top: 1px;
       width: 22px;
@@ -30,21 +30,20 @@
     }
   }
 
-  & input[type="checkbox"] {
+  & input[type='checkbox'] {
     display: none;
   }
 
-  & input[type="checkbox"]:checked + .switch::before {
+  & input[type='checkbox']:checked + .switch:before {
     transform: translateX(16px);
     background-color: var(--color-championship-white);
   }
 
-  & input[type="checkbox"]:checked + .switch {
+  & input[type='checkbox']:checked + .switch {
     background-color: var(--color-primary-500);
   }
 
-  &:hover input[type="checkbox"]:not(:checked) + .switch {
+  &:hover input[type='checkbox']:not(:checked) + .switch {
     background-color: var(--color-neutral-600);
   }
 }
-

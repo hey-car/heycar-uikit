@@ -13,12 +13,10 @@ const screenshotTesting = setupScreenshotTesting({
   expect,
 });
 
-describe('Switch',
+describe(
+  'Switch',
   screenshotTesting({
-    cases: [[
-      'sprite',
-      createStorybookUrl({packageName}),
-    ],],
+    cases: [['sprite', createStorybookUrl({ packageName })]],
     screenshotOpts: { clip },
   }),
 );
