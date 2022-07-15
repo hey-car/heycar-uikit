@@ -16,6 +16,19 @@ export const LogoTemplate = args => <Logo {...args} />;
 
 <Story
   name="Logo"
+  args={{
+    color: 'primary',
+    fontSize: 200,
+  }}
+  parameters={{
+    backgrounds: {
+      values: [
+        { name: 'primary', value: '#052962' },
+        { name: 'secondary', value: '#FFFFFF' },
+        { name: 'tertiarys', value: '#F1F4FA' },
+      ],
+    },
+  }}
   argTypes={{
     fontSize: {
       control: 'number',

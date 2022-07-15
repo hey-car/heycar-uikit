@@ -30,13 +30,14 @@ module.exports = {
     '../packages/**/*.stories.@(ts|md)x',
   ],
   addons: [
-    '@storybook/addon-controls',
     '@storybook/preset-create-react-app',
     {
       name: '@storybook/addon-docs',
       options: { transcludeMarkdown: true },
     },
     'storybook-addon-live-examples',
+    '@storybook/addon-controls',
+    '@storybook/addon-backgrounds',
   ],
   webpackFinal: async config => {
     addPackagesDir(config);
