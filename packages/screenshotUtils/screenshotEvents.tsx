@@ -1,12 +1,12 @@
-import { PageScreenshotOptions } from "playwright";
-import {
-  closeBrowser,
-  matchHtml,
-  openBrowserPage
-} from "./index";
+import { PageScreenshotOptions } from 'playwright';
+import { closeBrowser, matchHtml, openBrowserPage } from '.';
 
-export const screenshotClick = async (pageUrl: string, selector: string, screenshotOpts?: PageScreenshotOptions) => {
-  const {browser, context, page} = await openBrowserPage(pageUrl);
+export const screenshotClick = async (
+  pageUrl: string,
+  selector: string,
+  screenshotOpts?: PageScreenshotOptions,
+) => {
+  const { browser, context, page } = await openBrowserPage(pageUrl);
 
   try {
     const elements = await page.$$(selector);
@@ -27,12 +27,16 @@ export const screenshotClick = async (pageUrl: string, selector: string, screens
   } catch (error: unknown) {
     console.error(error);
   } finally {
-    await closeBrowser({browser, context, page});
+    await closeBrowser({ browser, context, page });
   }
 };
 
-export const screenshotHover = async (pageUrl: string, selector: string, screenshotOpts?: PageScreenshotOptions) => {
-  const {browser, context, page} = await openBrowserPage(pageUrl);
+export const screenshotHover = async (
+  pageUrl: string,
+  selector: string,
+  screenshotOpts?: PageScreenshotOptions,
+) => {
+  const { browser, context, page } = await openBrowserPage(pageUrl);
 
   try {
     await page.hover(selector);
@@ -45,6 +49,6 @@ export const screenshotHover = async (pageUrl: string, selector: string, screens
   } catch (error: unknown) {
     console.error(error);
   } finally {
-    await closeBrowser({browser, context, page});
+    await closeBrowser({ browser, context, page });
   }
-}
+};

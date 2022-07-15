@@ -7,6 +7,7 @@ describe('Switch', () => {
   it('should set checked attribute', () => {
     const { container } = render(<Switch checked={true} />);
     const input = container.firstElementChild?.firstElementChild;
+
     expect(input).toHaveAttribute('checked');
   });
   it('should invoke onChange function', () => {
@@ -16,6 +17,7 @@ describe('Switch', () => {
     );
     const label = container.firstElementChild!;
     fireEvent.click(label);
+
     expect(handleChange).toHaveBeenCalledTimes(1);
     expect(handleChange).toHaveBeenCalledWith(true);
   });

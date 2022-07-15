@@ -86,6 +86,7 @@ describe('Button events tests', () => {
     const pageUrl = createStorybookUrl({
       packageName,
     });
-    await screenshotClick(pageUrl, buttonSelector, {clip});
+
+    await screenshotClick(pageUrl, buttonSelector, { clip });
   });
 });

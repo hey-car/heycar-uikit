@@ -18,25 +18,24 @@ const screenshotTesting = setupScreenshotTesting({
 
 function testSwitchChecked(checked: boolean) {
   return screenshotTesting({
-    cases: [['sprite', createStorybookUrl({
-      packageName,
-      knobs: {
-        checked: checked,
-      },
-    })]],
-    screenshotOpts: {clip},
+    cases: [
+      [
+        'sprite',
+        createStorybookUrl({
+          packageName,
+          knobs: {
+            checked: checked,
+          },
+        }),
+      ],
+    ],
+    screenshotOpts: { clip },
   });
 }
 
-describe(
-  'Switch unchecked',
-  testSwitchChecked(false),
-);
+describe('Switch unchecked', testSwitchChecked(false));
 
-describe(
-  'Switch checked',
-  testSwitchChecked(true),
-);
+describe('Switch checked', testSwitchChecked(true));
 
 describe('Switch events tests', () => {
   test('hover when checked', async () => {
@@ -46,6 +45,7 @@ describe('Switch events tests', () => {
         checked: true,
       },
     });
+
     await screenshotHover(pageUrl, selector, { clip });
   });
   test('hover when unchecked', async () => {
@@ -55,10 +55,12 @@ describe('Switch events tests', () => {
         checked: false,
       },
     });
+
     await screenshotHover(pageUrl, selector, { clip });
   });
   test('click', async () => {
     const pageUrl = createStorybookUrl({ packageName });
+
     await screenshotClick(pageUrl, selector, { clip });
   });
 });
