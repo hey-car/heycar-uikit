@@ -1,11 +1,9 @@
 import {
-  closeBrowser,
   createStorybookUrl,
-  matchHtml,
-  openBrowserPage,
   setupScreenshotTesting,
+  screenshotHover,
+  screenshotClick,
 } from '../../../screenshotUtils';
-import {screenshotHover} from "../../../screenshotUtils/screenshotHover";
 
 const packageName = 'button';
 const buttonSelector = '#root button';
@@ -88,29 +86,6 @@ describe('Button events tests', () => {
     const pageUrl = createStorybookUrl({
       packageName,
     });
-    const { browser, context, page } = await openBrowserPage(pageUrl);
-
-    try {
-      const buttons = await page.$$(buttonSelector);
-
-      buttons.forEach(async button => {
-        const buttonPosition = await button.boundingBox();
-
-        if (buttonPosition) {
-          await page.mouse.move(buttonPosition.x, buttonPosition.y);
-          await page.mouse.down();
-        }
-      });
-
-      await matchHtml({
-        page,
-        expect,
-        screenshotOpts: { clip },
-      });
-    } catch (error: unknown) {
-      console.error(error);
-    } finally {
-      await closeBrowser({ browser, context, page });
-    }
+    await screenshotClick(pageUrl, buttonSelector, {clip});
   });
 });

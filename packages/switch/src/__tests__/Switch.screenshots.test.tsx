@@ -1,8 +1,9 @@
 import {
   createStorybookUrl,
   setupScreenshotTesting,
+  screenshotHover,
+  screenshotClick,
 } from '../../../screenshotUtils';
-import {screenshotHover} from "../../../screenshotUtils/screenshotHover";
 
 const packageName = 'switch';
 const selector = '#root label';
@@ -55,5 +56,9 @@ describe('Switch events tests', () => {
       },
     });
     await screenshotHover(pageUrl, selector, { clip });
+  });
+  test('click', async () => {
+    const pageUrl = createStorybookUrl({ packageName });
+    await screenshotClick(pageUrl, selector, { clip });
   });
 });
