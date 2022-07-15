@@ -1,7 +1,8 @@
 import { PageScreenshotOptions } from 'playwright';
 import { closeBrowser, matchHtml, openBrowserPage } from '.';
+import { delay } from 'q';
 
-export const screenshotClick = async (
+export const screenshotMatchClick = async (
   pageUrl: string,
   selector: string,
   screenshotOpts?: PageScreenshotOptions,
@@ -17,6 +18,8 @@ export const screenshotClick = async (
       if (position) {
         await page.mouse.move(position.x, position.y);
         await page.mouse.down();
+        // Waiting for the rendering in case of a slight rendering lag
+        await delay(100);
       }
     }
     await matchHtml({
@@ -31,7 +34,7 @@ export const screenshotClick = async (
   }
 };
 
-export const screenshotHover = async (
+export const screenshotMatchHover = async (
   pageUrl: string,
   selector: string,
   screenshotOpts?: PageScreenshotOptions,
@@ -40,6 +43,8 @@ export const screenshotHover = async (
 
   try {
     await page.hover(selector);
+    // Waiting for the rendering in case of a slight rendering lag
+    await delay(100);
 
     await matchHtml({
       page,

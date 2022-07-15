@@ -1,8 +1,8 @@
 import {
   createStorybookUrl,
   setupScreenshotTesting,
-  screenshotHover,
-  screenshotClick,
+  screenshotMatchHover,
+  screenshotMatchClick,
 } from '../../../screenshotUtils';
 
 const packageName = 'button';
@@ -79,7 +79,7 @@ describe('Button events tests', () => {
       packageName,
     });
 
-    await screenshotHover(pageUrl, buttonSelector, { clip });
+    await screenshotMatchHover(pageUrl, buttonSelector, { clip });
   });
 
   test('Button click test', async () => {
@@ -87,6 +87,6 @@ describe('Button events tests', () => {
       packageName,
     });
 
-    await screenshotClick(pageUrl, buttonSelector, { clip });
+    await screenshotMatchClick(pageUrl, buttonSelector, { clip });
   });
 });
