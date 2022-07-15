@@ -16,6 +16,7 @@ describe('Switch', () => {
       <Switch checked={false} onChange={handleChange} />,
     );
     const label = container.firstElementChild!;
+
     fireEvent.click(label);
 
     expect(handleChange).toHaveBeenCalledTimes(1);
