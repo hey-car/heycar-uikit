@@ -46,4 +46,8 @@
   &:hover input[type='checkbox']:not(:checked) + .switch {
     background-color: var(--color-neutral-600);
   }
+
+  &:active input[type='checkbox']:not(:checked) + .switch {
+    background-color: var(--color-neutral-700);
+  }
 }

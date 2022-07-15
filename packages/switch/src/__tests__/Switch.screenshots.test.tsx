@@ -58,8 +58,23 @@ describe('Switch events tests', () => {
 
     await screenshotHover(pageUrl, selector, { clip });
   });
-  test('click', async () => {
-    const pageUrl = createStorybookUrl({ packageName });
+  test('click when checked', async () => {
+    const pageUrl = createStorybookUrl({
+      packageName,
+      knobs: {
+        checked: true,
+      },
+    });
+
+    await screenshotClick(pageUrl, selector, { clip });
+  });
+  test('click when unchecked', async () => {
+    const pageUrl = createStorybookUrl({
+      packageName,
+      knobs: {
+        checked: false,
+      },
+    });
 
     await screenshotClick(pageUrl, selector, { clip });
   });
