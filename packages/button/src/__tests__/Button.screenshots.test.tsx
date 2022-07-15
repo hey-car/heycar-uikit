@@ -5,6 +5,7 @@ import {
   openBrowserPage,
   setupScreenshotTesting,
 } from '../../../screenshotUtils';
+import {screenshotHover} from "../../../screenshotUtils/screenshotHover";
 
 const packageName = 'button';
 const buttonSelector = '#root button';
@@ -80,21 +81,7 @@ describe('Button events tests', () => {
       packageName,
     });
 
-    const { browser, context, page } = await openBrowserPage(pageUrl);
-
-    try {
-      await page.hover(buttonSelector);
-
-      await matchHtml({
-        page,
-        expect,
-        screenshotOpts: { clip },
-      });
-    } catch (error: unknown) {
-      console.error(error);
-    } finally {
-      await closeBrowser({ browser, context, page });
-    }
+    await screenshotHover(pageUrl, buttonSelector, { clip });
   });
 
   test('Button click test', async () => {
