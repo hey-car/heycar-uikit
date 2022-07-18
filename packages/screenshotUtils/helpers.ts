@@ -55,9 +55,10 @@ export const openBrowserPage = async (
   browserType: BrowserType<
     ChromiumBrowser | FirefoxBrowser | WebKitBrowser
   > = chromium,
+  viewport: { width: number; height: number } = defaultViewport,
 ) => {
   const browser = await browserType.launch();
-  const context = await browser.newContext({ viewport: defaultViewport });
+  const context = await browser.newContext({ viewport: viewport });
   const page = await context.newPage();
 
   await page.goto(pageUrl);
