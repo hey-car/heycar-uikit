@@ -10,7 +10,22 @@ import Changelog from '../../CHANGELOG.md';
 
 <Meta title="Components/Logo" component={Logo} argTypes={{}} />
 
-export const LogoTemplate = args => <Logo {...args} />;
+export const LogoTemplate = args => {
+  const { color } = args;
+  let background;
+  if(color === 'primary') {
+    background = '#052962';
+  }else if(color === 'secondary'){
+    background = '#FFFFFF';
+  }else {
+    background = '#F1F4FA';
+  }
+  return (
+  <div class="" style={{ backgroundColor: background, padding: '15px', display: 'inline-block' }}>
+    <Logo {...args} />
+  </div>
+  );
+};
 
 <!-- Canvas -->
 
@@ -20,15 +35,6 @@ export const LogoTemplate = args => <Logo {...args} />;
     color: 'primary',
     fontSize: 200,
   }}
-  parameters={{
-    backgrounds: {
-      values: [
-        { name: 'primary', value: '#052962' },
-        { name: 'secondary', value: '#FFFFFF' },
-        { name: 'tertiarys', value: '#F1F4FA' },
-      ],
-    },
-  }}
   argTypes={{
     fontSize: {
       control: 'number',
@@ -37,6 +43,7 @@ export const LogoTemplate = args => <Logo {...args} />;
       control: {
         type: 'select',
         options: ['primary', 'secondary', 'tertiary'],
+        default: 'primary',
       },
     },
     role: {

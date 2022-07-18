@@ -37,7 +37,6 @@ module.exports = {
     },
     'storybook-addon-live-examples',
     '@storybook/addon-controls',
-    '@storybook/addon-backgrounds',
   ],
   webpackFinal: async config => {
     addPackagesDir(config);
