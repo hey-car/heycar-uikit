@@ -2,11 +2,20 @@
 
 The Logo component is used to display heycar [logos](https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Global-Design-System?node-id=1370%3A40820).
 
-##installation and usage
+## Installation
+
+To install and save in your package.json dependencies, run the command below using npm:
+
+```bash
+npm install @heycar-uikit/logo
 ```
+
+## Usage
+
+```tsx
 import Logo from '@heycar-uikit/logo';
 
-<Logo fontSize={65} color="primary" />
+<Logo fontSize={65} color="primary" />;
 ```
 
 ## Colors
@@ -23,5 +32,3 @@ for more info you checkout colour page in [Figma](https://www.figma.com/file/rrv
 ## Documentation and sandbox
 
 [Storybook](https://hey-car.github.io/heycar-uikit/main/?path=/docs/components-logo--logo) documentation and sandbox
-
-

@@ -12,18 +12,30 @@ import Changelog from '../../CHANGELOG.md';
 
 export const LogoTemplate = args => {
   const { color } = args;
-  let background;
-  if(color === 'primary') {
-    background = '#052962';
-  }else if(color === 'secondary'){
-    background = '#FFFFFF';
-  }else {
-    background = '#F1F4FA';
-  }
+  const backgroundColors = {
+    primary: '#052962',
+    secondary: '#FFFFFF',
+    tertiary: '#F1F4FA',
+  };
   return (
-  <div class="" style={{ backgroundColor: background, padding: '15px', display: 'inline-block' }}>
-    <Logo {...args} />
-  </div>
+    <div
+      style={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        height: '100vh',
+      }}
+    >
+      <div
+        style={{
+          backgroundColor: backgroundColors[color],
+          padding: '15px',
+          display: 'inline-block',
+        }}
+      >
+        <Logo {...args} />
+      </div>
+    </div>
   );
 };
 
