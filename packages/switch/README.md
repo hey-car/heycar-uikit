@@ -22,7 +22,7 @@ import Switch from '@heycar-uikit/switch';
 
 function App() {
   return (
-    <Switch checked/>
+    <Switch checked />
   );
 }
 ```
