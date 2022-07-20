@@ -4,6 +4,7 @@ import { ComponentHeader, TabContainer } from 'storybook/blocks';
 import Switch from '../';
 import { version } from '../../package.json';
 import Description from './Description.mdx';
+import Usage from './Usage.mdx';
 import Changelog from '../../CHANGELOG.md';
 
 <Meta
@@ -48,13 +49,10 @@ export const SwitchTemplate = args => <Switch {...args} />;
 
 The Switch component changes the state of a single boolean parameter to true or false.
 
-```tsx
-import { Switch } from '@heycar-uikit/switch';
-```
-
 <TabContainer
     tabs={[
         { label: 'Description', component: <Description /> },
+        { label: 'Usage', component: <Usage /> },
         { label: 'Props', component: <Props of={Switch} /> },
         { label: 'Changelog', component: <Changelog /> },
     ]}

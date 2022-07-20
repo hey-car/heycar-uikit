@@ -7,30 +7,4 @@
 
 The Switch component changes the state of a single boolean parameter to true or false.
 
-## Installation
-
-To install and save in your package.json dependencies, run the command below using npm:
-
-```bash
-npm install @heycar-uikit/switch
-```
-
-## Usage
-
-```tsx
-import Switch from '@heycar-uikit/switch';
-
-function App() {
-  function onChange(event: React.ChangeEvent<HTMLInputElement>) {
-    console.log(event.target.checked);
-  }
-
-  return (
-    <Switch checked onChange={onChange} />
-  );
-}
-```
-
-## Documentation and sandbox
-
-[Storybook](https://hey-car.github.io/heycar-uikit/main/?path=/docs/components-switch--switch-story) documentation and sandbox
+For the installation, documentation, sandbox and usage check [Storybook](https://hey-car.github.io/heycar-uikit/main/?path=/docs/components-switch--switch-story)
