@@ -21,8 +21,12 @@ npm install @heycar-uikit/switch
 import Switch from '@heycar-uikit/switch';
 
 function App() {
+  function onChange(event: React.ChangeEvent<HTMLInputElement>) {
+    console.log(event.target.checked);
+  }
+
   return (
-    <Switch checked />
+    <Switch checked onChange={onChange} />
   );
 }
 ```

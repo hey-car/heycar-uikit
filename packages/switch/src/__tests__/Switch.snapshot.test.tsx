@@ -8,6 +8,6 @@ describe('Switch snapshot', () => {
     expect(render(<Switch />)).toMatchSnapshot();
   });
   it('should match checked snapshot', () => {
-    expect(render(<Switch checked={true} />)).toMatchSnapshot();
+    expect(render(<Switch defaultChecked={true} />)).toMatchSnapshot();
   });
 });

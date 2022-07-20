@@ -9,18 +9,31 @@ import Changelog from '../../CHANGELOG.md';
 <Meta
     title="Components/Switch"
     component={Switch}
+    argTypes={{
+        onChange: {
+            table: {
+                disable: true,
+            },
+        },
+        defaultChecked: {
+            table: {
+                disable: true,
+            },
+        },
+        className: {
+            table: {
+                disable: true,
+            },
+        },
+    }}
 />
+
 
 export const SwitchTemplate = args => <Switch {...args} />;
 
 <!-- Canvas -->
 
-<Story
-    name="Switch"
-    args={{
-        checked: true,
-    }}
->
+<Story name="Switch">
     {SwitchTemplate.bind({})}
 </Story>
 

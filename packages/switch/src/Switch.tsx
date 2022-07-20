@@ -1,31 +1,31 @@
 import React from 'react';
-import { useCallback } from 'react';
+import cn from 'classnames';
 
 import styles from './styles/default.module.css';
 
 import { SwitchProps } from './Switch.types';
 
-export const Switch: React.FC<SwitchProps> = ({
-  checked = false,
-  onChange,
-}) => {
-  const handleChange = useCallback(
-    event => onChange?.(event.target.checked),
-    [onChange],
-  );
+export const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
+  ({ defaultChecked = false, className, onChange }) => {
+    const classNames = cn(styles.container, className);
 
-  return (
-    <label className={styles.container}>
-      <input checked={checked} onChange={handleChange} type="checkbox" />
-      <span className={styles.switch} />
-    </label>
-  );
-};
+    return (
+      <label className={classNames}>
+        <input
+          defaultChecked={defaultChecked}
+          onChange={onChange}
+          type="checkbox"
+        />
+        <span className={styles.switch} />
+      </label>
+    );
+  },
+);
 
 Switch.displayName = 'Switch';
 
 Switch.defaultProps = {
-  checked: false,
+  defaultChecked: false,
 };
 
 export default Switch;
