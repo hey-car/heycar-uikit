@@ -1,30 +1,5 @@
 @import '../../../vars/src/colors.css';
 
-/*
-* Colors
-*/
-
-.primary {
-  fill: var(--color-championship-white);
-}
-.secondary {
-  fill: var(--color-mica-blue);
-}
-.tertiary {
-  fill: var(--color-mica-blue);
-}
-
-.undermark_primary {
-  fill: var(--color-heycar-mint-500);
-}
-
-.undermark_secondary {
-  fill: var(--color-heycar-mint-500);
-}
-.undermark_tertiary {
-  fill: var(--color-championship-white);
-}
-
 .logo {
   user-select: none;
   width: 1em;
