@@ -1,5 +1,12 @@
 @import '../../../themes/src/default.css';
 
+:root {
+  --switch-checked-color:var(--color-primary-500);
+  --switch-unchecked-color: var(--color-neutral-500);
+  --switch-unchecked-hover-color: var(--color-neutral-600);
+  --switch-unchecked-pressed-color: var(--color-neutral-700);
+}
+
 .container {
   position: relative;
   display: inline-block;
@@ -9,7 +16,7 @@
   & .switch {
     position: absolute;
     cursor: pointer;
-    background-color: var(--color-neutral-500);
+    background-color: var(--switch-unchecked-color);
     border-radius: 53px;
     top: 0;
     right: 0;
@@ -40,14 +47,14 @@
   }
 
   & input[type='checkbox']:checked + .switch {
-    background-color: var(--color-primary-500);
+    background-color: var(--switch-checked-color);
   }
 
   &:hover input[type='checkbox']:not(:checked) + .switch {
-    background-color: var(--color-neutral-600);
+    background-color: var(--switch-unchecked-hover-color);
   }
 
   &:active input[type='checkbox']:not(:checked) + .switch {
-    background-color: var(--color-neutral-700);
+    background-color: var(--switch-unchecked-pressed-color);
   }
 }
