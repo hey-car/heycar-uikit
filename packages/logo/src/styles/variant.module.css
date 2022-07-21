@@ -5,7 +5,6 @@
 */
 
 :root {
-
   /* primary */
   --fill-primary-color: var(--color-championship-white);
   --fill-primary-undermark-color: var(--color-heycar-mint-500);
@@ -17,7 +16,6 @@
   /* tertiary */
   --fill-tertiary-color: var(--color-mica-blue);
   --fill-tertiary-undermark-color: var(--color-championship-white);
-
 }
 
 .primary {
@@ -40,4 +38,3 @@
 .undermark_tertiary {
   fill: var(--fill-tertiary-undermark-color);
 }
-
