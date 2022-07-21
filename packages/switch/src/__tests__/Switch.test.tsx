@@ -4,26 +4,17 @@ import Switch from '../Switch';
 import { render, fireEvent } from '@testing-library/react';
 
 describe('Switch', () => {
-  it('should set defaultChecked attribute', () => {
-    const { container } = render(<Switch defaultChecked={true} />);
+  it('should set checked attribute', () => {
+    const { container } = render(<Switch checked={true} onChange={() => {}} />);
     const input = container.firstElementChild?.firstElementChild;
-
-    expect(input).toBeChecked();
-  });
-  it('should change checked attribute', () => {
-    const { container } = render(<Switch defaultChecked={false} />);
-    const label = container.firstElementChild!;
-    const input = label.firstElementChild;
-
-    expect(input).not.toBeChecked();
-
-    fireEvent.click(label);
 
     expect(input).toBeChecked();
   });
   it('should invoke onChange function', () => {
     const handleChange = jest.fn();
-    const { container } = render(<Switch onChange={handleChange} />);
+    const { container } = render(
+      <Switch checked={false} onChange={handleChange} />,
+    );
     const label = container.firstElementChild!;
     fireEvent.click(label);
 

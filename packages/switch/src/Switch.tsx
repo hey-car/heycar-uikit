@@ -6,15 +6,16 @@ import styles from './styles/default.module.css';
 import { SwitchProps } from './Switch.types';
 
 export const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
-  ({ defaultChecked = false, className, onChange }) => {
+  ({ checked, className, onChange }, ref) => {
     const classNames = cn(styles.container, className);
 
     return (
       <label className={classNames}>
         <input
-          defaultChecked={defaultChecked}
+          checked={checked}
           onChange={onChange}
           type="checkbox"
+          ref={ref}
         />
         <span className={styles.switch} />
       </label>
@@ -23,9 +24,5 @@ export const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
 );
 
 Switch.displayName = 'Switch';
-
-Switch.defaultProps = {
-  defaultChecked: false,
-};
 
 export default Switch;

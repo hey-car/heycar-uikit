@@ -4,18 +4,17 @@ To install and save in your package.json dependencies, run the command below usi
 npm install @heycar-uikit/switch
 ```
 
-Usage of the component
+Switch is implemented as a controlled component. Usage example:
 
 ```tsx
 import { Switch } from '@heycar-uikit/switch';
+import { useState } from 'react';
 
 function App() {
-  function onChange(event) {
-    console.log(event.target.checked);
-  }
+  const [ checked, setChecked ] = useState(true);
 
   return (
-    <Switch defaultChecked onChange={onChange} />
+    <Switch checked={checked} onChange={e => setChecked(e.target.checked)} />
   );
 }
 ```

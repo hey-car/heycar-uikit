@@ -12,12 +12,10 @@ import Changelog from '../../CHANGELOG.md';
     title="Components/Switch"
     component={Switch}
     argTypes={{
-        onChange: {
-            table: {
-                disable: true,
-            },
+        checked: {
+            control: 'boolean',
         },
-        defaultChecked: {
+        onChange: {
             table: {
                 disable: true,
             },
@@ -35,7 +33,13 @@ export const SwitchTemplate = args => <Switch {...args} />;
 
 <!-- Canvas -->
 
-<Story name="Switch">
+<Story
+    name="Switch"
+    args={{
+        checked: true,
+        onChange: () => {}
+    }}
+>
     {SwitchTemplate.bind({})}
 </Story>
 

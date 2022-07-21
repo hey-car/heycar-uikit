@@ -1,7 +1,7 @@
 @import '../../../themes/src/default.css';
 
 :root {
-  --switch-checked-color:var(--color-primary-500);
+  --switch-checked-color: var(--color-primary-500);
   --switch-unchecked-color: var(--color-neutral-500);
   --switch-unchecked-hover-color: var(--color-neutral-600);
   --switch-unchecked-pressed-color: var(--color-neutral-700);
