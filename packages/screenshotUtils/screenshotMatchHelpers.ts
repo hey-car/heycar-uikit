@@ -19,7 +19,7 @@ export const screenshotMatchClick = async (
         await page.mouse.move(position.x, position.y);
         await page.mouse.down();
         // Waiting for the rendering in case of a slight rendering lag
-        await delay(100);
+        await delay(150);
       }
     }
     await matchHtml({
