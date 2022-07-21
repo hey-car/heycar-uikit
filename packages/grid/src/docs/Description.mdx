@@ -1,0 +1,353 @@
+## Grid.Row
+
+The string is used to create the grid. The grid has a fluid layout system that scales up to 12 columns.
+
+## Breakpoints
+
+| Name          | Value           |
+| ------------- | --------------- |
+| `--mobile-s`  | 320px to 100%   |
+| `--mobile-m`  | 375px to 100%   |
+| `--mobile-l`  | 412px to 100%   |
+| `--mobile`    | 0 to 599px      |
+| `--tablet-s`  | 600px to 100%   |
+| `--tablet-m`  | 768px to 100%   |
+| `--tablet-l`  | 860px to 100%   |
+| `--tablet`    | 600px to 1023px |
+| `--desktop-s` | 1024px to 100%  |
+| `--desktop-m` | 1280px to 100%  |
+| `--desktop-l` | 1440px to 100%  |
+| `--desktop`   | 1024px to 100%  |
+
+### Set the horizontal offset
+
+```tsx live
+const style = {
+  height: 30,
+  background: '#7394c8',
+};
+
+render(
+  <Grid.Row gutter={{ mobile: 0, tablet: 16, desktop: { m: 24 } }}>
+    <Grid.Col>
+      <div style={style} />
+    </Grid.Col>
+    <Grid.Col>
+      <div style={{ ...style, background: '#164ca3' }} />
+    </Grid.Col>
+    <Grid.Col>
+      <div style={style} />
+    </Grid.Col>
+  </Grid.Row>,
+);
+```
+
+### Alignment
+
+Vertically
+
+```tsx live
+render(() => {
+  const style = {
+    height: 30,
+    background: '#7394c8',
+  };
+  const styleLastDiv = {
+    width: 0,
+    height: 90,
+    padding: 0,
+    marginBottom: 10,
+  };
+  return (
+    <div>
+      <div style={{ background: '#f3f4f5', marginBottom: 10 }}>
+        <Grid.Row align="top">
+          <Grid.Col>
+            <div style={style} />
+          </Grid.Col>
+          <Grid.Col>
+            <div style={{ ...style, background: '#164ca3' }} />
+          </Grid.Col>
+          <Grid.Col>
+            <div style={style} />
+          </Grid.Col>
+          <div style={styleLastDiv} />
+        </Grid.Row>
+      </div>
+      <div style={{ background: '#f3f4f5', marginBottom: 10 }}>
+        <Grid.Row align="middle">
+          <Grid.Col>
+            <div style={style} />
+          </Grid.Col>
+          <Grid.Col>
+            <div style={{ ...style, background: '#164ca3' }} />
+          </Grid.Col>
+          <Grid.Col>
+            <div style={style} />
+          </Grid.Col>
+          <div style={styleLastDiv} />
+        </Grid.Row>
+      </div>
+      <div style={{ background: '#f3f4f5' }}>
+        <Grid.Row align="bottom">
+          <Grid.Col>
+            <div style={style} />
+          </Grid.Col>
+          <Grid.Col>
+            <div style={{ ...style, background: '#164ca3' }} />
+          </Grid.Col>
+          <Grid.Col>
+            <div style={style} />
+          </Grid.Col>
+          <div style={{ ...styleLastDiv, marginBottom: 0 }} />
+        </Grid.Row>
+      </div>
+    </div>
+  );
+});
+```
+
+Horizontally
+
+```tsx live
+render(() => {
+  const style = {
+    height: 30,
+    background: '#7394c8',
+    marginBottom: 10,
+  };
+  return (
+    <div>
+      <Grid.Row justify="left">
+        <Grid.Col width="4">
+          <div style={style} />
+        </Grid.Col>
+        <Grid.Col width="4">
+          <div style={{ ...style, background: '#164ca3' }} />
+        </Grid.Col>
+      </Grid.Row>
+      <Grid.Row justify="center">
+        <Grid.Col width="4">
+          <div style={style} />
+        </Grid.Col>
+        <Grid.Col width="4">
+          <div style={{ ...style, background: '#164ca3' }} />
+        </Grid.Col>
+      </Grid.Row>
+      <Grid.Row justify="right">
+        <Grid.Col width="4">
+          <div style={style} />
+        </Grid.Col>
+        <Grid.Col width="4">
+          <div style={{ ...style, background: '#164ca3' }} />
+        </Grid.Col>
+      </Grid.Row>
+      <Grid.Row justify="around">
+        <Grid.Col width="4">
+          <div style={style} />
+        </Grid.Col>
+        <Grid.Col width="4">
+          <div style={{ ...style, background: '#164ca3' }} />
+        </Grid.Col>
+      </Grid.Row>
+      <Grid.Row justify="between">
+        <Grid.Col width="4">
+          <div style={{ ...style, marginBottom: 0 }} />
+        </Grid.Col>
+        <Grid.Col width="4">
+          <div style={{ ...style, background: '#164ca3', marginBottom: 0 }} />
+        </Grid.Col>
+      </Grid.Row>
+    </div>
+  );
+});
+```
+
+## Grid.Col
+
+The columns are used to create the grid. The grid has a fluid layout system that scales up to 12 columns. Columns must be placed in rows (Grid.Row component).
+
+```tsx live
+render(() => {
+  const style = {
+    height: 30,
+    lineHeight: '30px',
+    color: '#fff',
+    background: '#7394c8',
+    textAlign: 'center',
+    marginTop: 10,
+  };
+  return (
+    <div>
+      <Grid.Row>
+        <Grid.Col width={{ tablet: { m: 12 } }}>
+          <div style={{ ...style, background: '#164ca3', marginTop: 0 }}>
+            12
+          </div>
+        </Grid.Col>
+      </Grid.Row>
+      <Grid.Row>
+        {[1, 2].map(key => (
+          <Grid.Col width="6" key={key}>
+            <div style={style}>6</div>
+          </Grid.Col>
+        ))}
+      </Grid.Row>
+      <Grid.Row>
+        {[1, 2, 3].map(key => (
+          <Grid.Col width="4" key={key}>
+            <div style={{ ...style, background: '#164ca3' }}>4</div>
+          </Grid.Col>
+        ))}
+      </Grid.Row>
+      <Grid.Row>
+        {[1, 2, 3, 4].map(key => (
+          <Grid.Col width="3" key={key}>
+            <div style={style}>3</div>
+          </Grid.Col>
+        ))}
+      </Grid.Row>
+      <Grid.Row>
+        {[1, 2, 3, 4, 5, 6].map(key => (
+          <Grid.Col width="2" key={key}>
+            <div style={{ ...style, background: '#164ca3' }}>2</div>
+          </Grid.Col>
+        ))}
+      </Grid.Row>
+      <Grid.Row>
+        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map(key => (
+          <Grid.Col width="1" key={key}>
+            <div style={style}>1</div>
+          </Grid.Col>
+        ))}
+      </Grid.Row>
+    </div>
+  );
+});
+```
+
+### Responsive width
+
+The grid can be customized for each control point to build a complex responsive interface.
+
+```tsx live
+render(() => {
+  const style = {
+    height: 30,
+    lineHeight: '30px',
+    color: '#fff',
+    textAlign: 'center',
+    background: '#7394c8',
+    marginBottom: '10px',
+  };
+  return (
+    <div style={{ marginBottom: '-10px' }}>
+      <Grid.Row>
+        <Grid.Col width={{ mobile: 12, tablet: 12, desktop: 4 }}>
+          <div style={style} />
+        </Grid.Col>
+        <Grid.Col width={{ mobile: 12, tablet: 6, desktop: 4 }}>
+          <div style={{ ...style, background: '#164ca3' }} />
+        </Grid.Col>
+        <Grid.Col width={{ mobile: 12, tablet: 6, desktop: 4 }}>
+          <div style={style} />
+        </Grid.Col>
+      </Grid.Row>
+    </div>
+  );
+});
+```
+
+### Vertical alignment
+
+```tsx live
+render(() => {
+  const style = {
+    height: 30,
+    background: '#7394c8',
+  };
+  return (
+    <div style={{ background: '#f3f4f5' }}>
+      <Grid.Row>
+        <Grid.Col align="top">
+          <div style={style} />
+        </Grid.Col>
+        <Grid.Col align="middle">
+          <div style={{ ...style, background: '#164ca3' }} />
+        </Grid.Col>
+        <Grid.Col align="bottom">
+          <div style={style} />
+        </Grid.Col>
+        <div style={{ width: 0, height: 90, padding: 0 }} />
+      </Grid.Row>
+    </div>
+  );
+});
+```
+
+### Changing the order of elements
+
+To quickly change the order of a single element, you can use the first and last values.
+
+```tsx live
+render(() => {
+  const style = {
+    height: 30,
+    lineHeight: '30px',
+    color: '#fff',
+    textAlign: 'center',
+    background: '#7394c8',
+    marginBottom: '10px',
+  };
+  return (
+    <div style={{ marginBottom: '-10px' }}>
+      <Grid.Row>
+        <Grid.Col order="1">
+          <div style={style}>First (order=1)</div>
+        </Grid.Col>
+        <Grid.Col order="3">
+          <div style={style}>Second (order=3)</div>
+        </Grid.Col>
+        <Grid.Col order="2">
+          <div style={{ ...style, background: '#164ca3' }}>Third (order=2)</div>
+        </Grid.Col>
+      </Grid.Row>
+      <Grid.Row>
+        <Grid.Col order="last">
+          <div style={style}>First (order=last)</div>
+        </Grid.Col>
+        <Grid.Col>
+          <div style={style}>Second</div>
+        </Grid.Col>
+        <Grid.Col>
+          <div style={{ ...style, background: '#164ca3' }}>Third</div>
+        </Grid.Col>
+      </Grid.Row>
+    </div>
+  );
+});
+```
+
+### Column offset
+
+```tsx live
+render(() => {
+  const style = {
+    height: 30,
+    lineHeight: '30px',
+    color: '#fff',
+    textAlign: 'center',
+    background: '#7394c8',
+  };
+  return (
+    <Grid.Row>
+      <Grid.Col width="4">
+        <div style={style}>width 4</div>
+      </Grid.Col>
+      <Grid.Col width="4" offset="4">
+        <div style={{ ...style, background: '#164ca3' }}>width 4, offset 4</div>
+      </Grid.Col>
+    </Grid.Row>
+  );
+});
+```
