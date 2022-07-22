@@ -16,7 +16,7 @@ const screenshotTesting = setupScreenshotTesting({
   expect,
 });
 
-function testSwitchChecked(checked: boolean) {
+function testSwitch(checked: boolean, disabled: boolean) {
   return screenshotTesting({
     cases: [
       [
@@ -25,6 +25,7 @@ function testSwitchChecked(checked: boolean) {
           packageName,
           knobs: {
             checked: checked,
+            disabled: disabled,
           },
         }),
       ],
@@ -33,9 +34,13 @@ function testSwitchChecked(checked: boolean) {
   });
 }
 
-describe('Switch unchecked', testSwitchChecked(false));
+describe('Switch unchecked', testSwitch(false, false));
 
-describe('Switch checked', testSwitchChecked(true));
+describe('Switch checked', testSwitch(true, false));
+
+describe('Switch unchecked and disabled', testSwitch(false, true));
+
+describe('Switch checked and disabled', testSwitch(true, true));
 
 describe('Switch events tests', () => {
   test('hover when checked', async () => {
@@ -58,6 +63,17 @@ describe('Switch events tests', () => {
 
     await screenshotMatchHover(pageUrl, selector, { clip });
   });
+  test('hover when unchecked and disabled', async () => {
+    const pageUrl = createStorybookUrl({
+      packageName,
+      knobs: {
+        checked: false,
+        disabled: true,
+      },
+    });
+
+    await screenshotMatchHover(pageUrl, selector, { clip });
+  });
   test('click when checked', async () => {
     const pageUrl = createStorybookUrl({
       packageName,
@@ -73,6 +89,17 @@ describe('Switch events tests', () => {
       packageName,
       knobs: {
         checked: false,
+      },
+    });
+
+    await screenshotMatchClick(pageUrl, selector, { clip });
+  });
+  test('click when unchecked and disabled', async () => {
+    const pageUrl = createStorybookUrl({
+      packageName,
+      knobs: {
+        checked: false,
+        disabled: true,
       },
     });
 

@@ -5,6 +5,9 @@
   --switch-unchecked-color: var(--color-neutral-500);
   --switch-unchecked-hover-color: var(--color-neutral-600);
   --switch-unchecked-pressed-color: var(--color-neutral-700);
+  --switch-disabled-color: var(--color-neutral-300);
+  --switch-thumb-color: var(--color-championship-white);
+  --switch-thumb-disabled-color: var(--color-neutral-100);
 }
 
 .container {
@@ -31,7 +34,7 @@
       top: 1px;
       width: 22px;
       height: 22px;
-      background-color: var(--color-championship-white);
+      background-color: var(--switch-thumb-color);
       border-radius: 50%;
       transition: transform 0.3s ease;
     }
@@ -43,18 +46,26 @@
 
   & input[type='checkbox']:checked + .switch:before {
     transform: translateX(16px);
-    background-color: var(--color-championship-white);
   }
 
   & input[type='checkbox']:checked + .switch {
     background-color: var(--switch-checked-color);
   }
 
-  &:hover input[type='checkbox']:not(:checked) + .switch {
+  & input[type='checkbox']:disabled + .switch {
+    background-color: var(--switch-disabled-color);
+    cursor: default;
+  }
+
+  & input[type='checkbox']:disabled + .switch:before {
+    background-color: var(--switch-thumb-disabled-color);
+  }
+
+  &:hover input[type='checkbox']:not([disabled]):not(:checked) + .switch {
     background-color: var(--switch-unchecked-hover-color);
   }
 
-  &:active input[type='checkbox']:not(:checked) + .switch {
+  &:active input[type='checkbox']:not([disabled]):not(:checked) + .switch {
     background-color: var(--switch-unchecked-pressed-color);
   }
 }

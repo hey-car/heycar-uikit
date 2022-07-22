@@ -20,4 +20,12 @@ describe('Switch', () => {
 
     expect(handleChange).toHaveBeenCalledTimes(1);
   });
+  it('should set disabled attribute', () => {
+    const { container } = render(
+      <Switch checked={false} onChange={() => {}} disabled={true} />,
+    );
+    const input = container.firstElementChild?.firstElementChild;
+
+    expect(input).toBeDisabled();
+  });
 });
