@@ -1,3 +1,17 @@
+# [1.4.0](https://github.com/hey-car/heycar-uikit/compare/v1.3.0...v1.4.0) (2022-07-14)
+
+
+### Features
+
+* **grid:** The first implementation the grid package ([#26](https://github.com/hey-car/heycar-uikit/issues/26)) ([807290a](https://github.com/hey-car/heycar-uikit/commit/807290a62f337f5facec24ec38220ad5deb5693a))
+
+# [1.3.0](https://github.com/hey-car/heycar-uikit/compare/v1.2.0...v1.3.0) (2022-07-14)
+
+
+### Features
+
+* **fonts:** The first implementation of the fonts package  ([#36](https://github.com/hey-car/heycar-uikit/issues/36)) ([560b6cc](https://github.com/hey-car/heycar-uikit/commit/560b6ccbd3b2ac69b3cc3f537a8a3da782f68f79))
+
 # [1.2.0](https://github.com/hey-car/heycar-uikit/compare/v1.1.1...v1.2.0) (2022-06-22)
 
 

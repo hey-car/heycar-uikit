@@ -5,6 +5,7 @@ import { LIVE_EXAMPLES_ADDON_ID } from 'storybook-addon-live-examples';
 import scope from './scope';
 import alfaTheme from './theme';
 import { editorTheme } from './editorTheme';
+import { INITIAL_VIEWPORTS } from "@storybook/addon-viewport";
 
 addons.setConfig({
   [LIVE_EXAMPLES_ADDON_ID]: {
@@ -46,6 +47,9 @@ addParameters({
       ],
     },
   },
+  viewport: {
+    viewports: INITIAL_VIEWPORTS
+  }
 });
 
 configure(

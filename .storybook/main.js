@@ -23,20 +23,22 @@ module.exports = {
     builder: 'webpack5',
   },
   staticDirs: [
-    '../.storybook/public'
+    '../packages/fonts/src',
+    '../.storybook/public',
   ],
   stories: [
     '../docs/**/*.stories.@(ts|md)x',
     '../packages/**/*.stories.@(ts|md)x',
   ],
   addons: [
-    '@storybook/addon-controls',
     '@storybook/preset-create-react-app',
     {
       name: '@storybook/addon-docs',
       options: { transcludeMarkdown: true },
     },
+    '@storybook/addon-controls',
     'storybook-addon-live-examples',
+    '@storybook/addon-viewport'
   ],
   webpackFinal: async config => {
     addPackagesDir(config);

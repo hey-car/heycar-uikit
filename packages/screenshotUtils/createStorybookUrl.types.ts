@@ -12,5 +12,6 @@ export type Knobs = {
 export type CreateStorybookUrlParams = {
   url?: string;
   packageName?: string;
+  moduleName?: string;
   knobs?: Knobs;
 };

@@ -18,6 +18,7 @@ copy_package="npx copyfiles package.json dist"
 lerna exec \
     --scope @heycar-uikit/vars \
     --scope @heycar-uikit/themes \
+    --scope @heycar-uikit/fonts \
     -- "$copy_css && $copy_package"
 
 # compiling the themes package
@@ -33,6 +34,7 @@ copy_to_root="cp -rp dist/ ../../dist/\${PWD##*/}"
 lerna exec \
     --scope @heycar-uikit/vars \
     --scope @heycar-uikit/themes \
+    --scope @heycar-uikit/fonts \
     -- $copy_to_root
 
 # copy package.json to root package assembly
