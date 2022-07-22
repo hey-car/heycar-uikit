@@ -26,5 +26,6 @@
   },
   "postinstall": "node ./dist/send-stats.js > /dev/null 2>&1 || exit 0",
   "author": "HeyCar Team",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "gitHead": "58e9efe350cbc1d37ba37590f55347f2fd23ad13"
 }
