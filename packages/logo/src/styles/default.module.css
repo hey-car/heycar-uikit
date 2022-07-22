@@ -1,5 +1,26 @@
-@import '../../../vars/src/colors.css';
+@import '../../../themes/src/default.css';
 
+/*
+* Colors
+*/
+
+:root {
+  /* primary */
+  --fill-primary-color: var(--color-championship-white);
+  --fill-primary-undermark-color: var(--color-heycar-mint-500);
+
+  /* secondary */
+  --fill-secondary-color: var(--color-mica-blue);
+  --fill-secondary-undermark-color: var(--color-heycar-mint-500);
+
+  /* tertiary */
+  --fill-tertiary-color: var(--color-mica-blue);
+  --fill-tertiary-undermark-color: var(--color-championship-white);
+}
+
+/*
+* Base
+*/
 .logo {
   user-select: none;
   width: 1em;
@@ -8,4 +29,29 @@
   fill: currentColor;
   flex-shrink: 0;
   color: inherit;
+}
+
+/*
+* Colors
+*/
+
+.primary {
+  fill: var(--fill-primary-color);
+}
+.secondary {
+  fill: var(--fill-secondary-color);
+}
+.tertiary {
+  fill: var(--fill-tertiary-color);
+}
+
+.undermark_primary {
+  fill: var(--fill-primary-undermark-color);
+}
+
+.undermark_secondary {
+  fill: var(--fill-secondary-undermark-color);
+}
+.undermark_tertiary {
+  fill: var(--fill-tertiary-undermark-color);
 }
