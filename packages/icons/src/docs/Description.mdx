@@ -1,0 +1,36 @@
+import { Container } from 'storybook/blocks';
+import { Car, Lorry } from '../';
+
+## Sizes
+
+Use the `fontSize` prop to change the size of the icons.
+You can put any number to change the icon size proportionally.
+
+```tsx live
+render(
+  <div style={{ textAlign: 'center' }}>
+    <Lorry fontSize="90" />
+  </div>,
+);
+```
+
+## Colors
+
+Use the `color` prop to change the color of the icons.
+You can set the value to solid, `inherit` (default), `primary` `secondary` and `tertiary`.
+
+```tsx live
+const iconColors = ['inherit', 'primary', 'secondary', 'tertiary'];
+
+render(
+  <Container>
+    <Row align="middle" style={{ width: '100%' }}>
+      {iconColors.map(color => (
+        <Col span="2" key={color}>
+          <Car fontSize="60" color={color} />
+        </Col>
+      ))}
+    </Row>
+  </Container>,
+);
+```
