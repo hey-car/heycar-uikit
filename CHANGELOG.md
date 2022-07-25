@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/hey-car/heycar-uikit/compare/v1.5.0...v1.6.0) (2022-07-25)
+
+
+### Features
+
+* **icons:** the first implementation of the icons package ([#39](https://github.com/hey-car/heycar-uikit/issues/39)) ([74fd00d](https://github.com/hey-car/heycar-uikit/commit/74fd00d9227e3e915fbb54962d56ab9d64715b5c))
+
 # [1.5.0](https://github.com/hey-car/heycar-uikit/compare/v1.4.0...v1.5.0) (2022-07-22)
 
 
