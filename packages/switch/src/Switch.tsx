@@ -1,9 +1,9 @@
 import React from 'react';
 import cn from 'classnames';
 
-import styles from './styles/default.module.css';
-
 import { SwitchProps } from './Switch.types';
+
+import styles from './styles/default.module.css';
 
 export const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
   ({ checked, onChange, disabled = false, className }, ref) => {
@@ -13,10 +13,10 @@ export const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
       <label className={classNames}>
         <input
           checked={checked}
-          onChange={onChange}
           disabled={disabled}
-          type="checkbox"
+          onChange={onChange}
           ref={ref}
+          type="checkbox"
         />
         <span className={styles.switch} />
       </label>

@@ -13,7 +13,6 @@ export interface SwitchProps {
    * Additional `class` names to be added
    */
   className?: string;
-
   /**
    * Controls if the Switch is disabled
    */
