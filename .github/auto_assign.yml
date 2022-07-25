@@ -2,8 +2,7 @@ addReviewers: true
 
 reviewers:
   - derek-heycar
-  - hey-igor
-  - mwagdi
+  - hcafaq
 
 skipKeywords:
   - wip

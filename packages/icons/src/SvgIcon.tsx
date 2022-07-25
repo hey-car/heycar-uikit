@@ -3,7 +3,7 @@ import cn from 'classnames';
 
 import { SvgIconProps } from './SvgIcon.types';
 
-import styles from './SvgIcon.module.css';
+import styles from './styles/default.module.css';
 
 const SvgIcon = React.forwardRef<HTMLOrSVGElement, SvgIconProps>(
   (

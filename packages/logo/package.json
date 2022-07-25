@@ -1,9 +1,12 @@
 {
-  "name": "@heycar-uikit/typography",
-  "version": "1.0.6",
-  "description": "HeyCar-UIKit typography",
+  "name": "@heycar-uikit/logo",
+  "version": "1.0.0",
+  "description": "HeyCar-UIKit logo",
   "main": "dist/index.js",
   "module": "./dist/esm/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "keywords": [
     "ui",
     "uikit",
@@ -13,24 +16,18 @@
     "typescript",
     "ui-components",
     "design-systems",
-    "typography"
+    "logo"
   ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hey-car/heycar-uikit.git"
   },
-  "homepage": "https://github.com/hey-car/heycar-uikit/tree/main/packages/typography#readme",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "homepage": "https://github.com/hey-car/heycar-uikit/tree/main/packages/logo#readme",
   "publishConfig": {
     "access": "public"
   },
   "peerDependencies": {
     "react": "^17.0.1"
-  },
-  "dependencies": {
-    "classnames": "^2.3.1"
   },
   "author": "HeyCar Team",
   "license": "UNLICENSED"

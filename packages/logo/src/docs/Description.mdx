@@ -1,0 +1,48 @@
+import { Container, Row, Col } from 'storybook/blocks';
+import Logo from '../Logo';
+
+## Colors
+
+Use the `color` prop to change the visual color of the Logo.
+You can set the value to `primary`, `secondary` , `tertiary`
+
+<Container>
+  <Row
+    align="middle"
+    style={{ width: '100%', justifyContent: 'space-between' }}
+  >
+    <Col span={3}>
+      <div
+        style={{
+          backgroundColor: '#052962',
+          padding: '15px',
+          textAlign: 'center',
+        }}
+      >
+        <Logo fontSize={150} color="primary" />
+      </div>
+    </Col>
+    <Col span={3}>
+      <div
+        style={{
+          backgroundColor: '#FFFFFF',
+          padding: '15px',
+          textAlign: 'center',
+        }}
+      >
+        <Logo fontSize={150} color="secondary" />
+      </div>
+    </Col>
+    <Col span={3}>
+      <div
+        style={{
+          backgroundColor: '#F1F4FA',
+          padding: '15px',
+          textAlign: 'center',
+        }}
+      >
+        <Logo fontSize={150} color="tertiary" />
+      </div>
+    </Col>
+  </Row>
+</Container>
