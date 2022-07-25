@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'Objektiv';
+  font-display: swap;
+  src: url('./assets/objektivmk3_regular.woff2') format('woff2'),
+    url('./assets/objektivmk3_regular.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  letter-spacing: 0;
+  unicode-range: U+0000- U+007F;
+}
+
+/*
+  We use the same definition with font-weight: normal.
+  Otherwise this gets mapped to 400 which we don't support.
+  Instead the browser will make a lighter version bigger.
+*/
+@font-face {
+  font-family: 'Objektiv';
+  font-display: swap;
+  src: url('./assets/objektivmk3_regular.woff2') format('woff2'),
+    url('./assets/objektivmk3_regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 0;
+  unicode-range: U+0000- U+007F;
+}
+
+@font-face {
+  font-family: 'Objektiv';
+  font-display: swap;
+  src: url('./assets/objektivmk3_medium.woff2') format('woff2'),
+    url('./assets/objektivmk3_medium.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0;
+  unicode-range: U+0000- U+007F;
+}
+
+@font-face {
+  font-family: 'Objektiv';
+  font-display: swap;
+  src: url('./assets/objektivmk3_bold.woff2') format('woff2'),
+    url('./assets/objektivmk3_bold.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0;
+  unicode-range: U+0000- U+007F;
+}
+
+/*
+  We use the same definition with font-weight: bold.
+  Otherwise this gets mapped to 700 which we don't support.
+  Instead the browser will take a lighter font and will just make it bolder.
+*/
+@font-face {
+  font-family: 'Objektiv';
+  font-display: swap;
+  src: url('./assets/objektivmk3_bold.woff2') format('woff2'),
+    url('./assets/objektivmk3_bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 0;
+  unicode-range: U+0000- U+007F;
+}
