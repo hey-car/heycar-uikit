@@ -1,0 +1,20 @@
+@import '../../../themes/src/default.css';
+
+/*
+* Colors
+*/
+
+:root {
+  /* primary */
+  --fill-primary-color: var(--color-championship-white);
+
+  /* other */
+  --fill-other-color: var(--color-neutral-700);
+}
+
+.primary {
+  fill: var(--fill-primary-color);
+}
+.other {
+  fill: var(--fill-other-color);
+}

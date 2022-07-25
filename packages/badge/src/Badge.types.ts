@@ -1,10 +1,8 @@
-import React from 'react';
-
 export interface BadgeProps {
   /**
    * Customize Badge text color
    */
-  color?: string;
+  color?: 'primary' | 'neutral';
   /**
    * Number to show in badge
    */
@@ -12,11 +10,11 @@ export interface BadgeProps {
   /**
    * Set size of the badge
    */
-  size?: string;
+  size?: number;
   /**
    * icon element to show
    */
-  icon?: Element;
+  showIcon?: true;
   /**
    * set a symbol in badge
    */
@@ -24,7 +22,7 @@ export interface BadgeProps {
   /**
    * Customize Badge background color
    */
-  background?: string;
+  background?: 'primary' | 'secondary' | 'tertiary' | 'highlight' | 'warning';
   /**
    * text of badge
    */

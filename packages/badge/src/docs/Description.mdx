@@ -1,0 +1,184 @@
+import { Container, Row, Col } from 'storybook/blocks';
+import Badge from '../Badge';
+
+## Variants
+
+Use the `background` prop to change the visual style of the Badge background-color.
+You can set the value to `primary`, `secondary`, `tertiary`, `warning`, `highlight`
+
+```tsx live
+const badgeVariants = [
+  'primary',
+  'secondary',
+  'tertiary',
+  'warning',
+  'highlight',
+];
+
+render(
+  <Container>
+    <Row align="middle">
+      {badgeVariants.map(variant => (
+        <Col key={variant}>
+          <Badge
+            symbol="$"
+            count="250"
+            text="off"
+            background={variant}
+            showIcon={true}
+          />
+        </Col>
+      ))}
+    </Row>
+  </Container>,
+);
+```
+
+## Sizes
+
+Use the size prop to change the size of the badge. You can set the value to a number by default it is `14`.
+
+```tsx live
+const badgeSize = 17;
+
+render(
+  <Container>
+    <Row style={{ width: '100%' }}>
+      <Badge
+        symbol="$"
+        count="250"
+        text="off"
+        background="primary"
+        size={badgeSize}
+        showIcon={true}
+      />
+    </Row>
+  </Container>,
+);
+```
+
+## Text Colors
+
+Use the `color` prop to change the text color of the Badge.
+You can set the value to solid, `primary`, `neutral`.
+
+```tsx live
+const textColors = ['primary', 'neutral'];
+
+render(
+  <Container>
+    <Row align="middle">
+      <Col key={color}>
+        <Badge
+          symbol="$"
+          count="250"
+          text="off"
+          color="primary"
+          background="primary"
+        />
+      </Col>
+    </Row>
+    <Row align="middle">
+      <Col key={color}>
+        <Badge
+          symbol="$"
+          count="250"
+          text="off"
+          color="neutral"
+          background="warning"
+        />
+      </Col>
+    </Row>
+  </Container>,
+);
+```
+
+## Badge with icon
+
+You can add icon to the Badge component using the `showIcon` prop, it is a boolean prop.
+
+```tsx live
+render(
+  <Container align="middle">
+    <Row>
+      <Badge
+        symbol="$"
+        background="warning"
+        count="250"
+        text="off"
+        showIcon={true}
+      />
+    </Row>
+    <Row>
+      <Badge
+        symbol="$"
+        background="warning"
+        count="250"
+        text="off"
+        symbol="$"
+        showIcon={false}
+      />
+    </Row>
+  </Container>,
+);
+```
+
+## Badge with symbol
+
+You can add any currency or other symbol to the Badge component using the `symbol` prop
+
+```tsx live
+render(
+  <Container align="middle">
+    <Row>
+      <Badge
+        symbol="$"
+        background="secondary"
+        count="250"
+        text="off"
+        showIcon={true}
+      />
+    </Row>
+    <Row>
+      <Badge
+        symbol="€"
+        background="tertiary"
+        count="250"
+        text="off"
+        symbol="$"
+        showIcon={false}
+      />
+    </Row>
+  </Container>,
+);
+```
+
+## Badge with numbers
+
+You can add any number to the Badge component using the `count` prop
+
+```tsx live
+render(
+  <Container align="middle">
+    <Row>
+      <Badge
+        symbol="$"
+        background="secondary"
+        count="999"
+        text="off"
+        showIcon={true}
+      />
+    </Row>
+    <Row>
+      <Badge
+        symbol="€"
+        background="tertiary"
+        count="444"
+        text="off"
+        symbol="$"
+        showIcon={false}
+      />
+    </Row>
+  </Container>,
+);
+```

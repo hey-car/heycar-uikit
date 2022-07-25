@@ -1,0 +1,86 @@
+@import '../../../themes/src/default.css';
+
+/*
+* Base
+*/
+.badge {
+  font-family: var(--font-family-system);
+  padding: var(--gap-2xs) var(--gap-xl);
+  position: relative;
+  display: inline-flex;
+  vertical-align: middle;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border: 0;
+  outline: none;
+  box-shadow: none;
+  user-select: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  text-decoration: none;
+  line-height: 20px;
+  border-style: solid;
+}
+
+/*
+* Colors
+*/
+
+:root {
+  /* primary */
+  --primary-color: var(--color-championship-white);
+
+  /* neutral */
+  --neutral-color: var(--color-neutral-700);
+}
+
+.primary {
+  color: var(--primary-color);
+}
+.neutral {
+  color: var(--neutral-color);
+}
+
+/*
+* Background colors
+*/
+
+:root {
+  /* primary */
+  --primary-background-color: var(--color-primary-500);
+
+  /* secondary */
+  --secondary-background-color: var(--color-secondary-500);
+
+  /* tertiary */
+  --tertiary-background-color: var(--color-tertiary-500);
+
+  /* warning */
+  --warning-background-color: var(--color-warning-400);
+
+  /* highlight */
+  --highlight-background-color: var(--color-highlight-500);
+}
+
+.background-primary {
+  background-color: var(--primary-background-color);
+}
+
+.background-secondary {
+  background-color: var(--secondary-background-color);
+}
+
+.background-tertiary {
+  background-color: var(--tertiary-background-color);
+}
+
+.background-warning {
+  background-color: var(--warning-background-color);
+}
+
+.background-highlight {
+  background-color: var(--highlight-background-color);
+}
