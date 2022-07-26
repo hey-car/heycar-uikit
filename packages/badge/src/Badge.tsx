@@ -1,42 +1,17 @@
 import React from 'react';
 import cn from 'classnames';
 
-import BadgeIcon from './components/BadgeIcon';
 import { BadgeProps } from './Badge.types';
 
 import styles from './styles/default.module.css';
 import styleVariants from './styles/variant.module.css';
 
-function Badge({
-  color = 'primary',
-  dataTestId,
-  count,
-  size = 14,
-  showIcon,
-  symbol,
-  background = 'primary',
-  text,
-}: BadgeProps) {
-  const classNames = cn(
-    styleVariants[color],
-    styles.badge,
-    styleVariants[`background-${background}`],
-  );
+function Badge({ color = 'primary', dataTestId, children, text }: BadgeProps) {
+  const classNames = cn(styleVariants[`badge-${color}`], styles.badge);
 
   return (
-    <div
-      className={classNames}
-      data-test-id={dataTestId}
-      style={{ fontSize: size }}
-    >
-      {showIcon && <BadgeIcon color={color} fontSize={size} />}
-      {count && (
-        <span>
-          {symbol && symbol}
-          {count}
-        </span>
-      )}
-      &nbsp;
+    <div className={classNames} data-test-id={dataTestId}>
+      {children && <span className={styles['badge-icon']}>{children}</span>}
       {text && <span>{text}</span>}
     </div>
   );

@@ -8,15 +8,7 @@ import Changelog from '../../CHANGELOG.md';
 
 <!-- Meta -->
 
-<Meta
-  title="Components/Badge"
-  component={Badge}
-  argTypes={{
-    showIcon: {
-      control: 'boolean',
-    },
-  }}
-/>
+<Meta title="Components/Badge" component={Badge} />
 
 export const BadgeTemplate = args => <Badge {...args} />;
 
@@ -25,13 +17,9 @@ export const BadgeTemplate = args => <Badge {...args} />;
 <Story
   name="Badge"
   args={{
-    showIcon: true,
-    count: 250,
-    symbol: '$',
-    text: 'off',
-    size: 14,
+    children: '🚗',
+    text: '$250 off',
     color: 'primary',
-    background: 'primary',
   }}
 >
   {BadgeTemplate.bind({})}

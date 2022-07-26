@@ -21,30 +21,16 @@ describe('Badge', () => {
 
       expect(container.firstElementChild).toHaveTextContent('text');
     });
-
-    it('should set number', () => {
-      const { container } = render(<Badge count={12} />);
-
-      expect(container.firstElementChild).toHaveTextContent('12');
-    });
   });
 
   /**
    * Classes tests
    */
   describe('Classes tests', () => {
-    it('should set `primary` class', () => {
-      const className = 'primary';
+    it('should set `color` class', () => {
       const { container } = render(<Badge color="primary" />);
 
-      expect(container.firstElementChild).toHaveClass(className);
-    });
-
-    it('should set `background-color` class', () => {
-      const background = 'primary';
-      const { container } = render(<Badge background="primary" />);
-
-      expect(container.firstElementChild).toHaveClass(background);
+      expect(container.firstElementChild).toHaveClass('badge-primary');
     });
   });
 });

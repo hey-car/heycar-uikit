@@ -2,27 +2,11 @@ export interface BadgeProps {
   /**
    * Customize Badge text color
    */
-  color?: 'primary' | 'neutral';
+  color?: 'primary' | 'secondary' | 'tertiary' | 'highlight' | 'warning';
   /**
-   * Number to show in badge
+   * The content of the Badge
    */
-  count?: number;
-  /**
-   * Set size of the badge
-   */
-  size?: number;
-  /**
-   * icon element to show
-   */
-  showIcon?: true;
-  /**
-   * set a symbol in badge
-   */
-  symbol?: string;
-  /**
-   * Customize Badge background color
-   */
-  background?: 'primary' | 'secondary' | 'tertiary' | 'highlight' | 'warning';
+  children?: React.ReactNode;
   /**
    * text of badge
    */
