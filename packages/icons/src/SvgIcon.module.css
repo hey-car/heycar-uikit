@@ -1,0 +1,35 @@
+@import '../../themes/src/default.css';
+
+/*
+* Vars
+*/
+:root {
+  /* primary */
+  --icon-primary-color: var(--color-primary-500);
+
+  /* secondary */
+  --icon-secondary-color: var(--color-secondary-500);
+
+  /* tertiary */
+  --icon-tertiary-color: var(--color-tertiary-500);
+}
+
+.svgIcon {
+  user-select: none;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  fill: currentColor;
+  flex-shrink: 0;
+  color: inherit;
+}
+
+.primary {
+  fill: var(--icon-primary-color);
+}
+.secondary {
+  fill: var(--icon-secondary-color);
+}
+.tertiary {
+  color: var(--icon-tertiary-color);
+}

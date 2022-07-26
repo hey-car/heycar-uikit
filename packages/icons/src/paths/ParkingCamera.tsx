@@ -1,0 +1,11 @@
+import React from 'react';
+
+import createSvgIcon from '../utils/createSvgIcon';
+
+export const ParkingCamera = createSvgIcon(
+  <path
+    d="M19 8L5 8L5 19H19L19 8ZM5 6H3V8V19V21H5H19H21V19V8V6H19L5 6ZM14 5L10 5V3L14 3V5ZM14.5 13.5C14.5 14.8807 13.3807 16 12 16C10.6193 16 9.5 14.8807 9.5 13.5C9.5 12.1193 10.6193 11 12 11C13.3807 11 14.5 12.1193 14.5 13.5ZM16.5 13.5C16.5 15.9853 14.4853 18 12 18C9.51472 18 7.5 15.9853 7.5 13.5C7.5 11.0147 9.51472 9 12 9C14.4853 9 16.5 11.0147 16.5 13.5Z"
+    fillRule="evenodd"
+  />,
+  'ParkingCamera',
+);

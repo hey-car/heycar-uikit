@@ -1,0 +1,95 @@
+import { Meta, Story, Props } from '@storybook/addon-docs';
+import {
+  ComponentHeader,
+  CssVars,
+  TabContainer,
+  Row,
+  Col,
+} from 'storybook/blocks';
+import * as Icons from '../';
+import SvgIcon from '../SvgIcon';
+import { version } from '../../package.json';
+import Description from './Description.mdx';
+import Changelog from '../../CHANGELOG.md';
+import styles from '!!raw-loader!../SvgIcon.module.css';
+
+<!-- Meta -->
+
+<Meta
+  title="Components/Icons"
+  argTypes={{
+    fontSize: {
+      control: 'number',
+      defaultValue: 24,
+    },
+    color: {
+      control: 'select',
+      options: ['inherit', 'primary', 'secondary', 'tertiary'],
+      defaultValue: 'inherit',
+    },
+  }}
+/>
+
+export const IconTemplate = args => {
+  const iconsList = Object.keys(Icons)
+    .map(key => Icons[key])
+    .filter(icon => 'displayName' in icon);
+  const maxCols = 12;
+  const amountRows = new Array(Math.ceil(iconsList.length / maxCols)).fill(0);
+  return amountRows.map((_, index) => (
+    <Row align="middle" key={index} style={{ width: '100%' }}>
+      {iconsList
+        .slice(index * maxCols, index * maxCols + maxCols)
+        .map((Icon, index) => (
+          <Col style={{ textAlign: 'center' }} span="1" key={index}>
+            <Icon {...args} />
+            <div style={{ fontSize: '9px', color: '#9c9c9c' }}>
+              {Icon.displayName}
+            </div>
+          </Col>
+        ))}
+    </Row>
+  ));
+};
+
+<!-- Canvas -->
+
+<Story name="Icons">{IconTemplate.bind({})}</Story>
+
+<!-- Docs -->
+
+<ComponentHeader
+  name="Icons"
+  version={version}
+  stage={1}
+  design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Global-Design-System?node-id=1653%3A45210"
+/>
+
+Semantic vector graphics. Before using icons, you need to install import icons using one of these two options:
+
+- Option 1:
+
+```tsx
+import CarIcon from '@heycar-uikit/icons/Car';
+import CloseIcon from '@heycar-uikit/icons/Close';
+```
+
+- Option 2:
+
+```tsx
+import { Car, Close } from '@heycar-uikit/icons';
+```
+
+<!-- Description -->
+
+<TabContainer
+  tabs={[
+    { label: 'Description', component: <Description /> },
+    { label: 'Props', component: <Props of={SvgIcon} /> },
+    {
+      label: 'CSS tokens',
+      component: <CssVars css={styles} />,
+    },
+    { label: 'Changelog', component: <Changelog /> },
+  ]}
+/>
