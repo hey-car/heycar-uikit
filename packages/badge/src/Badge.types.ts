@@ -26,5 +26,9 @@ export interface BadgeProps {
   /**
    * text of badge
    */
-  text: string;
+  text?: string;
+  /**
+   * The id for testing
+   */
+  dataTestId?: string;
 }

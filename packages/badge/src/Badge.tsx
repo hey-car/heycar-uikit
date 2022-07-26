@@ -8,6 +8,7 @@ import styles from './styles/default.module.css';
 
 function Badge({
   color = 'primary',
+  dataTestId,
   count,
   size = 14,
   showIcon,
@@ -22,7 +23,7 @@ function Badge({
   );
 
   return (
-    <span className={classNames}>
+    <span className={classNames} data-test-id={dataTestId}>
       {showIcon && <BadgeIcon color={color} fontSize={size} />}
       {count && (
         <span>
