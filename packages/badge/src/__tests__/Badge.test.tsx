@@ -13,7 +13,7 @@ describe('Badge', () => {
     it('should set `data-test-id` attribute', () => {
       const { getByTestId } = render(<Badge dataTestId={dataTestId} />);
 
-      expect(getByTestId(dataTestId).tagName).toBe('SPAN');
+      expect(getByTestId(dataTestId).tagName).toBe('DIV');
     });
 
     it('should set text', () => {
