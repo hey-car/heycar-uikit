@@ -5,6 +5,7 @@ import BadgeIcon from './components/BadgeIcon';
 import { BadgeProps } from './Badge.types';
 
 import styles from './styles/default.module.css';
+import styleVariants from './styles/variant.module.css';
 
 function Badge({
   color = 'primary',
@@ -17,13 +18,17 @@ function Badge({
   text,
 }: BadgeProps) {
   const classNames = cn(
-    styles[color],
+    styleVariants[color],
     styles.badge,
-    styles[`background-${background}`],
+    styleVariants[`background-${background}`],
   );
 
   return (
-    <span className={classNames} data-test-id={dataTestId}>
+    <div
+      className={classNames}
+      data-test-id={dataTestId}
+      style={{ fontSize: size }}
+    >
       {showIcon && <BadgeIcon color={color} fontSize={size} />}
       {count && (
         <span>
@@ -31,8 +36,9 @@ function Badge({
           {count}
         </span>
       )}
+      &nbsp;
       {text && <span>{text}</span>}
-    </span>
+    </div>
   );
 }
 
