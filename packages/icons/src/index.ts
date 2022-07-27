@@ -75,6 +75,3 @@ export * from './paths/VideoReq';
 export * from './paths/Warning';
 export * from './paths/Warranty';
 export * from './paths/XLBoot';
-export * from './paths/3Doors';
-export * from './paths/5Doors';
-export * from './paths/360';
