@@ -32,5 +32,17 @@ describe('Badge', () => {
 
       expect(container.firstElementChild).toHaveClass('badge-primary');
     });
+
+    it('should set default `badge` class', () => {
+      const { container } = render(<Badge color="primary" />);
+
+      expect(container.firstElementChild).toHaveClass('badge');
+    });
+  });
+
+  it('should unmount without errors', () => {
+    const { unmount } = render(<Badge />);
+
+    expect(unmount).not.toThrowError();
   });
 });
