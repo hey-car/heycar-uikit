@@ -6,11 +6,15 @@ export interface BadgeProps {
   /**
    * The content of the Badge
    */
-  children?: React.ReactNode;
+  children: React.ReactNode;
   /**
-   * text of badge
+   * 	Element before the children.
    */
-  text?: string;
+  leftIcon?: React.ReactNode;
+  /**
+   * The component used for the root node. Either a string to use a HTML element or a component
+   */
+  Component?: React.ElementType;
   /**
    * The id for testing
    */

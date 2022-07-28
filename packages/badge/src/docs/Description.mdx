@@ -1,5 +1,6 @@
 import { Container, Row, Col } from 'storybook/blocks';
 import Badge from '../Badge';
+import { Lorry } from '../../../icons/src';
 
 ## Variants
 
@@ -20,8 +21,8 @@ render(
     <Row align="middle">
       {badgeVariants.map(variant => (
         <Col key={variant}>
-          <Badge text="$250 off" color={variant}>
-            🚗
+          <Badge leftIcon={<Lorry fontSize="18" />} color={variant}>
+            $250 off
           </Badge>
         </Col>
       ))}

@@ -27,27 +27,27 @@
   --badge-highlight-background: var(--color-highlight-500);
 }
 
-.badge-primary {
+.badge_primary {
   color: var(--badge-primary-color);
   background-color: var(--badge-primary-background);
 }
 
-.badge-secondary {
+.badge_secondary {
   color: var(--badge-neutral-color);
   background-color: var(--badge-secondary-background);
 }
 
-.badge-tertiary {
+.badge_tertiary {
   color: var(--badge-neutral-color);
   background-color: var(--badge-tertiary-background);
 }
 
-.badge-warning {
+.badge_warning {
   color: var(--badge-neutral-color);
   background-color: var(--badge-warning-background);
 }
 
-.badge-highlight {
+.badge_highlight {
   color: var(--badge-neutral-color);
   background-color: var(--badge-highlight-background);
 }

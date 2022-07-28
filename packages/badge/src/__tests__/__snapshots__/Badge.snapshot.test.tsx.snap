@@ -6,14 +6,22 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="badge-primary badge"
-      />
+        class="badge_primary badge"
+      >
+        <span>
+          $100 off
+        </span>
+      </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="badge-primary badge"
-    />
+      class="badge_primary badge"
+    >
+      <span>
+        $100 off
+      </span>
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
@@ -75,14 +83,22 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="badge-highlight badge"
-      />
+        class="badge_highlight badge"
+      >
+        <span>
+          $100 off
+        </span>
+      </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="badge-highlight badge"
-    />
+      class="badge_highlight badge"
+    >
+      <span>
+        $100 off
+      </span>
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
@@ -144,14 +160,22 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="badge-primary badge"
-      />
+        class="badge_primary badge"
+      >
+        <span>
+          $100 off
+        </span>
+      </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="badge-primary badge"
-    />
+      class="badge_primary badge"
+    >
+      <span>
+        $100 off
+      </span>
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
@@ -213,14 +237,22 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="badge-secondary badge"
-      />
+        class="badge_secondary badge"
+      >
+        <span>
+          $100 off
+        </span>
+      </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="badge-secondary badge"
-    />
+      class="badge_secondary badge"
+    >
+      <span>
+        $100 off
+      </span>
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
@@ -282,14 +314,22 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="badge-tertiary badge"
-      />
+        class="badge_tertiary badge"
+      >
+        <span>
+          $100 off
+        </span>
+      </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="badge-tertiary badge"
-    />
+      class="badge_tertiary badge"
+    >
+      <span>
+        $100 off
+      </span>
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
@@ -351,14 +391,22 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="badge-warning badge"
-      />
+        class="badge_warning badge"
+      >
+        <span>
+          $100 off
+        </span>
+      </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="badge-warning badge"
-    />
+      class="badge_warning badge"
+    >
+      <span>
+        $100 off
+      </span>
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
@@ -420,20 +468,20 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="badge-primary badge"
+        class="badge_primary badge"
       >
         <span>
-          text
+          $100 off
         </span>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="badge-primary badge"
+      class="badge_primary badge"
     >
       <span>
-        text
+        $100 off
       </span>
     </div>
   </div>,

@@ -5,6 +5,9 @@ import Badge from '../Badge';
 import { version } from '../../package.json';
 import Description from './Description.mdx';
 import Changelog from '../../CHANGELOG.md';
+import { Lorry } from '../../../icons/src';
+import styles from '!!raw-loader!../styles/default.module.css';
+import variantStyles from '!!raw-loader!../styles/variant.module.css';
 
 <!-- Meta -->
 
@@ -17,9 +20,19 @@ export const BadgeTemplate = args => <Badge {...args} />;
 <Story
   name="Badge"
   args={{
-    children: '🚗',
-    text: '$250 off',
+    leftIcon: <Lorry fontSize="20" />,
+    children: '$250 off',
     color: 'primary',
+    dataTestId: {
+      table: {
+        disable: true,
+      },
+    },
+    component: {
+      table: {
+        disable: true,
+      },
+    },
   }}
 >
   {BadgeTemplate.bind({})}
@@ -46,6 +59,16 @@ import Badge from '@heycar-uikit/badge';
   tabs={[
     { label: 'Description', component: <Description /> },
     { label: 'Props', component: <Props of={Badge} /> },
+    {
+      label: 'CSS tokens',
+      component: (
+        <CssVars
+          css={`
+            ${styles}${variantStyles}
+          `}
+        />
+      ),
+    },
     { label: 'Changelog', component: <Changelog /> },
   ]}
 />

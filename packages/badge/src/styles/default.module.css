@@ -21,6 +21,7 @@
   font-weight: 500;
 }
 
-.badge-icon {
+.left_icon {
   padding-right: var(--gap-xs);
+  display: flex;
 }
