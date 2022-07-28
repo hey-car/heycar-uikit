@@ -23,12 +23,14 @@ export const BadgeTemplate = args => <Badge {...args} />;
     leftIcon: <Lorry fontSize="20" />,
     children: '$250 off',
     color: 'primary',
+  }}
+  argTypes={{
     dataTestId: {
       table: {
         disable: true,
       },
     },
-    component: {
+    Component: {
       table: {
         disable: true,
       },
