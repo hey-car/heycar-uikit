@@ -23,6 +23,14 @@ describe('Badge', () => {
 
       expect(container.firstElementChild).toHaveTextContent('$250');
     });
+
+    it('should set leftIcon', () => {
+      const { container } = render(
+        <Badge leftIcon={<span>Left</span>}>$250</Badge>,
+      );
+
+      expect(container.firstElementChild).toContainHTML('<span>Left</span>');
+    });
   });
 
   /**
@@ -33,6 +41,12 @@ describe('Badge', () => {
       const { container } = render(<Badge color="primary"> $250 off </Badge>);
 
       expect(container.firstElementChild).toHaveClass('badge_primary');
+    });
+
+    it('should set color warning', () => {
+      const { container } = render(<Badge color="warning">$250</Badge>);
+
+      expect(container.firstElementChild).toHaveClass('badge_warning');
     });
 
     it('should set default `badge` class', () => {

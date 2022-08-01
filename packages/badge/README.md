@@ -17,7 +17,8 @@ import badge from '@heycar-uikit/badge';
 
 function App() {
   return (
-    <badge size="large" color="primary" >
+    <badge size="large" color="primary">
+      children
     </badge>
   );
 }
