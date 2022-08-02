@@ -51,7 +51,9 @@ export const CollapseTemplate = args => {
 
 <!-- Canvas -->
 
-<Story name="Collapse">{CollapseTemplate.bind({})}</Story>
+<Story parameters={{ controls: { disable: true } }} name="Collapse">
+  {CollapseTemplate.bind({})}
+</Story>
 
 <!-- Docs -->
 
