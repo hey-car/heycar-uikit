@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React from 'react';
-import { renderHook } from '@testing-library/react-hooks';
+import { act, renderHook } from '@testing-library/react-hooks';
 
 import useCallback from '../hooks/useCollapse';
 
@@ -26,6 +26,15 @@ describe('useCollapse', () => {
 
     expect(result.current.collapseStyles).toMatchObject(openStyleState);
     expect(result.current.collapseContent).toMatchObject(useRefObject);
+
+    act(() => {
+      result.current.handlerTransitionEnd({} as React.SyntheticEvent);
+    });
+
+    expect(result.current.collapseStyles).toMatchObject({
+      ...openStyleState,
+      height: 'auto',
+    });
   });
 
   it('collapse state close', async () => {
