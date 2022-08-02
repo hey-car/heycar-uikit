@@ -46,6 +46,7 @@ function useCollapse(open: boolean): UseCollapse {
     );
 
     return () => window.cancelAnimationFrame(animationFrameId);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return {
