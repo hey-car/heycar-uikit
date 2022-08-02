@@ -4,6 +4,7 @@ import { render } from '@testing-library/react';
 import Badge from '../Badge';
 
 const dataTestId = 'test-id';
+const defaultChild = '$250 off';
 
 describe('Badge', () => {
   /**
@@ -12,16 +13,16 @@ describe('Badge', () => {
   describe('Attributes tests', () => {
     it('should set `data-test-id` attribute', () => {
       const { getByTestId } = render(
-        <Badge dataTestId={dataTestId}> $250 off </Badge>,
+        <Badge dataTestId={dataTestId}>{defaultChild} </Badge>,
       );
 
       expect(getByTestId(dataTestId).tagName).toBe('DIV');
     });
 
     it('should set text', () => {
-      const { container } = render(<Badge>$250</Badge>);
+      const { container } = render(<Badge>$250 off</Badge>);
 
-      expect(container.firstElementChild).toHaveTextContent('$250');
+      expect(container.firstElementChild).toHaveTextContent('$250 off');
     });
 
     it('should set leftIcon', () => {
@@ -38,7 +39,9 @@ describe('Badge', () => {
    */
   describe('Classes tests', () => {
     it('should set `color` class', () => {
-      const { container } = render(<Badge color="primary"> $250 off </Badge>);
+      const { container } = render(
+        <Badge color="primary">{defaultChild} </Badge>,
+      );
 
       expect(container.firstElementChild).toHaveClass('badge_primary');
     });
@@ -50,7 +53,9 @@ describe('Badge', () => {
     });
 
     it('should set default `badge` class', () => {
-      const { container } = render(<Badge color="primary"> $250 off </Badge>);
+      const { container } = render(
+        <Badge color="primary">{defaultChild} </Badge>,
+      );
 
       expect(container.firstElementChild).toHaveClass('badge');
     });
@@ -80,7 +85,7 @@ describe('Badge', () => {
   });
 
   it('should unmount without errors', () => {
-    const { unmount } = render(<Badge> $250 off </Badge>);
+    const { unmount } = render(<Badge>{defaultChild} </Badge>);
 
     expect(unmount).not.toThrowError();
   });

@@ -13,13 +13,13 @@ npm install @heycar-uikit/badge
 ## Usage
 
 ```tsx
-import badge from '@heycar-uikit/badge';
+import Badge from '@heycar-uikit/badge';
 
 function App() {
   return (
-    <badge size="large" color="primary">
+    <Badge size="large" color="primary">
       children
-    </badge>
+    </Badge>
   );
 }
 ```
