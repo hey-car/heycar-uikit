@@ -22,12 +22,12 @@ const Badge = React.forwardRef<HTMLElement, BadgeProps>(
 
     return (
       <Component
-        data-test-id={dataTestId}
-        {...restProps}
         className={classNames}
+        data-test-id={dataTestId}
         ref={ref}
+        {...restProps}
       >
-        {leftIcon && <span className={styles.left_icon}>{leftIcon}</span>}
+        {leftIcon && <span className={styles.leftIcon}>{leftIcon}</span>}
         <span>{children}</span>
       </Component>
     );

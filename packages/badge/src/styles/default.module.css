@@ -21,7 +21,7 @@
   font-weight: 500;
 }
 
-.left_icon {
+.leftIcon {
   padding-right: var(--gap-xs);
   display: flex;
 }

@@ -16,11 +16,7 @@ npm install @heycar-uikit/badge
 import Badge from '@heycar-uikit/badge';
 
 function App() {
-  return (
-    <Badge size="large" color="primary">
-      children
-    </Badge>
-  );
+  return <Badge>$250 off</Badge>;
 }
 ```
 

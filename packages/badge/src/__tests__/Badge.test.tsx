@@ -38,6 +38,12 @@ describe('Badge', () => {
    * Classes tests
    */
   describe('Classes tests', () => {
+    it('should set `color=primary` class bu default', () => {
+      const { container } = render(<Badge>{defaultChild} </Badge>);
+
+      expect(container.firstElementChild).toHaveClass('badge_primary');
+    });
+
     it('should set `color` class', () => {
       const { container } = render(
         <Badge color="primary">{defaultChild} </Badge>,
