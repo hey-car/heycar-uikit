@@ -35,7 +35,6 @@
   /* Primary */
   --theme-primary-color-50: var(--color-primary-50);
   --theme-primary-color-100: var(--color-primary-100);
-
   --theme-primary-color-200: var(--color-primary-200);
   --theme-primary-color-300: var(--color-primary-300);
   --theme-primary-color-400: var(--color-primary-400);
@@ -131,11 +130,8 @@
 
   /* Brand colors */
   --theme-heycar-mint: var(--color-heycar-mint);
-
   --theme-mica-blue: var(--color-mica-blue);
-
   --theme-sunbeam-blue: var(--color-sunbeam-blue);
-
   --theme-championship-white: var(--color-championship-white);
 }
 
