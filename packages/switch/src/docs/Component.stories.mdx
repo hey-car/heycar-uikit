@@ -1,0 +1,76 @@
+import { Meta, Story, Props } from '@storybook/addon-docs';
+import { ComponentHeader, CssVars, TabContainer } from 'storybook/blocks';
+
+import Switch from '../';
+import { version } from '../../package.json';
+import Description from './Description.mdx';
+import Usage from './Usage.mdx';
+import styles from '!!raw-loader!../styles/default.module.css';
+import Changelog from '../../CHANGELOG.md';
+
+<Meta
+  title="Components/Switch"
+  component={Switch}
+  argTypes={{
+    checked: {
+      control: 'boolean',
+    },
+    disabled: {
+      control: 'boolean',
+    },
+    onChange: {
+      table: {
+        disable: true,
+      },
+    },
+    className: {
+      table: {
+        disable: true,
+      },
+    },
+  }}
+/>
+
+export const SwitchTemplate = args => <Switch {...args} />;
+
+<!-- Canvas -->
+
+<Story
+  name="Switch"
+  args={{
+    checked: true,
+    onChange: () => {},
+  }}
+>
+  {SwitchTemplate.bind({})}
+</Story>
+
+<!-- Docs -->
+
+<ComponentHeader
+  name="Switch"
+  version={version}
+  stage={1}
+  design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Global-Design-System?node-id=1370%3A40765"
+/>
+
+The Switch component changes the state of a single boolean parameter to true or false.
+
+<TabContainer
+  tabs={[
+    { label: 'Description', component: <Description /> },
+    { label: 'Usage', component: <Usage /> },
+    { label: 'Props', component: <Props of={Switch} /> },
+    {
+      label: 'CSS tokens',
+      component: (
+        <CssVars
+          css={`
+            ${styles}
+          `}
+        />
+      ),
+    },
+    { label: 'Changelog', component: <Changelog /> },
+  ]}
+/>

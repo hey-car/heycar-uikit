@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/hey-car/heycar-uikit/compare/v1.6.0...v1.7.0) (2022-07-27)
+
+
+### Features
+
+* **switch:** initial implementation of the switch component ([#41](https://github.com/hey-car/heycar-uikit/issues/41)) ([fae4001](https://github.com/hey-car/heycar-uikit/commit/fae40014e387fd6a84275fdee825b265b798b7d3))
+
 # [1.6.0](https://github.com/hey-car/heycar-uikit/compare/v1.5.0...v1.6.0) (2022-07-25)
 
 
