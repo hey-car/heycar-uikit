@@ -28,7 +28,7 @@ const Badge = React.forwardRef<HTMLElement, BadgeProps>(
         {...restProps}
       >
         {leftIcon && <span className={styles.leftIcon}>{leftIcon}</span>}
-        <span>{children}</span>
+        {children}
       </Component>
     );
   },

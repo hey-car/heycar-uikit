@@ -1,6 +1,6 @@
 {
   "name": "@heycar-uikit/badge",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "HeyCar-UIKit badge",
   "main": "dist/index.js",
   "module": "./dist/esm/index.js",
