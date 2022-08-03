@@ -34,7 +34,7 @@ export const IconTemplate = args => {
   const iconsList = Object.keys(Icons)
     .map(key => Icons[key])
     .filter(icon => 'displayName' in icon);
-  const maxCols = 12;
+  const maxCols = 10;
   const amountRows = new Array(Math.ceil(iconsList.length / maxCols)).fill(0);
   return amountRows.map((_, index) => (
     <Row align="middle" key={index} style={{ width: '100%' }}>
