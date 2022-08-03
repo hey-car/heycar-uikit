@@ -1,0 +1,48 @@
+import { Container } from 'storybook/blocks';
+import Switch from '../';
+
+## Unchecked state
+
+When the Switch is unchecked (`checked=false`) the switch thumb is on the left side and the colour is `neutral-500`.
+Switch
+Hovering makes the cursor as `pointer` and changes the Switch colour to `neutral-600`.
+Clicking on unchecked Switch also has a short pressed effect with colour `neutral-700`.
+The Switch thumb has always `championship-white` colour.
+
+```tsx live
+render(
+  <Container>
+    <Switch checked={false} onChange={() => {}} />
+  </Container>,
+);
+```
+
+## Checked state
+
+When the Switch is checked (`checked=true`) the Switch thumb slides to the right side and the Switch colour is `primary`.
+Hovering makes the cursor as `pointer` but doesn't change the colour.
+The Switch thumb has `championship-white` colour.
+The component is currently available only in `primary` colour.
+
+```tsx live
+render(
+  <Container>
+    <Switch checked={true} onChange={() => {}} />
+  </Container>,
+);
+```
+
+## Disabled state
+
+When the Switch is disabled (`disabled=true`) the Switch thumb colour is `neutral-100` and Switch thumb is colour is `neutral-300`.
+The thumb position can be on the left or on the right side depending on the Switch `checked` state.
+The cursor is `default`.
+The component is currently available only in `primary` colour.
+
+```tsx live
+render(
+  <Container>
+    <Switch checked={true} onChange={() => {}} disabled={true} />
+  </Container>,
+);
+```

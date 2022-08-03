@@ -1,0 +1,53 @@
+@import '../../../themes/src/default.css';
+
+/*
+* Colors
+*/
+
+:root {
+  /* primary */
+  --badge-primary-color: var(--color-championship-white);
+
+  /* neutral */
+  --badge-neutral-color: var(--color-neutral-700);
+
+  /* primary */
+  --badge-primary-background: var(--color-primary-500);
+
+  /* secondary */
+  --badge-secondary-background: var(--color-secondary-500);
+
+  /* tertiary */
+  --badge-tertiary-background: var(--color-tertiary-500);
+
+  /* warning */
+  --badge-warning-background: var(--color-warning-400);
+
+  /* highlight */
+  --badge-highlight-background: var(--color-highlight-500);
+}
+
+.badge_primary {
+  color: var(--badge-primary-color);
+  background-color: var(--badge-primary-background);
+}
+
+.badge_secondary {
+  color: var(--badge-neutral-color);
+  background-color: var(--badge-secondary-background);
+}
+
+.badge_tertiary {
+  color: var(--badge-neutral-color);
+  background-color: var(--badge-tertiary-background);
+}
+
+.badge_warning {
+  color: var(--badge-neutral-color);
+  background-color: var(--badge-warning-background);
+}
+
+.badge_highlight {
+  color: var(--badge-neutral-color);
+  background-color: var(--badge-highlight-background);
+}

@@ -1,0 +1,8 @@
+import React from 'react';
+
+import createSvgIcon from '../utils/createSvgIcon';
+
+export const RegNr = createSvgIcon(
+  <path d="M4 8L20 8L20 16L6 16H4V8ZM22 6H20H4H2V8V16V18H4H6L20 18H22V16V8V6ZM17 11H19V13H17V11ZM16 11H14V13H16V11ZM11 11H13V13H11V11ZM10 11H8V13H10V11ZM7 11H5V13H7V11Z" />,
+  'RegNr',
+);

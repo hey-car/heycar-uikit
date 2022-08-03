@@ -1,0 +1,80 @@
+import { Meta, Story, Props } from '@storybook/addon-docs';
+import { ComponentHeader, CssVars, TabContainer } from 'storybook/blocks';
+
+import Badge from '../Badge';
+import { version } from '../../package.json';
+import Description from './Description.mdx';
+import Changelog from '../../CHANGELOG.md';
+import { Lorry } from '../../../icons/src';
+import styles from '!!raw-loader!../styles/default.module.css';
+import variantStyles from '!!raw-loader!../styles/variant.module.css';
+
+<!-- Meta -->
+
+<Meta title="Components/Badge" component={Badge} />
+
+export const BadgeTemplate = args => <Badge leftIcon={<Lorry />} {...args} />;
+
+<!-- Canvas -->
+
+<Story
+  name="Badge"
+  args={{
+    children: '$250 off',
+    color: 'primary',
+  }}
+  argTypes={{
+    dataTestId: {
+      table: {
+        disable: true,
+      },
+    },
+    leftIcon: {
+      table: {
+        disable: true,
+      },
+    },
+    Component: {
+      table: {
+        disable: true,
+      },
+    },
+  }}
+>
+  {BadgeTemplate.bind({})}
+</Story>
+
+<!-- Docs -->
+
+<ComponentHeader
+  name="Badge"
+  version={version}
+  stage={1}
+  design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Global-Design-System?node-id=4031%3A102387"
+/>
+
+Badge component can be added in the cards. These badges can contain dynamic information, such as promotion information.
+
+```tsx
+import Badge from '@heycar-uikit/badge';
+```
+
+<!-- Description -->
+
+<TabContainer
+  tabs={[
+    { label: 'Description', component: <Description /> },
+    { label: 'Props', component: <Props of={Badge} /> },
+    {
+      label: 'CSS tokens',
+      component: (
+        <CssVars
+          css={`
+            ${styles}${variantStyles}
+          `}
+        />
+      ),
+    },
+    { label: 'Changelog', component: <Changelog /> },
+  ]}
+/>
