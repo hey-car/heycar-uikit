@@ -8,9 +8,7 @@ Object {
       <div
         class="badge_primary badge"
       >
-        <span>
-          $100 off
-        </span>
+        $100 off
       </div>
     </div>
   </body>,
@@ -18,9 +16,7 @@ Object {
     <div
       class="badge_primary badge"
     >
-      <span>
-        $100 off
-      </span>
+      $100 off
     </div>
   </div>,
   "debug": [Function],
@@ -85,9 +81,7 @@ Object {
       <div
         class="badge_highlight badge"
       >
-        <span>
-          $100 off
-        </span>
+        $100 off
       </div>
     </div>
   </body>,
@@ -95,9 +89,7 @@ Object {
     <div
       class="badge_highlight badge"
     >
-      <span>
-        $100 off
-      </span>
+      $100 off
     </div>
   </div>,
   "debug": [Function],
@@ -162,9 +154,7 @@ Object {
       <div
         class="badge_primary badge"
       >
-        <span>
-          $100 off
-        </span>
+        $100 off
       </div>
     </div>
   </body>,
@@ -172,9 +162,7 @@ Object {
     <div
       class="badge_primary badge"
     >
-      <span>
-        $100 off
-      </span>
+      $100 off
     </div>
   </div>,
   "debug": [Function],
@@ -239,9 +227,7 @@ Object {
       <div
         class="badge_secondary badge"
       >
-        <span>
-          $100 off
-        </span>
+        $100 off
       </div>
     </div>
   </body>,
@@ -249,9 +235,7 @@ Object {
     <div
       class="badge_secondary badge"
     >
-      <span>
-        $100 off
-      </span>
+      $100 off
     </div>
   </div>,
   "debug": [Function],
@@ -316,9 +300,7 @@ Object {
       <div
         class="badge_tertiary badge"
       >
-        <span>
-          $100 off
-        </span>
+        $100 off
       </div>
     </div>
   </body>,
@@ -326,9 +308,7 @@ Object {
     <div
       class="badge_tertiary badge"
     >
-      <span>
-        $100 off
-      </span>
+      $100 off
     </div>
   </div>,
   "debug": [Function],
@@ -393,9 +373,7 @@ Object {
       <div
         class="badge_warning badge"
       >
-        <span>
-          $100 off
-        </span>
+        $100 off
       </div>
     </div>
   </body>,
@@ -403,9 +381,7 @@ Object {
     <div
       class="badge_warning badge"
     >
-      <span>
-        $100 off
-      </span>
+      $100 off
     </div>
   </div>,
   "debug": [Function],
@@ -470,9 +446,7 @@ Object {
       <div
         class="badge_primary badge"
       >
-        <span>
-          $100 off
-        </span>
+        $100 off
       </div>
     </div>
   </body>,
@@ -480,9 +454,7 @@ Object {
     <div
       class="badge_primary badge"
     >
-      <span>
-        $100 off
-      </span>
+      $100 off
     </div>
   </div>,
   "debug": [Function],
