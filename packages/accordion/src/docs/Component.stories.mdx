@@ -1,0 +1,15 @@
+import { Meta, Story, Props } from '@storybook/addon-docs';
+import { ComponentHeader, CssVars, TabContainer } from 'storybook/blocks';
+
+import Accordion from '../Accordion';
+import { version } from '../../package.json';
+
+<!-- Meta -->
+
+<Meta title="Components/Accordion" component={Accordion} />
+
+export const AccordionTemplate = args => <Accordion {...args} />;
+
+<!-- Canvas -->
+
+<Story name="Accordion">{AccordionTemplate.bind({})}</Story>
