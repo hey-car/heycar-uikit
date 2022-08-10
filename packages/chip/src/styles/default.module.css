@@ -1,0 +1,73 @@
+@import '../../../themes/src/default.css';
+
+/*
+* Colors
+*/
+
+:root {
+  /* default */
+  --chip-default-background: var(--color-neutral-50);
+
+  /* hover */
+  --chip-hover-background: var(--color-neutral-100);
+
+  /* pressed */
+  --chip-pressed-background: var(--color-neutral-200);
+
+  /* disable */
+  --chip-disable-background: var(--color-neutral-50);
+
+  /* text */
+  --chip-text-color: var(--color-tarmac-grey-700);
+
+  /* text disabled */
+  --chip-text-disabled-color: var(--color-tarmac-grey-400);
+}
+
+/*
+* Base
+*/
+.chip {
+  font-family: var(--font-family-system);
+  font-size: 14px;
+
+  display: inline-flex;
+  vertical-align: middle;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  border-style: solid;
+  font-weight: 500;
+  color: var(--chip-text-color);
+  background-color: var(--chip-default-background);
+}
+
+/*
+* states
+*/
+
+.chip:hover {
+  color: var(--chip-text-color);
+  background-color: var(--chip-hover-background);
+}
+
+.chip.disabled {
+  color: var(--chip-text-disabled-color);
+  background-color: var(--chip-disable-background);
+
+  cursor: not-allowed;
+  &:hover {
+    color: var(--chip-text-disabled-color);
+    background-color: var(--chip-disable-background);
+  }
+}
+
+.chip:active {
+  color: var(--chip-text-color);
+  background-color: var(--chip-pressed-background);
+}

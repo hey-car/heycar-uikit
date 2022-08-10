@@ -1,0 +1,46 @@
+import { Container, Row, Col } from 'storybook/blocks';
+import Chip from '../Chip';
+import { Lorry } from '../../../icons/src';
+
+## Variants
+
+Use the `variant` prop to use choice or filter chip .
+You can set the value to `filter`, `choice`
+
+```tsx live
+render(
+  <Container>
+    <Row align="middle">
+      <Col key="filter">
+        <Chip variant="filter">Mini</Chip>
+      </Col>
+      <Col key="choice">
+        <Chip variant="choice">Uunder £1,5000</Chip>
+      </Col>
+    </Row>
+  </Container>,
+);
+```
+
+## Disabled
+
+Use the `disabled` prop to disable the chip it's value is boolean.
+
+```tsx live
+render(
+  <Container>
+    <Row align="middle">
+      <Col key="filter">
+        <Chip variant="filter" disabled="true">
+          Mini
+        </Chip>
+      </Col>
+      <Col key="choice">
+        <Chip variant="choice" disabled="true">
+          Uunder £1,5000
+        </Chip>
+      </Col>
+    </Row>
+  </Container>,
+);
+```

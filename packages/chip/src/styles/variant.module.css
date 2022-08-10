@@ -1,0 +1,38 @@
+@import '../../../themes/src/default.css';
+
+/*
+* Choice
+*/
+
+.chip_choice {
+  border: 1px solid var(--color-neutral-300);
+  padding: var(--gap-s) var(--gap-2s);
+}
+
+.chip_selected {
+  border-color: var(--color-primary-500);
+}
+
+/*
+* Filter
+*/
+
+.chip_filter {
+  padding: var(--gap-2xs) var(--gap-s);
+  border: 0;
+}
+
+.chip-close-icon {
+  margin-left: var(--gap-2s);
+}
+
+/*
+*variants
+*/
+.disabled {
+  fill: var(--color-tarmac-grey-400);
+}
+
+.active {
+  fill: var(--color-tarmac-grey-700);
+}
