@@ -8,8 +8,57 @@ import { version } from '../../package.json';
 
 <Meta title="Components/Accordion" component={Accordion} />
 
-export const AccordionTemplate = args => <Accordion {...args} />;
+export const AccordionTemplate = args => {
+  return (
+    <div style={{ maxWidth: '700px', margin: '0 auto' }}>
+      <Accordion title="Is the Audi Q3 Sportback right for you?">
+        <p>
+          You’ll struggle to find any objective reasons to buy a Q3 Sportback
+          over the standard Audi Q3. But, if you want to stand out, the
+          Sportback is rarer than the regular car and barely any more expensive
+          on the used market. It’s cheap to run - and it’s more practical than
+          you might expect.
+        </p>
+        Combine that with low running costs and a strong engine line-up (including
+        the 1.5 mild-hybrid petrol), and the Q3 Sportback gets easier to justify.
+      </Accordion>
+      <Accordion disabled title="Exmplae of disabled accordion">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </Accordion>
+      <Accordion title="What’s the best Audi Q3 Sportback model/engine to choose">
+        <p>
+          We reckon the most affordable engine in the Q3 Sportback is actually
+          the one to go for. The 1.5 TFSI is quick enough for most drivers,
+          cheap to run and available with a manual or S tronic automatic
+          transmission. An automatic gearbox is desirable in a car like this but
+          it can be a bit hesitant, so don’t dismiss the manual.
+        </p>
+        In terms of trim levels, the Q3 Sportback will look sharper and get more
+        equipment if you opt for one of the pricier models, but the standard Sport
+        model has pretty much everything you could possibly wish for. In typical
+        Audi form, the Q3 Sportback is at its most comfortable on the smallest wheels
+        - the 18-inch alloys fitted to Sport models.
+      </Accordion>
+      <Accordion title="What other cars are similar to the Audi Q3 Sportback?">
+        <p>
+          The BMW X2 is the Q3 Sportback’s main rival - based on the X1 with
+          sleeker looks and a less practical cabin. We’d be very tempted by the
+          Volvo XC40, which is a trendy small SUV with a brilliant interior,
+          while the latest Range Rover Evoque is another solid alternative
+          (although don’t be tempted by the old model, replaced in 2019).{' '}
+        </p>
+        If practicality’s what you want, look at the standard Audi Q3 instead, or
+        the very similar (but less premium) Volkswagen Tiguan. Then there are left-field
+        alternatives like the Lexus NX and even the bigger DS 7 Crossback.
+      </Accordion>
+    </div>
+  );
+};
 
 <!-- Canvas -->
 
-<Story name="Accordion">{AccordionTemplate.bind({})}</Story>
+<Story parameters={{ controls: { disable: true } }} name="Accordion">
+  {AccordionTemplate.bind({})}
+</Story>

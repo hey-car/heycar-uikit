@@ -1,7 +1,8 @@
 import React from 'react';
 import cn from 'classnames';
 
-// import Collapse from '@heycar-uikit/collapse';
+import Collapse from '@heycar-uikit/collapse';
+
 import { AccordionProps } from './Accordion.types';
 
 import styles from './styles/default.module.css';
@@ -11,8 +12,9 @@ const Accordion = React.forwardRef<HTMLElement, AccordionProps>(
     {
       children,
       title,
-      open,
+      open = false,
       Component = 'div',
+      disabled = false,
       dataTestId,
       className,
       ...restProps
@@ -20,25 +22,60 @@ const Accordion = React.forwardRef<HTMLElement, AccordionProps>(
     ref,
   ) => {
     const [isOpen, setIsOpen] = React.useState(open);
-    const classNames = cn(styles.accordion, className);
-    const handleHeaderClick = () => setIsOpen(!isOpen);
+    const classNames = cn(
+      styles.accordion,
+      {
+        [styles.accordionOpen]: isOpen,
+      },
+      className,
+    );
+    const headerClassNames = cn(styles.header, {
+      [styles.headerOpen]: isOpen,
+      [styles.headerDisabled]: disabled,
+    });
+    const accordionId = `collapsible-${Date.now()}`;
+    const handleHeaderButtonChange = (
+      event:
+        | React.MouseEvent<HTMLElement>
+        | React.KeyboardEvent<HTMLDivElement>,
+    ) => {
+      if (disabled) return event.preventDefault();
+
+      setIsOpen(!isOpen);
+    };
+    const tabIndex = disabled ? -1 : 0;
 
     return (
       <Component
         className={classNames}
+        data-accordion-component="Accordion"
         data-test-id={dataTestId}
         ref={ref}
         {...restProps}
       >
-        <div className={styles.accordionHeader} onClick={handleHeaderClick}>
+        <div
+          aria-expanded={isOpen}
+          className={headerClassNames}
+          data-accordion-component="AccordionItemButton"
+          onClick={handleHeaderButtonChange}
+          onKeyPress={handleHeaderButtonChange}
+          role="button"
+          tabIndex={tabIndex}
+        >
           {title}
         </div>
-        {/* <Collapse open={isOpen}>{children}</Collapse> */}
+        <Collapse
+          aria-labelledby={accordionId}
+          className={styles.body}
+          data-accordion-component="AccordionItemPanel"
+          open={isOpen}
+          role="region"
+        >
+          {children}
+        </Collapse>
       </Component>
     );
   },
 );
-
-Accordion.displayName = 'Accordion';
 
 export default Accordion;
