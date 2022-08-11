@@ -1,0 +1,32 @@
+import { Container, Row, Col } from 'storybook/blocks';
+import Badge from '../Badge';
+import { Lorry } from '../../../icons/src';
+
+## Variants
+
+Use the `background` prop to change the visual style of the Badge background-color.
+You can set the value to `primary`, `secondary`, `tertiary`, `warning`, `highlight`
+
+```tsx live
+const badgeVariants = [
+  'primary',
+  'secondary',
+  'tertiary',
+  'warning',
+  'highlight',
+];
+
+render(
+  <Container>
+    <Row align="middle">
+      {badgeVariants.map(variant => (
+        <Col key={variant}>
+          <Badge leftIcon={<Lorry fontSize="18" />} color={variant}>
+            $250 off
+          </Badge>
+        </Col>
+      ))}
+    </Row>
+  </Container>,
+);
+```
