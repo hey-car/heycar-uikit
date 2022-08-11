@@ -1,3 +1,10 @@
+# [1.11.0](https://github.com/hey-car/heycar-uikit/compare/v1.10.0...v1.11.0) (2022-08-11)
+
+
+### Features
+
+* **icons:** added extra icons ([#49](https://github.com/hey-car/heycar-uikit/issues/49)) ([14cdd6f](https://github.com/hey-car/heycar-uikit/commit/14cdd6f6c0c4067bec044356451e867ee0409875))
+
 # [1.10.0](https://github.com/hey-car/heycar-uikit/compare/v1.9.0...v1.10.0) (2022-08-03)
 
 
