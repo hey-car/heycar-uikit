@@ -5,6 +5,7 @@ import CloseIcon from './icons/CloseIcon';
 import { ChipProps } from './Chip.types';
 
 import styles from './styles/default.module.css';
+import styleIcon from './styles/icon.module.css';
 import styleVariants from './styles/variant.module.css';
 
 const Chip = React.forwardRef<HTMLElement, ChipProps>(
@@ -23,7 +24,7 @@ const Chip = React.forwardRef<HTMLElement, ChipProps>(
     const classNames = cn(
       styleVariants[`chip_${variant}`],
       styles.chip,
-      selected && styleVariants.selected,
+      variant === 'choice' && selected && styles.chip_selected,
       disabled && styles.disabled,
     );
 
@@ -36,7 +37,7 @@ const Chip = React.forwardRef<HTMLElement, ChipProps>(
       >
         {children}
         {variant === 'filter' && (
-          <span className={styleVariants['chip-close-icon']}>
+          <span className={styleIcon['chip-close-icon']}>
             <CloseIcon disabled={disabled} />
           </span>
         )}

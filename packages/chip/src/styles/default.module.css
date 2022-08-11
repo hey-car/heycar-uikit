@@ -22,6 +22,9 @@
 
   /* text disabled */
   --chip-text-disabled-color: var(--color-tarmac-grey-400);
+
+  /* border */
+  --chip-selected-border-color: var(--color-mica-blue-500);
 }
 
 /*
@@ -30,14 +33,12 @@
 .chip {
   font-family: var(--font-family-system);
   font-size: 14px;
-
   display: inline-flex;
   vertical-align: middle;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-
   box-shadow: none;
   box-sizing: border-box;
   text-decoration: none;
@@ -70,4 +71,8 @@
 .chip:active {
   color: var(--chip-text-color);
   background-color: var(--chip-pressed-background);
+}
+
+.chip_selected {
+  border: 2px solid var(--chip-selected-border-color) !important;
 }
