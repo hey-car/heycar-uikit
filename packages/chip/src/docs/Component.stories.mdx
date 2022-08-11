@@ -12,14 +12,14 @@ import variantStyles from '!!raw-loader!../styles/variant.module.css';
 
 <Meta title="Components/Chip" component={Chip} />
 
-export const ChipTemplate = args => <Chip leftIcon={<Lorry />} {...args} />;
+export const ChipTemplate = args => <Chip {...args} />;
 
 <!-- Canvas -->
 
 <Story
   name="Chip"
   args={{
-    children: 'Mini',
+    children: 'Uunder £1,5000',
     variant: 'filter',
   }}
   argTypes={{
