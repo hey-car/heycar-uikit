@@ -1,37 +1,9 @@
 @import '../../../themes/src/default.css';
 
 /*
-* Colors
-*/
-
-:root {
-  /* text */
-  --chip-text-color: var(--color-tarmac-grey-700);
-
-  /* text disabled */
-  --chip-text-disabled-color: var(--color-tarmac-grey-400);
-}
-
-/*
 * icon
 */
 
 .chip-close-icon {
   margin-left: var(--gap-2s);
-}
-
-/*
-* Disabled
-*/
-
-.disabled {
-  fill: var(--chip-text-disabled-color);
-}
-
-/*
-* Active
-*/
-
-.active {
-  fill: var(--chip-text-color);
 }

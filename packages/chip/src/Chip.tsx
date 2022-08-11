@@ -1,7 +1,8 @@
 import React from 'react';
 import cn from 'classnames';
 
-import CloseIcon from './icons/CloseIcon';
+import CloseIcon from '@heycar-uikit/icons/Close';
+
 import { ChipProps } from './Chip.types';
 
 import styles from './styles/default.module.css';
@@ -38,7 +39,7 @@ const Chip = React.forwardRef<HTMLElement, ChipProps>(
         {children}
         {variant === 'filter' && (
           <span className={styleIcon['chip-close-icon']}>
-            <CloseIcon disabled={disabled} />
+            <CloseIcon />
           </span>
         )}
       </Component>
