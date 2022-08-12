@@ -1,0 +1,44 @@
+@import '../../../themes/src/default.css';
+
+/*
+* Colors
+*/
+
+:root {
+  /* background color */
+  --pill-background-color: var(--color-tarmac-grey-50);
+  /* text color */
+  --pill-text-color: var(--color-tarmac-grey-700);
+}
+
+/*
+* Base
+*/
+.pill {
+  font-family: var(--font-family-system);
+  font-size: 14px;
+  padding: var(--gap-2xs) var(--gap-xs);
+  display: inline-flex;
+  vertical-align: middle;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  border-style: solid;
+  font-weight: 500;
+  background-color: var(--pill-background-color);
+  color: var(--pill-text-color);
+}
+
+/*
+* icon
+*/
+
+.leftIcon {
+  padding-right: var(--gap-xs);
+  display: flex;
+}
