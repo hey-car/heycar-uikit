@@ -1,3 +1,17 @@
+# [1.11.0](https://github.com/hey-car/heycar-uikit/compare/v1.10.0...v1.11.0) (2022-08-11)
+
+
+### Features
+
+* **icons:** added extra icons ([#49](https://github.com/hey-car/heycar-uikit/issues/49)) ([14cdd6f](https://github.com/hey-car/heycar-uikit/commit/14cdd6f6c0c4067bec044356451e867ee0409875))
+
+# [1.10.0](https://github.com/hey-car/heycar-uikit/compare/v1.9.0...v1.10.0) (2022-08-03)
+
+
+### Features
+
+* **collapse:** the first version of the collapse component ([#46](https://github.com/hey-car/heycar-uikit/issues/46)) ([4d10244](https://github.com/hey-car/heycar-uikit/commit/4d102446b2c6348408bb3bd1d5a7ebf1ec1cd6f5))
+
 # [1.9.0](https://github.com/hey-car/heycar-uikit/compare/v1.8.0...v1.9.0) (2022-08-03)
 
 
