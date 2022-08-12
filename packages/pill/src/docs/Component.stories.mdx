@@ -1,0 +1,78 @@
+import { Meta, Story, Props } from '@storybook/addon-docs';
+import { ComponentHeader, CssVars, TabContainer } from 'storybook/blocks';
+
+import Pill from '../Pill';
+import { version } from '../../package.json';
+import Description from './Description.mdx';
+import Changelog from '../../CHANGELOG.md';
+import { AC } from '../../../icons/src';
+import styles from '!!raw-loader!../styles/default.module.css';
+
+<!-- Meta -->
+
+<Meta title="Components/Pill" component={Pill} />
+
+export const PillTemplate = args => <Pill leftIcon={<AC />} {...args} />;
+
+<!-- Canvas -->
+
+<Story
+  name="Pill"
+  args={{
+    children: 'Information',
+  }}
+  argTypes={{
+    dataTestId: {
+      table: {
+        disable: true,
+      },
+    },
+    leftIcon: {
+      table: {
+        disable: true,
+      },
+    },
+    Component: {
+      table: {
+        disable: true,
+      },
+    },
+  }}
+>
+  {PillTemplate.bind({})}
+</Story>
+
+<!-- Docs -->
+
+<ComponentHeader
+  name="Pill"
+  version={version}
+  stage={1}
+  design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Global-Design-System?node-id=4031%3A102741"
+/>
+
+Pill component can be added in the cards. These pills can contain dynamic Information.
+
+```tsx
+import Pill from '@heycar-uikit/pill';
+```
+
+<!-- Description -->
+
+<TabContainer
+  tabs={[
+    { label: 'Description', component: <Description /> },
+    { label: 'Props', component: <Props of={Pill} /> },
+    {
+      label: 'CSS tokens',
+      component: (
+        <CssVars
+          css={`
+            ${styles}
+          `}
+        />
+      ),
+    },
+    { label: 'Changelog', component: <Changelog /> },
+  ]}
+/>
