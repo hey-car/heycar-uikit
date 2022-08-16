@@ -22,7 +22,7 @@
     "type": "git",
     "url": "git+https://github.com/hey-car/heycar-uikit.git"
   },
-  "homepage": "https://github.com/hey-car/heycar-uikit/tree/main/packages/collapse#readme",
+  "homepage": "https://github.com/hey-car/heycar-uikit/tree/main/packages/accordion#readme",
   "publishConfig": {
     "access": "public"
   },
@@ -31,6 +31,7 @@
   },
   "dependencies": {
     "@heycar-uikit/collapse": "^1.0.0",
+    "@heycar-uikit/icons": "^1.1.2",
     "classnames": "^2.3.1"
   },
   "author": "HeyCar Team",

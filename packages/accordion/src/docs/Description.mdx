@@ -1,197 +1,57 @@
 import { Container, Row, Col } from 'storybook/blocks';
-import Button from '../Button';
+import Accordion from '../Accordion';
 
-## Variants
+## Usage
 
-Use the `variant` prop to change the visual style of the Button.
-You can set the value to solid, `contained` (default), `outlined`, and `link`.
+Controlling the `Accordion` component, pass the `open` prop to expand or collapse the container as a first state of the tab.
+For the freezing, defocus pass the tab `disabled` prop.
 
 ```tsx live
-const buttonVariants = ['contained', 'outlined', 'link'];
-
 render(
   <Container>
-    <Row align="middle">
-      {buttonVariants.map(variant => (
-        <Col key={variant}>
-          <Button size="large" variant={variant}>
-            Button CTA
-          </Button>
-        </Col>
-      ))}
-    </Row>
+    <Accordion open title="Velit officia consequat duis enim velit mollit">
+      <p>
+        You’ll struggle to find any objective reasons to buy a Q3 Sportback over
+        the standard Audi Q3. But, if you want to stand out, the Sportback is
+        rarer than the regular car and barely any more expensive on the used
+        market. It’s cheap to run - and it’s more practical than you might
+        expect.
+      </p>
+      Combine that with low running costs and a strong engine line-up (including
+      the 1.5 mild-hybrid petrol), and the Q3 Sportback gets easier to justify.
+    </Accordion>
+    <Accordion disabled title="Exmplae of disabled accordion">
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+      Velit officia consequat duis enim velit mollit. Exercitation veniam
+      consequat sunt nostrud amet.
+    </Accordion>
+    <Accordion title="What other cars are similar to the Audi Q3 Sportback?">
+      In terms of trim levels, the Q3 Sportback will look sharper and get more
+      equipment if you opt for one of the pricier models, but the standard Sport
+      model has pretty much everything you could possibly wish for. In typical
+      Audi form, the Q3 Sportback is at its most comfortable on the smallest
+      wheels - the 18-inch alloys fitted to Sport models.
+    </Accordion>
+    <Accordion title="What’s the best Audi Q3 Sportback model/engine to choose">
+      <p>
+        We reckon the most affordable engine in the Q3 Sportback is actually the
+        one to go for. The 1.5 TFSI is quick enough for most drivers, cheap to
+        run and available with a manual or S tronic automatic transmission. An
+        automatic gearbox is desirable in a car like this but it can be a bit
+        hesitant, so don’t dismiss the manual.
+      </p>
+      In terms of trim levels, the Q3 Sportback will look sharper and get more equipment
+      if you opt for one of the pricier models, but the standard Sport model has
+      pretty much everything you could possibly wish for. In typical Audi form, the
+      Q3 Sportback is at its most comfortable on the smallest wheels - the 18-inch
+      alloys fitted to Sport models.
+    </Accordion>
   </Container>,
 );
 ```
 
-## Sizes
+## Accessibility
 
-Use the size prop to change the size of the button. You can set the value to `large` or `small`.
-
-```tsx live
-const buttonSizes = ['large', 'small'];
-
-render(
-  <Container>
-    <Row style={{ width: '100%' }}>
-      {buttonSizes.map(size => (
-        <Col span="2" key={size}>
-          <Button size={size} variant="contained">
-            Button CTA
-          </Button>
-        </Col>
-      ))}
-    </Row>
-    <Row style={{ width: '100%' }}>
-      {buttonSizes.map(size => (
-        <Col span="2" key={size}>
-          <Button size={size} color="primary" variant="outlined">
-            Button CTA
-          </Button>
-        </Col>
-      ))}
-    </Row>
-    <Row style={{ width: '100%' }}>
-      {buttonSizes.map(size => (
-        <Col span="2" key={size}>
-          <Button size={size} variant="link">
-            Button CTA
-          </Button>
-        </Col>
-      ))}
-    </Row>
-  </Container>,
-);
-```
-
-## Colors
-
-Use the `color` prop to change the color of the Button.
-You can set the value to solid, `primary` (default), `secondary`, and `tertiary`.
-
-```tsx live
-const buttonColors = ['primary', 'secondary', 'tertiary'];
-
-render(
-  <Container>
-    <Row align="middle">
-      {buttonColors.map(color => (
-        <Col key={color}>
-          <Button size="large" color={color}>
-            Button CTA
-          </Button>
-        </Col>
-      ))}
-    </Row>
-    <Row align="middle">
-      {buttonColors.map(color => (
-        <Col key={color}>
-          <Button size="large" variant="outlined" color={color}>
-            Button CTA
-          </Button>
-        </Col>
-      ))}
-    </Row>
-  </Container>,
-);
-```
-
-## Button with icon
-
-You can add left and right icons to the Button component using the `leftIcon` and `rightIcon` props respectively.
-
-```tsx live
-const buttonSizes = ['large', 'small'];
-
-render(
-  <Container>
-    <Row>
-      {buttonSizes.map(size => (
-        <Col key={size}>
-          <Button leftIcon="🚗" color="secondary" size={size}>
-            Button CTA
-          </Button>
-        </Col>
-      ))}
-    </Row>
-    <Row>
-      {buttonSizes.map(size => (
-        <Col key={size}>
-          <Button rightIcon="🚗" color="primary" size={size}>
-            Button CTA
-          </Button>
-        </Col>
-      ))}
-    </Row>
-    <Row>
-      <Col>
-        <Button color="primary" size="large">
-          🚗
-        </Button>
-      </Col>
-    </Row>
-  </Container>,
-);
-```
-
-## Button loading state
-
-Pass the `loading` prop to show its loading state. By default, the button will show a spinner and leave the button's width unchanged.
-
-```tsx live
-const buttonSizes = ['large', 'small'];
-
-render(
-  <Container>
-    <Row>
-      {buttonSizes.map(size => (
-        <Col key={size}>
-          <Button loading color="secondary" size={size}>
-            Button CTA
-          </Button>
-        </Col>
-      ))}
-    </Row>
-    <Row>
-      {buttonSizes.map(size => (
-        <Col key={size}>
-          <Button loading color="primary" variant="outlined" size={size}>
-            Button CTA
-          </Button>
-        </Col>
-      ))}
-    </Row>
-  </Container>,
-);
-```
-
-## Full width Button
-
-Pass the `fullWidth` prop to the button will take up the full width of its container.
-
-```tsx live
-const buttonSizes = ['large', 'small'];
-
-render(
-  <Container>
-    <Row style={{ width: '100%' }}>
-      {buttonSizes.map(size => (
-        <Col span="4" key={size}>
-          <Button fullWidth color="secondary" size={size}>
-            Button CTA
-          </Button>
-        </Col>
-      ))}
-    </Row>
-    <Row style={{ width: '100%' }}>
-      {buttonSizes.map(size => (
-        <Col span="4" key={size}>
-          <Button fullWidth color="primary" variant="outlined" size={size}>
-            Button CTA
-          </Button>
-        </Col>
-      ))}
-    </Row>
-  </Container>,
-);
-```
+`Accordion` now supports keyboard navigation between accordion buttons.
+Pressing the `Tab` and `Shift + Tab` keys will move focus between accordion buttons.
+Pressing `space` or `enter` when focus is on the accordion panel header will toggle (expand or collapse) the accordion.

@@ -3,6 +3,8 @@ import { ComponentHeader, CssVars, TabContainer } from 'storybook/blocks';
 
 import Accordion from '../Accordion';
 import { version } from '../../package.json';
+import Description from './Description.mdx';
+import Changelog from '../../CHANGELOG.md';
 
 <!-- Meta -->
 
@@ -11,7 +13,7 @@ import { version } from '../../package.json';
 export const AccordionTemplate = args => {
   return (
     <div style={{ maxWidth: '700px', margin: '0 auto' }}>
-      <Accordion title="Is the Audi Q3 Sportback right for you?">
+      <Accordion title="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit">
         <p>
           You’ll struggle to find any objective reasons to buy a Q3 Sportback
           over the standard Audi Q3. But, if you want to stand out, the
@@ -62,3 +64,28 @@ export const AccordionTemplate = args => {
 <Story parameters={{ controls: { disable: true } }} name="Accordion">
   {AccordionTemplate.bind({})}
 </Story>
+
+<!-- Docs -->
+
+<ComponentHeader
+  name="Accordion"
+  version={version}
+  stage={2}
+  design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Global-Design-System?node-id=4289%3A100591"
+/>
+
+The accordion component allows the user to show and hide sections of related content on a page.
+
+```tsx
+import Accordion from '@heycar-uikit/accordion';
+```
+
+<!-- Description -->
+
+<TabContainer
+  tabs={[
+    { label: 'Description', component: <Description /> },
+    { label: 'Props', component: <Props of={Accordion} /> },
+    { label: 'Changelog', component: <Changelog /> },
+  ]}
+/>

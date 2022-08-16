@@ -62,7 +62,7 @@ module.exports = {
 
     group.oneOf[cssRuleIndex] = {
       test: cssRegex,
-      exclude: cssModuleRegex,
+      exclude: [cssModuleRegex],
       use: [
         {
           loader: MiniCssExtractPlugin.loader,
@@ -82,6 +82,7 @@ module.exports = {
     };
     group.oneOf[cssModuleRuleIndex] = {
       test: cssModuleRegex,
+      exclude: /node_modules/,
       use: [
         {
           loader: MiniCssExtractPlugin.loader,

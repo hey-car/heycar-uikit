@@ -2,6 +2,7 @@ import React from 'react';
 import cn from 'classnames';
 
 import Collapse from '@heycar-uikit/collapse';
+import { ChevronDown } from '@heycar-uikit/icons';
 
 import { AccordionProps } from './Accordion.types';
 
@@ -54,6 +55,7 @@ const Accordion = React.forwardRef<HTMLElement, AccordionProps>(
         {...restProps}
       >
         <div
+          aria-controls={accordionId}
           aria-expanded={isOpen}
           className={headerClassNames}
           data-accordion-component="AccordionItemButton"
@@ -63,11 +65,15 @@ const Accordion = React.forwardRef<HTMLElement, AccordionProps>(
           tabIndex={tabIndex}
         >
           {title}
+          <div className={styles.headerArrow}>
+            <ChevronDown aria-hidden="true" color="inherit" />
+          </div>
         </div>
         <Collapse
           aria-labelledby={accordionId}
           className={styles.body}
           data-accordion-component="AccordionItemPanel"
+          id={accordionId}
           open={isOpen}
           role="region"
         >
