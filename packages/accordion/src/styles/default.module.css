@@ -95,5 +95,5 @@
 }
 
 .body {
-  @mixin typography-body-1;
+  @mixin typography-body-3;
 }

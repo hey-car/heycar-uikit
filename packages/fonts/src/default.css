@@ -15,7 +15,7 @@
 @font-face {
   font-family: 'Objektiv';
   font-display: swap;
-  src: url('./assets/objektivmk3_.woff2') format('woff2'),
+  src: url('./assets/objektivmk3_regular.woff2') format('woff2'),
     url('./assets/objektivmk3_regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
