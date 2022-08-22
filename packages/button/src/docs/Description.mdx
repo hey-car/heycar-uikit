@@ -67,10 +67,10 @@ render(
 ## Colors
 
 Use the `color` prop to change the color of the Button.
-You can set the value to solid, `primary` (default), `secondary`, and `tertiary`.
+You can set the value to solid, `primary` (default) and `tertiary`.
 
 ```tsx live
-const buttonColors = ['primary', 'secondary', 'tertiary'];
+const buttonColors = ['primary', 'tertiary'];
 
 render(
   <Container>
@@ -108,15 +108,6 @@ render(
     <Row>
       {buttonSizes.map(size => (
         <Col key={size}>
-          <Button leftIcon="🚗" color="secondary" size={size}>
-            Button CTA
-          </Button>
-        </Col>
-      ))}
-    </Row>
-    <Row>
-      {buttonSizes.map(size => (
-        <Col key={size}>
           <Button rightIcon="🚗" color="primary" size={size}>
             Button CTA
           </Button>
@@ -146,7 +137,7 @@ render(
     <Row>
       {buttonSizes.map(size => (
         <Col key={size}>
-          <Button loading color="secondary" size={size}>
+          <Button loading color="primary" size={size}>
             Button CTA
           </Button>
         </Col>
@@ -177,7 +168,7 @@ render(
     <Row style={{ width: '100%' }}>
       {buttonSizes.map(size => (
         <Col span="4" key={size}>
-          <Button fullWidth color="secondary" size={size}>
+          <Button fullWidth color="primary" size={size}>
             Button CTA
           </Button>
         </Col>
