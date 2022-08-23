@@ -19,7 +19,7 @@
 }
 
 .header {
-  @mixin typography-subheading-2;
+  @mixin typography-body-3;
   text-align: left;
   flex-grow: 1;
   width: 100%;
