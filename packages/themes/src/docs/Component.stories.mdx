@@ -17,10 +17,10 @@ import { ComponentHeader, CssVars, TabContainer } from 'storybook/blocks';
 <!-- Docs -->
 
 <ComponentHeader
-  name="Theme"
+  name="Themes"
   version={version}
-  stage={1}
-  design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Design-System?node-id=1111%3A116509"
+  stage={3}
+  design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Global-Design-System?node-id=1291%3A35196"
 />
 
 Colours are used purposefully to communicate how things function in the interface. This helps us create visual patterns that can make interacting with our product easier and more predictable for the user.
@@ -28,7 +28,27 @@ Colours are used purposefully to communicate how things function in the interfac
 We have carefully selected an accessible color palette that meets the WC3 AAA color contrast standards.
 
 ```tsx
-import Theme from '@heycar-uikit/theme';
+// MyApp.js
+import '@heycar-uikit/themes/default.css';
+
+function MyApp({ Component, pageProps }) {
+  return <Component {...pageProps} />;
+}
+
+export default MyApp;
+```
+
+```tsx
+// Button.styles.js
+
+const styles = {
+  button: {
+    color: 'var(--color-primary-500)',
+    padding: 'var(--gap-m) var(--gap-s)',
+  },
+};
+
+export default styles;
 ```
 
 <!-- Description -->
