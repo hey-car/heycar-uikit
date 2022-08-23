@@ -1,0 +1,61 @@
+import { Meta } from '@storybook/addon-docs';
+import GitHubButton from 'react-github-btn';
+import { version } from '../../package.json';
+import Description from './Description.mdx';
+import Changelog from '../../CHANGELOG.md';
+import { ComponentHeader, CssVars, TabContainer } from 'storybook/blocks';
+
+<Meta
+  title="Components/Theme"
+  parameters={{
+    previewTabs: {
+      canvas: { hidden: true },
+    },
+  }}
+/>
+
+<!-- Docs -->
+
+<ComponentHeader
+  name="Themes"
+  version={version}
+  stage={3}
+  design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Global-Design-System?node-id=1291%3A35196"
+/>
+
+Colours are used purposefully to communicate how things function in the interface. This helps us create visual patterns that can make interacting with our product easier and more predictable for the user.
+
+We have carefully selected an accessible color palette that meets the WC3 AAA color contrast standards.
+
+```tsx
+// MyApp.js
+import '@heycar-uikit/themes/default.css';
+
+function MyApp({ Component, pageProps }) {
+  return <Component {...pageProps} />;
+}
+
+export default MyApp;
+```
+
+```tsx
+// Button.styles.js
+
+const styles = {
+  button: {
+    color: 'var(--color-primary-500)',
+    padding: 'var(--gap-m) var(--gap-s)',
+  },
+};
+
+export default styles;
+```
+
+<!-- Description -->
+
+<TabContainer
+  tabs={[
+    { label: 'Description', component: <Description /> },
+    { label: 'Changelog', component: <Changelog /> },
+  ]}
+/>
