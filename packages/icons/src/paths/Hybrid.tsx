@@ -10,4 +10,5 @@ export const Hybrid = createSvgIcon(
     fill-rule="evenodd"
   />,
   'Hybrid',
+  '0 0 84 84',
 );

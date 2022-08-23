@@ -9,4 +9,5 @@ export const Coupe = createSvgIcon(
     fill-rule="evenodd"
   />,
   'Coupe',
+  '0 0 84 84',
 );

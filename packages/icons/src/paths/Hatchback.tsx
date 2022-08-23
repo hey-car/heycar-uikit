@@ -9,4 +9,5 @@ export const Hatchback = createSvgIcon(
     fill-rule="evenodd"
   />,
   'Hatchback',
+  '0 0 84 84',
 );

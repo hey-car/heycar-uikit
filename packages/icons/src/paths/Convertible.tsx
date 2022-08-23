@@ -9,4 +9,5 @@ export const Convertible = createSvgIcon(
     fill-rule="evenodd"
   />,
   'Convertible',
+  '0 0 84 84',
 );

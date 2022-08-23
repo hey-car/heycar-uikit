@@ -11,4 +11,5 @@ export const SUV = createSvgIcon(
     fill-rule="evenodd"
   />,
   'SUV',
+  '0 0 84 84',
 );

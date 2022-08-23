@@ -9,4 +9,5 @@ export const Estate = createSvgIcon(
     fill-rule="evenodd"
   />,
   'Estate',
+  '0 0 84 84',
 );

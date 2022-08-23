@@ -10,4 +10,5 @@ export const Saloon = createSvgIcon(
     fill-rule="evenodd"
   />,
   'Saloon',
+  '0 0 84 84',
 );

@@ -11,4 +11,5 @@ export const MVP = createSvgIcon(
     fill-rule="evenodd"
   />,
   'MVP',
+  '0 0 84 84',
 );

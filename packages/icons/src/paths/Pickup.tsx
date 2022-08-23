@@ -10,4 +10,5 @@ export const Pickup = createSvgIcon(
     fill-rule="evenodd"
   />,
   'Pickup',
+  '0 0 84 84',
 );

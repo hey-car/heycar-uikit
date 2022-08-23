@@ -10,4 +10,5 @@ export const Van = createSvgIcon(
     fill-rule="evenodd"
   />,
   'Van',
+  '0 0 84 84',
 );
