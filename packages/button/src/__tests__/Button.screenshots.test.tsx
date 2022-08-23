@@ -1,8 +1,8 @@
 import {
   createStorybookUrl,
-  setupScreenshotTesting,
-  screenshotMatchHover,
   screenshotMatchClick,
+  screenshotMatchHover,
+  setupScreenshotTesting,
 } from '../../../screenshotUtils';
 
 const packageName = 'button';
@@ -87,6 +87,6 @@ describe('Button events tests', () => {
       packageName,
     });
 
-    await screenshotMatchClick(pageUrl, buttonSelector, { clip });
+    await screenshotMatchClick(pageUrl, buttonSelector, { clip }, 'down');
   });
 });
