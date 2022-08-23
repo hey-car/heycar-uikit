@@ -1,8 +1,8 @@
 import {
   createStorybookUrl,
-  setupScreenshotTesting,
-  screenshotMatchHover,
   screenshotMatchClick,
+  screenshotMatchHover,
+  setupScreenshotTesting,
 } from '../../../screenshotUtils';
 
 const packageName = 'switch';
@@ -92,7 +92,7 @@ describe('Switch events tests', () => {
       },
     });
 
-    await screenshotMatchClick(pageUrl, selector, { clip });
+    await screenshotMatchClick(pageUrl, selector, { clip }, 'down');
   });
   test('click when unchecked and disabled', async () => {
     const pageUrl = createStorybookUrl({
