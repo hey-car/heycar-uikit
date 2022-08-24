@@ -3,7 +3,6 @@
 /*
 * Colors
 */
-
 :root {
   /* background color */
   --pill-background-color: var(--color-tarmac-grey-50);
@@ -36,9 +35,8 @@
 }
 
 /*
-* icon
+* Icon
 */
-
 .leftIcon {
   padding-right: var(--gap-xs);
   display: flex;
