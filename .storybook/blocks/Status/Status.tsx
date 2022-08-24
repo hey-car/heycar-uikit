@@ -5,8 +5,7 @@ import styles from './Status.module.css';
 const STATUS = {
   0: 'Proposal',
   1: 'Ready',
-  2: 'In Review',
-  3: 'Recommendation',
+  2: 'Recommendation',
 };
 
 type StatusProps = {

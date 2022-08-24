@@ -9,12 +9,7 @@
   background-color: var(--color-tarmac-grey-50);
 }
 
-.in_development {
-  color: var(--color-sunbeam-blue-900);
-  background-color: var(--color-sunbeam-blue-100);
-}
-
-.in_review {
+.ready {
   color: var(--color-mustang-yellow-900);
   background-color: var(--color-mustang-yellow-200);
 }
