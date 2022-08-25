@@ -10,11 +10,11 @@
 }
 
 .ready {
-  color: var(--color-mustang-yellow-900);
-  background-color: var(--color-mustang-yellow-200);
+  color: var(--color-success-500);
+  background-color: var(--color-success-50);
 }
 
 .recommendation {
-  color: var(--color-heycar-mint-600);
-  background-color: var(--color-green-50);
+  color: var(--color-tertiary-700);
+  background-color: var(--color-tertiary-300);
 }
