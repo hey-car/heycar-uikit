@@ -18,14 +18,15 @@ const Chip = React.forwardRef<HTMLElement, ChipProps>(
       disabled,
       variant = 'filter',
       selected = false,
+      leftIcon,
       ...restProps
     },
     ref,
   ) => {
     const classNames = cn(
-      styleVariants[`chip_${variant}`],
+      styleVariants[`${variant}`],
       styles.chip,
-      variant === 'choice' && selected && styles.chip_selected,
+      selected && styles.chipSelected,
       disabled && styles.disabled,
     );
 
@@ -36,10 +37,13 @@ const Chip = React.forwardRef<HTMLElement, ChipProps>(
         ref={ref}
         {...restProps}
       >
+        {leftIcon && (
+          <span className={styleIcon[`leftIcon_${variant}`]}>{leftIcon}</span>
+        )}
         {children}
         {variant === 'filter' && (
-          <span className={styleIcon['chip-close-icon']}>
-            <Close />
+          <span className={styleIcon.chipCloseIcon}>
+            <Close fontSize={16} />
           </span>
         )}
       </Component>

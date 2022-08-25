@@ -1,4 +1,6 @@
-export interface ChipProps {
+import { AnchorHTMLAttributes } from 'react';
+
+export interface ComponentProps {
   /**
    * Customize Chip text color
    */
@@ -20,7 +22,19 @@ export interface ChipProps {
    */
   Component?: React.ElementType;
   /**
+   * Element placed after the children.
+   */
+  leftIcon?: React.ReactNode;
+  /**
+   * 	Element before after the children.
+   */
+  rightIcon?: React.ReactNode;
+  /**
    * The id for testing
    */
   dataTestId?: string;
 }
+
+type HTMLElementProps = ComponentProps & AnchorHTMLAttributes<HTMLElement>;
+
+export type ChipProps = Partial<HTMLElementProps>;

@@ -6,17 +6,17 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="chip_filter chip"
+        class="filter chip"
       >
         text
         <span
-          class="chip-close-icon"
+          class="chipCloseIcon"
         >
           <svg
             class="svgIcon inherit"
             data-test-id="CloseIcon"
             focusable="false"
-            style="font-size: 24px;"
+            style="font-size: 16px;"
             viewBox="0 0 24 24"
           >
             <path
@@ -29,17 +29,17 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="chip_filter chip"
+      class="filter chip"
     >
       text
       <span
-        class="chip-close-icon"
+        class="chipCloseIcon"
       >
         <svg
           class="svgIcon inherit"
           data-test-id="CloseIcon"
           focusable="false"
-          style="font-size: 24px;"
+          style="font-size: 16px;"
           viewBox="0 0 24 24"
         >
           <path
@@ -109,17 +109,17 @@ Object {
   "baseElement": <body>
     <div>
       <span
-        class="chip_filter chip"
+        class="filter chip"
       >
         text
         <span
-          class="chip-close-icon"
+          class="chipCloseIcon"
         >
           <svg
             class="svgIcon inherit"
             data-test-id="CloseIcon"
             focusable="false"
-            style="font-size: 24px;"
+            style="font-size: 16px;"
             viewBox="0 0 24 24"
           >
             <path
@@ -132,17 +132,17 @@ Object {
   </body>,
   "container": <div>
     <span
-      class="chip_filter chip"
+      class="filter chip"
     >
       text
       <span
-        class="chip-close-icon"
+        class="chipCloseIcon"
       >
         <svg
           class="svgIcon inherit"
           data-test-id="CloseIcon"
           focusable="false"
-          style="font-size: 24px;"
+          style="font-size: 16px;"
           viewBox="0 0 24 24"
         >
           <path
@@ -212,17 +212,17 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="chip_filter chip disabled"
+        class="filter chip disabled"
       >
         text
         <span
-          class="chip-close-icon"
+          class="chipCloseIcon"
         >
           <svg
             class="svgIcon inherit"
             data-test-id="CloseIcon"
             focusable="false"
-            style="font-size: 24px;"
+            style="font-size: 16px;"
             viewBox="0 0 24 24"
           >
             <path
@@ -235,17 +235,17 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="chip_filter chip disabled"
+      class="filter chip disabled"
     >
       text
       <span
-        class="chip-close-icon"
+        class="chipCloseIcon"
       >
         <svg
           class="svgIcon inherit"
           data-test-id="CloseIcon"
           focusable="false"
-          style="font-size: 24px;"
+          style="font-size: 16px;"
           viewBox="0 0 24 24"
         >
           <path
@@ -315,17 +315,17 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="chip_filter chip"
+        class="filter chip chipSelected"
       >
         text
         <span
-          class="chip-close-icon"
+          class="chipCloseIcon"
         >
           <svg
             class="svgIcon inherit"
             data-test-id="CloseIcon"
             focusable="false"
-            style="font-size: 24px;"
+            style="font-size: 16px;"
             viewBox="0 0 24 24"
           >
             <path
@@ -338,17 +338,17 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="chip_filter chip"
+      class="filter chip chipSelected"
     >
       text
       <span
-        class="chip-close-icon"
+        class="chipCloseIcon"
       >
         <svg
           class="svgIcon inherit"
           data-test-id="CloseIcon"
           focusable="false"
-          style="font-size: 24px;"
+          style="font-size: 16px;"
           viewBox="0 0 24 24"
         >
           <path
@@ -418,17 +418,17 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="chip_filter chip"
+        class="filter chip"
       >
         text
         <span
-          class="chip-close-icon"
+          class="chipCloseIcon"
         >
           <svg
             class="svgIcon inherit"
             data-test-id="CloseIcon"
             focusable="false"
-            style="font-size: 24px;"
+            style="font-size: 16px;"
             viewBox="0 0 24 24"
           >
             <path
@@ -441,17 +441,17 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="chip_filter chip"
+      class="filter chip"
     >
       text
       <span
-        class="chip-close-icon"
+        class="chipCloseIcon"
       >
         <svg
           class="svgIcon inherit"
           data-test-id="CloseIcon"
           focusable="false"
-          style="font-size: 24px;"
+          style="font-size: 16px;"
           viewBox="0 0 24 24"
         >
           <path
@@ -521,7 +521,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="chip_choice chip"
+        class="choice chip"
       >
         text
       </div>
@@ -529,7 +529,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="chip_choice chip"
+      class="choice chip"
     >
       text
     </div>
@@ -594,17 +594,17 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="chip_filter chip"
+        class="filter chip"
       >
         text
         <span
-          class="chip-close-icon"
+          class="chipCloseIcon"
         >
           <svg
             class="svgIcon inherit"
             data-test-id="CloseIcon"
             focusable="false"
-            style="font-size: 24px;"
+            style="font-size: 16px;"
             viewBox="0 0 24 24"
           >
             <path
@@ -617,17 +617,17 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="chip_filter chip"
+      class="filter chip"
     >
       text
       <span
-        class="chip-close-icon"
+        class="chipCloseIcon"
       >
         <svg
           class="svgIcon inherit"
           data-test-id="CloseIcon"
           focusable="false"
-          style="font-size: 24px;"
+          style="font-size: 16px;"
           viewBox="0 0 24 24"
         >
           <path

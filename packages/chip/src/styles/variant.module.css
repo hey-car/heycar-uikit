@@ -13,7 +13,7 @@
 * Choice
 */
 
-.chip_choice {
+.choice {
   border: 1px solid var(--chip-border-color);
   padding: var(--gap-s) var(--gap-2s);
 }
@@ -22,7 +22,8 @@
 * Filter
 */
 
-.chip_filter {
-  padding: var(--gap-2xs) var(--gap-s);
-  border: 0;
+.filter {
+  padding: var(--gap-1xs) var(--gap-s);
+  border: 1px solid var(--chip-border-color);
+  height: var(--gap-3xl);
 }
