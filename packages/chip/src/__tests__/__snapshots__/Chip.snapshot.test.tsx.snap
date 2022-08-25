@@ -1,0 +1,692 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Chip Snapshots tests should match snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="chip_filter chip"
+      >
+        text
+        <span
+          class="chip-close-icon"
+        >
+          <svg
+            class="svgIcon inherit"
+            data-test-id="CloseIcon"
+            focusable="false"
+            style="font-size: 24px;"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M13.4142 12L20.7071 4.70709L19.2928 3.29288L12 10.5858L4.70706 3.29288L3.29285 4.70709L10.5857 12L3.29285 19.2929L4.70706 20.7071L12 13.4142L19.2928 20.7071L20.7071 19.2929L13.4142 12Z"
+            />
+          </svg>
+        </span>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="chip_filter chip"
+    >
+      text
+      <span
+        class="chip-close-icon"
+      >
+        <svg
+          class="svgIcon inherit"
+          data-test-id="CloseIcon"
+          focusable="false"
+          style="font-size: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M13.4142 12L20.7071 4.70709L19.2928 3.29288L12 10.5858L4.70706 3.29288L3.29285 4.70709L10.5857 12L3.29285 19.2929L4.70706 20.7071L12 13.4142L19.2928 20.7071L20.7071 19.2929L13.4142 12Z"
+          />
+        </svg>
+      </span>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Chip Snapshots tests should render Component="span" 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <span
+        class="chip_filter chip"
+      >
+        text
+        <span
+          class="chip-close-icon"
+        >
+          <svg
+            class="svgIcon inherit"
+            data-test-id="CloseIcon"
+            focusable="false"
+            style="font-size: 24px;"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M13.4142 12L20.7071 4.70709L19.2928 3.29288L12 10.5858L4.70706 3.29288L3.29285 4.70709L10.5857 12L3.29285 19.2929L4.70706 20.7071L12 13.4142L19.2928 20.7071L20.7071 19.2929L13.4142 12Z"
+            />
+          </svg>
+        </span>
+      </span>
+    </div>
+  </body>,
+  "container": <div>
+    <span
+      class="chip_filter chip"
+    >
+      text
+      <span
+        class="chip-close-icon"
+      >
+        <svg
+          class="svgIcon inherit"
+          data-test-id="CloseIcon"
+          focusable="false"
+          style="font-size: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M13.4142 12L20.7071 4.70709L19.2928 3.29288L12 10.5858L4.70706 3.29288L3.29285 4.70709L10.5857 12L3.29285 19.2929L4.70706 20.7071L12 13.4142L19.2928 20.7071L20.7071 19.2929L13.4142 12Z"
+          />
+        </svg>
+      </span>
+    </span>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Chip Snapshots tests should render disabled="true" 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="chip_filter chip disabled"
+      >
+        text
+        <span
+          class="chip-close-icon"
+        >
+          <svg
+            class="svgIcon inherit"
+            data-test-id="CloseIcon"
+            focusable="false"
+            style="font-size: 24px;"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M13.4142 12L20.7071 4.70709L19.2928 3.29288L12 10.5858L4.70706 3.29288L3.29285 4.70709L10.5857 12L3.29285 19.2929L4.70706 20.7071L12 13.4142L19.2928 20.7071L20.7071 19.2929L13.4142 12Z"
+            />
+          </svg>
+        </span>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="chip_filter chip disabled"
+    >
+      text
+      <span
+        class="chip-close-icon"
+      >
+        <svg
+          class="svgIcon inherit"
+          data-test-id="CloseIcon"
+          focusable="false"
+          style="font-size: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M13.4142 12L20.7071 4.70709L19.2928 3.29288L12 10.5858L4.70706 3.29288L3.29285 4.70709L10.5857 12L3.29285 19.2929L4.70706 20.7071L12 13.4142L19.2928 20.7071L20.7071 19.2929L13.4142 12Z"
+          />
+        </svg>
+      </span>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Chip Snapshots tests should render selected="true" 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="chip_filter chip"
+      >
+        text
+        <span
+          class="chip-close-icon"
+        >
+          <svg
+            class="svgIcon inherit"
+            data-test-id="CloseIcon"
+            focusable="false"
+            style="font-size: 24px;"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M13.4142 12L20.7071 4.70709L19.2928 3.29288L12 10.5858L4.70706 3.29288L3.29285 4.70709L10.5857 12L3.29285 19.2929L4.70706 20.7071L12 13.4142L19.2928 20.7071L20.7071 19.2929L13.4142 12Z"
+            />
+          </svg>
+        </span>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="chip_filter chip"
+    >
+      text
+      <span
+        class="chip-close-icon"
+      >
+        <svg
+          class="svgIcon inherit"
+          data-test-id="CloseIcon"
+          focusable="false"
+          style="font-size: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M13.4142 12L20.7071 4.70709L19.2928 3.29288L12 10.5858L4.70706 3.29288L3.29285 4.70709L10.5857 12L3.29285 19.2929L4.70706 20.7071L12 13.4142L19.2928 20.7071L20.7071 19.2929L13.4142 12Z"
+          />
+        </svg>
+      </span>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Chip Snapshots tests should render text 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="chip_filter chip"
+      >
+        text
+        <span
+          class="chip-close-icon"
+        >
+          <svg
+            class="svgIcon inherit"
+            data-test-id="CloseIcon"
+            focusable="false"
+            style="font-size: 24px;"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M13.4142 12L20.7071 4.70709L19.2928 3.29288L12 10.5858L4.70706 3.29288L3.29285 4.70709L10.5857 12L3.29285 19.2929L4.70706 20.7071L12 13.4142L19.2928 20.7071L20.7071 19.2929L13.4142 12Z"
+            />
+          </svg>
+        </span>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="chip_filter chip"
+    >
+      text
+      <span
+        class="chip-close-icon"
+      >
+        <svg
+          class="svgIcon inherit"
+          data-test-id="CloseIcon"
+          focusable="false"
+          style="font-size: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M13.4142 12L20.7071 4.70709L19.2928 3.29288L12 10.5858L4.70706 3.29288L3.29285 4.70709L10.5857 12L3.29285 19.2929L4.70706 20.7071L12 13.4142L19.2928 20.7071L20.7071 19.2929L13.4142 12Z"
+          />
+        </svg>
+      </span>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Chip Snapshots tests should render variant="choice" 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="chip_choice chip"
+      >
+        text
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="chip_choice chip"
+    >
+      text
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Chip Snapshots tests should render variant="filter" 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="chip_filter chip"
+      >
+        text
+        <span
+          class="chip-close-icon"
+        >
+          <svg
+            class="svgIcon inherit"
+            data-test-id="CloseIcon"
+            focusable="false"
+            style="font-size: 24px;"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M13.4142 12L20.7071 4.70709L19.2928 3.29288L12 10.5858L4.70706 3.29288L3.29285 4.70709L10.5857 12L3.29285 19.2929L4.70706 20.7071L12 13.4142L19.2928 20.7071L20.7071 19.2929L13.4142 12Z"
+            />
+          </svg>
+        </span>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="chip_filter chip"
+    >
+      text
+      <span
+        class="chip-close-icon"
+      >
+        <svg
+          class="svgIcon inherit"
+          data-test-id="CloseIcon"
+          focusable="false"
+          style="font-size: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M13.4142 12L20.7071 4.70709L19.2928 3.29288L12 10.5858L4.70706 3.29288L3.29285 4.70709L10.5857 12L3.29285 19.2929L4.70706 20.7071L12 13.4142L19.2928 20.7071L20.7071 19.2929L13.4142 12Z"
+          />
+        </svg>
+      </span>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
