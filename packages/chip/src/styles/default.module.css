@@ -74,14 +74,14 @@
 }
 
 .chipSelected {
-  background-color: #F1F4FA;
+  background-color: var(--color-primary-50);
   border: 1px solid var(--chip-selected-border-color) !important;
 }
 
 .chipSelected:hover {
-  background-color: #DEE6F2;
+  background-color: var(--color-primary-100);
 }
 
 .chipSelected:active {
-  background-color: #A2B7DA;
+  background-color: var(--color-primary-200);
 }

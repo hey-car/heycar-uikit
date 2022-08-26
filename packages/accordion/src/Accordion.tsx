@@ -34,7 +34,7 @@ const Accordion = React.forwardRef<HTMLElement, AccordionProps>(
       [styles.headerOpen]: isOpen,
       [styles.headerDisabled]: disabled,
     });
-    const accordionId = `collapsible-${Date.now()}`;
+    //const accordionId = `collapsible-${Date.now()}`;
     const handleHeaderButtonChange = (
       event:
         | React.MouseEvent<HTMLElement>
@@ -55,7 +55,7 @@ const Accordion = React.forwardRef<HTMLElement, AccordionProps>(
         {...restProps}
       >
         <div
-          aria-controls={accordionId}
+          // aria-controls={accordionId}
           aria-expanded={isOpen}
           className={headerClassNames}
           data-accordion-component="AccordionItemButton"
@@ -70,10 +70,10 @@ const Accordion = React.forwardRef<HTMLElement, AccordionProps>(
           </div>
         </div>
         <Collapse
-          aria-labelledby={accordionId}
+          // aria-labelledby={accordionId}
           className={styles.body}
           data-accordion-component="AccordionItemPanel"
-          id={accordionId}
+          // id={accordionId}
           open={isOpen}
           role="region"
         >

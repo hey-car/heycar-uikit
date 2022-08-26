@@ -43,7 +43,7 @@ const Chip = React.forwardRef<HTMLElement, ChipProps>(
         {children}
         {variant === 'filter' && (
           <span className={styleIcon.chipCloseIcon}>
-            <Close fontSize={16} />
+            <Close />
           </span>
         )}
       </Component>

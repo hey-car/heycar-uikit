@@ -9,6 +9,10 @@
   margin-left: var(--gap-s);
 }
 
+.chipCloseIcon svg {
+  font-size: 16px!important;
+}
+
 .leftIcon_choice {
   display: flex;
   margin-right: var(--gap-s);

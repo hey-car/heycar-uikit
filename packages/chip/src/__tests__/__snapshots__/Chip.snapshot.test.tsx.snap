@@ -16,7 +16,7 @@ Object {
             class="svgIcon inherit"
             data-test-id="CloseIcon"
             focusable="false"
-            style="font-size: 16px;"
+            style="font-size: 24px;"
             viewBox="0 0 24 24"
           >
             <path
@@ -39,7 +39,7 @@ Object {
           class="svgIcon inherit"
           data-test-id="CloseIcon"
           focusable="false"
-          style="font-size: 16px;"
+          style="font-size: 24px;"
           viewBox="0 0 24 24"
         >
           <path
@@ -119,7 +119,7 @@ Object {
             class="svgIcon inherit"
             data-test-id="CloseIcon"
             focusable="false"
-            style="font-size: 16px;"
+            style="font-size: 24px;"
             viewBox="0 0 24 24"
           >
             <path
@@ -142,7 +142,7 @@ Object {
           class="svgIcon inherit"
           data-test-id="CloseIcon"
           focusable="false"
-          style="font-size: 16px;"
+          style="font-size: 24px;"
           viewBox="0 0 24 24"
         >
           <path
@@ -222,7 +222,7 @@ Object {
             class="svgIcon inherit"
             data-test-id="CloseIcon"
             focusable="false"
-            style="font-size: 16px;"
+            style="font-size: 24px;"
             viewBox="0 0 24 24"
           >
             <path
@@ -245,7 +245,7 @@ Object {
           class="svgIcon inherit"
           data-test-id="CloseIcon"
           focusable="false"
-          style="font-size: 16px;"
+          style="font-size: 24px;"
           viewBox="0 0 24 24"
         >
           <path
@@ -325,7 +325,7 @@ Object {
             class="svgIcon inherit"
             data-test-id="CloseIcon"
             focusable="false"
-            style="font-size: 16px;"
+            style="font-size: 24px;"
             viewBox="0 0 24 24"
           >
             <path
@@ -348,7 +348,7 @@ Object {
           class="svgIcon inherit"
           data-test-id="CloseIcon"
           focusable="false"
-          style="font-size: 16px;"
+          style="font-size: 24px;"
           viewBox="0 0 24 24"
         >
           <path
@@ -428,7 +428,7 @@ Object {
             class="svgIcon inherit"
             data-test-id="CloseIcon"
             focusable="false"
-            style="font-size: 16px;"
+            style="font-size: 24px;"
             viewBox="0 0 24 24"
           >
             <path
@@ -451,7 +451,7 @@ Object {
           class="svgIcon inherit"
           data-test-id="CloseIcon"
           focusable="false"
-          style="font-size: 16px;"
+          style="font-size: 24px;"
           viewBox="0 0 24 24"
         >
           <path
@@ -604,7 +604,7 @@ Object {
             class="svgIcon inherit"
             data-test-id="CloseIcon"
             focusable="false"
-            style="font-size: 16px;"
+            style="font-size: 24px;"
             viewBox="0 0 24 24"
           >
             <path
@@ -627,7 +627,7 @@ Object {
           class="svgIcon inherit"
           data-test-id="CloseIcon"
           focusable="false"
-          style="font-size: 16px;"
+          style="font-size: 24px;"
           viewBox="0 0 24 24"
         >
           <path
