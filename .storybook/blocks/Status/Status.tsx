@@ -4,9 +4,8 @@ import styles from './Status.module.css';
 
 const STATUS = {
   0: 'Proposal',
-  1: 'In Development',
-  2: 'In Review',
-  3: 'Recommendation',
+  1: 'Ready',
+  2: 'Recommendation',
 };
 
 type StatusProps = {
@@ -18,7 +17,7 @@ type Index = keyof typeof STATUS;
 export const Status: React.FC<StatusProps> = ({ stage }) => {
   const status = STATUS[stage as Index];
   // Convert string to snake case
-  const statusClassName = status.toLowerCase().replace(' ','_');
+  const statusClassName = status.toLowerCase().replace(' ', '_');
   return (
     <div>
       <a

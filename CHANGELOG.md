@@ -1,3 +1,17 @@
+# [1.13.0](https://github.com/hey-car/heycar-uikit/compare/v1.12.0...v1.13.0) (2022-08-26)
+
+
+### Features
+
+* **icons:** added extra icons ([#52](https://github.com/hey-car/heycar-uikit/issues/52)) ([59d3693](https://github.com/hey-car/heycar-uikit/commit/59d3693bc3cc50745acd2873a4a010d16475c56a))
+
+# [1.12.0](https://github.com/hey-car/heycar-uikit/compare/v1.11.0...v1.12.0) (2022-08-26)
+
+
+### Features
+
+* **remove green color button:** remove green color for the buttons ([#58](https://github.com/hey-car/heycar-uikit/issues/58)) ([6ae8d9f](https://github.com/hey-car/heycar-uikit/commit/6ae8d9f3044322ff1b695afc23d0ce2870ae1382))
+
 # [1.11.0](https://github.com/hey-car/heycar-uikit/compare/v1.10.0...v1.11.0) (2022-08-11)
 
 
