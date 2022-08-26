@@ -23,6 +23,7 @@ export * from './paths/Engine';
 export * from './paths/Estate';
 export * from './paths/Exterior';
 export * from './paths/EV';
+export * from './paths/Eye';
 export * from './paths/Filter';
 export * from './paths/Finance';
 export * from './paths/FiveDoors';
