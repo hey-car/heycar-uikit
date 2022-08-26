@@ -1,6 +1,7 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const glob = require('glob');
 const appDirectory = path.resolve(__dirname, '../');
 const cssModuleRegex = /\.module\.css$/;
@@ -49,6 +50,9 @@ module.exports = {
     addPackagesDir(config);
 
     config.resolve.alias.storybook = path.resolve(__dirname);
+    config.resolve.plugins = [
+      new TsconfigPathsPlugin()
+    ];
 
     config.performance.hints = false;
 
