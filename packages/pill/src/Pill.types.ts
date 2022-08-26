@@ -1,4 +1,6 @@
-export interface PillProps {
+import { AnchorHTMLAttributes } from 'react';
+
+export interface ComponentProps {
   /**
    * The content of the Pill
    */
@@ -16,3 +18,7 @@ export interface PillProps {
    */
   dataTestId?: string;
 }
+
+type HtmlElementProps = ComponentProps & AnchorHTMLAttributes<HTMLElement>;
+
+export type PillProps = Partial<HtmlElementProps>;
