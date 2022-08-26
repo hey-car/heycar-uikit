@@ -1,0 +1,96 @@
+import styles from './../styles/theme.module.css';
+
+Listed below are all of the color names and their following possible shades
+available as CSS variables on this design system.
+
+In order to use the colors of the **heycar-uikit** design system as
+CSS variables, start the name of the variable with `--color`, followed by
+the color name that you want (e.g. `-primary`, `-success`) and the shade
+value (e.g. `-50`, `-600`).
+
+If you need to use **brand colors**, simply use the variable name described right below their names on the palette below.
+
+You can find a few examples on the code block to follow:
+
+```css
+.exampleClass {
+  background-color: var(--color-primary-50);
+  color: var(--color-secondary-500);
+}
+
+.anotherExampleClass {
+  background: var(--color-secondary-200);
+  box-shadow: 10px 5px 5px var(--color-success-400);
+}
+
+.exampleWithBrandColor {
+  color: var(--color-heycar-mint);
+  background: var(--color-primary-50);
+  border: 1px solid var(--color-mica-blue);
+}
+```
+
+export const Colors = () => {
+  const shades = [
+    '50',
+    '100',
+    '200',
+    '300',
+    '400',
+    '500',
+    '600',
+    '700',
+    '800',
+    '900',
+  ];
+  const brandColors = [
+    'heycar Mint',
+    'Mica Blue',
+    'Sunbeam Blue',
+    'Championship White',
+  ];
+  const ColorBlock = ({ name, color }) => (
+    <div className={`${styles.colorBlock}`}>
+      <h3>{name}</h3>
+      <div>
+        {name.includes('Brand')
+          ? brandColors.map(color => {
+              const colorName = `${color.toLowerCase().replace(' ', '-')}`;
+              return (
+                <div
+                  className={`${styles.colorShade} ${styles.brandColor} ${styles[colorName]}`}
+                >
+                  <span>{color}</span>
+                  <span>--color-{colorName}</span>
+                </div>
+              );
+            })
+          : shades.map(shade => {
+              const colorName = `${name.toLowerCase()}-${shade}`;
+              return (
+                <div className={`${styles.colorShade} ${styles[colorName]}`}>
+                  <span>{shade}</span>
+                </div>
+              );
+            })}
+      </div>
+    </div>
+  );
+  return (
+    <div>
+      <ColorBlock name="Brand colors" />
+      <ColorBlock name="Primary" />
+      <ColorBlock name="Secondary" />
+      <ColorBlock name="Tertiary" />
+      <ColorBlock name="Warning" />
+      <ColorBlock name="Highlight" />
+      <ColorBlock name="Success" />
+      <ColorBlock name="Error" />
+      <ColorBlock name="Neutral" />
+    </div>
+  );
+};
+
+<Story name="Colors">
+  <Colors />
+</Story>
