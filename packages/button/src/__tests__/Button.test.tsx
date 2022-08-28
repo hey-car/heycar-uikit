@@ -41,8 +41,14 @@ describe('Button', () => {
       expect(container.firstElementChild).toHaveClass(className);
     });
 
+    it('should set `size` class default value', () => {
+      const { container } = render(<Button />);
+
+      expect(container.firstElementChild).toHaveClass('large');
+    });
+
     it('should set `size` class', () => {
-      const size = 'large';
+      const size = 'small';
       const { container } = render(<Button size={size} />);
 
       expect(container.firstElementChild).toHaveClass(size);
@@ -54,15 +60,27 @@ describe('Button', () => {
       expect(container.firstElementChild).toHaveClass('fullWidth');
     });
 
+    it('should set `variant` class default value', () => {
+      const { container } = render(<Button />);
+
+      expect(container.firstElementChild).toHaveClass('contained');
+    });
+
     it('should set `variant` class', () => {
-      const variant = 'contained';
+      const variant = 'outlined';
       const { container } = render(<Button variant={variant} />);
 
       expect(container.firstElementChild).toHaveClass(variant);
     });
 
+    it('should set `color` class default value', () => {
+      const { container } = render(<Button />);
+
+      expect(container.firstElementChild).toHaveClass('primary');
+    });
+
     it('should set `color` class', () => {
-      const color = 'primary';
+      const color = 'tertiary';
       const { container } = render(<Button color={color} />);
 
       expect(container.firstElementChild).toHaveClass(color);

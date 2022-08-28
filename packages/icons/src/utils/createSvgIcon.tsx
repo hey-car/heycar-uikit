@@ -6,12 +6,19 @@ import { IconProps } from '../SvgIcon.types';
 function createSvgIcon(
   path: React.SVGProps<SVGPathElement>,
   displayName: string,
+  viewBox?: string,
 ) {
   const Component = (
     props: IconProps,
     ref: React.ForwardedRef<HTMLOrSVGElement>,
   ) => (
-    <SvgIcon dataTestId={`${displayName}Icon`} ref={ref} {...props}>
+    <SvgIcon
+      dataTestId={`${displayName}Icon`}
+      ref={ref}
+      viewBox={viewBox}
+      // eslint-disable-next-line react/jsx-props-no-spreading
+      {...props}
+    >
       {path}
     </SvgIcon>
   );

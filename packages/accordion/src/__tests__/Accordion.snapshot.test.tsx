@@ -6,8 +6,18 @@ import Accordion from '../Accordion';
 const accordionTitle = 'title';
 const accordionBodyText =
   ' You’ll struggle to find any objective reasons to buy a Q3 Sportback over the standard Audi Q3. But, if you want to stand out, the Sportback is';
+const dateNow = 1661419668701;
 
 describe('Accordion Snapshots tests', () => {
+  beforeAll(() => {
+    jest.useFakeTimers('modern');
+    jest.setSystemTime(dateNow);
+  });
+
+  afterAll(() => {
+    jest.useRealTimers();
+  });
+
   it('should match snapshot', () => {
     expect(
       render(<Accordion title={accordionTitle}>{accordionBodyText}</Accordion>),

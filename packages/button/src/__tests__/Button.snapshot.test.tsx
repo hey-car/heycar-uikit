@@ -16,6 +16,14 @@ describe('Button Snapshots tests', () => {
     expect(render(<Button rightIcon="🚗" />)).toMatchSnapshot();
   });
 
+  it('should render primary color', () => {
+    expect(render(<Button color="primary" />)).toMatchSnapshot();
+  });
+
+  it('should render tertiary color', () => {
+    expect(render(<Button color="tertiary" />)).toMatchSnapshot();
+  });
+
   it('should render button by default', () => {
     expect(render(<Button />)).toMatchSnapshot();
   });
