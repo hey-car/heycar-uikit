@@ -2,7 +2,7 @@ export type LogoProps = {
   /**
    * The font-size of the svg logo
    */
-  fontSize: number;
+  fontSize?: number;
   /**
    * The color of the logo primary secondary and tertiary
    */
