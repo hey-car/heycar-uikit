@@ -33,8 +33,4 @@ function Collapse({
 
 Collapse.displayName = 'Collapse';
 
-Collapse.defaultProps = {
-  open: false,
-};
-
 export default Collapse;
