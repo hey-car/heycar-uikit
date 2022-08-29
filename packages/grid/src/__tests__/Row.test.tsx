@@ -28,11 +28,11 @@ describe('Grid.Row', () => {
 
     it('should set gutter class', () => {
       const { container } = render(
-        <Row gutter={{ mobile: 0, tablet: 8, desktop: { s: 16, l: 24 } }} />,
+        <Row gutter={{ mobile: 0, tablet: 12, desktop: { s: 16, l: 24 } }} />,
       );
 
       expect(container.firstElementChild).toHaveClass('gutter-mobile-0');
-      expect(container.firstElementChild).toHaveClass('gutter-tablet-8');
+      expect(container.firstElementChild).toHaveClass('gutter-tablet-12');
       expect(container.firstElementChild).toHaveClass('gutter-desktop-s-16');
       expect(container.firstElementChild).toHaveClass('gutter-desktop-l-24');
     });

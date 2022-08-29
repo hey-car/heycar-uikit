@@ -1,7 +1,7 @@
 @import '../../../themes/src/default.css';
 
 /* stylelint-disable comment-empty-line-before */
-@for $i from 8 to 24 by 8 {
+@for $i from 8 to 24 by 4 {
   .row.gutter-$(i) {
     /* prettier-ignore */
     margin-left: calc(-$(i)px / 2);
@@ -23,7 +23,7 @@
   desktop, desktop-s, desktop-m, desktop-l
 {
   @media (--$(breakpoint)) {
-    @for $i from 8 to 24 by 8 {
+    @for $i from 8 to 24 by 4 {
       .row.gutter-$(breakpoint)-$(i) {
         /* prettier-ignore */
         margin-left: calc(-$(i)px / 2);
