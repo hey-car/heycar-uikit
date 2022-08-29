@@ -19,7 +19,7 @@
 }
 
 .header {
-  @mixin typography-body-3;
+  @mixin typography-body-1;
   text-align: left;
   flex-grow: 1;
   width: 100%;
@@ -51,7 +51,6 @@
 
   &.headerOpen {
     margin-bottom: var(--gap-xs);
-    font-weight: var(--font-weight-bold);
 
     & .headerArrow {
       transform: rotate(180deg);
@@ -84,13 +83,9 @@
     transform: rotate(0deg);
   }
 
-  &:hover {
-    background-color: var(--color-neutral-50);
-  }
-
-  &:active,
+  &:hover,
   &:focus-visible {
-    background-color: var(--color-neutral-100);
+    background-color: var(--color-neutral-50);
   }
 }
 
