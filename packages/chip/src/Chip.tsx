@@ -16,9 +16,11 @@ const Chip = React.forwardRef<HTMLElement, ChipProps>(
       dataTestId,
       Component = 'div',
       disabled,
-      variant = 'filter',
       selected = false,
       leftIcon,
+      onClick,
+      onDelete,
+      variant = 'filter',
       ...restProps
     },
     ref,
@@ -36,13 +38,14 @@ const Chip = React.forwardRef<HTMLElement, ChipProps>(
         data-test-id={dataTestId}
         ref={ref}
         {...restProps}
+        onClick={onClick}
       >
         {leftIcon && (
           <span className={styleIcon[`leftIcon_${variant}`]}>{leftIcon}</span>
         )}
         {children}
-        {variant === 'filter' && (
-          <span className={styleIcon.chipCloseIcon}>
+        {!onClick && onDelete && (
+          <span className={styleIcon.chipCloseIcon} onClick={onDelete}>
             <Close />
           </span>
         )}

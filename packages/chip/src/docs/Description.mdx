@@ -53,7 +53,7 @@ Use the `selected` prop to select the chip choice it's value is boolean.
 render(
   <Container>
     <Row align="middle">
-     <Col key="filter">
+      <Col key="filter">
         <Chip variant="filter" selected="true">
           Mini
         </Chip>
@@ -78,10 +78,45 @@ render(
   <Container>
     <Row align="middle">
       <Col key="filter">
-        <Chip leftIcon={<Dealer/>} variant="filter">Mini</Chip>
+        <Chip leftIcon={<Dealer />} variant="filter">
+          Mini
+        </Chip>
       </Col>
       <Col key="choice">
-        <Chip leftIcon={<AC/>} variant="choice">Uunder £1,5000</Chip>
+        <Chip leftIcon={<AC />} variant="choice">
+          Uunder £1,5000
+        </Chip>
+      </Col>
+    </Row>
+  </Container>,
+);
+```
+
+## Callbacks
+
+Use the `onDelete` or `onClick` prop to add Callbacks
+
+```tsx live
+render(
+  <Container>
+    <Row align="middle">
+      <Col key="filter">
+        <Chip
+          leftIcon={<Dealer />}
+          onDelete={() => alert('onDelete Callback called')}
+          variant="filter"
+        >
+          Mini
+        </Chip>
+      </Col>
+      <Col key="choice">
+        <Chip
+          leftIcon={<AC />}
+          onClick={() => alert('onClick Callback called')}
+          variant="choice"
+        >
+          Uunder £1,5000
+        </Chip>
       </Col>
     </Row>
   </Container>,
