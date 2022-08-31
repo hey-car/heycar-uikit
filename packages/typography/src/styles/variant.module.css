@@ -5,6 +5,11 @@
   color: var(--color-championship-white);
 }
 
+.typography {
+  margin: 0;
+  padding: 0;
+}
+
 .display1 {
   @mixin typography-display;
 }
