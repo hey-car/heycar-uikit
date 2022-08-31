@@ -34,8 +34,6 @@ const Badge = React.forwardRef<HTMLElement, BadgeProps>(
   },
 );
 
-Badge.defaultProps = {
-  color: 'primary',
-};
+Badge.displayName = 'Badge';
 
 export default Badge;

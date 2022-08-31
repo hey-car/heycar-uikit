@@ -68,11 +68,4 @@ const Button = React.forwardRef<
 
 Button.displayName = 'Button';
 
-Button.defaultProps = {
-  size: 'large',
-  color: 'primary',
-  variant: 'contained',
-  fullWidth: false,
-};
-
 export default Button;
