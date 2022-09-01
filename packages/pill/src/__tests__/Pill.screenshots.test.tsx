@@ -28,3 +28,21 @@ describe(
     screenshotOpts: { clip },
   }),
 );
+
+describe(
+  'Pill component',
+  screenshotTesting({
+    cases: ['pill-component'].map(() => [
+      'sprite',
+      createStorybookUrl({
+        packageName,
+        knobs: {
+          children: pillLabel,
+          // eslint-disable-next-line @typescript-eslint/naming-convention
+          Component: 'span',
+        },
+      }),
+    ]),
+    screenshotOpts: { clip },
+  }),
+);
