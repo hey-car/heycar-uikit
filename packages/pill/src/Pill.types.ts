@@ -21,4 +21,4 @@ export interface ComponentProps {
 
 type HtmlElementProps = ComponentProps & AnchorHTMLAttributes<HTMLElement>;
 
-export type PillProps = Partial<HtmlElementProps>;
+export type PillProps = HtmlElementProps;
