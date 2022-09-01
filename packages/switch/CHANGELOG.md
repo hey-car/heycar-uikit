@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/switch@1.1.0...@heycar-uikit/switch@1.2.0) (2022-09-01)
+
+
+### Features
+
+* **badge:** The first implantation of badge component ([#42](https://github.com/hey-car/heycar-uikit/issues/42)) ([2ca5a7e](https://github.com/hey-car/heycar-uikit/commit/2ca5a7ea897c4cdeccaadca4f4d1592be40fe6e7))
+* **collapse:** the first version of the collapse component ([#51](https://github.com/hey-car/heycar-uikit/issues/51)) ([b8d3f3f](https://github.com/hey-car/heycar-uikit/commit/b8d3f3f88cdfde98bb0f6364973895a5e9969182))
+
+
+
+
+
 # [1.1.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/switch@1.1.0...@heycar-uikit/switch@1.1.0) (2022-08-03)
 
 
