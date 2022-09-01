@@ -73,6 +73,15 @@
   background-color: var(--chip-pressed-background);
 }
 
-.chip_selected {
-  border: 2px solid var(--chip-selected-border-color) !important;
+.chipSelected {
+  background-color: var(--color-primary-50);
+  border: 1px solid var(--chip-selected-border-color) !important;
+}
+
+.chipSelected:hover {
+  background-color: var(--color-primary-100);
+}
+
+.chipSelected:active {
+  background-color: var(--color-primary-200);
 }

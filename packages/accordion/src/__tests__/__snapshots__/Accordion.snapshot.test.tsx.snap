@@ -10,7 +10,6 @@ Object {
         data-accordion-component="Accordion"
       >
         <div
-          aria-controls="collapsible-1661419668701"
           aria-expanded="false"
           class="header"
           data-accordion-component="AccordionItemButton"
@@ -38,10 +37,8 @@ Object {
           </div>
         </div>
         <div
-          aria-labelledby="collapsible-1661419668701"
           class="collapse body"
           data-accordion-component="AccordionItemPanel"
-          id="collapsible-1661419668701"
           role="region"
           style="height: 0px;"
         >
@@ -56,7 +53,6 @@ Object {
       data-accordion-component="Accordion"
     >
       <div
-        aria-controls="collapsible-1661419668701"
         aria-expanded="false"
         class="header"
         data-accordion-component="AccordionItemButton"
@@ -84,10 +80,8 @@ Object {
         </div>
       </div>
       <div
-        aria-labelledby="collapsible-1661419668701"
         class="collapse body"
         data-accordion-component="AccordionItemPanel"
-        id="collapsible-1661419668701"
         role="region"
         style="height: 0px;"
       >
@@ -159,7 +153,6 @@ Object {
         data-accordion-component="Accordion"
       >
         <div
-          aria-controls="collapsible-1661419668701"
           aria-expanded="false"
           class="header headerDisabled"
           data-accordion-component="AccordionItemButton"
@@ -187,10 +180,8 @@ Object {
           </div>
         </div>
         <div
-          aria-labelledby="collapsible-1661419668701"
           class="collapse body"
           data-accordion-component="AccordionItemPanel"
-          id="collapsible-1661419668701"
           role="region"
           style="height: 0px;"
         >
@@ -205,7 +196,6 @@ Object {
       data-accordion-component="Accordion"
     >
       <div
-        aria-controls="collapsible-1661419668701"
         aria-expanded="false"
         class="header headerDisabled"
         data-accordion-component="AccordionItemButton"
@@ -233,10 +223,8 @@ Object {
         </div>
       </div>
       <div
-        aria-labelledby="collapsible-1661419668701"
         class="collapse body"
         data-accordion-component="AccordionItemPanel"
-        id="collapsible-1661419668701"
         role="region"
         style="height: 0px;"
       >
@@ -308,7 +296,6 @@ Object {
         data-accordion-component="Accordion"
       >
         <div
-          aria-controls="collapsible-1661419668701"
           aria-expanded="true"
           class="header headerOpen"
           data-accordion-component="AccordionItemButton"
@@ -336,10 +323,8 @@ Object {
           </div>
         </div>
         <div
-          aria-labelledby="collapsible-1661419668701"
           class="collapse body"
           data-accordion-component="AccordionItemPanel"
-          id="collapsible-1661419668701"
           role="region"
         >
            You’ll struggle to find any objective reasons to buy a Q3 Sportback over the standard Audi Q3. But, if you want to stand out, the Sportback is
@@ -353,7 +338,6 @@ Object {
       data-accordion-component="Accordion"
     >
       <div
-        aria-controls="collapsible-1661419668701"
         aria-expanded="true"
         class="header headerOpen"
         data-accordion-component="AccordionItemButton"
@@ -381,10 +365,8 @@ Object {
         </div>
       </div>
       <div
-        aria-labelledby="collapsible-1661419668701"
         class="collapse body"
         data-accordion-component="AccordionItemPanel"
-        id="collapsible-1661419668701"
         role="region"
       >
          You’ll struggle to find any objective reasons to buy a Q3 Sportback over the standard Audi Q3. But, if you want to stand out, the Sportback is
@@ -455,7 +437,6 @@ Object {
         data-accordion-component="Accordion"
       >
         <div
-          aria-controls="collapsible-1661419668701"
           aria-expanded="false"
           class="header"
           data-accordion-component="AccordionItemButton"
@@ -485,10 +466,8 @@ Object {
           </div>
         </div>
         <div
-          aria-labelledby="collapsible-1661419668701"
           class="collapse body"
           data-accordion-component="AccordionItemPanel"
-          id="collapsible-1661419668701"
           role="region"
           style="height: 0px;"
         >
@@ -503,7 +482,6 @@ Object {
       data-accordion-component="Accordion"
     >
       <div
-        aria-controls="collapsible-1661419668701"
         aria-expanded="false"
         class="header"
         data-accordion-component="AccordionItemButton"
@@ -533,10 +511,8 @@ Object {
         </div>
       </div>
       <div
-        aria-labelledby="collapsible-1661419668701"
         class="collapse body"
         data-accordion-component="AccordionItemPanel"
-        id="collapsible-1661419668701"
         role="region"
         style="height: 0px;"
       >

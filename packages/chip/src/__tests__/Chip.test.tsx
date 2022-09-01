@@ -53,7 +53,7 @@ describe('Chip', () => {
         <Chip variant="filter">{defaultChild} </Chip>,
       );
 
-      expect(container.firstElementChild).toHaveClass('chip_filter');
+      expect(container.firstElementChild).toHaveClass('filter');
     });
 
     it('should set choice `variant` class', () => {
@@ -61,7 +61,7 @@ describe('Chip', () => {
         <Chip variant="choice">{defaultChild} </Chip>,
       );
 
-      expect(container.firstElementChild).toHaveClass('chip_choice');
+      expect(container.firstElementChild).toHaveClass('choice');
     });
 
     it('should be selected ', () => {
@@ -71,7 +71,7 @@ describe('Chip', () => {
         </Chip>,
       );
 
-      expect(container.firstElementChild).toHaveClass('chip_selected');
+      expect(container.firstElementChild).toHaveClass('chipSelected');
     });
   });
 

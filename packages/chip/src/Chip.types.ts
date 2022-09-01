@@ -1,14 +1,24 @@
-export interface ChipProps {
+import { AnchorHTMLAttributes, MouseEventHandler } from 'react';
+
+export interface ComponentProps {
   /**
-   * Customize Chip text color
+   * Customize Chip type
    */
   variant?: 'filter' | 'choice';
+  /**
+   * Add on Delete callback
+   */
+  onDelete?: MouseEventHandler<HTMLElement>;
+  /**
+   * Add on click callback
+   */
+  onClick?: MouseEventHandler<HTMLElement>;
   /**
    * The content of the Chip
    */
   children: React.ReactNode;
   /**
-   * 	boolean to make chip disable.
+   * Boolean to make chip disable.
    */
   disabled?: boolean;
   /**
@@ -20,7 +30,19 @@ export interface ChipProps {
    */
   Component?: React.ElementType;
   /**
+   * Element placed after the children.
+   */
+  leftIcon?: React.ReactNode;
+  /**
+   * Element before after the children.
+   */
+  rightIcon?: React.ReactNode;
+  /**
    * The id for testing
    */
   dataTestId?: string;
 }
+
+type HTMLElementProps = ComponentProps & AnchorHTMLAttributes<HTMLElement>;
+
+export type ChipProps = Partial<HTMLElementProps>;
