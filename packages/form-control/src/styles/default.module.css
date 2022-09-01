@@ -1,47 +1,39 @@
-@import '../../themes/src/default.css';
+@import '../../../themes/src/default.css';
 
 :root {
-  --form-control-label-color: var(--color-light-text-secondary);
-  --form-control-hint-color: var(--color-light-text-secondary);
+  --form-control-label-color: #546272;
+  --form-control-hint-color: #546272;
 
   /* focus */
-  --form-control-focus-border-bottom: 1px solid var(--color-light-border-key);
-  --form-control-focus-bg-color: var(
-    --color-light-bg-primary-inverted-alpha-15
-  );
+  --form-control-focus-border-bottom: 1px solid #000;
+  --form-control-focus-bg-color: rgba(11, 31, 53, 0.15);
 
   /* error */
-  --form-control-error-color: var(--color-light-text-negative);
-  --form-control-error-label-color: var(--color-light-text-secondary);
+  --form-control-error-color: #d91d0b;
+  --form-control-error-label-color: #546272;
   --form-control-error-shadow: none;
-  --form-control-error-border-bottom: 1px solid
-    var(--color-static-border-accent);
-
-  /* disabled */
-  --form-control-disabled-bg-color: var(
-    --color-light-bg-primary-inverted-alpha-15
-  );
-  --form-control-disabled-border-bottom: 1px dashed
-    var(--color-light-border-secondary-inverted);
-  --form-control-disabled-color: var(--color-light-text-secondary);
-  --form-control-color: var(--color-light-text-primary);
-  --form-control-bg-color: var(--color-light-bg-primary-inverted-alpha-7);
+  --form-control-error-border-bottom: 1px solid #546272 /* disabled */;
+  --form-control-disabled-bg-color: rgba(11, 31, 53, 0.15);
+  --form-control-disabled-border-bottom: 1px dashed #b6bcc3;
+  --form-control-disabled-color: #546272;
+  --form-control-color: #0b1f35;
+  --form-control-bg-color: rgba(11, 31, 53, 0.07);
 
   /* paddings */
-  --form-control-s-min-height: var(--size-s-height);
-  --form-control-m-min-height: var(--size-m-height);
-  --form-control-l-min-height: var(--size-l-height);
-  --form-control-xl-min-height: var(--size-xl-height);
+  --form-control-s-min-height: 48px;
+  --form-control-m-min-height: 56px;
+  --form-control-l-min-height: 64px;
+  --form-control-xl-min-height: 72px;
   --form-control-border-radius: 4px 4px 0 0;
   --form-control-bg-backdrop-filter: unset;
 
   /* paddings */
-  --form-control-paddings: 0 var(--gap-s);
-  --form-control-xl-paddings: 0 var(--gap-m);
-  --form-control-labeled-s-paddings: 23px var(--gap-s) 5px;
-  --form-control-labeled-m-paddings: 28px var(--gap-s) 8px;
-  --form-control-labeled-l-paddings: 32px var(--gap-s) 12px;
-  --form-control-labeled-xl-paddings: 38px var(--gap-m) 14px;
+  --form-control-paddings: 0 12px;
+  --form-control-xl-paddings: 0 16px;
+  --form-control-labeled-s-paddings: 23px 12px 5px;
+  --form-control-labeled-m-paddings: 28px 12px 8px;
+  --form-control-labeled-l-paddings: 32px 12px 12px;
+  --form-control-labeled-xl-paddings: 38px 16px 14px;
   --form-control-sub-paddings: 0;
 
   /* disabled */
@@ -101,12 +93,10 @@
 }
 
 .label {
-  @mixin system_16-20_regular;
-
   position: absolute;
   display: flex;
   align-items: center;
-  left: var(--gap-s);
+  left: 12px;
   right: 0;
   transform-origin: left top;
   transform: translateY(-50%);
@@ -137,16 +127,14 @@
 }
 
 .leftAddons {
-  padding-left: var(--gap-s);
+  padding-left: 12px;
 }
 
 .rightAddons {
-  padding-right: var(--gap-s);
+  padding-right: 12px;
 }
 
 .sub {
-  @mixin system_14-18_regular;
-
   display: block;
   margin-top: var(--gap-2xs);
   padding: var(--form-control-sub-paddings);

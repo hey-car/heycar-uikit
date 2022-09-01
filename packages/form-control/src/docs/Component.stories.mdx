@@ -1,67 +1,24 @@
 import { Meta, Story, Props } from '@storybook/addon-docs';
 import { ComponentHeader, CssVars, TabContainer } from 'storybook/blocks';
 
-import Button from '../Button';
+import FormControl from '../FormControl';
 import { version } from '../../package.json';
-import Description from './Description.mdx';
 import Changelog from '../../CHANGELOG.md';
-import styles from '!!raw-loader!../styles/default.module.css';
-import sizeStyles from '!!raw-loader!../styles/size.module.css';
-import variantStyles from '!!raw-loader!../styles/variant.module.css';
 
 <!-- Meta -->
 
-<Meta
-  title="Components/Button"
-  component={Button}
-  argTypes={{
-    children: {
-      control: 'text',
-    },
-    Component: {
-      table: {
-        disable: true,
-      },
-    },
-    dataTestId: {
-      table: {
-        disable: true,
-      },
-    },
-    leftIcon: {
-      table: {
-        disable: true,
-      },
-    },
-    rightIcon: {
-      table: {
-        disable: true,
-      },
-    },
-  }}
-/>
+<Meta title="Components/FormControl" component={FormControl} />
 
-export const ButtonTemplate = args => <Button {...args} />;
+export const FormControlTemplate = args => <FormControl {...args} />;
 
 <!-- Canvas -->
 
-<Story
-  name="Button"
-  args={{
-    children: 'Button CTA',
-    variant: 'contained',
-    color: 'primary',
-    size: 'large',
-    loading: false,
-  }}
->
-  {ButtonTemplate.bind({})}
-</Story>
+<Story name="FormControl">{FormControlTemplate.bind({})}</Story>
 
 <!-- Docs -->
 
 <ComponentHeader
-  name="Button"
+  name="FormControl"
   version={version}
   stage={1}
   design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Design-System?node-id=1111%3A116509"
@@ -70,7 +27,7 @@ export const ButtonTemplate = args => <Button {...args} />;
 The Button component is used to trigger an action or event, such as submitting a form, opening a dialog, canceling an action, or performing a delete operation.
 
 ```tsx
-import Button from '@heycar-uikit/button';
+import FormControl from '@heycar-uikit/form-control';
 ```
 
 <!-- Description -->
@@ -78,17 +35,7 @@ import Button from '@heycar-uikit/button';
 <TabContainer
   tabs={[
     { label: 'Description', component: <Description /> },
-    { label: 'Props', component: <Props of={Button} /> },
-    {
-      label: 'CSS tokens',
-      component: (
-        <CssVars
-          css={`
-            ${styles}${sizeStyles}${variantStyles}
-          `}
-        />
-      ),
-    },
+    { label: 'Props', component: <Props of={FormControl} /> },
     { label: 'Changelog', component: <Changelog /> },
   ]}
 />
