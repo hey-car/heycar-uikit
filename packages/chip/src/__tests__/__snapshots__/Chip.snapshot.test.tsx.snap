@@ -9,21 +9,6 @@ Object {
         class="filter chip"
       >
         text
-        <span
-          class="chipCloseIcon"
-        >
-          <svg
-            class="svgIcon inherit"
-            data-test-id="CloseIcon"
-            focusable="false"
-            style="font-size: 24px;"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M13.4142 12L20.7071 4.70709L19.2928 3.29288L12 10.5858L4.70706 3.29288L3.29285 4.70709L10.5857 12L3.29285 19.2929L4.70706 20.7071L12 13.4142L19.2928 20.7071L20.7071 19.2929L13.4142 12Z"
-            />
-          </svg>
-        </span>
       </div>
     </div>
   </body>,
@@ -32,21 +17,6 @@ Object {
       class="filter chip"
     >
       text
-      <span
-        class="chipCloseIcon"
-      >
-        <svg
-          class="svgIcon inherit"
-          data-test-id="CloseIcon"
-          focusable="false"
-          style="font-size: 24px;"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M13.4142 12L20.7071 4.70709L19.2928 3.29288L12 10.5858L4.70706 3.29288L3.29285 4.70709L10.5857 12L3.29285 19.2929L4.70706 20.7071L12 13.4142L19.2928 20.7071L20.7071 19.2929L13.4142 12Z"
-          />
-        </svg>
-      </span>
     </div>
   </div>,
   "debug": [Function],
@@ -112,21 +82,6 @@ Object {
         class="filter chip"
       >
         text
-        <span
-          class="chipCloseIcon"
-        >
-          <svg
-            class="svgIcon inherit"
-            data-test-id="CloseIcon"
-            focusable="false"
-            style="font-size: 24px;"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M13.4142 12L20.7071 4.70709L19.2928 3.29288L12 10.5858L4.70706 3.29288L3.29285 4.70709L10.5857 12L3.29285 19.2929L4.70706 20.7071L12 13.4142L19.2928 20.7071L20.7071 19.2929L13.4142 12Z"
-            />
-          </svg>
-        </span>
       </span>
     </div>
   </body>,
@@ -135,21 +90,6 @@ Object {
       class="filter chip"
     >
       text
-      <span
-        class="chipCloseIcon"
-      >
-        <svg
-          class="svgIcon inherit"
-          data-test-id="CloseIcon"
-          focusable="false"
-          style="font-size: 24px;"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M13.4142 12L20.7071 4.70709L19.2928 3.29288L12 10.5858L4.70706 3.29288L3.29285 4.70709L10.5857 12L3.29285 19.2929L4.70706 20.7071L12 13.4142L19.2928 20.7071L20.7071 19.2929L13.4142 12Z"
-          />
-        </svg>
-      </span>
     </span>
   </div>,
   "debug": [Function],
@@ -215,21 +155,6 @@ Object {
         class="filter chip disabled"
       >
         text
-        <span
-          class="chipCloseIcon"
-        >
-          <svg
-            class="svgIcon inherit"
-            data-test-id="CloseIcon"
-            focusable="false"
-            style="font-size: 24px;"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M13.4142 12L20.7071 4.70709L19.2928 3.29288L12 10.5858L4.70706 3.29288L3.29285 4.70709L10.5857 12L3.29285 19.2929L4.70706 20.7071L12 13.4142L19.2928 20.7071L20.7071 19.2929L13.4142 12Z"
-            />
-          </svg>
-        </span>
       </div>
     </div>
   </body>,
@@ -238,21 +163,6 @@ Object {
       class="filter chip disabled"
     >
       text
-      <span
-        class="chipCloseIcon"
-      >
-        <svg
-          class="svgIcon inherit"
-          data-test-id="CloseIcon"
-          focusable="false"
-          style="font-size: 24px;"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M13.4142 12L20.7071 4.70709L19.2928 3.29288L12 10.5858L4.70706 3.29288L3.29285 4.70709L10.5857 12L3.29285 19.2929L4.70706 20.7071L12 13.4142L19.2928 20.7071L20.7071 19.2929L13.4142 12Z"
-          />
-        </svg>
-      </span>
     </div>
   </div>,
   "debug": [Function],
@@ -318,21 +228,6 @@ Object {
         class="filter chip chipSelected"
       >
         text
-        <span
-          class="chipCloseIcon"
-        >
-          <svg
-            class="svgIcon inherit"
-            data-test-id="CloseIcon"
-            focusable="false"
-            style="font-size: 24px;"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M13.4142 12L20.7071 4.70709L19.2928 3.29288L12 10.5858L4.70706 3.29288L3.29285 4.70709L10.5857 12L3.29285 19.2929L4.70706 20.7071L12 13.4142L19.2928 20.7071L20.7071 19.2929L13.4142 12Z"
-            />
-          </svg>
-        </span>
       </div>
     </div>
   </body>,
@@ -341,21 +236,6 @@ Object {
       class="filter chip chipSelected"
     >
       text
-      <span
-        class="chipCloseIcon"
-      >
-        <svg
-          class="svgIcon inherit"
-          data-test-id="CloseIcon"
-          focusable="false"
-          style="font-size: 24px;"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M13.4142 12L20.7071 4.70709L19.2928 3.29288L12 10.5858L4.70706 3.29288L3.29285 4.70709L10.5857 12L3.29285 19.2929L4.70706 20.7071L12 13.4142L19.2928 20.7071L20.7071 19.2929L13.4142 12Z"
-          />
-        </svg>
-      </span>
     </div>
   </div>,
   "debug": [Function],
@@ -421,21 +301,6 @@ Object {
         class="filter chip"
       >
         text
-        <span
-          class="chipCloseIcon"
-        >
-          <svg
-            class="svgIcon inherit"
-            data-test-id="CloseIcon"
-            focusable="false"
-            style="font-size: 24px;"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M13.4142 12L20.7071 4.70709L19.2928 3.29288L12 10.5858L4.70706 3.29288L3.29285 4.70709L10.5857 12L3.29285 19.2929L4.70706 20.7071L12 13.4142L19.2928 20.7071L20.7071 19.2929L13.4142 12Z"
-            />
-          </svg>
-        </span>
       </div>
     </div>
   </body>,
@@ -444,21 +309,6 @@ Object {
       class="filter chip"
     >
       text
-      <span
-        class="chipCloseIcon"
-      >
-        <svg
-          class="svgIcon inherit"
-          data-test-id="CloseIcon"
-          focusable="false"
-          style="font-size: 24px;"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M13.4142 12L20.7071 4.70709L19.2928 3.29288L12 10.5858L4.70706 3.29288L3.29285 4.70709L10.5857 12L3.29285 19.2929L4.70706 20.7071L12 13.4142L19.2928 20.7071L20.7071 19.2929L13.4142 12Z"
-          />
-        </svg>
-      </span>
     </div>
   </div>,
   "debug": [Function],
@@ -597,21 +447,6 @@ Object {
         class="filter chip"
       >
         text
-        <span
-          class="chipCloseIcon"
-        >
-          <svg
-            class="svgIcon inherit"
-            data-test-id="CloseIcon"
-            focusable="false"
-            style="font-size: 24px;"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M13.4142 12L20.7071 4.70709L19.2928 3.29288L12 10.5858L4.70706 3.29288L3.29285 4.70709L10.5857 12L3.29285 19.2929L4.70706 20.7071L12 13.4142L19.2928 20.7071L20.7071 19.2929L13.4142 12Z"
-            />
-          </svg>
-        </span>
       </div>
     </div>
   </body>,
@@ -620,21 +455,6 @@ Object {
       class="filter chip"
     >
       text
-      <span
-        class="chipCloseIcon"
-      >
-        <svg
-          class="svgIcon inherit"
-          data-test-id="CloseIcon"
-          focusable="false"
-          style="font-size: 24px;"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M13.4142 12L20.7071 4.70709L19.2928 3.29288L12 10.5858L4.70706 3.29288L3.29285 4.70709L10.5857 12L3.29285 19.2929L4.70706 20.7071L12 13.4142L19.2928 20.7071L20.7071 19.2929L13.4142 12Z"
-          />
-        </svg>
-      </span>
     </div>
   </div>,
   "debug": [Function],
