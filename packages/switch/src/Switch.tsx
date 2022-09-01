@@ -26,8 +26,4 @@ export const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
 
 Switch.displayName = 'Switch';
 
-Switch.defaultProps = {
-  disabled: false,
-};
-
 export default Switch;

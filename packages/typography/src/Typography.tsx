@@ -24,8 +24,4 @@ export const Typography: React.FC<TypographyProps> = ({
 
 Typography.displayName = 'Typography';
 
-Typography.defaultProps = {
-  variant: 'body3',
-};
-
 export default Typography;
