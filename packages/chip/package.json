@@ -1,0 +1,38 @@
+{
+  "name": "@heycar-uikit/chip",
+  "version": "0.0.1",
+  "description": "HeyCar-UIKit chip",
+  "main": "dist/index.js",
+  "module": "./dist/esm/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ui",
+    "uikit",
+    "react",
+    "components",
+    "heycar",
+    "typescript",
+    "ui-components",
+    "design-systems",
+    "chip"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hey-car/heycar-uikit.git"
+  },
+  "homepage": "https://github.com/hey-car/heycar-uikit/tree/main/packages/chip#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "react": "^17.0.1"
+  },
+  "dependencies": {
+    "@heycar-uikit/icons": "^1.5.1",
+    "classnames": "^2.3.1"
+  },
+  "author": "HeyCar Team",
+  "license": "UNLICENSED"
+}

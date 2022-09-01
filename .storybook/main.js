@@ -1,8 +1,9 @@
 const path = require('path');
-const componentResolver = require('./utils/componentsResolver');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
-
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
+const glob = require('glob');
+const appDirectory = path.resolve(__dirname, '../');
 const cssModuleRegex = /\.module\.css$/;
 const cssRegex = /\.css$/;
 
@@ -18,6 +19,14 @@ const addPackagesDir = config => {
   });
 };
 
+const getStories = () => {
+  const files = glob.sync(
+    `${appDirectory}/{docs,packages}/**/*.stories.@(ts|md)x`,
+  );
+
+  return files.filter(file => !file.includes('node_modules'));
+}
+
 module.exports = {
   core: {
     builder: 'webpack5',
@@ -26,10 +35,7 @@ module.exports = {
     '../packages/fonts/src',
     '../.storybook/public',
   ],
-  stories: [
-    '../docs/**/*.stories.@(ts|md)x',
-    '../packages/**/*.stories.@(ts|md)x',
-  ],
+  stories: async list => [...list, ...getStories()],
   addons: [
     '@storybook/preset-create-react-app',
     {
@@ -44,6 +50,9 @@ module.exports = {
     addPackagesDir(config);
 
     config.resolve.alias.storybook = path.resolve(__dirname);
+    config.resolve.plugins = [
+      new TsconfigPathsPlugin()
+    ];
 
     config.performance.hints = false;
 
@@ -57,7 +66,7 @@ module.exports = {
 
     group.oneOf[cssRuleIndex] = {
       test: cssRegex,
-      exclude: cssModuleRegex,
+      exclude: [cssModuleRegex],
       use: [
         {
           loader: MiniCssExtractPlugin.loader,
@@ -72,12 +81,12 @@ module.exports = {
             sourceMap: true,
           },
         },
-        'css-loader',
         'postcss-loader',
       ],
     };
     group.oneOf[cssModuleRuleIndex] = {
       test: cssModuleRegex,
+      exclude: /node_modules/,
       use: [
         {
           loader: MiniCssExtractPlugin.loader,

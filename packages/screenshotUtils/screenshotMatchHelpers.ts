@@ -1,11 +1,14 @@
 import { PageScreenshotOptions } from 'playwright';
-import { closeBrowser, matchHtml, openBrowserPage } from '.';
 import { delay } from 'q';
+
+import { closeBrowser, matchHtml, openBrowserPage } from '.';
 
 export const screenshotMatchClick = async (
   pageUrl: string,
   selector: string,
   screenshotOpts?: PageScreenshotOptions,
+  action: 'click' | 'down' = 'click',
+  delayTime = 150,
 ) => {
   const { browser, context, page } = await openBrowserPage(pageUrl);
 
@@ -16,10 +19,15 @@ export const screenshotMatchClick = async (
       const position = await element.boundingBox();
 
       if (position) {
-        await page.mouse.move(position.x, position.y);
-        await page.mouse.down();
+        if (action === 'click') {
+          await page.mouse.click(position.x, position.y);
+        } else if (action === 'down') {
+          await page.mouse.move(position.x, position.y);
+          await page.mouse.down();
+        }
+
         // Waiting for the rendering in case of a slight rendering lag
-        await delay(150);
+        await delay(delayTime);
       }
     }
     await matchHtml({

@@ -1,0 +1,29 @@
+@import '../../../themes/src/default.css';
+
+/*
+* Colors
+*/
+
+:root {
+  /* border */
+  --chip-border-color: var(--color-neutral-300);
+}
+
+/*
+* Choice
+*/
+
+.choice {
+  border: 1px solid var(--chip-border-color);
+  padding: var(--gap-s) var(--gap-2s);
+}
+
+/*
+* Filter
+*/
+
+.filter {
+  padding: var(--gap-1xs) var(--gap-s);
+  border: 1px solid var(--chip-border-color);
+  height: var(--gap-3xl);
+}

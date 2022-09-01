@@ -1,5 +1,5 @@
 {
-  "include": ["../src", "../../typings"],
+  "include": ["src", "../../typings"],
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "outDir": "dist",
@@ -8,5 +8,6 @@
     "paths": {
       "@heycar-uikit/*": ["../*/src"]
     }
-  }
+  },
+  "references": []
 }

@@ -5,7 +5,9 @@
     "outDir": "dist",
     "rootDirs": ["src"],
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@heycar-uikit/*": ["../*/src"]
+    }
   },
   "references": []
 }
