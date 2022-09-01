@@ -1,6 +1,6 @@
 {
   "name": "@heycar-uikit/collapse",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "HeyCar-UIKit Collapse",
   "main": "dist/index.js",
   "module": "./dist/esm/index.js",
