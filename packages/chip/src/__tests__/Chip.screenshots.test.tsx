@@ -30,3 +30,111 @@ describe(
     screenshotOpts: { clip },
   }),
 );
+
+describe(
+  'Chip children',
+  screenshotTesting({
+    cases: chipVariants.map(variant => [
+      'sprite',
+      createStorybookUrl({
+        packageName,
+        knobs: {
+          variant,
+          children: 'Test children',
+        },
+      }),
+    ]),
+    screenshotOpts: { clip },
+  }),
+);
+
+describe(
+  'Chip data-test-id',
+  screenshotTesting({
+    cases: chipVariants.map(variant => [
+      'sprite',
+      createStorybookUrl({
+        packageName,
+        knobs: {
+          variant,
+          children: chipLabel,
+          dataTestId: 'test id',
+        },
+      }),
+    ]),
+    screenshotOpts: { clip },
+  }),
+);
+
+describe(
+  'Chip Component',
+  screenshotTesting({
+    cases: chipVariants.map(variant => [
+      'sprite',
+      createStorybookUrl({
+        packageName,
+        knobs: {
+          variant,
+          children: chipLabel,
+          // eslint-disable-next-line @typescript-eslint/naming-convention
+          Component: 'span',
+        },
+      }),
+    ]),
+    screenshotOpts: { clip },
+  }),
+);
+
+describe(
+  'Chip disabled',
+  screenshotTesting({
+    cases: chipVariants.map(variant => [
+      'sprite',
+      createStorybookUrl({
+        packageName,
+        knobs: {
+          variant,
+          children: chipLabel,
+          disabled: true,
+        },
+      }),
+    ]),
+    screenshotOpts: { clip },
+  }),
+);
+
+describe(
+  'Chip selected',
+  screenshotTesting({
+    cases: chipVariants.map(variant => [
+      'sprite',
+      createStorybookUrl({
+        packageName,
+        knobs: {
+          variant,
+          children: chipLabel,
+          selected: true,
+        },
+      }),
+    ]),
+    screenshotOpts: { clip },
+  }),
+);
+
+describe(
+  'Chip leftIcon',
+  screenshotTesting({
+    cases: chipVariants.map(variant => [
+      'sprite',
+      createStorybookUrl({
+        packageName,
+        knobs: {
+          variant,
+          children: chipLabel,
+          leftIcon: 'leftIcon',
+        },
+      }),
+    ]),
+    screenshotOpts: { clip },
+  }),
+);
