@@ -1,6 +1,6 @@
 {
   "name": "@heycar-uikit/chip",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "HeyCar-UIKit chip",
   "main": "dist/index.js",
   "module": "./dist/esm/index.js",
