@@ -1,0 +1,210 @@
+@import '../../themes/src/default.css';
+
+:root {
+  --form-control-label-color: var(--color-light-text-secondary);
+  --form-control-hint-color: var(--color-light-text-secondary);
+
+  /* focus */
+  --form-control-focus-border-bottom: 1px solid var(--color-light-border-key);
+  --form-control-focus-bg-color: var(
+    --color-light-bg-primary-inverted-alpha-15
+  );
+
+  /* error */
+  --form-control-error-color: var(--color-light-text-negative);
+  --form-control-error-label-color: var(--color-light-text-secondary);
+  --form-control-error-shadow: none;
+  --form-control-error-border-bottom: 1px solid
+    var(--color-static-border-accent);
+
+  /* disabled */
+  --form-control-disabled-bg-color: var(
+    --color-light-bg-primary-inverted-alpha-15
+  );
+  --form-control-disabled-border-bottom: 1px dashed
+    var(--color-light-border-secondary-inverted);
+  --form-control-disabled-color: var(--color-light-text-secondary);
+  --form-control-color: var(--color-light-text-primary);
+  --form-control-bg-color: var(--color-light-bg-primary-inverted-alpha-7);
+
+  /* paddings */
+  --form-control-s-min-height: var(--size-s-height);
+  --form-control-m-min-height: var(--size-m-height);
+  --form-control-l-min-height: var(--size-l-height);
+  --form-control-xl-min-height: var(--size-xl-height);
+  --form-control-border-radius: 4px 4px 0 0;
+  --form-control-bg-backdrop-filter: unset;
+
+  /* paddings */
+  --form-control-paddings: 0 var(--gap-s);
+  --form-control-xl-paddings: 0 var(--gap-m);
+  --form-control-labeled-s-paddings: 23px var(--gap-s) 5px;
+  --form-control-labeled-m-paddings: 28px var(--gap-s) 8px;
+  --form-control-labeled-l-paddings: 32px var(--gap-s) 12px;
+  --form-control-labeled-xl-paddings: 38px var(--gap-m) 14px;
+  --form-control-sub-paddings: 0;
+
+  /* disabled */
+  --form-control-disabled-opacity: 1;
+
+  /* font */
+  --form-control-font-family: var(--font-family);
+}
+
+.component {
+  font-family: var(--form-control-font-family);
+  color: var(--form-control-color);
+  width: max-content;
+}
+
+.inner {
+  display: flex;
+  position: relative;
+  min-height: 100%;
+  backdrop-filter: var(--form-control-bg-backdrop-filter);
+  border-radius: var(--form-control-border-radius);
+  background-color: var(--form-control-bg-color);
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+  box-sizing: border-box;
+  outline: none;
+  transform: translateZ(0);
+}
+
+/* Нижняя граница */
+.inner:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 0;
+  transition: transform 0.2s ease, border 0.2s ease;
+  transform-origin: bottom;
+}
+
+.inputWrapper {
+  flex-grow: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.input {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.input > * {
+  padding: var(--form-control-paddings);
+  font-family: var(--form-control-font-family);
+}
+
+.label {
+  @mixin system_16-20_regular;
+
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: var(--gap-s);
+  right: 0;
+  transform-origin: left top;
+  transform: translateY(-50%);
+  transition-duration: 200ms;
+  transition-property: color, transform;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.label {
+  color: var(--form-control-label-color);
+}
+
+.hint {
+  color: var(--form-control-hint-color);
+}
+
+.labelInner {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.addons {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+}
+
+.leftAddons {
+  padding-left: var(--gap-s);
+}
+
+.rightAddons {
+  padding-right: var(--gap-s);
+}
+
+.sub {
+  @mixin system_14-18_regular;
+
+  display: block;
+  margin-top: var(--gap-2xs);
+  padding: var(--form-control-sub-paddings);
+}
+
+.block {
+  width: 100%;
+}
+
+/* DISABLED STATE */
+
+.disabled {
+  background-color: var(--form-control-disabled-bg-color);
+  color: var(--form-control-disabled-color);
+  opacity: var(--form-control-disabled-opacity);
+}
+
+/* FOCUS STATE */
+
+.focused:not(.disabled):before,
+.hasError:before {
+  transform: scaleY(2);
+}
+
+.filled .label {
+  transform: translateY(-100%) scale(0.875);
+}
+
+.focused:not(.disabled):not(.hasError):before {
+  border-bottom: var(--form-control-focus-border-bottom);
+}
+
+.focused.inner {
+  background-color: var(--form-control-focus-bg-color);
+}
+
+.hiddenLabel {
+  opacity: 0;
+  height: 0;
+  padding: var(--form-control-paddings);
+  display: block;
+  box-sizing: border-box;
+}
+
+/* ERROR STATE */
+
+.error {
+  color: var(--form-control-error-color);
+}
+
+.hasError .label {
+  color: var(--form-control-error-label-color);
+}
+
+.hasError {
+  box-shadow: var(--form-control-error-shadow);
+}
+
+.hasError:before {
+  border-bottom: var(--form-control-error-border-bottom);
+}
