@@ -23,7 +23,7 @@ import Description from './Description.mdx';
     return (
       <div>
         <Grid.Row>
-          <Grid.Col width={{ tablet: { m: 12 } }}>
+          <Grid.Col width={{ tablet: 12, tablet: { l: 12 } }}>
             <div style={{ ...style, background: '#164ca3', marginTop: 0 }}>
               12
             </div>
@@ -31,7 +31,7 @@ import Description from './Description.mdx';
         </Grid.Row>
         <Grid.Row>
           {[1, 2].map(key => (
-            <Grid.Col width={{ tablet: { m: 6 } }} key={key}>
+            <Grid.Col width={{ tablet: 6 }} key={key}>
               <div style={style}>6</div>
             </Grid.Col>
           ))}
