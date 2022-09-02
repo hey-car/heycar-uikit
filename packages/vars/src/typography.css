@@ -3,10 +3,10 @@
   --font-family-system: Objektiv, sans-serif, 'Helvetica Neue', Helvetica, Arial;
 
   /* Font weights */
-  --font-weight-regular: 300;
-  --font-weight-medium: 400;
-  --font-weight-bold: 500;
-  --font-weight-xbold: 600;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 600;
+  --font-weight-xbold: 800;
 }
 
 /*
@@ -106,6 +106,12 @@
 
 @define-mixin typography-subheading-2 {
   font-size: 16px;
+  font-weight: var(--font-weight-medium);
+  font-family: var(--font-family-system);
+}
+
+@define-mixin typography-subheading-3 {
+  font-size: 14px;
   font-weight: var(--font-weight-medium);
   font-family: var(--font-family-system);
 }
