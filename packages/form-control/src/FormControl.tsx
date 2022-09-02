@@ -11,8 +11,6 @@ const FormControl = React.forwardRef<HTMLDivElement, FormControlProps>(
       block = false,
       className,
       fieldClassName,
-      labelClassName,
-      addonsClassName,
       disabled,
       focused,
       filled,
@@ -33,7 +31,7 @@ const FormControl = React.forwardRef<HTMLDivElement, FormControlProps>(
       [styles.hasLeftAddons]: leftAddons,
       [styles.hasRightAddons]: rightAddons || error,
     });
-    const mainClassNames = cn(fieldClassName, styles.inner, {
+    const innerClassNames = cn(fieldClassName, styles.inner, {
       [styles.disabled]: disabled,
       [styles.filled]: filled,
       [styles.hasLabel]: label,
@@ -44,41 +42,43 @@ const FormControl = React.forwardRef<HTMLDivElement, FormControlProps>(
 
     return (
       <div className={wrapperClassNames} data-test-id={dataTestId}>
-        <div {...restProps} className={mainClassNames} ref={ref}>
+        <div {...restProps} className={innerClassNames} ref={ref}>
+          {/* Addon left */}
           {leftAddons && (
-            <div
-              className={cn(styles.addons, styles.leftAddons, addonsClassName)}
-            >
+            <div className={cn(styles.addons, styles.leftAddons)}>
               {leftAddons}
             </div>
           )}
           <div className={styles.inputWrapper}>
+            {/* Label*/}
             {label && (
               <React.Fragment>
                 <span aria-hidden={true} className={styles.hiddenLabel}>
                   {label}
                 </span>
-                <div className={cn(styles.label, labelClassName)}>
+                <div className={cn(styles.label)}>
                   <span className={styles.labelInner}>{label}</span>
                 </div>
               </React.Fragment>
             )}
             <div className={styles.input}>{children}</div>
           </div>
+          {/* Right addon */}
           {rightAddons && (
-            <div
-              className={cn(styles.addons, styles.rightAddons, addonsClassName)}
-            >
+            <div className={cn(styles.addons, styles.rightAddons)}>
               {rightAddons}
             </div>
           )}
         </div>
+        {/* Bottom addon */}
         {bottomAddons}
+        {/* Error message */}
         {errorMessage && (
           <span className={cn(styles.sub, styles.error)} role="alert">
             {errorMessage}
           </span>
         )}
+        {/* Hint */}
         {hint && !errorMessage && (
           <span className={cn(styles.sub, styles.hint)}>{hint}</span>
         )}

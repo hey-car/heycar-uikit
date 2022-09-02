@@ -62,16 +62,6 @@ export type FormControlProps = HTMLAttributes<HTMLDivElement> & {
   fieldClassName?: string;
 
   /**
-   * Дополнительный класс для лейбла
-   */
-  labelClassName?: string;
-
-  /**
-   * Дополнительный класс для аддонов
-   */
-  addonsClassName?: string;
-
-  /**
    * Идентификатор для систем автоматизированного тестирования
    */
   dataTestId?: string;

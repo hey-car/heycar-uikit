@@ -1,5 +1,5 @@
 import { Meta, Story, Props } from '@storybook/addon-docs';
-import { ComponentHeader, CssVars, TabContainer } from 'storybook/blocks';
+import { ComponentHeader, TabContainer } from 'storybook/blocks';
 
 import FormControl from '../FormControl';
 import { version } from '../../package.json';
@@ -9,11 +9,22 @@ import Changelog from '../../CHANGELOG.md';
 
 <Meta title="Components/FormControl" component={FormControl} />
 
-export const FormControlTemplate = args => <FormControl {...args} />;
-
 <!-- Canvas -->
 
-<Story name="FormControl">{FormControlTemplate.bind({})}</Story>
+<Story name="FormControl">
+  {React.createElement(() => {
+    return (
+      <FormControl
+        block={false}
+        disabled={false}
+        filled={false}
+        focused={false}
+        label={'label text'}
+        hint={'hint text'}
+      />
+    );
+  })}
+</Story>
 
 <!-- Docs -->
 
@@ -30,8 +41,7 @@ The Button component is used to trigger an action or event, such as submitting a
 import FormControl from '@heycar-uikit/form-control';
 ```
 
-<!-- Description -->
-
+<!-- Description
 <TabContainer
   tabs={[
     { label: 'Description', component: <Description /> },
@@ -39,3 +49,4 @@ import FormControl from '@heycar-uikit/form-control';
     { label: 'Changelog', component: <Changelog /> },
   ]}
 />
+ -->

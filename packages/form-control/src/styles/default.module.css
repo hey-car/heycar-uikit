@@ -1,12 +1,14 @@
 @import '../../../themes/src/default.css';
 
 :root {
-  --form-control-label-color: #546272;
-  --form-control-hint-color: #546272;
-
-  /* focus */
-  --form-control-focus-border-bottom: 1px solid #000;
-  --form-control-focus-bg-color: rgba(11, 31, 53, 0.15);
+  /* colors */
+  --form-control-base-border-color: var(--color-neutral-500);
+  --form-control-hover-border-color: var(--color-neutral-600);
+  --form-control-pressed-border-color: var(--color-primary-500);
+  --form-control-min-height: 48px;
+  --form-control-bg-backdrop-filter: unset;
+  --form-control-label-color: var(--color-neutral-700);
+  --form-control-hint-color: var(--color-neutral-700);
 
   /* error */
   --form-control-error-color: #d91d0b;
@@ -20,33 +22,32 @@
   --form-control-bg-color: rgba(11, 31, 53, 0.07);
 
   /* paddings */
-  --form-control-s-min-height: 48px;
-  --form-control-m-min-height: 56px;
-  --form-control-l-min-height: 64px;
-  --form-control-xl-min-height: 72px;
-  --form-control-border-radius: 4px 4px 0 0;
-  --form-control-bg-backdrop-filter: unset;
-
-  /* paddings */
   --form-control-paddings: 0 12px;
   --form-control-xl-paddings: 0 16px;
   --form-control-labeled-s-paddings: 23px 12px 5px;
-  --form-control-labeled-m-paddings: 28px 12px 8px;
   --form-control-labeled-l-paddings: 32px 12px 12px;
   --form-control-labeled-xl-paddings: 38px 16px 14px;
   --form-control-sub-paddings: 0;
 
   /* disabled */
   --form-control-disabled-opacity: 1;
-
-  /* font */
-  --form-control-font-family: var(--font-family);
 }
 
 .component {
-  font-family: var(--form-control-font-family);
-  color: var(--form-control-color);
+  font-family: var(--font-family-system);
   width: max-content;
+
+  & .inner {
+    min-height: var(--form-control-min-height);
+  }
+
+  & .hasLabel .input > * {
+    padding: 28px 12px 8px;
+  }
+
+  & .label {
+    top: calc(var(--form-control-min-height) / 2);
+  }
 }
 
 .inner {
@@ -54,24 +55,16 @@
   position: relative;
   min-height: 100%;
   backdrop-filter: var(--form-control-bg-backdrop-filter);
-  border-radius: var(--form-control-border-radius);
-  background-color: var(--form-control-bg-color);
-  transition: background 0.2s ease, box-shadow 0.2s ease;
+  transition: border 0.1s ease;
   box-sizing: border-box;
   outline: none;
-  transform: translateZ(0);
-}
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--form-control-base-border-color);
 
-/* Нижняя граница */
-.inner:before {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  height: 0;
-  transition: transform 0.2s ease, border 0.2s ease;
-  transform-origin: bottom;
+  &:hover {
+    border-color: var(--form-control-hover-border-color);
+  }
 }
 
 .inputWrapper {
@@ -89,37 +82,66 @@
 
 .input > * {
   padding: var(--form-control-paddings);
-  font-family: var(--form-control-font-family);
+  font-family: var(--font-family-system);
 }
 
+/*
+  Label
+*/
 .label {
   position: absolute;
   display: flex;
   align-items: center;
-  left: 12px;
+  left: var(--gap-m);
+  color: var(--form-control-label-color);
   right: 0;
   transform-origin: left top;
   transform: translateY(-50%);
   transition-duration: 200ms;
   transition-property: color, transform;
   transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+
+  @mixin typography-subheading-4;
+
+  & .labelInner {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 }
 
-.label {
-  color: var(--form-control-label-color);
+.hiddenLabel {
+  opacity: 0;
+  height: 0;
+  padding: var(--form-control-paddings);
+  display: block;
+  box-sizing: border-box;
 }
 
+/*
+  Hint
+*/
 .hint {
   color: var(--form-control-hint-color);
 }
 
-.labelInner {
-  width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+.sub {
+  display: block;
+  margin-top: var(--gap-2xs);
+  padding: var(--form-control-sub-paddings);
 }
 
+/*
+  Full width
+*/
+.block {
+  width: 100%;
+}
+
+/*
+  Addons
+*/
 .addons {
   display: flex;
   flex-shrink: 0;
@@ -134,53 +156,33 @@
   padding-right: 12px;
 }
 
-.sub {
-  display: block;
-  margin-top: var(--gap-2xs);
-  padding: var(--form-control-sub-paddings);
-}
-
-.block {
-  width: 100%;
-}
-
-/* DISABLED STATE */
-
+/*
+  Disabled state
+*/
 .disabled {
   background-color: var(--form-control-disabled-bg-color);
   color: var(--form-control-disabled-color);
   opacity: var(--form-control-disabled-opacity);
 }
 
-/* FOCUS STATE */
+/*
+  Filled state
+*/
+.filled .label {
+  transform: translateY(-100%) scale(0.875);
+}
 
+/*
+  Focus state
+*/
 .focused:not(.disabled):before,
 .hasError:before {
   transform: scaleY(2);
 }
 
-.filled .label {
-  transform: translateY(-100%) scale(0.875);
-}
-
-.focused:not(.disabled):not(.hasError):before {
-  border-bottom: var(--form-control-focus-border-bottom);
-}
-
-.focused.inner {
-  background-color: var(--form-control-focus-bg-color);
-}
-
-.hiddenLabel {
-  opacity: 0;
-  height: 0;
-  padding: var(--form-control-paddings);
-  display: block;
-  box-sizing: border-box;
-}
-
-/* ERROR STATE */
-
+/*
+  Error state
+*/
 .error {
   color: var(--form-control-error-color);
 }
