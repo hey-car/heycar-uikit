@@ -33,7 +33,7 @@ export const ComponentHeader: React.FC<ComponentHeaderProps> = ({
     <div className={styles.component}>
       <Title>{name}</Title>
       <div className={styles.version}>{version}</div>
-      {stage && <Status stage={stage} />}
+      {stage != null && stage !== undefined && <Status stage={stage} />}
       <div className={styles.links}>
         <div className={styles.github}>
           <a href={githubLink} target="_blank">
