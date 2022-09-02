@@ -9,16 +9,15 @@ describe('Grid utils', () => {
       'offset-tablet-s-1': 'offset-tablet-s-1_prefix',
       'offset-tablet-m-1': 'offset-tablet-m-1_prefix',
       'gutter-mobile-8': 'gutter-mobile-8_prefix',
-      'gutter-mobile-s-8': 'gutter-mobile-s-8_prefix',
-      'gutter-mobile-m-8': 'gutter-mobile-m-8_prefix',
-      'gutter-mobile-l-8': 'gutter-mobile-l-8_prefix',
       'gutter-tablet-12': 'gutter-tablet-12_prefix',
-      'gutter-tablet-s-12': 'gutter-tablet-s-12_prefix',
-      'gutter-tablet-m-12': 'gutter-tablet-m-12_prefix',
-      'gutter-tablet-l-12': 'gutter-tablet-l-12_prefix',
       'gutter-desktop-16': 'gutter-desktop-16_prefix',
+    };
+
+    const gutterStyles = {
+      'gutter-tablet-s-12': 'gutter-tablet-s-12_prefix',
+      'gutter-tablet-l-16': 'gutter-tablet-l-16_prefix',
       'gutter-desktop-s-16': 'gutter-desktop-s-16_prefix',
-      'gutter-desktop-m-24': 'gutter-desktop-m-24_prefix',
+      'gutter-desktop-m-16': 'gutter-desktop-m-16_prefix',
       'gutter-desktop-l-24': 'gutter-desktop-l-24_prefix',
     };
 
@@ -29,9 +28,9 @@ describe('Grid utils', () => {
           order: 1,
           width: 'auto',
           gutter: {
-            mobile: { s: 1, m: 8, l: 8 },
-            tablet: { s: 12, m: 12, l: 12 },
-            desktop: { s: 16, m: 24, l: 24 },
+            mobile: 8,
+            tablet: 12,
+            desktop: 16,
           },
           offset: {
             mobile: 1,
@@ -46,18 +45,34 @@ describe('Grid utils', () => {
     ).toEqual([
       'order-1_prefix',
       'width-auto_prefix',
-      undefined,
-      'gutter-mobile-m-8_prefix',
-      'gutter-mobile-l-8_prefix',
-      'gutter-tablet-s-12_prefix',
-      'gutter-tablet-m-12_prefix',
-      'gutter-tablet-l-12_prefix',
-      'gutter-desktop-s-16_prefix',
-      'gutter-desktop-m-24_prefix',
-      'gutter-desktop-l-24_prefix',
+      'gutter-mobile-8_prefix',
+      'gutter-tablet-12_prefix',
+      'gutter-desktop-16_prefix',
       'offset-mobile-1_prefix',
       'offset-tablet-s-1_prefix',
       'offset-tablet-m-1_prefix',
+    ]);
+
+    expect(getGridClassNames({}, styles)).toEqual([]);
+
+    expect(
+      getGridClassNames(
+        {
+          gutter: {
+            mobile: 1,
+            tablet: { s: 12, l: 16 },
+            desktop: { s: 16, m: 16, l: 24 },
+          },
+        },
+        gutterStyles,
+      ),
+    ).toEqual([
+      undefined,
+      'gutter-tablet-s-12_prefix',
+      'gutter-tablet-l-16_prefix',
+      'gutter-desktop-s-16_prefix',
+      'gutter-desktop-m-16_prefix',
+      'gutter-desktop-l-24_prefix',
     ]);
   });
 });

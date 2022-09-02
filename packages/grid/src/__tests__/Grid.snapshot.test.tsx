@@ -10,7 +10,7 @@ describe('Grid Snapshots tests', () => {
         <Grid.Row>
           <Grid.Col
             width={{
-              mobile: { s: 12, m: 6 },
+              mobile: 12,
             }}
           >
             Hello

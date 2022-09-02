@@ -63,8 +63,8 @@
   }
 }
 
-@each $breakpoint in mobile, mobile-s, mobile-m, mobile-l, tablet, tablet-s,
-  tablet-m, tablet-l, desktop, desktop-s, desktop-m, desktop-l
+@each $breakpoint in mobile, tablet, tablet-s, tablet-l, desktop, desktop-s,
+  desktop-m, desktop-l
 {
   @media (--$(breakpoint)) {
     .width-$(breakpoint)-auto {

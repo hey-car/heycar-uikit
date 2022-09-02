@@ -3,7 +3,7 @@
 exports[`Grid.Row Snapshots tests should match snapshot 1`] = `
 <div>
   <div
-    class="row component between gutter-mobile-s-16 gutter-desktop-m-24"
+    class="row component between gutter-mobile-8 gutter-tablet-s-12 gutter-tablet-l-16 gutter-desktop-s-16 gutter-desktop-m-16 gutter-desktop-l-24"
   >
     <div
       class="col component"
