@@ -24,6 +24,7 @@ Describe your changes (or add ticket description) and add relevant screenshots
 - [ ] `npm run lint` - to check for linting issues
 - [ ] `npm run test` - to run unit tests
 - [ ] `npm run test:sh:docker` - to run screenhots tests, before running this command, please do not forget to run `npm run start`
+- [ ] `npm run test:sh:update` - to update screenhots tests, before running this command, please do not forget to run `npm run start`
 
 ### New Feature / Bug Fix
 
