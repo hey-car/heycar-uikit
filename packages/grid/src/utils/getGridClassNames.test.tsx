@@ -24,6 +24,12 @@ describe('Grid utils', () => {
     expect(getGridClassNames({}, styles)).toEqual([]);
     expect(
       getGridClassNames(
+        { gutter: { mobile: undefined, tablet: { s: undefined } } },
+        styles,
+      ),
+    ).toEqual([]);
+    expect(
+      getGridClassNames(
         {
           order: 1,
           width: 'auto',
