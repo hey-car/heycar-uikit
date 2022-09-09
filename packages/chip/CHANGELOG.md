@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.2](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/chip@0.1.0...@heycar-uikit/chip@0.1.2) (2022-09-09)
+
+
+### Bug Fixes
+
+* **icon:** removed the default fill color from Youtube and Tiktok Svg ([#74](https://github.com/hey-car/heycar-uikit/issues/74)) ([fa7d54b](https://github.com/hey-car/heycar-uikit/commit/fa7d54bf0af5b5bb0463459ad25fce8079a21336))
+
+
+
+
+
 # 0.1.0 (2022-09-01)
 
 
