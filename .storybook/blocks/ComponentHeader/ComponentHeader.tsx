@@ -8,20 +8,16 @@ import styles from './ComponentHeader.module.css';
 type ComponentHeaderProps = {
   name: string;
   version?: string;
-  npmPackage?: string;
   stage: number;
   status?: string;
   design?: string;
-  children?: ReactNode;
 };
 
 export const ComponentHeader: React.FC<ComponentHeaderProps> = ({
   name,
   version,
-  npmPackage,
   stage,
   design,
-  children,
 }) => {
   const packageName = name
     .replace(/([a-z0-9])([A-Z])/g, '$1-$2')
@@ -33,7 +29,7 @@ export const ComponentHeader: React.FC<ComponentHeaderProps> = ({
     <div className={styles.component}>
       <Title>{name}</Title>
       <div className={styles.version}>{version}</div>
-      {stage && <Status stage={stage} />}
+      {Number.isInteger(stage) && <Status stage={stage} />}
       <div className={styles.links}>
         <div className={styles.github}>
           <a href={githubLink} target="_blank">
