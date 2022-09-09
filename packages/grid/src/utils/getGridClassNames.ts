@@ -39,8 +39,11 @@ function getGridClassNames(
       } else {
         const value = prop[breakpoint];
 
-        styles[`${name}-${breakpoint}-${value}`] &&
-          classNames.push(styles[`${name}-${breakpoint}-${value}`]);
+        classNames.push(
+          styles[`${name}-${breakpoint}-${value}`]
+            ? styles[`${name}-${breakpoint}-${value}`]
+            : '',
+        );
       }
     });
   });

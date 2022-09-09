@@ -73,6 +73,7 @@ describe('Grid utils', () => {
         gutterStyles,
       ),
     ).toEqual([
+      '',
       'gutter-tablet-s-12_prefix',
       'gutter-tablet-l-16_prefix',
       'gutter-desktop-s-16_prefix',
