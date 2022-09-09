@@ -39,12 +39,17 @@ export type FormControlProps = HTMLAttributes<HTMLDivElement> & {
   /**
    * Слот слева
    */
-  leftAddons?: ReactNode;
+  leftIcon?: ReactNode;
 
   /**
    * Слот справа
    */
   rightAddons?: ReactNode;
+
+  /**
+   * Слот справа
+   */
+  rightIcon?: ReactNode;
 
   /**
    * Слот под полем

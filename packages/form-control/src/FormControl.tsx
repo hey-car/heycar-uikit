@@ -17,8 +17,9 @@ const FormControl = React.forwardRef<HTMLDivElement, FormControlProps>(
       error,
       hint,
       label,
-      leftAddons,
+      leftIcon,
       rightAddons,
+      rightIcon,
       bottomAddons,
       children,
       dataTestId,
@@ -28,15 +29,19 @@ const FormControl = React.forwardRef<HTMLDivElement, FormControlProps>(
   ) => {
     const wrapperClassNames = cn(styles.component, className, {
       [styles.block]: block,
-      [styles.hasLeftAddons]: leftAddons,
-      [styles.hasRightAddons]: rightAddons || error,
+      [styles.hasLeftIcon]: leftIcon,
+      // [styles.hasRightAddons]: rightAddons || error,
+      [styles.disabled]: disabled,
+      [styles.hasError]: error,
     });
     const innerClassNames = cn(fieldClassName, styles.inner, {
-      [styles.disabled]: disabled,
       [styles.filled]: filled,
-      [styles.hasLabel]: label,
+      // [styles.hasLabel]: label,
       [styles.focused]: focused,
-      [styles.hasError]: error,
+    });
+    const rightAddonsClassNames = cn(styles.addons, {
+      [styles.rightAddons]: rightAddons,
+      [styles.rightIcon]: rightIcon,
     });
     const errorMessage = typeof error === 'boolean' ? '' : error;
 
@@ -44,29 +49,32 @@ const FormControl = React.forwardRef<HTMLDivElement, FormControlProps>(
       <div className={wrapperClassNames} data-test-id={dataTestId}>
         <div {...restProps} className={innerClassNames} ref={ref}>
           {/* Addon left */}
-          {leftAddons && (
-            <div className={cn(styles.addons, styles.leftAddons)}>
-              {leftAddons}
-            </div>
+          {leftIcon && (
+            <div className={cn(styles.addons, styles.leftIcon)}>{leftIcon}</div>
           )}
           <div className={styles.inputWrapper}>
             {/* Label*/}
             {label && (
               <React.Fragment>
-                <span aria-hidden={true} className={styles.hiddenLabel}>
+                {/* <span aria-hidden={true} className={styles.hiddenLabel}>
                   {label}
-                </span>
-                <div className={cn(styles.label)}>
+                </span> */}
+                <label className={styles.label}>
                   <span className={styles.labelInner}>{label}</span>
-                </div>
+                </label>
               </React.Fragment>
             )}
             <div className={styles.input}>{children}</div>
           </div>
+          <fieldset aria-hidden="true" className={styles.fieldset}>
+            <legend className={styles.legend}>
+              <span>{label}</span>
+            </legend>
+          </fieldset>
           {/* Right addon */}
-          {rightAddons && (
-            <div className={cn(styles.addons, styles.rightAddons)}>
-              {rightAddons}
+          {(rightAddons || rightIcon) && (
+            <div className={rightAddonsClassNames}>
+              {rightAddons || rightIcon}
             </div>
           )}
         </div>

@@ -4,6 +4,7 @@ import { ComponentHeader, TabContainer } from 'storybook/blocks';
 import FormControl from '../FormControl';
 import { version } from '../../package.json';
 import Changelog from '../../CHANGELOG.md';
+import { Clock } from '../../../icons/src';
 
 <!-- Meta -->
 
@@ -13,15 +14,26 @@ import Changelog from '../../CHANGELOG.md';
 
 <Story name="FormControl">
   {React.createElement(() => {
+    const [state, setState] = React.useState(false);
     return (
-      <FormControl
-        block={false}
-        disabled={false}
-        filled={false}
-        focused={false}
-        label={'label text'}
-        hint={'hint text'}
-      />
+      <div>
+        <FormControl
+          leftIcon={<Clock />}
+          block={false}
+          disabled={false}
+          filled={state}
+          focused={false}
+          label={'Label'}
+          hint={'This is the placeholder for error note'}
+        />
+        <button
+          onClick={() => {
+            setState(!state);
+          }}
+        >
+          click me
+        </button>
+      </div>
     );
   })}
 </Story>
