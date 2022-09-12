@@ -23,7 +23,7 @@ Describe your changes (or add ticket description) and add relevant screenshots
 - [ ] `npm i` – for new NPM dependencies.
 - [ ] `npm run lint` - to check for linting issues
 - [ ] `npm run test` - to run unit tests
-- [ ] `npm run test:screenshots` - to run snapshot tests
+- [ ] `npm run test:sh:docker` - to run screenshot tests, [detail instruction](https://hey-car.github.io/heycar-uikit/main/?path=/docs/guidelines-screenshot-testing--page)
 
 ### New Feature / Bug Fix
 

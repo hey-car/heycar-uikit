@@ -5,20 +5,28 @@
 
 ## Screenshot testing
 
-In order to start working with screenshot testing locally, you need to start `Storybook`:
+In order to start working with screenshot testing locally
+
+So that screenshot tests are matched correctly, they should be created in a similar OS (Ubuntu).
+In order to generate and update screenshot tests locally
+
+- You need to install [docker](https://www.docker.com/) on your local machine, then run the next command.
+
+- You need to launch docker on your local machine
+
+- You need to start `Storybook`:
 
 ```bash
 $ npm run start
 ```
 
-So that screenshot tests are matched correctly, they should be created in a similar OS (Ubuntu).
-In order to generate and update screenshot tests locally, you need to install [docker](https://www.docker.com/) on your local machine, then run the next command.
+- You need to execute the command for checking screenshots tests
 
 ```bash
 $ npm run test:sh:docker
 ```
 
-Then use the following command to update the screenshot images locally:
+- Then use the following command to update the screenshot images locally:
 
 ```bash
 $ npm run test:sh:update
@@ -51,5 +59,5 @@ When you change the screenshot, a folder appears`__diff_output__`, where you can
 If the changes need to be accepted, then update the screenshots:
 
 ```bash
-$ npm run test:screenshots -- -u
+$ npm run test:sh:update
 ```
