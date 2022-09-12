@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.5.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/button@1.4.0...@heycar-uikit/button@1.5.0) (2022-09-12)
+
+
+### Features
+
+* **button:** add focus state accessibility on button component ([#75](https://github.com/hey-car/heycar-uikit/issues/75)) ([88c194e](https://github.com/hey-car/heycar-uikit/commit/88c194e1486b21dc2819a2c687c53086d5d1cd2d))
+
+
+
+
+
 # [1.4.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/button@1.3.0...@heycar-uikit/button@1.4.0) (2022-09-01)
 
 
