@@ -94,6 +94,24 @@ describe('Button', () => {
   });
 
   /**
+   * Props tests
+   */
+  describe('Props tests', () => {
+    it('should not be miltiline', () => {
+      const className = 'test-class';
+      const longTextChild =
+        'Button CTA Button CTA Button CTA Button CTA Button CTA Button CTA Button CTA Button CTA Button CTA';
+      const { container } = render(
+        <Button children={longTextChild} className={className} />,
+      );
+      const buttonContainerWidth = container.clientHeight;
+      const buttonWidth = container.firstElementChild?.clientHeight;
+
+      expect(buttonWidth).toEqual(buttonContainerWidth);
+    });
+  });
+
+  /**
    * Callbacks tests
    */
   describe('Callbacks tests', () => {
