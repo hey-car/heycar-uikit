@@ -6,6 +6,22 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 # [1.6.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/button@1.6.0...@heycar-uikit/button@1.6.0) (2022-09-14)
 
 
+### Bug Fixes
+
+* **button:** prevent multiline text on buttons ([#78](https://github.com/hey-car/heycar-uikit/issues/78)) ([f832039](https://github.com/hey-car/heycar-uikit/commit/f83203934013ccbe9813744b08e93c670f9708a4))
+
+
+### Features
+
+* **button:** export ButtonProps ([3f12886](https://github.com/hey-car/heycar-uikit/commit/3f12886a83e79f9eae0647ecedc06236b1a2f5cd))
+
+
+
+
+
+# [1.6.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/button@1.6.0...@heycar-uikit/button@1.6.0) (2022-09-14)
+
+
 ### Features
 
 * **button:** export ButtonProps ([3f12886](https://github.com/hey-car/heycar-uikit/commit/3f12886a83e79f9eae0647ecedc06236b1a2f5cd))

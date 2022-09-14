@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.7.2](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/icons@1.7.0...@heycar-uikit/icons@1.7.2) (2022-09-14)
+
+
+### Bug Fixes
+
+* **button:** prevent multiline text on buttons ([#78](https://github.com/hey-car/heycar-uikit/issues/78)) ([f832039](https://github.com/hey-car/heycar-uikit/commit/f83203934013ccbe9813744b08e93c670f9708a4))
+
+
+
+
+
 # [1.7.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/icons@1.6.2...@heycar-uikit/icons@1.7.0) (2022-09-12)
 
 

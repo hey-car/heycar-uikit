@@ -1,3 +1,10 @@
+## [1.17.1](https://github.com/hey-car/heycar-uikit/compare/v1.17.0...v1.17.1) (2022-09-14)
+
+
+### Bug Fixes
+
+* **button:** prevent multiline text on buttons ([#78](https://github.com/hey-car/heycar-uikit/issues/78)) ([f832039](https://github.com/hey-car/heycar-uikit/commit/f83203934013ccbe9813744b08e93c670f9708a4))
+
 # [1.17.0](https://github.com/hey-car/heycar-uikit/compare/v1.16.0...v1.17.0) (2022-09-14)
 
 
