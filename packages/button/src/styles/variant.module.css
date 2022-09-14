@@ -46,7 +46,8 @@
     @mixin button_color var(--button-primary-hover-bg-color);
   }
 
-  &:active {
+  &:active,
+  &:focus-visible {
     @mixin button_color var(--button-primary-active-bg-color);
   }
 }
@@ -59,7 +60,8 @@
     @mixin button_color var(--button-tertiary-hover-bg-color);
   }
 
-  &:active {
+  &:active,
+  &:focus-visible {
     @mixin button_color var(--button-tertiary-active-bg-color);
   }
 }
@@ -99,7 +101,7 @@
     height: 100%;
     border-style: solid;
     border-width: 1px;
-    border-colot: currentColor;
+    border-color: currentColor;
     box-sizing: border-box;
     z-index: 0;
   }
@@ -112,8 +114,12 @@
     }
   }
 
-  &:active {
+  &:active,
+  &:focus-visible {
     background: none;
+    &:after {
+      border-width: 2px;
+    }
   }
 
   &.tertiary {
@@ -143,7 +149,8 @@
     text-decoration-thickness: 2px;
   }
 
-  &:active {
+  &:active,
+  &:focus-visible {
     background: transparent;
   }
 

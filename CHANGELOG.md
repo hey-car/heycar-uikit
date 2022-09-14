@@ -1,3 +1,38 @@
+# [1.17.0](https://github.com/hey-car/heycar-uikit/compare/v1.16.0...v1.17.0) (2022-09-14)
+
+
+### Features
+
+* **button:** export ButtonProps ([3f12886](https://github.com/hey-car/heycar-uikit/commit/3f12886a83e79f9eae0647ecedc06236b1a2f5cd))
+
+# [1.16.0](https://github.com/hey-car/heycar-uikit/compare/v1.15.0...v1.16.0) (2022-09-14)
+
+
+### Features
+
+* **button:** add export ButtonProps interface ([#79](https://github.com/hey-car/heycar-uikit/issues/79)) ([a542c9d](https://github.com/hey-car/heycar-uikit/commit/a542c9db9fb1a9ffab64be8a4e918b4aa018100c))
+
+# [1.15.0](https://github.com/hey-car/heycar-uikit/compare/v1.14.2...v1.15.0) (2022-09-12)
+
+
+### Features
+
+* **button:** add focus state accessibility on button component ([#75](https://github.com/hey-car/heycar-uikit/issues/75)) ([88c194e](https://github.com/hey-car/heycar-uikit/commit/88c194e1486b21dc2819a2c687c53086d5d1cd2d))
+
+## [1.14.2](https://github.com/hey-car/heycar-uikit/compare/v1.14.1...v1.14.2) (2022-09-09)
+
+
+### Bug Fixes
+
+* fixing  the internal storybook component ComponentHeader for the header of the doc section  ([#73](https://github.com/hey-car/heycar-uikit/issues/73)) ([3b54637](https://github.com/hey-car/heycar-uikit/commit/3b54637614551f48c86deabea72a0840dba0f153))
+
+## [1.14.1](https://github.com/hey-car/heycar-uikit/compare/v1.14.0...v1.14.1) (2022-09-09)
+
+
+### Bug Fixes
+
+* **icon:** removed the default fill color from Youtube and Tiktok Svg ([#74](https://github.com/hey-car/heycar-uikit/issues/74)) ([fa7d54b](https://github.com/hey-car/heycar-uikit/commit/fa7d54bf0af5b5bb0463459ad25fce8079a21336))
+
 # [1.14.0](https://github.com/hey-car/heycar-uikit/compare/v1.13.0...v1.14.0) (2022-09-01)
 
 
