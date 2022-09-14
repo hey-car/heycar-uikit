@@ -116,6 +116,12 @@
   font-family: var(--font-family-system);
 }
 
+@define-mixin typography-subheading-4 {
+  font-size: 16px;
+  font-weight: var(--font-weight-regular);
+  font-family: var(--font-family-system);
+}
+
 /*
   Body
 */

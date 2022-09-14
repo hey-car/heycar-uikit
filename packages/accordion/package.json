@@ -30,7 +30,7 @@
     "react": "^17.0.1"
   },
   "dependencies": {
-    "@heycar-uikit/collapse": "^1.1.0",
+    "@heycar-uikit/collapse": "^1.1.1",
     "@heycar-uikit/icons": "^1.7.2",
     "classnames": "^2.3.1"
   },
