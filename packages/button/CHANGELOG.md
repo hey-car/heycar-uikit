@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.6.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/button@1.6.0...@heycar-uikit/button@1.6.0) (2022-09-14)
+
+
+### Features
+
+* **button:** export ButtonProps ([3f12886](https://github.com/hey-car/heycar-uikit/commit/3f12886a83e79f9eae0647ecedc06236b1a2f5cd))
+
+
+
+
+
 # [1.6.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/button@1.5.0...@heycar-uikit/button@1.6.0) (2022-09-14)
 
 
