@@ -1,3 +1,10 @@
+# [1.16.0](https://github.com/hey-car/heycar-uikit/compare/v1.15.0...v1.16.0) (2022-09-14)
+
+
+### Features
+
+* **button:** add export ButtonProps interface ([#79](https://github.com/hey-car/heycar-uikit/issues/79)) ([a542c9d](https://github.com/hey-car/heycar-uikit/commit/a542c9db9fb1a9ffab64be8a4e918b4aa018100c))
+
 # [1.15.0](https://github.com/hey-car/heycar-uikit/compare/v1.14.2...v1.15.0) (2022-09-12)
 
 
