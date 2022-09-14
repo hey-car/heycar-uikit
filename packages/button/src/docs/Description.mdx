@@ -84,20 +84,16 @@ render(
           </Button>
         </Col>
       ))}
-    </Row>
-    <Row align="middle">
-      {buttonColors.map(color => (
-        <Col key={color}>
-          <Button size="large" variant="outlined" color={color}>
-            Button CTA
-          </Button>
-        </Col>
-      ))}
-    </Row>
-    <Row align="middle">
       <Col key="whatsapp">
         <Button size="large" color="whatsapp">
           WhatsApp
+        </Button>
+      </Col>
+    </Row>
+    <Row align="middle">
+      <Col key="primary">
+        <Button size="large" variant="outlined" color="primary">
+          Button CTA
         </Button>
       </Col>
     </Row>

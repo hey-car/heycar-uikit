@@ -9,7 +9,7 @@ const packageName = 'button';
 const buttonSelector = '#root button';
 const buttonLabel = 'Button CTA';
 const buttonVariants = ['contained', 'outlined', 'link'];
-const buttonColors = ['primary', 'tertiary', 'whatsapp'];
+const buttonColors = ['primary', 'tertiary'];
 const buttonSizes = ['small', 'large'];
 const clip = { x: 0, y: 0, width: 200, height: 100 };
 const screenshotTesting = setupScreenshotTesting({
@@ -69,6 +69,27 @@ describe(
         },
       }),
     ]),
+    screenshotOpts: { clip },
+  }),
+);
+
+describe(
+  'Whatsapp button colors size=large',
+  screenshotTesting({
+    cases: [
+      [
+        'sprite',
+        createStorybookUrl({
+          packageName,
+          knobs: {
+            color: 'whatsapp',
+            size: 'middle',
+            children: 'WhatsApp',
+            label: 'WhatsApp',
+          },
+        }),
+      ],
+    ],
     screenshotOpts: { clip },
   }),
 );
