@@ -1,3 +1,10 @@
+# [1.18.0](https://github.com/hey-car/heycar-uikit/compare/v1.17.1...v1.18.0) (2022-09-14)
+
+
+### Features
+
+* **form-control:** the first implementation of the FormControl ([#82](https://github.com/hey-car/heycar-uikit/issues/82)) ([a677e41](https://github.com/hey-car/heycar-uikit/commit/a677e416511f411ee1389e42081963dd127254a9))
+
 ## [1.17.1](https://github.com/hey-car/heycar-uikit/compare/v1.17.0...v1.17.1) (2022-09-14)
 
 
