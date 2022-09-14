@@ -8,9 +8,8 @@ import styles from './styles/default.module.css';
 const FormControl = React.forwardRef<HTMLDivElement, FormControlProps>(
   (
     {
-      block = false,
+      fullWidth = false,
       className,
-      fieldClassName,
       disabled,
       focused,
       filled,
@@ -28,13 +27,13 @@ const FormControl = React.forwardRef<HTMLDivElement, FormControlProps>(
     ref,
   ) => {
     const wrapperClassNames = cn(styles.component, className, {
-      [styles.block]: block,
+      [styles.fullWidth]: fullWidth,
       [styles.hasLeftIcon]: leftIcon,
       // [styles.hasRightAddons]: rightAddons || error,
       [styles.disabled]: disabled,
       [styles.hasError]: error,
     });
-    const innerClassNames = cn(fieldClassName, styles.inner, {
+    const innerClassNames = cn(styles.inner, {
       [styles.filled]: filled,
       // [styles.hasLabel]: label,
       [styles.focused]: focused,
@@ -48,17 +47,12 @@ const FormControl = React.forwardRef<HTMLDivElement, FormControlProps>(
     return (
       <div className={wrapperClassNames} data-test-id={dataTestId}>
         <div {...restProps} className={innerClassNames} ref={ref}>
-          {/* Addon left */}
           {leftIcon && (
             <div className={cn(styles.addons, styles.leftIcon)}>{leftIcon}</div>
           )}
           <div className={styles.inputWrapper}>
-            {/* Label*/}
             {label && (
               <React.Fragment>
-                {/* <span aria-hidden={true} className={styles.hiddenLabel}>
-                  {label}
-                </span> */}
                 <label className={styles.label}>
                   <span className={styles.labelInner}>{label}</span>
                 </label>
@@ -71,22 +65,18 @@ const FormControl = React.forwardRef<HTMLDivElement, FormControlProps>(
               <span>{label}</span>
             </legend>
           </fieldset>
-          {/* Right addon */}
           {(rightAddons || rightIcon) && (
             <div className={rightAddonsClassNames}>
               {rightAddons || rightIcon}
             </div>
           )}
         </div>
-        {/* Bottom addon */}
         {bottomAddons}
-        {/* Error message */}
         {errorMessage && (
           <span className={cn(styles.sub, styles.error)} role="alert">
             {errorMessage}
           </span>
         )}
-        {/* Hint */}
         {hint && !errorMessage && (
           <span className={cn(styles.sub, styles.hint)}>{hint}</span>
         )}

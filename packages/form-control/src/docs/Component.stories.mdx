@@ -1,42 +1,20 @@
 import { Meta, Story, Props } from '@storybook/addon-docs';
-import { ComponentHeader, TabContainer } from 'storybook/blocks';
+import {
+  ComponentHeader,
+  CssVars,
+  Container,
+  TabContainer,
+} from 'storybook/blocks';
 
 import FormControl from '../FormControl';
 import { version } from '../../package.json';
 import Changelog from '../../CHANGELOG.md';
 import { Clock } from '../../../icons/src';
+import styles from '!!raw-loader!../styles/default.module.css';
 
 <!-- Meta -->
 
 <Meta title="Components/FormControl" component={FormControl} />
-
-<!-- Canvas -->
-
-<Story name="FormControl">
-  {React.createElement(() => {
-    const [state, setState] = React.useState(false);
-    return (
-      <div>
-        <FormControl
-          leftIcon={<Clock />}
-          block={false}
-          disabled={false}
-          filled={state}
-          focused={false}
-          label={'Label'}
-          hint={'This is the placeholder for error note'}
-        />
-        <button
-          onClick={() => {
-            setState(!state);
-          }}
-        >
-          click me
-        </button>
-      </div>
-    );
-  })}
-</Story>
 
 <!-- Docs -->
 
@@ -44,21 +22,44 @@ import { Clock } from '../../../icons/src';
   name="FormControl"
   version={version}
   stage={1}
-  design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Design-System?node-id=1111%3A116509"
+  design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Global-Design-System?node-id=1426%3A39722"
 />
 
-The Button component is used to trigger an action or event, such as submitting a form, opening a dialog, canceling an action, or performing a delete operation.
+The basic component for building input fields is input, textarea, etc.
 
 ```tsx
 import FormControl from '@heycar-uikit/form-control';
 ```
 
-<!-- Description
+```tsx live
+render(
+  <Container>
+    <FormControl
+      leftIcon={<Clock />}
+      fullWidth={false}
+      disabled={false}
+      filled={true}
+      focused={true}
+      label={'Label'}
+      hint={'This is the placeholder for error note'}
+    />
+  </Container>,
+);
+```
+
 <TabContainer
   tabs={[
-    { label: 'Description', component: <Description /> },
     { label: 'Props', component: <Props of={FormControl} /> },
+    {
+      label: 'CSS tokens',
+      component: (
+        <CssVars
+          css={`
+            ${styles}
+          `}
+        />
+      ),
+    },
     { label: 'Changelog', component: <Changelog /> },
   ]}
 />
- -->
