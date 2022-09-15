@@ -74,7 +74,7 @@ describe(
 );
 
 describe(
-  'Whatsapp button colors size=large',
+  'Whatsapp button colors size=middle',
   screenshotTesting({
     cases: [
       [
@@ -84,7 +84,7 @@ describe(
           knobs: {
             color: 'whatsapp',
             size: 'middle',
-            children: 'WhatsApp',
+            Children: 'WhatsApp',
           },
         }),
       ],
