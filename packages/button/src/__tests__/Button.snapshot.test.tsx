@@ -25,7 +25,9 @@ describe('Button Snapshots tests', () => {
   });
 
   it('should render whatsapp color', () => {
-    expect(render(<Button color="whatsapp" />)).toMatchSnapshot();
+    expect(
+      render(<Button color="whatsapp" children="WhatsApp" />),
+    ).toMatchSnapshot();
   });
 
   it('should render button by default', () => {

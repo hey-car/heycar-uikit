@@ -85,7 +85,6 @@ describe(
             color: 'whatsapp',
             size: 'middle',
             children: 'WhatsApp',
-            label: 'WhatsApp',
           },
         }),
       ],

@@ -755,7 +755,9 @@ Object {
       >
         <span
           class="text"
-        />
+        >
+          WhatsApp
+        </span>
       </button>
     </div>
   </body>,
@@ -765,7 +767,9 @@ Object {
     >
       <span
         class="text"
-      />
+      >
+        WhatsApp
+      </span>
     </button>
   </div>,
   "debug": [Function],
