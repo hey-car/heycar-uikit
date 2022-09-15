@@ -84,7 +84,7 @@ describe(
           knobs: {
             color: 'whatsapp',
             size: 'middle',
-            Children: 'WhatsApp',
+            children: 'WhatsApp',
           },
         }),
       ],
