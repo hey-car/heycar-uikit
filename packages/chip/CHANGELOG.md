@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.2](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/chip@0.2.0...@heycar-uikit/chip@0.2.2) (2022-09-14)
+
+
+### Bug Fixes
+
+* **button:** prevent multiline text on buttons ([#78](https://github.com/hey-car/heycar-uikit/issues/78)) ([f832039](https://github.com/hey-car/heycar-uikit/commit/f83203934013ccbe9813744b08e93c670f9708a4))
+
+
+
+
+
 # [0.2.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/chip@0.1.2...@heycar-uikit/chip@0.2.0) (2022-09-12)
 
 

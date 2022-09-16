@@ -1,7 +1,7 @@
 {
-  "name": "@heycar-uikit/switch",
-  "version": "1.3.0",
-  "description": "HeyCar-UIKit Switch",
+  "name": "@heycar-uikit/form-control",
+  "version": "1.1.0",
+  "description": "HeyCar-UIKit FormControl",
   "main": "dist/index.js",
   "module": "./dist/esm/index.js",
   "scripts": {
@@ -16,14 +16,13 @@
     "typescript",
     "ui-components",
     "design-systems",
-    "switch",
-    "toggle"
+    "FormControl"
   ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hey-car/heycar-uikit.git"
   },
-  "homepage": "https://github.com/hey-car/heycar-uikit/tree/main/packages/switch#readme",
+  "homepage": "https://github.com/hey-car/heycar-uikit/tree/main/packages/formControl#readme",
   "publishConfig": {
     "access": "public"
   },
