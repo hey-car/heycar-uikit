@@ -1,0 +1,68 @@
+import { Meta, Story, Props } from '@storybook/addon-docs';
+import {
+  ComponentHeader,
+  CssVars,
+  Container,
+  TabContainer,
+} from 'storybook/blocks';
+
+import Input from '../Input';
+import { version } from '../../package.json';
+import Changelog from '../../CHANGELOG.md';
+import { Clock } from '../../../icons/src';
+import styles from '!!raw-loader!../styles/default.module.css';
+
+<!-- Meta -->
+
+<Meta title="Components/Input" component={Input} />
+
+<!-- Canvas -->
+
+<Story name="Input">
+  {React.createElement(() => {
+    const [value, setValue] = React.useState('value');
+    const handleInputChange = (event, { value }) => setValue(value);
+    return (
+      <Input
+        leftIcon={<Clock />}
+        label="label"
+        onChange={handleInputChange}
+        value={value}
+      />
+    );
+  })}
+</Story>
+
+<!-- Docs -->
+
+<ComponentHeader
+  name="Input"
+  version={version}
+  stage={1}
+  design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Global-Design-System?node-id=1426%3A39722"
+/>
+
+The basic component for building input fields is input, textarea, etc.
+
+```tsx
+import Input from '@heycar-uikit/input';
+```
+
+<!--
+
+<TabContainer
+  tabs={[
+    { label: 'Props', component: <Props of={FormControl} /> },
+    {
+      label: 'CSS tokens',
+      component: (
+        <CssVars
+          css={`
+            ${styles}
+          `}
+        />
+      ),
+    },
+    { label: 'Changelog', component: <Changelog /> },
+  ]}
+/> -->

@@ -1,0 +1,52 @@
+@import '../../../themes/src/default.css';
+
+:root {
+  /* Color */
+  --input-color: var(--color-neutral-900);
+  --input-caret-color: var(--color-neutral-900);
+  --input-placeholder-color: var(--color-neutral-900);
+  --input-disabled-color: var(--color-neutral-300);
+}
+
+.input {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: none;
+  margin: 0;
+  outline: none;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+
+  padding: 0 0 0 16px;
+
+  color: var(--input-color);
+  caret-color: var(--input-caret-color);
+  @mixin typography-subheading-4;
+}
+
+.input:-webkit-autofill {
+  -webkit-text-fill-color: var(--input-color);
+}
+
+.input::placeholder {
+  color: var(--input-placeholder-color);
+}
+
+.input:disabled {
+  color: var(--input-disabled-color);
+  -webkit-text-fill-color: var(--input-disabled-color);
+  cursor: var(--disabled-cursor);
+  opacity: 1;
+}
+
+.input:read-only {
+  color: var(--input-disabled-color);
+
+  &:focus::placeholder {
+    color: var(--input-disabled-color);
+  }
+}
