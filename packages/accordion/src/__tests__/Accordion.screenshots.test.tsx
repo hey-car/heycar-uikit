@@ -1,3 +1,5 @@
+import { delay } from 'q';
+
 import {
   closeBrowser,
   createStorybookUrl,
@@ -25,6 +27,8 @@ describe('Accordion screenshots', () => {
       undefined,
       viewPort,
     );
+
+    await delay(300);
 
     try {
       await matchHtml({
