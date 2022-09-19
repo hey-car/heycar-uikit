@@ -30,10 +30,10 @@
   box-sizing: border-box;
   text-decoration: none;
   border-style: solid;
-  font-weight: 500;
   background-color: var(--pill-background-color);
   color: var(--pill-text-color);
   @mixin typography-subheading-3;
+  font-weight: 500;
 }
 
 /*
