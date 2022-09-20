@@ -21,11 +21,15 @@
   box-sizing: border-box;
   -webkit-appearance: none;
 
-  padding: 0 0 0 16px;
+  padding-left: var(--gap-m);
 
   color: var(--input-color);
   caret-color: var(--input-caret-color);
   @mixin typography-subheading-4;
+}
+
+.hasLeftIcon {
+  padding-left: var(--gap-xs);
 }
 
 .input:-webkit-autofill {

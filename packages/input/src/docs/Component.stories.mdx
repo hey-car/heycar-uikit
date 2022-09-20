@@ -7,30 +7,83 @@ import {
 } from 'storybook/blocks';
 
 import Input from '../Input';
+import Description from './Description.mdx';
 import { version } from '../../package.json';
 import Changelog from '../../CHANGELOG.md';
-import { Clock } from '../../../icons/src';
+import { Clock, Calendar } from '../../../icons/src';
 import styles from '!!raw-loader!../styles/default.module.css';
 
 <!-- Meta -->
 
-<Meta title="Components/Input" component={Input} />
+<Meta
+  title="Components/Input"
+  component={Input}
+  argTypes={{
+    label: {
+      control: 'text',
+      defaultValue: 'Label',
+    },
+    error: {
+      control: 'text',
+    },
+    disabled: {
+      control: 'boolean',
+    },
+    leftIcon: {
+      control: 'boolean',
+    },
+    rightIcon: {
+      control: 'boolean',
+    },
+    rightAddons: {
+      table: {
+        disable: true,
+      },
+    },
+    fullWidth: {
+      control: 'boolean',
+    },
+    dataTestId: {
+      table: {
+        disable: true,
+      },
+    },
+    defaultValue: {
+      table: {
+        disable: true,
+      },
+    },
+    hint: {
+      table: {
+        disable: true,
+      },
+    },
+  }}
+/>
+
+export const InputTemplate = args => {
+  const { leftIcon, rightIcon } = args;
+  const maxWidth = args.fullWidth ? '700px' : '250px';
+  if (leftIcon) args.leftIcon = <Clock />;
+  else delete args.leftIcon;
+  if (rightIcon) args.rightIcon = <Calendar />;
+  return (
+    <div style={{ maxWidth, margin: '0 auto' }}>
+      <Input {...args} />
+    </div>
+  );
+};
 
 <!-- Canvas -->
 
-<Story name="Input">
-  {React.createElement(() => {
-    const [value, setValue] = React.useState('value');
-    const handleInputChange = (event, { value }) => setValue(value);
-    return (
-      <Input
-        leftIcon={<Clock />}
-        label="label"
-        onChange={handleInputChange}
-        value={value}
-      />
-    );
-  })}
+<Story
+  name="Input"
+  args={{
+    label: 'Label',
+    value: 'Placeholder',
+  }}
+>
+  {InputTemplate.bind({})}
 </Story>
 
 <!-- Docs -->
@@ -42,17 +95,16 @@ import styles from '!!raw-loader!../styles/default.module.css';
   design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Global-Design-System?node-id=1426%3A39722"
 />
 
-The basic component for building input fields is input, textarea, etc.
+Input component is a component that is used to get user input in a text field.
 
 ```tsx
 import Input from '@heycar-uikit/input';
 ```
 
-<!--
-
 <TabContainer
   tabs={[
-    { label: 'Props', component: <Props of={FormControl} /> },
+    { label: 'Description', component: <Description /> },
+    { label: 'Props', component: <Props of={Input} /> },
     {
       label: 'CSS tokens',
       component: (
@@ -65,4 +117,4 @@ import Input from '@heycar-uikit/input';
     },
     { label: 'Changelog', component: <Changelog /> },
   ]}
-/> -->
+/>

@@ -25,12 +25,15 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
       onFocus,
       onBlur,
       onChange,
+      className,
       dataTestId,
       ...restProps
     },
     ref,
   ) => {
-    const inputClassNames = cn(styles.input);
+    const inputClassNames = cn(styles.input, className, {
+      [styles.hasLeftIcon]: leftIcon,
+    });
     const isUncontrolled = value === undefined;
     const ariaLabel = typeof label === 'string' ? label : undefined;
     const [isFocused, setFocused] = useState(restProps.autoFocus);
