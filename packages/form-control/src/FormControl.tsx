@@ -29,13 +29,11 @@ const FormControl = React.forwardRef<HTMLDivElement, FormControlProps>(
     const wrapperClassNames = cn(styles.component, className, {
       [styles.fullWidth]: fullWidth,
       [styles.hasLeftIcon]: leftIcon,
-      // [styles.hasRightAddons]: rightAddons || error,
       [styles.disabled]: disabled,
       [styles.hasError]: error,
     });
     const innerClassNames = cn(styles.inner, {
       [styles.filled]: filled,
-      // [styles.hasLabel]: label,
       [styles.focused]: focused,
     });
     const rightAddonsClassNames = cn(styles.addons, {
@@ -62,7 +60,7 @@ const FormControl = React.forwardRef<HTMLDivElement, FormControlProps>(
           </div>
           <fieldset aria-hidden="true" className={styles.fieldset}>
             <legend className={styles.legend}>
-              <span>{label}</span>
+              {label && <span>{label}</span>}
             </legend>
           </fieldset>
           {(rightAddons || rightIcon) && (

@@ -46,7 +46,7 @@
             )
           )
         )
-        translateX(-28px);
+        translateX(calc(var(--gap-3xl) * -1));
     }
   }
 
@@ -197,7 +197,7 @@
 }
 
 .leftIcon {
-  padding-left: var(--gap-s);
+  padding-left: var(--gap-m);
 }
 
 .rightIcon {

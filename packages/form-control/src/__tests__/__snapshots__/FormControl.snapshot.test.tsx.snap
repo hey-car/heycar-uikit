@@ -24,9 +24,7 @@ Object {
           >
             <legend
               class="legend"
-            >
-              <span />
-            </legend>
+            />
           </fieldset>
         </div>
       </div>
@@ -52,9 +50,7 @@ Object {
         >
           <legend
             class="legend"
-          >
-            <span />
-          </legend>
+          />
         </fieldset>
       </div>
     </div>
@@ -137,9 +133,7 @@ Object {
           >
             <legend
               class="legend"
-            >
-              <span />
-            </legend>
+            />
           </fieldset>
         </div>
         <span
@@ -171,9 +165,7 @@ Object {
         >
           <legend
             class="legend"
-          >
-            <span />
-          </legend>
+          />
         </fieldset>
       </div>
       <span
@@ -262,9 +254,7 @@ Object {
           >
             <legend
               class="legend"
-            >
-              <span />
-            </legend>
+            />
           </fieldset>
         </div>
         <div>
@@ -293,9 +283,7 @@ Object {
         >
           <legend
             class="legend"
-          >
-            <span />
-          </legend>
+          />
         </fieldset>
       </div>
       <div>
@@ -381,9 +369,7 @@ Object {
           >
             <legend
               class="legend"
-            >
-              <span />
-            </legend>
+            />
           </fieldset>
         </div>
         <span
@@ -415,9 +401,7 @@ Object {
         >
           <legend
             class="legend"
-          >
-            <span />
-          </legend>
+          />
         </fieldset>
       </div>
       <span
@@ -506,9 +490,7 @@ Object {
           >
             <legend
               class="legend"
-            >
-              <span />
-            </legend>
+            />
           </fieldset>
         </div>
         <span
@@ -539,9 +521,7 @@ Object {
         >
           <legend
             class="legend"
-          >
-            <span />
-          </legend>
+          />
         </fieldset>
       </div>
       <span
@@ -779,9 +759,7 @@ Object {
           >
             <legend
               class="legend"
-            >
-              <span />
-            </legend>
+            />
           </fieldset>
         </div>
       </div>
@@ -814,9 +792,7 @@ Object {
         >
           <legend
             class="legend"
-          >
-            <span />
-          </legend>
+          />
         </fieldset>
       </div>
     </div>
@@ -899,9 +875,7 @@ Object {
           >
             <legend
               class="legend"
-            >
-              <span />
-            </legend>
+            />
           </fieldset>
           <div
             class="addons rightAddons"
@@ -934,9 +908,7 @@ Object {
         >
           <legend
             class="legend"
-          >
-            <span />
-          </legend>
+          />
         </fieldset>
         <div
           class="addons rightAddons"
