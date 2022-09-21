@@ -1,6 +1,6 @@
 {
   "name": "@heycar-uikit/button",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "description": "HeyCar-UIKit button",
   "main": "dist/index.js",
   "module": "./dist/esm/index.js",

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.7.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/themes@1.5.2...@heycar-uikit/themes@1.7.0) (2022-09-21)
+
+
+### Features
+
+* **button:** add whatsapp color for buttons according to new design ([#80](https://github.com/hey-car/heycar-uikit/issues/80)) ([4c8917f](https://github.com/hey-car/heycar-uikit/commit/4c8917f8a9f2196e9f55518ee10c945ac200915f))
+
+
+
+
+
 ## [1.5.2](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/themes@1.5.0...@heycar-uikit/themes@1.5.2) (2022-09-16)
 
 **Note:** Version bump only for package @heycar-uikit/themes
