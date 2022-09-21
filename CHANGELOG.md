@@ -1,3 +1,10 @@
+# [1.20.0](https://github.com/hey-car/heycar-uikit/compare/v1.19.0...v1.20.0) (2022-09-21)
+
+
+### Features
+
+* **button:** add whatsapp color for buttons according to new design ([#80](https://github.com/hey-car/heycar-uikit/issues/80)) ([4c8917f](https://github.com/hey-car/heycar-uikit/commit/4c8917f8a9f2196e9f55518ee10c945ac200915f))
+
 # [1.19.0](https://github.com/hey-car/heycar-uikit/compare/v1.18.0...v1.19.0) (2022-09-16)
 
 
