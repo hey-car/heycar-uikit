@@ -300,3 +300,15 @@
 .championship-white {
   background-color: var(--color-championship-white);
 }
+
+/* Whatsapp */
+
+.whatsapp-500 {
+  background-color: var(--color-whatsapp-500);
+}
+.whatsapp-600 {
+  background-color: var(--color-whatsapp-600);
+}
+.whatsapp-700 {
+  background-color: var(--color-whatsapp-700);
+}

@@ -73,6 +73,26 @@ describe(
   }),
 );
 
+describe(
+  'Whatsapp button colors size=middle',
+  screenshotTesting({
+    cases: [
+      [
+        'sprite',
+        createStorybookUrl({
+          packageName,
+          knobs: {
+            color: 'whatsapp',
+            size: 'middle',
+            children: 'WhatsApp',
+          },
+        }),
+      ],
+    ],
+    screenshotOpts: { clip },
+  }),
+);
+
 describe('Button events tests', () => {
   test('Button hover event', async () => {
     const pageUrl = createStorybookUrl({

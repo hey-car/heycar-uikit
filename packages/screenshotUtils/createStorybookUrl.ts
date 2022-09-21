@@ -7,10 +7,10 @@ export function createStorybookUrl({
   moduleName,
   knobs = {},
 }: CreateStorybookUrlParams) {
-  const knobsQuery = Object.keys(knobs).reduce(
-    (acc, knobName) => `${acc};${knobName}:${knobs[knobName]}`,
-    '',
-  );
+  const knobsQuery = Object.keys(knobs)
+    .reduce((acc, knobName) => `${acc};${knobName}:${knobs[knobName]}`, '')
+    .substring(1);
+
   const componentPath = `-${packageName}--${moduleName || packageName}`;
 
   return `${url}?id=components${componentPath}&args=${knobsQuery}`;

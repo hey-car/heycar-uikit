@@ -19,6 +19,12 @@
   --button-tertiary-base-bg-color: var(--color-tertiary-500);
   --button-tertiary-hover-bg-color: var(--color-tertiary-600);
   --button-tertiary-active-bg-color: var(--color-tertiary-700);
+
+  /* whatsapp */
+  --button-whatsapp-color: #fff;
+  --button-whatsapp-base-bg-color: var(--color-whatsapp-500);
+  --button-whatsapp-hover-bg-color: var(--color-whatsapp-600);
+  --button-whatsapp-active-bg-color: var(--color-whatsapp-700);
 }
 
 /*
@@ -66,6 +72,20 @@
   }
 }
 
+/* whatsapp */
+.whatsapp {
+  @mixin button_color var(--button-whatsapp-base-bg-color);
+
+  &:hover {
+    @mixin button_color var(--button-whatsapp-hover-bg-color);
+  }
+
+  &:active,
+  &:focus-visible {
+    @mixin button_color var(--button-whatsapp-active-bg-color);
+  }
+}
+
 /*
 * Variants
 */
@@ -78,6 +98,10 @@
 
   &.tertiary {
     color: var(--button-tertiary-color);
+  }
+
+  &.whatsapp {
+    color: var(--button-primary-color);
   }
 
   &:disabled,

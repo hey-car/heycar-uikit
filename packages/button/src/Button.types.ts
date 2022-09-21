@@ -12,7 +12,7 @@ export interface ComponentProps {
   /**
    * Set the color of the button
    */
-  color?: 'primary' | 'tertiary';
+  color?: 'primary' | 'tertiary' | 'whatsapp';
   /**
    * View of the button
    */

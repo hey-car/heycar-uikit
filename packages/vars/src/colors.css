@@ -71,6 +71,11 @@
   --color-green-800: #0c381f;
   --color-green-900: #061c0f;
 
+  /* -- fantasy name of "whatsapp" color to be defined -- */
+  --color-whatsapp-500: #59ce72;
+  --color-whatsapp-600: #33a84c;
+  --color-whatsapp-700: #148a2d;
+
   /* -- fantasy name of "red" color to be defined -- */
   --color-red-50: #fdeeee;
   --color-red-100: #fbdddd;
