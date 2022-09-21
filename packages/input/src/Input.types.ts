@@ -11,7 +11,7 @@ export type InputProps = Omit<
   /**
    * Type of the `input` element. It should be a valid HTML5 input type.
    */
-  type?: 'number' | 'card' | 'email' | 'money' | 'password' | 'tel' | 'text';
+  type?: 'number' | 'email' | 'password' | 'tel' | 'text';
   /**
    * 	The default value. Use when the component is not controlled
    */
