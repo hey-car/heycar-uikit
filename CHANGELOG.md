@@ -1,3 +1,10 @@
+# [1.19.0](https://github.com/hey-car/heycar-uikit/compare/v1.18.0...v1.19.0) (2022-09-16)
+
+
+### Features
+
+* **icons:** Added the Other icon ([#83](https://github.com/hey-car/heycar-uikit/issues/83)) ([f998025](https://github.com/hey-car/heycar-uikit/commit/f998025a3dbb51cc8904dc6d2c2b1cfa36e60cf5))
+
 # [1.18.0](https://github.com/hey-car/heycar-uikit/compare/v1.17.1...v1.18.0) (2022-09-14)
 
 

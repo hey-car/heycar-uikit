@@ -1,6 +1,6 @@
 {
   "name": "@heycar-uikit/core",
-  "version": "1.18.0",
+  "version": "1.19.0",
   "description": "The React UI library from HeyCar",
   "author": "HeyCar Team",
   "main": "index.js",
@@ -195,10 +195,6 @@
       "prettier --write",
       "stylelint"
     ]
-  },
-  "engines": {
-    "npm": ">=8.0.0",
-    "node": ">=17.0.0"
   },
   "husky": {
     "hooks": {

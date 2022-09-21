@@ -54,6 +54,7 @@ export * from './paths/Minus';
 export * from './paths/MinusCircle';
 export * from './paths/MVP';
 export * from './paths/NewCar';
+export * from './paths/Others';
 export * from './paths/ParkingCamera';
 export * from './paths/Play';
 export * from './paths/PlusCircle';
