@@ -1,24 +1,5 @@
 @import '../../../themes/src/default.css';
 
-/* stylelint-disable comment-empty-line-before */
-@for $i from 8 to 24 by 4 {
-  .row.gutter-$(i) {
-    /* prettier-ignore */
-    margin-left: calc(-$(i)px / 2);
-
-    /* prettier-ignore */
-    margin-right: calc(-$(i)px / 2);
-
-    & > .col {
-      /* prettier-ignore */
-      padding-left: calc($(i)px / 2);
-
-      /* prettier-ignore */
-      padding-right: calc($(i)px / 2);
-    }
-  }
-}
-
 @each $breakpoint in mobile, tablet, tablet-s, tablet-l, desktop, desktop-s,
   desktop-m, desktop-l
 {
