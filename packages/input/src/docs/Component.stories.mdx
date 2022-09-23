@@ -20,28 +20,39 @@ import styles from '!!raw-loader!../styles/default.module.css';
   component={Input}
   argTypes={{
     label: {
-      control: 'text',
+      name: 'label',
+      type: { name: 'string' },
       defaultValue: 'Label',
     },
+    value: {
+      name: 'value',
+      type: { name: 'string' },
+      defaultValue: 'Placeholder',
+    },
     error: {
-      control: 'text',
+      name: 'error',
+      type: { name: 'string' },
+      defaultValue: '',
     },
     disabled: {
-      control: 'boolean',
+      name: 'disabled',
+      type: { name: 'boolean' },
+      defaultValue: false,
     },
     leftIcon: {
-      control: 'boolean',
+      name: 'left icon',
+      type: { name: 'boolean' },
+      defaultValue: false,
     },
     rightIcon: {
-      control: 'boolean',
-    },
-    rightAddons: {
-      table: {
-        disable: true,
-      },
+      name: 'right icon',
+      type: { name: 'boolean' },
+      defaultValue: false,
     },
     fullWidth: {
-      control: 'boolean',
+      name: 'full width',
+      type: { name: 'boolean' },
+      defaultValue: false,
     },
     dataTestId: {
       table: {
@@ -53,7 +64,27 @@ import styles from '!!raw-loader!../styles/default.module.css';
         disable: true,
       },
     },
+    onChange: {
+      table: {
+        disable: true,
+      },
+    },
+    onClick: {
+      table: {
+        disable: true,
+      },
+    },
+    onMouseDown: {
+      table: {
+        disable: true,
+      },
+    },
     hint: {
+      table: {
+        disable: true,
+      },
+    },
+    rightAddons: {
       table: {
         disable: true,
       },

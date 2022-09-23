@@ -8,6 +8,7 @@
   --form-control-filled-border-color: var(--color-neutral-500);
   --form-control-label-color: var(--color-neutral-700);
   --form-control-hint-color: var(--color-neutral-700);
+  --form-control-icon-color: var(--color-neutral-700);
 
   /* Color - error */
   --form-control-error-color: var(--color-error-500);
@@ -25,6 +26,7 @@
 .component {
   font-family: var(--font-family-system);
   width: max-content;
+  color: var(--form-control-icon-color);
 
   & .inner {
     min-height: var(--form-control-min-height);
