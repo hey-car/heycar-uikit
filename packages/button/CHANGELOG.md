@@ -3,6 +3,51 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.8.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/button@1.7.0...@heycar-uikit/button@1.8.0) (2022-09-21)
+
+
+### Features
+
+* **button:** add whatsapp color for buttons according to new design ([#80](https://github.com/hey-car/heycar-uikit/issues/80)) ([4c8917f](https://github.com/hey-car/heycar-uikit/commit/4c8917f8a9f2196e9f55518ee10c945ac200915f))
+
+
+
+
+
+# [1.7.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/button@1.6.0...@heycar-uikit/button@1.7.0) (2022-09-16)
+
+
+### Bug Fixes
+
+* **button:** prevent multiline text on buttons ([#78](https://github.com/hey-car/heycar-uikit/issues/78)) ([f832039](https://github.com/hey-car/heycar-uikit/commit/f83203934013ccbe9813744b08e93c670f9708a4))
+
+
+### Features
+
+* **button:** export ButtonProps ([3f12886](https://github.com/hey-car/heycar-uikit/commit/3f12886a83e79f9eae0647ecedc06236b1a2f5cd))
+* **form-control:** the first implementation of the FormControl ([#82](https://github.com/hey-car/heycar-uikit/issues/82)) ([a677e41](https://github.com/hey-car/heycar-uikit/commit/a677e416511f411ee1389e42081963dd127254a9))
+
+
+
+
+
+# [1.6.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/button@1.6.0...@heycar-uikit/button@1.6.0) (2022-09-14)
+
+
+### Bug Fixes
+
+* **button:** prevent multiline text on buttons ([#78](https://github.com/hey-car/heycar-uikit/issues/78)) ([f832039](https://github.com/hey-car/heycar-uikit/commit/f83203934013ccbe9813744b08e93c670f9708a4))
+
+
+### Features
+
+* **button:** export ButtonProps ([3f12886](https://github.com/hey-car/heycar-uikit/commit/3f12886a83e79f9eae0647ecedc06236b1a2f5cd))
+* **form-control:** the first implementation of the FormControl ([#82](https://github.com/hey-car/heycar-uikit/issues/82)) ([a677e41](https://github.com/hey-car/heycar-uikit/commit/a677e416511f411ee1389e42081963dd127254a9))
+
+
+
+
+
 # [1.6.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/button@1.6.0...@heycar-uikit/button@1.6.0) (2022-09-14)
 
 

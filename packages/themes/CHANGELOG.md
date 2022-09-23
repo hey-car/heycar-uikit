@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.7.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/themes@1.5.2...@heycar-uikit/themes@1.7.0) (2022-09-21)
+
+
+### Features
+
+* **button:** add whatsapp color for buttons according to new design ([#80](https://github.com/hey-car/heycar-uikit/issues/80)) ([4c8917f](https://github.com/hey-car/heycar-uikit/commit/4c8917f8a9f2196e9f55518ee10c945ac200915f))
+
+
+
+
+
+## [1.5.2](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/themes@1.5.0...@heycar-uikit/themes@1.5.2) (2022-09-16)
+
+**Note:** Version bump only for package @heycar-uikit/themes
+
+
+
+
+
+# [1.5.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/themes@1.4.0...@heycar-uikit/themes@1.5.0) (2022-09-14)
+
+
+### Features
+
+* **form-control:** the first implementation of the FormControl ([#82](https://github.com/hey-car/heycar-uikit/issues/82)) ([a677e41](https://github.com/hey-car/heycar-uikit/commit/a677e416511f411ee1389e42081963dd127254a9))
+
+
+
+
+
 # [1.4.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/themes@1.3.0...@heycar-uikit/themes@1.4.0) (2022-09-01)
 
 

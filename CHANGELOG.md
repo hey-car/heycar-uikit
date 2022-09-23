@@ -1,3 +1,24 @@
+# [1.20.0](https://github.com/hey-car/heycar-uikit/compare/v1.19.0...v1.20.0) (2022-09-21)
+
+
+### Features
+
+* **button:** add whatsapp color for buttons according to new design ([#80](https://github.com/hey-car/heycar-uikit/issues/80)) ([4c8917f](https://github.com/hey-car/heycar-uikit/commit/4c8917f8a9f2196e9f55518ee10c945ac200915f))
+
+# [1.19.0](https://github.com/hey-car/heycar-uikit/compare/v1.18.0...v1.19.0) (2022-09-16)
+
+
+### Features
+
+* **icons:** Added the Other icon ([#83](https://github.com/hey-car/heycar-uikit/issues/83)) ([f998025](https://github.com/hey-car/heycar-uikit/commit/f998025a3dbb51cc8904dc6d2c2b1cfa36e60cf5))
+
+# [1.18.0](https://github.com/hey-car/heycar-uikit/compare/v1.17.1...v1.18.0) (2022-09-14)
+
+
+### Features
+
+* **form-control:** the first implementation of the FormControl ([#82](https://github.com/hey-car/heycar-uikit/issues/82)) ([a677e41](https://github.com/hey-car/heycar-uikit/commit/a677e416511f411ee1389e42081963dd127254a9))
+
 ## [1.17.1](https://github.com/hey-car/heycar-uikit/compare/v1.17.0...v1.17.1) (2022-09-14)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "@heycar-uikit/chip",
-  "version": "0.2.2",
+  "version": "0.2.4",
   "description": "HeyCar-UIKit chip",
   "main": "dist/index.js",
   "module": "./dist/esm/index.js",
@@ -30,7 +30,7 @@
     "react": "^17.0.1"
   },
   "dependencies": {
-    "@heycar-uikit/icons": "^1.7.2",
+    "@heycar-uikit/icons": "^1.7.4",
     "classnames": "^2.3.1"
   },
   "author": "HeyCar Team",
