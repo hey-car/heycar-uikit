@@ -5,16 +5,21 @@
 }
 
 .proposal {
-  color: var(--color-tarmac-grey-700);
-  background-color: var(--color-tarmac-grey-50);
+  color: var(--color-old-ferrari-red-700);
+  background-color: var(--color-old-ferrari-red-100);
 }
 
-.ready {
-  color: var(--color-success-500);
-  background-color: var(--color-success-50);
+.first_integration {
+  color: var(--color-mustang-yellow-700);
+  background-color: var(--color-mustang-yellow-100);
+}
+
+.ready_for_first_integration {
+  color: var(--color-tertiary-700);
+  background-color: var(--color-tertiary-300);
 }
 
 .recommendation {
-  color: var(--color-tertiary-700);
-  background-color: var(--color-tertiary-300);
+  color: var(--color-success-500);
+  background-color: var(--color-success-50);
 }
