@@ -42,7 +42,7 @@ addParameters({
       order: [
         'Introduction',
         'Guidelines',
-        ['Installation', 'Contributing', 'Package structure convention', 'Code style guide convention'],
+        ['Integration WorkFlows', '1. Happy Path', '2. Almost Happy Path','3. Adding new component','Installation', 'Contributing', 'Package structure convention', 'Code style guide convention'],
         'Components',
       ],
     },

@@ -1,0 +1,26 @@
+import { Meta } from '@storybook/addon-docs';
+import Readme from '../README.md';
+import { version } from '../package.json';
+
+<Meta
+  title="Guidelines/Integration WorkFlows"
+  parameters={{
+    previewTabs: {
+      canvas: { hidden: true },
+      'storybook/docs/panel': { hidden: true },
+    },
+  }}
+/>
+
+# Integration Flow
+
+Welcome to the GDS !  
+In this doc we will give you an idea what to do next depending on your current situation and requirement  
+There are 3 main paths you can be in, depending on your integration with GDS and the Components implementation status
+
+1.  Happy Path
+    - Component in Ready for First Integration / First integration / Recommendation status and your project integrated with hey-uikit
+2.  Almost Happy Path
+    - Component in Ready/Recommendation status, but project is not integrated with hey-uikit
+3.  Adding New Component
+    - Component in Proposal status or not found on the storybook
