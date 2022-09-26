@@ -27,17 +27,22 @@ import { version } from '../package.json';
     [
       0,
       <Status stage={0} />,
-      'Component is still under discussion, should have a description of the requirements for the new component',
+      'Component is under investigation, must have a description of the requirements',
     ],
     [
       1,
       <Status stage={1} />,
-      'Implemented published component, not tested in products',
+      'Component is implemented, not tested in products',
     ],
     [
       2,
       <Status stage={2} />,
-      'Tested in at least one of the products, clear documentation with examples of use, ready for implementation',
+      'Component is currently undergoing its first integration process',
+    ],
+    [
+      3,
+      <Status stage={3} />,
+      'Integrated in at least one SPA, clear documentation with examples of use, ready for integration for all',
     ],
   ]}
 />
