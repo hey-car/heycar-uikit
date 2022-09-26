@@ -1,0 +1,29 @@
+import { Meta } from '@storybook/addon-docs';
+import Readme from '../README.md';
+import { version } from '../package.json';
+
+<Meta
+  title="Guidelines/Integration workflows/2. Almost Happy Path"
+  parameters={{
+    previewTabs: {
+      canvas: { hidden: true },
+      'storybook/docs/panel': { hidden: true },
+    },
+  }}
+/>
+
+# 2. Almost Happy Path
+
+## Preconditions:
+
+Component is “Recommended” or you are first integrator and status is “Ready for First Integration”
+SPA has not integrated hey-uikit yet
+
+## Steps
+
+- which means you need to do installation step as documented
+- use it where you need it
+- and then check your build and deploy step to see if the imported components work
+- Again on any integrations problems contact:
+  - **#global-design-system-integration-help** : for general integration questions
+  - **#global-design-system** : for design related questions

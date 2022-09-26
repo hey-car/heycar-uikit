@@ -5,7 +5,7 @@ import { LIVE_EXAMPLES_ADDON_ID } from 'storybook-addon-live-examples';
 import scope from './scope';
 import alfaTheme from './theme';
 import { editorTheme } from './editorTheme';
-import { INITIAL_VIEWPORTS } from "@storybook/addon-viewport";
+import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 
 addons.setConfig({
   [LIVE_EXAMPLES_ADDON_ID]: {
@@ -42,20 +42,36 @@ addParameters({
       order: [
         'Introduction',
         'Guidelines',
-        ['Installation', 'Contributing', 'Package structure convention', 'Code style guide convention'],
+        [
+          'Installation',
+          'Integration workflows',
+          [
+            'Introduction',
+            '1. Happy Path',
+            '2. Almost Happy Path',
+            '3. Adding new component',
+          ],
+          'Contributing',
+          'Package structure convention',
+          'Code style guide convention',
+        ],
         'Components',
       ],
     },
   },
   viewport: {
-    viewports: INITIAL_VIEWPORTS
-  }
+    viewports: INITIAL_VIEWPORTS,
+  },
 });
 
 configure(
   [
     require.context('../docs', true, /\.stories\.mdx$/),
-    require.context('../packages', true, /(?<!\/node_modules.*)\.stories\.(tsx|mdx)$/),
+    require.context(
+      '../packages',
+      true,
+      /(?<!\/node_modules.*)\.stories\.(tsx|mdx)$/,
+    ),
   ],
   module,
 );
