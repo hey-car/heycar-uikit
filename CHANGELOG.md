@@ -1,3 +1,10 @@
+# [1.21.0](https://github.com/hey-car/heycar-uikit/compare/v1.20.0...v1.21.0) (2022-09-26)
+
+
+### Features
+
+* **status:** update all component status, added new ready for first integration,first integration ([#87](https://github.com/hey-car/heycar-uikit/issues/87)) ([9041d63](https://github.com/hey-car/heycar-uikit/commit/9041d630d8ca0b8b2dcfeed1965bbd6be8b70380))
+
 # [1.20.0](https://github.com/hey-car/heycar-uikit/compare/v1.19.0...v1.20.0) (2022-09-21)
 
 
