@@ -1,5 +1,5 @@
 import { Container, Row, Col } from 'storybook/blocks';
-import { Whatsapp, Car } from '../../../icons/src';
+import { Whatsapp, Call } from '../../../icons/src';
 import Button from '../Button';
 
 ## Variants
@@ -112,18 +112,18 @@ render(
   <Container>
     <Row>
       <Col key="left">
-          <Button leftIcon={<Image />} color="primary">
+          <Button leftIcon={<Call />} color="primary">
             Button CTA
           </Button>
       </Col>
       <Col key="right">
-        <Button rightIcon={<Car />} color="primary">
+        <Button rightIcon={<Call />} color="primary">
           Button CTA
         </Button>
       </Col>
       {buttonSizes.map(size => (
         <Col key={size}>
-          <Button leftIcon={<Car />} rightIcon={<Car />} color="primary" size={size}>
+          <Button leftIcon={<Call />} rightIcon={<Call />} color="primary" size={size}>
             Button CTA
           </Button>
         </Col>
@@ -140,7 +140,7 @@ render(
     </Row>
     <Row>
       <Col>
-        <Button leftIcon={<Car />} color="primary" size="large"/>
+        <Button leftIcon={<Call />} color="primary" size="large"/>
       </Col>
     </Row>
   </Container>,
