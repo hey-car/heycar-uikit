@@ -57,6 +57,7 @@ export * from './paths/NewCar';
 export * from './paths/Others';
 export * from './paths/ParkingCamera';
 export * from './paths/Play';
+export * from './paths/Plus';
 export * from './paths/PlusCircle';
 export * from './paths/Pickup';
 export * from './paths/Read';
