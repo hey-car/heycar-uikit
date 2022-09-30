@@ -1,3 +1,10 @@
+# [1.22.0](https://github.com/hey-car/heycar-uikit/compare/v1.21.0...v1.22.0) (2022-09-30)
+
+
+### Features
+
+* **input:**  first implementation the input component ([#84](https://github.com/hey-car/heycar-uikit/issues/84)) ([87fbe55](https://github.com/hey-car/heycar-uikit/commit/87fbe5549048e44006781092e9e5707b6e63534d))
+
 # [1.21.0](https://github.com/hey-car/heycar-uikit/compare/v1.20.0...v1.21.0) (2022-09-26)
 
 
