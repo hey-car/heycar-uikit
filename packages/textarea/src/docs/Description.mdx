@@ -1,0 +1,111 @@
+import { Container, Row, Col } from 'storybook/blocks';
+import Textarea from '../Textarea';
+import { Calendar, Clock } from '../../../icons/src';
+
+## Default
+
+```tsx live
+render(
+  <Container>
+    <Row flex align="top">
+      <Col span="8">
+        <Textarea
+          style={{ width: '300px', height: '90px' }}
+          label="Enter Your Message"
+          value="Is there any more information that would help the dealer? Let them know as much as possible to help find your perfect wheels quickly"
+        />
+      </Col>
+      <Col span="8">
+        <Textarea
+          style={{ width: '300px', height: '90px' }}
+          label="Enter Your Message"
+        />
+      </Col>
+    </Row>
+  </Container>,
+);
+```
+
+## Max length
+
+The `maxLength` props provide the ability to count and show the length of the content inside the component.
+
+```tsx live
+render(
+  <Container>
+    <Row flex align="top">
+      <Col span="8">
+        <Textarea
+          style={{ width: '300px', height: '90px' }}
+          label="Enter Your Message"
+          maxLength="200"
+          value="Is there any more information that would help the dealer? Let them know as much as possible to help find your perfect wheels quickly"
+        />
+      </Col>
+      <Col span="8">
+        <Textarea
+          style={{ width: '300px', height: '90px' }}
+          label="Enter Your Message"
+          maxLength="200"
+        />
+      </Col>
+    </Row>
+  </Container>,
+);
+```
+
+## Disabled
+
+The `disabled` attribute is a boolean attribute it makes the input element is unusable and un-clickable.
+
+```tsx live
+render(
+  <Container>
+    <Row flex align="top">
+      <Col span="8">
+        <Textarea
+          style={{ width: '300px', height: '90px' }}
+          label="Enter Your Message"
+          disabled
+          value="Is there any more information that would help the dealer? Let them know as much as possible to help find your perfect wheels quickly"
+        />
+      </Col>
+      <Col span="8">
+        <Textarea
+          style={{ width: '300px', height: '90px' }}
+          disabled
+          label="Enter Your Message"
+        />
+      </Col>
+    </Row>
+  </Container>,
+);
+```
+
+## Error
+
+The `error` prop toggles the error state and can then be used to provide feedback to the user about the `error`.
+
+```tsx live
+render(
+  <Container>
+    <Row flex align="top">
+      <Col span="8">
+        <Textarea
+          style={{ width: '300px', height: '90px' }}
+          error="This is the placeholder for error note"
+          label="Enter Your Message"
+          value="Is there any more information that would help the dealer? Let them know as much as possible to help find your perfect wheels quickly"
+        />
+      </Col>
+      <Col span="8">
+        <Textarea
+          style={{ width: '300px', height: '90px' }}
+          error="This is the placeholder for error note"
+          label="Enter Your Message"
+        />
+      </Col>
+    </Row>
+  </Container>,
+);
+```

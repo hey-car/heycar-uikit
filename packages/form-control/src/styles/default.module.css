@@ -22,7 +22,7 @@
   --form-control-min-height: 48px;
   --from-control-legend-height: 11px;
   --form-control-input-padding: 0;
-  --form-hint-fint-size: 10px;
+  --form-control-hint-fint-size: 10px;
 }
 
 .component {
@@ -239,7 +239,7 @@
 
   @mixin typography-caption-5;
 
-  font-size: var(--form-hint-fint-size);
+  font-size: var(--form-control-hint-fint-size);
 }
 
 /*

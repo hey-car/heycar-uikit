@@ -1,0 +1,60 @@
+@import '../../../themes/src/default.css';
+
+:root {
+  /* Color */
+  --textarea-color: var(--color-neutral-900);
+  --textarea-caret-color: var(--color-neutral-900);
+  --textarea-placeholder-color: var(--color-neutral-900);
+  --textarea-disabled-color: var(--color-neutral-300);
+
+  /* Sizes */
+  --form-textarea-min-height: 100px;
+}
+
+.textarea {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  resize: none;
+  -webkit-appearance: none;
+
+  color: var(--textarea-color);
+  caret-color: var(--textarea-caret-color);
+  @mixin typography-body-4;
+}
+
+.textarea:-webkit-autofill {
+  -webkit-text-fill-color: var(--textarea-color);
+}
+
+.textarea::placeholder {
+  color: var(--textarea-placeholder-color);
+}
+
+.textarea:disabled {
+  color: var(--textarea-disabled-color);
+  -webkit-text-fill-color: var(--textarea-disabled-color);
+  cursor: var(--disabled-cursor);
+  opacity: 1;
+}
+
+.textarea:read-only {
+  color: var(--textarea-disabled-color);
+
+  &:focus::placeholder {
+    color: var(--textarea-disabled-color);
+  }
+}
+
+.formControl {
+  --form-control-input-padding: var(--gap-m);
+  --form-control-min-height: var(--form-textarea-min-height);
+  --form-control-hint-fint-size: 12px;
+}
