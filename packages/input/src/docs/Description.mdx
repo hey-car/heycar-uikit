@@ -1,0 +1,117 @@
+import { Container, Row, Col } from 'storybook/blocks';
+import Input from '../Input';
+import { Calendar, Clock } from '../../../icons/src';
+
+## Default
+
+You can add left, right icons and right addon to the Input component using the `leftIcon`, `rightIcon` and `rightAddons` props respectively.
+
+```tsx live
+render(
+  <Container>
+    <Row flex align="top">
+      <Col span="8">
+        <Input label="Label" rightIcon={<Calendar />} />
+      </Col>
+      <Col span="8">
+        <Input
+          value="Placeholder"
+          leftIcon={<Clock />}
+          rightIcon={<Calendar />}
+        />
+      </Col>
+      <Col span="8">
+        <Input
+          label="Label"
+          value="Placeholder"
+          rightAddons={
+            <b style={{ fontSize: '14px' }}>
+              <a style={{ color: '#164CA3' }} href="#">
+                This is link
+              </a>
+            </b>
+          }
+        />
+      </Col>
+    </Row>
+  </Container>,
+);
+```
+
+## Disabled
+
+The `disabled` attribute is a boolean attribute it makes the input element is unusable and un-clickable.
+
+```tsx live
+render(
+  <Container>
+    <Row flex align="top">
+      <Col span="8">
+        <Input label="Label" disabled rightIcon={<Calendar />} />
+      </Col>
+      <Col span="8">
+        <Input
+          value="Placeholder"
+          disabled
+          leftIcon={<Clock />}
+          rightIcon={<Calendar />}
+        />
+      </Col>
+      <Col span="8">
+        <Input
+          label="Label"
+          value="Placeholder"
+          disabled
+          rightAddons={
+            <b style={{ fontSize: '14px', textDecoration: 'underline' }}>
+              This is link
+            </b>
+          }
+        />
+      </Col>
+    </Row>
+  </Container>,
+);
+```
+
+## Error
+
+The `error` prop toggles the error state and can then be used to provide feedback to the user about the `error`.
+
+```tsx live
+render(
+  <Container>
+    <Row flex align="top">
+      <Col span="8">
+        <Input
+          label="Label"
+          error="This is the placeholder for error note"
+          rightIcon={<Calendar />}
+        />
+      </Col>
+      <Col span="8">
+        <Input
+          value="Placeholder"
+          error="This is the placeholder for error note"
+          leftIcon={<Clock />}
+          rightIcon={<Calendar />}
+        />
+      </Col>
+      <Col span="8">
+        <Input
+          label="Label"
+          value="Placeholder"
+          error="This is the placeholder for error note"
+          rightAddons={
+            <b style={{ fontSize: '14px' }}>
+              <a style={{ color: '#164CA3' }} href="#">
+                This is link
+              </a>
+            </b>
+          }
+        />
+      </Col>
+    </Row>
+  </Container>,
+);
+```

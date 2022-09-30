@@ -1,7 +1,7 @@
 {
-  "name": "@heycar-uikit/button",
-  "version": "1.8.1",
-  "description": "HeyCar-UIKit button",
+  "name": "@heycar-uikit/input",
+  "version": "1.0.0",
+  "description": "HeyCar-UIKit Input",
   "main": "dist/index.js",
   "module": "./dist/esm/index.js",
   "scripts": {
@@ -16,13 +16,13 @@
     "typescript",
     "ui-components",
     "design-systems",
-    "button"
+    "input"
   ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hey-car/heycar-uikit.git"
   },
-  "homepage": "https://github.com/hey-car/heycar-uikit/tree/main/packages/button#readme",
+  "homepage": "https://github.com/hey-car/heycar-uikit/tree/main/packages/input#readme",
   "publishConfig": {
     "access": "public"
   },
@@ -30,6 +30,7 @@
     "react": "^17.0.1"
   },
   "dependencies": {
+    "@heycar-uikit/form-control": "^1.1.3",
     "classnames": "^2.3.1"
   },
   "author": "HeyCar Team",
