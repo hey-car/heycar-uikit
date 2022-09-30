@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.8.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/themes@1.7.0...@heycar-uikit/themes@1.8.0) (2022-09-30)
+
+
+### Features
+
+* **input:**  first implementation the input component ([#84](https://github.com/hey-car/heycar-uikit/issues/84)) ([87fbe55](https://github.com/hey-car/heycar-uikit/commit/87fbe5549048e44006781092e9e5707b6e63534d))
+* **status:** update all component status, added new ready for first integration,first integration ([#87](https://github.com/hey-car/heycar-uikit/issues/87)) ([9041d63](https://github.com/hey-car/heycar-uikit/commit/9041d630d8ca0b8b2dcfeed1965bbd6be8b70380))
+
+
+
+
+
 # [1.7.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/themes@1.5.2...@heycar-uikit/themes@1.7.0) (2022-09-21)
 
 

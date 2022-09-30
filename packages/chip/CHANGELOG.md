@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/chip@0.2.4...@heycar-uikit/chip@0.3.0) (2022-09-30)
+
+
+### Features
+
+* **input:**  first implementation the input component ([#84](https://github.com/hey-car/heycar-uikit/issues/84)) ([87fbe55](https://github.com/hey-car/heycar-uikit/commit/87fbe5549048e44006781092e9e5707b6e63534d))
+
+
+
+
+
 ## [0.2.4](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/chip@0.2.2...@heycar-uikit/chip@0.2.4) (2022-09-16)
 
 **Note:** Version bump only for package @heycar-uikit/chip
