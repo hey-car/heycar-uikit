@@ -17,7 +17,7 @@ body {
 }
 
 body.sb-show-main.sb-main-padded {
-  padding: var(--gap-l);
+  padding: 0;
 }
 
 body.sb-show-main {

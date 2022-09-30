@@ -5,37 +5,33 @@
   margin: 0 auto;
 
   @media (--mobile) {
-    max-width: 360px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
-
   @media (--tablet) {
-    max-width: 768px;
-    padding-right: 4px;
-    padding-left: 4px;
+    padding-right: 24px;
+    padding-left: 24px;
   }
 
   @media (--tablet-l) {
-    max-width: 1024px;
-    padding-right: 12px;
-    padding-left: 12px;
+    padding-right: 32px;
+    padding-left: 32px;
   }
 
   @media (--desktop) {
-    max-width: 1152px;
-    padding-right: 12px;
-    padding-left: 12px;
+    padding-right: 32px;
+    padding-left: 32px;
   }
 
   @media (--desktop-m) {
-    max-width: 1366px;
-    padding-right: 12px;
-    padding-left: 12px;
+    padding-right: 32px;
+    padding-left: 32px;
   }
 
   @media (--desktop-l) {
     max-width: 1440px;
-    padding-right: 44px;
-    padding-left: 44px;
+    padding-right: 64px;
+    padding-left: 64px;
   }
 }
 
