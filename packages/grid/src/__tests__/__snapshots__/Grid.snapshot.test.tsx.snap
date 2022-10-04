@@ -6,10 +6,10 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="row component between gutter-mobile-s-16 gutter-desktop-m-24"
+        class="row component between gutter-mobile-8 gutter-tablet-s-12 gutter-tablet-l-16 gutter-desktop-s-16 gutter-desktop-m-16 gutter-desktop-l-24"
       >
         <div
-          class="col component width-mobile-s-12 width-mobile-m-6"
+          class="col component width-mobile-12"
         >
           Hello
         </div>
@@ -18,10 +18,10 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="row component between gutter-mobile-s-16 gutter-desktop-m-24"
+      class="row component between gutter-mobile-8 gutter-tablet-s-12 gutter-tablet-l-16 gutter-desktop-s-16 gutter-desktop-m-16 gutter-desktop-l-24"
     >
       <div
-        class="col component width-mobile-s-12 width-mobile-m-6"
+        class="col component width-mobile-12"
       >
         Hello
       </div>
@@ -178,7 +178,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="row component center gutter-mobile-s-16 gutter-desktop-m-24"
+        class="row component center gutter-mobile-8 gutter-tablet-s-12 gutter-tablet-l-16 gutter-desktop-s-16 gutter-desktop-m-16 gutter-desktop-l-24"
       >
         <div
           class="col component width-desktop-m-12"
@@ -195,7 +195,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="row component center gutter-mobile-s-16 gutter-desktop-m-24"
+      class="row component center gutter-mobile-8 gutter-tablet-s-12 gutter-tablet-l-16 gutter-desktop-s-16 gutter-desktop-m-16 gutter-desktop-l-24"
     >
       <div
         class="col component width-desktop-m-12"
@@ -269,7 +269,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="row component center gutter-mobile-s-16 gutter-desktop-m-24"
+        class="row component center gutter-mobile-8 gutter-tablet-s-12 gutter-tablet-l-16 gutter-desktop-s-16 gutter-desktop-m-16 gutter-desktop-l-24"
       >
         <div
           class="col component width-mobile-12"
@@ -286,7 +286,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="row component center gutter-mobile-s-16 gutter-desktop-m-24"
+      class="row component center gutter-mobile-8 gutter-tablet-s-12 gutter-tablet-l-16 gutter-desktop-s-16 gutter-desktop-m-16 gutter-desktop-l-24"
     >
       <div
         class="col component width-mobile-12"
@@ -451,7 +451,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="row component middle between gutter-mobile-s-16 gutter-desktop-m-24"
+        class="row component middle between gutter-mobile-8 gutter-tablet-s-12 gutter-tablet-l-16 gutter-desktop-s-16 gutter-desktop-m-16 gutter-desktop-l-24"
       >
         <div
           class="col component width-mobile-12"
@@ -471,7 +471,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="row component middle between gutter-mobile-s-16 gutter-desktop-m-24"
+      class="row component middle between gutter-mobile-8 gutter-tablet-s-12 gutter-tablet-l-16 gutter-desktop-s-16 gutter-desktop-m-16 gutter-desktop-l-24"
     >
       <div
         class="col component width-mobile-12"

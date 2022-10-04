@@ -1,0 +1,151 @@
+import { Meta, Story, Props } from '@storybook/addon-docs';
+import {
+  ComponentHeader,
+  CssVars,
+  Container,
+  TabContainer,
+} from 'storybook/blocks';
+
+import Input from '../Input';
+import Description from './Description.mdx';
+import { version } from '../../package.json';
+import Changelog from '../../CHANGELOG.md';
+import { Clock, Calendar } from '../../../icons/src';
+import styles from '!!raw-loader!../styles/default.module.css';
+
+<!-- Meta -->
+
+<Meta
+  title="Components/Input"
+  component={Input}
+  argTypes={{
+    label: {
+      name: 'label',
+      type: { name: 'string' },
+      defaultValue: 'Label',
+    },
+    value: {
+      name: 'value',
+      type: { name: 'string' },
+      defaultValue: 'Placeholder',
+    },
+    error: {
+      name: 'error',
+      type: { name: 'string' },
+      defaultValue: '',
+    },
+    disabled: {
+      name: 'disabled',
+      type: { name: 'boolean' },
+      defaultValue: false,
+    },
+    leftIcon: {
+      name: 'left icon',
+      type: { name: 'boolean' },
+      defaultValue: false,
+    },
+    rightIcon: {
+      name: 'right icon',
+      type: { name: 'boolean' },
+      defaultValue: false,
+    },
+    fullWidth: {
+      name: 'full width',
+      type: { name: 'boolean' },
+      defaultValue: false,
+    },
+    dataTestId: {
+      table: {
+        disable: true,
+      },
+    },
+    defaultValue: {
+      table: {
+        disable: true,
+      },
+    },
+    onChange: {
+      table: {
+        disable: true,
+      },
+    },
+    onClick: {
+      table: {
+        disable: true,
+      },
+    },
+    onMouseDown: {
+      table: {
+        disable: true,
+      },
+    },
+    hint: {
+      table: {
+        disable: true,
+      },
+    },
+    rightAddons: {
+      table: {
+        disable: true,
+      },
+    },
+  }}
+/>
+
+export const InputTemplate = args => {
+  const { leftIcon, rightIcon } = args;
+  const maxWidth = args.fullWidth ? '700px' : '250px';
+  if (leftIcon) args.leftIcon = <Clock />;
+  else delete args.leftIcon;
+  if (rightIcon) args.rightIcon = <Calendar />;
+  return (
+    <div style={{ maxWidth, margin: '0 auto' }}>
+      <Input {...args} />
+    </div>
+  );
+};
+
+<!-- Canvas -->
+
+<Story
+  name="Input"
+  args={{
+    label: 'Label',
+    value: 'Placeholder',
+  }}
+>
+  {InputTemplate.bind({})}
+</Story>
+
+<!-- Docs -->
+
+<ComponentHeader
+  name="Input"
+  version={version}
+  stage={1}
+  design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Global-Design-System?node-id=1426%3A39722"
+/>
+
+Input component is a component that is used to get user input in a text field.
+
+```tsx
+import Input from '@heycar-uikit/input';
+```
+
+<TabContainer
+  tabs={[
+    { label: 'Description', component: <Description /> },
+    { label: 'Props', component: <Props of={Input} /> },
+    {
+      label: 'CSS tokens',
+      component: (
+        <CssVars
+          css={`
+            ${styles}
+          `}
+        />
+      ),
+    },
+    { label: 'Changelog', component: <Changelog /> },
+  ]}
+/>

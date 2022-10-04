@@ -39,20 +39,16 @@ function App() {
 
 ## Breakpoints
 
-| Name          | Value           |
-| ------------- | --------------- |
-| `--mobile-s`  | 320px to 100%   |
-| `--mobile-m`  | 375px to 100%   |
-| `--mobile-l`  | 412px to 100%   |
-| `--mobile`    | 0 to 599px      |
-| `--tablet-s`  | 600px to 100%   |
-| `--tablet-m`  | 768px to 100%   |
-| `--tablet-l`  | 860px to 100%   |
-| `--tablet`    | 600px to 1023px |
-| `--desktop-s` | 1024px to 100%  |
-| `--desktop-m` | 1280px to 100%  |
-| `--desktop-l` | 1440px to 100%  |
-| `--desktop`   | 1024px to 100%  |
+| Name          | Value          |
+| ------------- | -------------- |
+| `--mobile`    | 0 to 767px     |
+| `--tablet`    | 768px to 100%  |
+| `--tablet-s`  | 768px to 100%  |
+| `--tablet-l`  | 1024px to 100% |
+| `--desktop`   | 1280px to 100% |
+| `--desktop-s` | 1280px to 100% |
+| `--desktop-m` | 1366px to 100% |
+| `--desktop-l` | 1440px to 100% |
 
 ## Documentation and sandbox
 
