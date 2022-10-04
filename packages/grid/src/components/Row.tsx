@@ -12,11 +12,12 @@ function Row({
   Component = 'div',
   className,
   gutter = {
-    mobile: {
-      s: 16,
-    },
+    mobile: 8,
+    tablet: { s: 12, l: 16 },
     desktop: {
-      m: 24,
+      s: 16,
+      m: 16,
+      l: 24,
     },
   },
   align,

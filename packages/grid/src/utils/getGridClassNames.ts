@@ -22,7 +22,7 @@ function getGridClassNames(
       return;
     }
     (Object.keys(prop) as BreakpointsKeysType[]).forEach(breakpoint => {
-      if (prop[breakpoint] === null) return;
+      if (!prop[breakpoint]) return;
 
       if (typeof prop[breakpoint] === 'object') {
         const propBreakpointObject = prop[breakpoint] as BreakpointObjectType;
@@ -32,14 +32,18 @@ function getGridClassNames(
         ).forEach(size => {
           const value = propBreakpointObject[size];
 
-          if (value === null) return;
+          if (!value) return;
 
           classNames.push(styles[`${name}-${breakpoint}-${size}-${value}`]);
         });
       } else {
         const value = prop[breakpoint];
 
-        classNames.push(styles[`${name}-${breakpoint}-${value}`]);
+        classNames.push(
+          styles[`${name}-${breakpoint}-${value}`]
+            ? styles[`${name}-${breakpoint}-${value}`]
+            : '',
+        );
       }
     });
   });
