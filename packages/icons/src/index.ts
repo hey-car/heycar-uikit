@@ -8,6 +8,7 @@ export * from './paths/Calculator';
 export * from './paths/Calendar';
 export * from './paths/Call';
 export * from './paths/Car';
+export * from './paths/CarLocation';
 export * from './paths/Card';
 export * from './paths/Clock';
 export * from './paths/Close';
