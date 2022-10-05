@@ -10,7 +10,16 @@ import variantStyles from '!!raw-loader!../styles/variant.module.css';
 
 <!-- Meta -->
 
-<Meta title="Components/Chip" component={Chip} />
+<Meta
+  argTypes={{
+    children: {
+      control: 'text',
+      type: { name: 'string', required: false },
+    },
+  }}
+  title="Components/Chip"
+  component={Chip}
+/>
 
 export const ChipTemplate = args => <Chip {...args} />;
 
