@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Input Snapshots tests should match callback methods 1`] = `
+exports[`Textarea Snapshots tests should match callback methods 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="component"
+        class="component formControl"
       >
         <div
           class="inner filled"
@@ -17,11 +17,11 @@ Object {
             <div
               class="input"
             >
-              <input
-                class="input"
-                type="text"
-                value="value"
-              />
+              <textarea
+                class="textarea"
+              >
+                value
+              </textarea>
             </div>
           </div>
           <fieldset
@@ -38,7 +38,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="component"
+      class="component formControl"
     >
       <div
         class="inner filled"
@@ -49,11 +49,11 @@ Object {
           <div
             class="input"
           >
-            <input
-              class="input"
-              type="text"
-              value="value"
-            />
+            <textarea
+              class="textarea"
+            >
+              value
+            </textarea>
           </div>
         </div>
         <fieldset
@@ -121,13 +121,13 @@ Object {
 }
 `;
 
-exports[`Input Snapshots tests should match disabled state 1`] = `
+exports[`Textarea Snapshots tests should match disabled state 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="component disabled"
+        class="component formControl disabled"
       >
         <div
           class="inner filled"
@@ -147,13 +147,13 @@ Object {
             <div
               class="input"
             >
-              <input
+              <textarea
                 aria-label="Label"
-                class="input"
+                class="textarea"
                 disabled=""
-                type="text"
-                value="value"
-              />
+              >
+                value
+              </textarea>
             </div>
           </div>
           <fieldset
@@ -174,7 +174,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="component disabled"
+      class="component formControl disabled"
     >
       <div
         class="inner filled"
@@ -194,13 +194,13 @@ Object {
           <div
             class="input"
           >
-            <input
+            <textarea
               aria-label="Label"
-              class="input"
+              class="textarea"
               disabled=""
-              type="text"
-              value="value"
-            />
+            >
+              value
+            </textarea>
           </div>
         </div>
         <fieldset
@@ -272,13 +272,13 @@ Object {
 }
 `;
 
-exports[`Input Snapshots tests should match error hint 1`] = `
+exports[`Textarea Snapshots tests should match error state 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="component"
+        class="component formControl hasError"
       >
         <div
           class="inner filled"
@@ -298,171 +298,12 @@ Object {
             <div
               class="input"
             >
-              <input
+              <textarea
                 aria-label="Label"
-                class="input"
-                type="text"
-                value="value"
-              />
-            </div>
-          </div>
-          <fieldset
-            aria-hidden="true"
-            class="fieldset"
-          >
-            <legend
-              class="legend"
-            >
-              <span>
-                Label
-              </span>
-            </legend>
-          </fieldset>
-        </div>
-        <span
-          class="sub hint"
-        >
-          This is the placeholder for error note
-        </span>
-      </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="component"
-    >
-      <div
-        class="inner filled"
-      >
-        <div
-          class="inputWrapper"
-        >
-          <label
-            class="label"
-          >
-            <span
-              class="labelInner"
-            >
-              Label
-            </span>
-          </label>
-          <div
-            class="input"
-          >
-            <input
-              aria-label="Label"
-              class="input"
-              type="text"
-              value="value"
-            />
-          </div>
-        </div>
-        <fieldset
-          aria-hidden="true"
-          class="fieldset"
-        >
-          <legend
-            class="legend"
-          >
-            <span>
-              Label
-            </span>
-          </legend>
-        </fieldset>
-      </div>
-      <span
-        class="sub hint"
-      >
-        This is the placeholder for error note
-      </span>
-    </div>
-  </div>,
-  "debug": [Function],
-  "findAllByAltText": [Function],
-  "findAllByDisplayValue": [Function],
-  "findAllByLabelText": [Function],
-  "findAllByPlaceholderText": [Function],
-  "findAllByRole": [Function],
-  "findAllByTestId": [Function],
-  "findAllByText": [Function],
-  "findAllByTitle": [Function],
-  "findByAltText": [Function],
-  "findByDisplayValue": [Function],
-  "findByLabelText": [Function],
-  "findByPlaceholderText": [Function],
-  "findByRole": [Function],
-  "findByTestId": [Function],
-  "findByText": [Function],
-  "findByTitle": [Function],
-  "getAllByAltText": [Function],
-  "getAllByDisplayValue": [Function],
-  "getAllByLabelText": [Function],
-  "getAllByPlaceholderText": [Function],
-  "getAllByRole": [Function],
-  "getAllByTestId": [Function],
-  "getAllByText": [Function],
-  "getAllByTitle": [Function],
-  "getByAltText": [Function],
-  "getByDisplayValue": [Function],
-  "getByLabelText": [Function],
-  "getByPlaceholderText": [Function],
-  "getByRole": [Function],
-  "getByTestId": [Function],
-  "getByText": [Function],
-  "getByTitle": [Function],
-  "queryAllByAltText": [Function],
-  "queryAllByDisplayValue": [Function],
-  "queryAllByLabelText": [Function],
-  "queryAllByPlaceholderText": [Function],
-  "queryAllByRole": [Function],
-  "queryAllByTestId": [Function],
-  "queryAllByText": [Function],
-  "queryAllByTitle": [Function],
-  "queryByAltText": [Function],
-  "queryByDisplayValue": [Function],
-  "queryByLabelText": [Function],
-  "queryByPlaceholderText": [Function],
-  "queryByRole": [Function],
-  "queryByTestId": [Function],
-  "queryByText": [Function],
-  "queryByTitle": [Function],
-  "rerender": [Function],
-  "unmount": [Function],
-}
-`;
-
-exports[`Input Snapshots tests should match error hint/state 1`] = `
-Object {
-  "asFragment": [Function],
-  "baseElement": <body>
-    <div>
-      <div
-        class="component hasError"
-      >
-        <div
-          class="inner filled"
-        >
-          <div
-            class="inputWrapper"
-          >
-            <label
-              class="label"
-            >
-              <span
-                class="labelInner"
+                class="textarea"
               >
-                Label
-              </span>
-            </label>
-            <div
-              class="input"
-            >
-              <input
-                aria-label="Label"
-                class="input"
-                type="text"
-                value="value"
-              />
+                value
+              </textarea>
             </div>
           </div>
           <fieldset
@@ -489,7 +330,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="component hasError"
+      class="component formControl hasError"
     >
       <div
         class="inner filled"
@@ -509,12 +350,12 @@ Object {
           <div
             class="input"
           >
-            <input
+            <textarea
               aria-label="Label"
-              class="input"
-              type="text"
-              value="value"
-            />
+              class="textarea"
+            >
+              value
+            </textarea>
           </div>
         </div>
         <fieldset
@@ -592,13 +433,13 @@ Object {
 }
 `;
 
-exports[`Input Snapshots tests should match fullWidth 1`] = `
+exports[`Textarea Snapshots tests should match fullWidth 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="component fullWidth"
+        class="component formControl fullWidth"
       >
         <div
           class="inner filled"
@@ -618,12 +459,12 @@ Object {
             <div
               class="input"
             >
-              <input
+              <textarea
                 aria-label="Label"
-                class="input"
-                type="text"
-                value="value"
-              />
+                class="textarea"
+              >
+                value
+              </textarea>
             </div>
           </div>
           <fieldset
@@ -644,7 +485,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="component fullWidth"
+      class="component formControl fullWidth"
     >
       <div
         class="inner filled"
@@ -664,12 +505,12 @@ Object {
           <div
             class="input"
           >
-            <input
+            <textarea
               aria-label="Label"
-              class="input"
-              type="text"
-              value="value"
-            />
+              class="textarea"
+            >
+              value
+            </textarea>
           </div>
         </div>
         <fieldset
@@ -741,13 +582,13 @@ Object {
 }
 `;
 
-exports[`Input Snapshots tests should match label and value props 1`] = `
+exports[`Textarea Snapshots tests should match hint text 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="component"
+        class="component formControl"
       >
         <div
           class="inner filled"
@@ -767,12 +608,12 @@ Object {
             <div
               class="input"
             >
-              <input
+              <textarea
                 aria-label="Label"
-                class="input"
-                type="text"
-                value="value"
-              />
+                class="textarea"
+              >
+                value
+              </textarea>
             </div>
           </div>
           <fieldset
@@ -793,7 +634,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="component"
+      class="component formControl"
     >
       <div
         class="inner filled"
@@ -813,12 +654,12 @@ Object {
           <div
             class="input"
           >
-            <input
+            <textarea
               aria-label="Label"
-              class="input"
-              type="text"
-              value="value"
-            />
+              class="textarea"
+            >
+              value
+            </textarea>
           </div>
         </div>
         <fieldset
@@ -890,22 +731,17 @@ Object {
 }
 `;
 
-exports[`Input Snapshots tests should match left and right icons 1`] = `
+exports[`Textarea Snapshots tests should match label and value props 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="component hasLeftIcon"
+        class="component formControl"
       >
         <div
           class="inner filled"
         >
-          <div
-            class="addons leftIcon"
-          >
-            🚗
-          </div>
           <div
             class="inputWrapper"
           >
@@ -921,12 +757,12 @@ Object {
             <div
               class="input"
             >
-              <input
+              <textarea
                 aria-label="Label"
-                class="input hasLeftIcon"
-                type="text"
-                value="value"
-              />
+                class="textarea"
+              >
+                value
+              </textarea>
             </div>
           </div>
           <fieldset
@@ -941,27 +777,17 @@ Object {
               </span>
             </legend>
           </fieldset>
-          <div
-            class="addons rightIcon"
-          >
-            🚗
-          </div>
         </div>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="component hasLeftIcon"
+      class="component formControl"
     >
       <div
         class="inner filled"
       >
-        <div
-          class="addons leftIcon"
-        >
-          🚗
-        </div>
         <div
           class="inputWrapper"
         >
@@ -977,12 +803,12 @@ Object {
           <div
             class="input"
           >
-            <input
+            <textarea
               aria-label="Label"
-              class="input hasLeftIcon"
-              type="text"
-              value="value"
-            />
+              class="textarea"
+            >
+              value
+            </textarea>
           </div>
         </div>
         <fieldset
@@ -997,11 +823,179 @@ Object {
             </span>
           </legend>
         </fieldset>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Textarea Snapshots tests should match max length 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="component formControl"
+      >
         <div
-          class="addons rightIcon"
+          class="inner filled"
         >
-          🚗
+          <div
+            class="inputWrapper"
+          >
+            <label
+              class="label"
+            >
+              <span
+                class="labelInner"
+              >
+                Label
+              </span>
+            </label>
+            <div
+              class="input"
+            >
+              <textarea
+                aria-label="Label"
+                class="textarea"
+                maxlength="20"
+              >
+                value
+              </textarea>
+            </div>
+          </div>
+          <fieldset
+            aria-hidden="true"
+            class="fieldset"
+          >
+            <legend
+              class="legend"
+            >
+              <span>
+                Label
+              </span>
+            </legend>
+          </fieldset>
         </div>
+        <div
+          class="counter"
+        >
+          <div
+            class="countLength"
+          >
+            5
+          </div>
+          /
+          20
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="component formControl"
+    >
+      <div
+        class="inner filled"
+      >
+        <div
+          class="inputWrapper"
+        >
+          <label
+            class="label"
+          >
+            <span
+              class="labelInner"
+            >
+              Label
+            </span>
+          </label>
+          <div
+            class="input"
+          >
+            <textarea
+              aria-label="Label"
+              class="textarea"
+              maxlength="20"
+            >
+              value
+            </textarea>
+          </div>
+        </div>
+        <fieldset
+          aria-hidden="true"
+          class="fieldset"
+        >
+          <legend
+            class="legend"
+          >
+            <span>
+              Label
+            </span>
+          </legend>
+        </fieldset>
+      </div>
+      <div
+        class="counter"
+      >
+        <div
+          class="countLength"
+        >
+          5
+        </div>
+        /
+        20
       </div>
     </div>
   </div>,

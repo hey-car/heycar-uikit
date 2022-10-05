@@ -79,6 +79,7 @@ const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
         filled={isFilled || isFocused}
         focused={isFocused}
         fullWidth={fullWidth}
+        hint={hint}
         label={label}
       >
         <textarea

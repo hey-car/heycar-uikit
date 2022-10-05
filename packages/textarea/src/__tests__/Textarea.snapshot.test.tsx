@@ -1,45 +1,35 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 
-import Input from '../Textarea';
+import Textarea from '../Textarea';
 
-describe('Input Snapshots tests', () => {
+describe('Textarea Snapshots tests', () => {
   it('should match callback methods', () => {
     expect(
-      render(
-        <Input
-          onChange={jest.fn()}
-          onClick={jest.fn()}
-          onMouseDown={jest.fn()}
-          onMouseUp={jest.fn()}
-          value="value"
-        />,
-      ),
+      render(<Textarea onChange={jest.fn()} value="value" />),
     ).toMatchSnapshot();
   });
 
   it('should match label and value props', () => {
-    expect(render(<Input label="Label" value="value" />)).toMatchSnapshot();
+    expect(render(<Textarea label="Label" value="value" />)).toMatchSnapshot();
   });
 
-  it('should match left and right icons', () => {
+  it('should match max length', () => {
     expect(
-      render(
-        <Input label="Label" leftIcon="🚗" rightIcon="🚗" value="value" />,
-      ),
+      render(<Textarea label="Label" maxLength={20} value="value" />),
     ).toMatchSnapshot();
   });
 
   it('should match disabled state', () => {
     expect(
-      render(<Input disabled={true} label="Label" value="value" />),
+      render(<Textarea disabled={true} label="Label" value="value" />),
     ).toMatchSnapshot();
   });
 
-  it('should match error hint/state', () => {
+  it('should match error state', () => {
     expect(
       render(
-        <Input
+        <Textarea
           error="This is the placeholder for error note"
           label="Label"
           value="value"
@@ -48,10 +38,10 @@ describe('Input Snapshots tests', () => {
     ).toMatchSnapshot();
   });
 
-  it('should match error hint', () => {
+  it('should match hint text', () => {
     expect(
       render(
-        <Input
+        <Textarea
           hint="This is the placeholder for error note"
           label="Label"
           value="value"
@@ -62,7 +52,7 @@ describe('Input Snapshots tests', () => {
 
   it('should match fullWidth', () => {
     expect(
-      render(<Input fullWidth={true} label="Label" value="value" />),
+      render(<Textarea fullWidth={true} label="Label" value="value" />),
     ).toMatchSnapshot();
   });
 });

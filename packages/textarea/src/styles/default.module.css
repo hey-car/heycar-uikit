@@ -8,7 +8,7 @@
   --textarea-disabled-color: var(--color-neutral-300);
 
   /* Sizes */
-  --form-textarea-min-height: 100px;
+  --form-textarea-min-height: 80px;
 }
 
 .textarea {
@@ -24,6 +24,7 @@
   box-sizing: border-box;
   resize: none;
   -webkit-appearance: none;
+  min-height: var(--form-textarea-min-height);
 
   color: var(--textarea-color);
   caret-color: var(--textarea-caret-color);
@@ -55,6 +56,5 @@
 
 .formControl {
   --form-control-input-padding: var(--gap-m);
-  --form-control-min-height: var(--form-textarea-min-height);
   --form-control-hint-fint-size: 12px;
 }
