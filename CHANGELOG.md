@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/hey-car/heycar-uikit/compare/v2.0.0...v2.0.1) (2022-10-05)
+
+
+### Bug Fixes
+
+* **button:** add argTypes type for children props in button ([#90](https://github.com/hey-car/heycar-uikit/issues/90)) ([a5a5d45](https://github.com/hey-car/heycar-uikit/commit/a5a5d45bb0816ef3ad7b1f22c71f3d783a4ccd9a))
+
 # [2.0.0](https://github.com/hey-car/heycar-uikit/compare/v1.22.0...v2.0.0) (2022-10-04)
 
 
