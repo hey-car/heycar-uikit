@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/button@2.0.0...@heycar-uikit/button@2.0.1) (2022-10-05)
+
+
+### Bug Fixes
+
+* **button:** add argTypes type for children props in button ([#90](https://github.com/hey-car/heycar-uikit/issues/90)) ([a5a5d45](https://github.com/hey-car/heycar-uikit/commit/a5a5d45bb0816ef3ad7b1f22c71f3d783a4ccd9a))
+
+
+
+
+
 # [2.0.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/button@1.9.0...@heycar-uikit/button@2.0.0) (2022-10-04)
 
 
