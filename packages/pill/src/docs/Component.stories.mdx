@@ -10,7 +10,16 @@ import styles from '!!raw-loader!../styles/default.module.css';
 
 <!-- Meta -->
 
-<Meta title="Components/Pill" component={Pill} />
+<Meta
+  argTypes={{
+    children: {
+      control: 'text',
+      type: { name: 'string', required: false },
+    },
+  }}
+  title="Components/Pill"
+  component={Pill}
+/>
 
 export const PillTemplate = args => <Pill leftIcon={<AC />} {...args} />;
 
