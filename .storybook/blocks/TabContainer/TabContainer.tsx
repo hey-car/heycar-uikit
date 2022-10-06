@@ -5,7 +5,6 @@ import cn from 'classnames';
 
 import styles from './TabContainer.module.css';
 
-
 export const TabContainer: React.FC<TabContainerProps> = ({ tabs }) => {
   const [viewedTab, setViewedTab] = useState<number>(0);
   const isActive = (index: number): boolean => index === viewedTab;
@@ -20,11 +19,10 @@ export const TabContainer: React.FC<TabContainerProps> = ({ tabs }) => {
           <div
             data-index={index}
             key={`${label}_tab`}
-            className={
-              cn(styles.tabs__tab, {
-                [styles.tabs__tab_active]: isActive(index)
-              })
-            }
+            tabIndex={0}
+            className={cn(styles.tabs__tab, {
+              [styles.tabs__tab_active]: isActive(index),
+            })}
             onClick={handleTabClick(index)}
           >
             {label}
