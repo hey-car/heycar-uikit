@@ -18,7 +18,7 @@ export const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
           ref={ref}
           type="checkbox"
         />
-        <span className={styles.switch} />
+        <span className={styles.switch} tabIndex={0} />
       </label>
     );
   },
