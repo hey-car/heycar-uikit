@@ -18,6 +18,8 @@ const Accordion = React.forwardRef<HTMLElement, AccordionProps>(
       disabled = false,
       dataTestId,
       className,
+      onExpandedChange,
+      onTransitionEnd,
       ...restProps
     },
     ref,
@@ -43,6 +45,9 @@ const Accordion = React.forwardRef<HTMLElement, AccordionProps>(
       if (disabled) return event.preventDefault();
 
       setIsOpen(!isOpen);
+      if (onExpandedChange) {
+        onExpandedChange(!isOpen);
+      }
     };
     const tabIndex = disabled ? -1 : 0;
 
@@ -72,10 +77,11 @@ const Accordion = React.forwardRef<HTMLElement, AccordionProps>(
         <Collapse
           // aria-labelledby={accordionId}
           className={styles.body}
+          onTransitionEnd={onTransitionEnd}
+          role="region"
           data-accordion-component="AccordionItemPanel"
           // id={accordionId}
           open={isOpen}
-          role="region"
         >
           {children}
         </Collapse>

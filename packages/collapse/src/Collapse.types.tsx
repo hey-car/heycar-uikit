@@ -13,6 +13,10 @@ export interface ComponentProps {
    * The id for testing
    */
   dataTestId?: string;
+  /**
+   * A function that's triggered once expanding/collapsing transition ends
+   */
+  onTransitionEnd?: (expanded: boolean) => void;
 }
 type AnchorCollapseProps = ComponentProps & AnchorHTMLAttributes<HTMLElement>;
 
