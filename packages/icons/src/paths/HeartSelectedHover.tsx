@@ -10,5 +10,5 @@ export const HeartSelectedHover = createSvgIcon(
     fill-rule="evenodd"
   />,
   'HeartSelectedHover',
-  '0 0 84 84',
+  '0 0 24 24',
 );

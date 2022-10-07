@@ -10,5 +10,5 @@ export const HeartPressed = createSvgIcon(
     fillRule="evenodd"
   />,
   'HeartPressed',
-  '0 0 84 84',
+  '0 0 24 24',
 );
