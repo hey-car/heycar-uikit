@@ -1,6 +1,6 @@
 {
   "name": "@heycar-uikit/switch",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "HeyCar-UIKit Switch",
   "main": "dist/index.js",
   "module": "./dist/esm/index.js",
