@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/icons@2.0.0...@heycar-uikit/icons@2.1.0) (2022-10-10)
+
+
+### Features
+
+* **icons:** added updated icons ([#89](https://github.com/hey-car/heycar-uikit/issues/89)) ([5dad4af](https://github.com/hey-car/heycar-uikit/commit/5dad4af53309147128286d22b551749e86b5c9da))
+
+
+
+
+
 # [2.0.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/icons@1.8.0...@heycar-uikit/icons@2.0.0) (2022-10-04)
 
 
