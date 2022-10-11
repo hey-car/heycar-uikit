@@ -15,7 +15,6 @@
 * Base
 */
 .pill {
-  font-family: var(--font-family-system);
   font-size: 14px;
   padding: var(--gap-2xs) var(--gap-xs);
   display: inline-flex;
@@ -33,7 +32,6 @@
   background-color: var(--pill-background-color);
   color: var(--pill-text-color);
   @mixin typography-subheading-3;
-  font-weight: 500;
 }
 
 /*
