@@ -7,6 +7,7 @@ export * from './paths/BuyingСar';
 export * from './paths/Calculator';
 export * from './paths/Calendar';
 export * from './paths/Call';
+export * from './paths/CallBack';
 export * from './paths/Car';
 export * from './paths/CarLocation';
 export * from './paths/Card';
