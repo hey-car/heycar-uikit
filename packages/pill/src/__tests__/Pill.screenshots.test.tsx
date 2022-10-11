@@ -30,7 +30,7 @@ describe(
 );
 
 describe(
-  'Pill component',
+  'Pill with component prop as span',
   screenshotTesting({
     cases: ['pill-component'].map(() => [
       'sprite',
@@ -40,6 +40,23 @@ describe(
           children: pillLabel,
           // eslint-disable-next-line @typescript-eslint/naming-convention
           Component: 'span',
+        },
+      }),
+    ]),
+    screenshotOpts: { clip },
+  }),
+);
+
+describe(
+  'Pill with icon',
+  screenshotTesting({
+    cases: ['pill-component'].map(() => [
+      'sprite',
+      createStorybookUrl({
+        packageName,
+        knobs: {
+          children: pillLabel,
+          leftIcon: '$',
         },
       }),
     ]),
