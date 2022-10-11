@@ -2,11 +2,17 @@
 
 set -e
 
+echo 'Start publish CI'
+
 # Release the root package with semantic-release
 semantic_output=$(npx semantic-release)
 
+echo 'Check semantic-release'
+
 # Output log semantics
 echo $semantic_output
+
+echo 'Show semantic-release'
 
 # Check that semantic-release has released the root package (I don't know how else to do it yet)
 if [[ $semantic_output =~ "Publishing version" ]]
@@ -16,6 +22,8 @@ then
     git pull origin main --rebase
     git fetch --tags
 
+    echo 'after publishing version'
+
     if [ -z $(lerna changed) ]
     then
         echo "There are no relevant changes, so no new versions are released."
@@ -23,6 +31,7 @@ then
         lerna version --conventional-commits --no-commit-hooks --yes --force-git-tag
         git push origin main
         lerna publish from-git --yes
+        echo 'publishing sub packages'
     fi
 else
     exit 0
