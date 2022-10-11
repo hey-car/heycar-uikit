@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/icons@2.1.0...@heycar-uikit/icons@2.2.0) (2022-10-11)
+
+
+### Features
+
+* **icons:** added the new CallBack icon ([8f1f54d](https://github.com/hey-car/heycar-uikit/commit/8f1f54da39a3c53e8c7122f6c5bfea782109a473))
+
+
+
+
+
 # [2.1.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/icons@2.0.0...@heycar-uikit/icons@2.1.0) (2022-10-10)
 
 
