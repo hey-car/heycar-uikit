@@ -1,3 +1,10 @@
+# [2.4.0](https://github.com/hey-car/heycar-uikit/compare/v2.3.0...v2.4.0) (2022-10-11)
+
+
+### Features
+
+* **form-control:** improve performance ([1589db1](https://github.com/hey-car/heycar-uikit/commit/1589db1849a8ae8ca1e518b8a587707431ea9681))
+
 # [2.3.0](https://github.com/hey-car/heycar-uikit/compare/v2.2.0...v2.3.0) (2022-10-11)
 
 
