@@ -38,8 +38,12 @@ jobs:
           email: 'semantic-release-bot@martynus.net'
           token: '${{ secrets.PERMISSION_GITHUB_TOKEN }}'
 
-      - name: Publish
-        run: npm run pub:ci
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '17'
+          registry-url: 'https://registry.npmjs.org'
+      - run: npm run pub:ci
         env:
           GITHUB_TOKEN: ${{ secrets.PERMISSION_GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
