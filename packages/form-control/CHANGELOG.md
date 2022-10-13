@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/form-control@1.3.1...@heycar-uikit/form-control@1.4.0) (2022-10-13)
+
+
+### Bug Fixes
+
+* **form-control:** remove extra comments ([2e40df3](https://github.com/hey-car/heycar-uikit/commit/2e40df3d40651418e401b396f9a268cde4f14d97))
+
+
+### Features
+
+* **form-control:** extra test comment ([41ebee3](https://github.com/hey-car/heycar-uikit/commit/41ebee31e0262e316c7822609314f152cfb76a1d))
+
+
+
+
+
 ## [1.3.1](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/form-control@1.3.0...@heycar-uikit/form-control@1.3.1) (2022-10-13)
 
 
