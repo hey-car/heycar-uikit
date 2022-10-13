@@ -1,3 +1,32 @@
+# [2.4.0](https://github.com/hey-car/heycar-uikit/compare/v2.3.0...v2.4.0) (2022-10-11)
+
+
+### Features
+
+* **form-control:** improve performance ([1589db1](https://github.com/hey-car/heycar-uikit/commit/1589db1849a8ae8ca1e518b8a587707431ea9681))
+
+# [2.3.0](https://github.com/hey-car/heycar-uikit/compare/v2.2.0...v2.3.0) (2022-10-11)
+
+
+### Features
+
+* **form-control:** remove the canvas section from the documentation ([5ca4a9a](https://github.com/hey-car/heycar-uikit/commit/5ca4a9a2ea4b66fa0a3a961fcdeef5e3167f6c25))
+* **icons:** added the new CallBack icon ([8f1f54d](https://github.com/hey-car/heycar-uikit/commit/8f1f54da39a3c53e8c7122f6c5bfea782109a473))
+
+# [2.2.0](https://github.com/hey-car/heycar-uikit/compare/v2.1.0...v2.2.0) (2022-10-11)
+
+
+### Features
+
+* **form-control:** improve documentation part ([ae8ff57](https://github.com/hey-car/heycar-uikit/commit/ae8ff5767a3d6a723c2ceb896ed300d124eb81dc))
+
+# [2.1.0](https://github.com/hey-car/heycar-uikit/compare/v2.0.1...v2.1.0) (2022-10-10)
+
+
+### Features
+
+* **icons:** added updated icons ([#89](https://github.com/hey-car/heycar-uikit/issues/89)) ([5dad4af](https://github.com/hey-car/heycar-uikit/commit/5dad4af53309147128286d22b551749e86b5c9da))
+
 ## [2.0.1](https://github.com/hey-car/heycar-uikit/compare/v2.0.0...v2.0.1) (2022-10-05)
 
 

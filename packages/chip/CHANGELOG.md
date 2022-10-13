@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.3](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/chip@0.4.2...@heycar-uikit/chip@0.4.3) (2022-10-11)
+
+**Note:** Version bump only for package @heycar-uikit/chip
+
+
+
+
+
+## [0.4.2](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/chip@0.4.1...@heycar-uikit/chip@0.4.2) (2022-10-10)
+
+**Note:** Version bump only for package @heycar-uikit/chip
+
+
+
+
+
 ## [0.4.1](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/chip@0.4.0...@heycar-uikit/chip@0.4.1) (2022-10-05)
 
 
