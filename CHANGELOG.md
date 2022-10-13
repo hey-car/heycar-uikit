@@ -1,3 +1,15 @@
+# [2.6.0](https://github.com/hey-car/heycar-uikit/compare/v2.5.1...v2.6.0) (2022-10-13)
+
+
+### Bug Fixes
+
+* **form-control:** remove extra comments ([d794707](https://github.com/hey-car/heycar-uikit/commit/d7947079cf4d29036663996d1e67b8b8c590fb0f))
+
+
+### Features
+
+* **accordion:** add onExpandedChange and onTransitionEnd ([#96](https://github.com/hey-car/heycar-uikit/issues/96)) ([c247b71](https://github.com/hey-car/heycar-uikit/commit/c247b719f9d6669a5aa9fd7f4ac2e264b7764350))
+
 ## [2.5.1](https://github.com/hey-car/heycar-uikit/compare/v2.5.0...v2.5.1) (2022-10-13)
 
 
