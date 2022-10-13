@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { fireEvent, render } from '@testing-library/react';
 
 import Collapse from '../Collapse';
 
@@ -58,6 +58,29 @@ describe('Collapse', () => {
       );
 
       expect(container.firstElementChild).toHaveClass(className);
+    });
+  });
+
+  /**
+   * Actions tests
+   */
+  describe('Actions tests', () => {
+    it('should trigger onTransitionEnd after transition', () => {
+      const onTransitionEnd = jest.fn();
+
+      const { getByTestId } = render(
+        <Collapse
+          dataTestId="test"
+          onTransitionEnd={onTransitionEnd}
+          open={false}
+        >
+          {collapseTestBody}
+        </Collapse>,
+      );
+
+      fireEvent.transitionEnd(getByTestId('test'));
+
+      expect(onTransitionEnd).toBeCalled();
     });
   });
 
