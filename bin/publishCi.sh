@@ -28,10 +28,10 @@ then
     then
         echo "There are no relevant changes, so no new versions are released."
     else
+        echo 'publishing sub packages'
         lerna version --conventional-commits --no-commit-hooks --yes --force-git-tag
         git push origin main
-        lerna publish from-git --yes
-        echo 'publishing sub packages'
+        lerna publish from-git --yes --no-verify-access
     fi
 else
     exit 0
