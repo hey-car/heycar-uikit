@@ -11,17 +11,25 @@ function Collapse({
   open = false,
   className,
   dataTestId,
+  onTransitionEnd,
   ...restProps
 }: CollapseProps) {
   const { collapseContent, collapseStyles, handlerTransitionEnd } =
     useCollapse(open);
   const classNames = cn(styles.collapse, className);
 
+  const handleTransitionEnd = (event: React.SyntheticEvent<Element, Event>) => {
+    handlerTransitionEnd(event);
+    if (onTransitionEnd) {
+      onTransitionEnd(open);
+    }
+  };
+
   return (
     <div
       className={classNames}
       data-test-id={dataTestId}
-      onTransitionEnd={handlerTransitionEnd}
+      onTransitionEnd={handleTransitionEnd}
       ref={collapseContent}
       style={collapseStyles}
       {...restProps}

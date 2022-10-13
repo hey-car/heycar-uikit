@@ -1,3 +1,11 @@
+## [2.5.1](https://github.com/hey-car/heycar-uikit/compare/v2.5.0...v2.5.1) (2022-10-13)
+
+
+### Bug Fixes
+
+* **form-control:** add test comment ([0634bf3](https://github.com/hey-car/heycar-uikit/commit/0634bf303a01d27a86d174bf08f3b416a434fb87))
+* **form-control:** remove extra comment ([8675140](https://github.com/hey-car/heycar-uikit/commit/867514060f97e2764fc56c2cde4d5cfdb7f4a55a))
+
 # [2.5.0](https://github.com/hey-car/heycar-uikit/compare/v2.4.1...v2.5.0) (2022-10-13)
 
 
