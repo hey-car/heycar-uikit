@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/switch@2.0.0...@heycar-uikit/switch@2.1.0) (2022-10-13)
+
+
+### Features
+
+* **accordion:** add onExpandedChange and onTransitionEnd ([#96](https://github.com/hey-car/heycar-uikit/issues/96)) ([c247b71](https://github.com/hey-car/heycar-uikit/commit/c247b719f9d6669a5aa9fd7f4ac2e264b7764350))
+
+
+
+
+
 # [2.0.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/switch@1.4.0...@heycar-uikit/switch@2.0.0) (2022-10-04)
 
 
