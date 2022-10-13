@@ -39,6 +39,9 @@ jobs:
           token: '${{ secrets.PERMISSION_GITHUB_TOKEN }}'
 
       - name: Publish
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
         run: npm run pub:ci
         env:
           GITHUB_TOKEN: ${{ secrets.PERMISSION_GITHUB_TOKEN }}
