@@ -629,6 +629,11 @@ Object {
             </legend>
           </fieldset>
         </div>
+        <span
+          class="sub hint"
+        >
+          This is the placeholder for error note
+        </span>
       </div>
     </div>
   </body>,
@@ -675,6 +680,11 @@ Object {
           </legend>
         </fieldset>
       </div>
+      <span
+        class="sub hint"
+      >
+        This is the placeholder for error note
+      </span>
     </div>
   </div>,
   "debug": [Function],
