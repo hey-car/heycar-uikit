@@ -1,0 +1,132 @@
+import { Meta, Story, Props } from '@storybook/addon-docs';
+import {
+  ComponentHeader,
+  CssVars,
+  Container,
+  TabContainer,
+} from 'storybook/blocks';
+
+import Textarea from '../Textarea';
+import Description from './Description.mdx';
+import { version } from '../../package.json';
+import Changelog from '../../CHANGELOG.md';
+import { Clock, Calendar } from '../../../icons/src';
+import styles from '!!raw-loader!../styles/default.module.css';
+
+<!-- Meta -->
+
+<Meta
+  title="Components/Textarea"
+  component={Textarea}
+  argTypes={{
+    label: {
+      name: 'label',
+      type: { name: 'string' },
+      defaultValue: 'Label',
+    },
+    value: {
+      name: 'value',
+      type: { name: 'string' },
+      defaultValue: 'Placeholder',
+    },
+    maxLength: {
+      name: 'max length',
+      type: { name: 'number' },
+      defaultValue: 0,
+    },
+    error: {
+      name: 'error',
+      type: { name: 'string' },
+      defaultValue: '',
+    },
+    disabled: {
+      name: 'disabled',
+      type: { name: 'boolean' },
+      defaultValue: false,
+    },
+    fullWidth: {
+      name: 'full width',
+      type: { name: 'boolean' },
+      defaultValue: false,
+    },
+    dataTestId: {
+      table: {
+        disable: true,
+      },
+    },
+    defaultValue: {
+      table: {
+        disable: true,
+      },
+    },
+    onChange: {
+      table: {
+        disable: true,
+      },
+    },
+    hint: {
+      table: {
+        disable: true,
+      },
+    },
+    resize: {
+      table: {
+        disable: true,
+      },
+    },
+  }}
+/>
+
+export const TextareaTemplate = args => {
+  const maxWidth = args.fullWidth ? '700px' : '350px';
+  return (
+    <div style={{ maxWidth, margin: '0 auto' }}>
+      <Textarea style={{ minWidth: '300px' }} {...args} />
+    </div>
+  );
+};
+
+<!-- Canvas -->
+
+<Story
+  name="Textarea"
+  args={{
+    label: 'Label',
+    value: 'Placeholder',
+  }}
+>
+  {TextareaTemplate.bind({})}
+</Story>
+
+<!-- Docs -->
+
+<ComponentHeader
+  name="Textarea"
+  version={version}
+  stage={1}
+  design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Global-Design-System?node-id=1426%3A39722"
+/>
+
+The Textarea component allows you to easily create multi-line text inputs.
+
+```tsx
+import Textarea from '@heycar-uikit/textarea';
+```
+
+<TabContainer
+  tabs={[
+    { label: 'Description', component: <Description /> },
+    { label: 'Props', component: <Props of={Textarea} /> },
+    {
+      label: 'CSS tokens',
+      component: (
+        <CssVars
+          css={`
+            ${styles}
+          `}
+        />
+      ),
+    },
+    { label: 'Changelog', component: <Changelog /> },
+  ]}
+/>

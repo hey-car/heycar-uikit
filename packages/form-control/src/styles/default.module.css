@@ -21,12 +21,20 @@
   /* Sizes */
   --form-control-min-height: 48px;
   --from-control-legend-height: 11px;
+  --form-control-input-padding: 0;
+  --form-control-hint-fint-size: 10px;
 }
 
 .component {
   font-family: var(--font-family-system);
   width: max-content;
   color: var(--form-control-icon-color);
+
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
 
   & .inner {
     min-height: var(--form-control-min-height);
@@ -154,6 +162,8 @@
   display: flex;
   align-items: center;
   position: relative;
+  box-sizing: border-box;
+  padding: var(--form-control-input-padding);
 }
 
 /*
@@ -172,6 +182,8 @@
   pointer-events: none;
 
   @mixin typography-subheading-4;
+
+  line-height: 23px;
 
   & .labelInner {
     width: 100%;
@@ -226,6 +238,8 @@
   padding-left: var(--gap-m);
 
   @mixin typography-caption-5;
+
+  font-size: var(--form-control-hint-fint-size);
 }
 
 /*
