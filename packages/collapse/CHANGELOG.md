@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/collapse@1.3.0...@heycar-uikit/collapse@1.4.0) (2022-10-13)
+
+
+### Features
+
+* **accordion:** add onExpandedChange and onTransitionEnd ([#96](https://github.com/hey-car/heycar-uikit/issues/96)) ([c247b71](https://github.com/hey-car/heycar-uikit/commit/c247b719f9d6669a5aa9fd7f4ac2e264b7764350))
+
+
+
+
+
+# [1.3.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/collapse@1.2.2...@heycar-uikit/collapse@1.3.0) (2022-09-30)
+
+
+### Features
+
+* **input:**  first implementation the input component ([#84](https://github.com/hey-car/heycar-uikit/issues/84)) ([87fbe55](https://github.com/hey-car/heycar-uikit/commit/87fbe5549048e44006781092e9e5707b6e63534d))
+
+
+
+
+
 ## [1.2.2](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/collapse@1.2.0...@heycar-uikit/collapse@1.2.2) (2022-09-16)
 
 **Note:** Version bump only for package @heycar-uikit/collapse

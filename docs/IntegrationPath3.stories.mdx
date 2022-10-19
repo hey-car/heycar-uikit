@@ -1,0 +1,36 @@
+import { Meta } from '@storybook/addon-docs';
+import Readme from '../README.md';
+import { version } from '../package.json';
+
+<Meta
+  title="Guidelines/Integration workflows/3. Adding new component"
+  parameters={{
+    previewTabs: {
+      canvas: { hidden: true },
+      'storybook/docs/panel': { hidden: true },
+    },
+  }}
+/>
+
+# 3. Adding New Component
+
+## Preconditions:
+
+Component is “Recommended” or you are first integrator and status is “Ready for First Integration”
+SPA has not integrated hey-uikit yet
+
+## Steps
+
+- Before starting an implementation you should follow the following steps and checks:
+  - First check if the component you are looking for is in the **[OTP Global Design Figma](https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Global-Design-System?node-id=715%3A110433)**
+    - Any component that is not in the figma or not in green status should not be implemented to GDS
+    - For these cases ping #global-design-system channel . Then your required components will be communicated with Design Team
+  - Any component implementation related process needs to be tracked on **[HEYUI Jira project](https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Global-Design-System?node-id=715%3A110433)** so that the relevant parties can see the process on implementations
+    - Create a component Epic if there is none for the component in question. And link this to your own project if need be. Use Checkbox Component Epic as an example
+  - Start your implementation which will end in the Component becoming in `Ready for First Integration` status on storybook
+    - Follow the **[General Contribution guidelines](https://hey-car.github.io/heycar-uikit/main/?path=/docs/guidelines-contributing--page)** while doing your implementation
+  - Create your PR and get it reviewed
+    - open the PR review
+    - put your implementation task to code review on the jira board
+  - When your implementation is got an OK on the PR review , ask for a design review
+    - From your end this is mainly putting the implementation task in the design review state on jira.

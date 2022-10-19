@@ -3,6 +3,100 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/accordion@2.0.2...@heycar-uikit/accordion@2.1.0) (2022-10-13)
+
+
+### Features
+
+* **accordion:** add onExpandedChange and onTransitionEnd ([#96](https://github.com/hey-car/heycar-uikit/issues/96)) ([c247b71](https://github.com/hey-car/heycar-uikit/commit/c247b719f9d6669a5aa9fd7f4ac2e264b7764350))
+
+
+
+
+
+## [2.0.2](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/accordion@2.0.1...@heycar-uikit/accordion@2.0.2) (2022-10-11)
+
+**Note:** Version bump only for package @heycar-uikit/accordion
+
+
+
+
+
+## [2.0.1](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/accordion@2.0.0...@heycar-uikit/accordion@2.0.1) (2022-10-10)
+
+**Note:** Version bump only for package @heycar-uikit/accordion
+
+
+
+
+
+# [2.0.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/accordion@1.4.0...@heycar-uikit/accordion@2.0.0) (2022-10-04)
+
+
+### Features
+
+* **grid:** change all dimensions according to the latest design ([#72](https://github.com/hey-car/heycar-uikit/issues/72)) ([74afd1d](https://github.com/hey-car/heycar-uikit/commit/74afd1d6004cafc0a4de003253cbaebfc6b1e0a1))
+
+
+### BREAKING CHANGES
+
+* **grid:** change all dimensions as the latest design
+
+* test(grid): add null check tests for getGridClassNames util to improve test coverage
+
+Add null check tests for getGridClassNames util to improve test coverage
+
+* fix(grid): fix undefined result for classnames
+
+fix undefined result for classnames
+
+* fix(grid): fix undefined result for classnames
+
+fix undefined result for classnames
+
+* feat(grid): implement the margins according to grid design
+
+Implement the margins according to grid design
+
+* test(grid): update screenshot tests
+
+update screenshot tests
+
+* feat(grid): remove default padding on grid component
+
+remove default padding on grid component
+
+* feat(grid): add default margin in storybook
+
+Add default margin size in stroybook
+
+* chore: publish
+
+ - @heycar-uikit/accordion@1.4.1
+ - @heycar-uikit/button@1.9.1
+ - @heycar-uikit/chip@0.3.1
+ - @heycar-uikit/grid@2.0.0
+ - @heycar-uikit/icons@1.8.1
+ - @heycar-uikit/switch@1.4.1
+ - @heycar-uikit/themes@1.8.1
+ - @heycar-uikit/typography@1.4.1
+
+
+
+
+
+# [1.4.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/accordion@1.3.2...@heycar-uikit/accordion@1.4.0) (2022-09-30)
+
+
+### Features
+
+* **input:**  first implementation the input component ([#84](https://github.com/hey-car/heycar-uikit/issues/84)) ([87fbe55](https://github.com/hey-car/heycar-uikit/commit/87fbe5549048e44006781092e9e5707b6e63534d))
+* **status:** update all component status, added new ready for first integration,first integration ([#87](https://github.com/hey-car/heycar-uikit/issues/87)) ([9041d63](https://github.com/hey-car/heycar-uikit/commit/9041d630d8ca0b8b2dcfeed1965bbd6be8b70380))
+
+
+
+
+
 ## [1.3.2](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/accordion@1.3.0...@heycar-uikit/accordion@1.3.2) (2022-09-16)
 
 **Note:** Version bump only for package @heycar-uikit/accordion

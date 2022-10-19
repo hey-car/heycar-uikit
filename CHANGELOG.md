@@ -1,3 +1,143 @@
+# [2.6.0](https://github.com/hey-car/heycar-uikit/compare/v2.5.1...v2.6.0) (2022-10-13)
+
+
+### Bug Fixes
+
+* **form-control:** remove extra comments ([d794707](https://github.com/hey-car/heycar-uikit/commit/d7947079cf4d29036663996d1e67b8b8c590fb0f))
+
+
+### Features
+
+* **accordion:** add onExpandedChange and onTransitionEnd ([#96](https://github.com/hey-car/heycar-uikit/issues/96)) ([c247b71](https://github.com/hey-car/heycar-uikit/commit/c247b719f9d6669a5aa9fd7f4ac2e264b7764350))
+
+## [2.5.1](https://github.com/hey-car/heycar-uikit/compare/v2.5.0...v2.5.1) (2022-10-13)
+
+
+### Bug Fixes
+
+* **form-control:** add test comment ([0634bf3](https://github.com/hey-car/heycar-uikit/commit/0634bf303a01d27a86d174bf08f3b416a434fb87))
+* **form-control:** remove extra comment ([8675140](https://github.com/hey-car/heycar-uikit/commit/867514060f97e2764fc56c2cde4d5cfdb7f4a55a))
+
+# [2.5.0](https://github.com/hey-car/heycar-uikit/compare/v2.4.1...v2.5.0) (2022-10-13)
+
+
+### Bug Fixes
+
+* **form-control:** remove extra comments ([2e40df3](https://github.com/hey-car/heycar-uikit/commit/2e40df3d40651418e401b396f9a268cde4f14d97))
+
+
+### Features
+
+* **form-control:** extra test comment ([41ebee3](https://github.com/hey-car/heycar-uikit/commit/41ebee31e0262e316c7822609314f152cfb76a1d))
+
+## [2.4.1](https://github.com/hey-car/heycar-uikit/compare/v2.4.0...v2.4.1) (2022-10-13)
+
+
+### Bug Fixes
+
+* **form-control:** remove additional comment ([a81dd6a](https://github.com/hey-car/heycar-uikit/commit/a81dd6af6d51708f25fb8f512cd19a54bd7414e9))
+
+# [2.4.0](https://github.com/hey-car/heycar-uikit/compare/v2.3.0...v2.4.0) (2022-10-11)
+
+
+### Features
+
+* **form-control:** improve performance ([1589db1](https://github.com/hey-car/heycar-uikit/commit/1589db1849a8ae8ca1e518b8a587707431ea9681))
+
+# [2.3.0](https://github.com/hey-car/heycar-uikit/compare/v2.2.0...v2.3.0) (2022-10-11)
+
+
+### Features
+
+* **form-control:** remove the canvas section from the documentation ([5ca4a9a](https://github.com/hey-car/heycar-uikit/commit/5ca4a9a2ea4b66fa0a3a961fcdeef5e3167f6c25))
+* **icons:** added the new CallBack icon ([8f1f54d](https://github.com/hey-car/heycar-uikit/commit/8f1f54da39a3c53e8c7122f6c5bfea782109a473))
+
+# [2.2.0](https://github.com/hey-car/heycar-uikit/compare/v2.1.0...v2.2.0) (2022-10-11)
+
+
+### Features
+
+* **form-control:** improve documentation part ([ae8ff57](https://github.com/hey-car/heycar-uikit/commit/ae8ff5767a3d6a723c2ceb896ed300d124eb81dc))
+
+# [2.1.0](https://github.com/hey-car/heycar-uikit/compare/v2.0.1...v2.1.0) (2022-10-10)
+
+
+### Features
+
+* **icons:** added updated icons ([#89](https://github.com/hey-car/heycar-uikit/issues/89)) ([5dad4af](https://github.com/hey-car/heycar-uikit/commit/5dad4af53309147128286d22b551749e86b5c9da))
+
+## [2.0.1](https://github.com/hey-car/heycar-uikit/compare/v2.0.0...v2.0.1) (2022-10-05)
+
+
+### Bug Fixes
+
+* **button:** add argTypes type for children props in button ([#90](https://github.com/hey-car/heycar-uikit/issues/90)) ([a5a5d45](https://github.com/hey-car/heycar-uikit/commit/a5a5d45bb0816ef3ad7b1f22c71f3d783a4ccd9a))
+
+# [2.0.0](https://github.com/hey-car/heycar-uikit/compare/v1.22.0...v2.0.0) (2022-10-04)
+
+
+### Features
+
+* **grid:** change all dimensions according to the latest design ([#72](https://github.com/hey-car/heycar-uikit/issues/72)) ([74afd1d](https://github.com/hey-car/heycar-uikit/commit/74afd1d6004cafc0a4de003253cbaebfc6b1e0a1))
+
+
+### BREAKING CHANGES
+
+* **grid:** change all dimensions as the latest design
+
+* test(grid): add null check tests for getGridClassNames util to improve test coverage
+
+Add null check tests for getGridClassNames util to improve test coverage
+
+* fix(grid): fix undefined result for classnames
+
+fix undefined result for classnames
+
+* fix(grid): fix undefined result for classnames
+
+fix undefined result for classnames
+
+* feat(grid): implement the margins according to grid design
+
+Implement the margins according to grid design
+
+* test(grid): update screenshot tests
+
+update screenshot tests
+
+* feat(grid): remove default padding on grid component
+
+remove default padding on grid component
+
+* feat(grid): add default margin in storybook
+
+Add default margin size in stroybook
+
+* chore: publish
+
+ - @heycar-uikit/accordion@1.4.1
+ - @heycar-uikit/button@1.9.1
+ - @heycar-uikit/chip@0.3.1
+ - @heycar-uikit/grid@2.0.0
+ - @heycar-uikit/icons@1.8.1
+ - @heycar-uikit/switch@1.4.1
+ - @heycar-uikit/themes@1.8.1
+ - @heycar-uikit/typography@1.4.1
+
+# [1.22.0](https://github.com/hey-car/heycar-uikit/compare/v1.21.0...v1.22.0) (2022-09-30)
+
+
+### Features
+
+* **input:**  first implementation the input component ([#84](https://github.com/hey-car/heycar-uikit/issues/84)) ([87fbe55](https://github.com/hey-car/heycar-uikit/commit/87fbe5549048e44006781092e9e5707b6e63534d))
+
+# [1.21.0](https://github.com/hey-car/heycar-uikit/compare/v1.20.0...v1.21.0) (2022-09-26)
+
+
+### Features
+
+* **status:** update all component status, added new ready for first integration,first integration ([#87](https://github.com/hey-car/heycar-uikit/issues/87)) ([9041d63](https://github.com/hey-car/heycar-uikit/commit/9041d630d8ca0b8b2dcfeed1965bbd6be8b70380))
+
 # [1.20.0](https://github.com/hey-car/heycar-uikit/compare/v1.19.0...v1.20.0) (2022-09-21)
 
 

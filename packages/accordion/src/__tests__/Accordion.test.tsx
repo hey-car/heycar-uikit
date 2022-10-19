@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 
 import Accordion from '../Accordion';
 
@@ -205,6 +205,32 @@ describe('Accordion', () => {
       );
 
       expect(unmount).not.toThrowError();
+    });
+  });
+  /**
+   * Action tests
+   */
+  describe('Action tests', () => {
+    it('should call onExpandedChange on click', () => {
+      const onExpandedChange = jest.fn();
+
+      onExpandedChange.mockReturnValue(null);
+
+      render(
+        <Accordion
+          dataTestId={dataTestId}
+          onExpandedChange={onExpandedChange}
+          title={accordionTitle}
+        >
+          {accordionBodyText}
+        </Accordion>,
+      );
+
+      const button = screen.getByRole('button');
+
+      fireEvent.click(button);
+
+      expect(onExpandedChange).toBeCalled();
     });
   });
 });

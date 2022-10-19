@@ -3,6 +3,94 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/icons@2.1.0...@heycar-uikit/icons@2.2.0) (2022-10-11)
+
+
+### Features
+
+* **icons:** added the new CallBack icon ([8f1f54d](https://github.com/hey-car/heycar-uikit/commit/8f1f54da39a3c53e8c7122f6c5bfea782109a473))
+
+
+
+
+
+# [2.1.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/icons@2.0.0...@heycar-uikit/icons@2.1.0) (2022-10-10)
+
+
+### Features
+
+* **icons:** added updated icons ([#89](https://github.com/hey-car/heycar-uikit/issues/89)) ([5dad4af](https://github.com/hey-car/heycar-uikit/commit/5dad4af53309147128286d22b551749e86b5c9da))
+
+
+
+
+
+# [2.0.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/icons@1.8.0...@heycar-uikit/icons@2.0.0) (2022-10-04)
+
+
+### Features
+
+* **grid:** change all dimensions according to the latest design ([#72](https://github.com/hey-car/heycar-uikit/issues/72)) ([74afd1d](https://github.com/hey-car/heycar-uikit/commit/74afd1d6004cafc0a4de003253cbaebfc6b1e0a1))
+
+
+### BREAKING CHANGES
+
+* **grid:** change all dimensions as the latest design
+
+* test(grid): add null check tests for getGridClassNames util to improve test coverage
+
+Add null check tests for getGridClassNames util to improve test coverage
+
+* fix(grid): fix undefined result for classnames
+
+fix undefined result for classnames
+
+* fix(grid): fix undefined result for classnames
+
+fix undefined result for classnames
+
+* feat(grid): implement the margins according to grid design
+
+Implement the margins according to grid design
+
+* test(grid): update screenshot tests
+
+update screenshot tests
+
+* feat(grid): remove default padding on grid component
+
+remove default padding on grid component
+
+* feat(grid): add default margin in storybook
+
+Add default margin size in stroybook
+
+* chore: publish
+
+ - @heycar-uikit/accordion@1.4.1
+ - @heycar-uikit/button@1.9.1
+ - @heycar-uikit/chip@0.3.1
+ - @heycar-uikit/grid@2.0.0
+ - @heycar-uikit/icons@1.8.1
+ - @heycar-uikit/switch@1.4.1
+ - @heycar-uikit/themes@1.8.1
+ - @heycar-uikit/typography@1.4.1
+
+
+
+
+
+# [1.8.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/icons@1.7.4...@heycar-uikit/icons@1.8.0) (2022-09-30)
+
+
+### Features
+
+* **input:**  first implementation the input component ([#84](https://github.com/hey-car/heycar-uikit/issues/84)) ([87fbe55](https://github.com/hey-car/heycar-uikit/commit/87fbe5549048e44006781092e9e5707b6e63534d))
+
+
+
+
+
 ## [1.7.4](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/icons@1.7.2...@heycar-uikit/icons@1.7.4) (2022-09-16)
 
 **Note:** Version bump only for package @heycar-uikit/icons

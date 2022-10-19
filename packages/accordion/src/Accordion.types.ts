@@ -26,6 +26,14 @@ export interface ComponentProps {
    * The id for testing
    */
   dataTestId?: string;
+  /**
+   * A function that's triggered when expanding/collapsing the accordion
+   */
+  onExpandedChange?: (expanded: boolean) => void;
+  /**
+   * A function that's triggered once expanding/collapsing transition ends
+   */
+  onTransitionEnd?: (expanded: boolean) => void;
 }
 
 export type AccordionProps = ComponentProps &
