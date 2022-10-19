@@ -1,3 +1,10 @@
+# [2.7.0](https://github.com/hey-car/heycar-uikit/compare/v2.6.0...v2.7.0) (2022-10-19)
+
+
+### Features
+
+* **textarea:** first implementation the textarea component ([#92](https://github.com/hey-car/heycar-uikit/issues/92)) ([9ad5d31](https://github.com/hey-car/heycar-uikit/commit/9ad5d31c0e5ad48b744e268137d259c4d4f13b48))
+
 # [2.6.0](https://github.com/hey-car/heycar-uikit/compare/v2.5.1...v2.6.0) (2022-10-13)
 
 
