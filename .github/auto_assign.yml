@@ -3,6 +3,10 @@ addReviewers: true
 reviewers:
   - derek-heycar
   - hcafaq
+  - esraltintas
+  - emrahsemizheycar
+  - heyabinanto
+  - pappjanos
 
 skipKeywords:
   - wip
