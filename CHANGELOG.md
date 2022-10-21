@@ -1,3 +1,10 @@
+# [2.8.0](https://github.com/hey-car/heycar-uikit/compare/v2.7.1...v2.8.0) (2022-10-21)
+
+
+### Features
+
+* **textarea:** set the first release version ([5ff8519](https://github.com/hey-car/heycar-uikit/commit/5ff851992f1ab33acda768c65b13b67c0f1e2ab1))
+
 ## [2.7.1](https://github.com/hey-car/heycar-uikit/compare/v2.7.0...v2.7.1) (2022-10-21)
 
 
