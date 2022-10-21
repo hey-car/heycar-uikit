@@ -1,3 +1,12 @@
+## [2.7.1](https://github.com/hey-car/heycar-uikit/compare/v2.7.0...v2.7.1) (2022-10-21)
+
+
+### Bug Fixes
+
+* **accordion:** fix package version ([7400408](https://github.com/hey-car/heycar-uikit/commit/7400408d26e8b0514cb86b99ec91aa537d7e568a))
+* **chip:** fix dependencies version ([bbf65a9](https://github.com/hey-car/heycar-uikit/commit/bbf65a9847b284bd274049b982c1236828b35bb5))
+* **icons:** fix package version ([3cf7df8](https://github.com/hey-car/heycar-uikit/commit/3cf7df885399cd13399063b17676c498b2f6dd23))
+
 # [2.7.0](https://github.com/hey-car/heycar-uikit/compare/v2.6.0...v2.7.0) (2022-10-19)
 
 
