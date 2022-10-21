@@ -9,7 +9,29 @@ You are welcome to create new components or update existing ones. But, before yo
 If you are a new developer at **heycar**, make sure to check the **[Package structure convention](/docs/guidelines-package-structure-convention--page)** and **[Code style guide](/docs/guidelines-code-style-guide-convention--page)**.
 There you will see specific tips on accessing and configuring your environment specifically to Front-end development.
 
-#### Basic requirements
+### Step-by-step contribution manual
+
+1. Create a branch name according to the purpose and the name of the ticket (**[Tickets](#tickets)**) exp. feat/HEYUI-9999-new-component (**[Branches naming](#branches-naming)**).
+2. Make any changes to the particular package or create a new one (**[Development Workflow](#development-workflow)**)
+   - The new package should start from the 1.0.0 version
+3. When the work was done, you should add file contents to the index using the command `git add`.
+   - If your changes affected different packages, you should divide the changes, this means changed files need to be added separately.
+4. Do not forget to update documentation/tests/etc regarding your changes.
+5. For the committing changes use the `npm run cm` command, which uses the [Commitizen Wizard](https://github.com/commitizen/cz-cli) (**[Commit Message Guidelines](#commit-message-guidelines)**).
+6. When you finished committing changes, push them to the remote repository and create PR **[Creating a pull request](#creating-a-pull-request)**.
+7. Automatically tests and checks changes and generates a link on the Storybook, that should be provided to the designer team for the confirmed changes (**[Screenshot testing](/docs/guidelines-screenshot-testing--page)**).
+8. After getting all confirmation, it is possible to merge the PR to the main branch.
+   - If you have more than one commit you should use the Rebase and marge method to merge. Because all of the comments should be recognized and added to the changelogs of the different packages.
+9. All of the commit title and details text for the commit will be automatically added to the changelog file by the name of the packages and the versions of the packages will be bumped as well by the purpose and the name of the commit changes
+   (**[Releases](#releases)**).
+
+### Releases
+
+- Important!: All releases should be done automatically by merging to the main branch.
+- if needed you can do it manually, but it is not recommended, to use for that the command `npm run pub:patch`
+- or you can publish the package directly from the particular package executed for it with the command `npm-publish`
+
+### Basic requirements
 
 There are some requirements and criteria for the whole **heycar-uikit** library. Make sure you are aware of them before starting development.
 
@@ -29,41 +51,38 @@ There are some requirements and criteria for the whole **heycar-uikit** library.
 
 - Components must easily support internationalization
 
-## Bugs
+### Tickets
 
-We are using [GitHub Issues](https://github.com/hey-car/heycar-uikit/issues) for bug tracking.
+Any new ticket creation bug/feature/story regarding GDS component library should happen on Hey-UI jira project.
 
-Before you report a bug, please make sure you've searched existing issues, and read our [FAQ](/docs/react/faq).
+### Branches naming
 
-#### Release cycle
+For proper release cycle and code support in this repository, you must use the **[AngularJS's commit message convention](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines)**
+also known as **[conventional-changelog](https://github.com/ajoslin/conventional-changelog)** workflow when creating new branches and releasing new code.
 
-For proper release cycle and code support in this repository, you must use the **[git-flow](https://www.gitkraken.com/learn/git/git-flow)** workflow when creating new branches and releasing new code.
 Below is a brief explanation of branch naming:
 
-`main` - Contains only tested code. Сode gets here from `release/*` and `hotfix/*` branches.
+`feat/*` - Branches are created based on ticket name, e.g. `feat/HEYUI-999-status-button-component`. Every individual ticket must have its corresponding branch, even for small tasks.
 
-`feature/*` - Branches are created based on ticket name, e.g. `feature/HEYUI-999-status-button-component`. Every individual ticket must have its corresponding branch, even for small tasks.
+`fix/*` - These are branches that contains very urgent fixes for production, e.g. `fix/HEYUI-999-fix-button-attribute`.
 
-`hotfix/*` - These are branches that contains very urgent fixes for production, e.g. `hotfix/HEYUI-999-fix-button-attribute`.
-
-`bugfix/*` - These branches contain bug fixes and can be merged into `develop`, `release` or `feature` braches, e.g. `bugfix/HEYUI-999-fix-button-attribute`.
-
-## Creating a pull request
+### Creating a pull request
 
 When creating your pull request, pay attention to the PR template and the requirements described there.
 
 If your PR is not yet ready to be reviewed, make sure it is a draft or labeled as a `work in progress`.
 
-Don't forget to properly name and label your PR. Examples: `feature: new button [#HEYUI-999]`, `bugfix: fixing header props [#HEYUI-000]`.
+Don't forget to properly name and label your PR. Examples: `feat: new button [#HEYUI-999]`, `bugfix: fixing header props [#HEYUI-000]`.
 
 In order for it to be merged, at least two approvals are necessary.
 
 The core team is monitoring for pull requests. We will review your pull request and either merge it, request changes to it, or close it with an explanation.
 
 **Before submitting a pull request**, please make sure to follow
-* [Code style guide](/docs/guidelines-code-style-guide-convention--page)
-* [Package structure convention](/docs/guidelines-package-structure-convention--page)
-* [Development Workflow](/docs/guidelines-contributing--page#development-workflow)
+
+- [Code style guide](/docs/guidelines-code-style-guide-convention--page)
+- [Package structure convention](/docs/guidelines-package-structure-convention--page)
+- [Development Workflow](/docs/guidelines-contributing--page#development-workflow)
 
 ### Commit Message Guidelines
 
