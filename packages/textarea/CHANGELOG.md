@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/textarea@0.1.0...@heycar-uikit/textarea@1.1.0) (2022-10-21)
+
+
+### Features
+
+* **textarea:** set the first release version ([5ff8519](https://github.com/hey-car/heycar-uikit/commit/5ff851992f1ab33acda768c65b13b67c0f1e2ab1))
+
+
+
+
+
 # 0.1.0 (2022-10-19)
 
 
