@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "@heycar-uikit/collapse": "^1.4.0",
-    "@heycar-uikit/icons": "^2.2.0",
+    "@heycar-uikit/icons": "^1.8.1",
     "classnames": "^2.3.1"
   },
   "author": "HeyCar Team",
