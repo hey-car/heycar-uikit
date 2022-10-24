@@ -1,0 +1,43 @@
+@import '../../../themes/src/default.css';
+
+/*
+* Colors
+*/
+:root {
+  /* background color */
+  --pill-background-color: var(--color-tarmac-grey-50);
+
+  /* text color */
+  --pill-text-color: var(--color-tarmac-grey-700);
+}
+
+/*
+* Base
+*/
+.pill {
+  font-size: 14px;
+  padding: var(--gap-2xs) var(--gap-xs);
+  display: inline-flex;
+  vertical-align: middle;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  height: 28px;
+  box-shadow: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  border-style: solid;
+  background-color: var(--pill-background-color);
+  color: var(--pill-text-color);
+  @mixin typography-subheading-3;
+}
+
+/*
+* Icon
+*/
+.leftIcon {
+  padding-right: var(--gap-2xs);
+  display: flex;
+}

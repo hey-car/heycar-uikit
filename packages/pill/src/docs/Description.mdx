@@ -1,0 +1,35 @@
+import { Container, Row, Col } from 'storybook/blocks';
+import Pill from '../Pill';
+import { AC } from '../../../icons/src';
+
+## Default
+
+default pill with children
+
+```tsx live
+render(
+  <Container>
+    <Row align="middle">
+      <Col>
+        <Pill>Information</Pill>
+      </Col>
+    </Row>
+  </Container>,
+);
+```
+
+## With Icon
+
+default pill with icon and children
+
+```tsx live
+render(
+  <Container>
+    <Row align="middle">
+      <Col>
+        <Pill leftIcon={<AC fontSize="24" />}>Information</Pill>
+      </Col>
+    </Row>
+  </Container>,
+);
+```
