@@ -13,7 +13,7 @@
 - [Contributing](https://hey-car.github.io/heycar-uikit/main/?path=/docs/guidelines-contributing--page)
 - [Package structure convention](https://hey-car.github.io/heycar-uikit/main/?path=/docs/guidelines-package-structure-convention--page)
 - [Code style guide](https://hey-car.github.io/heycar-uikit/main/?path=/docs/guidelines-code-style-guide-convention--page)
-- [Component Statuses](https://hey-car.github.io/heycar-uikit/main/?path=/docs/guidelines-component-statuses--page)
+- [Component Status](https://hey-car.github.io/heycar-uikit/main/?path=/docs/guidelines-component-status--page)
 - [Screenshot testing](https://hey-car.github.io/heycar-uikit/main/?path=/docs/guidelines-screenshot-testing--page)
 
 ## Get started with the storybook
