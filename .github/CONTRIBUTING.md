@@ -109,12 +109,13 @@ The scope could be following the name of the package of the commit change. For e
 
 1. Fork the repository and create your branch from the [correct branch](#Release-cycle).
 2. `npm install` to fetch its dependencies.
-3. `npm run lint` checks the code style. It's highly recommended to enable ESLint in your IDE.
-4. `npm test` runs the complete test suite. (Make sure the `NODE_ENV` environment variable is unset, or it may causing some problems.). If you've fixed a bug or added code that should be tested, add tests. Tip: `npm test -- --watch TestName` is helpful in development.
-5. Please pay special attention if any [jest snapshots](http://facebook.github.io/jest/docs/en/snapshot-testing.html#snapshot-testing-with-jest) where changes and commit these changes as well (if there are any desired updates).
-6. Run **[Screenshot tests](/docs/guidelines-screenshot-testing--page)** and ensure changes are passing. Add new screenshot tests when any new visual effect was added.
-7. `npm start` runs Storybook heycar-uikit website locally. The recommended way to test your changes manually would be through Storybook Canvas.
-8. `npm run build` build packages to the `dist` directory.
+3. `npx husky install` to install husky hooks.
+4. `npm run lint` checks the code style. It's highly recommended to enable ESLint in your IDE.
+5. `npm test` runs the complete test suite. (Make sure the `NODE_ENV` environment variable is unset, or it may causing some problems.). If you've fixed a bug or added code that should be tested, add tests. Tip: `npm test -- --watch TestName` is helpful in development.
+6. Please pay special attention if any [jest snapshots](http://facebook.github.io/jest/docs/en/snapshot-testing.html#snapshot-testing-with-jest) where changes and commit these changes as well (if there are any desired updates).
+7. Run **[Screenshot tests](/docs/guidelines-screenshot-testing--page)** and ensure changes are passing. Add new screenshot tests when any new visual effect was added.
+8. `npm start` runs Storybook heycar-uikit website locally. The recommended way to test your changes manually would be through Storybook Canvas.
+9. `npm run build` build packages to the `dist` directory.
 
 ## More information
 
