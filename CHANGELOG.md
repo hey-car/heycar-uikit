@@ -1,3 +1,10 @@
+## [2.9.1](https://github.com/hey-car/heycar-uikit/compare/v2.9.0...v2.9.1) (2022-10-25)
+
+
+### Bug Fixes
+
+* **storybook configuration:** use path.join instead of forward slash ([#102](https://github.com/hey-car/heycar-uikit/issues/102)) ([42c8ae3](https://github.com/hey-car/heycar-uikit/commit/42c8ae3a6e545d0c796577a57149b94779907106))
+
 # [2.9.0](https://github.com/hey-car/heycar-uikit/compare/v2.8.0...v2.9.0) (2022-10-25)
 
 
