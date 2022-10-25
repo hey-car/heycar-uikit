@@ -12,7 +12,7 @@ const addPackagesDir = config => {
     if (rule.oneOf) {
       rule.oneOf.forEach(nestedRule => {
         if (nestedRule.loader && nestedRule.loader.includes('babel-loader')) {
-          nestedRule.include.push(`${process.cwd()}/packages`);
+          nestedRule.include.push(path.join(process.cwd(), 'packages'));
         }
       });
     }
@@ -25,16 +25,13 @@ const getStories = () => {
   );
 
   return files.filter(file => !file.includes('node_modules'));
-}
+};
 
 module.exports = {
   core: {
     builder: 'webpack5',
   },
-  staticDirs: [
-    '../packages/fonts/src',
-    '../.storybook/public',
-  ],
+  staticDirs: ['../packages/fonts/src', '../.storybook/public'],
   stories: async list => [...list, ...getStories()],
   addons: [
     '@storybook/preset-create-react-app',
@@ -44,15 +41,13 @@ module.exports = {
     },
     '@storybook/addon-controls',
     'storybook-addon-live-examples',
-    '@storybook/addon-viewport'
+    '@storybook/addon-viewport',
   ],
   webpackFinal: async config => {
     addPackagesDir(config);
 
     config.resolve.alias.storybook = path.resolve(__dirname);
-    config.resolve.plugins = [
-      new TsconfigPathsPlugin()
-    ];
+    config.resolve.plugins = [new TsconfigPathsPlugin()];
 
     config.performance.hints = false;
 
@@ -68,12 +63,7 @@ module.exports = {
       test: cssRegex,
       exclude: [cssModuleRegex],
       use: [
-        {
-          loader: MiniCssExtractPlugin.loader,
-          // options: {
-          //   hmr: true,
-          // },
-        },
+        { loader: MiniCssExtractPlugin.loader },
         {
           loader: 'css-loader',
           options: {
@@ -88,12 +78,7 @@ module.exports = {
       test: cssModuleRegex,
       exclude: /node_modules/,
       use: [
-        {
-          loader: MiniCssExtractPlugin.loader,
-          // options: {
-          //   hmr: true,
-          // },
-        },
+        { loader: MiniCssExtractPlugin.loader },
         {
           loader: 'css-loader',
           options: {
@@ -126,20 +111,6 @@ module.exports = {
         parallel: true,
         test: cssRegex,
       }),
-
-      // new OptimizeCSSAssetsPlugin({
-      //   cssProcessorOptions: {
-      //     map: {
-      //       inline: false,
-      //       annotation: true,
-      //     },
-      //   },
-      //   cssProcessorPluginOptions: {
-      //     preset: () => ({
-      //       plugins: [require('postcss-discard-duplicates')],
-      //     }),
-      //   },
-      // }),
     );
 
     return config;
