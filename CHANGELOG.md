@@ -1,3 +1,15 @@
+# [2.9.0](https://github.com/hey-car/heycar-uikit/compare/v2.8.0...v2.9.0) (2022-10-25)
+
+
+### Bug Fixes
+
+* fixing typo from statuses to status ([#104](https://github.com/hey-car/heycar-uikit/issues/104)) ([ba895ca](https://github.com/hey-car/heycar-uikit/commit/ba895ca611891087a12edc12dd0d5a736c782940))
+
+
+### Features
+
+* **pill:** added pill component ([#50](https://github.com/hey-car/heycar-uikit/issues/50)) ([bcfd655](https://github.com/hey-car/heycar-uikit/commit/bcfd6554e308627c8a7e3fb1a5c7d9d4511e876b)), closes [#89](https://github.com/hey-car/heycar-uikit/issues/89) [#89](https://github.com/hey-car/heycar-uikit/issues/89)
+
 # [2.8.0](https://github.com/hey-car/heycar-uikit/compare/v2.7.1...v2.8.0) (2022-10-21)
 
 
