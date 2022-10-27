@@ -16,7 +16,7 @@
 */
 .pill {
   font-size: 14px;
-  padding: var(--gap-2xs) var(--gap-xs);
+  padding: var(--gap-3xs) var(--gap-xs);
   display: inline-flex;
   vertical-align: middle;
   flex-direction: row;
@@ -24,7 +24,7 @@
   justify-content: center;
   align-items: center;
   border: 0;
-  height: 28px;
+  min-height: 28px;
   box-shadow: none;
   box-sizing: border-box;
   text-decoration: none;
