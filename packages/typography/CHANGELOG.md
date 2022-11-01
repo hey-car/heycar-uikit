@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/typography@2.0.0...@heycar-uikit/typography@2.0.1) (2022-11-01)
+
+**Note:** Version bump only for package @heycar-uikit/typography
+
+
+
+
+
 # [2.0.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/typography@1.4.0...@heycar-uikit/typography@2.0.0) (2022-10-04)
 
 
