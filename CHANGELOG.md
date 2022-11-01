@@ -1,3 +1,10 @@
+# [2.10.0](https://github.com/hey-car/heycar-uikit/compare/v2.9.1...v2.10.0) (2022-11-01)
+
+
+### Features
+
+* **tabs:** add focus state on tabs in storybook ([#94](https://github.com/hey-car/heycar-uikit/issues/94)) ([1611029](https://github.com/hey-car/heycar-uikit/commit/1611029cb004e6fbd4a46a53228a6e52033b105b))
+
 ## [2.9.1](https://github.com/hey-car/heycar-uikit/compare/v2.9.0...v2.9.1) (2022-10-25)
 
 
