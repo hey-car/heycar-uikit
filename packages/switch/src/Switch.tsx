@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import cn from 'classnames';
 
 import { SwitchProps } from './Switch.types';
@@ -6,15 +6,31 @@ import { SwitchProps } from './Switch.types';
 import styles from './styles/default.module.css';
 
 export const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
-  ({ checked, onChange, disabled = false, className }, ref) => {
+  ({ checked, disabled = false, className }, ref) => {
     const classNames = cn(styles.container, className);
+    const [isChecked, setChecked] = useState(checked);
+
+    useEffect(() => {
+      setChecked(isChecked);
+    }, [checked]);
+
+    const handleSwitch = () => {
+      checked = isChecked;
+      setChecked(!checked);
+    };
+
+    useEffect(() => {
+      window.addEventListener('keypress', () => {
+        handleSwitch();
+      });
+    }, [isChecked]);
 
     return (
       <label className={classNames}>
         <input
-          checked={checked}
+          checked={isChecked}
           disabled={disabled}
-          onChange={onChange}
+          onChange={() => handleSwitch()}
           ref={ref}
           type="checkbox"
         />
