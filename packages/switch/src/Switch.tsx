@@ -11,7 +11,7 @@ export const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
     const [isChecked, setChecked] = useState(checked);
 
     useEffect(() => {
-      setChecked(isChecked);
+      setChecked(checked);
     }, [checked]);
 
     const handleSwitch = () => {
@@ -20,8 +20,10 @@ export const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
     };
 
     useEffect(() => {
-      window.addEventListener('keypress', () => {
-        handleSwitch();
+      window.addEventListener('keypress', e => {
+        if (e?.key === 'Enter') {
+          handleSwitch();
+        }
       });
     }, [isChecked]);
 
