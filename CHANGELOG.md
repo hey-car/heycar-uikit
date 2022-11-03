@@ -1,3 +1,10 @@
+## [2.10.1](https://github.com/hey-car/heycar-uikit/compare/v2.10.0...v2.10.1) (2022-11-03)
+
+
+### Bug Fixes
+
+* assignees updated ([#109](https://github.com/hey-car/heycar-uikit/issues/109)) ([8ec4004](https://github.com/hey-car/heycar-uikit/commit/8ec4004f0b55355185b5b2ae779c89a977de6888))
+
 # [2.10.0](https://github.com/hey-car/heycar-uikit/compare/v2.9.1...v2.10.0) (2022-11-01)
 
 
