@@ -15,17 +15,14 @@ export const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
     }, [checked]);
 
     const handleSwitch = () => {
-      checked = isChecked;
-      setChecked(!checked);
+      setChecked(!isChecked);
     };
 
-    useEffect(() => {
-      window.addEventListener('keypress', e => {
-        if (e?.key === 'Enter') {
-          handleSwitch();
-        }
-      });
-    }, [isChecked]);
+    const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+      if (e?.key === 'Enter') {
+        handleSwitch();
+      }
+    };
 
     return (
       <label className={classNames}>
@@ -36,7 +33,11 @@ export const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
           ref={ref}
           type="checkbox"
         />
-        <span className={styles.switch} tabIndex={0} />
+        <span
+          className={styles.switch}
+          tabIndex={0}
+          onKeyDown={handleKeyDown}
+        />
       </label>
     );
   },
