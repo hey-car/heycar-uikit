@@ -6,7 +6,7 @@ import { SwitchProps } from './Switch.types';
 import styles from './styles/default.module.css';
 
 export const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
-  ({ checked, disabled = false, className }, ref) => {
+  ({ checked, onChange, disabled = false, className }, ref) => {
     const classNames = cn(styles.container, className);
     const [isChecked, setChecked] = useState(checked);
 
@@ -16,11 +16,13 @@ export const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
 
     const handleSwitch = () => {
       setChecked(!isChecked);
+      onChange();
     };
 
     const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
       if (e?.key === 'Enter') {
         handleSwitch();
+        onChange();
       }
     };
 
