@@ -1,3 +1,15 @@
+# [3.0.0](https://github.com/hey-car/heycar-uikit/compare/v2.10.1...v3.0.0) (2022-11-07)
+
+
+### Bug Fixes
+
+* **icon:** remove default fill color from HeartIcons and replace HeartPressed/Selected/Hover icons with HeartActive  ([#108](https://github.com/hey-car/heycar-uikit/issues/108)) ([97f3a9e](https://github.com/hey-car/heycar-uikit/commit/97f3a9ed784247c119e6f5ebbf1c4eb7f725b486))
+
+
+### BREAKING CHANGES
+
+* **icon:** HeartPressed / HeartSelected / HeartHover icons will not be accessible anymore
+
 ## [2.10.1](https://github.com/hey-car/heycar-uikit/compare/v2.10.0...v2.10.1) (2022-11-03)
 
 
