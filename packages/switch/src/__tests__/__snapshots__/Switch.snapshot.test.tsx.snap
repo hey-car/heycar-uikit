@@ -15,6 +15,7 @@ Object {
         />
         <span
           class="switch"
+          tabindex="0"
         />
       </label>
     </div>
@@ -30,6 +31,7 @@ Object {
       />
       <span
         class="switch"
+        tabindex="0"
       />
     </label>
   </div>,
@@ -101,6 +103,7 @@ Object {
         />
         <span
           class="switch"
+          tabindex="0"
         />
       </label>
     </div>
@@ -115,6 +118,7 @@ Object {
       />
       <span
         class="switch"
+        tabindex="0"
       />
     </label>
   </div>,
@@ -185,6 +189,7 @@ Object {
         />
         <span
           class="switch"
+          tabindex="0"
         />
       </label>
     </div>
@@ -198,6 +203,7 @@ Object {
       />
       <span
         class="switch"
+        tabindex="0"
       />
     </label>
   </div>,
@@ -269,6 +275,7 @@ Object {
         />
         <span
           class="switch"
+          tabindex="0"
         />
       </label>
     </div>
@@ -283,6 +290,7 @@ Object {
       />
       <span
         class="switch"
+        tabindex="0"
       />
     </label>
   </div>,
