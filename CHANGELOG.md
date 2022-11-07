@@ -1,3 +1,10 @@
+# [3.1.0](https://github.com/hey-car/heycar-uikit/compare/v3.0.0...v3.1.0) (2022-11-07)
+
+
+### Features
+
+* **switch:** add tab index for accessibility with tab key on switch ([#95](https://github.com/hey-car/heycar-uikit/issues/95)) ([494af3a](https://github.com/hey-car/heycar-uikit/commit/494af3a128bebc7f283a67d96b30e650d6588537))
+
 # [3.0.0](https://github.com/hey-car/heycar-uikit/compare/v2.10.1...v3.0.0) (2022-11-07)
 
 
