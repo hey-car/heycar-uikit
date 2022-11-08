@@ -1,3 +1,10 @@
+## [3.1.1](https://github.com/hey-car/heycar-uikit/compare/v3.1.0...v3.1.1) (2022-11-08)
+
+
+### Bug Fixes
+
+* **badge:** fixes the Badge style mismatch ([#113](https://github.com/hey-car/heycar-uikit/issues/113)) ([f25082b](https://github.com/hey-car/heycar-uikit/commit/f25082b74c66d3f3a6ed294cfd9a1594a6e220e6))
+
 # [3.1.0](https://github.com/hey-car/heycar-uikit/compare/v3.0.0...v3.1.0) (2022-11-07)
 
 
