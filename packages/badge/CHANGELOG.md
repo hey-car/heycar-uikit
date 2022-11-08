@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.4](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/badge@1.4.0...@heycar-uikit/badge@1.3.4) (2022-11-08)
+
+
+### Bug Fixes
+
+* **badge:** fixes the Badge style mismatch ([#113](https://github.com/hey-car/heycar-uikit/issues/113)) ([f25082b](https://github.com/hey-car/heycar-uikit/commit/f25082b74c66d3f3a6ed294cfd9a1594a6e220e6))
+
+
+
+
+
 # [1.4.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/badge@1.3.2...@heycar-uikit/badge@1.4.0) (2022-09-30)
 
 
