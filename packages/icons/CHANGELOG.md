@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.1](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/icons@3.0.0...@heycar-uikit/icons@3.0.1) (2022-11-10)
+
+
+### Bug Fixes
+
+* **icon:** updating the shopping cart icon ([#115](https://github.com/hey-car/heycar-uikit/issues/115)) ([72f6424](https://github.com/hey-car/heycar-uikit/commit/72f64248ffc52cb76b759b81f591414a3541d67e))
+
+
+
+
+
 # [3.0.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/icons@2.0.0...@heycar-uikit/icons@3.0.0) (2022-11-07)
 
 
