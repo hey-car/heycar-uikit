@@ -1,3 +1,29 @@
+## [3.1.1](https://github.com/hey-car/heycar-uikit/compare/v3.1.0...v3.1.1) (2022-11-08)
+
+
+### Bug Fixes
+
+* **badge:** fixes the Badge style mismatch ([#113](https://github.com/hey-car/heycar-uikit/issues/113)) ([f25082b](https://github.com/hey-car/heycar-uikit/commit/f25082b74c66d3f3a6ed294cfd9a1594a6e220e6))
+
+# [3.1.0](https://github.com/hey-car/heycar-uikit/compare/v3.0.0...v3.1.0) (2022-11-07)
+
+
+### Features
+
+* **switch:** add tab index for accessibility with tab key on switch ([#95](https://github.com/hey-car/heycar-uikit/issues/95)) ([494af3a](https://github.com/hey-car/heycar-uikit/commit/494af3a128bebc7f283a67d96b30e650d6588537))
+
+# [3.0.0](https://github.com/hey-car/heycar-uikit/compare/v2.10.1...v3.0.0) (2022-11-07)
+
+
+### Bug Fixes
+
+* **icon:** remove default fill color from HeartIcons and replace HeartPressed/Selected/Hover icons with HeartActive  ([#108](https://github.com/hey-car/heycar-uikit/issues/108)) ([97f3a9e](https://github.com/hey-car/heycar-uikit/commit/97f3a9ed784247c119e6f5ebbf1c4eb7f725b486))
+
+
+### BREAKING CHANGES
+
+* **icon:** HeartPressed / HeartSelected / HeartHover icons will not be accessible anymore
+
 ## [2.10.1](https://github.com/hey-car/heycar-uikit/compare/v2.10.0...v2.10.1) (2022-11-03)
 
 
