@@ -1,3 +1,10 @@
+## [3.1.2](https://github.com/hey-car/heycar-uikit/compare/v3.1.1...v3.1.2) (2022-11-10)
+
+
+### Bug Fixes
+
+* **icon:** updating the shopping cart icon ([#115](https://github.com/hey-car/heycar-uikit/issues/115)) ([72f6424](https://github.com/hey-car/heycar-uikit/commit/72f64248ffc52cb76b759b81f591414a3541d67e))
+
 ## [3.1.1](https://github.com/hey-car/heycar-uikit/compare/v3.1.0...v3.1.1) (2022-11-08)
 
 
