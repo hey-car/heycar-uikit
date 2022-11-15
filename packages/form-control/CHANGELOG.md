@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.5.1](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/form-control@1.5.0...@heycar-uikit/form-control@1.5.1) (2022-11-15)
+
+
+### Bug Fixes
+
+* **input:** add z-index for input label ([#116](https://github.com/hey-car/heycar-uikit/issues/116)) ([be68f40](https://github.com/hey-car/heycar-uikit/commit/be68f40b3fd5bf90fd2c84d265427897ec44b87b))
+
+
+
+
+
 # [1.5.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/form-control@1.4.2...@heycar-uikit/form-control@1.5.0) (2022-10-19)
 
 
