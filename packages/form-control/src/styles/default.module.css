@@ -64,7 +64,7 @@
     color: var(--form-control-label-color);
     height: var(--from-control-legend-height);
     top: calc(var(--form-control-min-height) / 2);
-    z-index: 2;
+    z-index: 1;
   }
 
   & .hint {
