@@ -1,3 +1,10 @@
+## [3.1.3](https://github.com/hey-car/heycar-uikit/compare/v3.1.2...v3.1.3) (2022-11-15)
+
+
+### Bug Fixes
+
+* **input:** add z-index for input label ([#116](https://github.com/hey-car/heycar-uikit/issues/116)) ([be68f40](https://github.com/hey-car/heycar-uikit/commit/be68f40b3fd5bf90fd2c84d265427897ec44b87b))
+
 ## [3.1.2](https://github.com/hey-car/heycar-uikit/compare/v3.1.1...v3.1.2) (2022-11-10)
 
 
