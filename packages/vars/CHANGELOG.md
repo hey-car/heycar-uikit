@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.6.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/vars@1.5.0...@heycar-uikit/vars@1.6.0) (2022-11-17)
+
+
+### Features
+
+* **gaps:** add 72px spacing to spacing variables ([#117](https://github.com/hey-car/heycar-uikit/issues/117)) ([37066cc](https://github.com/hey-car/heycar-uikit/commit/37066cc6aaa70aa58ab31524bc365b7e612fc1ad))
+
+
+
+
+
 # [1.5.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/vars@1.4.0...@heycar-uikit/vars@1.5.0) (2022-09-30)
 
 
