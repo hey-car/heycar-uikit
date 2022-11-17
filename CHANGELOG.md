@@ -1,3 +1,10 @@
+# [3.2.0](https://github.com/hey-car/heycar-uikit/compare/v3.1.3...v3.2.0) (2022-11-17)
+
+
+### Features
+
+* **gaps:** add 72px spacing to spacing variables ([#117](https://github.com/hey-car/heycar-uikit/issues/117)) ([37066cc](https://github.com/hey-car/heycar-uikit/commit/37066cc6aaa70aa58ab31524bc365b7e612fc1ad))
+
 ## [3.1.3](https://github.com/hey-car/heycar-uikit/compare/v3.1.2...v3.1.3) (2022-11-15)
 
 
