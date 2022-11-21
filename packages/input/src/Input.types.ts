@@ -71,4 +71,8 @@ export type InputProps = Omit<
    * The id for testing
    */
   dataTestId?: string;
+  /**
+   * pattern attribute for regular expression
+   */
+  pattern?: string;
 };

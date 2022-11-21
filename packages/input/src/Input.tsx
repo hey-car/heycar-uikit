@@ -14,6 +14,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
       defaultValue,
       type = 'text',
       hint,
+      pattern,
       error,
       label,
       fullWidth = false,
@@ -84,6 +85,11 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
           onBlur={handleInputBlur}
           onChange={handleInputChange}
           onFocus={handleInputFocus}
+          pattern={
+            (type === 'tel' && !pattern
+              ? '/^(?=.*[0-9])[- +()0-9]+$/'
+              : undefined) && pattern
+          }
           readOnly={readOnly}
           ref={ref}
           type={type}
