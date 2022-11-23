@@ -115,3 +115,25 @@ render(
   </Container>,
 );
 ```
+
+## Patterns
+
+The `pattern` attribute specifies a regular expression that the input elements value is checked against on change.
+
+```tsx live
+render(
+  <Container>
+    <Row flex align="top">
+      <Col span="24">
+        <Input
+          type="tel"
+          onChange={(e, value) => {
+            console.log('test', value);
+          }}
+          pattern={'^[0-9]*$'}
+        />
+      </Col>
+    </Row>
+  </Container>,
+);
+```

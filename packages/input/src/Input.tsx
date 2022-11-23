@@ -59,7 +59,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
       (event: ChangeEvent<HTMLInputElement>) => {
         if (onChange && !pattern)
           onChange(event, { value: event.target.value });
-        if (pattern) {
+        if (onChange && pattern) {
           onChange(event, { value: event.target.value.replace(pattern, '') });
         }
         if (isUncontrolled) setStateValue(event.target.value);
