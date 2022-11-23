@@ -57,10 +57,14 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
     );
     const handleInputChange = useCallback(
       (event: ChangeEvent<HTMLInputElement>) => {
-        if (onChange) onChange(event, { value: event.target.value });
+        if (onChange && !pattern)
+          onChange(event, { value: event.target.value });
+        if (pattern) {
+          onChange(event, { value: event.target.value.replace(pattern, '') });
+        }
         if (isUncontrolled) setStateValue(event.target.value);
       },
-      [onChange, isUncontrolled],
+      [onChange, pattern, isUncontrolled],
     );
 
     return (
@@ -85,11 +89,6 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
           onBlur={handleInputBlur}
           onChange={handleInputChange}
           onFocus={handleInputFocus}
-          pattern={
-            (type === 'tel' && !pattern
-              ? '/^(?=.*[0-9])[- +()0-9]+$/'
-              : undefined) && pattern
-          }
           readOnly={readOnly}
           ref={ref}
           type={type}
