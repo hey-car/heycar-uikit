@@ -125,13 +125,7 @@ render(
   <Container>
     <Row flex align="top">
       <Col span="24">
-        <Input
-          type="tel"
-          onChange={(e, value) => {
-            console.log('test', value);
-          }}
-          pattern={'^[0-9]*$'}
-        />
+        <Input type="tel" pattern="/[^0-9\.]+/g" />
       </Col>
     </Row>
   </Container>,

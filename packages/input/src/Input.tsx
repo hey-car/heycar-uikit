@@ -1,4 +1,10 @@
-import React, { ChangeEvent, FocusEvent, useCallback, useState } from 'react';
+import React, {
+  ChangeEvent,
+  FocusEvent,
+  FormEvent,
+  useCallback,
+  useState,
+} from 'react';
 import cn from 'classnames';
 
 import FormControl from '@heycar-uikit/form-control';
@@ -57,15 +63,31 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
     );
     const handleInputChange = useCallback(
       (event: ChangeEvent<HTMLInputElement>) => {
-        if (onChange && !pattern)
-          onChange(event, { value: event.target.value });
-        if (onChange && pattern) {
-          onChange(event, { value: event.target.value.replace(pattern, '') });
-        }
+        if (onChange) onChange(event, { value: event.target.value });
+        if (onChange) onChange(event, { value: event.target.value });
         if (isUncontrolled) setStateValue(event.target.value);
       },
-      [onChange, pattern, isUncontrolled],
+      [onChange, isUncontrolled],
     );
+
+    const handleOnInput: React.FormEventHandler<HTMLInputElement> = (
+      event: FormEvent<HTMLInputElement>,
+    ) => {
+      if (pattern == undefined) {
+        setStateValue((event.target as HTMLInputElement).value);
+      } else {
+        console.log('hey pattern', pattern);
+        const val = (event.target as HTMLInputElement).value;
+
+        console.log('hey value', val);
+        const replace = val.replace(pattern, '');
+
+        console.log('hey replace', replace);
+        setStateValue(
+          (event.target as HTMLInputElement).value.replace(pattern, ''),
+        );
+      }
+    };
 
     return (
       <FormControl
@@ -89,6 +111,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
           onBlur={handleInputBlur}
           onChange={handleInputChange}
           onFocus={handleInputFocus}
+          onInput={handleOnInput}
           readOnly={readOnly}
           ref={ref}
           type={type}
