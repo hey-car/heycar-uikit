@@ -41,11 +41,10 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
     const inputClassNames = cn(styles.input, className, {
       [styles.hasLeftIcon]: leftIcon,
     });
-    const isUncontrolled = value === undefined;
     const ariaLabel = typeof label === 'string' ? label : undefined;
     const [isFocused, setFocused] = useState(restProps.autoFocus);
     const [stateValue, setStateValue] = useState(defaultValue || '');
-    const isFilled = Boolean(isUncontrolled ? stateValue : value);
+    const isFilled = Boolean(value ? value : stateValue);
     const handleInputFocus = useCallback(
       (event: FocusEvent<HTMLInputElement>) => {
         if (!readOnly) setFocused(true);
@@ -65,9 +64,8 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
       (event: ChangeEvent<HTMLInputElement>) => {
         if (onChange) onChange(event, { value: event.target.value });
         if (onChange) onChange(event, { value: event.target.value });
-        if (isUncontrolled) setStateValue(event.target.value);
       },
-      [onChange, isUncontrolled],
+      [onChange],
     );
 
     const handleOnInput: React.FormEventHandler<HTMLInputElement> = (
@@ -77,9 +75,6 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
         setStateValue((event.target as HTMLInputElement).value);
       } else {
         const inputValue = (event.target as HTMLInputElement).value;
-
-        console.log('before', inputValue);
-        console.log('after', inputValue.replace(pattern, ''));
 
         setStateValue(inputValue.replace(pattern, ''));
       }
