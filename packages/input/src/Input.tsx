@@ -76,16 +76,12 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
       if (pattern == undefined) {
         setStateValue((event.target as HTMLInputElement).value);
       } else {
-        console.log('hey pattern', pattern);
-        const val = (event.target as HTMLInputElement).value;
+        const inputValue = (event.target as HTMLInputElement).value;
 
-        console.log('hey value', val);
-        const replace = val.replace(pattern, '');
+        console.log('before', inputValue);
+        console.log('after', inputValue.replace(pattern, ''));
 
-        console.log('hey replace', replace);
-        setStateValue(
-          (event.target as HTMLInputElement).value.replace(pattern, ''),
-        );
+        setStateValue(inputValue.replace(pattern, ''));
       }
     };
 
@@ -115,7 +111,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
           readOnly={readOnly}
           ref={ref}
           type={type}
-          value={value}
+          value={stateValue}
         />
       </FormControl>
     );
