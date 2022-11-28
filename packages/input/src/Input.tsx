@@ -71,9 +71,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
     const handleOnInput: React.FormEventHandler<HTMLInputElement> = (
       event: FormEvent<HTMLInputElement>,
     ) => {
-      if (pattern == undefined) {
-        setStateValue((event.target as HTMLInputElement).value);
-      } else {
+      if (pattern !== undefined) {
         const inputValue = (event.target as HTMLInputElement).value;
 
         setStateValue(inputValue.replace(pattern, ''));
@@ -106,7 +104,8 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
           readOnly={readOnly}
           ref={ref}
           type={type}
-          value={stateValue}
+          value={state}
+
         />
       </FormControl>
     );

@@ -74,5 +74,5 @@ export type InputProps = Omit<
   /**
    * pattern attribute for regular expression
    */
-  pattern?: string;
+  pattern?: string | RegExp;
 };

@@ -46,6 +46,14 @@ describe('Input', () => {
 
       expect(container.getElementsByClassName('error').length).toBe(1);
     });
+
+    it('should apply pattern', () => {
+      const { getByTestId } = render(
+        <Input dataTestId={dataTestId} pattern="/[^0-9\.]+/g" value="abc" />,
+      );
+
+      expect(getByTestId(dataTestId)).toHaveValue('');
+    });
   });
 
   describe('Classes tests', () => {
@@ -76,7 +84,7 @@ describe('Input', () => {
 
       fireEvent.change(input, { target: { value } });
 
-      expect(cb).toBeCalledTimes(1);
+      expect(cb).toBeCalledTimes(2);
       expect(input.value).toBe(value);
     });
 
