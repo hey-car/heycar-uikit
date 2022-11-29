@@ -27,7 +27,7 @@ import styles from '!!raw-loader!../styles/default.module.css';
     value: {
       name: 'value',
       type: { name: 'string' },
-      defaultValue: 'Placeholder',
+      defaultValue: '',
     },
     error: {
       name: 'error',
@@ -111,7 +111,7 @@ export const InputTemplate = args => {
   name="Input"
   args={{
     label: 'Label',
-    value: 'Placeholder',
+    value: '',
   }}
 >
   {InputTemplate.bind({})}

@@ -30,14 +30,15 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
       ...restProps
     },
     ref,
-  ) => {
+  ) => {    
     const inputClassNames = cn(styles.input, className, {
       [styles.hasLeftIcon]: leftIcon,
     });
     const isUncontrolled = value === undefined;
     const ariaLabel = typeof label === 'string' ? label : undefined;
     const [isFocused, setFocused] = useState(restProps.autoFocus);
-    const [stateValue, setStateValue] = useState(defaultValue || '');
+    const [stateValue, setStateValue] = useState(value || '');
+
     const isFilled = Boolean(isUncontrolled ? stateValue : value);
     const handleInputFocus = useCallback(
       (event: FocusEvent<HTMLInputElement>) => {
@@ -56,11 +57,20 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
     );
     const handleInputChange = useCallback(
       (event: ChangeEvent<HTMLInputElement>) => {
+        console.log(event.target.value);
+        
+        var regex = /^[0-9]*$/;
+        if (event.target.value.match(regex) != null) {       
+          console.log('2');
+          
+          if (!isUncontrolled) setStateValue(event.target.value);
+        }
         if (onChange) onChange(event, { value: event.target.value });
-        if (isUncontrolled) setStateValue(event.target.value);
       },
       [onChange, isUncontrolled],
     );
+
+
 
     return (
       <FormControl
@@ -87,7 +97,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
           readOnly={readOnly}
           ref={ref}
           type={type}
-          value={value}
+          value={stateValue}
         />
       </FormControl>
     );
