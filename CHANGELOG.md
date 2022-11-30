@@ -1,3 +1,10 @@
+## [3.2.1](https://github.com/hey-car/heycar-uikit/compare/v3.2.0...v3.2.1) (2022-11-30)
+
+
+### Bug Fixes
+
+* **input:** placeholder font weight to 400 ([#119](https://github.com/hey-car/heycar-uikit/issues/119)) ([40c585b](https://github.com/hey-car/heycar-uikit/commit/40c585b3b472c0c9197037fca4f3aee0eaf95dda))
+
 # [3.2.0](https://github.com/hey-car/heycar-uikit/compare/v3.1.3...v3.2.0) (2022-11-17)
 
 
