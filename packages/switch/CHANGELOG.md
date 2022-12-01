@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.2](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/switch@2.2.1...@heycar-uikit/switch@2.2.2) (2022-11-30)
+
+
+### Bug Fixes
+
+* **input:** placeholder font weight to 400 ([#119](https://github.com/hey-car/heycar-uikit/issues/119)) ([40c585b](https://github.com/hey-car/heycar-uikit/commit/40c585b3b472c0c9197037fca4f3aee0eaf95dda))
+
+
+
+
+
 ## [2.2.1](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/switch@2.2.0...@heycar-uikit/switch@2.2.1) (2022-11-15)
 
 
