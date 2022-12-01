@@ -1,0 +1,107 @@
+import { Meta, Story, Props } from '@storybook/addon-docs';
+import {
+  ComponentHeader,
+  CssVars,
+  Container,
+  TabContainer,
+} from 'storybook/blocks';
+
+import Dropdown from '../Dropdown';
+import Description from './Description.mdx';
+import { version } from '../../package.json';
+import Changelog from '../../CHANGELOG.md';
+import styles from '!!raw-loader!../styles/default.module.css';
+
+<!-- Meta -->
+
+<Meta
+  title="Components/Dropdown"
+  component={Dropdown}
+  argTypes={{
+    label: {
+      name: 'label',
+      type: { name: 'string' },
+      defaultValue: 'Label',
+    },
+    error: {
+      name: 'error',
+      type: { name: 'string' },
+      defaultValue: '',
+    },
+    disabled: {
+      name: 'disabled',
+      type: { name: 'boolean' },
+      defaultValue: false,
+    },
+    dataTestId: {
+      table: {
+        disable: true,
+      },
+    },
+    onChange: {
+      table: {
+        disable: true,
+      },
+    },
+  }}
+/>
+
+export const DropdownTemplate = args => {
+  return (
+    <Dropdown
+      id="marque"
+      error="This is an error"
+      labelFor="marque"
+      label="Marque label"
+    >
+      <option value="Marque">Marque</option>
+      <option value="saab">Saab</option>
+      <option value="opel">Opel</option>
+      <option value="audi">Audi</option>
+    </Dropdown>
+  );
+};
+
+<!-- Canvas -->
+
+<Story
+  name="Dropdown"
+  args={{
+    label: 'Label',
+  }}
+>
+  {DropdownTemplate.bind({})}
+</Story>
+
+<!-- Docs -->
+
+<ComponentHeader
+  name="Dropdown"
+  version={version}
+  stage={1}
+  design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Global-Design-System?node-id=1426%3A39722"
+/>
+
+Dropdown component is a component that is used to get select html field with options as children.
+
+```tsx
+import Dropdown from '@heycar-uikit/dropdown';
+```
+
+<TabContainer
+  tabs={[
+    { label: 'Description', component: <Description /> },
+    { label: 'Props', component: <Props of={Dropdown} /> },
+    {
+      label: 'CSS tokens',
+      component: (
+        <CssVars
+          css={`
+            ${styles}
+          `}
+        />
+      ),
+    },
+    { label: 'Changelog', component: <Changelog /> },
+  ]}
+/>

@@ -1,0 +1,42 @@
+@import '../../../themes/src/default.css';
+
+.dropdown {
+  position: relative;
+}
+.dropdown > label {
+  position: absolute;
+  top: 15px;
+  left: 5px;
+  padding-left: 8px;
+  padding-right: 10px;
+  background-color: #ffffff;
+  font-size: 12px;
+  z-index: 1;
+}
+
+.dropdown > select:focus-visible {
+  outline-color: var(--color-heycar-mint-500);
+}
+
+.select {
+  appearance: none;
+  background-image: url('./down-arrow.svg');
+  background-position: right 0.5rem center;
+  background-repeat: no-repeat;
+  background-size: 1.5em 1.5em;
+  padding-right: 2.5rem;
+  font-size: 16px;
+  box-sizing: border-box;
+  min-height: 48px;
+  width: 100%;
+  border: 1px solid var(--color-tarmac-grey-500);
+  margin-top: 24px;
+  padding: 0.75rem;
+  min-width: 300px;
+}
+
+.error-message {
+  font-weight: var(--font-weight-regular);
+  font-size: var(--gap-m);
+  color: var(--color-old-ferrari-red-500);
+}
