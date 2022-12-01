@@ -1,10 +1,4 @@
-import React, {
-  ChangeEvent,
-  FocusEvent,
-  FormEvent,
-  useCallback,
-  useState,
-} from 'react';
+import React, { FocusEvent, useCallback, useState } from 'react';
 import cn from 'classnames';
 
 import FormControl from '@heycar-uikit/form-control';
@@ -17,7 +11,6 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
   (
     {
       value,
-      defaultValue,
       type = 'text',
       hint,
       pattern,
@@ -32,6 +25,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
       onFocus,
       onBlur,
       onChange,
+      onInput,
       className,
       dataTestId,
       ...restProps
@@ -43,8 +37,8 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
     });
     const ariaLabel = typeof label === 'string' ? label : undefined;
     const [isFocused, setFocused] = useState(restProps.autoFocus);
-    const [stateValue, setStateValue] = useState(defaultValue || '');
-    const isFilled = Boolean(value ? value : stateValue);
+
+    const isFilled = Boolean(value ? value : false);
     const handleInputFocus = useCallback(
       (event: FocusEvent<HTMLInputElement>) => {
         if (!readOnly) setFocused(true);
@@ -52,31 +46,6 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
       },
       [onFocus, readOnly],
     );
-    const handleInputBlur = useCallback(
-      (event: FocusEvent<HTMLInputElement>) => {
-        setFocused(false);
-
-        if (onBlur) onBlur(event);
-      },
-      [onBlur],
-    );
-    const handleInputChange = useCallback(
-      (event: ChangeEvent<HTMLInputElement>) => {
-        if (onChange) onChange(event, { value: event.target.value });
-        if (onChange) onChange(event, { value: event.target.value });
-      },
-      [onChange],
-    );
-
-    const handleOnInput: React.FormEventHandler<HTMLInputElement> = (
-      event: FormEvent<HTMLInputElement>,
-    ) => {
-      if (pattern !== undefined) {
-        const inputValue = (event.target as HTMLInputElement).value;
-
-        setStateValue(inputValue.replace(pattern, ''));
-      }
-    };
 
     return (
       <FormControl
@@ -97,15 +66,15 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
           className={inputClassNames}
           data-test-id={dataTestId}
           disabled={disabled}
-          onBlur={handleInputBlur}
-          onChange={handleInputChange}
+          onBlur={onBlur}
+          onChange={onChange}
           onFocus={handleInputFocus}
-          onInput={handleOnInput}
+          onInput={onInput}
+          pattern={pattern}
           readOnly={readOnly}
           ref={ref}
           type={type}
-          value={state}
-
+          value={value}
         />
       </FormControl>
     );
