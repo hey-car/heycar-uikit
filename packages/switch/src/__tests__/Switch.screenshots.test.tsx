@@ -82,7 +82,7 @@ describe('Switch events tests', () => {
       },
     });
 
-    await screenshotMatchClick(pageUrl, selector, { clip });
+    await screenshotMatchClick(pageUrl, selector, { clip }, 'down');
   });
   test('click when unchecked', async () => {
     const pageUrl = createStorybookUrl({
@@ -103,6 +103,6 @@ describe('Switch events tests', () => {
       },
     });
 
-    await screenshotMatchClick(pageUrl, selector, { clip });
+    await screenshotMatchClick(pageUrl, selector, { clip }, 'down');
   });
 });
