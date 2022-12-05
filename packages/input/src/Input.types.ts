@@ -1,4 +1,10 @@
-import React, { InputHTMLAttributes, MouseEvent, ReactNode } from 'react';
+import React, {
+  ChangeEventHandler,
+  FormEventHandler,
+  InputHTMLAttributes,
+  MouseEvent,
+  ReactNode,
+} from 'react';
 
 export type InputProps = Omit<
   InputHTMLAttributes<HTMLInputElement>,
@@ -51,10 +57,11 @@ export type InputProps = Omit<
   /**
    * Callback fired when the value is changed
    */
-  onChange?: (
-    event: React.ChangeEvent<HTMLInputElement>,
-    payload: { value: string },
-  ) => void;
+  onChange?: ChangeEventHandler<HTMLInputElement> | undefined;
+  /**
+   *  Callback fired when the value is input
+   */
+  onInput?: FormEventHandler<HTMLInputElement> | undefined;
   /**
    * Callback fired when the value is clicked
    */
@@ -71,4 +78,8 @@ export type InputProps = Omit<
    * The id for testing
    */
   dataTestId?: string;
+  /**
+   * pattern attribute for regular expression
+   */
+  pattern?: string | RegExp;
 };
