@@ -21,7 +21,7 @@
 /*
   Sub-Heading
 */
-@for $i from 1 to 2 {
+@for $i from 1 to 4 {
   .subheading$(i) {
     @mixin typography-subheading-$(i);
   }
