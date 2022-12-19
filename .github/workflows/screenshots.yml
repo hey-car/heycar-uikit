@@ -22,7 +22,11 @@ jobs:
       - name: Install dependencies
         run: npm i
 
-      - uses: microsoft/playwright-github-action@v1.5.1
+      - name: Install playwright browsers
+        run: npx playwright install --with-deps
+
+      - name: Run tests
+        run: npx playwright test
 
       - name: Build storybook
         run: npm run build-storybook
