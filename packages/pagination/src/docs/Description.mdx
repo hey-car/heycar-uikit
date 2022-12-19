@@ -1,0 +1,38 @@
+import { Container, Row, Col } from 'storybook/blocks';
+import Pagination from '../Pagination';
+
+## Usage
+
+Controlling the `Pagination` component
+```tsx live
+render(
+  <Container>
+    <Pagination totalPages={10} currentPage={5} />
+    <Pagination disabled title="Exmplae of disabled accordion">
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+      Velit officia consequat duis enim velit mollit. Exercitation veniam
+      consequat sunt nostrud amet.
+    </Pagination>
+    <Pagination title="What other cars are similar to the Audi Q3 Sportback?">
+      In terms of trim levels, the Q3 Sportback will look sharper and get more
+      equipment if you opt for one of the pricier models, but the standard Sport
+      model has pretty much everything you could possibly wish for. In typical
+      Audi form, the Q3 Sportback is at its most comfortable on the smallest
+      wheels - the 18-inch alloys fitted to Sport models.
+    </Pagination>
+    <Pagination title="What’s the best Audi Q3 Sportback model/engine to choose">
+      In terms of trim levels, the Q3 Sportback will look sharper and get more
+      equipment if you opt for one of the pricier models, but the standard Sport
+      model has pretty much everything you could possibly wish for. In typical
+      Audi form, the Q3 Sportback is at its most comfortable on the smallest
+      wheels - the 18-inch alloys fitted to Sport models.
+    </Pagination>
+  </Container>,
+);
+```
+
+## Accessibility
+
+`Pagination` now supports keyboard navigation between accordion buttons.
+Pressing the `Tab` and `Shift + Tab` keys will move focus between accordion buttons.
+Pressing `space` or `enter` when focus is on the accordion panel header will toggle (expand or collapse) the accordion.

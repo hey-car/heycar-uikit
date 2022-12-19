@@ -1,0 +1,50 @@
+import { Meta, Story, Props } from '@storybook/addon-docs';
+import { ComponentHeader, CssVars, TabContainer } from 'storybook/blocks';
+
+import Pagination from '../Pagination';
+import { version } from '../../package.json';
+import Description from './Description.mdx';
+import Changelog from '../../CHANGELOG.md';
+
+<!-- Meta -->
+
+<Meta title="Components/Pagination" component={Pagination} />
+
+export const PaginationTemplate = args => {
+  return (
+    <div style={{ maxWidth: '700px', margin: '0 auto' }}>
+        <Pagination currentPage={5} totalPages={10}  />
+    </div>
+  );
+};
+
+<!-- Canvas -->
+
+<Story parameters={{ controls: { disable: true } }} name="Pagination">
+  {PaginationTemplate.bind({})}
+</Story>
+
+<!-- Docs -->
+
+<ComponentHeader
+  name="Pagination"
+  version={version}
+  stage={3}
+  design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Global-Design-System?node-id=4289%3A100591"
+/>
+
+The accordion component allows the user to show and hide sections of related content on a page.
+
+```tsx
+import Pagination from '@heycar-uikit/accordion';
+```
+
+<!-- Description -->
+
+<TabContainer
+  tabs={[
+    { label: 'Description', component: <Description /> },
+    { label: 'Props', component: <Props of={Pagination} /> },
+    { label: 'Changelog', component: <Changelog /> },
+  ]}
+/>
