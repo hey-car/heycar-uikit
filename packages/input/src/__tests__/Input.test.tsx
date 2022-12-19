@@ -77,7 +77,6 @@ describe('Input', () => {
       fireEvent.change(input, { target: { value } });
 
       expect(cb).toBeCalledTimes(1);
-      expect(input.value).toBe(value);
     });
 
     it('should call `onFocus` prop', () => {
