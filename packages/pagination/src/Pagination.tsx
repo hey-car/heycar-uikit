@@ -6,6 +6,7 @@ import { ChevronLeft, ChevronRight } from '@heycar-uikit/icons';
 import { generateUrlForPagination } from './utils/generateUrlForPagination';
 import { getPagesToRender } from './utils/getPagesToRender';
 import { useBreakpointHook } from './utils/useBreakpoint.hook';
+import usePagination from './utils/usePagination';
 import {
   IPaginationItem,
   PaginationItemProps,
@@ -30,22 +31,10 @@ const Pagination = React.forwardRef<HTMLElement, PaginationProps>(
     renderItem = item => <PaginationItem {...item} />,
     className,
   }) => {
-    const breakpoint = useBreakpointHook();
-    const isDesktop = true; //breakpoint && breakpoint >= 1024;
+    const { items } = usePagination({ totalPages, currentPage });
     const classNames = cn(styles.pagination, className);
-    const shouldShowPreDots = currentPage > 3;
-    const shouldShowPostDots = currentPage < totalPages - 2;
 
-    const generateUrlFromPageNumber = generateUrlForPagination('', '');
-
-    const pagesToRender = getPagesToRender(totalPages, currentPage);
-
-    console.log({ shouldShowPreDots, pagesToRender });
-
-    const items: IPaginationItem[] = [
-      { type: paginationItemType.page, page: 1 },
-      { type: paginationItemType.page, page: 2 },
-    ];
+    console.log(items);
 
     return (
       <div>

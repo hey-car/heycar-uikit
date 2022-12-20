@@ -25,10 +25,10 @@ export interface PaginationProps {
 }
 
 export enum paginationItemType {
-  page,
-  ellipsis,
-  previous,
-  next,
+  page = 'page',
+  ellipsis = 'ellipsis',
+  previous = 'previous',
+  next = 'next',
 }
 
 // eslint-disable-next-line @typescript-eslint/naming-convention
@@ -37,6 +37,7 @@ export interface IPaginationItem {
   label?: string;
   page?: number;
   Component?: ComponentType<any> | string;
+  isDisabled?: boolean;
 }
 
 export interface PaginationItemProps {

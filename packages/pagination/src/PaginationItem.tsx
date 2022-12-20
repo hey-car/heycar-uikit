@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { ChevronLeft, ChevronRight } from '@heycar-uikit/icons';
+
 import {
   PaginationItemProps,
   PaginationItemType,
@@ -26,16 +28,36 @@ const PaginationItem: PaginationItemType<PaginationItemProps> = ({
   Component = 'a',
   ...rest
 }) => {
-  if (type === paginationItemType.page)
-    return (
-      <li>
+  let component;
+
+  switch (type) {
+    case paginationItemType.page:
+      component = (
         <Component className={styles.button} {...rest}>
           {page}
         </Component>
-      </li>
-    );
+      );
+      break;
+    case paginationItemType.ellipsis:
+      component = '...';
+      break;
+    case paginationItemType.previous:
+      component = (
+        <Component className={styles.button} {...rest}>
+          <ChevronLeft />
+        </Component>
+      );
+      break;
+    case paginationItemType.next:
+      component = (
+        <Component className={styles.button} {...rest}>
+          <ChevronRight />
+        </Component>
+      );
+      break;
+  }
 
-  return <Component className={styles.button}>test</Component>;
+  return <li>{component}</li>;
 };
 
 export default PaginationItem;
