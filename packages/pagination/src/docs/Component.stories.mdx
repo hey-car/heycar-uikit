@@ -5,6 +5,9 @@ import Pagination from '../Pagination';
 import { version } from '../../package.json';
 import Description from './Description.mdx';
 import Changelog from '../../CHANGELOG.md';
+import {
+  PaginationTest
+} from "../test";
 
 <!-- Meta -->
 
@@ -13,7 +16,7 @@ import Changelog from '../../CHANGELOG.md';
 export const PaginationTemplate = args => {
   return (
     <div style={{ maxWidth: '700px', margin: '0 auto' }}>
-        <Pagination currentPage={5} totalPages={10}  />
+      <PaginationTest />
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import { ComponentType } from 'react';
+import React, { ComponentType } from 'react';
 
 export interface PaginationProps {
   /**
@@ -20,8 +20,8 @@ export interface PaginationProps {
   /**
    * `scrollToElementId` - To which element ID should we build our URL so auto scroll works?
    */
-  scrollToElementId?: string;
-  renderItem: (item: IPaginationItem) => void;
+  renderItem?: (item: PaginationItemProps) => JSX.Element;
+  onChange?: (page: number) => void;
 }
 
 export enum paginationItemType {
@@ -37,5 +37,25 @@ export interface IPaginationItem {
   label?: string;
   page?: number;
   Component?: ComponentType<any> | string;
-{...Component}
+}
+
+export interface PaginationItemProps {
+  type: paginationItemType;
+  label?: string;
+  page?: number;
+  onClick?: () => void;
+  href?: string;
+}
+
+export interface PaginationItemType<T> {
+  <C extends React.ElementType>(
+    props: {
+      /**
+       * The component used for the root node.
+       * Either a string to use a HTML element or a component.
+       */
+      Component?: C;
+    } & T &
+      React.ComponentPropsWithRef<C>,
+  ): JSX.Element | null;
 }
