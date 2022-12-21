@@ -27,6 +27,7 @@ export interface PaginationProps {
 export enum paginationItemType {
   page = 'page',
   ellipsis = 'ellipsis',
+  slash = 'slash',
   previous = 'previous',
   next = 'next',
 }
@@ -38,6 +39,7 @@ export interface IPaginationItem {
   page?: number;
   Component?: ComponentType<any> | string;
   isDisabled?: boolean;
+  isCurrentPage?: boolean;
 }
 
 export interface PaginationItemProps {
@@ -46,6 +48,7 @@ export interface PaginationItemProps {
   page?: number;
   onClick?: () => void;
   href?: string;
+  isCurrentPage?: boolean;
 }
 
 export interface PaginationItemType<T> {

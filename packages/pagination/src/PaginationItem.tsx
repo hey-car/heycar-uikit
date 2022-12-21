@@ -1,8 +1,11 @@
 import React from 'react';
+import cn from 'classnames';
 
 import { ChevronLeft, ChevronRight } from '@heycar-uikit/icons';
+import Typography from '@heycar-uikit/typography';
 
 import {
+  IPaginationItem,
   PaginationItemProps,
   PaginationItemType,
   paginationItemType,
@@ -10,47 +13,66 @@ import {
 
 import styles from './styles/default.module.css';
 
-export interface OverridableComponent {
-  <C extends React.ElementType>(
-    props: {
-      /**
-       * The component used for the root node.
-       * Either a string to use a HTML element or a component.
-       */
-      component: C;
-    } & React.ComponentPropsWithRef<C>,
-  ): JSX.Element | null;
-}
-
-const PaginationItem: PaginationItemType<PaginationItemProps> = ({
+const PaginationItem: PaginationItemType<IPaginationItem> = ({
   page,
+  isCurrentPage,
+  isDisabled,
   type,
   Component = 'a',
   ...rest
 }) => {
   let component;
 
+  // This
+  function disableHref() {
+    if (isDisabled) return { href: null };
+
+    return {};
+  }
+
   switch (type) {
     case paginationItemType.page:
       component = (
-        <Component className={styles.button} {...rest}>
-          {page}
+        <Component
+          className={cn(styles.itemNumber, isCurrentPage && styles.currentPage)}
+          {...rest}
+        >
+          <Typography variant="subheading2">{page}</Typography>
         </Component>
       );
       break;
     case paginationItemType.ellipsis:
-      component = '...';
+      component = (
+        <Typography className={styles.ellipsis} variant="subheading2">
+        ...
+      </Typography>
+      );
+      break;
+    case paginationItemType.slash:
+      component = (
+        <Typography className={styles.slash} variant="subheading2">
+        /
+        </Typography>
+      );
       break;
     case paginationItemType.previous:
       component = (
-        <Component className={styles.button} {...rest}>
+        <Component
+          className={cn(styles.arrow, isDisabled && styles.disabled)}
+          {...rest}
+          {...disableHref()}
+        >
           <ChevronLeft />
         </Component>
       );
       break;
     case paginationItemType.next:
       component = (
-        <Component className={styles.button} {...rest}>
+        <Component
+          className={cn(styles.arrow, isDisabled && styles.disabled)}
+          {...rest}
+          {...disableHref()}
+        >
           <ChevronRight />
         </Component>
       );
