@@ -1,48 +1,63 @@
-import React from 'react';
-import cn from 'classnames';
+/* eslint-disable prettier/prettier */
+import React, { useState } from 'react';
 
-import { DropdownProps } from './Dropdown.types';
+import { DropdownProps, SelectOptions } from './Dropdown.types';
 
 import styles from './styles/default.module.css';
 
-export const Dropdown = React.forwardRef<HTMLSelectElement, DropdownProps>(
-  (
-    {
-      label,
-      name,
-      dataTestId,
-      onChange,
-      disabled = false,
-      className,
-      id,
-      labelFor,
-      children,
-      error,
-      ...rest
-    },
-    ref,
-  ) => {
-    return (
-      <div className={cn(styles.dropdown, className)}>
-        <label htmlFor={labelFor}>{label}</label>
-        <select
-          className={styles.select}
-          data-testid={dataTestId}
-          disabled={disabled}
-          id={id}
-          name={name}
-          onChange={onChange}
-          ref={ref}
-          {...rest}
-        >
-          {children}
-        </select>
-        {error && <p className={styles['error-message']}>{error}</p>}
-      </div>
-    );
-  },
-);
+export const Dropdown = ({ value, onChange, options }: DropdownProps) => {
+  const [stateValue, setStateValue] = useState<SelectOptions | undefined>(
+    value,
+  );
 
-Dropdown.displayName = 'Dropdown';
+  const [isOpen, setIsOpen] = useState(false);
+
+  const selectOption = (option: SelectOptions) => {
+    if (option !== stateValue) onChange(option);
+    setStateValue(option);
+  };
+
+  const isOptionSelection = (option: SelectOptions) => {
+    return option === stateValue;
+  };
+
+  return (
+    <div
+      className={styles.container}
+      onBlur={() => setIsOpen(false)}
+      onClick={() => setIsOpen(true)}
+      tabIndex={0}
+    >
+      <span className={styles.value}>{stateValue?.label}</span>
+      <div className={styles.caret}></div>
+      <ul className={`${styles.options} ${isOpen ? styles.show : ''}`}>
+        {options.map(option => (
+          <li
+            className={`${styles.option} ${isOptionSelection(option) ? styles.selected : ''
+              }`}
+            key={option.value}
+            onClick={e => {
+              e.stopPropagation();
+              selectOption(option);
+              setIsOpen(false);
+            }}
+          >
+            <div className={styles.contentContainer}>
+              {option.leftContent && (
+                <span className={styles.leftContent}>{option.leftContent}</span>
+              )}
+              <span className={styles.optionContent}>{option.label}</span>
+              {option.rightContent && (
+                <span className={styles.rightContent}>
+                  {option.rightContent}
+                </span>
+              )}
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
 
 export default Dropdown;

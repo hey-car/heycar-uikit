@@ -1,4 +1,5 @@
 import { Meta, Story, Props } from '@storybook/addon-docs';
+
 import {
   ComponentHeader,
   CssVars,
@@ -6,7 +7,10 @@ import {
   TabContainer,
 } from 'storybook/blocks';
 
+import { Lorry } from '../../../icons/src';
+import { AC } from '../../../icons/src';
 import Dropdown from '../Dropdown';
+import { DropdownItem } from '../Dropdown.types';
 import Description from './Description.mdx';
 import { version } from '../../package.json';
 import Changelog from '../../CHANGELOG.md';
@@ -47,18 +51,64 @@ import styles from '!!raw-loader!../styles/default.module.css';
 />
 
 export const DropdownTemplate = args => {
+  const ITEMS = [
+    {
+      value: 'pomelo',
+      label: 'Pomelo',
+      leftContent: <AC />,
+      rightContent: '(88888)',
+    },
+    {
+      value: 'apple',
+      label: 'Apple',
+      leftContent: <AC />,
+      rightContent: '(88888)',
+    },
+    {
+      value: 'mango',
+      label: 'Mango',
+      leftContent: <AC />,
+      rightContent: '(88888)',
+    },
+    {
+      value: 'mango1',
+      label: 'Mango 1',
+      leftContent: <AC />,
+      rightContent: '(88888)',
+    },
+    {
+      value: 'mango2',
+      label: 'Mango 2',
+      leftContent: <AC />,
+      rightContent: '(88888)',
+    },
+    {
+      value: 'mango3',
+      label: 'Mango 3',
+      leftContent: <AC />,
+      rightContent: '(88888)',
+    },
+    {
+      value: 'mango4',
+      label: 'Mango 4',
+      leftContent: <AC />,
+      rightContent: '(88888)',
+    },
+    {
+      value: 'mango5',
+      label: 'Mango 5',
+      leftContent: <AC />,
+      rightContent: '(88888)',
+    },
+    {
+      value: 'mango6',
+      label: 'Mango 6',
+      leftContent: <AC />,
+      rightContent: '(88888)',
+    },
+  ];
   return (
-    <Dropdown
-      id="marque"
-      error="This is an error"
-      labelFor="marque"
-      label="Marque label"
-    >
-      <option value="Marque">Marque</option>
-      <option value="saab">Saab</option>
-      <option value="opel">Opel</option>
-      <option value="audi">Audi</option>
-    </Dropdown>
+    <Dropdown onChange={() => {}} options={ITEMS} value={ITEMS[1]}></Dropdown>
   );
 };
 
@@ -87,21 +137,3 @@ Dropdown component is a component that is used to get select html field with opt
 ```tsx
 import Dropdown from '@heycar-uikit/dropdown';
 ```
-
-<TabContainer
-  tabs={[
-    { label: 'Description', component: <Description /> },
-    { label: 'Props', component: <Props of={Dropdown} /> },
-    {
-      label: 'CSS tokens',
-      component: (
-        <CssVars
-          css={`
-            ${styles}
-          `}
-        />
-      ),
-    },
-    { label: 'Changelog', component: <Changelog /> },
-  ]}
-/>

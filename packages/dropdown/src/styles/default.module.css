@@ -1,42 +1,111 @@
 @import '../../../themes/src/default.css';
 
-.dropdown {
+/*
+* Colors
+*/
+:root {
+  /* background color */
+  --option-background-color: var(--color-tarmac-grey-50);
+
+  /* text color */
+  --option-text-color: var(--color-tarmac-grey-700);
+}
+
+.container {
   position: relative;
+  width: 20em;
+  min-height: 1.5em;
+  border: 0.07em solid var(--color-neutral-500);
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.5em;
+  outline: none;
 }
-.dropdown > label {
+
+.container:focus {
+  border-color: var(--color-mica-blue-500);
+}
+
+.value {
+  flex-grow: 1;
+  display: flex;
+  gap: 0.5em;
+  flex-wrap: wrap;
+}
+
+.clear-btn {
+  background: none;
+  color: #777;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 1.25em;
+}
+
+.caret {
+  translate: 0 25%;
+  border: 0.25em solid transparent;
+  border-top-color: #777;
+}
+
+.options {
   position: absolute;
-  top: 15px;
-  left: 5px;
-  padding-left: 8px;
-  padding-right: 10px;
-  background-color: #ffffff;
-  font-size: 12px;
-  z-index: 1;
-}
-
-.dropdown > select:focus-visible {
-  outline-color: var(--color-heycar-mint-500);
-}
-
-.select {
-  appearance: none;
-  background-image: url('./down-arrow.svg');
-  background-position: right 0.5rem center;
-  background-repeat: no-repeat;
-  background-size: 1.5em 1.5em;
-  padding-right: 2.5rem;
-  font-size: 16px;
-  box-sizing: border-box;
-  min-height: 48px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+  max-height: 15em;
+  overflow-y: auto;
+  border: 0.05em solid #777;
   width: 100%;
-  border: 1px solid var(--color-tarmac-grey-500);
-  margin-top: 24px;
-  padding: 0.75rem;
-  min-width: 300px;
+  left: 0;
+  top: calc(100% + 0.25em);
+  background-color: white;
+  z-index: 100;
 }
 
-.error-message {
-  font-weight: var(--font-weight-regular);
-  font-size: var(--gap-m);
-  color: var(--color-old-ferrari-red-500);
+.options.show {
+  display: block;
+}
+
+.option {
+  padding: 0.25em 0.5em;
+  cursor: pointer;
+}
+
+.option.selected {
+  background-color: var(--option-background-color);
+}
+
+.option.highlighted {
+  background-color: var(--option-background-color);
+}
+
+.option:hover {
+  background-color: var(--option-background-color);
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.optionContent {
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  min-height: 28px;
+  box-shadow: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  border-style: solid;
+  color: var(--option-text-color);
+  flex-grow: 2;
+}
+
+.leftContent {
+  padding-right: 5px;
 }
