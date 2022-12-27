@@ -1,6 +1,156 @@
 import { Container, Row, Col } from 'storybook/blocks';
 import Dropdown from '../Dropdown';
+import { AC } from '../../../icons/src';
 
 ## Default
 
-You can add label and options(children)
+Use the `options` prop to to pass options.
+
+```tsx live
+<Container>
+  <Row
+    style={{ width: '100%', height: '150px', justifyContent: 'space-between' }}
+  >
+    <Col span={12}>
+      <Dropdown
+        onChange={() => {}}
+        options={[
+          {
+            value: 'pomelo',
+            label: 'Pomelo',
+          },
+          {
+            value: 'apple',
+            label: 'Apple',
+          },
+          {
+            value: 'mango',
+            label: 'Mango',
+          },
+        ]}
+        value={{
+          value: 'mango',
+          label: 'Mango',
+        }}
+      ></Dropdown>
+    </Col>
+  </Row>
+</Container>
+```
+
+## With right content
+
+Use the `rightContent` prop to to pass rightContent in options.
+
+```tsx live
+<Container>
+  <Row
+    style={{ width: '100%', justifyContent: 'space-between', height: '150px' }}
+  >
+    <Col span={12}>
+      <Dropdown
+        onChange={() => {}}
+        options={[
+          {
+            value: 'pomelo',
+            label: 'Pomelo',
+            rightContent: '(8888)',
+          },
+          {
+            value: 'apple',
+            label: 'Apple',
+            rightContent: '(8888)',
+          },
+          {
+            value: 'mango',
+            label: 'Mango',
+            rightContent: '(8888)',
+          },
+        ]}
+        value={{
+          value: 'mango',
+          label: 'Mango',
+          rightContent: '(8888)',
+        }}
+      ></Dropdown>
+    </Col>
+  </Row>
+</Container>
+```
+
+## With left content
+
+Use the `leftContent` prop to to pass left Content in options.
+
+```tsx live
+<Container>
+  <Row
+    style={{ width: '100%', justifyContent: 'space-between', height: '150px' }}
+  >
+    <Col span={12}>
+      <Dropdown
+        onChange={() => {}}
+        options={[
+          {
+            value: 'pomelo',
+            label: 'Pomelo',
+            leftContent: <AC />,
+          },
+          {
+            value: 'apple',
+            label: 'Apple',
+            leftContent: <AC />,
+          },
+          {
+            value: 'mango',
+            label: 'Mango',
+            leftContent: <AC />,
+          },
+        ]}
+        value={{
+          value: 'mango',
+          label: 'Mango',
+          leftContent: <AC />,
+        }}
+      ></Dropdown>
+    </Col>
+  </Row>
+</Container>
+```
+
+## Disabled
+
+Use the `disabled` prop to to disable dropdown state.
+
+```tsx live
+<Container>
+  <Row
+    style={{ width: '100%', justifyContent: 'space-between', height: '150px' }}
+  >
+    <Col span={12}>
+      <Dropdown
+        onChange={() => {}}
+        disabled={true}
+        options={[
+          {
+            value: 'pomelo',
+            label: 'Pomelo',
+          },
+          {
+            value: 'apple',
+            label: 'Apple',
+          },
+          {
+            value: 'mango',
+            label: 'Mango',
+          },
+        ]}
+        value={{
+          value: 'mango',
+          label: 'Mango',
+        }}
+      ></Dropdown>
+    </Col>
+  </Row>
+</Container>
+```

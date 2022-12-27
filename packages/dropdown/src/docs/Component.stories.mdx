@@ -22,26 +22,6 @@ import styles from '!!raw-loader!../styles/default.module.css';
   title="Components/Dropdown"
   component={Dropdown}
   argTypes={{
-    label: {
-      name: 'label',
-      type: { name: 'string' },
-      defaultValue: 'Label',
-    },
-    error: {
-      name: 'error',
-      type: { name: 'string' },
-      defaultValue: '',
-    },
-    disabled: {
-      name: 'disabled',
-      type: { name: 'boolean' },
-      defaultValue: false,
-    },
-    dataTestId: {
-      table: {
-        disable: true,
-      },
-    },
     onChange: {
       table: {
         disable: true,
@@ -55,55 +35,55 @@ export const DropdownTemplate = args => {
     {
       value: 'pomelo',
       label: 'Pomelo',
-      leftContent: <AC />,
+      leftContent: 'left Content',
       rightContent: '(88888)',
     },
     {
       value: 'apple',
       label: 'Apple',
-      leftContent: <AC />,
+      leftContent: 'LC',
       rightContent: '(88888)',
     },
     {
       value: 'mango',
       label: 'Mango',
-      leftContent: <AC />,
+      leftContent: 'LC',
       rightContent: '(88888)',
     },
     {
       value: 'mango1',
       label: 'Mango 1',
-      leftContent: <AC />,
+      leftContent: 'LC',
       rightContent: '(88888)',
     },
     {
       value: 'mango2',
       label: 'Mango 2',
-      leftContent: <AC />,
+      leftContent: 'LC',
       rightContent: '(88888)',
     },
     {
       value: 'mango3',
       label: 'Mango 3',
-      leftContent: <AC />,
+      leftContent: 'LC',
       rightContent: '(88888)',
     },
     {
       value: 'mango4',
       label: 'Mango 4',
-      leftContent: <AC />,
+      leftContent: 'LC',
       rightContent: '(88888)',
     },
     {
       value: 'mango5',
       label: 'Mango 5',
-      leftContent: <AC />,
+      leftContent: 'LC',
       rightContent: '(88888)',
     },
     {
       value: 'mango6',
       label: 'Mango 6',
-      leftContent: <AC />,
+      leftContent: 'LC',
       rightContent: '(88888)',
     },
   ];
@@ -129,11 +109,21 @@ export const DropdownTemplate = args => {
   name="Dropdown"
   version={version}
   stage={1}
-  design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Global-Design-System?node-id=1426%3A39722"
+  design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Global-Design-System?node-id=1073%3A116234"
 />
 
-Dropdown component is a component that is used to get select html field with options as children.
+The Dropdown component is used to display heycar dropdowns
 
 ```tsx
 import Dropdown from '@heycar-uikit/dropdown';
 ```
+
+<!-- Description -->
+
+<TabContainer
+  tabs={[
+    { label: 'Description', component: <Description /> },
+    { label: 'Props', component: <Props of={Dropdown} /> },
+    { label: 'Changelog', component: <Changelog /> },
+  ]}
+/>

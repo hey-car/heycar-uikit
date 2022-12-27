@@ -5,7 +5,7 @@ import { DropdownProps, SelectOptions } from './Dropdown.types';
 
 import styles from './styles/default.module.css';
 
-export const Dropdown = ({ value, onChange, options }: DropdownProps) => {
+export const Dropdown = ({ value, onChange, options, disabled }: DropdownProps) => {
   const [stateValue, setStateValue] = useState<SelectOptions | undefined>(
     value,
   );
@@ -18,18 +18,18 @@ export const Dropdown = ({ value, onChange, options }: DropdownProps) => {
   };
 
   const isOptionSelection = (option: SelectOptions) => {
-    return option === stateValue;
+    return option?.value === stateValue?.value;
   };
 
   return (
     <div
-      className={styles.container}
+      className={`${styles.container} ${disabled ? styles.disabled : ''}`}
       onBlur={() => setIsOpen(false)}
-      onClick={() => setIsOpen(true)}
+      onClick={() => !disabled && setIsOpen(true)}
       tabIndex={0}
     >
       <span className={styles.value}>{stateValue?.label}</span>
-      <div className={styles.caret}></div>
+      <div className={`${disabled ? styles.caret_disabled : (isOpen ? styles.caret_up : styles.caret_down)}`}></div>
       <ul className={`${styles.options} ${isOpen ? styles.show : ''}`}>
         {options.map(option => (
           <li
