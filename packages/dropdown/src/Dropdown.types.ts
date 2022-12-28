@@ -27,7 +27,7 @@ export type DropdownProps = {
   /**
    * onChange method callback upon option change
    */
-  onChange: (value: SelectOptions | undefined) => void;
+  onChange?: (value: SelectOptions | undefined) => void;
   /**
    * for setting default value.
    */
