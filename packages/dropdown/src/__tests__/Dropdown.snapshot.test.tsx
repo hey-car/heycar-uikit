@@ -8,38 +8,54 @@ describe('Dropdown Snapshots tests', () => {
     expect(
       render(
         <Dropdown
-          id="marque"
-          label="Marque label"
-          labelFor="marque"
           onChange={jest.fn()}
-        >
-          <option value="Marque">Marque</option>
-          <option value="saab">Saab</option>
-          <option value="opel">Opel</option>
-          <option value="audi">Audi</option>
-        </Dropdown>,
+          options={[
+            {
+              value: 'pomelo',
+              label: 'Pomelo',
+            },
+            {
+              value: 'apple',
+              label: 'Apple',
+            },
+            {
+              value: 'mango',
+              label: 'Mango',
+            },
+          ]}
+          value={{
+            value: 'mango',
+            label: 'Mango',
+          }}
+        />,
       ),
     ).toMatchSnapshot();
-  });
-
-  it('should match label props', () => {
-    expect(render(<Dropdown label="Label" />)).toMatchSnapshot();
   });
 
   it('should match disabled state', () => {
     expect(
-      render(<Dropdown disabled={true} label="Label" />),
-    ).toMatchSnapshot();
-  });
-
-  it('should match error hint/state', () => {
-    expect(
-      render(
-        <Dropdown
-          error="This is the placeholder for error note"
-          label="Label"
-        />,
-      ),
+      <Dropdown
+        disabled={true}
+        onChange={() => { }}
+        options={[
+          {
+            value: 'pomelo',
+            label: 'Pomelo',
+          },
+          {
+            value: 'apple',
+            label: 'Apple',
+          },
+          {
+            value: 'mango',
+            label: 'Mango',
+          },
+        ]}
+        value={{
+          value: 'mango',
+          label: 'Mango',
+        }}
+      />,
     ).toMatchSnapshot();
   });
 });

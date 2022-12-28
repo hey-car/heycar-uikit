@@ -5,7 +5,7 @@ import { DropdownProps, SelectOptions } from './Dropdown.types';
 
 import styles from './styles/default.module.css';
 
-export const Dropdown = ({ value, onChange, options, disabled }: DropdownProps) => {
+export const Dropdown = ({ value, onChange, options, disabled, dataTestId }: DropdownProps) => {
   const [stateValue, setStateValue] = useState<SelectOptions | undefined>(
     value,
   );
@@ -28,9 +28,9 @@ export const Dropdown = ({ value, onChange, options, disabled }: DropdownProps) 
       onClick={() => !disabled && setIsOpen(true)}
       tabIndex={0}
     >
-      <span className={styles.value}>{stateValue?.label}</span>
+      <span className={`${styles.value} ${disabled ? 'disabled' : ''}`} >{stateValue?.label}</span>
       <div className={`${disabled ? styles.caret_disabled : (isOpen ? styles.caret_up : styles.caret_down)}`}></div>
-      <ul className={`${styles.options} ${isOpen ? styles.show : ''}`}>
+      <ul className={`${styles.options} ${isOpen ? styles.show : ''}`} data-test-id={dataTestId}>
         {options.map(option => (
           <li
             className={`${styles.option} ${isOptionSelection(option) ? styles.selected : ''

@@ -6,75 +6,119 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="dropdown"
+        class="container "
+        tabindex="0"
       >
-        <label
-          for="marque"
+        <span
+          class="value "
         >
-          Marque label
-        </label>
-        <select
-          class="select"
-          id="marque"
+          Mango
+        </span>
+        <div
+          class="caret_down"
+        />
+        <ul
+          class="options "
         >
-          <option
-            value="Marque"
+          <li
+            class="option "
           >
-            Marque
-          </option>
-          <option
-            value="saab"
+            <div
+              class="contentContainer"
+            >
+              <span
+                class="optionContent"
+              >
+                Pomelo
+              </span>
+            </div>
+          </li>
+          <li
+            class="option "
           >
-            Saab
-          </option>
-          <option
-            value="opel"
+            <div
+              class="contentContainer"
+            >
+              <span
+                class="optionContent"
+              >
+                Apple
+              </span>
+            </div>
+          </li>
+          <li
+            class="option selected"
           >
-            Opel
-          </option>
-          <option
-            value="audi"
-          >
-            Audi
-          </option>
-        </select>
+            <div
+              class="contentContainer"
+            >
+              <span
+                class="optionContent"
+              >
+                Mango
+              </span>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="dropdown"
+      class="container "
+      tabindex="0"
     >
-      <label
-        for="marque"
+      <span
+        class="value "
       >
-        Marque label
-      </label>
-      <select
-        class="select"
-        id="marque"
+        Mango
+      </span>
+      <div
+        class="caret_down"
+      />
+      <ul
+        class="options "
       >
-        <option
-          value="Marque"
+        <li
+          class="option "
         >
-          Marque
-        </option>
-        <option
-          value="saab"
+          <div
+            class="contentContainer"
+          >
+            <span
+              class="optionContent"
+            >
+              Pomelo
+            </span>
+          </div>
+        </li>
+        <li
+          class="option "
         >
-          Saab
-        </option>
-        <option
-          value="opel"
+          <div
+            class="contentContainer"
+          >
+            <span
+              class="optionContent"
+            >
+              Apple
+            </span>
+          </div>
+        </li>
+        <li
+          class="option selected"
         >
-          Opel
-        </option>
-        <option
-          value="audi"
-        >
-          Audi
-        </option>
-      </select>
+          <div
+            class="contentContainer"
+          >
+            <span
+              class="optionContent"
+            >
+              Mango
+            </span>
+          </div>
+        </li>
+      </ul>
     </div>
   </div>,
   "debug": [Function],
@@ -132,262 +176,30 @@ Object {
 `;
 
 exports[`Dropdown Snapshots tests should match disabled state 1`] = `
-Object {
-  "asFragment": [Function],
-  "baseElement": <body>
-    <div>
-      <div
-        class="dropdown"
-      >
-        <label>
-          Label
-        </label>
-        <select
-          class="select"
-          disabled=""
-        />
-      </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="dropdown"
-    >
-      <label>
-        Label
-      </label>
-      <select
-        class="select"
-        disabled=""
-      />
-    </div>
-  </div>,
-  "debug": [Function],
-  "findAllByAltText": [Function],
-  "findAllByDisplayValue": [Function],
-  "findAllByLabelText": [Function],
-  "findAllByPlaceholderText": [Function],
-  "findAllByRole": [Function],
-  "findAllByTestId": [Function],
-  "findAllByText": [Function],
-  "findAllByTitle": [Function],
-  "findByAltText": [Function],
-  "findByDisplayValue": [Function],
-  "findByLabelText": [Function],
-  "findByPlaceholderText": [Function],
-  "findByRole": [Function],
-  "findByTestId": [Function],
-  "findByText": [Function],
-  "findByTitle": [Function],
-  "getAllByAltText": [Function],
-  "getAllByDisplayValue": [Function],
-  "getAllByLabelText": [Function],
-  "getAllByPlaceholderText": [Function],
-  "getAllByRole": [Function],
-  "getAllByTestId": [Function],
-  "getAllByText": [Function],
-  "getAllByTitle": [Function],
-  "getByAltText": [Function],
-  "getByDisplayValue": [Function],
-  "getByLabelText": [Function],
-  "getByPlaceholderText": [Function],
-  "getByRole": [Function],
-  "getByTestId": [Function],
-  "getByText": [Function],
-  "getByTitle": [Function],
-  "queryAllByAltText": [Function],
-  "queryAllByDisplayValue": [Function],
-  "queryAllByLabelText": [Function],
-  "queryAllByPlaceholderText": [Function],
-  "queryAllByRole": [Function],
-  "queryAllByTestId": [Function],
-  "queryAllByText": [Function],
-  "queryAllByTitle": [Function],
-  "queryByAltText": [Function],
-  "queryByDisplayValue": [Function],
-  "queryByLabelText": [Function],
-  "queryByPlaceholderText": [Function],
-  "queryByRole": [Function],
-  "queryByTestId": [Function],
-  "queryByText": [Function],
-  "queryByTitle": [Function],
-  "rerender": [Function],
-  "unmount": [Function],
-}
-`;
-
-exports[`Dropdown Snapshots tests should match error hint/state 1`] = `
-Object {
-  "asFragment": [Function],
-  "baseElement": <body>
-    <div>
-      <div
-        class="dropdown"
-      >
-        <label>
-          Label
-        </label>
-        <select
-          class="select"
-        />
-        <p
-          class="error-message"
-        >
-          This is the placeholder for error note
-        </p>
-      </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="dropdown"
-    >
-      <label>
-        Label
-      </label>
-      <select
-        class="select"
-      />
-      <p
-        class="error-message"
-      >
-        This is the placeholder for error note
-      </p>
-    </div>
-  </div>,
-  "debug": [Function],
-  "findAllByAltText": [Function],
-  "findAllByDisplayValue": [Function],
-  "findAllByLabelText": [Function],
-  "findAllByPlaceholderText": [Function],
-  "findAllByRole": [Function],
-  "findAllByTestId": [Function],
-  "findAllByText": [Function],
-  "findAllByTitle": [Function],
-  "findByAltText": [Function],
-  "findByDisplayValue": [Function],
-  "findByLabelText": [Function],
-  "findByPlaceholderText": [Function],
-  "findByRole": [Function],
-  "findByTestId": [Function],
-  "findByText": [Function],
-  "findByTitle": [Function],
-  "getAllByAltText": [Function],
-  "getAllByDisplayValue": [Function],
-  "getAllByLabelText": [Function],
-  "getAllByPlaceholderText": [Function],
-  "getAllByRole": [Function],
-  "getAllByTestId": [Function],
-  "getAllByText": [Function],
-  "getAllByTitle": [Function],
-  "getByAltText": [Function],
-  "getByDisplayValue": [Function],
-  "getByLabelText": [Function],
-  "getByPlaceholderText": [Function],
-  "getByRole": [Function],
-  "getByTestId": [Function],
-  "getByText": [Function],
-  "getByTitle": [Function],
-  "queryAllByAltText": [Function],
-  "queryAllByDisplayValue": [Function],
-  "queryAllByLabelText": [Function],
-  "queryAllByPlaceholderText": [Function],
-  "queryAllByRole": [Function],
-  "queryAllByTestId": [Function],
-  "queryAllByText": [Function],
-  "queryAllByTitle": [Function],
-  "queryByAltText": [Function],
-  "queryByDisplayValue": [Function],
-  "queryByLabelText": [Function],
-  "queryByPlaceholderText": [Function],
-  "queryByRole": [Function],
-  "queryByTestId": [Function],
-  "queryByText": [Function],
-  "queryByTitle": [Function],
-  "rerender": [Function],
-  "unmount": [Function],
-}
-`;
-
-exports[`Dropdown Snapshots tests should match label props 1`] = `
-Object {
-  "asFragment": [Function],
-  "baseElement": <body>
-    <div>
-      <div
-        class="dropdown"
-      >
-        <label>
-          Label
-        </label>
-        <select
-          class="select"
-        />
-      </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="dropdown"
-    >
-      <label>
-        Label
-      </label>
-      <select
-        class="select"
-      />
-    </div>
-  </div>,
-  "debug": [Function],
-  "findAllByAltText": [Function],
-  "findAllByDisplayValue": [Function],
-  "findAllByLabelText": [Function],
-  "findAllByPlaceholderText": [Function],
-  "findAllByRole": [Function],
-  "findAllByTestId": [Function],
-  "findAllByText": [Function],
-  "findAllByTitle": [Function],
-  "findByAltText": [Function],
-  "findByDisplayValue": [Function],
-  "findByLabelText": [Function],
-  "findByPlaceholderText": [Function],
-  "findByRole": [Function],
-  "findByTestId": [Function],
-  "findByText": [Function],
-  "findByTitle": [Function],
-  "getAllByAltText": [Function],
-  "getAllByDisplayValue": [Function],
-  "getAllByLabelText": [Function],
-  "getAllByPlaceholderText": [Function],
-  "getAllByRole": [Function],
-  "getAllByTestId": [Function],
-  "getAllByText": [Function],
-  "getAllByTitle": [Function],
-  "getByAltText": [Function],
-  "getByDisplayValue": [Function],
-  "getByLabelText": [Function],
-  "getByPlaceholderText": [Function],
-  "getByRole": [Function],
-  "getByTestId": [Function],
-  "getByText": [Function],
-  "getByTitle": [Function],
-  "queryAllByAltText": [Function],
-  "queryAllByDisplayValue": [Function],
-  "queryAllByLabelText": [Function],
-  "queryAllByPlaceholderText": [Function],
-  "queryAllByRole": [Function],
-  "queryAllByTestId": [Function],
-  "queryAllByText": [Function],
-  "queryAllByTitle": [Function],
-  "queryByAltText": [Function],
-  "queryByDisplayValue": [Function],
-  "queryByLabelText": [Function],
-  "queryByPlaceholderText": [Function],
-  "queryByRole": [Function],
-  "queryByTestId": [Function],
-  "queryByText": [Function],
-  "queryByTitle": [Function],
-  "rerender": [Function],
-  "unmount": [Function],
-}
+<Dropdown
+  disabled={true}
+  onChange={[Function]}
+  options={
+    Array [
+      Object {
+        "label": "Pomelo",
+        "value": "pomelo",
+      },
+      Object {
+        "label": "Apple",
+        "value": "apple",
+      },
+      Object {
+        "label": "Mango",
+        "value": "mango",
+      },
+    ]
+  }
+  value={
+    Object {
+      "label": "Mango",
+      "value": "mango",
+    }
+  }
+/>
 `;

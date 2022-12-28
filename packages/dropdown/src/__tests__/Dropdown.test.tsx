@@ -1,37 +1,97 @@
+/* eslint-disable prettier/prettier */
 import React from 'react';
 import { render } from '@testing-library/react';
 
 import Dropdown from '../Dropdown';
-const dataTestId = 'test-id';
 
 describe('Dropdown', () => {
-  describe('Callbacks tests', () => {
-    it('should set `disabled` attribute', () => {
+  describe('Prop tests', () => {
+    it('should set value', () => {
       const { container } = render(
-        <Dropdown dataTestId={dataTestId} disabled={true} />,
+        <Dropdown
+          onChange={() => { }}
+          options={[
+            {
+              value: 'pomelo',
+              label: 'Pomelo',
+            },
+            {
+              value: 'apple',
+              label: 'Apple',
+            },
+            {
+              value: 'mango',
+              label: 'Mango',
+            },
+          ]}
+          value={{
+            value: 'mango',
+            label: 'Mango',
+          }}
+        />,
       );
 
-      expect(container.querySelector('.select')).toHaveAttribute('disabled');
+      expect(container.querySelector('span')).toHaveTextContent('Mango');
+    });
+
+
+    it('should set options', () => {
+      const { container } = render(
+        <Dropdown
+          onChange={() => { }}
+          options={[
+            {
+              value: 'pomelo',
+              label: 'Pomelo',
+            },
+            {
+              value: 'apple',
+              label: 'Apple',
+            },
+            {
+              value: 'mango',
+              label: 'Mango',
+            },
+          ]}
+          value={{
+            value: 'mango',
+            label: 'Mango',
+          }}
+        />,
+      );
+
+      expect(container.getElementsByTagName('li')).toHaveLength(3);
     });
   });
 
-  describe('Classes tests', () => {
-    it('should set `className` class to input', () => {
+  describe('State tests', () => {
+    it('should set state disabled', () => {
       const { container } = render(
-        <Dropdown className="select" dataTestId={dataTestId} />,
+        <Dropdown
+          disabled={true}
+          onChange={() => { }}
+          options={[
+            {
+              value: 'pomelo',
+              label: 'Pomelo',
+            },
+            {
+              value: 'apple',
+              label: 'Apple',
+            },
+            {
+              value: 'mango',
+              label: 'Mango',
+            },
+          ]}
+          value={{
+            value: 'mango',
+            label: 'Mango',
+          }}
+        />,
       );
 
-      expect(container.querySelector('.select')).toHaveClass('dropdown select');
-    });
-  });
-
-  describe('unmount tests', () => {
-    it('should unmount without errors', () => {
-      const { unmount } = render(
-        <Dropdown onChange={jest.fn()} value="value" />,
-      );
-
-      expect(unmount).not.toThrowError();
+      expect(container.querySelector('span')).toHaveClass('disabled');
     });
   });
 });

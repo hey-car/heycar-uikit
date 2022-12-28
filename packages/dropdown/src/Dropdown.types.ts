@@ -36,4 +36,8 @@ export type DropdownProps = {
    * boolean prop to set disabled state.
    */
   disabled?: boolean;
+  /**
+   * id for testing purposes.
+   */
+  dataTestId?: string;
 };
