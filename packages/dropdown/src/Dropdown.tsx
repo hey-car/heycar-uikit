@@ -13,7 +13,9 @@ export const Dropdown = ({ value, onChange, options, disabled, dataTestId }: Dro
   const [isOpen, setIsOpen] = useState(false);
 
   const selectOption = (option: SelectOptions) => {
-    if (option !== stateValue) onChange(option);
+    if (onChange) {
+      if (option !== stateValue) onChange(option);
+    }
     setStateValue(option);
   };
 
