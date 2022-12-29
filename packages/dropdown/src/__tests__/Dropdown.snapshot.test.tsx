@@ -36,7 +36,7 @@ describe('Dropdown Snapshots tests', () => {
     expect(
       <Dropdown
         disabled={true}
-        onChange={() => { }}
+        onChange={() => {}}
         options={[
           {
             value: 'pomelo',
