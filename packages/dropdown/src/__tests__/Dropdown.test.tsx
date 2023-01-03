@@ -196,18 +196,5 @@ describe('Dropdown', () => {
 
       expect(cb).toBeCalledTimes(1);
     });
-
-    // it('should not call `onChange` prop if disabled', async () => {
-    //   const cb = jest.fn();
-    //   const { getByTestId } = render(
-    //     <Input dataTestId={dataTestId} disabled={true} onChange={cb} />,
-    //   );
-
-    //   const input = getByTestId(dataTestId) as HTMLInputElement;
-
-    //   await userEvent.type(input, '123');
-
-    //   expect(cb).not.toBeCalled();
-    // });
   });
 });
