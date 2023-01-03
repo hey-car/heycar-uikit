@@ -25,6 +25,14 @@ export type DropdownProps = {
    */
   options: SelectOptions[];
   /**
+   * onClick method callback upon dropdown click
+   */
+  onClick?: () => void;
+  /**
+   * onBlur method callback upon blur
+   */
+  onBlur?: () => void;
+  /**
    * onChange method callback upon option change
    */
   onChange?: (value: SelectOptions | undefined) => void;

@@ -5,7 +5,7 @@ import { DropdownProps, SelectOptions } from './Dropdown.types';
 
 import styles from './styles/default.module.css';
 
-export const Dropdown = ({ value, onChange, options, disabled, dataTestId }: DropdownProps) => {
+export const Dropdown = ({ value, onChange, options, disabled, dataTestId, onBlur, onClick }: DropdownProps) => {
   const [stateValue, setStateValue] = useState<SelectOptions | undefined>(
     value,
   );
@@ -23,11 +23,20 @@ export const Dropdown = ({ value, onChange, options, disabled, dataTestId }: Dro
     return option?.value === stateValue?.value;
   };
 
+  const onClickHandler = () => {
+    if(onClick) onClick();
+    if(!disabled) setIsOpen(true);
+  };
+  const onBlurHandler = () => {
+    if(onBlur) onBlur();
+    setIsOpen(false);
+  };
+
   return (
     <div
       className={`${styles.container} ${disabled ? styles.disabled : ''}`}
-      onBlur={() => setIsOpen(false)}
-      onClick={() => !disabled && setIsOpen(true)}
+      onBlur={onBlurHandler}
+      onClick={onClickHandler}
       tabIndex={0}
     >
       <span className={`${styles.value} ${disabled ? 'disabled' : ''}`} >{stateValue?.label}</span>
@@ -36,7 +45,7 @@ export const Dropdown = ({ value, onChange, options, disabled, dataTestId }: Dro
         {options.map(option => (
           <li
             className={`${styles.option} ${isOptionSelection(option) ? styles.selected : ''
-              }`}
+            }`}
             key={option.value}
             onClick={e => {
               e.stopPropagation();
