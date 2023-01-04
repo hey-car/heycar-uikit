@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.2](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/icons@3.0.1...@heycar-uikit/icons@3.0.2) (2023-01-04)
+
+
+### Bug Fixes
+
+* **grid:** update version as 2.0.0 and use the global variables for gaps ([#125](https://github.com/hey-car/heycar-uikit/issues/125)) ([b80fc26](https://github.com/hey-car/heycar-uikit/commit/b80fc26be86b14988cbd4cde636baf11d6de8acb))
+
+
+
+
+
 ## [3.0.1](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/icons@3.0.0...@heycar-uikit/icons@3.0.1) (2022-11-10)
 
 
