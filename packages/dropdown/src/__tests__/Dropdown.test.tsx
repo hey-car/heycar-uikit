@@ -168,9 +168,13 @@ describe('Dropdown', () => {
 
     it('should call `onBlur` prop', () => {
       const cb = jest.fn();
+      const cb1 = jest.fn();
+      const dataTestId = 'testId';
       const { container } = render(
         <Dropdown
+          dataTestId={dataTestId}
           onBlur={cb}
+          onClick={cb1}
           options={[
             {
               value: 'pomelo',
@@ -192,7 +196,10 @@ describe('Dropdown', () => {
         />,
       );
 
-      fireEvent.blur(container);
+      const ul = container as HTMLUListElement;
+
+      if (ul.firstChild) fireEvent.click(ul.firstChild);
+      if(ul.firstChild) fireEvent.blur(ul.firstChild);
 
       expect(cb).toBeCalledTimes(1);
     });
