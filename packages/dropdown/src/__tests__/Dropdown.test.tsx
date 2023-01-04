@@ -203,5 +203,41 @@ describe('Dropdown', () => {
 
       expect(cb).toBeCalledTimes(1);
     });
+
+
+    it('should set `options` through prop', () => {
+
+      const dataTestId = 'testId';
+      const options = [
+        {
+          value: 'pomelo',
+          label: 'Pomelo',
+        },
+        {
+          value: 'apple',
+          label: 'Apple',
+        },
+        {
+          value: 'mango',
+          label: 'Mango',
+        },
+      ];
+      const { getByTestId } = render(
+        <Dropdown
+          dataTestId={dataTestId}
+          options={[...options]}
+          value={{
+            value: 'mango',
+            label: 'Mango',
+          }}
+        />,
+      );
+
+      const ul = getByTestId(dataTestId) as HTMLUListElement;
+
+      console.log('ul', ul);
+
+      expect(ul.childElementCount).toBe(options.length);
+    });
   });
 });
