@@ -1,3 +1,10 @@
+## [3.2.3](https://github.com/hey-car/heycar-uikit/compare/v3.2.2...v3.2.3) (2023-01-06)
+
+
+### Bug Fixes
+
+* **grid column:** fix the paddings ([#126](https://github.com/hey-car/heycar-uikit/issues/126)) ([b73afae](https://github.com/hey-car/heycar-uikit/commit/b73afaeeec8dc79c4de2d37c56fd11cb2d4fae5a))
+
 ## [3.2.2](https://github.com/hey-car/heycar-uikit/compare/v3.2.1...v3.2.2) (2023-01-04)
 
 
