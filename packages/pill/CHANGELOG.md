@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.3](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/pill@1.1.2...@heycar-uikit/pill@1.1.3) (2023-01-06)
+
+
+### Bug Fixes
+
+* **grid column:** fix the paddings ([#126](https://github.com/hey-car/heycar-uikit/issues/126)) ([b73afae](https://github.com/hey-car/heycar-uikit/commit/b73afaeeec8dc79c4de2d37c56fd11cb2d4fae5a))
+
+
+
+
+
 ## [1.1.2](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/pill@1.1.1...@heycar-uikit/pill@1.1.2) (2023-01-04)
 
 
