@@ -19,7 +19,7 @@
   display: flex;
   align-items: center;
   gap: 0.5em;
-  padding: 0.5em;
+  padding: 12.5px 12px;
   outline: none;
 }
 
@@ -71,10 +71,11 @@
   overflow-y: auto;
   border: 1px solid var(--color-neutral-50);
   width: 100%;
-  left: 0;
-  top: calc(100% + 0.025em);
+  left: -1px;
+  top: calc(100% + 0.01em);
   background-color: white;
   z-index: 100;
+  box-shadow: 0 2px 4px 0 var(--color-neutral-50), 0 2px 5px 0 var(--color-neutral-50);
 }
 
 .options.show {
@@ -82,8 +83,9 @@
 }
 
 .option {
-  padding: 0.25em 0.5em;
+  padding: 10px 12px;
   cursor: pointer;
+  max-height: 48px;
 }
 
 .option.selected {
@@ -119,5 +121,5 @@
 }
 
 .leftContent {
-  padding-right: 5px;
+  padding-right: 8px;
 }
