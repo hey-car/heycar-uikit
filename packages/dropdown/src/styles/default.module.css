@@ -84,7 +84,7 @@
 }
 
 .option {
-  padding: 10px 12px;
+  padding: 9px 12px;
   cursor: pointer;
   max-height: 48px;
 }
@@ -102,6 +102,7 @@
 }
 
 .contentContainer {
+  padding-top: 2px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -123,4 +124,8 @@
 
 .leftContent {
   padding-right: 8px;
+}
+
+.rightContent {
+  padding-top: 2px;
 }
