@@ -73,7 +73,7 @@
   width: 100%;
   left: -1px;
   top: calc(100% + 0.01em);
-  background-color: white;
+  background-color: var(--color-championship-white);
   z-index: 100;
   box-shadow: 0 2px 4px 0 var(--color-neutral-50),
     0 2px 5px 0 var(--color-neutral-50);
