@@ -21,7 +21,7 @@ export interface PaginationProps {
    * `scrollToElementId` - To which element ID should we build our URL so auto scroll works?
    */
   renderItem?: (item: PaginationItemProps) => JSX.Element;
-  onChange?: (page: number) => void;
+  onClick?: (page: number) => void;
 }
 
 export enum paginationItemType {
@@ -40,18 +40,19 @@ export interface IPaginationItem {
   Component?: ComponentType<any> | string;
   isDisabled?: boolean;
   isCurrentPage?: boolean;
+  onClick?: (itemNumber: number) => void;
 }
 
 export interface PaginationItemProps {
   type: paginationItemType;
   label?: string;
   page?: number;
-  onClick?: () => void;
+  onClick?: (itemNumber: number) => void;
   href?: string;
   isCurrentPage?: boolean;
 }
 
-export interface PaginationItemType<T> {
+export interface PropsBasedOnComponent<T> {
   <C extends React.ElementType>(
     props: {
       /**

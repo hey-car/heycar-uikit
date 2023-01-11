@@ -1,3 +1,5 @@
+import { log } from 'util';
+
 import React from 'react';
 import cn from 'classnames';
 
@@ -6,29 +8,31 @@ import Typography from '@heycar-uikit/typography';
 
 import {
   IPaginationItem,
-  PaginationItemProps,
-  PaginationItemType,
   paginationItemType,
+  PropsBasedOnComponent,
 } from './Pagination.types';
 
 import styles from './styles/default.module.css';
 
-const PaginationItem: PaginationItemType<IPaginationItem> = ({
+const PaginationItem: PropsBasedOnComponent<IPaginationItem> = ({
   page,
   isCurrentPage,
   isDisabled,
   type,
-  Component = 'a',
+  onClick,
+  Component = onClick ? 'button' : 'a',
   ...rest
 }) => {
   let component;
 
-  // This
   function disableHref() {
-    if (isDisabled) return { href: null };
+    // if (isDisabled) return { href: null, onClick: null };
 
     return {};
   }
+
+  console.log('This is PaginationItem ' + page);
+  // if (onClick) onClick();
 
   switch (type) {
     case paginationItemType.page:
@@ -36,6 +40,7 @@ const PaginationItem: PaginationItemType<IPaginationItem> = ({
         <Component
           className={cn(styles.itemNumber, isCurrentPage && styles.currentPage)}
           {...rest}
+          onClick={onClick}
         >
           <Typography variant="subheading2">{page}</Typography>
         </Component>
@@ -52,7 +57,7 @@ const PaginationItem: PaginationItemType<IPaginationItem> = ({
       component = (
         <Typography className={styles.slash} variant="subheading2">
         /
-        </Typography>
+      </Typography>
       );
       break;
     case paginationItemType.previous:
@@ -60,6 +65,7 @@ const PaginationItem: PaginationItemType<IPaginationItem> = ({
         <Component
           className={cn(styles.arrow, isDisabled && styles.disabled)}
           {...rest}
+          onClick={onClick}
           {...disableHref()}
         >
           <ChevronLeft />
@@ -71,6 +77,7 @@ const PaginationItem: PaginationItemType<IPaginationItem> = ({
         <Component
           className={cn(styles.arrow, isDisabled && styles.disabled)}
           {...rest}
+          onClick={onClick}
           {...disableHref()}
         >
           <ChevronRight />

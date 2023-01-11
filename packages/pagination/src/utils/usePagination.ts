@@ -3,7 +3,8 @@ import { IPaginationItem, paginationItemType } from '../Pagination.types';
 import { getPagesToRender } from './getPagesToRender';
 import { useBreakpointHook } from './useBreakpoint.hook';
 
-interface usePaginationProps {
+interface Props {
+  onClick?: (page: number) => void;
   currentPage: number;
   totalPages: number;
 }
@@ -16,7 +17,7 @@ const shouldInsert = (condition: boolean, obj: IPaginationItem) => {
   }
 };
 
-const usePagination = ({ currentPage, totalPages }: usePaginationProps) => {
+const usePagination = ({ onClick, currentPage, totalPages }: Props) => {
   const breakpoint = useBreakpointHook();
   const isDesktop = breakpoint && breakpoint >= 1024;
 
@@ -25,6 +26,13 @@ const usePagination = ({ currentPage, totalPages }: usePaginationProps) => {
 
   const pagesToRender = getPagesToRender(totalPages, currentPage);
 
+  const handleClick = (page: number, isDisabled: boolean) => {
+    // console.log('Clicked!', { page, onClick, isDisabled });
+    if (onClick && !isDisabled) {
+      onClick(page);
+    }
+  };
+
   const items: IPaginationItem[] = isDesktop
     ? [
         // Previous button
@@ -32,12 +40,14 @@ const usePagination = ({ currentPage, totalPages }: usePaginationProps) => {
           type: paginationItemType.previous,
           page: currentPage - 1,
           isDisabled: currentPage === 1,
+          onClick: () => handleClick(currentPage - 1, currentPage === 1),
         },
         // First page
         {
           type: paginationItemType.page,
           page: 1,
           isCurrentPage: currentPage === 1,
+          onClick: () => handleClick(1, false),
         },
         // Ellipsis
         ...shouldInsert(shouldShowPreDots, {
@@ -48,6 +58,7 @@ const usePagination = ({ currentPage, totalPages }: usePaginationProps) => {
           type: paginationItemType.page,
           page: page,
           isCurrentPage: currentPage === page,
+          onClick: () => handleClick(page, false),
         })),
         // Ellipsis
         ...shouldInsert(shouldShowPostDots, {
@@ -58,12 +69,15 @@ const usePagination = ({ currentPage, totalPages }: usePaginationProps) => {
           type: paginationItemType.page,
           page: totalPages,
           isCurrentPage: currentPage === totalPages,
+          onClick: () => handleClick(totalPages, false),
         }),
         // Next button
         {
           type: paginationItemType.next,
-          page: totalPages,
+          page: currentPage + 1,
           isDisabled: currentPage === totalPages,
+          onClick: () =>
+            handleClick(currentPage + 1, currentPage === totalPages),
         },
       ]
     : [

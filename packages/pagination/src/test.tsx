@@ -54,7 +54,7 @@ export const PaginationTest = () => {
     <div style={{ maxWidth: '700px', margin: '0 auto' }}>
       This is test
       <Pagination
-        currentPage={10}
+        currentPage={8}
         renderItem={item => (
           <PaginationItem
             Component={Link}
@@ -69,10 +69,11 @@ export const PaginationTest = () => {
         renderItem={item => <PaginationItem {...item} />}
         totalPages={10}
       />
+      <Pagination currentPage={1} totalPages={1} />
       <Pagination
-        currentPage={1}
-        renderItem={item => <PaginationItem {...item} />}
-        totalPages={1}
+        currentPage={3}
+        onClick={itemNumber => console.log({ lol: 'ues', itemNumber })}
+        totalPages={3}
       />
     </div>
   );

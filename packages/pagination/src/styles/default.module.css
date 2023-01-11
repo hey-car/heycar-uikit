@@ -36,9 +36,9 @@
       /*-webkit-justify-content: center;*/
       /*justify-content: center;*/
       /*position: relative;*/
-      /*box-sizing: border-box;*/
+      box-sizing: border-box;
       /*-webkit-tap-highlight-color: transparent;*/
-      /*background-color: transparent;*/
+      background-color: transparent;
       /*outline: 0;*/
       /*border: 0;*/
       /*margin: 0;*/
@@ -129,102 +129,4 @@
     cursor: not-allowed;
     color:  var(--color-neutral-300);
   }
-}
-
-.button {
-
-}
-
-
-
-
-.accordion {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
-  width: 100%;
-  background-color: #fff;
-  overflow: hidden;
-  border-bottom: 1px solid var(--color-neutral-300);
-  transition: padding 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  color: var(--color-neutral-700);
-
-  &.accordionOpen {
-    padding-bottom: var(--gap-xl);
-  }
-}
-
-.header {
-  @mixin typography-body-1;
-  text-align: left;
-  flex-grow: 1;
-  width: 100%;
-  cursor: pointer;
-  transition: margin 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  padding: var(--gap-m) 0;
-
-  -webkit-box-align: center;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-box-pack: center;
-  align-items: start;
-  justify-content: space-between;
-  position: relative;
-  box-sizing: border-box;
-  background-color: transparent;
-
-  outline-color: var(--color-secondary-500);
-  appearance: auto;
-  border: 0;
-  margin: 0;
-  border-radius: 0;
-  cursor: pointer;
-  user-select: none;
-  vertical-align: middle;
-  text-decoration: none;
-  color: inherit;
-  display: flex;
-
-  &.headerOpen {
-    margin-bottom: var(--gap-xs);
-
-    & .headerArrow {
-      transform: rotate(180deg);
-    }
-  }
-
-  &.headerDisabled {
-    cursor: default;
-    background-color: transparent;
-    outline: none;
-    color: var(--color-neutral-300);
-
-    &:hover,
-    &:focus,
-    &:active {
-      background-color: transparent;
-    }
-  }
-
-  & .headerArrow {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: var(--gap-xl);
-    height: var(--gap-xl);
-
-    margin-left: var(--gap-xl);
-
-    transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-    transform: rotate(0deg);
-  }
-
-  &:hover,
-  &:focus-visible {
-    background-color: var(--color-neutral-50);
-  }
-}
-
-.body {
-  @mixin typography-body-3;
 }
