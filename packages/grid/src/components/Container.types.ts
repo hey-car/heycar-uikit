@@ -2,11 +2,7 @@ import { HTMLAttributes } from 'react';
 
 export type ContainerProps = HTMLAttributes<Element> & {
   /**
-   * HTML component tag
+   * The component used for the root node. Either a string to use a HTML element or a component
    */
-  as?: keyof JSX.IntrinsicElements;
-  /**
-   * Identifier for automated testing systems
-   */
-  dataTestId?: string;
+  Component?: React.ElementType;
 };

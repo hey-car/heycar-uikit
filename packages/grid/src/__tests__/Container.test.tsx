@@ -13,11 +13,10 @@ describe('Grid.Container', () => {
   });
 
   it('should set tag correctly', () => {
-    const dataTestId = 'test-id';
-    const { getByTestId } = render(
-      <Container as="section" dataTestId={dataTestId} />,
+    const { getByText } = render(
+      <Container Component="section">hey</Container>,
     );
 
-    expect(getByTestId(dataTestId).tagName).toBe('SECTION');
+    expect(getByText('hey').tagName).toBe('SECTION');
   });
 });

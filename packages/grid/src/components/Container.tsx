@@ -5,21 +5,21 @@ import { ContainerProps } from './Container.types';
 
 import styles from './Container.module.css';
 
-const Container: React.FC<ContainerProps> = ({
+function Container({
   className,
   children,
-  as = 'div',
+  Component = 'div',
   dataTestId,
   ...rest
-}) =>
-  React.createElement(
-    as,
+}: ContainerProps) {
+  return React.createElement(
+    Component,
     {
       className: cn(styles.container, className),
-      ['data-test-id']: dataTestId,
+      dataTestId,
       ...rest,
     },
     children,
   );
-
+}
 export default Container;
