@@ -9,14 +9,12 @@ function Container({
   className,
   children,
   Component = 'div',
-  dataTestId,
   ...rest
 }: ContainerProps) {
   return React.createElement(
     Component,
     {
       className: cn(styles.container, className),
-      dataTestId,
       ...rest,
     },
     children,
