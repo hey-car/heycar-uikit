@@ -347,3 +347,38 @@ render(() => {
   );
 });
 ```
+
+## Grid.Container
+
+The container component is used to contain the page content. Grid.Row can be used inside of container component.
+
+```tsx live
+render(() => {
+  const style = {
+    height: 30,
+    lineHeight: '30px',
+    color: '#fff',
+    background: '#7394c8',
+    textAlign: 'center',
+    marginTop: 10,
+  };
+  return (
+    <Grid.Container>
+      <Grid.Row>
+        <Grid.Col width={{ tablet: { m: 12 } }}>
+          <div style={{ ...style, background: '#164ca3', marginTop: 0 }}>
+            12
+          </div>
+        </Grid.Col>
+      </Grid.Row>
+      <Grid.Row>
+        {[1, 2].map(key => (
+          <Grid.Col width="6" key={key}>
+            <div style={style}>6</div>
+          </Grid.Col>
+        ))}
+      </Grid.Row>
+    </Grid.Container>
+  );
+});
+```

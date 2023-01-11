@@ -8,11 +8,11 @@ import styles from './Container.module.css';
 const Container: React.FC<ContainerProps> = ({
   className,
   children,
-  as,
+  as = 'div',
   ...rest
 }) =>
   React.createElement(
-    as ?? 'div',
+    as,
     { className: cn(styles.container, className), ...rest },
     children,
   );

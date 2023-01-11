@@ -9,7 +9,6 @@
   box-sizing: border-box;
   padding-left: var(--gap-l);
   padding-right: var(--gap-l);
-  background-color: red;
 
   @media (--tablet) {
     padding-right: var(--gap-xl);
