@@ -1,5 +1,3 @@
-import { log } from 'util';
-
 import React from 'react';
 import cn from 'classnames';
 
@@ -26,13 +24,10 @@ const PaginationItem: PropsBasedOnComponent<IPaginationItem> = ({
   let component;
 
   function disableHref() {
-    // if (isDisabled) return { href: null, onClick: null };
+    if (isDisabled) return { href: null };
 
     return {};
   }
-
-  console.log('This is PaginationItem ' + page);
-  // if (onClick) onClick();
 
   switch (type) {
     case paginationItemType.page:
@@ -49,15 +44,15 @@ const PaginationItem: PropsBasedOnComponent<IPaginationItem> = ({
     case paginationItemType.ellipsis:
       component = (
         <Typography className={styles.ellipsis} variant="subheading2">
-        ...
-      </Typography>
+          {'...'}
+        </Typography>
       );
       break;
     case paginationItemType.slash:
       component = (
         <Typography className={styles.slash} variant="subheading2">
-        /
-      </Typography>
+          {'/'}
+        </Typography>
       );
       break;
     case paginationItemType.previous:

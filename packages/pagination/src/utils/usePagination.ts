@@ -27,7 +27,6 @@ const usePagination = ({ onClick, currentPage, totalPages }: Props) => {
   const pagesToRender = getPagesToRender(totalPages, currentPage);
 
   const handleClick = (page: number, isDisabled: boolean) => {
-    // console.log('Clicked!', { page, onClick, isDisabled });
     if (onClick && !isDisabled) {
       onClick(page);
     }
