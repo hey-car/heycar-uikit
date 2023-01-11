@@ -9,11 +9,16 @@ const Container: React.FC<ContainerProps> = ({
   className,
   children,
   as = 'div',
+  dataTestId,
   ...rest
 }) =>
   React.createElement(
     as,
-    { className: cn(styles.container, className), ...rest },
+    {
+      className: cn(styles.container, className),
+      ['data-test-id']: dataTestId,
+      ...rest,
+    },
     children,
   );
 
