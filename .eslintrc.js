@@ -103,7 +103,7 @@ module.exports = {
     'comma-style': ['warn', 'last'],
     'computed-property-spacing': ['warn', 'never'],
     'func-call-spacing': ['warn', 'never'],
-    indent: ['warn', 2, { SwitchCase: 0 }],
+    indent: 0,
     'key-spacing': ['warn'],
     'linebreak-style': ['error', 'unix'],
     'no-trailing-spaces': ['warn'],
@@ -198,14 +198,7 @@ module.exports = {
     ],
 
     // typescript
-    '@typescript-eslint/indent': [
-      'warn',
-      2,
-      {
-        SwitchCase: 1,
-        ignoredNodes: ['TSTypeParameterInstantiation'],
-      },
-    ],
+    // '@typescript-eslint/indent': 0,
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/array-type': [
