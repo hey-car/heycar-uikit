@@ -29,9 +29,9 @@ export interface RowProps {
   justify?: 'left' | 'center' | 'right' | 'around' | 'between';
 
   /**
-   * HTML component tag
+   * The component used for the root node. Either a string to use a HTML element or a component
    */
-  Component?: keyof JSX.IntrinsicElements;
+  Component?: React.ElementType;
 
   /**
    * Content

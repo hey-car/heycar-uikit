@@ -44,9 +44,9 @@ export type ColProps = {
   order?: ResponsivePropertyType;
 
   /**
-   * The html tag of the component
+   * The component used for the root node. Either a string to use a HTML element or a component
    */
-  Component?: keyof JSX.IntrinsicElements;
+  Component?: React.ElementType;
 
   /**
    * Content
