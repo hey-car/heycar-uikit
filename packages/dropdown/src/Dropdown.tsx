@@ -25,7 +25,7 @@ export const Dropdown = ({ value, onChange, options, disabled, dataTestId, onBlu
 
   const onClickHandler = () => {
     if(onClick) onClick();
-    if(!disabled) setIsOpen(true);
+    if(!disabled) setIsOpen(!isOpen);
   };
   const onBlurHandler = () => {
     if(onBlur) onBlur();

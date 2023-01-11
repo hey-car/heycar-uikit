@@ -21,6 +21,7 @@
   gap: 0.5em;
   padding: 12.5px 12px;
   outline: none;
+  color: var(--option-text-color);
 }
 
 .container:focus {
@@ -108,7 +109,7 @@
   justify-content: space-between;
 }
 .optionContent {
-  font-size: 14px;
+  font-size: 16px;
   justify-content: center;
   align-items: center;
   border: 0;
@@ -117,7 +118,6 @@
   box-sizing: border-box;
   text-decoration: none;
   border-style: solid;
-  color: var(--option-text-color);
   flex-grow: 2;
   padding-top: 2px;
 }
@@ -128,4 +128,5 @@
 
 .rightContent {
   padding-top: 2px;
+  font-size: 12px;
 }
