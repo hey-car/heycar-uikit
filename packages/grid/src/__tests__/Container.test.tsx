@@ -14,7 +14,7 @@ describe('Grid.Container', () => {
 
   it('should set tag correctly', () => {
     const { getByText } = render(
-      <Container Component="section">hey</Container>,
+      <Container component="section">hey</Container>,
     );
 
     expect(getByText('hey').tagName).toBe('SECTION');

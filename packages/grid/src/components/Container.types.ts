@@ -1,8 +1,12 @@
-import { HTMLAttributes } from 'react';
+import React from 'react';
 
-export type ContainerProps = HTMLAttributes<Element> & {
+type ContainerBaseProps<E extends React.ElementType> = {
   /**
    * The component used for the root node. Either a string to use a HTML element or a component
    */
-  Component?: React.ElementType;
+  component?: E;
 };
+
+export type ContainerProps<E extends React.ElementType> =
+  ContainerBaseProps<E> &
+    Omit<React.ComponentProps<E>, keyof ContainerBaseProps<E>>;

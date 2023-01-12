@@ -5,12 +5,14 @@ import { ContainerProps } from './Container.types';
 
 import styles from './Container.module.css';
 
-function Container({
+function Container<E extends React.ElementType = 'div'>({
   className,
   children,
-  Component = 'div',
+  component,
   ...rest
-}: ContainerProps) {
+}: ContainerProps<E>) {
+  const Component = component ?? 'div';
+
   return React.createElement(
     Component,
     {
