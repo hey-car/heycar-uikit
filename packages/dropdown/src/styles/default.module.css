@@ -14,13 +14,13 @@
 .container {
   position: relative;
   width: 20em;
-  min-height: 1.5em;
-  border: 0.07em solid var(--color-neutral-500);
+  border: 1px solid var(--color-neutral-500);
   display: flex;
   align-items: center;
   gap: 0.5em;
-  padding: 12.5px 12px;
+  padding: 11px 12px;
   outline: none;
+  max-height: 48px;
   color: var(--option-text-color);
 }
 
