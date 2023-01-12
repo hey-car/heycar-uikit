@@ -1,0 +1,129 @@
+@import '../../../themes/src/default.css';
+
+/*
+* Colors
+*/
+:root {
+  /* background color */
+  --option-background-color: var(--color-tarmac-grey-50);
+
+  /* text color */
+  --option-text-color: var(--color-tarmac-grey-700);
+}
+
+.container {
+  position: relative;
+  width: 20em;
+  border: 1px solid var(--color-neutral-500);
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 11px 12px;
+  outline: none;
+  max-height: 48px;
+  color: var(--option-text-color);
+}
+
+.container:focus {
+  border-color: var(--color-mica-blue-500);
+}
+
+.container.disabled {
+  color: var(--color-neutral-300);
+  border-color: var(--color-neutral-300);
+}
+
+.container.disabled:focus {
+  color: var(--color-neutral-300);
+  border-color: var(--color-neutral-300);
+}
+.value {
+  flex-grow: 1;
+  display: flex;
+  gap: 0.5em;
+  flex-wrap: wrap;
+}
+
+.caret_down {
+  content: url(../icons/arrow_down.svg);
+}
+
+.caret_up {
+  content: url(../icons/arrow_up.svg);
+}
+
+.caret_disabled {
+  content: url(../icons/caret_disabled.svg);
+}
+
+.options {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+  max-height: 15em;
+  overflow-y: auto;
+  border: 1px solid var(--color-neutral-50);
+  width: 100%;
+  left: -1px;
+  top: calc(100% + 0.01em);
+  background-color: var(--color-championship-white);
+  z-index: 100;
+  box-shadow: 0 2px 4px 0 var(--color-neutral-50),
+    0 2px 5px 0 var(--color-neutral-50);
+}
+
+.options.show {
+  display: block;
+}
+
+.option {
+  padding: 9px 12px;
+  cursor: pointer;
+  max-height: 48px;
+}
+
+.option.selected {
+  background-color: var(--color-mica-blue-500);
+  color: var(--color-championship-white);
+}
+
+.option.highlighted {
+  background-color: var(--option-background-color);
+}
+
+.option:hover {
+  color: var(--option-text-color);
+  background-color: var(--option-background-color);
+}
+
+.contentContainer {
+  padding-top: 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.optionContent {
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  min-height: 28px;
+  box-shadow: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  border-style: solid;
+  flex-grow: 2;
+  padding-top: 2px;
+}
+
+.leftContent {
+  padding-right: 8px;
+}
+
+.rightContent {
+  padding-top: 3px;
+  font-size: 12px;
+}
