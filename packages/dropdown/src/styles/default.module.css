@@ -45,21 +45,15 @@
 }
 
 .caret_down {
-  content: url(../icons/caret_down.svg);
-  width: 11px;
-  height: 11px;
+  content: url(../icons/arrow_down.svg);
 }
 
 .caret_up {
-  content: url(../icons/caret_up.svg);
-  width: 11px;
-  height: 11px;
+  content: url(../icons/arrow_up.svg);
 }
 
 .caret_disabled {
   content: url(../icons/caret_disabled.svg);
-  width: 11px;
-  height: 11px;
 }
 
 .options {
@@ -91,7 +85,8 @@
 }
 
 .option.selected {
-  font-weight: 500;
+  background-color: var(--color-mica-blue-500);
+  color: var(--color-championship-white);
 }
 
 .option.highlighted {
