@@ -1,3 +1,10 @@
+# [3.3.0](https://github.com/hey-car/heycar-uikit/compare/v3.2.3...v3.3.0) (2023-01-12)
+
+
+### Features
+
+* **icon:** add new chevrons right - left icons ([#129](https://github.com/hey-car/heycar-uikit/issues/129)) ([4d0f08f](https://github.com/hey-car/heycar-uikit/commit/4d0f08ffd40aca41a03f386016c6955e40d04f61))
+
 ## [3.2.3](https://github.com/hey-car/heycar-uikit/compare/v3.2.2...v3.2.3) (2023-01-06)
 
 
