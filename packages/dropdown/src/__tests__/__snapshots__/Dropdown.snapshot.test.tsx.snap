@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="container "
+        class="container"
         tabindex="0"
       >
         <span
@@ -65,7 +65,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="container "
+      class="container"
       tabindex="0"
     >
       <span
