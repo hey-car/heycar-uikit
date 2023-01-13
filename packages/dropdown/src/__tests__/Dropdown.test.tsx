@@ -34,7 +34,6 @@ describe('Dropdown', () => {
       expect(container.querySelector('span')).toHaveTextContent('Mango');
     });
 
-
     it('should set options', () => {
       const { container } = render(
         <Dropdown
@@ -93,6 +92,35 @@ describe('Dropdown', () => {
 
       expect(container.querySelector('span')).toHaveClass('disabled');
     });
+
+    it('should set `full width` class', () => {
+      const { container } = render(
+        <Dropdown
+          fullWidth={true}
+          onChange={() => { }}
+          options={[
+            {
+              value: 'pomelo',
+              label: 'Pomelo',
+            },
+            {
+              value: 'apple',
+              label: 'Apple',
+            },
+            {
+              value: 'mango',
+              label: 'Mango',
+            },
+          ]}
+          value={{
+            value: 'mango',
+            label: 'Mango',
+          }}
+        />,
+      );
+
+      expect(container.firstElementChild).toHaveClass('fullWidth');
+    });
   });
 
   describe('Callbacks tests', () => {
@@ -126,7 +154,7 @@ describe('Dropdown', () => {
 
       const ul = getByTestId(dataTestId) as HTMLUListElement;
 
-      if(ul.firstChild) fireEvent.click(ul.firstChild);
+      if (ul.firstChild) fireEvent.click(ul.firstChild);
 
       expect(cb).toBeCalledTimes(1);
     });
@@ -161,7 +189,7 @@ describe('Dropdown', () => {
 
       const ul = container as HTMLUListElement;
 
-      if(ul.firstChild) fireEvent.click(ul.firstChild);
+      if (ul.firstChild) fireEvent.click(ul.firstChild);
 
       expect(cb).toBeCalledTimes(1);
     });
@@ -199,14 +227,12 @@ describe('Dropdown', () => {
       const ul = container as HTMLUListElement;
 
       if (ul.firstChild) fireEvent.click(ul.firstChild);
-      if(ul.firstChild) fireEvent.blur(ul.firstChild);
+      if (ul.firstChild) fireEvent.blur(ul.firstChild);
 
       expect(cb).toBeCalledTimes(1);
     });
 
-
     it('should set `options` through prop', () => {
-
       const dataTestId = 'testId';
       const options = [
         {
@@ -234,8 +260,6 @@ describe('Dropdown', () => {
       );
 
       const ul = getByTestId(dataTestId) as HTMLUListElement;
-
-      console.log('ul', ul);
 
       expect(ul.childElementCount).toBe(options.length);
     });
