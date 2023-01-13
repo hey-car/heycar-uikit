@@ -1,3 +1,10 @@
+## [3.3.1](https://github.com/hey-car/heycar-uikit/compare/v3.3.0...v3.3.1) (2023-01-13)
+
+
+### Bug Fixes
+
+* **dropdown:** added full width ([#130](https://github.com/hey-car/heycar-uikit/issues/130)) ([5f8f36a](https://github.com/hey-car/heycar-uikit/commit/5f8f36a6b7d80890c6ed59a2590571023b5e0b5a))
+
 # [3.3.0](https://github.com/hey-car/heycar-uikit/compare/v3.2.3...v3.3.0) (2023-01-12)
 
 
