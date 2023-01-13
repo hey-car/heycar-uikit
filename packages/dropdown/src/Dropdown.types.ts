@@ -48,4 +48,8 @@ export type DropdownProps = {
    * id for testing purposes.
    */
   dataTestId?: string;
+  /**
+   * boolean for adding width.
+   */
+  fullWidth?: boolean;
 };
