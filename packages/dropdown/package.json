@@ -1,7 +1,7 @@
 {
-  "name": "@heycar-uikit/accordion",
-  "version": "2.1.6",
-  "description": "HeyCar-UIKit Accordion",
+  "name": "@heycar-uikit/dropdown",
+  "version": "1.0.1",
+  "description": "HeyCar-UIKit Dropdown",
   "main": "dist/index.js",
   "module": "./dist/esm/index.js",
   "scripts": {
@@ -16,13 +16,13 @@
     "typescript",
     "ui-components",
     "design-systems",
-    "accordion"
+    "dropdown"
   ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hey-car/heycar-uikit.git"
   },
-  "homepage": "https://github.com/hey-car/heycar-uikit/tree/main/packages/accordion#readme",
+  "homepage": "https://github.com/hey-car/heycar-uikit/tree/main/packages/dropdown#readme",
   "publishConfig": {
     "access": "public"
   },
@@ -30,8 +30,6 @@
     "react": "^17.0.1"
   },
   "dependencies": {
-    "@heycar-uikit/collapse": "^1.4.0",
-    "@heycar-uikit/icons": "^3.1.0",
     "classnames": "^2.3.1"
   },
   "author": "HeyCar Team",

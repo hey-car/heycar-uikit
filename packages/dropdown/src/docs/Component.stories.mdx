@@ -1,0 +1,164 @@
+import { Meta, Story, Props } from '@storybook/addon-docs';
+
+import {
+  ComponentHeader,
+  CssVars,
+  Container,
+  TabContainer,
+} from 'storybook/blocks';
+
+import { Lorry } from '../../../icons/src';
+import { AC } from '../../../icons/src';
+import Dropdown from '../Dropdown';
+import { DropdownItem } from '../Dropdown.types';
+import Description from './Description.mdx';
+import { version } from '../../package.json';
+import Changelog from '../../CHANGELOG.md';
+import styles from '!!raw-loader!../styles/default.module.css';
+
+<!-- Meta -->
+
+<Meta
+  title="Components/Dropdown"
+  component={Dropdown}
+  argTypes={{
+    onChange: {
+      table: {
+        disable: true,
+      },
+    },
+    label: {
+      table: {
+        disable: true,
+      },
+    },
+    onClick: {
+      table: {
+        disable: true,
+      },
+    },
+    onBlur: {
+      table: {
+        disable: true,
+      },
+    },
+    options: {
+      table: {
+        disable: true,
+      },
+    },
+    dataTestId: {
+      table: {
+        disable: true,
+      },
+    },
+    value: {
+      table: {
+        disable: true,
+      },
+    },
+    disabled: {
+      name: 'disabled',
+      type: { name: 'boolean' },
+      defaultValue: false,
+    },
+  }}
+/>
+
+export const DropdownTemplate = args => {
+  const ITEMS = [
+    {
+      value: 'pomelo',
+      label: 'Pomelo',
+      leftContent: 'left Content',
+      rightContent: '(88888)',
+    },
+    {
+      value: 'apple',
+      label: 'Apple',
+      leftContent: 'LC',
+      rightContent: '(88888)',
+    },
+    {
+      value: 'mango',
+      label: 'Mango',
+      leftContent: 'LC',
+      rightContent: '(88888)',
+    },
+    {
+      value: 'mango1',
+      label: 'Mango 1',
+      leftContent: 'LC',
+      rightContent: '(88888)',
+    },
+    {
+      value: 'mango2',
+      label: 'Mango 2',
+      leftContent: 'LC',
+      rightContent: '(88888)',
+    },
+    {
+      value: 'mango3',
+      label: 'Mango 3',
+      leftContent: 'LC',
+      rightContent: '(88888)',
+    },
+    {
+      value: 'mango4',
+      label: 'Mango 4',
+      leftContent: 'LC',
+      rightContent: '(88888)',
+    },
+    {
+      value: 'mango5',
+      label: 'Mango 5',
+      leftContent: 'LC',
+      rightContent: '(88888)',
+    },
+    {
+      value: 'mango6',
+      label: 'Mango 6',
+      leftContent: 'LC',
+      rightContent: '(88888)',
+    },
+  ];
+  return (
+    <Dropdown onChange={() => {}} options={ITEMS} value={ITEMS[1]}></Dropdown>
+  );
+};
+
+<!-- Canvas -->
+
+<Story
+  name="Dropdown"
+  args={{
+    disabled: false,
+  }}
+>
+  {DropdownTemplate.bind({})}
+</Story>
+
+<!-- Docs -->
+
+<ComponentHeader
+  name="Dropdown"
+  version={version}
+  stage={1}
+  design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Global-Design-System?node-id=1111%3A116511&t=RxV6glsNSEEiMy2H-0"
+/>
+
+The Dropdown component is used to display heycar dropdowns
+
+```tsx
+import Dropdown from '@heycar-uikit/dropdown';
+```
+
+<!-- Description -->
+
+<TabContainer
+  tabs={[
+    { label: 'Description', component: <Description /> },
+    { label: 'Props', component: <Props of={Dropdown} /> },
+    { label: 'Changelog', component: <Changelog /> },
+  ]}
+/>
