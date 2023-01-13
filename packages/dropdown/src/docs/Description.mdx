@@ -118,6 +118,45 @@ Use the `leftContent` prop to to pass left Content in options.
 </Container>
 ```
 
+## With fullWidth
+
+Use the `fullWidth` prop to to pass fullWidth 100% in options.
+
+```tsx live
+<Container>
+  <Row style={{ width: '100%', height: '200px' }}>
+    <Col style={{ width: '80%' }}>
+      <Dropdown
+        fullWidth={true}
+        onChange={() => {}}
+        options={[
+          {
+            value: 'pomelo',
+            label: 'Pomelo',
+            leftContent: <AC />,
+          },
+          {
+            value: 'apple',
+            label: 'Apple',
+            leftContent: <AC />,
+          },
+          {
+            value: 'mango',
+            label: 'Mango',
+            leftContent: <AC />,
+          },
+        ]}
+        value={{
+          value: 'mango',
+          label: 'Mango',
+          leftContent: <AC />,
+        }}
+      ></Dropdown>
+    </Col>
+  </Row>
+</Container>
+```
+
 ## Disabled
 
 Use the `disabled` prop to to disable dropdown state.

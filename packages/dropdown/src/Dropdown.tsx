@@ -1,11 +1,21 @@
 /* eslint-disable prettier/prettier */
 import React, { useState } from 'react';
+import cn from 'classnames';
 
 import { DropdownProps, SelectOptions } from './Dropdown.types';
 
 import styles from './styles/default.module.css';
 
-export const Dropdown = ({ value, onChange, options, disabled, dataTestId, onBlur, onClick }: DropdownProps) => {
+export const Dropdown = ({
+  value,
+  onChange,
+  options,
+  disabled,
+  dataTestId,
+  onBlur,
+  onClick,
+  fullWidth,
+}: DropdownProps) => {
   const [stateValue, setStateValue] = useState<SelectOptions | undefined>(
     value,
   );
@@ -32,20 +42,42 @@ export const Dropdown = ({ value, onChange, options, disabled, dataTestId, onBlu
     setIsOpen(false);
   };
 
+  const classNames = cn(
+    styles.container,
+    disabled && styles.disabled,
+    fullWidth && styles.fullWidth,
+  );
+
+  const arrowClassNames = cn(
+    disabled && styles.caret_disabled,
+    isOpen && styles.caret_up,
+    !isOpen && styles.caret_down,
+  );
+
+  const valueClassNames = cn(
+    disabled && 'disabled',
+    styles.value,
+  );
+
   return (
     <div
-      className={`${styles.container} ${disabled ? styles.disabled : ''}`}
+      className={classNames}
       onBlur={onBlurHandler}
       onClick={onClickHandler}
       tabIndex={0}
     >
-      <span className={`${styles.value} ${disabled ? 'disabled' : ''}`} >{stateValue?.label}</span>
-      <div className={`${disabled ? styles.caret_disabled : (isOpen ? styles.caret_up : styles.caret_down)}`}></div>
-      <ul className={`${styles.options} ${isOpen ? styles.show : ''}`} data-test-id={dataTestId}>
+      <span className={valueClassNames}>
+        {stateValue?.label}
+      </span>
+      <div className={arrowClassNames}></div>
+      <ul
+        className={`${styles.options} ${isOpen ? styles.show : ''}`}
+        data-test-id={dataTestId}
+      >
         {options.map(option => (
           <li
             className={`${styles.option} ${isOptionSelection(option) ? styles.selected : ''
-            }`}
+              }`}
             key={option.value}
             onClick={e => {
               e.stopPropagation();

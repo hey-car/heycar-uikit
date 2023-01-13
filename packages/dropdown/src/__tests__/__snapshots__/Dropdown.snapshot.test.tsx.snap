@@ -6,11 +6,11 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="container "
+        class="container"
         tabindex="0"
       >
         <span
-          class="value "
+          class="value"
         >
           Mango
         </span>
@@ -65,11 +65,11 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="container "
+      class="container"
       tabindex="0"
     >
       <span
-        class="value "
+        class="value"
       >
         Mango
       </span>

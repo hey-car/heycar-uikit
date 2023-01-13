@@ -127,3 +127,8 @@
   padding-top: 3px;
   font-size: 12px;
 }
+
+/* Full width */
+.fullWidth {
+  width: 100%;
+}
