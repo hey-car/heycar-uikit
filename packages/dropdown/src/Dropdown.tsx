@@ -48,6 +48,17 @@ export const Dropdown = ({
     fullWidth && styles.fullWidth,
   );
 
+  const arrowClassNames = cn(
+    disabled && styles.caret_disabled,
+    isOpen && styles.caret_up,
+    !isOpen && styles.caret_down,
+  );
+
+  const valueClassNames = cn(
+    disabled && 'disabled',
+    styles.value,
+  );
+
   return (
     <div
       className={classNames}
@@ -55,17 +66,10 @@ export const Dropdown = ({
       onClick={onClickHandler}
       tabIndex={0}
     >
-      <span className={`${styles.value} ${disabled ? 'disabled' : ''}`}>
+      <span className={valueClassNames}>
         {stateValue?.label}
       </span>
-      <div
-        className={`${disabled
-            ? styles.caret_disabled
-            : isOpen
-              ? styles.caret_up
-              : styles.caret_down
-          }`}
-      ></div>
+      <div className={arrowClassNames}></div>
       <ul
         className={`${styles.options} ${isOpen ? styles.show : ''}`}
         data-test-id={dataTestId}
