@@ -11,24 +11,6 @@
 
         /* prettier-ignore */
         margin-right: calc(-$(i)px / 2);
-      width: calc(100% + $(i)px);
-      &:has(> .row){
-         width: 100%;
-       }
-      /*First case:
-      * If Row contains row
-      * width of parent row should be 100%
-      * width of child row should be calc
-      */
-
-      /* Second case:
-      * If row doesn't contain row
-      * width of row should be calc
-      */
-
-        /*& > .row {*/
-        /*    width: calc(100% + $(i)px);*/
-        /*}*/
 
         & > .col {
           /* prettier-ignore */
