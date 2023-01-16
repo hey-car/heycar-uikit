@@ -1,1 +1,2 @@
-export { default } from './Pagination';
+export { Pagination } from './Pagination';
+export { PaginationItem } from './PaginationItem';

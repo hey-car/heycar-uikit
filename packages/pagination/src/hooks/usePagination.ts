@@ -1,6 +1,6 @@
 import { PaginationItemProps, paginationItemType } from '../Pagination.types';
+import { getSiblingsToRender } from '../utils/getSiblingsToRender';
 
-import { getPagesToRender } from './getPagesToRender';
 import { useBreakpointHook } from './useBreakpoint.hook';
 
 interface Props {
@@ -24,7 +24,7 @@ const usePagination = ({ onClick, currentPage, totalPages }: Props) => {
   const shouldShowPreDots = currentPage > 3;
   const shouldShowPostDots = currentPage < totalPages - 2;
 
-  const pagesToRender = getPagesToRender(totalPages, currentPage);
+  const siblingsToRender = getSiblingsToRender(totalPages, currentPage);
 
   const handleClick = (page: number, isDisabled: boolean) => {
     if (onClick && !isDisabled) {
@@ -53,7 +53,7 @@ const usePagination = ({ onClick, currentPage, totalPages }: Props) => {
           type: paginationItemType.ellipsis,
         }),
         // Siblings
-        ...pagesToRender.map(page => ({
+        ...siblingsToRender.map(page => ({
           type: paginationItemType.page,
           page: page,
           isCurrentPage: currentPage === page,

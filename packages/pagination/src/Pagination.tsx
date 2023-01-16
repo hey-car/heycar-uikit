@@ -1,15 +1,15 @@
 import React from 'react';
 import cn from 'classnames';
 
+import usePagination from './hooks/usePagination';
 import defaultGetItemAriaLabel from './utils/defaultGetItemAriaLabel';
 import generateAriaLabel from './utils/generateAriaLabel';
-import usePagination from './utils/usePagination';
 import { PaginationItemProps, PaginationProps } from './Pagination.types';
-import PaginationItem from './PaginationItem';
+import { PaginationItem } from './PaginationItem';
 
 import styles from './styles/default.module.css';
 
-const Pagination = React.forwardRef<HTMLElement, PaginationProps>(
+export const Pagination = React.forwardRef<HTMLElement, PaginationProps>(
   ({
     totalPages,
     currentPage,
@@ -44,5 +44,3 @@ const Pagination = React.forwardRef<HTMLElement, PaginationProps>(
 );
 
 Pagination.displayName = 'Pagination';
-
-export default Pagination;

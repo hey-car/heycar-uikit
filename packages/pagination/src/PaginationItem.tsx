@@ -12,7 +12,7 @@ import {
 
 import styles from './styles/default.module.css';
 
-const PaginationItem: PropsBasedOnComponent<PaginationItemProps> = ({
+export const PaginationItem: PropsBasedOnComponent<PaginationItemProps> = ({
   page,
   isCurrentPage,
   isDisabled,
@@ -84,5 +84,3 @@ const PaginationItem: PropsBasedOnComponent<PaginationItemProps> = ({
 
   return <li>{componentToRender}</li>;
 };
-
-export default PaginationItem;

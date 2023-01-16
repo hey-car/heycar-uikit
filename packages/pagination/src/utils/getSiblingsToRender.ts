@@ -1,4 +1,7 @@
-export const getPagesToRender = (totalPages: number, currentPage: number) => {
+export const getSiblingsToRender = (
+  totalPages: number,
+  currentPage: number,
+) => {
   const pages: number[] = [];
 
   for (let page = 2; page <= totalPages - 1; page += 1) {

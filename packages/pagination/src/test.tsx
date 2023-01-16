@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Pagination from './Pagination';
-import PaginationItem from './PaginationItem';
+import { Pagination } from './Pagination';
+import { PaginationItem } from './PaginationItem';
 
 export interface OverridableComponent {
   <C extends React.ElementType>(
@@ -58,7 +58,7 @@ export const PaginationTest = () => {
         currentPage={8}
         renderItem={item => (
           <PaginationItem
-            Component={Link}
+            component={Link}
             link={`this is a link number ${item.page}`}
             {...item}
           />
@@ -94,7 +94,7 @@ export const PaginationTest = () => {
       <Pagination
         aria-label={'laaaabel'}
         currentPage={8}
-        renderItem={item => <PaginationItem Component={'a'} {...item} />}
+        renderItem={item => <PaginationItem component={'a'} {...item} />}
         totalPages={10}
       />
     </div>
