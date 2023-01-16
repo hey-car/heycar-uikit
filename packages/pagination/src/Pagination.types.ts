@@ -78,8 +78,8 @@ export interface PropsBasedOnComponent<T> {
        * The component used for the root node.
        * Either a string to use a HTML element or a component.
        */
-      Component?: C;
+      component?: C;
     } & T &
-      Omit<React.ComponentPropsWithRef<C>, keyof T>,
+      Omit<React.ComponentPropsWithoutRef<C>, keyof T>,
   ): JSX.Element | null;
 }

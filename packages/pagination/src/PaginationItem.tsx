@@ -18,10 +18,11 @@ const PaginationItem: PropsBasedOnComponent<PaginationItemProps> = ({
   isDisabled,
   type,
   onClick,
-  Component = onClick ? 'button' : 'a',
+  component = onClick ? 'button' : 'a',
   ...rest
 }) => {
-  let component;
+  const Component = component;
+  let componentToRender;
 
   function disableHref() {
     if (isDisabled) return { href: null };
@@ -31,7 +32,7 @@ const PaginationItem: PropsBasedOnComponent<PaginationItemProps> = ({
 
   switch (type) {
     case paginationItemType.page:
-      component = (
+      componentToRender = (
         <Component
           className={cn(styles.itemNumber, isCurrentPage && styles.currentPage)}
           {...rest}
@@ -42,21 +43,21 @@ const PaginationItem: PropsBasedOnComponent<PaginationItemProps> = ({
       );
       break;
     case paginationItemType.ellipsis:
-      component = (
+      componentToRender = (
         <Typography className={styles.ellipsis} variant="subheading2">
           {'...'}
         </Typography>
       );
       break;
     case paginationItemType.slash:
-      component = (
+      componentToRender = (
         <Typography className={styles.slash} variant="subheading2">
           {'/'}
         </Typography>
       );
       break;
     case paginationItemType.previous:
-      component = (
+      componentToRender = (
         <Component
           className={cn(styles.arrow, isDisabled && styles.disabled)}
           {...rest}
@@ -68,7 +69,7 @@ const PaginationItem: PropsBasedOnComponent<PaginationItemProps> = ({
       );
       break;
     case paginationItemType.next:
-      component = (
+      componentToRender = (
         <Component
           className={cn(styles.arrow, isDisabled && styles.disabled)}
           {...rest}
@@ -81,7 +82,7 @@ const PaginationItem: PropsBasedOnComponent<PaginationItemProps> = ({
       break;
   }
 
-  return <li>{component}</li>;
+  return <li>{componentToRender}</li>;
 };
 
 export default PaginationItem;
