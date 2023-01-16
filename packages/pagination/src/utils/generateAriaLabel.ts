@@ -1,12 +1,12 @@
 import {
   ariaLabelType,
   getItemAriaLabelFunction,
-  IPaginationItem,
+  PaginationItemProps,
   paginationItemType,
 } from '../Pagination.types';
 
 export default function generateAriaLabel(
-  item: IPaginationItem,
+  item: PaginationItemProps,
   getItemAriaLabel: getItemAriaLabelFunction,
 ) {
   let ariaLabel = undefined;
@@ -20,7 +20,7 @@ export default function generateAriaLabel(
     ariaLabel = getItemAriaLabel({
       type: item.type as unknown as ariaLabelType,
       page: item.page,
-      selected: false,
+      selected: item.isCurrentPage ? item.isCurrentPage : false,
     });
   }
 

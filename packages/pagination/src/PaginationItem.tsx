@@ -29,8 +29,6 @@ const PaginationItem: PropsBasedOnComponent<PaginationItemProps> = ({
     return {};
   }
 
-  console.log({ ...rest });
-
   switch (type) {
     case paginationItemType.page:
       component = (

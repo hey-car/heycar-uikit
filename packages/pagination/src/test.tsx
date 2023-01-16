@@ -81,10 +81,13 @@ export const PaginationTest = () => {
         renderItem={item => <PaginationItem {...item} />}
         totalPages={10}
       />
-      <Pagination currentPage={1} totalPages={1} />
       <Pagination
         currentPage={3}
-        // getItemAriaLabel={({ type, page, selected }) => 'test' + page}
+        getItemAriaLabel={({ type, page, selected }) => {
+          console.log({ type, page, selected });
+
+          return 'Test: Go to Page ' + page;
+        }}
         onClick={itemNumber => console.log({ lol: 'ues', itemNumber })}
         totalPages={3}
       />

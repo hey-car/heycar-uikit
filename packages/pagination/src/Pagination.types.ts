@@ -58,16 +58,6 @@ export enum paginationItemType {
   next = 'next',
 }
 
-// export interface IPaginationItem {
-//   type: paginationItemType;
-//   'aria-label'?: string;
-//   page?: number;
-//   Component?: ComponentType<any> | string;
-//   isDisabled?: boolean;
-//   isCurrentPage?: boolean;
-//   onClick?: (itemNumber: number) => void;
-// }
-
 export interface PaginationItemProps {
   type: paginationItemType;
   'aria-label'?: string;
