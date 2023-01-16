@@ -72,7 +72,7 @@ export interface PaginationItemProps {
  * `PropsBasedOnComponent` - This interface inherits props from a designated component C through ref
  */
 export interface PropsBasedOnComponent<T> {
-  <C extends React.ElementType>(
+  <C extends React.ElementType = 'a'>(
     props: {
       /**
        * The component used for the root node.
@@ -80,6 +80,6 @@ export interface PropsBasedOnComponent<T> {
        */
       Component?: C;
     } & T &
-      React.ComponentPropsWithRef<C>,
+      Omit<React.ComponentPropsWithRef<C>, keyof T>,
   ): JSX.Element | null;
 }
