@@ -1,4 +1,4 @@
-import React, { ComponentType } from 'react';
+import React from 'react';
 
 export interface PaginationProps
   extends Omit<React.HTMLAttributes<HTMLElement>, 'onClick'> {
@@ -72,11 +72,10 @@ export interface PaginationItemProps {
   type: paginationItemType;
   'aria-label'?: string;
   page?: number;
-  Component?: ComponentType<any> | string;
   isDisabled?: boolean;
   isCurrentPage?: boolean;
   onClick?: (itemNumber: number) => void;
-  // href?: string;
+  href?: string;
 }
 
 /**
