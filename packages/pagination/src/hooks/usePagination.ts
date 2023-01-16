@@ -89,21 +89,20 @@ const usePagination = ({ onClick, currentPage, totalPages }: Props) => {
           onClick: parseClick(currentPage - 1, currentPage === 1),
         },
         // Current page
-        {
+        ...shouldInsert(currentPage !== totalPages, {
           type: paginationItemType.page,
           page: currentPage,
-          isCurrentPage: true,
           onClick: parseClick(currentPage, false),
-        },
+        }),
+
         // Slash
-        {
+        ...shouldInsert(currentPage !== totalPages, {
           type: paginationItemType.slash,
-        },
+        }),
         // Last Page
         ...shouldInsert(totalPages > 1, {
           type: paginationItemType.page,
           page: totalPages,
-          isCurrentPage: currentPage === totalPages,
           onClick: parseClick(totalPages, false),
         }),
         // Next button
