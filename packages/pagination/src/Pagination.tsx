@@ -1,6 +1,8 @@
 import React from 'react';
 import cn from 'classnames';
 
+import defaultGetItemAriaLabel from './utils/defaultGetItemAriaLabel';
+import generateAriaLabel from './utils/generateAriaLabel';
 import usePagination from './utils/usePagination';
 import { PaginationItemProps, PaginationProps } from './Pagination.types';
 import PaginationItem from './PaginationItem';
@@ -8,18 +10,34 @@ import PaginationItem from './PaginationItem';
 import styles from './styles/default.module.css';
 
 const Pagination = React.forwardRef<HTMLElement, PaginationProps>(
-  ({ totalPages, currentPage, onClick, renderItem, className }) => {
+  ({
+    totalPages,
+    currentPage,
+    onClick,
+    renderItem,
+    className,
+    'aria-label': ariaLabel = 'Pagination navigation',
+    getItemAriaLabel = defaultGetItemAriaLabel,
+  }) => {
     const renderItemFinal = renderItem
-      ? renderItem
+      ? (item: PaginationItemProps) => renderItem({ ...item })
       : (item: PaginationItemProps) => <PaginationItem {...item} />;
+
     const { items } = usePagination({ onClick, totalPages, currentPage });
     const classNames = cn(styles.pagination, className);
 
     console.log(items);
 
     return (
-      <nav className={classNames}>
-        <ul>{items.map(item => renderItemFinal({ ...item }))}</ul>
+      <nav aria-label={ariaLabel} className={classNames}>
+        <ul>
+          {items.map(item => {
+            return renderItemFinal({
+              ...item,
+              'aria-label': generateAriaLabel(item, getItemAriaLabel),
+            });
+          })}
+        </ul>
       </nav>
     );
   },

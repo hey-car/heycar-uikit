@@ -1,6 +1,7 @@
 import React, { ComponentType } from 'react';
 
-export interface PaginationProps {
+export interface PaginationProps
+  extends Omit<React.HTMLAttributes<HTMLElement>, 'onClick'> {
   /**
    * `className` - additional styles, like color
    */
@@ -14,14 +15,39 @@ export interface PaginationProps {
    */
   currentPage: number;
   /**
-   * `url` - Current complete URL of the page
-   */
-  url?: string;
-  /**
-   * `scrollToElementId` - To which element ID should we build our URL so auto scroll works?
+   * `renderItem` - template function to allow different components and props for PaginationItem
    */
   renderItem?: (item: PaginationItemProps) => JSX.Element;
+  /**
+   * `onClick` - template function for onClick event of items
+   */
   onClick?: (page: number) => void;
+  /**
+   * `aria-label` - aria-label for root pagination component
+   */
+  'aria-label'?: string;
+  /**
+   * `getItemAriaLabel` - Function for generation of aria-label of clickable items
+   */
+  getItemAriaLabel?: getItemAriaLabelFunction;
+}
+
+export interface DefaultGetItemAriaLabelProps {
+  type: 'page' | 'next' | 'previous';
+  page: number;
+  selected: boolean;
+}
+
+export type getItemAriaLabelFunction = ({
+  type,
+  page,
+  selected,
+}: DefaultGetItemAriaLabelProps) => string;
+
+export enum ariaLabelType {
+  page = 'page',
+  previous = 'previous',
+  next = 'next',
 }
 
 export enum paginationItemType {
@@ -32,26 +58,30 @@ export enum paginationItemType {
   next = 'next',
 }
 
-// eslint-disable-next-line @typescript-eslint/naming-convention
-export interface IPaginationItem {
+// export interface IPaginationItem {
+//   type: paginationItemType;
+//   'aria-label'?: string;
+//   page?: number;
+//   Component?: ComponentType<any> | string;
+//   isDisabled?: boolean;
+//   isCurrentPage?: boolean;
+//   onClick?: (itemNumber: number) => void;
+// }
+
+export interface PaginationItemProps {
   type: paginationItemType;
-  label?: string;
+  'aria-label'?: string;
   page?: number;
   Component?: ComponentType<any> | string;
   isDisabled?: boolean;
   isCurrentPage?: boolean;
   onClick?: (itemNumber: number) => void;
+  // href?: string;
 }
 
-export interface PaginationItemProps {
-  type: paginationItemType;
-  label?: string;
-  page?: number;
-  onClick?: (itemNumber: number) => void;
-  href?: string;
-  isCurrentPage?: boolean;
-}
-
+/**
+ * `PropsBasedOnComponent` - This interface inherits props from a designated component C through ref
+ */
 export interface PropsBasedOnComponent<T> {
   <C extends React.ElementType>(
     props: {

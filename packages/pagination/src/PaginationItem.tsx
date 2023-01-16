@@ -5,14 +5,14 @@ import { ChevronLeft, ChevronRight } from '@heycar-uikit/icons';
 import Typography from '@heycar-uikit/typography';
 
 import {
-  IPaginationItem,
+  PaginationItemProps,
   paginationItemType,
   PropsBasedOnComponent,
 } from './Pagination.types';
 
 import styles from './styles/default.module.css';
 
-const PaginationItem: PropsBasedOnComponent<IPaginationItem> = ({
+const PaginationItem: PropsBasedOnComponent<PaginationItemProps> = ({
   page,
   isCurrentPage,
   isDisabled,
@@ -28,6 +28,8 @@ const PaginationItem: PropsBasedOnComponent<IPaginationItem> = ({
 
     return {};
   }
+
+  console.log({ ...rest });
 
   switch (type) {
     case paginationItemType.page:

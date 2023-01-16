@@ -1,4 +1,4 @@
-import { IPaginationItem, paginationItemType } from '../Pagination.types';
+import { PaginationItemProps, paginationItemType } from '../Pagination.types';
 
 import { getPagesToRender } from './getPagesToRender';
 import { useBreakpointHook } from './useBreakpoint.hook';
@@ -9,7 +9,7 @@ interface Props {
   totalPages: number;
 }
 
-const shouldInsert = (condition: boolean, obj: IPaginationItem) => {
+const shouldInsert = (condition: boolean, obj: PaginationItemProps) => {
   if (condition) {
     return [obj];
   } else {
@@ -32,7 +32,7 @@ const usePagination = ({ onClick, currentPage, totalPages }: Props) => {
     }
   };
 
-  const items: IPaginationItem[] = isDesktop
+  const items: PaginationItemProps[] = isDesktop
     ? [
         // Previous button
         {
@@ -68,6 +68,7 @@ const usePagination = ({ onClick, currentPage, totalPages }: Props) => {
           type: paginationItemType.page,
           page: totalPages,
           isCurrentPage: currentPage === totalPages,
+          // TODO transform this function as param to a called function to instantly define null or onClick existing.
           onClick: () => handleClick(totalPages, false),
         }),
         // Next button

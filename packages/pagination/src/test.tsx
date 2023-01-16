@@ -54,11 +54,23 @@ export const PaginationTest = () => {
     <div style={{ maxWidth: '700px', margin: '0 auto' }}>
       This is test
       <Pagination
+        aria-label={'laaaabel'}
         currentPage={8}
         renderItem={item => (
           <PaginationItem
             Component={Link}
             link={`this is a link number ${item.page}`}
+            {...item}
+          />
+        )}
+        totalPages={10}
+      />
+      <Pagination
+        aria-label={'laaaabel'}
+        currentPage={8}
+        renderItem={item => (
+          <PaginationItem
+            href={`this is a href number ${item.page}`}
             {...item}
           />
         )}
@@ -72,8 +84,15 @@ export const PaginationTest = () => {
       <Pagination currentPage={1} totalPages={1} />
       <Pagination
         currentPage={3}
+        // getItemAriaLabel={({ type, page, selected }) => 'test' + page}
         onClick={itemNumber => console.log({ lol: 'ues', itemNumber })}
         totalPages={3}
+      />
+      <Pagination
+        aria-label={'laaaabel'}
+        currentPage={8}
+        renderItem={item => <PaginationItem Component={'a'} {...item} />}
+        totalPages={10}
       />
     </div>
   );
