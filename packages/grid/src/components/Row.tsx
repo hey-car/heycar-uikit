@@ -8,8 +8,8 @@ import { RowProps } from './Row.types';
 import guttersStyles from '../styles/gutters.module.css';
 import styles from './Row.module.css';
 
-function Row({
-  Component = 'div',
+function Row<E extends React.ElementType = 'div'>({
+  component,
   className,
   gutter = {
     mobile: 8,
@@ -24,11 +24,14 @@ function Row({
   justify = 'between',
   children,
   dataTestId,
-}: RowProps) {
+}: RowProps<E>) {
+  const Component = component ?? 'div';
+
   const gridClassNames = useMemo(
     () => getGridClassNames({ gutter }, guttersStyles),
     [gutter],
   );
+
   const classNames = cn(
     guttersStyles.row,
     styles.component,

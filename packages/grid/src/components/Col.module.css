@@ -3,36 +3,6 @@
 :root {
   --grid-col-width: calc(100% / 12);
   margin: 0 auto;
-
-  @media (--mobile) {
-    padding-right: var(--gap-l);
-    padding-left: var(--gap-l);
-  }
-  @media (--tablet) {
-    padding-right: var(--gap-xl);
-    padding-left: var(--gap-xl);
-  }
-
-  @media (--tablet-l) {
-    padding-right: var(--gap-3xl);
-    padding-left: var(--gap-3xl);
-  }
-
-  @media (--desktop) {
-    padding-right: var(--gap-3xl);
-    padding-left: var(--gap-3xl);
-  }
-
-  @media (--desktop-m) {
-    padding-right: var(--gap-3xl);
-    padding-left: var(--gap-3xl);
-  }
-
-  @media (--desktop-l) {
-    max-width: 1440px;
-    padding-right: var(--gap-9xl);
-    padding-left: var(--gap-9xl);
-  }
 }
 
 .component {

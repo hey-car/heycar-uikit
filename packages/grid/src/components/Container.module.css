@@ -1,0 +1,38 @@
+@import '../../../themes/src/default.css';
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  padding-left: var(--gap-l);
+  padding-right: var(--gap-l);
+
+  @media (--tablet) {
+    padding-right: var(--gap-xl);
+    padding-left: var(--gap-xl);
+  }
+
+  @media (--tablet-l) {
+    padding-right: var(--gap-3xl);
+    padding-left: var(--gap-3xl);
+  }
+
+  @media (--desktop) {
+    padding-right: var(--gap-3xl);
+    padding-left: var(--gap-3xl);
+  }
+
+  @media (--desktop-m) {
+    padding-right: var(--gap-3xl);
+    padding-left: var(--gap-3xl);
+  }
+
+  @media (--desktop-l) {
+    max-width: 1440px;
+    padding-right: var(--gap-9xl);
+    padding-left: var(--gap-9xl);
+  }
+}

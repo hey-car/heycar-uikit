@@ -64,7 +64,7 @@ describe('Grid.Row', () => {
   it('should set tag correcly', () => {
     const dataTestId = 'test-id';
     const { getByTestId } = render(
-      <Row Component="section" dataTestId={dataTestId} />,
+      <Row component="section" dataTestId={dataTestId} />,
     );
 
     expect(getByTestId(dataTestId).tagName).toBe('SECTION');
