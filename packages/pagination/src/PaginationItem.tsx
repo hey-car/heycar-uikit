@@ -12,7 +12,10 @@ import {
 
 import styles from './styles/default.module.css';
 
-export const PaginationItem: PropsBasedOnComponent<PaginationItemProps> = ({
+export const PaginationItem: PropsBasedOnComponent<
+  PaginationItemProps,
+  'a'
+> = ({
   page,
   isCurrentPage,
   isDisabled,

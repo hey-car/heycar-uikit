@@ -65,21 +65,24 @@ export interface PaginationItemProps {
   isDisabled?: boolean;
   isCurrentPage?: boolean;
   onClick?: (itemNumber: number) => void;
-  href?: string;
+  // href?: string;
 }
 
 /**
  * `PropsBasedOnComponent` - This interface inherits props from a designated component C through ref
  */
-export interface PropsBasedOnComponent<T> {
-  <C extends React.ElementType = 'a'>(
+export interface PropsBasedOnComponent<
+  ComponentBaseProps,
+  DefaultElement extends React.ElementType,
+> {
+  <Component extends React.ElementType = DefaultElement>(
     props: {
       /**
        * The component used for the root node.
        * Either a string to use a HTML element or a component.
        */
-      component?: C;
-    } & T &
-      Omit<React.ComponentPropsWithoutRef<C>, keyof T>,
+      component?: Component;
+    } & ComponentBaseProps &
+      Omit<React.ComponentPropsWithoutRef<Component>, keyof ComponentBaseProps>,
   ): JSX.Element | null;
 }
