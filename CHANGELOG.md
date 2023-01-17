@@ -1,3 +1,27 @@
+# [4.0.0](https://github.com/hey-car/heycar-uikit/compare/v3.3.1...v4.0.0) (2023-01-17)
+
+
+### Features
+
+* **grid:** add container component ([#128](https://github.com/hey-car/heycar-uikit/issues/128)) ([9eb07f3](https://github.com/hey-car/heycar-uikit/commit/9eb07f398b991bb8b98cc7b7c073496febfdc78b))
+
+
+### BREAKING CHANGES
+
+* **grid:** `Component` prop is renamed as `component` for grid Row, Column and Container
+
+* docs(grid): add default value in docs
+
+* feat: adjust row widths
+
+* revert(grid): remove nested grid styles
+
+* test: update screenshot tests
+
+* chore: run npm install
+
+Co-authored-by: mwagdi <mahmoud.elawadi@hey.car>
+
 ## [3.3.1](https://github.com/hey-car/heycar-uikit/compare/v3.3.0...v3.3.1) (2023-01-13)
 
 
