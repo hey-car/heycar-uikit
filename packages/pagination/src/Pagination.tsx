@@ -44,3 +44,5 @@ export const Pagination = React.forwardRef<HTMLElement, PaginationProps>(
 );
 
 Pagination.displayName = 'Pagination';
+
+export default Pagination
