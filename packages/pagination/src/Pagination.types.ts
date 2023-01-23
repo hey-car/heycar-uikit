@@ -65,7 +65,7 @@ export interface PaginationItemProps {
   isDisabled?: boolean;
   isCurrentPage?: boolean;
   onClick?: (itemNumber: number) => void;
-  // href?: string;
+  href?: string;
 }
 
 /**

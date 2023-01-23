@@ -10,15 +10,18 @@ import { PaginationItem } from './PaginationItem';
 import styles from './styles/default.module.css';
 
 export const Pagination = React.forwardRef<HTMLElement, PaginationProps>(
-  ({
-    totalPages,
-    currentPage,
-    onClick,
-    renderItem,
-    className,
-    'aria-label': ariaLabel = 'Pagination navigation',
-    getItemAriaLabel = defaultGetItemAriaLabel,
-  }) => {
+  (
+    {
+      totalPages,
+      currentPage,
+      onClick,
+      renderItem,
+      className,
+      getItemAriaLabel = defaultGetItemAriaLabel,
+      ...rest
+    },
+    ref,
+  ) => {
     const renderItemFinal = renderItem
       ? (item: PaginationItemProps) => renderItem({ ...item })
       : (item: PaginationItemProps) => <PaginationItem {...item} />;
@@ -29,14 +32,21 @@ export const Pagination = React.forwardRef<HTMLElement, PaginationProps>(
     console.log(items);
 
     return (
-      <nav aria-label={ariaLabel} className={classNames}>
+      <nav
+        aria-label={'Pagination navigation'} // only default value
+        className={classNames}
+        ref={ref}
+        {...rest}
+      >
         <ul>
-          {items.map(item => {
-            return renderItemFinal({
-              ...item,
-              'aria-label': generateAriaLabel(item, getItemAriaLabel),
-            });
-          })}
+          {items.map(item => (
+            <li key={item.type + item.page}>
+              {renderItemFinal({
+                ...item,
+                'aria-label': generateAriaLabel(item, getItemAriaLabel),
+              })}
+            </li>
+          ))}
         </ul>
       </nav>
     );
@@ -45,4 +55,4 @@ export const Pagination = React.forwardRef<HTMLElement, PaginationProps>(
 
 Pagination.displayName = 'Pagination';
 
-export default Pagination
+export default Pagination;

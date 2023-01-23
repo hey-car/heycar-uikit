@@ -40,6 +40,7 @@ export const PaginationItem: PropsBasedOnComponent<
           className={cn(styles.itemNumber, isCurrentPage && styles.currentPage)}
           {...rest}
           onClick={onClick}
+          aria-current={isCurrentPage}
         >
           <Typography variant="subheading2">{page}</Typography>
         </Component>
@@ -85,5 +86,5 @@ export const PaginationItem: PropsBasedOnComponent<
       break;
   }
 
-  return <li>{componentToRender}</li>;
+  return componentToRender;
 };
