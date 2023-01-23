@@ -12,10 +12,11 @@ export default function generateAriaLabel(
   let ariaLabel = undefined;
 
   if (
-    item.page &&
-    (item.type === paginationItemType.next ||
-      item.type === paginationItemType.previous ||
-      paginationItemType.page)
+    item.page ||
+    (item.page === 0 && // TODO evaluation if is number & exists
+      (item.type === paginationItemType.next ||
+        item.type === paginationItemType.previous ||
+        paginationItemType.page))
   ) {
     ariaLabel = getItemAriaLabel({
       type: item.type as unknown as ariaLabelType,
