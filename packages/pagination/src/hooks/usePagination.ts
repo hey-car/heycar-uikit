@@ -1,23 +1,19 @@
-import { PaginationItemProps, paginationItemType } from '../Pagination.types';
+import {
+  PaginationItemProps,
+  paginationItemType,
+  UsePaginationProps,
+} from "../Pagination.types";
 import { getSiblingsToRender } from '../utils/getSiblingsToRender';
+import shouldReturnObj from '../utils/shouldReturnObj';
 
 import { useBreakpointHook } from './useBreakpoint.hook';
+import parseOnClick from "../utils/parseOnClick";
 
-interface Props {
-  onClick?: (page: number) => void;
-  currentPage: number;
-  totalPages: number;
-}
-
-const shouldInsert = (condition: boolean, obj: PaginationItemProps) => {
-  if (condition) {
-    return [obj];
-  } else {
-    return [];
-  }
-};
-
-const usePagination = ({ onClick, currentPage, totalPages }: Props) => {
+const usePagination = ({
+  onClick,
+  currentPage,
+  totalPages,
+}: UsePaginationProps) => {
   const breakpoint = useBreakpointHook();
   const isDesktop = breakpoint && breakpoint >= 1024;
 
@@ -26,14 +22,6 @@ const usePagination = ({ onClick, currentPage, totalPages }: Props) => {
 
   const siblingsToRender = getSiblingsToRender(totalPages, currentPage);
 
-  const parseClick = (page: number, isDisabled: boolean) => {
-    if (onClick && !isDisabled) {
-      return () => onClick(page);
-    }
-
-    return undefined;
-  };
-
   const items: PaginationItemProps[] = isDesktop
     ? [
         // Previous button
@@ -41,17 +29,17 @@ const usePagination = ({ onClick, currentPage, totalPages }: Props) => {
           type: paginationItemType.previous,
           page: currentPage - 1,
           isDisabled: currentPage === 1,
-          onClick: parseClick(currentPage - 1, currentPage === 1),
+          onClick: parseOnClick(onClick, currentPage - 1, currentPage === 1),
         },
         // First page
         {
           type: paginationItemType.page,
           page: 1,
           isCurrentPage: currentPage === 1,
-          onClick: parseClick(1, false),
+          onClick: parseOnClick(onClick, 1, false),
         },
         // Ellipsis
-        ...shouldInsert(shouldShowPreDots, {
+        ...shouldReturnObj(shouldShowPreDots, {
           type: paginationItemType.ellipsis,
         }),
         // Siblings
@@ -59,25 +47,29 @@ const usePagination = ({ onClick, currentPage, totalPages }: Props) => {
           type: paginationItemType.page,
           page: page,
           isCurrentPage: currentPage === page,
-          onClick: parseClick(page, false),
+          onClick: parseOnClick(onClick, page, false),
         })),
         // Ellipsis
-        ...shouldInsert(shouldShowPostDots, {
+        ...shouldReturnObj(shouldShowPostDots, {
           type: paginationItemType.ellipsis,
         }),
         // Last Page
-        ...shouldInsert(totalPages > 1, {
+        ...shouldReturnObj(totalPages > 1, {
           type: paginationItemType.page,
           page: totalPages,
           isCurrentPage: currentPage === totalPages,
-          onClick: parseClick(totalPages, false),
+          onClick: parseOnClick(onClick, totalPages, false),
         }),
         // Next button
         {
           type: paginationItemType.next,
           page: currentPage + 1,
           isDisabled: currentPage === totalPages,
-          onClick: parseClick(currentPage + 1, currentPage === totalPages),
+          onClick: parseOnClick(
+            onClick,
+            currentPage + 1,
+            currentPage === totalPages,
+          ),
         },
       ]
     : [
@@ -86,31 +78,35 @@ const usePagination = ({ onClick, currentPage, totalPages }: Props) => {
           type: paginationItemType.previous,
           page: currentPage - 1,
           isDisabled: currentPage === 1,
-          onClick: parseClick(currentPage - 1, currentPage === 1),
+          onClick: parseOnClick(onClick, currentPage - 1, currentPage === 1),
         },
         // Current page
-        ...shouldInsert(currentPage !== totalPages, {
+        ...shouldReturnObj(currentPage !== totalPages, {
           type: paginationItemType.page,
           page: currentPage,
-          onClick: parseClick(currentPage, false),
+          onClick: parseOnClick(onClick, currentPage, false),
         }),
 
         // Slash
-        ...shouldInsert(currentPage !== totalPages, {
+        ...shouldReturnObj(currentPage !== totalPages, {
           type: paginationItemType.slash,
         }),
         // Last Page
-        ...shouldInsert(totalPages > 1, {
+        ...shouldReturnObj(totalPages > 1, {
           type: paginationItemType.page,
           page: totalPages,
-          onClick: parseClick(totalPages, false),
+          onClick: parseOnClick(onClick, totalPages, false),
         }),
         // Next button
         {
           type: paginationItemType.next,
           page: currentPage + 1,
           isDisabled: currentPage === totalPages,
-          onClick: parseClick(currentPage + 1, currentPage === totalPages),
+          onClick: parseOnClick(
+            onClick,
+            currentPage + 1,
+            currentPage === totalPages,
+          ),
         },
       ];
 

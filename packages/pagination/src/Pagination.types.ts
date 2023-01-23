@@ -1,5 +1,7 @@
 import React from 'react';
 
+export type CustomOnClick = (page: number) => void;
+
 export interface PaginationProps
   extends Omit<React.HTMLAttributes<HTMLElement>, 'onClick'> {
   /**
@@ -21,7 +23,7 @@ export interface PaginationProps
   /**
    * `onClick` - template function for onClick event of items
    */
-  onClick?: (page: number) => void;
+  onClick?: CustomOnClick;
   /**
    * `aria-label` - aria-label for root pagination component
    */
@@ -85,4 +87,10 @@ export interface PropsBasedOnComponent<
     } & ComponentBaseProps &
       Omit<React.ComponentPropsWithoutRef<Component>, keyof ComponentBaseProps>,
   ): JSX.Element | null;
+}
+
+export interface UsePaginationProps {
+  onClick?: CustomOnClick;
+  currentPage: number;
+  totalPages: number;
 }
