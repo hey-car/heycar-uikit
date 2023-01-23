@@ -27,40 +27,84 @@ describe('Pagination', () => {
     setWidthDesktop();
   });
 
-  it('should render all items with correct content', () => {
-    const { getByTestId } = render(
-      <Pagination currentPage={5} totalPages={10} />,
-    );
+  describe('Basic rendering', () => {
+    it('should render all items with correct content', () => {
+      const { getByTestId } = render(
+        <Pagination currentPage={5} totalPages={10} />,
+      );
 
-    expect(getByTestId('ChevronLeftIcon')).toBeVisible();
-    expect(getByTestId('ChevronRightIcon')).toBeVisible();
-    expect(screen.queryByText('1')).toBeInTheDocument();
-    expect(screen.queryByText('2')).not.toBeInTheDocument();
-    expect(screen.queryByText('3')).not.toBeInTheDocument();
-    expect(screen.queryByText('4')).toBeInTheDocument();
-    expect(screen.queryByText('5')).toBeInTheDocument();
-    expect(screen.queryByText('6')).toBeInTheDocument();
-    expect(screen.queryByText('7')).not.toBeInTheDocument();
-    expect(screen.queryByText('8')).not.toBeInTheDocument();
-    expect(screen.queryByText('9')).not.toBeInTheDocument();
-    expect(screen.queryByText('10')).toBeInTheDocument();
-  });
+      expect(getByTestId('ChevronLeftIcon')).toBeVisible();
+      expect(getByTestId('ChevronRightIcon')).toBeVisible();
+      expect(screen.queryByText('1')).toBeInTheDocument();
+      expect(screen.queryByText('2')).not.toBeInTheDocument();
+      expect(screen.queryByText('3')).not.toBeInTheDocument();
+      expect(screen.queryByText('4')).toBeInTheDocument();
+      expect(screen.queryByText('5')).toBeInTheDocument();
+      expect(screen.queryByText('6')).toBeInTheDocument();
+      expect(screen.queryByText('7')).not.toBeInTheDocument();
+      expect(screen.queryByText('8')).not.toBeInTheDocument();
+      expect(screen.queryByText('9')).not.toBeInTheDocument();
+      expect(screen.queryByText('10')).toBeInTheDocument();
+    });
 
-  it('should render correct pages on mobile', () => {
-    setWidthMobile();
+    it('should render correct pages on mobile', () => {
+      setWidthMobile();
 
-    render(<Pagination currentPage={5} totalPages={10} />);
+      render(<Pagination currentPage={5} totalPages={10} />);
 
-    expect(screen.queryByText('1')).not.toBeInTheDocument();
-    expect(screen.queryByText('2')).not.toBeInTheDocument();
-    expect(screen.queryByText('3')).not.toBeInTheDocument();
-    expect(screen.queryByText('4')).not.toBeInTheDocument();
-    expect(screen.queryByText('5')).toBeInTheDocument();
-    expect(screen.queryByText('6')).not.toBeInTheDocument();
-    expect(screen.queryByText('7')).not.toBeInTheDocument();
-    expect(screen.queryByText('8')).not.toBeInTheDocument();
-    expect(screen.queryByText('9')).not.toBeInTheDocument();
-    expect(screen.queryByText('10')).toBeInTheDocument();
+      expect(screen.queryByText('1')).not.toBeInTheDocument();
+      expect(screen.queryByText('2')).not.toBeInTheDocument();
+      expect(screen.queryByText('3')).not.toBeInTheDocument();
+      expect(screen.queryByText('4')).not.toBeInTheDocument();
+      expect(screen.queryByText('5')).toBeInTheDocument();
+      expect(screen.queryByText('6')).not.toBeInTheDocument();
+      expect(screen.queryByText('7')).not.toBeInTheDocument();
+      expect(screen.queryByText('8')).not.toBeInTheDocument();
+      expect(screen.queryByText('9')).not.toBeInTheDocument();
+      expect(screen.queryByText('10')).toBeInTheDocument();
+    });
+
+    it('should disable href link for previous button', () => {
+      render(
+        <Pagination
+          currentPage={1}
+          renderItem={item => (
+            <PaginationItem href={`this is href ${item.page}`} {...item} />
+          )}
+          totalPages={10}
+        />,
+      );
+
+      expect(screen.queryByText('1')).toBeInTheDocument();
+
+      expect(
+        screen.getByLabelText('Go to previous page').closest('a'),
+      ).not.toHaveAttribute('href');
+      expect(
+        screen.getByLabelText('Go to next page').closest('a'),
+      ).toHaveAttribute('href', 'this is href 2');
+    });
+
+    it('should disable href link for next button', () => {
+      render(
+        <Pagination
+          currentPage={10}
+          renderItem={item => (
+            <PaginationItem href={`this is href ${item.page}`} {...item} />
+          )}
+          totalPages={10}
+        />,
+      );
+
+      expect(screen.queryByText('10')).toBeInTheDocument();
+
+      expect(
+        screen.getByLabelText('Go to previous page').closest('a'),
+      ).toHaveAttribute('href', 'this is href 9');
+      expect(
+        screen.getByLabelText('Go to next page').closest('a'),
+      ).not.toHaveAttribute('href');
+    });
   });
 
   describe('accessibility', () => {
@@ -116,7 +160,7 @@ describe('Pagination', () => {
     });
   });
 
-  it('should have a custom attribute on pagination root element', () => {
+  it('should have a custom attribute (aria-label in this case) on pagination root element', () => {
     const testAria = 'testAria';
 
     render(
@@ -127,8 +171,6 @@ describe('Pagination', () => {
 
   describe('interaction', () => {
     it('should call onClick event with correct parms', () => {
-      // const handleClick = (page: number) => page;
-
       const onClick = jest.fn();
 
       render(<Pagination currentPage={5} onClick={onClick} totalPages={10} />);
