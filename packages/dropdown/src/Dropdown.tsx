@@ -6,7 +6,8 @@ import { DropdownProps, SelectOptions } from './Dropdown.types';
 
 import styles from './styles/default.module.css';
 
-export const Dropdown = ({
+function Dropdown({
+  Component = 'div',
   value,
   onChange,
   options,
@@ -15,7 +16,8 @@ export const Dropdown = ({
   onBlur,
   onClick,
   fullWidth,
-}: DropdownProps) => {
+  ...restProps
+}: DropdownProps) {
   const [stateValue, setStateValue] = useState<SelectOptions | undefined>(
     value,
   );
@@ -60,16 +62,19 @@ export const Dropdown = ({
   );
 
   return (
-    <div
+    <Component
       className={classNames}
       onBlur={onBlurHandler}
       onClick={onClickHandler}
       tabIndex={0}
+      {...restProps}
     >
-      <span className={valueClassNames}>
-        {stateValue?.label}
-      </span>
-      <div className={arrowClassNames}></div>
+      <div className="container-content">
+        <span className={valueClassNames}>
+          {stateValue?.label}
+        </span>
+        <div className={arrowClassNames}></div>
+      </div>
       <ul
         className={`${styles.options} ${isOpen ? styles.show : ''}`}
         data-test-id={dataTestId}
@@ -99,8 +104,8 @@ export const Dropdown = ({
           </li>
         ))}
       </ul>
-    </div>
+    </Component>
   );
-};
+}
 
 export default Dropdown;
