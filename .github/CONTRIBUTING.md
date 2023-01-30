@@ -119,4 +119,4 @@ The scope could be following the name of the package of the commit change. For e
 
 ## More information
 
-If you have questions or need more information about **heycar-uikit**, please go to **#global-design-system** in internal heycar Slack workspace or open a [Discussion in Github](https://github.com/hey-car/heycar-uikit/discussions) if you are outside heycar.
+If you have questions or need more information about **heycar-uikit**, please go to **#global-design-system-community** in internal heycar Slack workspace or open a [Discussion in Github](https://github.com/hey-car/heycar-uikit/discussions) if you are outside heycar.

@@ -8,6 +8,8 @@ export const defaultVariantMapping = {
   h6: 'h6',
   subheading1: 'span',
   subheading2: 'span',
+  subheading3: 'span',
+  subheading4: 'span',
   body1: 'p',
   body2: 'p',
   body3: 'p',

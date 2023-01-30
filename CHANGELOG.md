@@ -1,3 +1,55 @@
+# [4.0.0](https://github.com/hey-car/heycar-uikit/compare/v3.3.1...v4.0.0) (2023-01-17)
+
+
+### Features
+
+* **grid:** add container component ([#128](https://github.com/hey-car/heycar-uikit/issues/128)) ([9eb07f3](https://github.com/hey-car/heycar-uikit/commit/9eb07f398b991bb8b98cc7b7c073496febfdc78b))
+
+
+### BREAKING CHANGES
+
+* **grid:** `Component` prop is renamed as `component` for grid Row, Column and Container
+
+* docs(grid): add default value in docs
+
+* feat: adjust row widths
+
+* revert(grid): remove nested grid styles
+
+* test: update screenshot tests
+
+* chore: run npm install
+
+Co-authored-by: mwagdi <mahmoud.elawadi@hey.car>
+
+## [3.3.1](https://github.com/hey-car/heycar-uikit/compare/v3.3.0...v3.3.1) (2023-01-13)
+
+
+### Bug Fixes
+
+* **dropdown:** added full width ([#130](https://github.com/hey-car/heycar-uikit/issues/130)) ([5f8f36a](https://github.com/hey-car/heycar-uikit/commit/5f8f36a6b7d80890c6ed59a2590571023b5e0b5a))
+
+# [3.3.0](https://github.com/hey-car/heycar-uikit/compare/v3.2.3...v3.3.0) (2023-01-12)
+
+
+### Features
+
+* **icon:** add new chevrons right - left icons ([#129](https://github.com/hey-car/heycar-uikit/issues/129)) ([4d0f08f](https://github.com/hey-car/heycar-uikit/commit/4d0f08ffd40aca41a03f386016c6955e40d04f61))
+
+## [3.2.3](https://github.com/hey-car/heycar-uikit/compare/v3.2.2...v3.2.3) (2023-01-06)
+
+
+### Bug Fixes
+
+* **grid column:** fix the paddings ([#126](https://github.com/hey-car/heycar-uikit/issues/126)) ([b73afae](https://github.com/hey-car/heycar-uikit/commit/b73afaeeec8dc79c4de2d37c56fd11cb2d4fae5a))
+
+## [3.2.2](https://github.com/hey-car/heycar-uikit/compare/v3.2.1...v3.2.2) (2023-01-04)
+
+
+### Bug Fixes
+
+* **grid:** update version as 2.0.0 and use the global variables for gaps ([#125](https://github.com/hey-car/heycar-uikit/issues/125)) ([b80fc26](https://github.com/hey-car/heycar-uikit/commit/b80fc26be86b14988cbd4cde636baf11d6de8acb))
+
 ## [3.2.1](https://github.com/hey-car/heycar-uikit/compare/v3.2.0...v3.2.1) (2022-11-30)
 
 

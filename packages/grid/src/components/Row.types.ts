@@ -2,7 +2,7 @@ import React from 'react';
 
 import { ResponsivePropertyType } from '../Grid.types';
 
-export interface RowProps {
+type RowBaseProps<E extends React.ElementType> = {
   /**
    * Additional class
    */
@@ -29,9 +29,10 @@ export interface RowProps {
   justify?: 'left' | 'center' | 'right' | 'around' | 'between';
 
   /**
-   * HTML component tag
+   * The component used for the root node. Either a string to use a HTML element or a component
+   * @default "div"
    */
-  Component?: keyof JSX.IntrinsicElements;
+  component?: E;
 
   /**
    * Content
@@ -42,4 +43,7 @@ export interface RowProps {
    * Identifier for automated testing systems
    */
   dataTestId?: string;
-}
+};
+
+export type RowProps<E extends React.ElementType> = RowBaseProps<E> &
+  Omit<React.ComponentProps<E>, keyof RowBaseProps<E>>;

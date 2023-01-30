@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Grid.Container Snapshots tests should match snapshot 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    content
+  </div>
+</div>
+`;
