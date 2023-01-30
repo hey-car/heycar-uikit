@@ -1,21 +1,20 @@
+import useBreakpoint from '../../../vars/src/hooks/useBreakpoint.hook';
 import {
   PaginationItemProps,
   paginationItemType,
   UsePaginationProps,
-} from "../Pagination.types";
+} from '../Pagination.types';
 import { getSiblingsToRender } from '../utils/getSiblingsToRender';
+import parseOnClick from '../utils/parseOnClick';
 import shouldReturnObj from '../utils/shouldReturnObj';
-
-import { useBreakpointHook } from './useBreakpoint.hook';
-import parseOnClick from "../utils/parseOnClick";
 
 const usePagination = ({
   onClick,
   currentPage,
   totalPages,
 }: UsePaginationProps) => {
-  const breakpoint = useBreakpointHook();
-  const isDesktop = breakpoint && breakpoint >= 1024;
+  const { breakpoints } = useBreakpoint();
+  const isDesktop = breakpoints.isDesktop;
 
   const shouldShowPreDots = currentPage > 3;
   const shouldShowPostDots = currentPage < totalPages - 2;

@@ -1,4 +1,4 @@
-import { CustomOnClick } from "../Pagination.types";
+import { CustomOnClick } from '../Pagination.types';
 
 const parseOnClick = (
   onClick: CustomOnClick | undefined,
@@ -8,7 +8,8 @@ const parseOnClick = (
   if (onClick && !isDisabled) {
     return () => onClick(page);
   }
+
   return undefined;
 };
 
-export default parseOnClick
+export default parseOnClick;

@@ -66,8 +66,7 @@ export const PaginationTest = () => {
         totalPages={10}
       />
       <Pagination
-        aria-label={'laaaabel'}
-        currentPage={10}
+        currentPage={1}
         renderItem={item => (
           <PaginationItem
             href={`this is a href number ${item.page}`}
@@ -84,7 +83,7 @@ export const PaginationTest = () => {
       <Pagination
         currentPage={3}
         getItemAriaLabel={({ type, page, selected }) => {
-          console.log({ type, page, selected });
+          // console.log({ type, page, selected });
 
           return 'Test: Go to Page ' + page;
         }}
