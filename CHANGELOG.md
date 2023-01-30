@@ -1,3 +1,10 @@
+## [4.0.1](https://github.com/hey-car/heycar-uikit/compare/v4.0.0...v4.0.1) (2023-01-30)
+
+
+### Bug Fixes
+
+* **dropdown:** add rest props update styles ([#132](https://github.com/hey-car/heycar-uikit/issues/132)) ([e940396](https://github.com/hey-car/heycar-uikit/commit/e94039645dee00dd18711fe4256636dea49969d9))
+
 # [4.0.0](https://github.com/hey-car/heycar-uikit/compare/v3.3.1...v4.0.0) (2023-01-17)
 
 
