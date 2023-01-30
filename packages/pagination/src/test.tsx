@@ -52,7 +52,6 @@ const Link: React.FC<LinkProps> = ({ link, children, ...rest }) => (
 export const PaginationTest = () => {
   return (
     <div style={{ maxWidth: '700px', margin: '0 auto' }}>
-      This is test
       <Pagination
         aria-label={'laaaabel'}
         currentPage={8}
