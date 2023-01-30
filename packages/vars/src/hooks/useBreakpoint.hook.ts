@@ -2,43 +2,57 @@ import { useEffect, useState } from 'react';
 
 import breakpointsData from '../breakpoints.json';
 
-type breakpoints = {
-  isMobile: boolean;
-  isTablet: boolean;
-  isDesktop: boolean;
-  isTabletS: boolean;
-  isTabletL: boolean;
-  isDesktopS: boolean;
-  isDesktopM: boolean;
-  isDesktopL: boolean;
+const defaultBreakpoints = {
+  isMobile: false,
+  isTablet: false,
+  isDesktop: false,
+  isTabletS: false,
+  isTabletL: false,
+  isDesktopS: false,
+  isDesktopM: false,
+  isDesktopL: false,
 };
 
 function useBreakpoint() {
   const [width, setWidth] = useState<number>(0);
-  const [breakpoints, setBreakpoints] = useState({} as breakpoints);
+  const [breakpoints, setBreakpoints] = useState(defaultBreakpoints);
 
   useEffect(() => {
     const updateBreakpoint = () => {
       setWidth(window.innerWidth);
 
+      // Desktop
       if (window.innerWidth >= breakpointsData['breakpoint-desktop']) {
         if (
           window.innerWidth >= breakpointsData['breakpoint-desktop-s'] &&
           window.innerWidth < breakpointsData['breakpoint-desktop-m']
         ) {
-          setBreakpoints({ isDesktop: true, isDesktopS: true } as breakpoints);
+          setBreakpoints({
+            ...defaultBreakpoints,
+            isDesktop: true,
+            isDesktopS: true,
+          });
         }
         if (
           window.innerWidth >= breakpointsData['breakpoint-desktop-m'] &&
           window.innerWidth < breakpointsData['breakpoint-desktop-l']
         ) {
-          setBreakpoints({ isDesktop: true, isDesktopM: true } as breakpoints);
+          setBreakpoints({
+            ...defaultBreakpoints,
+            isDesktop: true,
+            isDesktopM: true,
+          });
         }
         if (window.innerWidth >= breakpointsData['breakpoint-desktop-l']) {
-          setBreakpoints({ isDesktop: true, isDesktopL: true } as breakpoints);
+          setBreakpoints({
+            ...defaultBreakpoints,
+            isDesktop: true,
+            isDesktopL: true,
+          });
         }
       }
 
+      // Tablet
       if (
         window.innerWidth >= breakpointsData['breakpoint-tablet'] &&
         window.innerWidth < breakpointsData['breakpoint-desktop']
@@ -47,15 +61,27 @@ function useBreakpoint() {
           window.innerWidth >= breakpointsData['breakpoint-tablet-s'] &&
           window.innerWidth < breakpointsData['breakpoint-tablet-l']
         ) {
-          setBreakpoints({ isTablet: true, isTabletS: true } as breakpoints);
+          setBreakpoints({
+            ...defaultBreakpoints,
+            isTablet: true,
+            isTabletS: true,
+          });
         }
         if (window.innerWidth >= breakpointsData['breakpoint-tablet-l']) {
-          setBreakpoints({ isTablet: true, isTabletL: true } as breakpoints);
+          setBreakpoints({
+            ...defaultBreakpoints,
+            isTablet: true,
+            isTabletL: true,
+          });
         }
       }
 
+      // Mobile
       if (window.innerWidth < breakpointsData['breakpoint-mobile']) {
-        setBreakpoints({ isMobile: true } as breakpoints);
+        setBreakpoints({
+          ...defaultBreakpoints,
+          isMobile: true,
+        });
       }
     };
 

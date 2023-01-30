@@ -30,7 +30,7 @@ render(
 render(
    <Pagination
       totalPages={10}
-      currentPage={3}
+      currentPage={1}
       renderItem={item => (
           <PaginationItem
             href={`https://hey.car/page/${item.page}`}
@@ -56,15 +56,24 @@ render(
 ```
 
 ## Custom component
-```tsx live
+```tsx
+interface LinkProps {
+  link: string;
+}
+const Link: React.FC<LinkProps> = ({ link, children, ...rest }) => (
+  <a href={link} {...rest}>
+    {children}
+  </a>
+);
+
 render(
    <Pagination
-      totalPages={10}
+      totalPages={3}
       currentPage={3}
       renderItem={item => (
           <PaginationItem
-            // component={Link}
-            // link={`https://hey.car/page/${item.page}`}
+            component={Link}
+            link={`https://hey.car/page/${item.page}`}
             {...item}
           />
         )}

@@ -23,7 +23,11 @@ export const Pagination = React.forwardRef<HTMLElement, PaginationProps>(
     ref,
   ) => {
     const classNames = cn(styles.pagination, className);
-    const { items } = usePagination({ onClick, totalPages, currentPage });
+    const { items } = usePagination({
+      onClick,
+      totalPages,
+      currentPage,
+    });
 
     return (
       <nav
@@ -34,7 +38,7 @@ export const Pagination = React.forwardRef<HTMLElement, PaginationProps>(
       >
         <ul>
           {items.map(item => (
-            <li key={item.type + item.page}>
+            <li>
               {renderItem({
                 'aria-label': generateAriaLabel(item, getItemAriaLabel),
                 ...item,

@@ -27,20 +27,14 @@ export const PaginationItem: PropsBasedOnComponent<
   const Component = component;
   let componentToRender;
 
-  function disableHref() {
-    if (isDisabled) return { href: null };
-
-    return {};
-  }
-
   switch (type) {
     case paginationItemType.page:
       componentToRender = (
         <Component
           className={cn(styles.itemNumber, isCurrentPage && styles.currentPage)}
           {...rest}
-          onClick={onClick}
           aria-current={isCurrentPage}
+          onClick={onClick}
         >
           <Typography variant="subheading2">{page}</Typography>
         </Component>
@@ -66,7 +60,6 @@ export const PaginationItem: PropsBasedOnComponent<
           className={cn(styles.arrow, isDisabled && styles.disabled)}
           {...rest}
           onClick={onClick}
-          {...disableHref()}
         >
           <ChevronLeft />
         </Component>
@@ -78,7 +71,6 @@ export const PaginationItem: PropsBasedOnComponent<
           className={cn(styles.arrow, isDisabled && styles.disabled)}
           {...rest}
           onClick={onClick}
-          {...disableHref()}
         >
           <ChevronRight />
         </Component>

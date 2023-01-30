@@ -32,42 +32,8 @@ Object {
           </li>
           <li>
             <a
-              aria-current="false"
-              aria-label="Go to page 1"
+              aria-label="Go to page 5"
               class="itemNumber"
-            >
-              <span
-                class="typography subheading2"
-              >
-                1
-              </span>
-            </a>
-          </li>
-          <li>
-            <span
-              class="typography subheading2 ellipsis"
-            >
-              ...
-            </span>
-          </li>
-          <li>
-            <a
-              aria-current="false"
-              aria-label="Go to page 4"
-              class="itemNumber"
-            >
-              <span
-                class="typography subheading2"
-              >
-                4
-              </span>
-            </a>
-          </li>
-          <li>
-            <a
-              aria-current="true"
-              aria-label="page 5"
-              class="itemNumber currentPage"
             >
               <span
                 class="typography subheading2"
@@ -77,28 +43,14 @@ Object {
             </a>
           </li>
           <li>
-            <a
-              aria-current="false"
-              aria-label="Go to page 6"
-              class="itemNumber"
-            >
-              <span
-                class="typography subheading2"
-              >
-                6
-              </span>
-            </a>
-          </li>
-          <li>
             <span
-              class="typography subheading2 ellipsis"
+              class="typography subheading2 slash"
             >
-              ...
+              /
             </span>
           </li>
           <li>
             <a
-              aria-current="false"
               aria-label="Go to page 10"
               class="itemNumber"
             >
@@ -161,42 +113,8 @@ Object {
         </li>
         <li>
           <a
-            aria-current="false"
-            aria-label="Go to page 1"
+            aria-label="Go to page 5"
             class="itemNumber"
-          >
-            <span
-              class="typography subheading2"
-            >
-              1
-            </span>
-          </a>
-        </li>
-        <li>
-          <span
-            class="typography subheading2 ellipsis"
-          >
-            ...
-          </span>
-        </li>
-        <li>
-          <a
-            aria-current="false"
-            aria-label="Go to page 4"
-            class="itemNumber"
-          >
-            <span
-              class="typography subheading2"
-            >
-              4
-            </span>
-          </a>
-        </li>
-        <li>
-          <a
-            aria-current="true"
-            aria-label="page 5"
-            class="itemNumber currentPage"
           >
             <span
               class="typography subheading2"
@@ -206,28 +124,14 @@ Object {
           </a>
         </li>
         <li>
-          <a
-            aria-current="false"
-            aria-label="Go to page 6"
-            class="itemNumber"
-          >
-            <span
-              class="typography subheading2"
-            >
-              6
-            </span>
-          </a>
-        </li>
-        <li>
           <span
-            class="typography subheading2 ellipsis"
+            class="typography subheading2 slash"
           >
-            ...
+            /
           </span>
         </li>
         <li>
           <a
-            aria-current="false"
             aria-label="Go to page 10"
             class="itemNumber"
           >
@@ -347,42 +251,8 @@ Object {
           </li>
           <li>
             <a
-              aria-current="false"
-              aria-label="Go to page 1"
+              aria-label="Go to page 5"
               class="itemNumber"
-            >
-              <span
-                class="typography subheading2"
-              >
-                1
-              </span>
-            </a>
-          </li>
-          <li>
-            <span
-              class="typography subheading2 ellipsis"
-            >
-              ...
-            </span>
-          </li>
-          <li>
-            <a
-              aria-current="false"
-              aria-label="Go to page 4"
-              class="itemNumber"
-            >
-              <span
-                class="typography subheading2"
-              >
-                4
-              </span>
-            </a>
-          </li>
-          <li>
-            <a
-              aria-current="true"
-              aria-label="page 5"
-              class="itemNumber currentPage"
             >
               <span
                 class="typography subheading2"
@@ -392,28 +262,14 @@ Object {
             </a>
           </li>
           <li>
-            <a
-              aria-current="false"
-              aria-label="Go to page 6"
-              class="itemNumber"
-            >
-              <span
-                class="typography subheading2"
-              >
-                6
-              </span>
-            </a>
-          </li>
-          <li>
             <span
-              class="typography subheading2 ellipsis"
+              class="typography subheading2 slash"
             >
-              ...
+              /
             </span>
           </li>
           <li>
             <a
-              aria-current="false"
               aria-label="Go to page 10"
               class="itemNumber"
             >
@@ -475,9 +331,8 @@ Object {
           </li>
           <li>
             <a
-              aria-current="true"
-              aria-label="page 1"
-              class="itemNumber currentPage"
+              aria-label="Go to page 1"
+              class="itemNumber"
             >
               <span
                 class="typography subheading2"
@@ -487,41 +342,14 @@ Object {
             </a>
           </li>
           <li>
-            <a
-              aria-current="false"
-              aria-label="Go to page 2"
-              class="itemNumber"
-            >
-              <span
-                class="typography subheading2"
-              >
-                2
-              </span>
-            </a>
-          </li>
-          <li>
-            <a
-              aria-current="false"
-              aria-label="Go to page 3"
-              class="itemNumber"
-            >
-              <span
-                class="typography subheading2"
-              >
-                3
-              </span>
-            </a>
-          </li>
-          <li>
             <span
-              class="typography subheading2 ellipsis"
+              class="typography subheading2 slash"
             >
-              ...
+              /
             </span>
           </li>
           <li>
             <a
-              aria-current="false"
               aria-label="Go to page 10"
               class="itemNumber"
             >
@@ -584,9 +412,8 @@ Object {
         </li>
         <li>
           <a
-            aria-current="true"
-            aria-label="page 1"
-            class="itemNumber currentPage"
+            aria-label="Go to page 1"
+            class="itemNumber"
           >
             <span
               class="typography subheading2"
@@ -596,41 +423,14 @@ Object {
           </a>
         </li>
         <li>
-          <a
-            aria-current="false"
-            aria-label="Go to page 2"
-            class="itemNumber"
-          >
-            <span
-              class="typography subheading2"
-            >
-              2
-            </span>
-          </a>
-        </li>
-        <li>
-          <a
-            aria-current="false"
-            aria-label="Go to page 3"
-            class="itemNumber"
-          >
-            <span
-              class="typography subheading2"
-            >
-              3
-            </span>
-          </a>
-        </li>
-        <li>
           <span
-            class="typography subheading2 ellipsis"
+            class="typography subheading2 slash"
           >
-            ...
+            /
           </span>
         </li>
         <li>
           <a
-            aria-current="false"
             aria-label="Go to page 10"
             class="itemNumber"
           >
@@ -750,42 +550,8 @@ Object {
           </li>
           <li>
             <a
-              aria-current="false"
-              aria-label="Go to page 1"
+              aria-label="Go to page 5"
               class="itemNumber"
-            >
-              <span
-                class="typography subheading2"
-              >
-                1
-              </span>
-            </a>
-          </li>
-          <li>
-            <span
-              class="typography subheading2 ellipsis"
-            >
-              ...
-            </span>
-          </li>
-          <li>
-            <a
-              aria-current="false"
-              aria-label="Go to page 4"
-              class="itemNumber"
-            >
-              <span
-                class="typography subheading2"
-              >
-                4
-              </span>
-            </a>
-          </li>
-          <li>
-            <a
-              aria-current="true"
-              aria-label="page 5"
-              class="itemNumber currentPage"
             >
               <span
                 class="typography subheading2"
@@ -795,28 +561,14 @@ Object {
             </a>
           </li>
           <li>
-            <a
-              aria-current="false"
-              aria-label="Go to page 6"
-              class="itemNumber"
-            >
-              <span
-                class="typography subheading2"
-              >
-                6
-              </span>
-            </a>
-          </li>
-          <li>
             <span
-              class="typography subheading2 ellipsis"
+              class="typography subheading2 slash"
             >
-              ...
+              /
             </span>
           </li>
           <li>
             <a
-              aria-current="false"
               aria-label="Go to page 10"
               class="itemNumber"
             >
@@ -878,9 +630,8 @@ Object {
           </li>
           <li>
             <a
-              aria-current="true"
-              aria-label="page 1"
-              class="itemNumber currentPage"
+              aria-label="Go to page 1"
+              class="itemNumber"
             >
               <span
                 class="typography subheading2"
@@ -890,41 +641,14 @@ Object {
             </a>
           </li>
           <li>
-            <a
-              aria-current="false"
-              aria-label="Go to page 2"
-              class="itemNumber"
-            >
-              <span
-                class="typography subheading2"
-              >
-                2
-              </span>
-            </a>
-          </li>
-          <li>
-            <a
-              aria-current="false"
-              aria-label="Go to page 3"
-              class="itemNumber"
-            >
-              <span
-                class="typography subheading2"
-              >
-                3
-              </span>
-            </a>
-          </li>
-          <li>
             <span
-              class="typography subheading2 ellipsis"
+              class="typography subheading2 slash"
             >
-              ...
+              /
             </span>
           </li>
           <li>
             <a
-              aria-current="false"
               aria-label="Go to page 10"
               class="itemNumber"
             >
@@ -986,55 +710,8 @@ Object {
           </li>
           <li>
             <a
-              aria-current="false"
-              aria-label="Go to page 1"
+              aria-label="Go to page 10"
               class="itemNumber"
-            >
-              <span
-                class="typography subheading2"
-              >
-                1
-              </span>
-            </a>
-          </li>
-          <li>
-            <span
-              class="typography subheading2 ellipsis"
-            >
-              ...
-            </span>
-          </li>
-          <li>
-            <a
-              aria-current="false"
-              aria-label="Go to page 8"
-              class="itemNumber"
-            >
-              <span
-                class="typography subheading2"
-              >
-                8
-              </span>
-            </a>
-          </li>
-          <li>
-            <a
-              aria-current="false"
-              aria-label="Go to page 9"
-              class="itemNumber"
-            >
-              <span
-                class="typography subheading2"
-              >
-                9
-              </span>
-            </a>
-          </li>
-          <li>
-            <a
-              aria-current="true"
-              aria-label="page 10"
-              class="itemNumber currentPage"
             >
               <span
                 class="typography subheading2"
@@ -1095,55 +772,8 @@ Object {
         </li>
         <li>
           <a
-            aria-current="false"
-            aria-label="Go to page 1"
+            aria-label="Go to page 10"
             class="itemNumber"
-          >
-            <span
-              class="typography subheading2"
-            >
-              1
-            </span>
-          </a>
-        </li>
-        <li>
-          <span
-            class="typography subheading2 ellipsis"
-          >
-            ...
-          </span>
-        </li>
-        <li>
-          <a
-            aria-current="false"
-            aria-label="Go to page 8"
-            class="itemNumber"
-          >
-            <span
-              class="typography subheading2"
-            >
-              8
-            </span>
-          </a>
-        </li>
-        <li>
-          <a
-            aria-current="false"
-            aria-label="Go to page 9"
-            class="itemNumber"
-          >
-            <span
-              class="typography subheading2"
-            >
-              9
-            </span>
-          </a>
-        </li>
-        <li>
-          <a
-            aria-current="true"
-            aria-label="page 10"
-            class="itemNumber currentPage"
           >
             <span
               class="typography subheading2"
@@ -1262,58 +892,8 @@ Object {
           </li>
           <li>
             <a
-              aria-current="false"
-              aria-label="Go to page 1"
+              aria-label="Go to page 10"
               class="itemNumber"
-              href="this is href 1"
-            >
-              <span
-                class="typography subheading2"
-              >
-                1
-              </span>
-            </a>
-          </li>
-          <li>
-            <span
-              class="typography subheading2 ellipsis"
-            >
-              ...
-            </span>
-          </li>
-          <li>
-            <a
-              aria-current="false"
-              aria-label="Go to page 8"
-              class="itemNumber"
-              href="this is href 8"
-            >
-              <span
-                class="typography subheading2"
-              >
-                8
-              </span>
-            </a>
-          </li>
-          <li>
-            <a
-              aria-current="false"
-              aria-label="Go to page 9"
-              class="itemNumber"
-              href="this is href 9"
-            >
-              <span
-                class="typography subheading2"
-              >
-                9
-              </span>
-            </a>
-          </li>
-          <li>
-            <a
-              aria-current="true"
-              aria-label="page 10"
-              class="itemNumber currentPage"
               href="this is href 10"
             >
               <span
@@ -1327,6 +907,7 @@ Object {
             <a
               aria-label="Go to next page"
               class="arrow disabled"
+              href="this is href 11"
             >
               <svg
                 class="svgIcon inherit"
@@ -1376,58 +957,8 @@ Object {
         </li>
         <li>
           <a
-            aria-current="false"
-            aria-label="Go to page 1"
+            aria-label="Go to page 10"
             class="itemNumber"
-            href="this is href 1"
-          >
-            <span
-              class="typography subheading2"
-            >
-              1
-            </span>
-          </a>
-        </li>
-        <li>
-          <span
-            class="typography subheading2 ellipsis"
-          >
-            ...
-          </span>
-        </li>
-        <li>
-          <a
-            aria-current="false"
-            aria-label="Go to page 8"
-            class="itemNumber"
-            href="this is href 8"
-          >
-            <span
-              class="typography subheading2"
-            >
-              8
-            </span>
-          </a>
-        </li>
-        <li>
-          <a
-            aria-current="false"
-            aria-label="Go to page 9"
-            class="itemNumber"
-            href="this is href 9"
-          >
-            <span
-              class="typography subheading2"
-            >
-              9
-            </span>
-          </a>
-        </li>
-        <li>
-          <a
-            aria-current="true"
-            aria-label="page 10"
-            class="itemNumber currentPage"
             href="this is href 10"
           >
             <span
@@ -1441,6 +972,7 @@ Object {
           <a
             aria-label="Go to next page"
             class="arrow disabled"
+            href="this is href 11"
           >
             <svg
               class="svgIcon inherit"

@@ -63,48 +63,6 @@ describe('Pagination', () => {
       expect(screen.queryByText('9')).not.toBeInTheDocument();
       expect(screen.queryByText('10')).toBeInTheDocument();
     });
-
-    it('should disable href link for previous button', () => {
-      render(
-        <Pagination
-          currentPage={1}
-          renderItem={item => (
-            <PaginationItem href={`this is href ${item.page}`} {...item} />
-          )}
-          totalPages={10}
-        />,
-      );
-
-      expect(screen.queryByText('1')).toBeInTheDocument();
-
-      expect(
-        screen.getByLabelText('Go to previous page').closest('a'),
-      ).not.toHaveAttribute('href');
-      expect(
-        screen.getByLabelText('Go to next page').closest('a'),
-      ).toHaveAttribute('href', 'this is href 2');
-    });
-
-    it('should disable href link for next button', () => {
-      render(
-        <Pagination
-          currentPage={10}
-          renderItem={item => (
-            <PaginationItem href={`this is href ${item.page}`} {...item} />
-          )}
-          totalPages={10}
-        />,
-      );
-
-      expect(screen.queryByText('10')).toBeInTheDocument();
-
-      expect(
-        screen.getByLabelText('Go to previous page').closest('a'),
-      ).toHaveAttribute('href', 'this is href 9');
-      expect(
-        screen.getByLabelText('Go to next page').closest('a'),
-      ).not.toHaveAttribute('href');
-    });
   });
 
   describe('accessibility', () => {

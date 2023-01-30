@@ -6,25 +6,17 @@ import { version } from '../../package.json';
 import Description from './Description.mdx';
 import Changelog from '../../CHANGELOG.md';
 import {
-  PaginationTest
-} from "../test";
+  PaginationCanvas
+} from "./Canvas.tsx";
 
 <!-- Meta -->
 
 <Meta title="Components/Pagination" component={Pagination} />
 
-export const PaginationTemplate = args => {
-  return (
-    <div style={{ maxWidth: '700px', margin: '0 auto' }}>
-      <PaginationTest />
-    </div>
-  );
-};
-
 <!-- Canvas -->
 
 <Story parameters={{ controls: { disable: true } }} name="Pagination">
-  {PaginationTemplate.bind({})}
+  {PaginationCanvas.bind({})}
 </Story>
 
 <!-- Docs -->
