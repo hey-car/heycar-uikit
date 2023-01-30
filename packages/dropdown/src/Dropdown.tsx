@@ -69,12 +69,10 @@ function Dropdown({
       tabIndex={0}
       {...restProps}
     >
-      <div className="container-content">
-        <span className={valueClassNames}>
-          {stateValue?.label}
-        </span>
-        <div className={arrowClassNames}></div>
-      </div>
+      <span className={valueClassNames}>
+        {stateValue?.label}
+      </span>
+      <div className={arrowClassNames}></div>
       <ul
         className={`${styles.options} ${isOpen ? styles.show : ''}`}
         data-test-id={dataTestId}

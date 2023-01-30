@@ -26,12 +26,6 @@
   color: var(--option-text-color);
 }
 
-.container-content {
-  display: flex;
-  flex-direction: row;
-  height: 24px;
-}
-
 .container:focus {
   border-color: var(--container-focus-border-color);
 }
@@ -87,7 +81,7 @@
 }
 
 .option {
-  padding: 9px 12px;
+  padding: var(--gap-xs) var(--gap-s);
   cursor: pointer;
   max-height: var(--gap-7xl);
 }
@@ -132,7 +126,7 @@
 }
 
 .rightContent {
-  padding-top: 3px;
+  padding-top: var(--gap-2xs);
   font-size: var(--gap-s);
 }
 
