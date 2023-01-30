@@ -95,17 +95,3 @@
   --size-middle-height: var(--gap-5xl);
   --size-large-height: var(--gap-7xl);
 }
-
-/* Mobile */
-@custom-media --mobile (max-width: var(--breakpoint-mobile));
-
-/* Tablet */
-@custom-media --tablet (min-width: var(--breakpoint-tablet));
-@custom-media --tablet-s (min-width: var(--breakpoint-tablet-s));
-@custom-media --tablet-l (min-width: var(--breakpoint-tablet-l));
-
-/* Desktop */
-@custom-media --desktop (min-width: var(--breakpoint-desktop));
-@custom-media --desktop-s (min-width: var(--breakpoint-desktop-s));
-@custom-media --desktop-m (min-width: var(--breakpoint-desktop-m));
-@custom-media --desktop-l (min-width: var(--breakpoint-desktop-l));

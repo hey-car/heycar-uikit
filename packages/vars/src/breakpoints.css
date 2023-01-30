@@ -1,14 +1,15 @@
-:root{
-  --breakpoint-mobile: 767px;
+/* If this is ever changed please update breakpoints.json as well */
 
-  /* Tablet */
-  --breakpoint-tablet: 768px;
-  --breakpoint-tablet-s: 768px;
-  --breakpoint-tablet-l: 1024px;
+/* Mobile */
+@custom-media --mobile (max-width: 767px);
 
-  /* Desktop */
-  --breakpoint-desktop: 1280px;
-  --breakpoint-desktop-s: 1280px;
-  --breakpoint-desktop-m: 1366px;
-  --breakpoint-desktop-l: 1440px;
-}
+/* Tablet */
+@custom-media --tablet (min-width: 768px);
+@custom-media --tablet-s (min-width: 768px);
+@custom-media --tablet-l (min-width: 1024px);
+
+/* Desktop */
+@custom-media --desktop (min-width: 1280px);
+@custom-media --desktop-s (min-width: 1280px);
+@custom-media --desktop-m (min-width: 1366px);
+@custom-media --desktop-l (min-width: 1440px);
