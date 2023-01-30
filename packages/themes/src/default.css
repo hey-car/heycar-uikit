@@ -1,5 +1,6 @@
 @import '../../vars/src/index.css';
 
+
 /* Default theme (light) */
 
 :root {
@@ -96,15 +97,15 @@
 }
 
 /* Mobile */
-@custom-media --mobile (max-width: 767px);
+@custom-media --mobile (max-width: var(--breakpoint-mobile));
 
 /* Tablet */
-@custom-media --tablet (min-width: 768px);
-@custom-media --tablet-s (min-width: 768px);
-@custom-media --tablet-l (min-width: 1024px);
+@custom-media --tablet (min-width: var(--breakpoint-tablet));
+@custom-media --tablet-s (min-width: var(--breakpoint-tablet-s));
+@custom-media --tablet-l (min-width: var(--breakpoint-tablet-l));
 
 /* Desktop */
-@custom-media --desktop (min-width: 1280px);
-@custom-media --desktop-s (min-width: 1280px);
-@custom-media --desktop-m (min-width: 1366px);
-@custom-media --desktop-l (min-width: 1440px);
+@custom-media --desktop (min-width: var(--breakpoint-desktop));
+@custom-media --desktop-s (min-width: var(--breakpoint-desktop-s));
+@custom-media --desktop-m (min-width: var(--breakpoint-desktop-m));
+@custom-media --desktop-l (min-width: var(--breakpoint-desktop-l));

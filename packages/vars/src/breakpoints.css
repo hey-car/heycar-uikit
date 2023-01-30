@@ -1,0 +1,14 @@
+:root{
+  --breakpoint-mobile: 767px;
+
+  /* Tablet */
+  --breakpoint-tablet: 768px;
+  --breakpoint-tablet-s: 768px;
+  --breakpoint-tablet-l: 1024px;
+
+  /* Desktop */
+  --breakpoint-desktop: 1280px;
+  --breakpoint-desktop-s: 1280px;
+  --breakpoint-desktop-m: 1366px;
+  --breakpoint-desktop-l: 1440px;
+}

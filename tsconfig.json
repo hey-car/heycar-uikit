@@ -37,6 +37,7 @@
     "./.eslintrc.js",
     "**/*.ts",
     "**/*.test.tsx",
-    "**/*.tsx"
+    "**/*.tsx",
+    "**/*.json"
   ]
 }
