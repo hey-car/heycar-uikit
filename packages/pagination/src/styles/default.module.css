@@ -4,75 +4,76 @@
   list-style: none;
 
   & ul {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-flex-wrap: wrap;
-      -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      -webkit-align-items: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      padding: 0;
-      margin: 0;
-      list-style: none;
-      gap:var(--gap-m);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    gap: var(--gap-m);
   }
 
-  & button, & a {
-      box-sizing: border-box;
-      background-color: transparent;
-      text-decoration: none;
-      outline: 0;
-      border: 0;
-      margin: 0;
-      padding: 0;
-      user-select: none;
+  & button,
+  & a {
+    box-sizing: border-box;
+    background-color: transparent;
+    text-decoration: none;
+    outline: 0;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    user-select: none;
 
-      color: var(--color-neutral-700);
-      cursor: pointer;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 40px;
+    color: var(--color-neutral-700);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
 
-      &:hover:not(.disabled) {
-         background-color: var(--color-neutral-50);
-       }
-      &:active:not(.disabled) {
-         background-color: var(--color-neutral-100);
-       }
+    &:hover:not(.disabled) {
+      background-color: var(--color-neutral-50);
+    }
+    &:active:not(.disabled) {
+      background-color: var(--color-neutral-100);
+    }
   }
 
   & .currentPage {
-      color:  var(--color-primary-500);
-      border: var(--color-primary-500) 2px;
-      border-bottom-style: solid;
-      padding-top: 2px;
+    color: var(--color-primary-500);
+    border: var(--color-primary-500) 2px;
+    border-bottom-style: solid;
+    padding-top: 2px;
   }
 
   & .itemNumber {
-      padding: 0px var(--gap-s);
+    padding: 0 var(--gap-s);
   }
 
   & .arrow {
-    /*padding: 0px var(--gap-xs);*/
     width: 40px;
   }
 
-  & .ellipsis, & .slash {
-      user-select: none;
-      height: 40px;
-      display: flex;
-      align-items: center;
+  & .ellipsis,
+  & .slash {
+    user-select: none;
+    height: 40px;
+    display: flex;
+    align-items: center;
   }
 
   & .disabled {
     pointer-events: none;
     cursor: not-allowed;
-    color:  var(--color-neutral-300);
+    color: var(--color-neutral-300);
   }
 }

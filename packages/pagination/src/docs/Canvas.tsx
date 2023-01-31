@@ -38,7 +38,7 @@ export const PaginationCanvas = () => {
       <Pagination
         currentPage={3}
         getItemAriaLabel={({ type, page, selected }) => {
-          // console.log({ type, page, selected });
+          console.log({ type, page, selected });
 
           return 'Test: Go to Page ' + page;
         }}
