@@ -7,7 +7,7 @@ import {
 
 const packageName = 'pagination';
 
-const clip = { x: 0, y: 0, width: 750, height: 250 };
+const clip = { x: 0, y: 0, width: 750, height: 550 };
 
 const desktopWidthSize = 1280;
 const mobileWidthSize = 320;
@@ -17,7 +17,7 @@ const viewPort = {
   height: 768,
 };
 
-describe('Grid screen view size tests', () => {
+describe('Pagination screenshots tests', () => {
   test('Screen size = desktop', async () => {
     const pageUrl = createStorybookUrl({
       packageName,

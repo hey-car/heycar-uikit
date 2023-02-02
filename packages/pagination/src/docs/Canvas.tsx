@@ -8,6 +8,14 @@ import Link from './Link';
 export const PaginationCanvas = () => {
   return (
     <div style={{ maxWidth: '700px', margin: '0 auto' }}>
+      <Pagination currentPage={1} totalPages={1} />
+      <Pagination currentPage={1} totalPages={2} />
+      <Pagination currentPage={1} totalPages={3} />
+      <Pagination currentPage={1} totalPages={4} />
+      <Pagination currentPage={2} totalPages={4} />
+      <Pagination currentPage={1} totalPages={5} />
+      <Pagination currentPage={2} totalPages={5} />
+      <Pagination currentPage={3} totalPages={5} />
       <Pagination
         aria-label={'laaaabel'}
         currentPage={8}
