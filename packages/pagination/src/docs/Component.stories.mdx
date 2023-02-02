@@ -8,6 +8,7 @@ import Changelog from '../../CHANGELOG.md';
 import {
   PaginationCanvas
 } from "./Canvas.tsx";
+import { PaginationItem } from "../PaginationItem";
 
 <!-- Meta -->
 
@@ -41,6 +42,7 @@ import Pagination from '@heycar-uikit/pagination';
   tabs={[
     { label: 'Description', component: <Description /> },
     { label: 'Props', component: <Props of={Pagination} /> },
+    { label: 'Props item', component: <Props of={PaginationItem} /> },
     { label: 'Changelog', component: <Changelog /> },
   ]}
 />

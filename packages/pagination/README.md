@@ -17,6 +17,8 @@ npm install @heycar-uikit/pagination
 
 ## Usage
 
-## Documentation and sandbox
+For the installation, documentation, sandbox and usage check Storybook
 
-[Storybook](https://hey-car.github.io/heycar-uikit/main/?path=/docs/components-pagination--pagination) documentation and sandbox
+## Documentation
+
+[Storybook](https://hey-car.github.io/heycar-uikit/main/?path=/docs/components-pagination--pagination) documentation

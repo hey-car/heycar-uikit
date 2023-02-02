@@ -13,7 +13,7 @@ export default function generateAriaLabel(
 
   if (
     item.page ||
-    (item.page === 0 && // TODO evaluation if is number & exists
+    (item.page === 0 &&
       (item.type === paginationItemType.next ||
         item.type === paginationItemType.previous ||
         paginationItemType.page))

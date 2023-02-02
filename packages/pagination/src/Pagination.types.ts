@@ -61,17 +61,38 @@ export enum paginationItemType {
 }
 
 export interface PaginationItemProps {
-  type: paginationItemType;
-  'aria-label'?: string;
-  page?: number;
-  isDisabled?: boolean;
-  isCurrentPage?: boolean;
-  onClick?: (itemNumber: number) => void;
+  /**
+   * In case of no onClick event on `Pagination` and desire to render an `a`nchor
+   */
   href?: string;
+  /**
+   * Type of item, internal use
+   */
+  type: paginationItemType;
+  /**
+   * Internal use
+   */
+  'aria-label'?: string;
+  /**
+   * Page number. Internal use
+   */
+  page?: number;
+  /**
+   * Is this page disabled? Internal use
+   */
+  isDisabled?: boolean;
+  /**
+   * Is this page the current one? Internal use
+   */
+  isCurrentPage?: boolean;
+  /**
+   * onClick event. Internal use
+   */
+  onClick?: (itemNumber: number) => void;
 }
 
 /**
- * `PropsBasedOnComponent` - This interface inherits props from a designated component C through ref
+ * `PropsBasedOnComponent` - This interface inherits props from a designated Component
  */
 export interface PropsBasedOnComponent<
   ComponentBaseProps,
