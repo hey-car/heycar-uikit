@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 import breakpointsData from '../breakpoints.json';
 
-const defaultBreakpoints = {
+export const defaultBreakpoints = {
   isMobile: false,
   isTablet: false,
   isDesktop: false,
