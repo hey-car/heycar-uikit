@@ -16,22 +16,11 @@ If using `PaginationItem`, always spread `item` as shown below.
 Controlling the `Pagination` component with onClick event
 ```tsx live
 render(
-  <Container>
-
-<Row
-    align="middle"
-    style={{ width: '100%', justifyContent: 'space-between' }}
-  >
-    <Col span={3}>
-       <Pagination
-          totalPages={10}
-          currentPage={3}
-          onClick={itemNumber => console.log(itemNumber)}
-       />
-    </Col>
-  </Row>
-
-  </Container>,
+ <Pagination
+    totalPages={12}
+    currentPage={3}
+    onClick={itemNumber => console.log(itemNumber)}
+ />
 );
 ```
 
@@ -42,8 +31,8 @@ Remember to always spread `item`
 ```tsx live
 render(
    <Pagination
-      totalPages={10}
-      currentPage={1}
+      totalPages={255}
+      currentPage={5}
       renderItem={item => (
           <PaginationItem
             href={`https://hey.car/page/${item.page}`}
@@ -59,7 +48,7 @@ render(
 render(
    <Pagination
       totalPages={10}
-      currentPage={3}
+      currentPage={10}
       aria-label={'Pagination'} // For pagination main component
       getItemAriaLabel={({ type, page, selected }) => {
         return 'Go to page ' + page;
