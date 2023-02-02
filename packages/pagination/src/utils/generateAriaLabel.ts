@@ -15,8 +15,7 @@ export default function generateAriaLabel(
     item.page ||
     (item.page === 0 &&
       (item.type === paginationItemType.next ||
-        item.type === paginationItemType.previous ||
-        paginationItemType.page))
+        item.type === paginationItemType.previous))
   ) {
     ariaLabel = getItemAriaLabel({
       type: item.type as unknown as ariaLabelType,
