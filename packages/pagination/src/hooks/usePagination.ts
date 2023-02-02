@@ -16,8 +16,11 @@ const usePagination = ({
   const { breakpoints } = useBreakpoint();
   const isDesktop = breakpoints.isDesktop;
 
-  const shouldShowPreDots = currentPage > 3;
-  const shouldShowPostDots = currentPage < totalPages - 2;
+  const shouldShowPreDots =
+    (currentPage > 3 && totalPages !== 4) || currentPage > 4;
+  const shouldShowPostDots =
+    (currentPage < totalPages - 2 && totalPages !== 4) ||
+    currentPage < totalPages - 3;
 
   const siblingsToRender = getSiblingsToRender(totalPages, currentPage);
 
@@ -80,12 +83,11 @@ const usePagination = ({
           onClick: parseOnClick(onClick, currentPage - 1, currentPage === 1),
         },
         // Current page
-        ...shouldReturnObj(currentPage !== totalPages, {
+        ...shouldReturnObj(currentPage !== totalPages || totalPages === 1, {
           type: paginationItemType.page,
           page: currentPage,
           onClick: parseOnClick(onClick, currentPage, false),
         }),
-
         // Slash
         ...shouldReturnObj(currentPage !== totalPages, {
           type: paginationItemType.slash,

@@ -8,7 +8,7 @@ import Pagination from '../Pagination';
 describe('Pagination Snapshots tests', () => {
   it('should match basic snapshot', () => {
     expect(
-      render(<Pagination currentPage={5} totalPages={10} />),
+      render(<Pagination currentPage={1} totalPages={1} />),
     ).toMatchSnapshot();
 
     expect(
@@ -16,7 +16,51 @@ describe('Pagination Snapshots tests', () => {
     ).toMatchSnapshot();
 
     expect(
+      render(<Pagination currentPage={2} totalPages={10} />),
+    ).toMatchSnapshot();
+
+    expect(
+      render(<Pagination currentPage={3} totalPages={10} />),
+    ).toMatchSnapshot();
+
+    expect(
+      render(<Pagination currentPage={5} totalPages={10} />),
+    ).toMatchSnapshot();
+
+    expect(
+      render(<Pagination currentPage={7} totalPages={10} />),
+    ).toMatchSnapshot();
+
+    expect(
+      render(<Pagination currentPage={8} totalPages={10} />),
+    ).toMatchSnapshot();
+
+    expect(
+      render(<Pagination currentPage={9} totalPages={10} />),
+    ).toMatchSnapshot();
+
+    expect(
       render(<Pagination currentPage={10} totalPages={10} />),
+    ).toMatchSnapshot();
+
+    expect(
+      render(<Pagination currentPage={1} totalPages={4} />),
+    ).toMatchSnapshot();
+
+    expect(
+      render(<Pagination currentPage={2} totalPages={4} />),
+    ).toMatchSnapshot();
+
+    expect(
+      render(<Pagination currentPage={3} totalPages={4} />),
+    ).toMatchSnapshot();
+
+    expect(
+      render(<Pagination currentPage={4} totalPages={4} />),
+    ).toMatchSnapshot();
+
+    expect(
+      render(<Pagination currentPage={1} totalPages={10} />),
     ).toMatchSnapshot();
   });
 

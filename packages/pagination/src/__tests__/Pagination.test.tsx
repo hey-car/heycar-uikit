@@ -28,13 +28,16 @@ describe('Pagination', () => {
   });
 
   describe('Basic rendering', () => {
-    it('should render all items with correct content', () => {
-      const { getByTestId } = render(
-        <Pagination currentPage={5} totalPages={10} />,
-      );
+    it('should render 1 item component correctly', () => {
+      render(<Pagination currentPage={1} totalPages={1} />);
+      expect(screen.queryByText('1')).toBeInTheDocument();
+    });
 
-      expect(getByTestId('ChevronLeftIcon')).toBeVisible();
-      expect(getByTestId('ChevronRightIcon')).toBeVisible();
+    it('should render all items with correct content', () => {
+      render(<Pagination currentPage={5} totalPages={10} />);
+
+      expect(screen.getByTestId('ChevronLeftIcon')).toBeVisible();
+      expect(screen.getByTestId('ChevronRightIcon')).toBeVisible();
       expect(screen.queryByText('1')).toBeInTheDocument();
       expect(screen.queryByText('2')).not.toBeInTheDocument();
       expect(screen.queryByText('3')).not.toBeInTheDocument();
