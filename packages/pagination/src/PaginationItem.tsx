@@ -38,21 +38,18 @@ export const PaginationItem: PropsBasedOnComponent<
           <Typography variant="subheading2">{page}</Typography>
         </Component>
       );
-      break;
     case paginationItemType.ellipsis:
       return (
         <Typography className={styles.ellipsis} variant="subheading2">
           {'...'}
         </Typography>
       );
-      break;
     case paginationItemType.slash:
       return (
         <Typography className={styles.slash} variant="subheading2">
           {'/'}
         </Typography>
       );
-      break;
     case paginationItemType.previous:
       return (
         <Component
@@ -63,7 +60,6 @@ export const PaginationItem: PropsBasedOnComponent<
           <ChevronLeft />
         </Component>
       );
-      break;
     case paginationItemType.next:
       return (
         <Component
@@ -74,8 +70,5 @@ export const PaginationItem: PropsBasedOnComponent<
           <ChevronRight />
         </Component>
       );
-      break;
   }
-
-  return null;
 };
