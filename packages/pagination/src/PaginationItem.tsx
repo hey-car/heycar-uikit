@@ -25,11 +25,10 @@ export const PaginationItem: PropsBasedOnComponent<
   ...rest
 }) => {
   const Component = component;
-  let componentToRender;
 
   switch (type) {
     case paginationItemType.page:
-      componentToRender = (
+      return (
         <Component
           className={cn(styles.itemNumber, isCurrentPage && styles.currentPage)}
           {...rest}
@@ -41,21 +40,21 @@ export const PaginationItem: PropsBasedOnComponent<
       );
       break;
     case paginationItemType.ellipsis:
-      componentToRender = (
+      return (
         <Typography className={styles.ellipsis} variant="subheading2">
           {'...'}
         </Typography>
       );
       break;
     case paginationItemType.slash:
-      componentToRender = (
+      return (
         <Typography className={styles.slash} variant="subheading2">
           {'/'}
         </Typography>
       );
       break;
     case paginationItemType.previous:
-      componentToRender = (
+      return (
         <Component
           className={cn(styles.arrow, isDisabled && styles.disabled)}
           {...rest}
@@ -66,7 +65,7 @@ export const PaginationItem: PropsBasedOnComponent<
       );
       break;
     case paginationItemType.next:
-      componentToRender = (
+      return (
         <Component
           className={cn(styles.arrow, isDisabled && styles.disabled)}
           {...rest}
@@ -78,5 +77,5 @@ export const PaginationItem: PropsBasedOnComponent<
       break;
   }
 
-  return componentToRender;
+  return null;
 };
