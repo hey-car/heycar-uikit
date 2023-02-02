@@ -198,7 +198,6 @@ module.exports = {
     ],
 
     // typescript
-    // '@typescript-eslint/indent': 0,
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/array-type': [
