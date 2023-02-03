@@ -176,7 +176,7 @@ Object {
 `;
 
 exports[`Dropdown Snapshots tests should match disabled state 1`] = `
-<Dropdown
+<ForwardRef
   disabled={true}
   onChange={[Function]}
   options={
