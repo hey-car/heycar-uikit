@@ -22,7 +22,7 @@ const Dropdown = React.forwardRef<HTMLSelectElement, DropdownProps>(
     },
     ref,
   ) => {
-    const [stateValue, setStateValue] = useState<SelectOptions | undefined>(
+    const [selectedOption, setSelectedOption] = useState<SelectOptions | undefined>(
       value,
     );
 
@@ -30,13 +30,13 @@ const Dropdown = React.forwardRef<HTMLSelectElement, DropdownProps>(
 
     const selectOption = (option: SelectOptions) => {
       if (onChange) {
-        if (option !== stateValue) onChange(option);
+        if (option !== selectedOption) onChange(option);
       }
-      setStateValue(option);
+      setSelectedOption(option);
     };
 
     const isOptionSelection = (option: SelectOptions) => {
-      return option?.value === stateValue?.value;
+      return option?.value === selectedOption?.value;
     };
 
     const onClickHandler = () => {
@@ -71,7 +71,7 @@ const Dropdown = React.forwardRef<HTMLSelectElement, DropdownProps>(
         tabIndex={0}
         {...restProps}
       >
-        <span className={valueClassNames}>{stateValue?.label}</span>
+        {selectedOption?.label && <span className={valueClassNames}>{selectedOption.label}</span>}
         <div className={arrowClassNames}></div>
         <ul
           className={`${styles.options} ${isOpen ? styles.show : ''}`}
