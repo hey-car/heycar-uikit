@@ -12,11 +12,12 @@ export const Typography: React.FC<TypographyProps> = ({
   Component = defaultVariantMapping[variant],
   children,
   dataTestId,
+  ...restProps
 }) => {
   const classNames = cn(styles.typography, styles[variant], className);
 
   return (
-    <Component className={classNames} data-test-id={dataTestId}>
+    <Component className={classNames} data-test-id={dataTestId} {...restProps}>
       {children}
     </Component>
   );
