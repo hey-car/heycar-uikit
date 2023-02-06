@@ -1,3 +1,10 @@
+# [4.2.0](https://github.com/hey-car/heycar-uikit/compare/v4.1.0...v4.2.0) (2023-02-06)
+
+
+### Features
+
+* **typography:** extend typography component to accept html props ([#136](https://github.com/hey-car/heycar-uikit/issues/136)) ([70a614a](https://github.com/hey-car/heycar-uikit/commit/70a614aacceb891eb853227229c36577b4b8c5c3))
+
 # [4.1.0](https://github.com/hey-car/heycar-uikit/compare/v4.0.1...v4.1.0) (2023-02-06)
 
 
