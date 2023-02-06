@@ -1,3 +1,10 @@
+# [4.1.0](https://github.com/hey-car/heycar-uikit/compare/v4.0.1...v4.1.0) (2023-02-06)
+
+
+### Features
+
+* **typography:** extend component by allowing restProps ([#135](https://github.com/hey-car/heycar-uikit/issues/135)) ([2d34947](https://github.com/hey-car/heycar-uikit/commit/2d34947410c59462325e9ff31e54b97e10dbd265))
+
 ## [4.0.1](https://github.com/hey-car/heycar-uikit/compare/v4.0.0...v4.0.1) (2023-01-30)
 
 
