@@ -45,7 +45,6 @@ module.exports = {
   },
   rules: {
     '@typescript-eslint/naming-convention': [
-      // TODO: switch to error
       'error',
       {
         selector: 'variable',
@@ -93,7 +92,7 @@ module.exports = {
       },
       {
         selector: ['enum', 'enumMember'],
-        format: ['strictCamelCase'],
+        format: ['PascalCase'],
       },
     ],
     quotes: ['error', 'single', { avoidEscape: true }],
