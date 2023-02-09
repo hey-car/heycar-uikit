@@ -1,16 +1,15 @@
-import {
-  ariaLabelType,
-  DefaultGetItemAriaLabelProps,
-} from '../Pagination.types';
+import { AriaLabelType, GetItemAriaLabel } from '../Pagination.types';
 
-export default function defaultGetItemAriaLabel({
+const defaultGetItemAriaLabel: GetItemAriaLabel = ({
   type,
   page,
-  selected,
-}: DefaultGetItemAriaLabelProps) {
-  if (type === ariaLabelType.page) {
-    return `${selected ? '' : 'Go to '}page ${page}`;
+  isSelected,
+}) => {
+  if (type === AriaLabelType.Page) {
+    return `${isSelected ? '' : 'Go to '}page ${page}`;
   }
 
   return `Go to ${type} page`;
-}
+};
+
+export default defaultGetItemAriaLabel;

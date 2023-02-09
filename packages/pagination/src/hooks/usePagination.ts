@@ -1,8 +1,8 @@
 import useBreakpoint from '../../../vars/src/hooks/useBreakpoint.hook';
 import {
   PaginationItemProps,
-  paginationItemType,
-  UsePaginationProps,
+  PaginationItemType,
+  usePaginationArgs,
 } from '../Pagination.types';
 import { getSiblingsToRender } from '../utils/getSiblingsToRender';
 import parseOnClick from '../utils/parseOnClick';
@@ -12,7 +12,7 @@ const usePagination = ({
   onClick,
   currentPage,
   totalPages,
-}: UsePaginationProps) => {
+}: usePaginationArgs) => {
   const { breakpoints } = useBreakpoint();
   const isDesktop = breakpoints.isDesktop;
 
@@ -28,43 +28,43 @@ const usePagination = ({
     ? [
         // Previous button
         {
-          type: paginationItemType.previous,
+          type: PaginationItemType.Previous,
           page: currentPage - 1,
           isDisabled: currentPage === 1,
           onClick: parseOnClick(onClick, currentPage - 1, currentPage === 1),
         },
         // First page
         {
-          type: paginationItemType.page,
+          type: PaginationItemType.Page,
           page: 1,
           isCurrentPage: currentPage === 1,
           onClick: parseOnClick(onClick, 1, false),
         },
         // Ellipsis
         ...shouldReturnObj(shouldShowPreDots, {
-          type: paginationItemType.ellipsis,
+          type: PaginationItemType.Ellipsis,
         }),
         // Siblings
         ...siblingsToRender.map(page => ({
-          type: paginationItemType.page,
+          type: PaginationItemType.Page,
           page: page,
           isCurrentPage: currentPage === page,
           onClick: parseOnClick(onClick, page, false),
         })),
         // Ellipsis
         ...shouldReturnObj(shouldShowPostDots, {
-          type: paginationItemType.ellipsis,
+          type: PaginationItemType.Ellipsis,
         }),
         // Last Page
         ...shouldReturnObj(totalPages > 1, {
-          type: paginationItemType.page,
+          type: PaginationItemType.Page,
           page: totalPages,
           isCurrentPage: currentPage === totalPages,
           onClick: parseOnClick(onClick, totalPages, false),
         }),
         // Next button
         {
-          type: paginationItemType.next,
+          type: PaginationItemType.Next,
           page: currentPage + 1,
           isDisabled: currentPage === totalPages,
           onClick: parseOnClick(
@@ -77,30 +77,30 @@ const usePagination = ({
     : [
         // Previous button
         {
-          type: paginationItemType.previous,
+          type: PaginationItemType.Previous,
           page: currentPage - 1,
           isDisabled: currentPage === 1,
           onClick: parseOnClick(onClick, currentPage - 1, currentPage === 1),
         },
         // Current page
         ...shouldReturnObj(currentPage !== totalPages || totalPages === 1, {
-          type: paginationItemType.page,
+          type: PaginationItemType.Page,
           page: currentPage,
           onClick: parseOnClick(onClick, currentPage, false),
         }),
         // Slash
         ...shouldReturnObj(currentPage !== totalPages, {
-          type: paginationItemType.slash,
+          type: PaginationItemType.Slash,
         }),
         // Last Page
         ...shouldReturnObj(totalPages > 1, {
-          type: paginationItemType.page,
+          type: PaginationItemType.Page,
           page: totalPages,
           onClick: parseOnClick(onClick, totalPages, false),
         }),
         // Next button
         {
-          type: paginationItemType.next,
+          type: PaginationItemType.Next,
           page: currentPage + 1,
           isDisabled: currentPage === totalPages,
           onClick: parseOnClick(

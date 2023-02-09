@@ -31,33 +31,33 @@ export interface PaginationProps
   /**
    * `getItemAriaLabel` - Function for generation of aria-label of clickable items
    */
-  getItemAriaLabel?: getItemAriaLabelFunction;
+  getItemAriaLabel?: GetItemAriaLabel;
 }
 
-export interface DefaultGetItemAriaLabelProps {
-  type: 'page' | 'next' | 'previous';
+interface GetItemAriaLabelArgs {
+  type: AriaLabelType;
   page: number;
-  selected: boolean;
+  isSelected: boolean;
 }
 
-export type getItemAriaLabelFunction = ({
+export type GetItemAriaLabel = ({
   type,
   page,
-  selected,
-}: DefaultGetItemAriaLabelProps) => string;
+  isSelected,
+}: GetItemAriaLabelArgs) => string;
 
-export enum ariaLabelType {
-  page = 'page',
-  previous = 'previous',
-  next = 'next',
+export enum AriaLabelType {
+  Page = 'page',
+  Previous = 'previous',
+  Next = 'next',
 }
 
-export enum paginationItemType {
-  page = 'page',
-  ellipsis = 'ellipsis',
-  slash = 'slash',
-  previous = 'previous',
-  next = 'next',
+export enum PaginationItemType {
+  Page = 'page',
+  Ellipsis = 'ellipsis',
+  Slash = 'slash',
+  Previous = 'previous',
+  Next = 'next',
 }
 
 export interface PaginationItemProps {
@@ -68,7 +68,7 @@ export interface PaginationItemProps {
   /**
    * Type of item, internal use
    */
-  type: paginationItemType;
+  type: PaginationItemType;
   /**
    * Internal use
    */
@@ -91,6 +91,7 @@ export interface PaginationItemProps {
   onClick?: (itemNumber: number) => void;
 }
 
+// TODO Move this to a shared folder to be used in more components
 /**
  * `PropsBasedOnComponent` - This interface inherits props from a designated Component
  */
@@ -110,8 +111,8 @@ export interface PropsBasedOnComponent<
   ): JSX.Element | null;
 }
 
-export interface UsePaginationProps {
+export type usePaginationArgs = {
   onClick?: CustomOnClick;
   currentPage: number;
   totalPages: number;
-}
+};

@@ -1,26 +1,26 @@
 import {
-  ariaLabelType,
-  getItemAriaLabelFunction,
+  AriaLabelType,
+  GetItemAriaLabel,
   PaginationItemProps,
-  paginationItemType,
+  PaginationItemType,
 } from '../Pagination.types';
 
 export default function generateAriaLabel(
   item: PaginationItemProps,
-  getItemAriaLabel: getItemAriaLabelFunction,
+  getItemAriaLabel: GetItemAriaLabel,
 ) {
   let ariaLabel = undefined;
 
   if (
     item.page ||
     (item.page === 0 &&
-      (item.type === paginationItemType.next ||
-        item.type === paginationItemType.previous))
+      (item.type === PaginationItemType.Next ||
+        item.type === PaginationItemType.Previous))
   ) {
     ariaLabel = getItemAriaLabel({
-      type: item.type as unknown as ariaLabelType,
+      type: item.type as unknown as AriaLabelType,
       page: item.page,
-      selected: item.isCurrentPage ? item.isCurrentPage : false,
+      isSelected: item.isCurrentPage ? item.isCurrentPage : false,
     });
   }
 

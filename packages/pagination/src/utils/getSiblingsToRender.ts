@@ -1,14 +1,14 @@
 export const getSiblingsToRender = (
-  totalPages: number,
+  pagesTotal: number,
   currentPage: number,
 ) => {
   const pages: number[] = [];
 
-  for (let page = 2; page <= totalPages - 1; page += 1) {
+  for (let page = 2; page <= pagesTotal - 1; page += 1) {
     // We start from second page and run until the last but one, since we render them differently
     let numberOfSiblingsToShow = 1;
 
-    if (currentPage === 1 || currentPage === totalPages) {
+    if (currentPage === 1 || currentPage === pagesTotal) {
       numberOfSiblingsToShow = 2;
     }
     if (

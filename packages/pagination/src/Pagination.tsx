@@ -31,7 +31,7 @@ export const Pagination = React.forwardRef<HTMLElement, PaginationProps>(
 
     return (
       <nav
-        aria-label={'Pagination navigation'} // only default value
+        aria-label="Pagination navigation" // only default value
         className={classNames}
         ref={ref}
         {...rest}

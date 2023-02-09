@@ -6,7 +6,7 @@ import Typography from '@heycar-uikit/typography';
 
 import {
   PaginationItemProps,
-  paginationItemType,
+  PaginationItemType,
   PropsBasedOnComponent,
 } from './Pagination.types';
 
@@ -27,7 +27,7 @@ export const PaginationItem: PropsBasedOnComponent<
   const Component = component;
 
   switch (type) {
-    case paginationItemType.page:
+    case PaginationItemType.Page:
       return (
         <Component
           className={cn(styles.itemNumber, isCurrentPage && styles.currentPage)}
@@ -38,19 +38,19 @@ export const PaginationItem: PropsBasedOnComponent<
           <Typography variant="subheading2">{page}</Typography>
         </Component>
       );
-    case paginationItemType.ellipsis:
+    case PaginationItemType.Ellipsis:
       return (
         <Typography className={styles.ellipsis} variant="subheading2">
           {'...'}
         </Typography>
       );
-    case paginationItemType.slash:
+    case PaginationItemType.Slash:
       return (
         <Typography className={styles.slash} variant="subheading2">
           {'/'}
         </Typography>
       );
-    case paginationItemType.previous:
+    case PaginationItemType.Previous:
       return (
         <Component
           className={cn(styles.arrow, isDisabled && styles.disabled)}
@@ -60,7 +60,7 @@ export const PaginationItem: PropsBasedOnComponent<
           <ChevronLeft />
         </Component>
       );
-    case paginationItemType.next:
+    case PaginationItemType.Next:
       return (
         <Component
           className={cn(styles.arrow, isDisabled && styles.disabled)}
@@ -71,4 +71,6 @@ export const PaginationItem: PropsBasedOnComponent<
         </Component>
       );
   }
+
+  return null;
 };
