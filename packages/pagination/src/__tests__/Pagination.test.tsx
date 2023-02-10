@@ -3,7 +3,7 @@ import { fireEvent, render, screen } from '@testing-library/react';
 
 import { Pagination, PaginationItem } from '@heycar-uikit/pagination';
 
-import { getItemAriaLabelFunction } from '../Pagination.types';
+import { GetItemAriaLabel } from '../Pagination.types';
 
 function setWidthDesktop() {
   Object.defineProperty(window, 'innerWidth', {
@@ -94,12 +94,12 @@ describe('Pagination', () => {
     });
 
     it('should render correctly custom generated aria-labels', () => {
-      const getItemAriaLabel: getItemAriaLabelFunction = ({
+      const getItemAriaLabel: GetItemAriaLabel = ({
         type,
         page,
-        selected,
+        isSelected,
       }) => {
-        if (selected) return 'this is selected';
+        if (isSelected) return 'this is selected';
         if (type === 'previous') return 'previous page';
         if (type === 'next') return 'next page';
 
