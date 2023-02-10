@@ -2,7 +2,7 @@ import useBreakpoint from '../../../vars/src/hooks/useBreakpoint.hook';
 import {
   PaginationItemProps,
   PaginationItemType,
-  usePaginationArgs,
+  UsePaginationArgs,
 } from '../Pagination.types';
 import { getSiblingsToRender } from '../utils/getSiblingsToRender';
 import parseOnClick from '../utils/parseOnClick';
@@ -12,7 +12,7 @@ const usePagination = ({
   onClick,
   currentPage,
   totalPages,
-}: usePaginationArgs) => {
+}: UsePaginationArgs) => {
   const { breakpoints } = useBreakpoint();
   const isDesktop = breakpoints.isDesktop;
 

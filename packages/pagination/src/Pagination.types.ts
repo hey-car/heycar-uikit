@@ -111,7 +111,7 @@ export interface PropsBasedOnComponent<
   ): JSX.Element | null;
 }
 
-export type usePaginationArgs = {
+export type UsePaginationArgs = {
   onClick?: CustomOnClick;
   currentPage: number;
   totalPages: number;
