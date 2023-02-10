@@ -1,5 +1,5 @@
 /* eslint-disable prettier/prettier */
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import cn from 'classnames';
 
 import { DropdownProps, SelectOptions } from './Dropdown.types';
@@ -23,13 +23,59 @@ function Dropdown({
   );
 
   const [isOpen, setIsOpen] = useState(false);
+  const [highlightedIndex, setHighlightedIndex] = useState(0);
+  const containerRef = useRef<HTMLDivElement>(null);
 
+  useEffect(() => {
+    if (isOpen) setHighlightedIndex(0);
+  }, [isOpen]);
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const selectOption = (option: SelectOptions) => {
     if (onChange) {
       if (option !== stateValue) onChange(option);
     }
     setStateValue(option);
   };
+
+  useEffect(() => {
+    const handler = (e: KeyboardEvent) => {
+      if (e.target != containerRef.current) return;
+      switch (e.code) {
+        case 'Enter':
+        case 'Space':
+          console.log('enter or space');
+          setIsOpen(prev => !prev);
+          if (isOpen) selectOption(options[highlightedIndex]);
+          break;
+        case 'ArrowUp':
+        case 'ArrowDown': {
+          if (!isOpen) {
+            setIsOpen(true);
+            break;
+          }
+
+          const newValue = highlightedIndex + (e.code === 'ArrowDown' ? 1 : -1);
+
+          if (newValue >= 0 && newValue < options.length) {
+            setHighlightedIndex(newValue);
+          }
+          break;
+        }
+        case 'Escape':
+          setIsOpen(false);
+          break;
+      }
+    };
+
+    containerRef.current?.addEventListener('keydown', handler);
+
+    return () => {
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+      containerRef.current?.removeEventListener('keydown', handler);
+    };
+  }, [isOpen, highlightedIndex, options, selectOption]);
+
 
   const isOptionSelection = (option: SelectOptions) => {
     return option?.value === stateValue?.value;
@@ -77,7 +123,7 @@ function Dropdown({
         className={`${styles.options} ${isOpen ? styles.show : ''}`}
         data-test-id={dataTestId}
       >
-        {options.map(option => (
+        {options.map((option, index) => (
           <li
             className={`${styles.option} ${isOptionSelection(option) ? styles.selected : ''
               }`}
@@ -87,6 +133,7 @@ function Dropdown({
               selectOption(option);
               setIsOpen(false);
             }}
+            onMouseEnter={() => setHighlightedIndex(index)}
           >
             <div className={styles.contentContainer}>
               {option.leftContent && (
