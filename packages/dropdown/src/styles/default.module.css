@@ -92,6 +92,7 @@
 }
 
 .option.highlighted {
+  color: var(--option-text-color);
   background-color: var(--option-background-color);
 }
 

@@ -44,7 +44,6 @@ function Dropdown({
       switch (e.code) {
         case 'Enter':
         case 'Space':
-          console.log('enter or space');
           setIsOpen(prev => !prev);
           if (isOpen) selectOption(options[highlightedIndex]);
           break;
@@ -112,6 +111,7 @@ function Dropdown({
       className={classNames}
       onBlur={onBlurHandler}
       onClick={onClickHandler}
+      ref={containerRef}
       tabIndex={0}
       {...restProps}
     >
@@ -126,7 +126,7 @@ function Dropdown({
         {options.map((option, index) => (
           <li
             className={`${styles.option} ${isOptionSelection(option) ? styles.selected : ''
-              }`}
+              } ${index === highlightedIndex ? styles.highlighted : ''}`}
             key={option.value}
             onClick={e => {
               e.stopPropagation();
