@@ -8,7 +8,7 @@ export const getSiblingsToRender = (
     // We start from second page and run until the last but one, since we render them differently
     let numberOfSiblingsToShow = 1;
 
-    if (currentPage === 1 || currentPage === pagesTotal) {
+    if ([1, pagesTotal].includes(currentPage)) {
       numberOfSiblingsToShow = 2;
     }
     if (

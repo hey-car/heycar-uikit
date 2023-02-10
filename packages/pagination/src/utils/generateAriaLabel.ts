@@ -1,6 +1,6 @@
 import {
-  AriaLabelType,
   GetItemAriaLabel,
+  PaginationItemAriaLabelType,
   PaginationItemProps,
   PaginationItemType,
 } from '../Pagination.types';
@@ -18,7 +18,7 @@ export default function generateAriaLabel(
         item.type === PaginationItemType.Previous))
   ) {
     ariaLabel = getItemAriaLabel({
-      type: item.type as unknown as AriaLabelType,
+      type: item.type as unknown as PaginationItemAriaLabelType,
       page: item.page,
       isSelected: item.isCurrentPage ? item.isCurrentPage : false,
     });

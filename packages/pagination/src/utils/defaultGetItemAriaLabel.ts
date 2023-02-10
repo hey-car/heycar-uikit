@@ -1,11 +1,14 @@
-import { AriaLabelType, GetItemAriaLabel } from '../Pagination.types';
+import {
+  GetItemAriaLabel,
+  PaginationItemAriaLabelType,
+} from '../Pagination.types';
 
 const defaultGetItemAriaLabel: GetItemAriaLabel = ({
   type,
   page,
   isSelected,
 }) => {
-  if (type === AriaLabelType.Page) {
+  if (type === PaginationItemAriaLabelType.Page) {
     return `${isSelected ? '' : 'Go to '}page ${page}`;
   }
 

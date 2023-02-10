@@ -35,7 +35,7 @@ export interface PaginationProps
 }
 
 interface GetItemAriaLabelArgs {
-  type: AriaLabelType;
+  type: PaginationItemAriaLabelType;
   page: number;
   isSelected: boolean;
 }
@@ -46,7 +46,7 @@ export type GetItemAriaLabel = ({
   isSelected,
 }: GetItemAriaLabelArgs) => string;
 
-export enum AriaLabelType {
+export enum PaginationItemAriaLabelType {
   Page = 'page',
   Previous = 'previous',
   Next = 'next',
