@@ -20,6 +20,7 @@ const usePagination = ({
   onClick,
   currentPage,
   totalPages,
+  locale,
 }: UsePaginationArgs) => {
   const { breakpoints } = useBreakpoint();
   const isDesktop = breakpoints.isDesktop;
@@ -31,6 +32,13 @@ const usePagination = ({
     currentPage < totalPages - 3;
 
   const siblingsToRender = getSiblingsToRender(totalPages, currentPage);
+
+  const getGotoPageLabel = (page: number) => {
+    return locale.goto.replace('#{page}', page.toString());
+  };
+  const getPageLabel = (page: number) => {
+    return locale.page.replace('#{page}', page.toString());
+  };
 
   const items: PaginationItemProps[] = isDesktop
     ? [
@@ -44,6 +52,7 @@ const usePagination = ({
             pageNumber: currentPage - 1,
             isDisabled: currentPage === 1,
           }),
+          'aria-label': locale.prevPage,
         },
         // First page
         {
@@ -51,6 +60,7 @@ const usePagination = ({
           page: 1,
           isCurrentPage: currentPage === 1,
           onClick: parseOnClick({ onClick, pageNumber: 1, isDisabled: false }),
+          'aria-label': getGotoPageLabel(1),
         },
         // Ellipsis
         ...shouldReturnObj(shouldShowPreDots, {
@@ -66,6 +76,7 @@ const usePagination = ({
             pageNumber: page,
             isDisabled: false,
           }),
+          'aria-label': getGotoPageLabel(page),
         })),
         // Ellipsis
         ...shouldReturnObj(shouldShowPostDots, {
@@ -81,6 +92,7 @@ const usePagination = ({
             pageNumber: totalPages,
             isDisabled: false,
           }),
+          'aria-label': getGotoPageLabel(totalPages),
         }),
         // Next button
         {
@@ -92,6 +104,7 @@ const usePagination = ({
             pageNumber: currentPage + 1,
             isDisabled: currentPage === totalPages,
           }),
+          'aria-label': locale.nextPage,
         },
       ]
     : [
@@ -105,6 +118,7 @@ const usePagination = ({
             pageNumber: currentPage - 1,
             isDisabled: currentPage === 1,
           }),
+          'aria-label': locale.prevPage,
         },
         // Current page
         ...shouldReturnObj(currentPage !== totalPages || totalPages === 1, {
@@ -115,6 +129,7 @@ const usePagination = ({
             pageNumber: currentPage,
             isDisabled: false,
           }),
+          'aria-label': getPageLabel(currentPage),
         }),
         // Slash
         ...shouldReturnObj(currentPage !== totalPages, {
@@ -129,6 +144,7 @@ const usePagination = ({
             pageNumber: totalPages,
             isDisabled: false,
           }),
+          'aria-label': getGotoPageLabel(totalPages),
         }),
         // Next button
         {
@@ -140,6 +156,7 @@ const usePagination = ({
             pageNumber: currentPage + 1,
             isDisabled: currentPage === totalPages,
           }),
+          'aria-label': locale.nextPage,
         },
       ];
 

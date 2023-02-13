@@ -2,8 +2,7 @@ import React from 'react';
 import cn from 'classnames';
 
 import usePagination from './hooks/usePagination';
-import defaultGetItemAriaLabel from './utils/defaultGetItemAriaLabel';
-import generateAriaLabel from './utils/generateAriaLabel';
+import LOCALE from './locale/default';
 import { PaginationItemProps, PaginationProps } from './Pagination.types';
 import { PaginationItem } from './PaginationItem';
 
@@ -16,7 +15,7 @@ export const Pagination = React.forwardRef<HTMLElement, PaginationProps>(
       currentPage,
       onClick,
       renderItem = (item: PaginationItemProps) => <PaginationItem {...item} />,
-      getItemAriaLabel = defaultGetItemAriaLabel,
+      locale = LOCALE,
       className,
       ...rest
     },
@@ -27,11 +26,11 @@ export const Pagination = React.forwardRef<HTMLElement, PaginationProps>(
       onClick,
       totalPages,
       currentPage,
+      locale,
     });
 
     return (
       <nav
-        aria-label="Pagination navigation" // only default value
         className={classNames}
         ref={ref}
         {...rest}
@@ -40,7 +39,6 @@ export const Pagination = React.forwardRef<HTMLElement, PaginationProps>(
           {items.map(item => (
             <li>
               {renderItem({
-                'aria-label': generateAriaLabel(item, getItemAriaLabel),
                 ...item,
               })}
             </li>

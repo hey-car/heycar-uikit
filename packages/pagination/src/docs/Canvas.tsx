@@ -45,19 +45,24 @@ export const PaginationCanvas = () => {
       />
       <Pagination
         currentPage={3}
-        getItemAriaLabel={({ type, pageNumber, isSelected }) => {
-          console.log({ type, pageNumber: page, isSelected });
-
-          return 'Test: Go to Page ' + pageNumber;
-        }}
         onClick={itemNumber => console.log({ lol: 'ues', itemNumber })}
         totalPages={3}
       />
       <Pagination
-        aria-label={'laaaabel'}
+        aria-label={'Pagination navigation'}
         currentPage={8}
         renderItem={item => <PaginationItem component={'a'} {...item} />}
         totalPages={10}
+      />
+      <Pagination
+        currentPage={80}
+        locale={{
+          page: 'Pagina',
+          goto: 'Ga naar ${page} pagina ',
+          prevPage: 'Vorige pagina',
+          nextPage: 'Volgende pagina',
+        }}
+        totalPages={100}
       />
     </div>
   );

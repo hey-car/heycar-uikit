@@ -1,4 +1,5 @@
 import React from 'react';
+import {PaginationLocaleStrings} from "./locale/default";
 
 export type CustomOnClick = (page: number) => void;
 
@@ -20,11 +21,10 @@ export interface PaginationProps
    * `onClick` - template function for onClick event of items
    */
   onClick?: CustomOnClick;
-  /**
-   * `getItemAriaLabel` - Function for generation of aria-label of clickable items
-   */
-  getItemAriaLabel?: GetItemAriaLabel;
+
+  locale?: PaginationLocaleStrings;
 }
+
 
 interface GetItemAriaLabelArgs {
   type: PaginationItemAriaLabelType;
@@ -107,6 +107,7 @@ export type UsePaginationArgs = {
   onClick?: CustomOnClick;
   currentPage: number;
   totalPages: number;
+  locale: PaginationLocaleStrings;
 };
 
 export interface ParseOnClickArgs {
