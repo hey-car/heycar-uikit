@@ -1,4 +1,3 @@
-import useBreakpoint from '../../../vars/src/hooks/useBreakpoint.hook';
 import {
   PaginationItemProps,
   PaginationItemType,
@@ -6,6 +5,8 @@ import {
 } from '../Pagination.types';
 import { getSiblingsToRender } from '../utils/getSiblingsToRender';
 import parseOnClick from '../utils/parseOnClick';
+
+import useBreakpoint from './useBreakpoint.hook';
 
 const shouldReturnObj = (condition: boolean, obj: PaginationItemProps) => {
   if (condition) {
@@ -60,7 +61,11 @@ const usePagination = ({
           type: PaginationItemType.PageNumber,
           page: page,
           isCurrentPage: currentPage === page,
-          onClick: parseOnClick({ onClick, pageNumber: page, isDisabled: false }),
+          onClick: parseOnClick({
+            onClick,
+            pageNumber: page,
+            isDisabled: false,
+          }),
         })),
         // Ellipsis
         ...shouldReturnObj(shouldShowPostDots, {

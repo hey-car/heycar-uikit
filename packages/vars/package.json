@@ -3,6 +3,7 @@
   "version": "1.6.0",
   "description": "HeyCar-UIKit css vars",
   "keywords": [],
+  "main": "dist/index.js",
   "style": "index.css",
   "publishConfig": {
     "access": "public",

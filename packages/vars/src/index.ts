@@ -1,1 +1,1 @@
-export { default } from './hooks/useBreakpoint.hook';
+export { default } from './breakpoints';

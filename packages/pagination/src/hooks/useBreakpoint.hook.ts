@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import breakpointsData from '../breakpoints.json';
+import BREAKPOINTS from '@heycar-uikit/vars/src/breakpoints';
 
 export const defaultBreakpoints = {
   isMobile: false,
@@ -22,10 +22,10 @@ function useBreakpoint() {
       setWidth(window.innerWidth);
 
       // Desktop
-      if (window.innerWidth >= breakpointsData['breakpoint-desktop']) {
+      if (window.innerWidth >= BREAKPOINTS['breakpoint-desktop']) {
         if (
-          window.innerWidth >= breakpointsData['breakpoint-desktop-s'] &&
-          window.innerWidth < breakpointsData['breakpoint-desktop-m']
+          window.innerWidth >= BREAKPOINTS['breakpoint-desktop-s'] &&
+          window.innerWidth < BREAKPOINTS['breakpoint-desktop-m']
         ) {
           setBreakpoints({
             ...defaultBreakpoints,
@@ -34,8 +34,8 @@ function useBreakpoint() {
           });
         }
         if (
-          window.innerWidth >= breakpointsData['breakpoint-desktop-m'] &&
-          window.innerWidth < breakpointsData['breakpoint-desktop-l']
+          window.innerWidth >= BREAKPOINTS['breakpoint-desktop-m'] &&
+          window.innerWidth < BREAKPOINTS['breakpoint-desktop-l']
         ) {
           setBreakpoints({
             ...defaultBreakpoints,
@@ -43,7 +43,7 @@ function useBreakpoint() {
             isDesktopM: true,
           });
         }
-        if (window.innerWidth >= breakpointsData['breakpoint-desktop-l']) {
+        if (window.innerWidth >= BREAKPOINTS['breakpoint-desktop-l']) {
           setBreakpoints({
             ...defaultBreakpoints,
             isDesktop: true,
@@ -54,12 +54,12 @@ function useBreakpoint() {
 
       // Tablet
       if (
-        window.innerWidth >= breakpointsData['breakpoint-tablet'] &&
-        window.innerWidth < breakpointsData['breakpoint-desktop']
+        window.innerWidth >= BREAKPOINTS['breakpoint-tablet'] &&
+        window.innerWidth < BREAKPOINTS['breakpoint-desktop']
       ) {
         if (
-          window.innerWidth >= breakpointsData['breakpoint-tablet-s'] &&
-          window.innerWidth < breakpointsData['breakpoint-tablet-l']
+          window.innerWidth >= BREAKPOINTS['breakpoint-tablet-s'] &&
+          window.innerWidth < BREAKPOINTS['breakpoint-tablet-l']
         ) {
           setBreakpoints({
             ...defaultBreakpoints,
@@ -67,7 +67,7 @@ function useBreakpoint() {
             isTabletS: true,
           });
         }
-        if (window.innerWidth >= breakpointsData['breakpoint-tablet-l']) {
+        if (window.innerWidth >= BREAKPOINTS['breakpoint-tablet-l']) {
           setBreakpoints({
             ...defaultBreakpoints,
             isTablet: true,
@@ -77,7 +77,7 @@ function useBreakpoint() {
       }
 
       // Mobile
-      if (window.innerWidth < breakpointsData['breakpoint-mobile']) {
+      if (window.innerWidth < BREAKPOINTS['breakpoint-mobile']) {
         setBreakpoints({
           ...defaultBreakpoints,
           isMobile: true,
