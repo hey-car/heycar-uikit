@@ -10,9 +10,9 @@ import parseOnClick from '../utils/parseOnClick';
 const shouldReturnObj = (condition: boolean, obj: PaginationItemProps) => {
   if (condition) {
     return [obj];
-  } else {
-    return [];
   }
+
+  return [];
 };
 
 const usePagination = ({

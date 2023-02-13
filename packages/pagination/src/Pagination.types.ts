@@ -110,5 +110,5 @@ export interface PropsBasedOnComponent<
 export type UsePaginationArgs = {
   onClick?: CustomOnClick;
   currentPage: number;
-  pagesTotal: number;
+  totalPages: number;
 };
