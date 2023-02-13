@@ -25,10 +25,6 @@ export interface PaginationProps
    */
   onClick?: CustomOnClick;
   /**
-   * `aria-label` - aria-label for root pagination component
-   */
-  'aria-label'?: string;
-  /**
    * `getItemAriaLabel` - Function for generation of aria-label of clickable items
    */
   getItemAriaLabel?: GetItemAriaLabel;
@@ -66,27 +62,27 @@ export interface PaginationItemProps {
    */
   href?: string;
   /**
-   * Type of item, internal use
+   * Type of item. Spread from `renderItem` of `Pagination`
    */
   type: PaginationItemType;
   /**
-   * Internal use
+   * Aria label. Spread from `renderItem` of `Pagination`
    */
   'aria-label'?: string;
   /**
-   * Page number. Internal use
+   * Page number. Spread from `renderItem` of `Pagination`
    */
   page?: number;
   /**
-   * Is this page disabled? Internal use
+   * Is this page disabled? Spread from `renderItem` of `Pagination`
    */
   isDisabled?: boolean;
   /**
-   * Is this page the current one? Internal use
+   * Is this page the current one? Spread from `renderItem` of `Pagination`
    */
   isCurrentPage?: boolean;
   /**
-   * onClick event. Internal use
+   * onClick event. Spread from `renderItem` of `Pagination`
    */
   onClick?: (itemNumber: number) => void;
 }
@@ -114,5 +110,5 @@ export interface PropsBasedOnComponent<
 export type UsePaginationArgs = {
   onClick?: CustomOnClick;
   currentPage: number;
-  totalPages: number;
+  pagesTotal: number;
 };

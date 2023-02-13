@@ -6,7 +6,14 @@ import {
 } from '../Pagination.types';
 import { getSiblingsToRender } from '../utils/getSiblingsToRender';
 import parseOnClick from '../utils/parseOnClick';
-import shouldReturnObj from '../utils/shouldReturnObj';
+
+const shouldReturnObj = (condition: boolean, obj: PaginationItemProps) => {
+  if (condition) {
+    return [obj];
+  } else {
+    return [];
+  }
+};
 
 const usePagination = ({
   onClick,
