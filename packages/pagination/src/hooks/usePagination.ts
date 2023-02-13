@@ -38,14 +38,18 @@ const usePagination = ({
           type: PaginationItemType.Previous,
           page: currentPage - 1,
           isDisabled: currentPage === 1,
-          onClick: parseOnClick(onClick, currentPage - 1, currentPage === 1),
+          onClick: parseOnClick({
+            onClick,
+            pageNumber: currentPage - 1,
+            isDisabled: currentPage === 1,
+          }),
         },
         // First page
         {
-          type: PaginationItemType.Page,
+          type: PaginationItemType.PageNumber,
           page: 1,
           isCurrentPage: currentPage === 1,
-          onClick: parseOnClick(onClick, 1, false),
+          onClick: parseOnClick({ onClick, pageNumber: 1, isDisabled: false }),
         },
         // Ellipsis
         ...shouldReturnObj(shouldShowPreDots, {
@@ -53,10 +57,10 @@ const usePagination = ({
         }),
         // Siblings
         ...siblingsToRender.map(page => ({
-          type: PaginationItemType.Page,
+          type: PaginationItemType.PageNumber,
           page: page,
           isCurrentPage: currentPage === page,
-          onClick: parseOnClick(onClick, page, false),
+          onClick: parseOnClick({ onClick, pageNumber: page, isDisabled: false }),
         })),
         // Ellipsis
         ...shouldReturnObj(shouldShowPostDots, {
@@ -64,21 +68,25 @@ const usePagination = ({
         }),
         // Last Page
         ...shouldReturnObj(totalPages > 1, {
-          type: PaginationItemType.Page,
+          type: PaginationItemType.PageNumber,
           page: totalPages,
           isCurrentPage: currentPage === totalPages,
-          onClick: parseOnClick(onClick, totalPages, false),
+          onClick: parseOnClick({
+            onClick,
+            pageNumber: totalPages,
+            isDisabled: false,
+          }),
         }),
         // Next button
         {
           type: PaginationItemType.Next,
           page: currentPage + 1,
           isDisabled: currentPage === totalPages,
-          onClick: parseOnClick(
+          onClick: parseOnClick({
             onClick,
-            currentPage + 1,
-            currentPage === totalPages,
-          ),
+            pageNumber: currentPage + 1,
+            isDisabled: currentPage === totalPages,
+          }),
         },
       ]
     : [
@@ -87,13 +95,21 @@ const usePagination = ({
           type: PaginationItemType.Previous,
           page: currentPage - 1,
           isDisabled: currentPage === 1,
-          onClick: parseOnClick(onClick, currentPage - 1, currentPage === 1),
+          onClick: parseOnClick({
+            onClick,
+            pageNumber: currentPage - 1,
+            isDisabled: currentPage === 1,
+          }),
         },
         // Current page
         ...shouldReturnObj(currentPage !== totalPages || totalPages === 1, {
-          type: PaginationItemType.Page,
+          type: PaginationItemType.PageNumber,
           page: currentPage,
-          onClick: parseOnClick(onClick, currentPage, false),
+          onClick: parseOnClick({
+            onClick,
+            pageNumber: currentPage,
+            isDisabled: false,
+          }),
         }),
         // Slash
         ...shouldReturnObj(currentPage !== totalPages, {
@@ -101,20 +117,24 @@ const usePagination = ({
         }),
         // Last Page
         ...shouldReturnObj(totalPages > 1, {
-          type: PaginationItemType.Page,
+          type: PaginationItemType.PageNumber,
           page: totalPages,
-          onClick: parseOnClick(onClick, totalPages, false),
+          onClick: parseOnClick({
+            onClick,
+            pageNumber: totalPages,
+            isDisabled: false,
+          }),
         }),
         // Next button
         {
           type: PaginationItemType.Next,
           page: currentPage + 1,
           isDisabled: currentPage === totalPages,
-          onClick: parseOnClick(
+          onClick: parseOnClick({
             onClick,
-            currentPage + 1,
-            currentPage === totalPages,
-          ),
+            pageNumber: currentPage + 1,
+            isDisabled: currentPage === totalPages,
+          }),
         },
       ];
 

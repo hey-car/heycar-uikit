@@ -96,14 +96,14 @@ describe('Pagination', () => {
     it('should render correctly custom generated aria-labels', () => {
       const getItemAriaLabel: GetItemAriaLabel = ({
         type,
-        page,
+        pageNumber,
         isSelected,
       }) => {
         if (isSelected) return 'this is selected';
         if (type === 'previous') return 'previous page';
         if (type === 'next') return 'next page';
 
-        return 'Page number ' + page;
+        return 'Page number ' + pageNumber;
       };
 
       render(

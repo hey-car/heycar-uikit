@@ -9,20 +9,17 @@ export default function generateAriaLabel(
   item: PaginationItemProps,
   getItemAriaLabel: GetItemAriaLabel,
 ) {
-  let ariaLabel = undefined;
-
   if (
-    item.page ||
-    (item.page === 0 &&
-      (item.type === PaginationItemType.Next ||
-        item.type === PaginationItemType.Previous))
+    item.type === PaginationItemType.PageNumber ||
+    item.type === PaginationItemType.Next ||
+    item.type === PaginationItemType.Previous
   ) {
-    ariaLabel = getItemAriaLabel({
+    return getItemAriaLabel({
       type: item.type as unknown as PaginationItemAriaLabelType,
-      page: item.page,
+      pageNumber: item.page ?? 0,
       isSelected: item.isCurrentPage ? item.isCurrentPage : false,
     });
   }
 
-  return ariaLabel;
+  return undefined;
 }

@@ -45,10 +45,10 @@ export const PaginationCanvas = () => {
       />
       <Pagination
         currentPage={3}
-        getItemAriaLabel={({ type, page, isSelected }) => {
-          console.log({ type, page, isSelected });
+        getItemAriaLabel={({ type, pageNumber, isSelected }) => {
+          console.log({ type, pageNumber: page, isSelected });
 
-          return 'Test: Go to Page ' + page;
+          return 'Test: Go to Page ' + pageNumber;
         }}
         onClick={itemNumber => console.log({ lol: 'ues', itemNumber })}
         totalPages={3}

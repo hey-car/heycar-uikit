@@ -5,11 +5,11 @@ import {
 
 const defaultGetItemAriaLabel: GetItemAriaLabel = ({
   type,
-  page,
+  pageNumber,
   isSelected,
 }) => {
-  if (type === PaginationItemAriaLabelType.Page) {
-    return `${isSelected ? '' : 'Go to '}page ${page}`;
+  if (type === PaginationItemAriaLabelType.PageNumber) {
+    return `${isSelected ? '' : 'Go to '}page ${pageNumber}`;
   }
 
   return `Go to ${type} page`;

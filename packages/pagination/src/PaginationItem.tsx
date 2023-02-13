@@ -27,7 +27,7 @@ export const PaginationItem: PropsBasedOnComponent<
   const Component = component;
 
   switch (type) {
-    case PaginationItemType.Page:
+    case PaginationItemType.PageNumber:
       return (
         <Component
           className={cn(styles.itemNumber, isCurrentPage && styles.currentPage)}

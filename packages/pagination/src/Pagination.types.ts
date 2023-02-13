@@ -5,10 +5,6 @@ export type CustomOnClick = (page: number) => void;
 export interface PaginationProps
   extends Omit<React.HTMLAttributes<HTMLElement>, 'onClick'> {
   /**
-   * `className` - additional styles, like color
-   */
-  className?: string;
-  /**
    * `totalPages` - total number of pages
    */
   totalPages: number;
@@ -32,24 +28,24 @@ export interface PaginationProps
 
 interface GetItemAriaLabelArgs {
   type: PaginationItemAriaLabelType;
-  page: number;
+  pageNumber: number;
   isSelected: boolean;
 }
 
 export type GetItemAriaLabel = ({
   type,
-  page,
+  pageNumber,
   isSelected,
 }: GetItemAriaLabelArgs) => string;
 
 export enum PaginationItemAriaLabelType {
-  Page = 'page',
+  PageNumber = 'pageNumber',
   Previous = 'previous',
   Next = 'next',
 }
 
 export enum PaginationItemType {
-  Page = 'page',
+  PageNumber = 'pageNumber',
   Ellipsis = 'ellipsis',
   Slash = 'slash',
   Previous = 'previous',
@@ -112,3 +108,9 @@ export type UsePaginationArgs = {
   currentPage: number;
   totalPages: number;
 };
+
+export interface ParseOnClickArgs {
+  onClick?: CustomOnClick;
+  pageNumber: number;
+  isDisabled: boolean;
+}
