@@ -1,6 +1,6 @@
 import React from 'react';
 
-export type SelectOptions = {
+export type DropdownOptionProps = {
   /**
    * labels of options
    */
@@ -23,7 +23,7 @@ export type DropdownProps = {
   /**
    * list of options to show in dropdown
    */
-  options: SelectOptions[];
+  options: DropdownOptionProps[];
   /**
    * onClick method callback upon dropdown click
    */
@@ -35,11 +35,11 @@ export type DropdownProps = {
   /**
    * onChange method callback upon option change
    */
-  onChange?: (value: SelectOptions | undefined) => void;
+  onChange?: (value: DropdownOptionProps | undefined) => void;
   /**
    * for setting default value.
    */
-  value?: SelectOptions;
+  value?: DropdownOptionProps;
   /**
    * boolean prop to set disabled state.
    */

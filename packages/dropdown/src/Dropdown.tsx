@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import cn from 'classnames';
 
-import { DropdownProps, SelectOptions } from './Dropdown.types';
+import { DropdownOptionProps, DropdownProps } from './Dropdown.types';
 
 import styles from './styles/default.module.css';
 
@@ -18,7 +18,7 @@ function Dropdown({
   fullWidth,
   ...restProps
 }: DropdownProps) {
-  const [stateValue, setStateValue] = useState<SelectOptions | undefined>(
+  const [stateValue, setStateValue] = useState<DropdownOptionProps | undefined>(
     value,
   );
 
@@ -26,12 +26,8 @@ function Dropdown({
   const [highlightedIndex, setHighlightedIndex] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    if (isOpen) setHighlightedIndex(0);
-  }, [isOpen]);
-
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  const selectOption = (option: SelectOptions) => {
+  const selectOption = (option: DropdownOptionProps) => {
     if (onChange) {
       if (option !== stateValue) onChange(option);
     }
@@ -39,6 +35,8 @@ function Dropdown({
   };
 
   useEffect(() => {
+    if (isOpen) setHighlightedIndex(0);
+
     const handler = (e: KeyboardEvent) => {
       if (e.target != containerRef.current) return;
       switch (e.code) {
@@ -76,7 +74,7 @@ function Dropdown({
   }, [isOpen, highlightedIndex, options, selectOption]);
 
 
-  const isOptionSelection = (option: SelectOptions) => {
+  const isOptionSelection = (option: DropdownOptionProps) => {
     return option?.value === stateValue?.value;
   };
 
