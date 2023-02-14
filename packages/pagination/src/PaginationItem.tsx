@@ -71,6 +71,4 @@ export const PaginationItem: PropsBasedOnComponent<
         </Component>
       );
   }
-
-  return null;
 };
