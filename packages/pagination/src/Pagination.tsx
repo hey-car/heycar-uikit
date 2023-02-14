@@ -2,7 +2,7 @@ import React from 'react';
 import cn from 'classnames';
 
 import usePagination from './hooks/usePagination.hook';
-import LOCALE from './locale/default';
+import { DEFAULT_LOCALE } from './locale/default';
 import { PaginationItemProps, PaginationProps } from './Pagination.types';
 import { PaginationItem } from './PaginationItem';
 
@@ -15,7 +15,7 @@ export const Pagination = React.forwardRef<HTMLElement, PaginationProps>(
       currentPage,
       onClick,
       renderItem = (item: PaginationItemProps) => <PaginationItem {...item} />,
-      locale = LOCALE,
+      locale = DEFAULT_LOCALE,
       className,
       ...rest
     },
