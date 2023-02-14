@@ -12,6 +12,26 @@ Without the `component` prop of `PaginationItem`, its component will be either a
 
 If using `PaginationItem`, always spread `item` as shown below.
 
+## Localization
+Localization is done with an object
+
+```tsx live
+render(
+ <Pagination
+    totalPages={12}
+    currentPage={3}
+    locale={
+     {
+        page: 'Page #{page}',
+        goto: 'Go to page #{page}',
+        prevPage: 'Previous page',
+        nextPage: 'Next page',
+      }
+    }
+ />
+);
+```
+
 ## onClick
 Controlling the `Pagination` component with onClick event
 ```tsx live

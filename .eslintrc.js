@@ -53,7 +53,12 @@ module.exports = {
         prefix: ['is', 'has', 'can', 'should', 'will', 'did'],
       },
       {
-        selector: ['variable', 'function'],
+        selector: ['variable'],
+        format: ['camelCase', 'StrictPascalCase', 'UPPER_CASE'],
+        leadingUnderscore: 'allow',
+      },
+      {
+        selector: ['function'],
         format: ['camelCase', 'StrictPascalCase'],
         leadingUnderscore: 'allow',
       },

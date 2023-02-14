@@ -27,10 +27,11 @@
     "access": "public"
   },
   "peerDependencies": {
-    "react": "^17.0.1"
+    "react": "^17.0.2"
   },
   "dependencies": {
     "@heycar-uikit/icons": "^3.0.1",
+    "@heycar-uikit/typography": "^3.2.0",
     "classnames": "^2.3.1"
   },
   "author": "HeyCar Team",

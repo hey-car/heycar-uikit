@@ -19,14 +19,14 @@ export const PaginationItem: PropsBasedOnComponent<
   page,
   isCurrentPage,
   isDisabled,
-  type,
+  itemType,
   onClick,
   component = onClick ? 'button' : 'a',
   ...rest
 }) => {
   const Component = component;
 
-  switch (type) {
+  switch (itemType) {
     case PaginationItemType.PageNumber:
       return (
         <Component

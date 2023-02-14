@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import BREAKPOINTS from '@heycar-uikit/vars/src/breakpoints';
+import { BREAKPOINTS } from '@heycar-uikit/vars';
 
 export const defaultBreakpoints = {
   isMobile: false,
@@ -14,7 +14,7 @@ export const defaultBreakpoints = {
 };
 
 function useBreakpoint() {
-  const [width, setWidth] = useState<number>(0);
+  const [width, setWidth] = useState(0);
   const [breakpoints, setBreakpoints] = useState(defaultBreakpoints);
 
   useEffect(() => {

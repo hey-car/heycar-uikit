@@ -1,4 +1,4 @@
-const BREAKPOINTS = {
+export const BREAKPOINTS = {
   'breakpoint-mobile': 767,
   'breakpoint-tablet': 768,
   'breakpoint-tablet-s': 768,
@@ -8,5 +8,3 @@ const BREAKPOINTS = {
   'breakpoint-desktop-m': 1366,
   'breakpoint-desktop-l': 1440,
 } as const;
-
-export default BREAKPOINTS;

@@ -3,7 +3,7 @@ import { fireEvent, render, screen } from '@testing-library/react';
 
 import { Pagination, PaginationItem } from '@heycar-uikit/pagination';
 
-import { GetItemAriaLabel } from '../Pagination.types';
+import { PaginationLocaleStrings } from '../locale/default';
 
 function setWidthDesktop() {
   Object.defineProperty(window, 'innerWidth', {
@@ -93,31 +93,20 @@ describe('Pagination', () => {
       );
     });
 
-    it('should render correctly custom generated aria-labels', () => {
-      const getItemAriaLabel: GetItemAriaLabel = ({
-        type,
-        pageNumber,
-        isSelected,
-      }) => {
-        if (isSelected) return 'this is selected';
-        if (type === 'previous') return 'previous page';
-        if (type === 'next') return 'next page';
-
-        return 'Page number ' + pageNumber;
+    it('should render correctly custom locale', () => {
+      const locale: PaginationLocaleStrings = {
+        page: 'Page #{page}',
+        goto: 'Go to page #{page}',
+        prevPage: 'Previous page',
+        nextPage: 'Next page',
       };
 
-      render(
-        <Pagination
-          currentPage={5}
-          getItemAriaLabel={getItemAriaLabel}
-          totalPages={10}
-        />,
-      );
-      expect(screen.getByLabelText('this is selected')).toBeInTheDocument();
-      expect(screen.getByLabelText('previous page')).toBeInTheDocument();
-      expect(screen.getByLabelText('next page')).toBeInTheDocument();
-      expect(screen.queryByLabelText('Page number 5')).not.toBeInTheDocument();
-      expect(screen.getByLabelText('Page number 6')).toBeInTheDocument();
+      render(<Pagination currentPage={5} locale={locale} totalPages={10} />);
+      expect(screen.getByLabelText('Page 5')).toBeInTheDocument();
+      expect(screen.getByLabelText('Previous page')).toBeInTheDocument();
+      expect(screen.getByLabelText('Next page')).toBeInTheDocument();
+      expect(screen.queryByLabelText('Go to page 5')).not.toBeInTheDocument();
+      expect(screen.getByLabelText('Go to page 6')).toBeInTheDocument();
     });
   });
 

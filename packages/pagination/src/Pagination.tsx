@@ -1,7 +1,7 @@
 import React from 'react';
 import cn from 'classnames';
 
-import usePagination from './hooks/usePagination';
+import usePagination from './hooks/usePagination.hook';
 import LOCALE from './locale/default';
 import { PaginationItemProps, PaginationProps } from './Pagination.types';
 import { PaginationItem } from './PaginationItem';
@@ -30,11 +30,7 @@ export const Pagination = React.forwardRef<HTMLElement, PaginationProps>(
     });
 
     return (
-      <nav
-        className={classNames}
-        ref={ref}
-        {...rest}
-      >
+      <nav className={classNames} ref={ref} {...rest}>
         <ul>
           {items.map(item => (
             <li>

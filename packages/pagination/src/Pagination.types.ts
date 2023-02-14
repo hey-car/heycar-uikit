@@ -1,5 +1,6 @@
 import React from 'react';
-import {PaginationLocaleStrings} from "./locale/default";
+
+import { PaginationLocaleStrings } from './locale/default';
 
 export type CustomOnClick = (page: number) => void;
 
@@ -21,10 +22,11 @@ export interface PaginationProps
    * `onClick` - template function for onClick event of items
    */
   onClick?: CustomOnClick;
-
+  /**
+   * `locale` - Object with localized strings
+   */
   locale?: PaginationLocaleStrings;
 }
-
 
 interface GetItemAriaLabelArgs {
   type: PaginationItemAriaLabelType;
@@ -60,7 +62,7 @@ export interface PaginationItemProps {
   /**
    * Type of item. Spread from `renderItem` of `Pagination`
    */
-  type: PaginationItemType;
+  itemType: PaginationItemType;
   /**
    * Aria label. Spread from `renderItem` of `Pagination`
    */
