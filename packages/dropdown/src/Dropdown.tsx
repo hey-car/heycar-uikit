@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import cn from 'classnames';
 
 import { DropdownOptionProps, DropdownProps } from './Dropdown.types';
+import DropdownOption from './DropdownOption';
 
 import styles from './styles/default.module.css';
 
@@ -36,7 +37,9 @@ function Dropdown({
 
   useEffect(() => {
     if (isOpen) setHighlightedIndex(0);
+  }, [isOpen]);
 
+  useEffect(() => {
     const handler = (e: KeyboardEvent) => {
       if (e.target != containerRef.current) return;
       switch (e.code) {
@@ -71,7 +74,8 @@ function Dropdown({
       // eslint-disable-next-line react-hooks/exhaustive-deps
       containerRef.current?.removeEventListener('keydown', handler);
     };
-  }, [isOpen, highlightedIndex, options, selectOption]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [highlightedIndex, options, selectOption]);
 
 
   const isOptionSelection = (option: DropdownOptionProps) => {
@@ -133,17 +137,7 @@ function Dropdown({
             }}
             onMouseEnter={() => setHighlightedIndex(index)}
           >
-            <div className={styles.contentContainer}>
-              {option.leftContent && (
-                <span className={styles.leftContent}>{option.leftContent}</span>
-              )}
-              <span className={styles.optionContent}>{option.label}</span>
-              {option.rightContent && (
-                <span className={styles.rightContent}>
-                  {option.rightContent}
-                </span>
-              )}
-            </div>
+            <DropdownOption {...option} />
           </li>
         ))}
       </ul>
