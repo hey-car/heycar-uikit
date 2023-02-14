@@ -3,8 +3,6 @@ import { fireEvent, render, screen } from '@testing-library/react';
 
 import { Pagination, PaginationItem } from '@heycar-uikit/pagination';
 
-import { PaginationLocaleStrings } from '../locale/default';
-
 function setWidthDesktop() {
   Object.defineProperty(window, 'innerWidth', {
     writable: true,
@@ -13,6 +11,7 @@ function setWidthDesktop() {
   });
   global.dispatchEvent(new Event('resize'));
 }
+
 function setWidthMobile() {
   Object.defineProperty(window, 'innerWidth', {
     writable: true,
@@ -77,7 +76,7 @@ describe('Pagination', () => {
       expect(getByLabelText('Go to previous page')).toBeVisible();
       expect(getByLabelText('Go to next page')).toBeVisible();
       expect(getByLabelText('Go to page 6')).toBeVisible();
-      expect(getByLabelText('page 5')).toBeVisible();
+      expect(getByLabelText('Page 5')).toBeVisible();
     });
 
     it('should have aria-current on current page', () => {
@@ -94,7 +93,7 @@ describe('Pagination', () => {
     });
 
     it('should render correctly custom locale', () => {
-      const locale: PaginationLocaleStrings = {
+      const locale = {
         page: 'Page #{page}',
         goto: 'Go to page #{page}',
         prevPage: 'Previous page',

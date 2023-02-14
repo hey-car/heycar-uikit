@@ -1,7 +1,7 @@
 import { act, renderHook } from '@testing-library/react-hooks';
 
 import useBreakpoint, {
-  defaultBreakpoints,
+  RESETTED_BREAKPOINTS,
 } from '../../hooks/useBreakpoint.hook';
 
 function setWidth(width: number) {
@@ -39,7 +39,7 @@ describe('useBreakpoint', () => {
       setWidth(560);
     });
     expect(result.current.breakpoints).toEqual({
-      ...defaultBreakpoints,
+      ...RESETTED_BREAKPOINTS,
       isMobile: true,
     });
 
@@ -47,7 +47,7 @@ describe('useBreakpoint', () => {
       setWidth(768);
     });
     expect(result.current.breakpoints).toEqual({
-      ...defaultBreakpoints,
+      ...RESETTED_BREAKPOINTS,
       isTablet: true,
       isTabletS: true,
     });
@@ -56,7 +56,7 @@ describe('useBreakpoint', () => {
       setWidth(1024);
     });
     expect(result.current.breakpoints).toEqual({
-      ...defaultBreakpoints,
+      ...RESETTED_BREAKPOINTS,
       isTablet: true,
       isTabletL: true,
     });
@@ -65,7 +65,7 @@ describe('useBreakpoint', () => {
       setWidth(1280);
     });
     expect(result.current.breakpoints).toEqual({
-      ...defaultBreakpoints,
+      ...RESETTED_BREAKPOINTS,
       isDesktop: true,
       isDesktopS: true,
     });
@@ -74,7 +74,7 @@ describe('useBreakpoint', () => {
       setWidth(1366);
     });
     expect(result.current.breakpoints).toEqual({
-      ...defaultBreakpoints,
+      ...RESETTED_BREAKPOINTS,
       isDesktop: true,
       isDesktopM: true,
     });
@@ -83,7 +83,7 @@ describe('useBreakpoint', () => {
       setWidth(1440);
     });
     expect(result.current.breakpoints).toEqual({
-      ...defaultBreakpoints,
+      ...RESETTED_BREAKPOINTS,
       isDesktop: true,
       isDesktopL: true,
     });

@@ -2,7 +2,7 @@ import React from 'react';
 import cn from 'classnames';
 
 import usePagination from './hooks/usePagination.hook';
-import { DEFAULT_LOCALE } from './locale/default';
+import { DEFAULT_LOCALE } from './locale/defaultLocale';
 import { PaginationItemProps, PaginationProps } from './Pagination.types';
 import { PaginationItem } from './PaginationItem';
 

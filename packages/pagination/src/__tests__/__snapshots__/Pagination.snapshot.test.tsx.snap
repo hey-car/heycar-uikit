@@ -6,7 +6,6 @@ Object {
   "baseElement": <body>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -32,7 +31,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 1"
+              aria-label="Page 1"
               class="itemNumber"
             >
               <span
@@ -68,7 +67,6 @@ Object {
   </body>,
   "container": <div>
     <nav
-      aria-label="Pagination navigation"
       class="pagination"
     >
       <ul>
@@ -94,7 +92,7 @@ Object {
         </li>
         <li>
           <a
-            aria-label="Go to page 1"
+            aria-label="Page 1"
             class="itemNumber"
           >
             <span
@@ -187,7 +185,6 @@ Object {
   "baseElement": <body>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -213,7 +210,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 1"
+              aria-label="Page 1"
               class="itemNumber"
             >
               <span
@@ -248,7 +245,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -274,7 +270,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 1"
+              aria-label="Page 1"
               class="itemNumber"
             >
               <span
@@ -329,7 +325,6 @@ Object {
   </body>,
   "container": <div>
     <nav
-      aria-label="Pagination navigation"
       class="pagination"
     >
       <ul>
@@ -355,7 +350,7 @@ Object {
         </li>
         <li>
           <a
-            aria-label="Go to page 1"
+            aria-label="Page 1"
             class="itemNumber"
           >
             <span
@@ -467,7 +462,6 @@ Object {
   "baseElement": <body>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -493,7 +487,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 1"
+              aria-label="Page 1"
               class="itemNumber"
             >
               <span
@@ -528,7 +522,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -554,7 +547,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 1"
+              aria-label="Page 1"
               class="itemNumber"
             >
               <span
@@ -608,7 +601,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -634,7 +626,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 2"
+              aria-label="Page 2"
               class="itemNumber"
             >
               <span
@@ -689,7 +681,6 @@ Object {
   </body>,
   "container": <div>
     <nav
-      aria-label="Pagination navigation"
       class="pagination"
     >
       <ul>
@@ -715,7 +706,7 @@ Object {
         </li>
         <li>
           <a
-            aria-label="Go to page 2"
+            aria-label="Page 2"
             class="itemNumber"
           >
             <span
@@ -827,7 +818,6 @@ Object {
   "baseElement": <body>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -853,7 +843,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 1"
+              aria-label="Page 1"
               class="itemNumber"
             >
               <span
@@ -888,7 +878,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -914,7 +903,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 1"
+              aria-label="Page 1"
               class="itemNumber"
             >
               <span
@@ -968,7 +957,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -994,7 +982,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 2"
+              aria-label="Page 2"
               class="itemNumber"
             >
               <span
@@ -1048,7 +1036,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -1074,7 +1061,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 3"
+              aria-label="Page 3"
               class="itemNumber"
             >
               <span
@@ -1129,7 +1116,6 @@ Object {
   </body>,
   "container": <div>
     <nav
-      aria-label="Pagination navigation"
       class="pagination"
     >
       <ul>
@@ -1155,7 +1141,7 @@ Object {
         </li>
         <li>
           <a
-            aria-label="Go to page 3"
+            aria-label="Page 3"
             class="itemNumber"
           >
             <span
@@ -1267,7 +1253,6 @@ Object {
   "baseElement": <body>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -1293,7 +1278,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 1"
+              aria-label="Page 1"
               class="itemNumber"
             >
               <span
@@ -1328,7 +1313,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -1354,7 +1338,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 1"
+              aria-label="Page 1"
               class="itemNumber"
             >
               <span
@@ -1408,7 +1392,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -1434,7 +1417,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 2"
+              aria-label="Page 2"
               class="itemNumber"
             >
               <span
@@ -1488,7 +1471,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -1514,7 +1496,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 3"
+              aria-label="Page 3"
               class="itemNumber"
             >
               <span
@@ -1568,7 +1550,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -1594,7 +1575,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 5"
+              aria-label="Page 5"
               class="itemNumber"
             >
               <span
@@ -1649,7 +1630,6 @@ Object {
   </body>,
   "container": <div>
     <nav
-      aria-label="Pagination navigation"
       class="pagination"
     >
       <ul>
@@ -1675,7 +1655,7 @@ Object {
         </li>
         <li>
           <a
-            aria-label="Go to page 5"
+            aria-label="Page 5"
             class="itemNumber"
           >
             <span
@@ -1787,7 +1767,6 @@ Object {
   "baseElement": <body>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -1813,7 +1792,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 1"
+              aria-label="Page 1"
               class="itemNumber"
             >
               <span
@@ -1848,7 +1827,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -1874,7 +1852,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 1"
+              aria-label="Page 1"
               class="itemNumber"
             >
               <span
@@ -1928,7 +1906,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -1954,7 +1931,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 2"
+              aria-label="Page 2"
               class="itemNumber"
             >
               <span
@@ -2008,7 +1985,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -2034,7 +2010,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 3"
+              aria-label="Page 3"
               class="itemNumber"
             >
               <span
@@ -2088,7 +2064,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -2114,7 +2089,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 5"
+              aria-label="Page 5"
               class="itemNumber"
             >
               <span
@@ -2168,7 +2143,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -2194,7 +2168,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 7"
+              aria-label="Page 7"
               class="itemNumber"
             >
               <span
@@ -2249,7 +2223,6 @@ Object {
   </body>,
   "container": <div>
     <nav
-      aria-label="Pagination navigation"
       class="pagination"
     >
       <ul>
@@ -2275,7 +2248,7 @@ Object {
         </li>
         <li>
           <a
-            aria-label="Go to page 7"
+            aria-label="Page 7"
             class="itemNumber"
           >
             <span
@@ -2387,7 +2360,6 @@ Object {
   "baseElement": <body>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -2413,7 +2385,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 1"
+              aria-label="Page 1"
               class="itemNumber"
             >
               <span
@@ -2448,7 +2420,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -2474,7 +2445,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 1"
+              aria-label="Page 1"
               class="itemNumber"
             >
               <span
@@ -2528,7 +2499,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -2554,7 +2524,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 2"
+              aria-label="Page 2"
               class="itemNumber"
             >
               <span
@@ -2608,7 +2578,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -2634,7 +2603,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 3"
+              aria-label="Page 3"
               class="itemNumber"
             >
               <span
@@ -2688,7 +2657,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -2714,7 +2682,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 5"
+              aria-label="Page 5"
               class="itemNumber"
             >
               <span
@@ -2768,7 +2736,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -2794,7 +2761,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 7"
+              aria-label="Page 7"
               class="itemNumber"
             >
               <span
@@ -2848,7 +2815,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -2874,7 +2840,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 8"
+              aria-label="Page 8"
               class="itemNumber"
             >
               <span
@@ -2929,7 +2895,6 @@ Object {
   </body>,
   "container": <div>
     <nav
-      aria-label="Pagination navigation"
       class="pagination"
     >
       <ul>
@@ -2955,7 +2920,7 @@ Object {
         </li>
         <li>
           <a
-            aria-label="Go to page 8"
+            aria-label="Page 8"
             class="itemNumber"
           >
             <span
@@ -3067,7 +3032,6 @@ Object {
   "baseElement": <body>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -3093,7 +3057,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 1"
+              aria-label="Page 1"
               class="itemNumber"
             >
               <span
@@ -3128,7 +3092,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -3154,7 +3117,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 1"
+              aria-label="Page 1"
               class="itemNumber"
             >
               <span
@@ -3208,7 +3171,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -3234,7 +3196,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 2"
+              aria-label="Page 2"
               class="itemNumber"
             >
               <span
@@ -3288,7 +3250,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -3314,7 +3275,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 3"
+              aria-label="Page 3"
               class="itemNumber"
             >
               <span
@@ -3368,7 +3329,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -3394,7 +3354,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 5"
+              aria-label="Page 5"
               class="itemNumber"
             >
               <span
@@ -3448,7 +3408,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -3474,7 +3433,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 7"
+              aria-label="Page 7"
               class="itemNumber"
             >
               <span
@@ -3528,7 +3487,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -3554,7 +3512,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 8"
+              aria-label="Page 8"
               class="itemNumber"
             >
               <span
@@ -3608,7 +3566,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -3634,7 +3591,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 9"
+              aria-label="Page 9"
               class="itemNumber"
             >
               <span
@@ -3689,7 +3646,6 @@ Object {
   </body>,
   "container": <div>
     <nav
-      aria-label="Pagination navigation"
       class="pagination"
     >
       <ul>
@@ -3715,7 +3671,7 @@ Object {
         </li>
         <li>
           <a
-            aria-label="Go to page 9"
+            aria-label="Page 9"
             class="itemNumber"
           >
             <span
@@ -3827,7 +3783,6 @@ Object {
   "baseElement": <body>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -3853,7 +3808,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 1"
+              aria-label="Page 1"
               class="itemNumber"
             >
               <span
@@ -3888,7 +3843,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -3914,7 +3868,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 1"
+              aria-label="Page 1"
               class="itemNumber"
             >
               <span
@@ -3968,7 +3922,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -3994,7 +3947,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 2"
+              aria-label="Page 2"
               class="itemNumber"
             >
               <span
@@ -4048,7 +4001,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -4074,7 +4026,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 3"
+              aria-label="Page 3"
               class="itemNumber"
             >
               <span
@@ -4128,7 +4080,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -4154,7 +4105,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 5"
+              aria-label="Page 5"
               class="itemNumber"
             >
               <span
@@ -4208,7 +4159,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -4234,7 +4184,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 7"
+              aria-label="Page 7"
               class="itemNumber"
             >
               <span
@@ -4288,7 +4238,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -4314,7 +4263,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 8"
+              aria-label="Page 8"
               class="itemNumber"
             >
               <span
@@ -4368,7 +4317,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -4394,7 +4342,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 9"
+              aria-label="Page 9"
               class="itemNumber"
             >
               <span
@@ -4448,7 +4396,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -4474,7 +4421,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 10"
+              aria-label="Page 10"
               class="itemNumber"
             >
               <span
@@ -4510,7 +4457,6 @@ Object {
   </body>,
   "container": <div>
     <nav
-      aria-label="Pagination navigation"
       class="pagination"
     >
       <ul>
@@ -4536,7 +4482,7 @@ Object {
         </li>
         <li>
           <a
-            aria-label="Go to page 10"
+            aria-label="Page 10"
             class="itemNumber"
           >
             <span
@@ -4629,7 +4575,6 @@ Object {
   "baseElement": <body>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -4655,7 +4600,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 1"
+              aria-label="Page 1"
               class="itemNumber"
             >
               <span
@@ -4690,7 +4635,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -4716,7 +4660,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 1"
+              aria-label="Page 1"
               class="itemNumber"
             >
               <span
@@ -4770,7 +4714,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -4796,7 +4739,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 2"
+              aria-label="Page 2"
               class="itemNumber"
             >
               <span
@@ -4850,7 +4793,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -4876,7 +4818,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 3"
+              aria-label="Page 3"
               class="itemNumber"
             >
               <span
@@ -4930,7 +4872,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -4956,7 +4897,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 5"
+              aria-label="Page 5"
               class="itemNumber"
             >
               <span
@@ -5010,7 +4951,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -5036,7 +4976,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 7"
+              aria-label="Page 7"
               class="itemNumber"
             >
               <span
@@ -5090,7 +5030,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -5116,7 +5055,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 8"
+              aria-label="Page 8"
               class="itemNumber"
             >
               <span
@@ -5170,7 +5109,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -5196,7 +5134,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 9"
+              aria-label="Page 9"
               class="itemNumber"
             >
               <span
@@ -5250,7 +5188,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -5276,7 +5213,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 10"
+              aria-label="Page 10"
               class="itemNumber"
             >
               <span
@@ -5311,7 +5248,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -5337,7 +5273,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 1"
+              aria-label="Page 1"
               class="itemNumber"
             >
               <span
@@ -5392,7 +5328,6 @@ Object {
   </body>,
   "container": <div>
     <nav
-      aria-label="Pagination navigation"
       class="pagination"
     >
       <ul>
@@ -5418,7 +5353,7 @@ Object {
         </li>
         <li>
           <a
-            aria-label="Go to page 1"
+            aria-label="Page 1"
             class="itemNumber"
           >
             <span
@@ -5530,7 +5465,6 @@ Object {
   "baseElement": <body>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -5556,7 +5490,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 1"
+              aria-label="Page 1"
               class="itemNumber"
             >
               <span
@@ -5591,7 +5525,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -5617,7 +5550,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 1"
+              aria-label="Page 1"
               class="itemNumber"
             >
               <span
@@ -5671,7 +5604,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -5697,7 +5629,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 2"
+              aria-label="Page 2"
               class="itemNumber"
             >
               <span
@@ -5751,7 +5683,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -5777,7 +5708,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 3"
+              aria-label="Page 3"
               class="itemNumber"
             >
               <span
@@ -5831,7 +5762,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -5857,7 +5787,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 5"
+              aria-label="Page 5"
               class="itemNumber"
             >
               <span
@@ -5911,7 +5841,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -5937,7 +5866,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 7"
+              aria-label="Page 7"
               class="itemNumber"
             >
               <span
@@ -5991,7 +5920,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -6017,7 +5945,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 8"
+              aria-label="Page 8"
               class="itemNumber"
             >
               <span
@@ -6071,7 +5999,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -6097,7 +6024,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 9"
+              aria-label="Page 9"
               class="itemNumber"
             >
               <span
@@ -6151,7 +6078,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -6177,7 +6103,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 10"
+              aria-label="Page 10"
               class="itemNumber"
             >
               <span
@@ -6212,7 +6138,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -6238,7 +6163,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 1"
+              aria-label="Page 1"
               class="itemNumber"
             >
               <span
@@ -6292,7 +6217,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -6318,7 +6242,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 2"
+              aria-label="Page 2"
               class="itemNumber"
             >
               <span
@@ -6373,7 +6297,6 @@ Object {
   </body>,
   "container": <div>
     <nav
-      aria-label="Pagination navigation"
       class="pagination"
     >
       <ul>
@@ -6399,7 +6322,7 @@ Object {
         </li>
         <li>
           <a
-            aria-label="Go to page 2"
+            aria-label="Page 2"
             class="itemNumber"
           >
             <span
@@ -6511,7 +6434,6 @@ Object {
   "baseElement": <body>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -6537,7 +6459,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 1"
+              aria-label="Page 1"
               class="itemNumber"
             >
               <span
@@ -6572,7 +6494,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -6598,7 +6519,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 1"
+              aria-label="Page 1"
               class="itemNumber"
             >
               <span
@@ -6652,7 +6573,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -6678,7 +6598,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 2"
+              aria-label="Page 2"
               class="itemNumber"
             >
               <span
@@ -6732,7 +6652,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -6758,7 +6677,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 3"
+              aria-label="Page 3"
               class="itemNumber"
             >
               <span
@@ -6812,7 +6731,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -6838,7 +6756,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 5"
+              aria-label="Page 5"
               class="itemNumber"
             >
               <span
@@ -6892,7 +6810,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -6918,7 +6835,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 7"
+              aria-label="Page 7"
               class="itemNumber"
             >
               <span
@@ -6972,7 +6889,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -6998,7 +6914,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 8"
+              aria-label="Page 8"
               class="itemNumber"
             >
               <span
@@ -7052,7 +6968,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -7078,7 +6993,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 9"
+              aria-label="Page 9"
               class="itemNumber"
             >
               <span
@@ -7132,7 +7047,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -7158,7 +7072,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 10"
+              aria-label="Page 10"
               class="itemNumber"
             >
               <span
@@ -7193,7 +7107,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -7219,7 +7132,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 1"
+              aria-label="Page 1"
               class="itemNumber"
             >
               <span
@@ -7273,7 +7186,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -7299,7 +7211,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 2"
+              aria-label="Page 2"
               class="itemNumber"
             >
               <span
@@ -7353,7 +7265,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -7379,7 +7290,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 3"
+              aria-label="Page 3"
               class="itemNumber"
             >
               <span
@@ -7434,7 +7345,6 @@ Object {
   </body>,
   "container": <div>
     <nav
-      aria-label="Pagination navigation"
       class="pagination"
     >
       <ul>
@@ -7460,7 +7370,7 @@ Object {
         </li>
         <li>
           <a
-            aria-label="Go to page 3"
+            aria-label="Page 3"
             class="itemNumber"
           >
             <span
@@ -7572,7 +7482,6 @@ Object {
   "baseElement": <body>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -7598,7 +7507,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 1"
+              aria-label="Page 1"
               class="itemNumber"
             >
               <span
@@ -7633,7 +7542,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -7659,7 +7567,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 1"
+              aria-label="Page 1"
               class="itemNumber"
             >
               <span
@@ -7713,7 +7621,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -7739,7 +7646,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 2"
+              aria-label="Page 2"
               class="itemNumber"
             >
               <span
@@ -7793,7 +7700,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -7819,7 +7725,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 3"
+              aria-label="Page 3"
               class="itemNumber"
             >
               <span
@@ -7873,7 +7779,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -7899,7 +7804,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 5"
+              aria-label="Page 5"
               class="itemNumber"
             >
               <span
@@ -7953,7 +7858,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -7979,7 +7883,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 7"
+              aria-label="Page 7"
               class="itemNumber"
             >
               <span
@@ -8033,7 +7937,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -8059,7 +7962,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 8"
+              aria-label="Page 8"
               class="itemNumber"
             >
               <span
@@ -8113,7 +8016,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -8139,7 +8041,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 9"
+              aria-label="Page 9"
               class="itemNumber"
             >
               <span
@@ -8193,7 +8095,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -8219,7 +8120,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 10"
+              aria-label="Page 10"
               class="itemNumber"
             >
               <span
@@ -8254,7 +8155,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -8280,7 +8180,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 1"
+              aria-label="Page 1"
               class="itemNumber"
             >
               <span
@@ -8334,7 +8234,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -8360,7 +8259,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 2"
+              aria-label="Page 2"
               class="itemNumber"
             >
               <span
@@ -8414,7 +8313,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -8440,7 +8338,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 3"
+              aria-label="Page 3"
               class="itemNumber"
             >
               <span
@@ -8494,7 +8392,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -8520,7 +8417,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 4"
+              aria-label="Page 4"
               class="itemNumber"
             >
               <span
@@ -8556,7 +8453,6 @@ Object {
   </body>,
   "container": <div>
     <nav
-      aria-label="Pagination navigation"
       class="pagination"
     >
       <ul>
@@ -8582,7 +8478,7 @@ Object {
         </li>
         <li>
           <a
-            aria-label="Go to page 4"
+            aria-label="Page 4"
             class="itemNumber"
           >
             <span
@@ -8675,7 +8571,6 @@ Object {
   "baseElement": <body>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -8701,7 +8596,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 1"
+              aria-label="Page 1"
               class="itemNumber"
             >
               <span
@@ -8736,7 +8631,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -8762,7 +8656,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 1"
+              aria-label="Page 1"
               class="itemNumber"
             >
               <span
@@ -8816,7 +8710,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -8842,7 +8735,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 2"
+              aria-label="Page 2"
               class="itemNumber"
             >
               <span
@@ -8896,7 +8789,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -8922,7 +8814,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 3"
+              aria-label="Page 3"
               class="itemNumber"
             >
               <span
@@ -8976,7 +8868,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -9002,7 +8893,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 5"
+              aria-label="Page 5"
               class="itemNumber"
             >
               <span
@@ -9056,7 +8947,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -9082,7 +8972,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 7"
+              aria-label="Page 7"
               class="itemNumber"
             >
               <span
@@ -9136,7 +9026,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -9162,7 +9051,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 8"
+              aria-label="Page 8"
               class="itemNumber"
             >
               <span
@@ -9216,7 +9105,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -9242,7 +9130,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 9"
+              aria-label="Page 9"
               class="itemNumber"
             >
               <span
@@ -9296,7 +9184,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -9322,7 +9209,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 10"
+              aria-label="Page 10"
               class="itemNumber"
             >
               <span
@@ -9357,7 +9244,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -9383,7 +9269,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 1"
+              aria-label="Page 1"
               class="itemNumber"
             >
               <span
@@ -9437,7 +9323,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -9463,7 +9348,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 2"
+              aria-label="Page 2"
               class="itemNumber"
             >
               <span
@@ -9517,7 +9402,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -9543,7 +9427,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 3"
+              aria-label="Page 3"
               class="itemNumber"
             >
               <span
@@ -9597,7 +9481,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -9623,7 +9506,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 4"
+              aria-label="Page 4"
               class="itemNumber"
             >
               <span
@@ -9658,7 +9541,6 @@ Object {
     </div>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -9684,7 +9566,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 1"
+              aria-label="Page 1"
               class="itemNumber"
             >
               <span
@@ -9739,7 +9621,6 @@ Object {
   </body>,
   "container": <div>
     <nav
-      aria-label="Pagination navigation"
       class="pagination"
     >
       <ul>
@@ -9765,7 +9646,7 @@ Object {
         </li>
         <li>
           <a
-            aria-label="Go to page 1"
+            aria-label="Page 1"
             class="itemNumber"
           >
             <span
@@ -9877,7 +9758,6 @@ Object {
   "baseElement": <body>
     <div>
       <nav
-        aria-label="Pagination navigation"
         class="pagination"
       >
         <ul>
@@ -9904,7 +9784,7 @@ Object {
           </li>
           <li>
             <a
-              aria-label="Go to page 10"
+              aria-label="Page 10"
               class="itemNumber"
               href="this is href 10"
             >
@@ -9942,7 +9822,6 @@ Object {
   </body>,
   "container": <div>
     <nav
-      aria-label="Pagination navigation"
       class="pagination"
     >
       <ul>
@@ -9969,7 +9848,7 @@ Object {
         </li>
         <li>
           <a
-            aria-label="Go to page 10"
+            aria-label="Page 10"
             class="itemNumber"
             href="this is href 10"
           >

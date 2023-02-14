@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { PaginationLocaleStrings } from './locale/default';
+import { Locale } from './locale/defaultLocale';
 
 export type CustomOnClick = (page: number) => void;
 
@@ -25,7 +25,7 @@ export interface PaginationProps
   /**
    * `locale` - Object with localized strings
    */
-  locale?: PaginationLocaleStrings;
+  locale?: Locale;
 }
 
 interface GetItemAriaLabelArgs {
@@ -109,7 +109,7 @@ export type UsePaginationArgs = {
   onClick?: CustomOnClick;
   currentPage: number;
   totalPages: number;
-  locale: PaginationLocaleStrings;
+  locale: Locale;
 };
 
 export interface ParseOnClickArgs {
