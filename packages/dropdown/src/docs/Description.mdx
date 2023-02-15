@@ -193,3 +193,32 @@ Use the `disabled` prop to to disable dropdown state.
   </Row>
 </Container>
 ```
+
+## placeholder
+
+Use the `placeholder` prop to to set placeholder dropdown state.
+
+```tsx live
+<Container>
+  <Row
+    style={{ width: '20em', justifyContent: 'space-between', height: '200px' }}
+  >
+    <Col style={{ width: '100%' }}>
+      <Dropdown
+        onChange={() => {}}
+        placeholder="Marital Status"
+        options={[
+          {
+            value: 'married',
+            label: 'Married',
+          },
+          {
+            value: 'single',
+            label: 'Single',
+          },
+        ]}
+      ></Dropdown>
+    </Col>
+  </Row>
+</Container>
+```

@@ -31,7 +31,7 @@ describe('Dropdown', () => {
         />,
       );
 
-      expect(container.querySelector('span')).toHaveTextContent('Mango');
+      expect(container.querySelector('span')).toHaveTextContent('Pomelo');
     });
 
     it('should set options', () => {
@@ -90,7 +90,7 @@ describe('Dropdown', () => {
         />,
       );
 
-      expect(container.querySelector('span')).toHaveClass('disabled');
+      expect(container.querySelector('input')).toBeDisabled();
     });
 
     it('should set `full width` class', () => {
@@ -154,7 +154,7 @@ describe('Dropdown', () => {
 
       const ul = getByTestId(dataTestId) as HTMLUListElement;
 
-      if (ul.firstChild) fireEvent.click(ul.firstChild);
+      if (ul.firstChild) fireEvent.mouseDown(ul.firstChild);
 
       expect(cb).toBeCalledTimes(1);
     });

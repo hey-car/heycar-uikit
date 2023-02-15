@@ -37,7 +37,6 @@ function Dropdown({
     if (onChange) {
       if (option !== stateValue) onChange(option);
     }
-    console.log('yo');
     setStateValue(option);
   };
 
@@ -107,18 +106,19 @@ function Dropdown({
   return (
     <Component
       className={classNames}
+      onClick={onClickHandler}
       ref={containerRef}
       tabIndex={0}
       {...restProps}
-      style={{ width: '100%' }}
+      onBlur={onBlurHandler}
     >
       <Input
         className={valueClassNames}
         disabled={disabled}
-        fullWidth={fullWidth}
-        onBlur={onBlurHandler}
-        onChange={() => { setStateValue(options[highlightedIndex]); }}
-        onClick={onClickHandler}
+        fullWidth={true}
+        onChange={() => {
+          setStateValue(options[highlightedIndex]);
+        }}
         placeholder={placeholder}
         rightIcon={isOpen ? <ChevronTop /> : <ChevronDown />}
         value={stateValue?.label}
@@ -132,9 +132,9 @@ function Dropdown({
             className={`${styles.option} ${isOptionSelection(option) ? styles.selected : ''
               } ${index === highlightedIndex ? styles.highlighted : ''}`}
             key={option.value}
-            onClick={e => {
-              e.stopPropagation();
+            onMouseDown={e => {
               selectOption(option);
+              e.stopPropagation();
               setIsOpen(false);
             }}
             onMouseEnter={() => setHighlightedIndex(index)}

@@ -53,6 +53,7 @@
   z-index: 100;
   box-shadow: 0 2px 4px 0 var(--options-border-color),
     0 2px 5px 0 var(--options-border-color);
+  width: 100%;
 }
 
 .options.show {
