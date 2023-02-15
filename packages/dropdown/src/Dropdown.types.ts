@@ -1,29 +1,12 @@
 import React from 'react';
 
-export type SelectOptions = {
-  /**
-   * labels of options
-   */
-  label: string;
-  /**
-   * value of options
-   */
-  value: string;
-  /**
-   * Element placed before the children.
-   */
-  leftContent?: React.ReactNode;
-  /**
-   * Element placed after the children
-   */
-  rightContent?: React.ReactNode;
-};
+import { DropdownOptionProps } from './components/DropdownOption.types';
 
 export type DropdownProps = {
   /**
    * list of options to show in dropdown
    */
-  options: SelectOptions[];
+  options: DropdownOptionProps[];
   /**
    * onClick method callback upon dropdown click
    */
@@ -35,11 +18,11 @@ export type DropdownProps = {
   /**
    * onChange method callback upon option change
    */
-  onChange?: (value: SelectOptions | undefined) => void;
+  onChange?: (value: DropdownOptionProps | undefined) => void;
   /**
    * for setting default value.
    */
-  value?: SelectOptions;
+  value?: DropdownOptionProps;
   /**
    * boolean prop to set disabled state.
    */
@@ -56,4 +39,8 @@ export type DropdownProps = {
    * The component used for the root node. Either a string to use a HTML element or a component
    */
   Component?: React.ElementType;
+  /**
+   * The string as a placeholder
+   */
+  placeholder?: string;
 };
