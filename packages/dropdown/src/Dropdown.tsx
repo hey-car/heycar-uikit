@@ -2,6 +2,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import cn from 'classnames';
 
+import { ChevronDown, ChevronTop } from '@heycar-uikit/icons';
+import Input from '@heycar-uikit/input';
+
 import { DropdownOptionProps, DropdownProps } from './Dropdown.types';
 import DropdownOption from './DropdownOption';
 
@@ -17,6 +20,7 @@ function Dropdown({
   onBlur,
   onClick,
   fullWidth,
+  placeholder,
   ...restProps
 }: DropdownProps) {
   const [stateValue, setStateValue] = useState<DropdownOptionProps | undefined>(
@@ -77,7 +81,6 @@ function Dropdown({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [highlightedIndex, options, selectOption]);
 
-
   const isOptionSelection = (option: DropdownOptionProps) => {
     return option?.value === stateValue?.value;
   };
@@ -97,30 +100,26 @@ function Dropdown({
     fullWidth && styles.fullWidth,
   );
 
-  const arrowClassNames = cn(
-    disabled && styles.caret_disabled,
-    isOpen && styles.caret_up,
-    !isOpen && styles.caret_down,
-  );
-
-  const valueClassNames = cn(
-    disabled && 'disabled',
-    styles.value,
-  );
+  const valueClassNames = cn(disabled && 'disabled', styles.value);
 
   return (
     <Component
       className={classNames}
-      onBlur={onBlurHandler}
-      onClick={onClickHandler}
       ref={containerRef}
       tabIndex={0}
       {...restProps}
+      style={{ width: '100%' }}
     >
-      <span className={valueClassNames}>
-        {stateValue?.label}
-      </span>
-      <div className={arrowClassNames}></div>
+      <Input
+        className={valueClassNames}
+        disabled={disabled}
+        fullWidth={fullWidth}
+        onBlur={onBlurHandler}
+        onClick={onClickHandler}
+        placeholder={placeholder}
+        rightIcon={isOpen ? <ChevronTop /> : <ChevronDown />}
+        value={stateValue?.label}
+      />
       <ul
         className={`${styles.options} ${isOpen ? styles.show : ''}`}
         data-test-id={dataTestId}

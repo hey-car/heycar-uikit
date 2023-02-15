@@ -15,14 +15,6 @@
 
 .container {
   position: relative;
-  width: 100%;
-  border: 1px solid var(--container-border-color);
-  display: flex;
-  align-items: center;
-  gap: 0.5em;
-  padding: var(--gap-s) var(--gap-s);
-  outline: none;
-  max-height: var(--gap-7xl);
   color: var(--option-text-color);
 }
 
@@ -46,18 +38,6 @@
   flex-wrap: wrap;
 }
 
-.caret_down {
-  content: url(../icons/arrow_down.svg);
-}
-
-.caret_up {
-  content: url(../icons/arrow_up.svg);
-}
-
-.caret_disabled {
-  content: url(../icons/caret_disabled.svg);
-}
-
 .options {
   position: absolute;
   margin: 0;
@@ -67,7 +47,6 @@
   max-height: 15em;
   overflow-y: auto;
   border: 1px solid var(--options-border-color);
-  width: 100%;
   left: -1px;
   top: calc(100% + 0.01em);
   background-color: var(--color-championship-white);
