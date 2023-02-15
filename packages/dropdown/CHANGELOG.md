@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.2](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/dropdown@2.0.1...@heycar-uikit/dropdown@2.0.2) (2023-02-15)
+
+
+### Bug Fixes
+
+* **dropdown:** adding accessibility ([#137](https://github.com/hey-car/heycar-uikit/issues/137)) ([5e8cbec](https://github.com/hey-car/heycar-uikit/commit/5e8cbec6755771216244e36675f8ff7c79bcbfb5))
+
+
+
+
+
 ## [2.0.1](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/dropdown@2.0.0...@heycar-uikit/dropdown@2.0.1) (2023-01-30)
 
 
