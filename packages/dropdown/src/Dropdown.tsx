@@ -5,8 +5,9 @@ import cn from 'classnames';
 import { ChevronDown, ChevronTop } from '@heycar-uikit/icons';
 import Input from '@heycar-uikit/input';
 
-import { DropdownOptionProps, DropdownProps } from './Dropdown.types';
-import DropdownOption from './DropdownOption';
+import DropdownOption from './components/DropdownOption';
+import { DropdownOptionProps } from './components/DropdownOption.types';
+import { DropdownProps } from './Dropdown.types';
 
 import styles from './styles/default.module.css';
 
@@ -36,6 +37,7 @@ function Dropdown({
     if (onChange) {
       if (option !== stateValue) onChange(option);
     }
+    console.log('yo');
     setStateValue(option);
   };
 
@@ -115,6 +117,7 @@ function Dropdown({
         disabled={disabled}
         fullWidth={fullWidth}
         onBlur={onBlurHandler}
+        onChange={() => { setStateValue(options[highlightedIndex]); }}
         onClick={onClickHandler}
         placeholder={placeholder}
         rightIcon={isOpen ? <ChevronTop /> : <ChevronDown />}

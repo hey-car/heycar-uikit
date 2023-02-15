@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { DropdownOptionProps } from './Dropdown.types';
+import { DropdownOptionProps } from './DropdownOption.types';
 
-import styles from './styles/option.module.css';
+import styles from './option.module.css';
 
 function DropdownOption({
   leftContent,
