@@ -1,3 +1,10 @@
+## [4.2.1](https://github.com/hey-car/heycar-uikit/compare/v4.2.0...v4.2.1) (2023-02-15)
+
+
+### Bug Fixes
+
+* **dropdown:** adding accessibility ([#137](https://github.com/hey-car/heycar-uikit/issues/137)) ([5e8cbec](https://github.com/hey-car/heycar-uikit/commit/5e8cbec6755771216244e36675f8ff7c79bcbfb5))
+
 # [4.2.0](https://github.com/hey-car/heycar-uikit/compare/v4.1.0...v4.2.0) (2023-02-06)
 
 
