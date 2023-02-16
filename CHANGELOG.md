@@ -1,3 +1,10 @@
+## [4.2.4](https://github.com/hey-car/heycar-uikit/compare/v4.2.3...v4.2.4) (2023-02-16)
+
+
+### Bug Fixes
+
+* **package-lock.json:** updated for pagination ([#142](https://github.com/hey-car/heycar-uikit/issues/142)) ([9102048](https://github.com/hey-car/heycar-uikit/commit/910204800247a4abbc1135bfe1532ec57a6cbd75))
+
 ## [4.2.3](https://github.com/hey-car/heycar-uikit/compare/v4.2.2...v4.2.3) (2023-02-16)
 
 
