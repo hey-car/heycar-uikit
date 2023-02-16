@@ -1,3 +1,10 @@
+## [4.2.2](https://github.com/hey-car/heycar-uikit/compare/v4.2.1...v4.2.2) (2023-02-16)
+
+
+### Bug Fixes
+
+* **dropdown:** adds error state ([#140](https://github.com/hey-car/heycar-uikit/issues/140)) ([4ef925f](https://github.com/hey-car/heycar-uikit/commit/4ef925f3cc4db119a3dc3b0da7c7566d5ba4bcac))
+
 ## [4.2.1](https://github.com/hey-car/heycar-uikit/compare/v4.2.0...v4.2.1) (2023-02-15)
 
 
