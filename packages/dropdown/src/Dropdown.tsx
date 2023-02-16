@@ -22,6 +22,7 @@ function Dropdown({
   onClick,
   label,
   hint,
+  inputRef,
   fullWidth,
   placeholder,
   error,
@@ -126,6 +127,7 @@ function Dropdown({
           setStateValue(options[highlightedIndex]);
         }}
         placeholder={placeholder}
+        ref={inputRef}
         rightIcon={isOpen ? <ChevronTop /> : <ChevronDown />}
         value={stateValue?.label}
       />
