@@ -117,6 +117,7 @@ function Dropdown({
       onBlur={onBlurHandler}
     >
       <Input
+        aria-disabled={true}
         className={valueClassNames}
         disabled={disabled}
         error={error}
