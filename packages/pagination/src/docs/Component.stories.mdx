@@ -1,0 +1,48 @@
+import { Meta, Story, Props } from '@storybook/addon-docs';
+import { ComponentHeader, CssVars, TabContainer } from 'storybook/blocks';
+
+import Pagination from '../Pagination';
+import { version } from '../../package.json';
+import Description from './Description.mdx';
+import Changelog from '../../CHANGELOG.md';
+import {
+  PaginationCanvas
+} from "./Canvas.tsx";
+import { PaginationItem } from "../PaginationItem";
+
+<!-- Meta -->
+
+<Meta title="Components/Pagination" component={Pagination} />
+
+<!-- Canvas -->
+
+<Story parameters={{ controls: { disable: true } }} name="Pagination">
+  {PaginationCanvas.bind({})}
+</Story>
+
+<!-- Docs -->
+
+<ComponentHeader
+  name="Pagination"
+  version={version}
+  stage={1}
+  design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Global-Design-System?node-id=2073%3A48211"
+/>
+
+The pagination component allows the user to select a page within a rage.
+
+```tsx
+import Pagination from '@heycar-uikit/pagination';
+*optional* import PaginationItem from '@heycar-uikit/pagination';
+```
+
+<!-- Description -->
+
+<TabContainer
+  tabs={[
+    { label: 'Description', component: <Description /> },
+    { label: 'Props', component: <Props of={Pagination} /> },
+    { label: 'Props item', component: <Props of={PaginationItem} /> },
+    { label: 'Changelog', component: <Changelog /> },
+  ]}
+/>
