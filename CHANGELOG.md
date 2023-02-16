@@ -1,3 +1,38 @@
+## [4.2.2](https://github.com/hey-car/heycar-uikit/compare/v4.2.1...v4.2.2) (2023-02-16)
+
+
+### Bug Fixes
+
+* **dropdown:** adds error state ([#140](https://github.com/hey-car/heycar-uikit/issues/140)) ([4ef925f](https://github.com/hey-car/heycar-uikit/commit/4ef925f3cc4db119a3dc3b0da7c7566d5ba4bcac))
+
+## [4.2.1](https://github.com/hey-car/heycar-uikit/compare/v4.2.0...v4.2.1) (2023-02-15)
+
+
+### Bug Fixes
+
+* **dropdown:** adding accessibility ([#137](https://github.com/hey-car/heycar-uikit/issues/137)) ([5e8cbec](https://github.com/hey-car/heycar-uikit/commit/5e8cbec6755771216244e36675f8ff7c79bcbfb5))
+
+# [4.2.0](https://github.com/hey-car/heycar-uikit/compare/v4.1.0...v4.2.0) (2023-02-06)
+
+
+### Features
+
+* **typography:** extend typography component to accept html props ([#136](https://github.com/hey-car/heycar-uikit/issues/136)) ([70a614a](https://github.com/hey-car/heycar-uikit/commit/70a614aacceb891eb853227229c36577b4b8c5c3))
+
+# [4.1.0](https://github.com/hey-car/heycar-uikit/compare/v4.0.1...v4.1.0) (2023-02-06)
+
+
+### Features
+
+* **typography:** extend component by allowing restProps ([#135](https://github.com/hey-car/heycar-uikit/issues/135)) ([2d34947](https://github.com/hey-car/heycar-uikit/commit/2d34947410c59462325e9ff31e54b97e10dbd265))
+
+## [4.0.1](https://github.com/hey-car/heycar-uikit/compare/v4.0.0...v4.0.1) (2023-01-30)
+
+
+### Bug Fixes
+
+* **dropdown:** add rest props update styles ([#132](https://github.com/hey-car/heycar-uikit/issues/132)) ([e940396](https://github.com/hey-car/heycar-uikit/commit/e94039645dee00dd18711fe4256636dea49969d9))
+
 # [4.0.0](https://github.com/hey-car/heycar-uikit/compare/v3.3.1...v4.0.0) (2023-01-17)
 
 

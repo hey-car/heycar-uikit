@@ -9,9 +9,9 @@ Use the `options` prop to to pass options.
 ```tsx live
 <Container>
   <Row
-    style={{ width: '100%', height: '200px', justifyContent: 'space-between' }}
+    style={{ width: '20em', height: '200px', justifyContent: 'space-between' }}
   >
-    <Col span={12}>
+    <Col style={{ width: '100%' }}>
       <Dropdown
         onChange={() => {}}
         options={[
@@ -45,9 +45,9 @@ Use the `rightContent` prop to to pass rightContent in options.
 ```tsx live
 <Container>
   <Row
-    style={{ width: '100%', justifyContent: 'space-between', height: '200px' }}
+    style={{ width: '20em', justifyContent: 'space-between', height: '200px' }}
   >
-    <Col span={12}>
+    <Col style={{ width: '100%' }}>
       <Dropdown
         onChange={() => {}}
         options={[
@@ -85,9 +85,9 @@ Use the `leftContent` prop to to pass left Content in options.
 ```tsx live
 <Container>
   <Row
-    style={{ width: '100%', justifyContent: 'space-between', height: '200px' }}
+    style={{ width: '20em', justifyContent: 'space-between', height: '200px' }}
   >
-    <Col span={12}>
+    <Col style={{ width: '100%' }}>
       <Dropdown
         onChange={() => {}}
         options={[
@@ -164,9 +164,9 @@ Use the `disabled` prop to to disable dropdown state.
 ```tsx live
 <Container>
   <Row
-    style={{ width: '100%', justifyContent: 'space-between', height: '200px' }}
+    style={{ width: '20em', justifyContent: 'space-between', height: '200px' }}
   >
-    <Col span={12}>
+    <Col style={{ width: '100%' }}>
       <Dropdown
         onChange={() => {}}
         disabled={true}
@@ -188,6 +188,65 @@ Use the `disabled` prop to to disable dropdown state.
           value: 'mango',
           label: 'Mango',
         }}
+      ></Dropdown>
+    </Col>
+  </Row>
+</Container>
+```
+
+## placeholder
+
+Use the `placeholder` prop to to set placeholder dropdown state.
+
+```tsx live
+<Container>
+  <Row
+    style={{ width: '20em', justifyContent: 'space-between', height: '200px' }}
+  >
+    <Col style={{ width: '100%' }}>
+      <Dropdown
+        onChange={() => {}}
+        placeholder="Marital Status"
+        options={[
+          {
+            value: 'married',
+            label: 'Married',
+          },
+          {
+            value: 'single',
+            label: 'Single',
+          },
+        ]}
+      ></Dropdown>
+    </Col>
+  </Row>
+</Container>
+```
+
+## Error state
+
+Use the `error` prop to to set error dropdown state.
+
+```tsx live
+<Container>
+  <Row
+    style={{ width: '20em', justifyContent: 'space-between', height: '200px' }}
+  >
+    <Col style={{ width: '100%' }}>
+      <Dropdown
+        onChange={() => {}}
+        placeholder="Marital Status"
+        error={'An error message'}
+        options={[
+          {
+            value: 'married',
+            label: 'Married',
+          },
+          {
+            value: 'single',
+            label: 'Single',
+          },
+        ]}
       ></Dropdown>
     </Col>
   </Row>

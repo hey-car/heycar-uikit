@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.2.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/typography@3.1.0...@heycar-uikit/typography@3.2.0) (2023-02-06)
+
+
+### Features
+
+* **typography:** extend typography component to accept html props ([#136](https://github.com/hey-car/heycar-uikit/issues/136)) ([70a614a](https://github.com/hey-car/heycar-uikit/commit/70a614aacceb891eb853227229c36577b4b8c5c3))
+
+
+
+
+
+# [3.1.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/typography@3.0.0...@heycar-uikit/typography@3.1.0) (2023-02-06)
+
+
+### Features
+
+* **typography:** extend component by allowing restProps ([#135](https://github.com/hey-car/heycar-uikit/issues/135)) ([2d34947](https://github.com/hey-car/heycar-uikit/commit/2d34947410c59462325e9ff31e54b97e10dbd265))
+
+
+
+
+
 # [3.0.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/typography@2.0.3...@heycar-uikit/typography@3.0.0) (2023-01-17)
 
 

@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { HTMLAttributes } from 'react';
 
 import { defaultVariantMapping } from './Typography.constants';
 
 type DefaultMapKeys = keyof typeof defaultVariantMapping;
 
-export interface TypographyProps {
+export interface ComponentProps {
   /**
    * `children` of the element
    */
@@ -26,3 +26,5 @@ export interface TypographyProps {
    */
   Component?: React.ElementType;
 }
+
+export type TypographyProps = ComponentProps & HTMLAttributes<HTMLElement>;
