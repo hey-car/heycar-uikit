@@ -20,6 +20,8 @@ function Dropdown({
   dataTestId,
   onBlur,
   onClick,
+  label,
+  hint,
   fullWidth,
   placeholder,
   error,
@@ -118,6 +120,8 @@ function Dropdown({
         disabled={disabled}
         error={error}
         fullWidth={true}
+        hint={hint}
+        label={label}
         onChange={() => {
           setStateValue(options[highlightedIndex]);
         }}

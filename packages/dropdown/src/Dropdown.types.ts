@@ -47,4 +47,12 @@ export type DropdownProps = {
    * The hint for the error state
    */
   error?: ReactNode | boolean;
+  /**
+   * The short `hint` displayed under the dropdown
+   */
+  hint?: ReactNode;
+  /**
+   * The label of the dropdown component
+   */
+  label?: React.ReactNode;
 };
