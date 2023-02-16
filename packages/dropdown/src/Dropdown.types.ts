@@ -55,4 +55,8 @@ export type DropdownProps = {
    * The label of the dropdown component
    */
   label?: React.ReactNode;
+  /**
+   * The input ref of the dropdown component
+   */
+  inputRef?: React.Ref<HTMLInputElement>;
 };
