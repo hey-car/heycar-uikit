@@ -94,3 +94,17 @@
   --size-middle-height: var(--gap-5xl);
   --size-large-height: var(--gap-7xl);
 }
+
+/* Mobile */
+@custom-media --mobile (max-width: 767px);
+
+/* Tablet */
+@custom-media --tablet (min-width: 768px);
+@custom-media --tablet-s (min-width: 768px);
+@custom-media --tablet-l (min-width: 1024px);
+
+/* Desktop */
+@custom-media --desktop (min-width: 1280px);
+@custom-media --desktop-s (min-width: 1280px);
+@custom-media --desktop-m (min-width: 1366px);
+@custom-media --desktop-l (min-width: 1440px);
