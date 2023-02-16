@@ -20,8 +20,11 @@ function Dropdown({
   dataTestId,
   onBlur,
   onClick,
+  label,
+  hint,
   fullWidth,
   placeholder,
+  error,
   ...restProps
 }: DropdownProps) {
   const [stateValue, setStateValue] = useState<DropdownOptionProps | undefined>(
@@ -115,7 +118,10 @@ function Dropdown({
       <Input
         className={valueClassNames}
         disabled={disabled}
+        error={error}
         fullWidth={true}
+        hint={hint}
+        label={label}
         onChange={() => {
           setStateValue(options[highlightedIndex]);
         }}
