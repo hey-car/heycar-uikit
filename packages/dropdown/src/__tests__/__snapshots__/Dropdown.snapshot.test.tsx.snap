@@ -9,22 +9,61 @@ Object {
         class="container"
         tabindex="0"
       >
-        <span
-          class="value"
-        >
-          Mango
-        </span>
         <div
-          class="caret_down"
-        />
+          class="component fullWidth"
+        >
+          <div
+            class="inner filled"
+          >
+            <div
+              class="inputWrapper"
+            >
+              <div
+                class="input"
+              >
+                <input
+                  class="input value"
+                  type="text"
+                  value="Mango"
+                />
+              </div>
+            </div>
+            <fieldset
+              aria-hidden="true"
+              class="fieldset"
+            >
+              <legend
+                class="legend"
+              />
+            </fieldset>
+            <div
+              class="addons rightIcon"
+            >
+              <svg
+                class="svgIcon inherit"
+                data-test-id="ChevronDownIcon"
+                focusable="false"
+                style="font-size: 24px;"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M12.0711 14.7279L5.70718 8.36392L4.29297 9.77814L12.0711 17.5563L19.8493 9.77814L18.4351 8.36392L12.0711 14.7279Z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
         <ul
           class="options "
         >
           <li
-            class="option "
+            class="option  highlighted"
           >
             <div
               class="contentContainer"
+              value="pomelo"
             >
               <span
                 class="optionContent"
@@ -34,10 +73,11 @@ Object {
             </div>
           </li>
           <li
-            class="option "
+            class="option  "
           >
             <div
               class="contentContainer"
+              value="apple"
             >
               <span
                 class="optionContent"
@@ -47,10 +87,11 @@ Object {
             </div>
           </li>
           <li
-            class="option selected"
+            class="option selected "
           >
             <div
               class="contentContainer"
+              value="mango"
             >
               <span
                 class="optionContent"
@@ -68,22 +109,61 @@ Object {
       class="container"
       tabindex="0"
     >
-      <span
-        class="value"
-      >
-        Mango
-      </span>
       <div
-        class="caret_down"
-      />
+        class="component fullWidth"
+      >
+        <div
+          class="inner filled"
+        >
+          <div
+            class="inputWrapper"
+          >
+            <div
+              class="input"
+            >
+              <input
+                class="input value"
+                type="text"
+                value="Mango"
+              />
+            </div>
+          </div>
+          <fieldset
+            aria-hidden="true"
+            class="fieldset"
+          >
+            <legend
+              class="legend"
+            />
+          </fieldset>
+          <div
+            class="addons rightIcon"
+          >
+            <svg
+              class="svgIcon inherit"
+              data-test-id="ChevronDownIcon"
+              focusable="false"
+              style="font-size: 24px;"
+              viewBox="0 0 24 24"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M12.0711 14.7279L5.70718 8.36392L4.29297 9.77814L12.0711 17.5563L19.8493 9.77814L18.4351 8.36392L12.0711 14.7279Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
       <ul
         class="options "
       >
         <li
-          class="option "
+          class="option  highlighted"
         >
           <div
             class="contentContainer"
+            value="pomelo"
           >
             <span
               class="optionContent"
@@ -93,10 +173,11 @@ Object {
           </div>
         </li>
         <li
-          class="option "
+          class="option  "
         >
           <div
             class="contentContainer"
+            value="apple"
           >
             <span
               class="optionContent"
@@ -106,10 +187,11 @@ Object {
           </div>
         </li>
         <li
-          class="option selected"
+          class="option selected "
         >
           <div
             class="contentContainer"
+            value="mango"
           >
             <span
               class="optionContent"
