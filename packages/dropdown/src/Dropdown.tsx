@@ -26,6 +26,7 @@ function Dropdown({
   fullWidth,
   placeholder,
   error,
+  onKeyDown,
   ...restProps
 }: DropdownProps) {
   const [stateValue, setStateValue] = useState<DropdownOptionProps | undefined>(
@@ -126,6 +127,7 @@ function Dropdown({
         onChange={() => {
           setStateValue(options[highlightedIndex]);
         }}
+        onKeyDown={onKeyDown}
         placeholder={placeholder}
         ref={inputRef}
         rightIcon={isOpen ? <ChevronTop /> : <ChevronDown />}
