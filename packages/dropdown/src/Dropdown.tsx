@@ -110,11 +110,10 @@ function Dropdown({
   return (
     <Component
       className={classNames}
+      onBlur={onBlurHandler}
       onClick={onClickHandler}
       ref={containerRef}
       tabIndex={0}
-      {...restProps}
-      onBlur={onBlurHandler}
     >
       <Input
         aria-disabled={true}
@@ -131,6 +130,7 @@ function Dropdown({
         ref={inputRef}
         rightIcon={isOpen ? <ChevronTop /> : <ChevronDown />}
         value={stateValue?.label}
+        {...restProps}
       />
       <ul
         className={`${styles.options} ${isOpen ? styles.show : ''}`}
