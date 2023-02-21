@@ -1,5 +1,5 @@
 /* eslint-disable prettier/prettier */
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import cn from 'classnames';
 
 import { ChevronDown, ChevronTop } from '@heycar-uikit/icons';
@@ -37,13 +37,30 @@ function Dropdown({
   const [highlightedIndex, setHighlightedIndex] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  const selectOption = (option: DropdownOptionProps) => {
+  const isValueIncludedInOptions = useCallback((option)=>
+    !!options.find((o) => Object.entries(o).every(([key, val])=>{
+      return val === option[key];
+    })),
+  [options]);
+
+  useEffect(() => {
+    if (options.length === 0) setStateValue(undefined);
+    if (value && !isValueIncludedInOptions(value)) setStateValue(undefined);
+    if (stateValue && !isValueIncludedInOptions(stateValue)) setStateValue(undefined);
+    if (!stateValue && value && isValueIncludedInOptions(value)) setStateValue(value);
+  }, [value, options, stateValue, isValueIncludedInOptions]);
+
+  const selectOption = useCallback((option: DropdownOptionProps) => {
     if (onChange) {
       if (option !== stateValue) onChange(option);
     }
     setStateValue(option);
-  };
+  }, [onChange, stateValue]);
+
+  const onClickHandler = useCallback(() => {
+    onClick?.();
+    if (!disabled) setIsOpen((nextState) => !nextState);
+  }, [onClick, disabled, setIsOpen]);
 
   useEffect(() => {
     if (isOpen) setHighlightedIndex(0);
@@ -91,14 +108,10 @@ function Dropdown({
     return option?.value === stateValue?.value;
   };
 
-  const onClickHandler = () => {
-    if (onClick) onClick();
-    if (!disabled) setIsOpen(!isOpen);
-  };
-  const onBlurHandler = () => {
-    if (onBlur) onBlur();
+  const onBlurHandler = useCallback(() => {
+    onBlur?.();
     setIsOpen(false);
-  };
+  }, [onBlur, setIsOpen]);
 
   const classNames = cn(
     styles.container,
