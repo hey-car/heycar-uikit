@@ -1,8 +1,13 @@
 /* eslint-disable prettier/prettier */
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import cn from 'classnames';
 
-import { DropdownProps, SelectOptions } from './Dropdown.types';
+import { ChevronDown, ChevronTop } from '@heycar-uikit/icons';
+import Input from '@heycar-uikit/input';
+
+import DropdownOption from './components/DropdownOption';
+import { DropdownOptionProps } from './components/DropdownOption.types';
+import { DropdownProps } from './Dropdown.types';
 
 import styles from './styles/default.module.css';
 
@@ -15,14 +20,22 @@ function Dropdown({
   dataTestId,
   onBlur,
   onClick,
+  label,
+  hint,
+  inputRef,
   fullWidth,
+  placeholder,
+  error,
+  onKeyDown,
   ...restProps
 }: DropdownProps) {
-  const [stateValue, setStateValue] = useState<SelectOptions | undefined>(
+  const [stateValue, setStateValue] = useState<DropdownOptionProps | undefined>(
     value,
   );
 
   const [isOpen, setIsOpen] = useState(false);
+  const [highlightedIndex, setHighlightedIndex] = useState(0);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   const isValueIncludedInOptions = useCallback((option)=>
     !!options.find((o) => Object.entries(o).every(([key, val])=>{
@@ -37,19 +50,63 @@ function Dropdown({
     if (!stateValue && value && isValueIncludedInOptions(value)) setStateValue(value);
   }, [value, options, stateValue, isValueIncludedInOptions]);
 
-  const selectOption = useCallback((option: SelectOptions) => {
+  const selectOption = useCallback((option: DropdownOptionProps) => {
     if (onChange) {
       if (option !== stateValue) onChange(option);
     }
     setStateValue(option);
   }, [onChange, stateValue]);
 
-  const isOptionSelection = useCallback((option: SelectOptions) => option?.value === stateValue?.value, [stateValue]);
-
   const onClickHandler = useCallback(() => {
     onClick?.();
     if (!disabled) setIsOpen((nextState) => !nextState);
   }, [onClick, disabled, setIsOpen]);
+
+  useEffect(() => {
+    if (isOpen) setHighlightedIndex(0);
+  }, [isOpen]);
+
+  useEffect(() => {
+    const handler = (e: KeyboardEvent) => {
+      if (e.target != containerRef.current) return;
+      switch (e.code) {
+        case 'Enter':
+        case 'Space':
+          setIsOpen(prev => !prev);
+          if (isOpen) selectOption(options[highlightedIndex]);
+          break;
+        case 'ArrowUp':
+        case 'ArrowDown': {
+          if (!isOpen) {
+            setIsOpen(true);
+            break;
+          }
+
+          const newValue = highlightedIndex + (e.code === 'ArrowDown' ? 1 : -1);
+
+          if (newValue >= 0 && newValue < options.length) {
+            setHighlightedIndex(newValue);
+          }
+          break;
+        }
+        case 'Escape':
+          setIsOpen(false);
+          break;
+      }
+    };
+
+    containerRef.current?.addEventListener('keydown', handler);
+
+    return () => {
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+      containerRef.current?.removeEventListener('keydown', handler);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [highlightedIndex, options, selectOption]);
+
+  const isOptionSelection = (option: DropdownOptionProps) => {
+    return option?.value === stateValue?.value;
+  };
 
   const onBlurHandler = useCallback(() => {
     onBlur?.();
@@ -62,55 +119,51 @@ function Dropdown({
     fullWidth && styles.fullWidth,
   );
 
-  const arrowClassNames = cn(
-    disabled && styles.caret_disabled,
-    isOpen && styles.caret_up,
-    !isOpen && styles.caret_down,
-  );
-
-  const valueClassNames = cn(
-    disabled && 'disabled',
-    styles.value,
-  );
+  const valueClassNames = cn(disabled && 'disabled', styles.value);
 
   return (
     <Component
       className={classNames}
       onBlur={onBlurHandler}
       onClick={onClickHandler}
+      ref={containerRef}
       tabIndex={0}
-      {...restProps}
     >
-      <span className={valueClassNames}>
-        {stateValue?.label}
-      </span>
-      <div className={arrowClassNames}></div>
+      <Input
+        aria-disabled={true}
+        className={valueClassNames}
+        disabled={disabled}
+        error={error}
+        fullWidth={true}
+        hint={hint}
+        label={label}
+        onChange={() => {
+          setStateValue(options[highlightedIndex]);
+        }}
+        onKeyDown={onKeyDown}
+        placeholder={placeholder}
+        ref={inputRef}
+        rightIcon={isOpen ? <ChevronTop /> : <ChevronDown />}
+        value={stateValue?.label}
+        {...restProps}
+      />
       <ul
         className={`${styles.options} ${isOpen ? styles.show : ''}`}
         data-test-id={dataTestId}
       >
-        {options.map(option => (
+        {options.map((option, index) => (
           <li
             className={`${styles.option} ${isOptionSelection(option) ? styles.selected : ''
-              }`}
+              } ${index === highlightedIndex ? styles.highlighted : ''}`}
             key={option.value}
-            onClick={e => {
-              e.stopPropagation();
+            onMouseDown={e => {
               selectOption(option);
+              e.stopPropagation();
               setIsOpen(false);
             }}
+            onMouseEnter={() => setHighlightedIndex(index)}
           >
-            <div className={styles.contentContainer}>
-              {option.leftContent && (
-                <span className={styles.leftContent}>{option.leftContent}</span>
-              )}
-              <span className={styles.optionContent}>{option.label}</span>
-              {option.rightContent && (
-                <span className={styles.rightContent}>
-                  {option.rightContent}
-                </span>
-              )}
-            </div>
+            <DropdownOption {...option} />
           </li>
         ))}
       </ul>
