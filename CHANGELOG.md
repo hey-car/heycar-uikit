@@ -1,3 +1,10 @@
+## [4.2.5](https://github.com/hey-car/heycar-uikit/compare/v4.2.4...v4.2.5) (2023-02-21)
+
+
+### Bug Fixes
+
+* **dropdown:** added aria disable to keep ref through container ([#143](https://github.com/hey-car/heycar-uikit/issues/143)) ([8eec43e](https://github.com/hey-car/heycar-uikit/commit/8eec43e272671b60290e40d43da8ecc9f2156e3d))
+
 ## [4.2.4](https://github.com/hey-car/heycar-uikit/compare/v4.2.3...v4.2.4) (2023-02-16)
 
 
