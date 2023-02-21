@@ -1,3 +1,10 @@
+## [4.2.6](https://github.com/hey-car/heycar-uikit/compare/v4.2.5...v4.2.6) (2023-02-21)
+
+
+### Bug Fixes
+
+* **dropdown:** fix behavior on options and value change ([#144](https://github.com/hey-car/heycar-uikit/issues/144)) ([2f19c34](https://github.com/hey-car/heycar-uikit/commit/2f19c34fb6cde194a59e0a51f1eea0a1504be784))
+
 ## [4.2.5](https://github.com/hey-car/heycar-uikit/compare/v4.2.4...v4.2.5) (2023-02-21)
 
 
