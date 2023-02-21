@@ -1,5 +1,5 @@
 /* eslint-disable prettier/prettier */
-import React, { useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import cn from 'classnames';
 
 import { DropdownProps, SelectOptions } from './Dropdown.types';
@@ -24,25 +24,37 @@ function Dropdown({
 
   const [isOpen, setIsOpen] = useState(false);
 
-  const selectOption = (option: SelectOptions) => {
+  const isValueIncludedInOptions = useCallback((option)=>
+    !!options.find((o) => Object.entries(o).every(([key, val])=>{
+      return val === option[key];
+    })),
+  [options]);
+
+  useEffect(() => {
+    if (options.length === 0) setStateValue(undefined);
+    if (value && !isValueIncludedInOptions(value)) setStateValue(undefined);
+    if (stateValue && !isValueIncludedInOptions(stateValue)) setStateValue(undefined);
+    if (!stateValue && value && isValueIncludedInOptions(value)) setStateValue(value);
+  }, [value, options, stateValue, isValueIncludedInOptions]);
+
+  const selectOption = useCallback((option: SelectOptions) => {
     if (onChange) {
       if (option !== stateValue) onChange(option);
     }
     setStateValue(option);
-  };
+  }, [onChange, stateValue]);
 
-  const isOptionSelection = (option: SelectOptions) => {
-    return option?.value === stateValue?.value;
-  };
+  const isOptionSelection = useCallback((option: SelectOptions) => option?.value === stateValue?.value, [stateValue]);
 
-  const onClickHandler = () => {
-    if (onClick) onClick();
-    if (!disabled) setIsOpen(!isOpen);
-  };
-  const onBlurHandler = () => {
-    if (onBlur) onBlur();
+  const onClickHandler = useCallback(() => {
+    onClick?.();
+    if (!disabled) setIsOpen((nextState) => !nextState);
+  }, [onClick, disabled, setIsOpen]);
+
+  const onBlurHandler = useCallback(() => {
+    onBlur?.();
     setIsOpen(false);
-  };
+  }, [onBlur, setIsOpen]);
 
   const classNames = cn(
     styles.container,
