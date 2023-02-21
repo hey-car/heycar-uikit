@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.5](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/dropdown@2.0.4...@heycar-uikit/dropdown@2.0.5) (2023-02-21)
+
+
+### Bug Fixes
+
+* **dropdown:** added aria disable to keep ref through container ([#143](https://github.com/hey-car/heycar-uikit/issues/143)) ([8eec43e](https://github.com/hey-car/heycar-uikit/commit/8eec43e272671b60290e40d43da8ecc9f2156e3d))
+
+
+
+
+
 ## [2.0.4](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/dropdown@2.0.3...@heycar-uikit/dropdown@2.0.4) (2023-02-16)
 
 
