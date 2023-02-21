@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.6](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/dropdown@2.0.5...@heycar-uikit/dropdown@2.0.6) (2023-02-21)
+
+
+### Bug Fixes
+
+* **dropdown:** fix behavior on options and value change ([#144](https://github.com/hey-car/heycar-uikit/issues/144)) ([2f19c34](https://github.com/hey-car/heycar-uikit/commit/2f19c34fb6cde194a59e0a51f1eea0a1504be784))
+
+
+
+
+
 ## [2.0.5](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/dropdown@2.0.4...@heycar-uikit/dropdown@2.0.5) (2023-02-21)
 
 
