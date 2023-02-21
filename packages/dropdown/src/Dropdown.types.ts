@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { KeyboardEventHandler, ReactNode } from 'react';
 
 import { DropdownOptionProps } from './components/DropdownOption.types';
 
@@ -23,6 +23,10 @@ export type DropdownProps = {
    * for setting default value.
    */
   value?: DropdownOptionProps;
+  /**
+   * onKeyDown method callback upon key down
+   */
+  onKeyDown?: KeyboardEventHandler<HTMLInputElement>;
   /**
    * boolean prop to set disabled state.
    */

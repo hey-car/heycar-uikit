@@ -26,6 +26,7 @@ function Dropdown({
   fullWidth,
   placeholder,
   error,
+  onKeyDown,
   ...restProps
 }: DropdownProps) {
   const [stateValue, setStateValue] = useState<DropdownOptionProps | undefined>(
@@ -110,13 +111,13 @@ function Dropdown({
   return (
     <Component
       className={classNames}
+      onBlur={onBlurHandler}
       onClick={onClickHandler}
       ref={containerRef}
       tabIndex={0}
-      {...restProps}
-      onBlur={onBlurHandler}
     >
       <Input
+        aria-disabled={true}
         className={valueClassNames}
         disabled={disabled}
         error={error}
@@ -126,10 +127,12 @@ function Dropdown({
         onChange={() => {
           setStateValue(options[highlightedIndex]);
         }}
+        onKeyDown={onKeyDown}
         placeholder={placeholder}
         ref={inputRef}
         rightIcon={isOpen ? <ChevronTop /> : <ChevronDown />}
         value={stateValue?.label}
+        {...restProps}
       />
       <ul
         className={`${styles.options} ${isOpen ? styles.show : ''}`}
