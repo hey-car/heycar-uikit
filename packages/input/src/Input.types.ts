@@ -13,7 +13,7 @@ export type InputProps = Omit<
   /**
    * The value of the `input` element, required for a controlled component
    */
-  value?: string;
+  value?: string | number;
   /**
    * Type of the `input` element. It should be a valid HTML5 input type.
    */
@@ -21,7 +21,7 @@ export type InputProps = Omit<
   /**
    * 	The default value. Use when the component is not controlled
    */
-  defaultValue?: string;
+  defaultValue?: string | number;
   /**
    * If `true`, the `input` will take up the full width of its container
    */
