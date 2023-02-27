@@ -1,6 +1,6 @@
 {
   "name": "@heycar-uikit/dropdown",
-  "version": "2.0.7",
+  "version": "2.1.0",
   "description": "HeyCar-UIKit Dropdown",
   "main": "dist/index.js",
   "module": "./dist/esm/index.js",
