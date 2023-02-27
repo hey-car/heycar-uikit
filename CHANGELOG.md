@@ -1,3 +1,10 @@
+# [4.3.0](https://github.com/hey-car/heycar-uikit/compare/v4.2.6...v4.3.0) (2023-02-27)
+
+
+### Features
+
+* **input:** add number type to input's value type ([#145](https://github.com/hey-car/heycar-uikit/issues/145)) ([958915a](https://github.com/hey-car/heycar-uikit/commit/958915ac5dcd501ea76ae588655c76712ee1f512))
+
 ## [4.2.6](https://github.com/hey-car/heycar-uikit/compare/v4.2.5...v4.2.6) (2023-02-21)
 
 
