@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/input@1.1.9...@heycar-uikit/input@1.2.0) (2023-02-27)
+
+
+### Features
+
+* **input:** add number type to input's value type ([#145](https://github.com/hey-car/heycar-uikit/issues/145)) ([958915a](https://github.com/hey-car/heycar-uikit/commit/958915ac5dcd501ea76ae588655c76712ee1f512))
+
+
+
+
+
 ## [1.1.9](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/input@1.1.8...@heycar-uikit/input@1.1.9) (2023-01-04)
 
 **Note:** Version bump only for package @heycar-uikit/input
