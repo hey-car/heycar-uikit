@@ -1,3 +1,10 @@
+# [4.4.0](https://github.com/hey-car/heycar-uikit/compare/v4.3.0...v4.4.0) (2023-02-27)
+
+
+### Features
+
+* **input:** add number type to dropdown value type [#145](https://github.com/hey-car/heycar-uikit/issues/145) ([#146](https://github.com/hey-car/heycar-uikit/issues/146)) ([e00fdd9](https://github.com/hey-car/heycar-uikit/commit/e00fdd953e5de4292a5d76e440ecb9e58c350e3a))
+
 # [4.3.0](https://github.com/hey-car/heycar-uikit/compare/v4.2.6...v4.3.0) (2023-02-27)
 
 
