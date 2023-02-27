@@ -8,7 +8,7 @@ export type DropdownOptionProps = {
   /**
    * value of options
    */
-  value: string;
+  value: string | number;
   /**
    * Element placed before the children.
    */
