@@ -2,7 +2,7 @@ import React from 'react';
 
 import { ResponsivePropertyType } from '../Grid.types';
 
-type ColBaseProps<E extends React.ElementType> = {
+export interface ColProps {
   /**
    * Additional class
    */
@@ -44,12 +44,6 @@ type ColBaseProps<E extends React.ElementType> = {
   order?: ResponsivePropertyType;
 
   /**
-   * The component used for the root node. Either a string to use a HTML element or a component
-   * @default "div"
-   */
-  component?: E;
-
-  /**
    * Content
    */
   children?: React.ReactNode;
@@ -58,7 +52,7 @@ type ColBaseProps<E extends React.ElementType> = {
    * Identifier for automated testing systems
    */
   dataTestId?: string;
-};
+}
 
-export type ColProps<E extends React.ElementType> = ColBaseProps<E> &
-  Omit<React.ComponentProps<E>, keyof ColBaseProps<E>>;
+// export type ColProps<E extends React.ElementType> = ColBaseProps<E> &
+//   Omit<React.ComponentProps<E>, keyof ColBaseProps<E>>;
