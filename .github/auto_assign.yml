@@ -1,11 +1,8 @@
 addReviewers: true
 
 reviewers:
-  - hcafaq
   - esraltintas
-  - emrahsemizheycar
-  - heyabinanto
-  - pappjanos
+  - nathanjamal
 
 skipKeywords:
   - wip
