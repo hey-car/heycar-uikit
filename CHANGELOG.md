@@ -1,3 +1,59 @@
+# [4.4.0](https://github.com/hey-car/heycar-uikit/compare/v4.3.0...v4.4.0) (2023-02-27)
+
+
+### Features
+
+* **input:** add number type to dropdown value type [#145](https://github.com/hey-car/heycar-uikit/issues/145) ([#146](https://github.com/hey-car/heycar-uikit/issues/146)) ([e00fdd9](https://github.com/hey-car/heycar-uikit/commit/e00fdd953e5de4292a5d76e440ecb9e58c350e3a))
+
+# [4.3.0](https://github.com/hey-car/heycar-uikit/compare/v4.2.6...v4.3.0) (2023-02-27)
+
+
+### Features
+
+* **input:** add number type to input's value type ([#145](https://github.com/hey-car/heycar-uikit/issues/145)) ([958915a](https://github.com/hey-car/heycar-uikit/commit/958915ac5dcd501ea76ae588655c76712ee1f512))
+
+## [4.2.6](https://github.com/hey-car/heycar-uikit/compare/v4.2.5...v4.2.6) (2023-02-21)
+
+
+### Bug Fixes
+
+* **dropdown:** fix behavior on options and value change ([#144](https://github.com/hey-car/heycar-uikit/issues/144)) ([2f19c34](https://github.com/hey-car/heycar-uikit/commit/2f19c34fb6cde194a59e0a51f1eea0a1504be784))
+
+## [4.2.5](https://github.com/hey-car/heycar-uikit/compare/v4.2.4...v4.2.5) (2023-02-21)
+
+
+### Bug Fixes
+
+* **dropdown:** added aria disable to keep ref through container ([#143](https://github.com/hey-car/heycar-uikit/issues/143)) ([8eec43e](https://github.com/hey-car/heycar-uikit/commit/8eec43e272671b60290e40d43da8ecc9f2156e3d))
+
+## [4.2.4](https://github.com/hey-car/heycar-uikit/compare/v4.2.3...v4.2.4) (2023-02-16)
+
+
+### Bug Fixes
+
+* **package-lock.json:** updated for pagination ([#142](https://github.com/hey-car/heycar-uikit/issues/142)) ([9102048](https://github.com/hey-car/heycar-uikit/commit/910204800247a4abbc1135bfe1532ec57a6cbd75))
+
+## [4.2.3](https://github.com/hey-car/heycar-uikit/compare/v4.2.2...v4.2.3) (2023-02-16)
+
+
+### Bug Fixes
+
+* **dropdown:** added input ref ([#141](https://github.com/hey-car/heycar-uikit/issues/141)) ([424abfe](https://github.com/hey-car/heycar-uikit/commit/424abfe9aa295e682bb3a123329c6d93eefd8366))
+
+## [4.2.2](https://github.com/hey-car/heycar-uikit/compare/v4.2.1...v4.2.2) (2023-02-16)
+
+
+### Bug Fixes
+
+* **dropdown:** adds error state ([#140](https://github.com/hey-car/heycar-uikit/issues/140)) ([4ef925f](https://github.com/hey-car/heycar-uikit/commit/4ef925f3cc4db119a3dc3b0da7c7566d5ba4bcac))
+
+## [4.2.1](https://github.com/hey-car/heycar-uikit/compare/v4.2.0...v4.2.1) (2023-02-15)
+
+
+### Bug Fixes
+
+* **dropdown:** adding accessibility ([#137](https://github.com/hey-car/heycar-uikit/issues/137)) ([5e8cbec](https://github.com/hey-car/heycar-uikit/commit/5e8cbec6755771216244e36675f8ff7c79bcbfb5))
+
 # [4.2.0](https://github.com/hey-car/heycar-uikit/compare/v4.1.0...v4.2.0) (2023-02-06)
 
 

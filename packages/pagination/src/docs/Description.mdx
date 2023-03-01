@@ -1,0 +1,111 @@
+import { Container } from 'storybook/blocks';
+import Pagination from '../Pagination';
+
+## Basic usage
+
+Basic props are `totalPages` and `currentPage`. Pagination has no internal state so `currentPage` must always be updated.
+
+Pagination has two components, `Pagination` and `PaginationItem`. Pagination is required to render the component, it has basic capabilities such as `onClick` event.
+For more complex customization of items, such as using a different component, using items with `href` instead of `onClick`, the use of `PaginationItem` is required.
+
+Without the `component` prop of `PaginationItem`, its component will be either a `button` or `a`. If `onClick` prop of `Pagination` is defined, it will be rendered as a button.
+
+If using `PaginationItem`, always spread `item` as shown below.
+
+## Localization
+Localization is done with an object
+
+```tsx live
+render(
+ <Pagination
+    totalPages={12}
+    currentPage={3}
+    locale={
+     {
+        page: 'Page #{page}',
+        goto: 'Go to page #{page}',
+        prevPage: 'Previous page',
+        nextPage: 'Next page',
+      }
+    }
+ />
+);
+```
+
+## onClick
+Controlling the `Pagination` component with onClick event
+```tsx live
+render(
+ <Pagination
+    totalPages={12}
+    currentPage={3}
+    onClick={itemNumber => console.log(itemNumber)}
+ />
+);
+```
+
+## Using hrefs and `PaginationItem`
+
+Remember to always spread `item`
+
+```tsx live
+render(
+   <Pagination
+      totalPages={255}
+      currentPage={5}
+      renderItem={item => (
+          <PaginationItem
+            href={`https://hey.car/page/${item.page}`}
+            {...item}
+          />
+        )}
+   />
+);
+```
+
+## Custom aria-labels
+```tsx live
+render(
+   <Pagination
+      totalPages={10}
+      currentPage={10}
+      aria-label={'Pagination'} // For pagination main component
+      getItemAriaLabel={({ type, page, selected }) => {
+        return 'Go to page ' + page;
+      }}
+   />
+);
+```
+
+## Custom component
+The use of custom components to render different items, allows the use of components such as `Link` from Next.js and `Link` from react-router.
+```tsx
+interface LinkProps {
+  link: string;
+}
+const Link: React.FC<LinkProps> = ({ link, children, ...rest }) => (
+  <a href={link} {...rest}>
+    {children}
+  </a>
+);
+
+render(
+   <Pagination
+      totalPages={3}
+      currentPage={3}
+      renderItem={item => (
+          <PaginationItem
+            component={Link}
+            link={`https://hey.car/page/${item.page}`}
+            {...item}
+          />
+        )}
+   />
+);
+```
+
+## Accessibility
+
+`Pagination` supports keyboard navigation and is compatible with screen readers.
+Pressing the `Tab` and `Shift + Tab` keys will move focus between buttons.
+Pressing `Enter` will do a click event

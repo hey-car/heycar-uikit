@@ -1,29 +1,12 @@
-import React from 'react';
+import React, { KeyboardEventHandler, ReactNode } from 'react';
 
-export type SelectOptions = {
-  /**
-   * labels of options
-   */
-  label: string;
-  /**
-   * value of options
-   */
-  value: string;
-  /**
-   * Element placed before the children.
-   */
-  leftContent?: React.ReactNode;
-  /**
-   * Element placed after the children
-   */
-  rightContent?: React.ReactNode;
-};
+import { DropdownOptionProps } from './components/DropdownOption.types';
 
 export type DropdownProps = {
   /**
    * list of options to show in dropdown
    */
-  options: SelectOptions[];
+  options: DropdownOptionProps[];
   /**
    * onClick method callback upon dropdown click
    */
@@ -35,11 +18,15 @@ export type DropdownProps = {
   /**
    * onChange method callback upon option change
    */
-  onChange?: (value: SelectOptions | undefined) => void;
+  onChange?: (value: DropdownOptionProps | undefined) => void;
   /**
    * for setting default value.
    */
-  value?: SelectOptions;
+  value?: DropdownOptionProps;
+  /**
+   * onKeyDown method callback upon key down
+   */
+  onKeyDown?: KeyboardEventHandler<HTMLInputElement>;
   /**
    * boolean prop to set disabled state.
    */
@@ -56,4 +43,24 @@ export type DropdownProps = {
    * The component used for the root node. Either a string to use a HTML element or a component
    */
   Component?: React.ElementType;
+  /**
+   * The string as a placeholder
+   */
+  placeholder?: string;
+  /**
+   * The hint for the error state
+   */
+  error?: ReactNode | boolean;
+  /**
+   * The short `hint` displayed under the dropdown
+   */
+  hint?: ReactNode;
+  /**
+   * The label of the dropdown component
+   */
+  label?: React.ReactNode;
+  /**
+   * The input ref of the dropdown component
+   */
+  inputRef?: React.Ref<HTMLInputElement>;
 };

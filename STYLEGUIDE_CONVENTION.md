@@ -10,7 +10,7 @@
 
 ### JSX
 
-Prefer normal functions (non arrow functions or classes):
+Prefer functions (not classes):
 
 ```JSX
 // bad
@@ -20,7 +20,7 @@ class Listing extends React.Component {
   }
 }
 
-// bad (relying on function name inference is discouraged)
+// good, but relying on function name inference is discouraged
 const Listing = ({ hello }) => (
   <div>{hello}</div>
 );
