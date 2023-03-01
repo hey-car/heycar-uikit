@@ -1,0 +1,186 @@
+import { Meta } from '@storybook/addon-docs';
+import { ComponentListItem } from 'storybook/blocks';
+
+import Grid from 'packages/grid/src';
+import Typography from 'packages/typography/src';
+
+import { version as accV } from 'packages/accordion/package.json';
+import { version as bdgV } from 'packages/badge/package.json';
+import { version as btnV } from 'packages/button/package.json';
+import { version as chpV } from 'packages/chip/package.json';
+import { version as clpsV } from 'packages/collapse/package.json';
+import { version as ddV } from 'packages/dropdown/package.json';
+import { version as fntV } from 'packages/fonts/package.json';
+import { version as grdV } from 'packages/grid/package.json';
+import { version as icoV } from 'packages/icons/package.json';
+import { version as inpV } from 'packages/input/package.json';
+import { version as lgoV } from 'packages/logo/package.json';
+import { version as pillV } from 'packages/pill/package.json';
+import { version as txtaV } from 'packages/textarea/package.json';
+import { version as themeV } from 'packages/themes/package.json';
+import { version as typoV } from 'packages/typography/package.json';
+import { version as varsV } from 'packages/vars/package.json';
+
+<Meta
+  title="Status/Status Checker"
+  parameters={{
+    previewTabs: {
+      canvas: { hidden: true },
+      'storybook/docs/panel': { hidden: true },
+    },
+  }}
+/>
+
+# Component Statuses 🚦
+
+<Typography variant="body4">
+  Up to date Statuses for the heycar-UIKit. View status key{' '}
+  <a href="/?path=/docs/guidelines-component-status--page">here</a>
+</Typography>
+
+## Recomendation 💚
+
+<div style={{marginBottom: '40px'}}>
+<Grid.Row gutter={{ mobile: 0, tablet: 16, desktop: { m: 24 } }}>
+  <Grid.Col width={{ mobile: 12, tablet: 4, desktop: 4 }}>
+    <ComponentListItem
+      name="Accordion"
+      version={accV}
+      design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Global-Design-System?node-id=4289%3A100591"
+    />
+  </Grid.Col>
+  <Grid.Col width={{ mobile: 12, tablet: 4, desktop: 4 }}>
+    <ComponentListItem
+      name="Badge"
+      version={bdgV}
+      design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Global-Design-System?node-id=4031%3A102387"
+    />
+  </Grid.Col>
+  <Grid.Col width={{ mobile: 12, tablet: 4, desktop: 4 }}>
+    <ComponentListItem
+      name="Button"
+      version={btnV}
+      design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Design-System?node-id=1111%3A116509"
+    />
+  </Grid.Col>
+</Grid.Row>
+
+<Grid.Row gutter={{ mobile: 0, tablet: 16, desktop: { m: 24 } }}>
+  <Grid.Col width={{ mobile: 12, tablet: 4, desktop: 4 }}>
+    <ComponentListItem name="Fonts" version={fntV} />
+  </Grid.Col>
+  <Grid.Col width={{ mobile: 12, tablet: 4, desktop: 4 }}>
+    <ComponentListItem
+      name="Grid"
+      version={grdV}
+      design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Design-System?node-id=1370%3A39327"
+    />
+  </Grid.Col>
+  <Grid.Col width={{ mobile: 12, tablet: 4, desktop: 4 }}>
+    <ComponentListItem
+      name="Icon"
+      version={icoV}
+      design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Global-Design-System?node-id=1653%3A45210"
+    />
+  </Grid.Col>
+</Grid.Row>
+
+<Grid.Row gutter={{ mobile: 0, tablet: 16, desktop: { m: 24 } }}>
+  <Grid.Col width={{ mobile: 12, tablet: 4, desktop: 4 }}>
+    <ComponentListItem
+      name="Input"
+      version={inpV}
+      design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Global-Design-System?node-id=1426%3A39722"
+    />
+  </Grid.Col>
+  <Grid.Col width={{ mobile: 12, tablet: 4, desktop: 4 }}>
+    <ComponentListItem
+      name="Logo"
+      version={lgoV}
+      design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Global-Design-System?node-id=1073%3A116234"
+    />
+  </Grid.Col>
+  <Grid.Col width={{ mobile: 12, tablet: 4, desktop: 4 }}>
+    <ComponentListItem
+      name="Theme"
+      version={themeV}
+      design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Global-Design-System?node-id=1291%3A35196"
+    />
+  </Grid.Col>
+</Grid.Row>
+
+<Grid.Row gutter={{ mobile: 0, tablet: 16, desktop: { m: 24 } }} justify="left">
+  <Grid.Col width={{ mobile: 12, tablet: 4, desktop: 4 }}>
+    <ComponentListItem
+      name="Typography"
+      version={typoV}
+      design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Design-System?node-id=1369%3A39089"
+    />
+  </Grid.Col>
+  <Grid.Col width={{ mobile: 12, tablet: 4, desktop: 4 }}>
+    <ComponentListItem
+      name="Vars"
+      version={varsV}
+      design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Global-Design-System?node-id=1370%3A39327&t=5FvLcwS3cfEmydCn-0"
+    />
+  </Grid.Col>
+</Grid.Row>
+</div>
+
+## First Intergration 🟡
+
+<div style={{ marginBottom: '40px' }}>
+  <Typography variant="body4">Nothing here</Typography>
+</div>
+
+## Ready for Intergration 🔵
+
+<div style={{ marginBottom: '40px' }}>
+  <Grid.Row
+    gutter={{ mobile: 0, tablet: 16, desktop: { m: 24 } }}
+    justify="left"
+  >
+    <Grid.Col width={{ mobile: 12, tablet: 4, desktop: 4 }}>
+      <ComponentListItem
+        name="Textarea"
+        version={txtaV}
+        design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Global-Design-System?node-id=4289%3A100591"
+      />
+    </Grid.Col>
+    <Grid.Col width={{ mobile: 12, tablet: 4, desktop: 4 }}>
+      <ComponentListItem
+        name="Vars"
+        version={varsV}
+        design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Global-Design-System?node-id=1370%3A39327&t=5FvLcwS3cfEmydCn-0"
+      />
+    </Grid.Col>
+  </Grid.Row>
+</div>
+
+## Proposal 🔴
+
+<div style={{ marginBottom: '40px' }}>
+  <Grid.Row gutter={{ mobile: 0, tablet: 16, desktop: { m: 24 } }}>
+    <Grid.Col width={{ mobile: 12, tablet: 4, desktop: 4 }}>
+      <ComponentListItem
+        name="Chip"
+        version={chpV}
+        design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Global-Design-System?node-id=4289%3A100591"
+      />
+    </Grid.Col>
+    <Grid.Col width={{ mobile: 12, tablet: 4, desktop: 4 }}>
+      <ComponentListItem
+        name="Dropdown"
+        version={ddV}
+        design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Global-Design-System?node-id=4289%3A100591"
+      />
+    </Grid.Col>
+    <Grid.Col width={{ mobile: 12, tablet: 4, desktop: 4 }}>
+      <ComponentListItem
+        name="Pill"
+        version={pillV}
+        design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Global-Design-System?node-id=4289%3A100591"
+      />
+    </Grid.Col>
+  </Grid.Row>
+</div>
