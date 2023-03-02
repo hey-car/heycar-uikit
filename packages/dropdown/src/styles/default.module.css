@@ -31,11 +31,20 @@
   color: var(--container-disabled-color);
   border-color: var(--container-disabled-color);
 }
+
 .value {
   flex-grow: 1;
   display: flex;
   gap: 0.5em;
   flex-wrap: wrap;
+  max-width: 232px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+input {
+  max-width: 232px;
 }
 
 .options {
