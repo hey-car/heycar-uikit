@@ -23,6 +23,7 @@ export const ComponentListItem: React.FC<ComponentListItemProps> = ({
     .replace(/([A-Z])([A-Z])(?=[a-z])/g, '$1-$2')
     .toLowerCase();
   const githubLink = `https://github.com/hey-car/heycar-uikit/tree/main/packages/${packageName}`;
+  const npmLink = `https://www.npmjs.com/package/@heycar-uikit/${packageName}`;
 
   return (
     <div className={styles.component}>
@@ -45,6 +46,11 @@ export const ComponentListItem: React.FC<ComponentListItemProps> = ({
       <div className={styles.links}>
         <div className={styles.github}>
           <a href={githubLink} target="_blank">
+            &nbsp;
+          </a>
+        </div>
+        <div className={styles.npm}>
+          <a href={npmLink} target="_blank">
             &nbsp;
           </a>
         </div>

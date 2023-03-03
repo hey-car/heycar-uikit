@@ -28,6 +28,13 @@
     50%;
 }
 
+.npm a {
+  padding: 0 0 0 var(--gap-m);
+  background: url(https://static.npmjs.com/b0f1a8318363185cc2ea6a40ac23eeb2.png)
+    no-repeat 0 50%;
+  background-size: 16px;
+}
+
 .github a {
   padding: 0 0 0 var(--gap-m);
   background: url(https://github.githubassets.com/favicons/favicon.svg)
