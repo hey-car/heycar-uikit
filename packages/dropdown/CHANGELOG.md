@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.1](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/dropdown@2.1.0...@heycar-uikit/dropdown@2.1.1) (2023-03-03)
+
+
+### Bug Fixes
+
+* **dropdown:** fix max width as 232px according to the design ([#150](https://github.com/hey-car/heycar-uikit/issues/150)) ([71a6b89](https://github.com/hey-car/heycar-uikit/commit/71a6b89f295e7a9ad44e594ae49748f38d0d544f))
+
+
+
+
+
 # [2.1.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/dropdown@2.0.7...@heycar-uikit/dropdown@2.1.0) (2023-02-27)
 
 
