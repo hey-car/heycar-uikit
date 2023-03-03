@@ -41,6 +41,7 @@ addParameters({
       method: 'alphabetical',
       order: [
         'Introduction',
+        'Status',
         'Guidelines',
         [
           'Installation',
