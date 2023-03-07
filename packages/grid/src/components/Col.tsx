@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import cn from 'classnames';
-import { PropsBasedOnComponent } from 'shared/types/PropsBasedOnComponent';
 
+import { PropsBasedOnComponent } from '../../../../shared/types/PropsBasedOnComponent';
 import getGridClassNames from '../utils/getGridClassNames';
 
 import { ColProps } from './Col.types';
@@ -40,5 +40,3 @@ export const Col: PropsBasedOnComponent<ColProps, 'div'> = ({
     </Component>
   );
 };
-
-export default Col;
