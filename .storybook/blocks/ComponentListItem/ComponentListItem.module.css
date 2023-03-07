@@ -2,13 +2,13 @@
   position: relative;
   display: flex;
   align-items: center;
-  gap: var(--gap-xl);
+  gap: var(--spacing-6);
 }
 
 .details {
   display: flex;
   align-items: center;
-  gap: var(--gap-xs);
+  gap: var(--spacing-2);
 }
 
 .details h3 a {
@@ -23,20 +23,20 @@
 }
 
 .design a {
-  padding: 0 0 0 var(--gap-m);
+  padding: 0 0 0 var(--spacing-4);
   background: url(https://static.figma.com/app/icon/1/favicon.svg) no-repeat 0
     50%;
 }
 
 .npm a {
-  padding: 0 0 0 var(--gap-m);
+  padding: 0 0 0 var(--spacing-4);
   background: url(https://static.npmjs.com/b0f1a8318363185cc2ea6a40ac23eeb2.png)
     no-repeat 0 50%;
   background-size: 16px;
 }
 
 .github a {
-  padding: 0 0 0 var(--gap-m);
+  padding: 0 0 0 var(--spacing-4);
   background: url(https://github.githubassets.com/favicons/favicon.svg)
     no-repeat 0 50%;
   background-size: 16px 16px;
@@ -44,7 +44,7 @@
 
 .links {
   display: flex;
-  gap: var(--gap-s);
+  gap: var(--spacing-3);
 }
 
 .links a {

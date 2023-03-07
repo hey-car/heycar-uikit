@@ -112,9 +112,9 @@ render(
   <Container>
     <Row>
       <Col key="left">
-          <Button leftIcon={<Call />} color="primary">
-            Button CTA
-          </Button>
+        <Button leftIcon={<Call />} color="primary">
+          Button CTA
+        </Button>
       </Col>
       <Col key="right">
         <Button rightIcon={<Call />} color="primary">
@@ -123,7 +123,12 @@ render(
       </Col>
       {buttonSizes.map(size => (
         <Col key={size}>
-          <Button leftIcon={<Call />} rightIcon={<Call />} color="primary" size={size}>
+          <Button
+            leftIcon={<Call />}
+            rightIcon={<Call />}
+            color="primary"
+            size={size}
+          >
             Button CTA
           </Button>
         </Col>
@@ -140,7 +145,7 @@ render(
     </Row>
     <Row>
       <Col>
-        <Button leftIcon={<Call />} color="primary" size="large"/>
+        <Button leftIcon={<Call />} color="primary" size="large" />
       </Col>
     </Row>
   </Container>,

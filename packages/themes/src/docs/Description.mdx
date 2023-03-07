@@ -1,4 +1,7 @@
+import { Container, Row, Col } from 'storybook/blocks';
 import styles from './../styles/theme.module.css';
+
+## Colors
 
 Listed below are all of the color names and their following possible shades
 available as CSS variables on this design system.
@@ -94,3 +97,218 @@ export const Colors = () => {
 <Story name="Colors">
   <Colors />
 </Story>
+<br />
+
+## Spacing
+
+There are 15 spacing options available as CSS variables on this design system.
+
+To use a spacing CSS variables, start the name of the variable with `--spacing`, followed by
+the space name that you want (e.g. `-1`, `-14`).
+
+**Note:** The spacing names are consecutive from 1 to 12, after that they go up in steps for 2
+
+```tsx live
+const row = {
+  width: '100%',
+  marginTop: `var(--spacing-3)`,
+};
+const common = {
+  height: `var(--spacing-6)`,
+  background: `var(--color-secondary-500)`,
+};
+render(
+  <Container>
+    <Row style={row}>
+      <Col span="3">
+        <h4>Name</h4>
+      </Col>
+      <Col span="3">
+        <h4>Pixels</h4>
+      </Col>
+      <Col span="3"></Col>
+    </Row>
+
+    <Row style={row}>
+      <Col span="3">1</Col>
+      <Col span="3">4px</Col>
+      <Col span="3">
+        <div
+          style={{
+            ...common,
+            width: `var(--spacing-1)`,
+          }}
+        />
+      </Col>
+    </Row>
+    <Row style={row}>
+      <Col span="3">2</Col>
+      <Col span="3">8px</Col>
+      <Col span="3">
+        <div
+          style={{
+            ...common,
+            width: `var(--spacing-2)`,
+          }}
+        />
+      </Col>
+    </Row>
+    <Row style={row}>
+      <Col span="3">3</Col>
+      <Col span="3">12px</Col>
+      <Col span="3">
+        <div
+          style={{
+            ...common,
+            width: `var(--spacing-3)`,
+          }}
+        />
+      </Col>
+    </Row>
+    <Row style={row}>
+      <Col span="3">4</Col>
+      <Col span="3">16px</Col>
+      <Col span="3">
+        <div
+          style={{
+            ...common,
+            width: `var(--spacing-4)`,
+          }}
+        />
+      </Col>
+    </Row>
+    <Row style={row}>
+      <Col span="3">5</Col>
+      <Col span="3">20px</Col>
+      <Col span="3">
+        <div
+          style={{
+            ...common,
+            width: `var(--spacing-5)`,
+          }}
+        />
+      </Col>
+    </Row>
+    <Row style={row}>
+      <Col span="3">6</Col>
+      <Col span="3">24px</Col>
+      <Col span="3">
+        <div
+          style={{
+            ...common,
+            width: `var(--spacing-6)`,
+          }}
+        />
+      </Col>
+    </Row>
+    <Row style={row}>
+      <Col span="3">7</Col>
+      <Col span="3">28px</Col>
+      <Col span="3">
+        <div
+          style={{
+            ...common,
+            width: `var(--spacing-7)`,
+          }}
+        />
+      </Col>
+    </Row>
+    <Row style={row}>
+      <Col span="3">8</Col>
+      <Col span="3">23px</Col>
+      <Col span="3">
+        <div
+          style={{
+            ...common,
+            width: `var(--spacing-8)`,
+          }}
+        />
+      </Col>
+    </Row>
+    <Row style={row}>
+      <Col span="3">9</Col>
+      <Col span="3">36px</Col>
+      <Col span="3">
+        <div
+          style={{
+            ...common,
+            width: `var(--spacing-9)`,
+          }}
+        />
+      </Col>
+    </Row>
+    <Row style={row}>
+      <Col span="3">10</Col>
+      <Col span="3">40px</Col>
+      <Col span="3">
+        <div
+          style={{
+            ...common,
+            width: `var(--spacing-10)`,
+          }}
+        />
+      </Col>
+    </Row>
+    <Row style={row}>
+      <Col span="3">11</Col>
+      <Col span="3">44px</Col>
+      <Col span="3">
+        <div
+          style={{
+            ...common,
+            width: `var(--spacing-11)`,
+          }}
+        />
+      </Col>
+    </Row>
+    <Row style={row}>
+      <Col span="3">12</Col>
+      <Col span="3">48px</Col>
+      <Col span="3">
+        <div
+          style={{
+            ...common,
+            width: `var(--spacing-12)`,
+          }}
+        />
+      </Col>
+    </Row>
+    <Row style={row}>
+      <Col span="3">14</Col>
+      <Col span="3">56px</Col>
+      <Col span="3">
+        <div
+          style={{
+            ...common,
+            width: `var(--spacing-14)`,
+          }}
+        />
+      </Col>
+    </Row>
+    <Row style={row}>
+      <Col span="3">16</Col>
+      <Col span="3">64px</Col>
+      <Col span="3">
+        <div
+          style={{
+            ...common,
+            width: `var(--spacing-16)`,
+          }}
+        />
+      </Col>
+    </Row>
+    <Row style={row}>
+      <Col span="3">18</Col>
+      <Col span="3">72px</Col>
+      <Col span="3">
+        <div
+          style={{
+            ...common,
+            width: `var(--spacing-18)`,
+          }}
+        />
+      </Col>
+    </Row>
+  </Container>,
+);
+```
