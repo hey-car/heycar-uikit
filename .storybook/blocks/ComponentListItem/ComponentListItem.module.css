@@ -1,0 +1,54 @@
+.component {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--gap-xl);
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-xs);
+}
+
+.details h3 a {
+  color: var(--color-tarmac-grey-700);
+}
+
+.version {
+  display: inline-block;
+  color: rgba(11, 31, 53, 0.6);
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.design a {
+  padding: 0 0 0 var(--gap-m);
+  background: url(https://static.figma.com/app/icon/1/favicon.svg) no-repeat 0
+    50%;
+}
+
+.npm a {
+  padding: 0 0 0 var(--gap-m);
+  background: url(https://static.npmjs.com/b0f1a8318363185cc2ea6a40ac23eeb2.png)
+    no-repeat 0 50%;
+  background-size: 16px;
+}
+
+.github a {
+  padding: 0 0 0 var(--gap-m);
+  background: url(https://github.githubassets.com/favicons/favicon.svg)
+    no-repeat 0 50%;
+  background-size: 16px 16px;
+}
+
+.links {
+  display: flex;
+  gap: var(--gap-s);
+}
+
+.links a {
+  color: var(--color-light-text-link);
+  border-bottom: 1px solid var(--color-light-text-link-alpha-30);
+  text-decoration: none;
+}

@@ -1,3 +1,10 @@
+## [4.4.1](https://github.com/hey-car/heycar-uikit/compare/v4.4.0...v4.4.1) (2023-03-03)
+
+
+### Bug Fixes
+
+* **dropdown:** fix max width as 232px according to the design ([#150](https://github.com/hey-car/heycar-uikit/issues/150)) ([71a6b89](https://github.com/hey-car/heycar-uikit/commit/71a6b89f295e7a9ad44e594ae49748f38d0d544f))
+
 # [4.4.0](https://github.com/hey-car/heycar-uikit/compare/v4.3.0...v4.4.0) (2023-02-27)
 
 
