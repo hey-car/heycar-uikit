@@ -8,6 +8,7 @@ import Changelog from '../../CHANGELOG.md';
 import styles from '!!raw-loader!../styles/default.module.css';
 import sizeStyles from '!!raw-loader!../styles/size.module.css';
 import variantStyles from '!!raw-loader!../styles/variant.module.css';
+import { Call } from '../../../icons/src';
 
 <!-- Meta -->
 
@@ -42,7 +43,7 @@ import variantStyles from '!!raw-loader!../styles/variant.module.css';
   }}
 />
 
-export const ButtonTemplate = args => <Button {...args} />;
+export const ButtonTemplate = args => <Button {...args} leftIcon={<Call />} />;
 
 <!-- Canvas -->
 
@@ -54,6 +55,8 @@ export const ButtonTemplate = args => <Button {...args} />;
     color: 'primary',
     size: 'large',
     loading: false,
+    leftIcon: false,
+    rightIcon: false,
   }}
 >
   {ButtonTemplate.bind({})}
