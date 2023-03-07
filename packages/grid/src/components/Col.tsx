@@ -9,6 +9,7 @@ import { ColProps } from './Col.types';
 import guttersStyles from '../styles/gutters.module.css';
 import styles from './Col.module.css';
 
+// export Col is necessary with PropsBasedOnComponent due to a Storybook bug
 export const Col: PropsBasedOnComponent<ColProps, 'div'> = ({
   component,
   className,
@@ -40,3 +41,5 @@ export const Col: PropsBasedOnComponent<ColProps, 'div'> = ({
     </Component>
   );
 };
+
+export default Col;
