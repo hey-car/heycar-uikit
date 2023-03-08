@@ -13,12 +13,12 @@
   color: var(--color-neutral-700);
 
   &.accordionOpen {
-    padding-bottom: var(--gap-xl);
+    padding-bottom: var(--gap-5xl);
   }
 }
 
 .header {
-  @mixin typography-body-1;
+  @mixin typography-body-3;
   text-align: left;
   flex-grow: 1;
   width: 100%;
@@ -83,7 +83,7 @@
 
   &:hover,
   &:focus-visible {
-    background-color: var(--color-neutral-50);
+    @mixin typography-body-1;
   }
 }
 
