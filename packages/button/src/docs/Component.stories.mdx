@@ -5,6 +5,7 @@ import Button from '../Button';
 import { version } from '../../package.json';
 import Description from './Description.mdx';
 import Changelog from '../../CHANGELOG.md';
+import { Whatsapp, Call } from '../../../icons/src';
 import styles from '!!raw-loader!../styles/default.module.css';
 import sizeStyles from '!!raw-loader!../styles/size.module.css';
 import variantStyles from '!!raw-loader!../styles/variant.module.css';
@@ -30,13 +31,17 @@ import variantStyles from '!!raw-loader!../styles/variant.module.css';
       },
     },
     leftIcon: {
-      table: {
-        disable: true,
+      options: ['Icon', 'No Icon'],
+      mapping: {
+        Icon: <Call />,
+        ['No Icon']: undefined,
       },
     },
     rightIcon: {
-      table: {
-        disable: true,
+      options: ['Icon', 'No Icon'],
+      mapping: {
+        Icon: <Whatsapp />,
+        ['No Icon']: undefined,
       },
     },
   }}
