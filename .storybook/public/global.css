@@ -18,13 +18,13 @@ body {
 
 body.sb-show-main {
   margin: 0;
-  padding: var(--gap-xs);
+  padding: var(--spacing-2);
   overflow-x: hidden;
   background-color: white !important;
 }
 
 #docs-root > .sbdocs-wrapper {
-  padding: var(--gap-5xl) var(--gap-m);
+  padding: var(--spacing-10) var(--spacing-4);
 }
 
 .tool {
@@ -34,7 +34,7 @@ body.sb-show-main {
 
 .label {
   display: inline-block;
-  margin-right: var(--gap-xs);
+  margin-right: var(--spacing-2);
   font-size: 13px;
 }
 

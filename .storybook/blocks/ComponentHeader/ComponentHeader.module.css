@@ -1,6 +1,6 @@
 .component {
   position: relative;
-  margin: 0 0 var(--gap-xl);
+  margin: 0 0 var(--spacing-6);
 }
 
 .component h1 {
@@ -9,21 +9,21 @@
 
 .version {
   display: inline-block;
-  margin-left: var(--gap-xs);
+  margin-left: var(--spacing-2);
   color: rgba(11, 31, 53, 0.6);
   font-size: 16px;
   line-height: 1.2;
 }
 
 .design {
-  padding: 0 0 0 var(--gap-l);
+  padding: 0 0 0 var(--spacing-5);
   background: url(https://static.figma.com/app/icon/1/favicon.svg) no-repeat 0
     50%;
 }
 
 .github {
-  margin: 0 0 var(--gap-xs);
-  padding: 0 0 0 var(--gap-l);
+  margin: 0 0 var(--spacing-2);
+  padding: 0 0 0 var(--spacing-5);
   background: url(https://github.githubassets.com/favicons/favicon.svg)
     no-repeat 0 50%;
   background-size: 16px 16px;
