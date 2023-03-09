@@ -13,7 +13,10 @@ import Changelog from '../../CHANGELOG.md';
 export const AccordionTemplate = args => {
   return (
     <div style={{ maxWidth: '700px', margin: '0 auto' }}>
-      <Accordion title="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit">
+      <Accordion
+        open
+        title="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit"
+      >
         You’ll struggle to find any objective reasons to buy a Q3 Sportback over
         the standard Audi Q3. But, if you want to stand out, the Sportback is
         rarer than the regular car and barely any more expensive on the used
@@ -22,7 +25,7 @@ export const AccordionTemplate = args => {
         (including the 1.5 mild-hybrid petrol), and the Q3 Sportback gets easier
         to justify.
       </Accordion>
-      <Accordion disabled title="Exmplae of disabled accordion">
+      <Accordion disabled title="Example of disabled accordion">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
         sint. Velit officia consequat duis enim velit mollit. Exercitation
         veniam consequat sunt nostrud amet.
