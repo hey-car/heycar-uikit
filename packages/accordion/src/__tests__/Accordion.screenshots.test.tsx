@@ -63,6 +63,8 @@ describe('Accordion screenshots', () => {
       packageName,
     });
 
-    await screenshotMatchClick(pageUrl, accordionButtonSelector);
+    await screenshotMatchClick(pageUrl, accordionButtonSelector, {
+      animations: 'disabled',
+    });
   });
 });
