@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/themes@2.0.1...@heycar-uikit/themes@2.1.0) (2023-03-09)
+
+
+### Features
+
+* **vars:** add spacing variables from figma ([#155](https://github.com/hey-car/heycar-uikit/issues/155)) ([99885d2](https://github.com/hey-car/heycar-uikit/commit/99885d2fb84e31ec75fa0a11e3753c823c1fe4b1))
+
+
+
+
+
 ## [2.0.1](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/themes@2.0.0...@heycar-uikit/themes@2.0.1) (2023-02-16)
 
 **Note:** Version bump only for package @heycar-uikit/themes
