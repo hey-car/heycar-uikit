@@ -13,18 +13,31 @@
   Heading
 */
 @define-mixin typography-display {
-  font-size: 60px;
-  line-height: 68px;
-  letter-spacing: -2.5px;
-  font-family: var(--font-family-system);
-  font-weight: var(--font-weight-xbold);
-}
-
-@define-mixin typography-display_mobile {
-  @mixin typography-display;
   font-size: 48px;
   line-height: 56px;
   letter-spacing: -2px;
+  font-family: var(--font-family-system);
+  font-weight: var(--font-weight-xbold);
+
+  @media (--tablet) {
+    font-size: 60px;
+    line-height: 68px;
+    letter-spacing: -2.5px;
+  }
+}
+
+@define-mixin typography-display-2 {
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -2px;
+  font-family: var(--font-family-system);
+  font-weight: var(--font-weight-bold);
+
+  @media (--tablet) {
+    font-size: 60px;
+    line-height: 68px;
+    letter-spacing: -2.5px;
+  }
 }
 
 @define-mixin typography-heading-1 {
@@ -208,6 +221,30 @@
 
 /*
   Button
+*/
+@define-mixin typography-button-1 {
+  font-size: 16px;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.2px;
+  font-family: var(--font-family-system);
+}
+
+@define-mixin typography-button-2 {
+  font-size: 14px;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.2px;
+  font-family: var(--font-family-system);
+}
+
+@define-mixin typography-button-3 {
+  font-size: 12px;
+  font-weight: var(--font-weight-medium);
+  letter-spacing: 0.2px;
+  font-family: var(--font-family-system);
+}
+
+/*
+  Button Old - DO NOT USE
 */
 @define-mixin button_large__bold {
   font-size: 16px;
