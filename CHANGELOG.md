@@ -1,3 +1,15 @@
+# [4.5.0](https://github.com/hey-car/heycar-uikit/compare/v4.4.1...v4.5.0) (2023-03-09)
+
+
+### Bug Fixes
+
+* **accordion:** accordion updates from design review ([#158](https://github.com/hey-car/heycar-uikit/issues/158)) ([5f37ad7](https://github.com/hey-car/heycar-uikit/commit/5f37ad7195dbb1316ef95f0469b1f905f46d3a4f))
+
+
+### Features
+
+* **vars:** add spacing variables from figma ([#155](https://github.com/hey-car/heycar-uikit/issues/155)) ([99885d2](https://github.com/hey-car/heycar-uikit/commit/99885d2fb84e31ec75fa0a11e3753c823c1fe4b1))
+
 ## [4.4.1](https://github.com/hey-car/heycar-uikit/compare/v4.4.0...v4.4.1) (2023-03-03)
 
 
