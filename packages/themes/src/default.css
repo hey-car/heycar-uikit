@@ -90,7 +90,15 @@
   /*
     Sizes
   */
-  --size-small-height: var(--gap-3xl);
-  --size-middle-height: var(--gap-5xl);
-  --size-large-height: var(--gap-7xl);
+  --size-small-height: var(--spacing-8);
+  --size-middle-height: var(--spacing-10);
+  --size-large-height: var(--spacing-12);
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  color: var(--color-neutral-700);
 }
