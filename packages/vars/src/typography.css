@@ -238,7 +238,7 @@
 
 @define-mixin typography-button-3 {
   font-size: 12px;
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-bold);
   letter-spacing: 0.2px;
   font-family: var(--font-family-system);
 }
