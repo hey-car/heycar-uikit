@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.3.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/typography@3.2.0...@heycar-uikit/typography@3.3.0) (2023-03-10)
+
+
+### Features
+
+* **themes:** theme now sets base text size and color ([#159](https://github.com/hey-car/heycar-uikit/issues/159)) ([8d946b2](https://github.com/hey-car/heycar-uikit/commit/8d946b2577426194fda0da69ff084a378395f128))
+
+
+
+
+
 # [3.2.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/typography@3.1.0...@heycar-uikit/typography@3.2.0) (2023-02-06)
 
 

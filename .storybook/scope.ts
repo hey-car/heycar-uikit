@@ -3,6 +3,7 @@ import * as knobs from '@storybook/addon-knobs';
 import * as dateUtils from 'date-fns';
 
 import * as grid from './blocks/Grid';
+import * as AllIcons from '../packages/icons/src';
 
 const componentsContext = require.context(
   '../packages',
@@ -31,4 +32,5 @@ export default {
   ...grid,
   ...dateUtils,
   ...knobs,
+  ...AllIcons,
 };

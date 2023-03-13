@@ -1,6 +1,6 @@
 {
   "name": "@heycar-uikit/pagination",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "HeyCar-UIKit Pagination",
   "main": "dist/index.js",
   "module": "./dist/esm/index.js",
@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "@heycar-uikit/icons": "^3.0.1",
-    "@heycar-uikit/typography": "^3.2.0",
+    "@heycar-uikit/typography": "^3.3.0",
     "classnames": "^2.3.1"
   },
   "author": "HeyCar Team",

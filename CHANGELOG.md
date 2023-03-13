@@ -1,3 +1,10 @@
+# [4.6.0](https://github.com/hey-car/heycar-uikit/compare/v4.5.0...v4.6.0) (2023-03-10)
+
+
+### Features
+
+* **themes:** theme now sets base text size and color ([#159](https://github.com/hey-car/heycar-uikit/issues/159)) ([8d946b2](https://github.com/hey-car/heycar-uikit/commit/8d946b2577426194fda0da69ff084a378395f128))
+
 # [4.5.0](https://github.com/hey-car/heycar-uikit/compare/v4.4.1...v4.5.0) (2023-03-09)
 
 
