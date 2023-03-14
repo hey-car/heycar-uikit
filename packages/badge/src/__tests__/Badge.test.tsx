@@ -46,16 +46,10 @@ describe('Badge', () => {
 
     it('should set `color` class', () => {
       const { container } = render(
-        <Badge color="primary">{defaultChild} </Badge>,
+        <Badge color="secondary">{defaultChild} </Badge>,
       );
 
-      expect(container.firstElementChild).toHaveClass('badge_primary');
-    });
-
-    it('should set color warning', () => {
-      const { container } = render(<Badge color="warning">$250</Badge>);
-
-      expect(container.firstElementChild).toHaveClass('badge_warning');
+      expect(container.firstElementChild).toHaveClass('badge_secondary');
     });
 
     it('should set default `badge` class', () => {

@@ -28,18 +28,6 @@ describe('Badge Snapshots tests', () => {
     ).toMatchSnapshot();
   });
 
-  it('should render color="warning"', () => {
-    expect(
-      render(<Badge color="warning">{defaultChild}</Badge>),
-    ).toMatchSnapshot();
-  });
-
-  it('should render color="highlight"', () => {
-    expect(
-      render(<Badge color="highlight">{defaultChild}</Badge>),
-    ).toMatchSnapshot();
-  });
-
   it('should render text', () => {
     expect(render(<Badge>{defaultChild}</Badge>)).toMatchSnapshot();
   });
