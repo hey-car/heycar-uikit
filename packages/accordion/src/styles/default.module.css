@@ -13,7 +13,7 @@
   color: var(--color-neutral-700);
 
   &.accordionOpen {
-    padding-bottom: var(--gap-5xl);
+    padding-bottom: var(--spacing-10);
   }
 }
 
@@ -24,7 +24,7 @@
   width: 100%;
   cursor: pointer;
   transition: margin 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  padding: var(--gap-m) 0;
+  padding: var(--spacing-4) 0;
 
   -webkit-box-align: center;
   -webkit-tap-highlight-color: transparent;
@@ -48,7 +48,7 @@
   display: flex;
 
   &.headerOpen {
-    margin-bottom: var(--gap-xs);
+    margin-bottom: var(--spacing-2);
 
     & .headerArrow {
       transform: rotate(180deg);
@@ -72,18 +72,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: var(--gap-xl);
-    height: var(--gap-xl);
+    width: var(--spacing-6);
+    height: var(--spacing-6);
 
-    margin-left: var(--gap-xl);
+    margin-left: var(--spacing-6);
 
     transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     transform: rotate(0deg);
-  }
-
-  &:hover,
-  &:focus-visible {
-    @mixin typography-body-1;
   }
 }
 
