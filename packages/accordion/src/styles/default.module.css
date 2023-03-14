@@ -18,7 +18,7 @@
 }
 
 .header {
-  @mixin typography-body-3;
+  @mixin typography-body-1;
   text-align: left;
   flex-grow: 1;
   width: 100%;
