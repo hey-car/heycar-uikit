@@ -19,12 +19,12 @@
   text-decoration: none;
   border-style: solid;
   font-weight: var(--font-weight-medium);
-  line-height: 20px;
+  line-height: 24px;
   color: var(--color-championship-white);
   background-color: var(--color-primary-500);
 }
 
 .leftIcon {
-  padding-right: var(--spacing-2);
+  padding-right: var(--spacing-1);
   display: flex;
 }
