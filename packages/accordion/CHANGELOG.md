@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.3.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/accordion@2.2.0...@heycar-uikit/accordion@2.3.0) (2023-03-15)
+
+
+### Features
+
+* **badge:** badge height is 32px with or without icon ([#166](https://github.com/hey-car/heycar-uikit/issues/166)) ([be37249](https://github.com/hey-car/heycar-uikit/commit/be372496ec4b7fa0b44cafeae45cfcee63abe520))
+
+
+
+
+
 # [2.2.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/accordion@2.1.8...@heycar-uikit/accordion@2.2.0) (2023-03-15)
 
 
