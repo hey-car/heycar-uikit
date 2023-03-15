@@ -1,3 +1,10 @@
+# [5.1.0](https://github.com/hey-car/heycar-uikit/compare/v5.0.0...v5.1.0) (2023-03-15)
+
+
+### Features
+
+* **badge:** badge height is 32px with or without icon ([#166](https://github.com/hey-car/heycar-uikit/issues/166)) ([be37249](https://github.com/hey-car/heycar-uikit/commit/be372496ec4b7fa0b44cafeae45cfcee63abe520))
+
 # [5.0.0](https://github.com/hey-car/heycar-uikit/compare/v4.6.0...v5.0.0) (2023-03-15)
 
 
