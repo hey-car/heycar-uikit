@@ -1,5 +1,4 @@
 import React from 'react';
-import cn from 'classnames';
 
 import { BadgeProps } from './Badge.types';
 
@@ -18,11 +17,9 @@ const Badge = React.forwardRef<HTMLElement, BadgeProps>(
     },
     ref,
   ) => {
-    const classNames = cn(styleVariants[`badge_${color}`], styles.badge);
-
     return (
       <Component
-        className={classNames}
+        className={`${styleVariants[`badge_${color}`]} ${styles.badge}`}
         data-test-id={dataTestId}
         ref={ref}
         {...restProps}
