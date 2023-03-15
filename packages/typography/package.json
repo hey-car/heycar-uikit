@@ -1,6 +1,6 @@
 {
   "name": "@heycar-uikit/typography",
-  "version": "3.3.0",
+  "version": "3.4.0",
   "description": "HeyCar-UIKit typography",
   "main": "dist/index.js",
   "module": "./dist/esm/index.js",

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/pagination@1.1.0...@heycar-uikit/pagination@1.1.1) (2023-03-15)
+
+**Note:** Version bump only for package @heycar-uikit/pagination
+
+
+
+
+
 # [1.1.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/pagination@1.0.1...@heycar-uikit/pagination@1.1.0) (2023-03-10)
 
 

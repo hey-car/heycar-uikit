@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/accordion@2.1.8...@heycar-uikit/accordion@2.2.0) (2023-03-15)
+
+
+### Features
+
+* **accordion:** remove hover state ([#163](https://github.com/hey-car/heycar-uikit/issues/163)) ([df62524](https://github.com/hey-car/heycar-uikit/commit/df62524e8b7252cb99f9e2ef0035a62241d50c6d))
+
+
+
+
+
 ## [2.1.8](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/accordion@2.1.7...@heycar-uikit/accordion@2.1.8) (2023-03-09)
 
 
