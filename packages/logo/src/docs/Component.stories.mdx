@@ -11,11 +11,11 @@ import Changelog from '../../CHANGELOG.md';
 <Meta title="Components/Logo" component={Logo} argTypes={{}} />
 
 export const LogoTemplate = args => {
-  const { color } = args;
+  const { usage } = args;
   const backgroundColors = {
-    primary: '#052962',
-    secondary: '#FFFFFF',
-    tertiary: '#F1F4FA',
+    ['dark_bg']: '#052962',
+    ['light_bg']: '#F1F4FA',
+    ['mint_bg']: '#00CEA5',
   };
   return (
     <div
@@ -28,7 +28,7 @@ export const LogoTemplate = args => {
     >
       <div
         style={{
-          backgroundColor: backgroundColors[color],
+          backgroundColor: backgroundColors[usage || 'dark_bg'],
           padding: '15px',
           display: 'inline-block',
         }}
@@ -44,7 +44,6 @@ export const LogoTemplate = args => {
 <Story
   name="Logo"
   args={{
-    color: 'primary',
     fontSize: 200,
   }}
   argTypes={{
@@ -52,10 +51,8 @@ export const LogoTemplate = args => {
       control: 'number',
     },
     color: {
-      control: {
-        type: 'select',
-        options: ['primary', 'secondary', 'tertiary'],
-        default: 'primary',
+      table: {
+        disable: true,
       },
     },
     role: {

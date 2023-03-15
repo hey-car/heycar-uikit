@@ -1,10 +1,10 @@
 import { Container, Row, Col } from 'storybook/blocks';
 import Logo from '../Logo';
 
-## Colors
+## Usage
 
-Use the `color` prop to change the visual color of the Logo.
-You can set the value to `primary`, `secondary` , `tertiary`
+There are 3 variant of the logo. The logo variant should be chosen based on the type of color that it will be used against.
+The `usage` prop accepts `dark_bg`, `light_bg` & `mint_bg`.
 
 <Container>
   <Row
@@ -19,18 +19,7 @@ You can set the value to `primary`, `secondary` , `tertiary`
           textAlign: 'center',
         }}
       >
-        <Logo fontSize={150} color="primary" />
-      </div>
-    </Col>
-    <Col span={3}>
-      <div
-        style={{
-          backgroundColor: '#FFFFFF',
-          padding: '15px',
-          textAlign: 'center',
-        }}
-      >
-        <Logo fontSize={150} color="secondary" />
+        <Logo fontSize={150} />
       </div>
     </Col>
     <Col span={3}>
@@ -41,8 +30,33 @@ You can set the value to `primary`, `secondary` , `tertiary`
           textAlign: 'center',
         }}
       >
-        <Logo fontSize={150} color="tertiary" />
+        <Logo fontSize={150} usage="light_bg" />
+      </div>
+    </Col>
+    <Col span={3}>
+      <div
+        style={{
+          backgroundColor: '#00CEA5',
+          padding: '15px',
+          textAlign: 'center',
+        }}
+      >
+        <Logo fontSize={150} usage="mint_bg" />
       </div>
     </Col>
   </Row>
 </Container>
+
+## The color prop
+
+`color` is a **deprecated** property that was used to choose the logo variant.
+Old intergrations using this prop will continue to work for now. However, we strongly recommend updating your code to use `usage`.
+The `color` prop will be removed in coming versions of this package.
+
+_Check this table for mapping._
+
+| Usage    | Color     |
+| -------- | --------- |
+| dark_bg  | primary   |
+| light_bg | secondary |
+| mint_bg  | tertiary  |
