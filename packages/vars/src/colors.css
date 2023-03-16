@@ -12,21 +12,21 @@
   --color-heycar-mint-900: #002921;
 
   /* mica blue color */
-  --color-mica-blue-50: #e8edf6;
-  --color-mica-blue-100: #d0dbed;
+  --color-mica-blue-50: #f1f4fa;
+  --color-mica-blue-100: #dee6f2;
   --color-mica-blue-200: #a2b7da;
   --color-mica-blue-300: #7394c8;
   --color-mica-blue-400: #4570b5;
   --color-mica-blue-500: #164ca3;
   --color-mica-blue-600: #123d82;
-  --color-mica-blue-700: #0d2e62;
+  --color-mica-blue-700: #052962;
   --color-mica-blue-800: #091e41;
   --color-mica-blue-900: #040f21;
 
   /* sunbeam blue color */
-  --color-sunbeam-blue-50: #f9fdff;
-  --color-sunbeam-blue-100: #f2faff;
-  --color-sunbeam-blue-200: #e6f5ff;
+  --color-sunbeam-blue-50: #f0f9ff;
+  --color-sunbeam-blue-100: #e8f6ff;
+  --color-sunbeam-blue-200: #e1f3ff;
   --color-sunbeam-blue-300: #d9f0ff;
   --color-sunbeam-blue-400: #cdebff;
   --color-sunbeam-blue-500: #c0e6ff;
@@ -102,7 +102,7 @@
 
   /* brand colors */
   --color-heycar-mint: var(--color-heycar-mint-500);
-  --color-mica-blue: #052962;
+  --color-mica-blue: var(--color-mica-blue-700);
   --color-sunbeam-blue: var(--color-sunbeam-blue-500);
   --color-championship-white: #fff;
 }
