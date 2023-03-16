@@ -65,7 +65,15 @@
     background-color: var(--switch-unchecked-hover-color);
   }
 
+  &:hover input[type='checkbox']:not([disabled]):checked + .switch {
+    background-color: var(--color-primary-600);
+  }
+
   &:active input[type='checkbox']:not([disabled]):not(:checked) + .switch {
     background-color: var(--switch-unchecked-pressed-color);
+  }
+
+  &:active input[type='checkbox']:not([disabled]):checked + .switch {
+    background-color: var(--color-primary-700);
   }
 }
