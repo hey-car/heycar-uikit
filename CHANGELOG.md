@@ -1,3 +1,12 @@
+# [5.2.0](https://github.com/hey-car/heycar-uikit/compare/v5.1.0...v5.2.0) (2023-03-16)
+
+
+### Features
+
+* **switch:** added new hover and active states to switch ([#168](https://github.com/hey-car/heycar-uikit/issues/168)) ([20942f7](https://github.com/hey-car/heycar-uikit/commit/20942f785cb9f59c0333f3a4eb60372aca47e0ea))
+* **textarea:** update to match designs ([#167](https://github.com/hey-car/heycar-uikit/issues/167)) ([1f67a01](https://github.com/hey-car/heycar-uikit/commit/1f67a01a72df2c11ccddf9ab6d4b38b3389796fa))
+* **vars:** update colours to match designs ([#162](https://github.com/hey-car/heycar-uikit/issues/162)) ([ca3d77a](https://github.com/hey-car/heycar-uikit/commit/ca3d77af1b635bf30a2ce33125146da8029c0617))
+
 # [5.1.0](https://github.com/hey-car/heycar-uikit/compare/v5.0.0...v5.1.0) (2023-03-15)
 
 
