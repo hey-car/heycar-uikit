@@ -25,6 +25,7 @@
   line-height: 1.2;
   border-style: solid;
   white-space: nowrap;
+  gap: var(--gap-xs);
 
   &:disabled,
   &[disabled] {

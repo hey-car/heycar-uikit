@@ -55,7 +55,7 @@ const Button = React.forwardRef<
             {leftIcon}
           </ButtonIcon>
         )}
-        <span className={styles.text}>{children}</span>
+        {children && <span className={styles.text}>{children}</span>}
         {rightIcon && (
           <ButtonIcon className={styles.icon} side="right">
             {rightIcon}
