@@ -3,6 +3,50 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/badge@2.0.0...@heycar-uikit/badge@2.1.0) (2023-03-15)
+
+
+### Features
+
+* **badge:** badge height is 32px with or without icon ([#166](https://github.com/hey-car/heycar-uikit/issues/166)) ([be37249](https://github.com/hey-car/heycar-uikit/commit/be372496ec4b7fa0b44cafeae45cfcee63abe520))
+
+
+
+
+
+# [2.0.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/badge@1.3.4...@heycar-uikit/badge@2.0.0) (2023-03-15)
+
+
+### Features
+
+* **badge:** restrict to 3 colors ([#165](https://github.com/hey-car/heycar-uikit/issues/165)) ([3a1f408](https://github.com/hey-car/heycar-uikit/commit/3a1f408fb15f6d61f960496723c7077daa1c1dd8))
+
+
+### BREAKING CHANGES
+
+* **badge:** using a color other than primary, secondary or tertiary will render the badge in
+primary state
+
+HEYUI-268
+
+* defaults to primary styling the if the color prop value is not recognised
+
+* feat(badge): restric to 3 colors
+
+The Badge should only be used in primary, secondary or tertiary
+* **badge:** using a color other than primary, secondary or tertiary will render the badge in
+primary state
+
+HEYUI-268
+
+* update various tests
+
+* update test
+
+
+
+
+
 ## [1.3.4](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/badge@1.4.0...@heycar-uikit/badge@1.3.4) (2022-11-08)
 
 

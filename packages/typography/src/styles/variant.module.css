@@ -9,6 +9,10 @@
   @mixin typography-display;
 }
 
+.display2 {
+  @mixin typography-display-2;
+}
+
 /*
   Heading
 */
@@ -55,13 +59,39 @@
 }
 
 /*
+  Button
+*/
+.button1 {
+  @mixin typography-button-1;
+}
+
+.button2 {
+  @mixin typography-button-2;
+}
+
+.button3 {
+  @mixin typography-button-3;
+}
+
+.buttonLink1 {
+  @mixin typography-button-1;
+  text-decoration: underline;
+}
+
+.buttonLink2 {
+  @mixin typography-button-2;
+  text-decoration: underline;
+}
+
+.buttonLink3 {
+  @mixin typography-button-3;
+  text-decoration: underline;
+}
+
+/*
   Mobile
 */
 @media screen and (max-width: 768px) {
-  .display1 {
-    @mixin typography-display_mobile;
-  }
-
   /* @for $i from 1 to 5 {
     .h1$(i) {
       @mixin typography-heading-$(i) _mobile;

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.5.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/logo@1.4.0...@heycar-uikit/logo@1.5.0) (2023-03-15)
+
+
+### Features
+
+* **logo:** update logo variant names ([#164](https://github.com/hey-car/heycar-uikit/issues/164)) ([6b94211](https://github.com/hey-car/heycar-uikit/commit/6b9421128ed4faf89bdf7fd8c1ad0a5f74385c8d))
+
+
+
+
+
 # [1.4.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/logo@1.3.2...@heycar-uikit/logo@1.4.0) (2022-09-30)
 
 

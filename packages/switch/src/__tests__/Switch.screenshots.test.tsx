@@ -82,7 +82,12 @@ describe('Switch events tests', () => {
       },
     });
 
-    await screenshotMatchClick(pageUrl, selector, { clip }, 'down');
+    await screenshotMatchClick(
+      pageUrl,
+      selector,
+      { animations: 'disabled', clip },
+      'down',
+    );
   });
   test('click when unchecked', async () => {
     const pageUrl = createStorybookUrl({
@@ -92,7 +97,12 @@ describe('Switch events tests', () => {
       },
     });
 
-    await screenshotMatchClick(pageUrl, selector, { clip }, 'down');
+    await screenshotMatchClick(
+      pageUrl,
+      selector,
+      { animations: 'disabled', clip },
+      'down',
+    );
   });
   test('click when unchecked and disabled', async () => {
     const pageUrl = createStorybookUrl({

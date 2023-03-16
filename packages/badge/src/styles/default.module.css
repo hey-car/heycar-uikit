@@ -6,7 +6,7 @@
 .badge {
   font-family: var(--font-family-system);
   font-size: 14px;
-  padding: var(--gap-2xs) var(--gap-xs);
+  padding: var(--spacing-1) var(--spacing-2);
   display: inline-flex;
   vertical-align: middle;
   flex-direction: row;
@@ -18,11 +18,13 @@
   box-sizing: border-box;
   text-decoration: none;
   border-style: solid;
-  font-weight: 500;
-  line-height: 20px;
+  font-weight: var(--font-weight-medium);
+  line-height: 24px;
+  color: var(--color-championship-white);
+  background-color: var(--color-primary-500);
 }
 
 .leftIcon {
-  padding-right: var(--gap-xs);
+  padding-right: var(--spacing-1);
   display: flex;
 }

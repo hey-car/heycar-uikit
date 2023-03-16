@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.5.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/typography@3.4.0...@heycar-uikit/typography@3.5.0) (2023-03-15)
+
+
+### Features
+
+* **badge:** badge height is 32px with or without icon ([#166](https://github.com/hey-car/heycar-uikit/issues/166)) ([be37249](https://github.com/hey-car/heycar-uikit/commit/be372496ec4b7fa0b44cafeae45cfcee63abe520))
+
+
+
+
+
+# [3.4.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/typography@3.3.0...@heycar-uikit/typography@3.4.0) (2023-03-15)
+
+
+### Features
+
+* **typography:** update typography to match designs ([#160](https://github.com/hey-car/heycar-uikit/issues/160)) ([9a601a7](https://github.com/hey-car/heycar-uikit/commit/9a601a72254876b59083d0c3c78adda6fa94afe9))
+
+
+
+
+
 # [3.3.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/typography@3.2.0...@heycar-uikit/typography@3.3.0) (2023-03-10)
 
 

@@ -2,7 +2,7 @@ export interface BadgeProps {
   /**
    * Customize Badge text color
    */
-  color?: 'primary' | 'secondary' | 'tertiary' | 'highlight' | 'warning';
+  color?: 'primary' | 'secondary' | 'tertiary';
   /**
    * The content of the Badge
    */

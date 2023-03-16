@@ -1,3 +1,42 @@
+# [5.1.0](https://github.com/hey-car/heycar-uikit/compare/v5.0.0...v5.1.0) (2023-03-15)
+
+
+### Features
+
+* **badge:** badge height is 32px with or without icon ([#166](https://github.com/hey-car/heycar-uikit/issues/166)) ([be37249](https://github.com/hey-car/heycar-uikit/commit/be372496ec4b7fa0b44cafeae45cfcee63abe520))
+
+# [5.0.0](https://github.com/hey-car/heycar-uikit/compare/v4.6.0...v5.0.0) (2023-03-15)
+
+
+### Features
+
+* **accordion:** remove hover state ([#163](https://github.com/hey-car/heycar-uikit/issues/163)) ([df62524](https://github.com/hey-car/heycar-uikit/commit/df62524e8b7252cb99f9e2ef0035a62241d50c6d))
+* **badge:** restrict to 3 colors ([#165](https://github.com/hey-car/heycar-uikit/issues/165)) ([3a1f408](https://github.com/hey-car/heycar-uikit/commit/3a1f408fb15f6d61f960496723c7077daa1c1dd8))
+* **logo:** update logo variant names ([#164](https://github.com/hey-car/heycar-uikit/issues/164)) ([6b94211](https://github.com/hey-car/heycar-uikit/commit/6b9421128ed4faf89bdf7fd8c1ad0a5f74385c8d))
+* **typography:** update typography to match designs ([#160](https://github.com/hey-car/heycar-uikit/issues/160)) ([9a601a7](https://github.com/hey-car/heycar-uikit/commit/9a601a72254876b59083d0c3c78adda6fa94afe9))
+
+
+### BREAKING CHANGES
+
+* **badge:** using a color other than primary, secondary or tertiary will render the badge in
+primary state
+
+HEYUI-268
+
+* defaults to primary styling the if the color prop value is not recognised
+
+* feat(badge): restric to 3 colors
+
+The Badge should only be used in primary, secondary or tertiary
+* **badge:** using a color other than primary, secondary or tertiary will render the badge in
+primary state
+
+HEYUI-268
+
+* update various tests
+
+* update test
+
 # [4.6.0](https://github.com/hey-car/heycar-uikit/compare/v4.5.0...v4.6.0) (2023-03-10)
 
 

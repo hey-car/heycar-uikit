@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.8.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/vars@1.7.0...@heycar-uikit/vars@1.8.0) (2023-03-15)
+
+
+### Features
+
+* **typography:** update typography to match designs ([#160](https://github.com/hey-car/heycar-uikit/issues/160)) ([9a601a7](https://github.com/hey-car/heycar-uikit/commit/9a601a72254876b59083d0c3c78adda6fa94afe9))
+
+
+
+
+
 # [1.7.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/vars@1.6.1...@heycar-uikit/vars@1.7.0) (2023-03-09)
 
 

@@ -35,23 +35,22 @@
 * Colors
 */
 
-.primary {
+.dark_bg {
   fill: var(--fill-primary-color);
 }
-.secondary {
+.light_bg {
   fill: var(--fill-secondary-color);
 }
-.tertiary {
+.mint_bg {
   fill: var(--fill-tertiary-color);
 }
 
-.undermark_primary {
+.undermark_dark_bg {
   fill: var(--fill-primary-undermark-color);
 }
-
-.undermark_secondary {
+.undermark_light_bg {
   fill: var(--fill-secondary-undermark-color);
 }
-.undermark_tertiary {
+.undermark_mint_bg {
   fill: var(--fill-tertiary-undermark-color);
 }

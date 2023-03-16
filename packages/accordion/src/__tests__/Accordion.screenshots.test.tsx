@@ -10,7 +10,8 @@ import {
 } from '../../../screenshotUtils';
 
 const packageName = 'accordion';
-const accordionButtonSelector = '#root div[role="button"]';
+const accordionButtonSelector =
+  '#root div[data-test-id="snapshot-test-btn-wrapper"] div[role="button"]';
 const desktopWidthSize = 1024;
 const viewPort = {
   width: desktopWidthSize,

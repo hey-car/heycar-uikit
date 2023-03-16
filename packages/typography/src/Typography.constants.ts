@@ -1,5 +1,6 @@
 export const defaultVariantMapping = {
   display1: 'p',
+  display2: 'p',
   h1: 'h1',
   h2: 'h2',
   h3: 'h3',
@@ -21,4 +22,10 @@ export const defaultVariantMapping = {
   caption5: 'caption',
   overline1: 'span',
   overline2: 'span',
+  button1: 'span',
+  button2: 'span',
+  button3: 'span',
+  buttonLink1: 'span',
+  buttonLink2: 'span',
+  buttonLink3: 'span',
 } as const;
