@@ -2,9 +2,9 @@
 
 :root {
   /* Color */
-  --textarea-color: var(--color-neutral-900);
-  --textarea-caret-color: var(--color-neutral-900);
-  --textarea-placeholder-color: var(--color-neutral-900);
+  --textarea-color: var(--color-neutral-700);
+  --textarea-caret-color: var(--color-neutral-700);
+  --textarea-placeholder-color: var(--color-neutral-700);
   --textarea-disabled-color: var(--color-neutral-300);
 
   /* Sizes */
@@ -28,7 +28,7 @@
 
   color: var(--textarea-color);
   caret-color: var(--textarea-caret-color);
-  @mixin typography-body-4;
+  @mixin typography-body-3;
 }
 
 .textarea:-webkit-autofill {
@@ -55,6 +55,6 @@
 }
 
 .formControl {
-  --form-control-input-padding: var(--gap-m);
+  --form-control-input-padding: var(--spacing-4);
   --form-control-hint-fint-size: 12px;
 }

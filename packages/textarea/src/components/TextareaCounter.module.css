@@ -1,7 +1,7 @@
 @import '../../../themes/src/default.css';
 
 .counter {
-  padding: 0 var(--gap-m) 0 var(--gap-xs);
+  padding: 0 var(--spacing-4) 0 var(--spacing-2);
   float: right;
   font-size: 12px;
   color: var(--color-neutral-500);
