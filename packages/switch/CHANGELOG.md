@@ -3,6 +3,40 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/switch@3.0.0...@heycar-uikit/switch@4.0.0) (2023-03-16)
+
+
+### Features
+
+* **badge:** restrict to 3 colors ([#165](https://github.com/hey-car/heycar-uikit/issues/165)) ([3a1f408](https://github.com/hey-car/heycar-uikit/commit/3a1f408fb15f6d61f960496723c7077daa1c1dd8))
+* **switch:** added new hover and active states to switch ([#168](https://github.com/hey-car/heycar-uikit/issues/168)) ([20942f7](https://github.com/hey-car/heycar-uikit/commit/20942f785cb9f59c0333f3a4eb60372aca47e0ea))
+
+
+### BREAKING CHANGES
+
+* **badge:** using a color other than primary, secondary or tertiary will render the badge in
+primary state
+
+HEYUI-268
+
+* defaults to primary styling the if the color prop value is not recognised
+
+* feat(badge): restric to 3 colors
+
+The Badge should only be used in primary, secondary or tertiary
+* **badge:** using a color other than primary, secondary or tertiary will render the badge in
+primary state
+
+HEYUI-268
+
+* update various tests
+
+* update test
+
+
+
+
+
 # [3.0.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/switch@2.2.4...@heycar-uikit/switch@3.0.0) (2023-01-17)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.2.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/button@3.1.0...@heycar-uikit/button@3.2.0) (2023-03-16)
+
+
+### Features
+
+* **vars:** update colours to match designs ([#162](https://github.com/hey-car/heycar-uikit/issues/162)) ([ca3d77a](https://github.com/hey-car/heycar-uikit/commit/ca3d77af1b635bf30a2ce33125146da8029c0617))
+
+
+
+
+
 # [3.1.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/button@3.0.1...@heycar-uikit/button@3.1.0) (2023-03-09)
 
 

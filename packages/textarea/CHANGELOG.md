@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/textarea@1.1.1...@heycar-uikit/textarea@1.2.0) (2023-03-16)
+
+
+### Features
+
+* **textarea:** update to match designs ([#167](https://github.com/hey-car/heycar-uikit/issues/167)) ([1f67a01](https://github.com/hey-car/heycar-uikit/commit/1f67a01a72df2c11ccddf9ab6d4b38b3389796fa))
+
+
+
+
+
 ## [1.1.1](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/textarea@1.1.0...@heycar-uikit/textarea@1.1.1) (2022-11-15)
 
 **Note:** Version bump only for package @heycar-uikit/textarea
