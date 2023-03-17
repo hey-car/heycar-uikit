@@ -176,7 +176,6 @@ module.exports = {
     'react/jsx-indent': ['error', 2],
     'react/jsx-indent-props': ['error', 2],
     'react/jsx-curly-spacing': ['error'],
-    'react/jsx-fragments': ['error', 'element'],
     'react/static-property-placement': ['error', 'static public field'],
     'react/state-in-constructor': ['error', 'never'],
     'react/prop-types': 'off',
