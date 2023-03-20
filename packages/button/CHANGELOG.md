@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.3.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/button@3.2.0...@heycar-uikit/button@3.3.0) (2023-03-20)
+
+
+### Features
+
+* **button:** the icon inside the button is centered ([#170](https://github.com/hey-car/heycar-uikit/issues/170)) ([d8d6d52](https://github.com/hey-car/heycar-uikit/commit/d8d6d52656b9f643db4d93f4c3dcd276c56d508c))
+
+
+
+
+
 # [3.2.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/button@3.1.0...@heycar-uikit/button@3.2.0) (2023-03-16)
 
 
