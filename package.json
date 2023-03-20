@@ -13,7 +13,7 @@
     "lint": "npm run lint:css && npm run lint:js",
     "lint:css": "stylelint ./packages/**/*.css",
     "lint:js": "eslint ./packages --ext .ts,.tsx,.js,.jsx",
-    "test": "jest --updateSnapshot --watchAll=false",
+    "test": "jest --watchAll=false",
     "test:screenshots": "jest --config=jest.screenshots.config.js",
     "test:sh:docker": "docker run -it --entrypoint /app/bin/dockerTestScreenshots.sh --rm -v ${PWD}:/app --ipc=host mcr.microsoft.com/playwright:v1.30.0-focal /bin/bash",
     "test:sh:update": "docker run -it --env SCREENSHOTS_UPDATE=1 --entrypoint /app/bin/dockerTestScreenshots.sh --rm -v ${PWD}:/app --ipc=host mcr.microsoft.com/playwright:v1.30.0-focal /bin/bash",
