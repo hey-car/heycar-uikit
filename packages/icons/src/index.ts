@@ -5,6 +5,19 @@ export * from './paths/AndroidAuto';
 export * from './paths/ApplePlay';
 export * from './paths/Automatic';
 export * from './paths/Bluetooth';
+
+export * from './paths/BodyColorBlack';
+export * from './paths/BodyColorBlue';
+export * from './paths/BodyColorBrown';
+export * from './paths/BodyColorGold';
+export * from './paths/BodyColorGreen';
+export * from './paths/BodyColorGrey';
+export * from './paths/BodyColorOrange';
+export * from './paths/BodyColorRed';
+export * from './paths/BodyColorSilver';
+export * from './paths/BodyColorWhite';
+export * from './paths/BodyColorYellow';
+
 export * from './paths/Bonus';
 export * from './paths/BuyingСar';
 export * from './paths/Calculator';

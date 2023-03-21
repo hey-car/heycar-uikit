@@ -5,7 +5,7 @@ import createSvgIcon from '../utils/createSvgIcon';
 export const Visa = createSvgIcon(
   <>
     <path
-      d="M.25.25h23.5v23.5H.25z"
+      d="M0,0h24v24H0z"
       fill="transparent"
       stroke="#EAEAEA"
       strokeWidth=".5"

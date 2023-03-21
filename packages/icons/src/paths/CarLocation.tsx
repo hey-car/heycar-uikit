@@ -9,4 +9,5 @@ export const CarLocation = createSvgIcon(
     fillRule="evenodd"
   />,
   'CarLocation',
+  '-2.5 -4 24 24',
 );
