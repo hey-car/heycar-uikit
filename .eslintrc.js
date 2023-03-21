@@ -183,7 +183,6 @@ module.exports = {
     'react/sort-comp': 'off',
     'react/require-default-props': 'off',
     'react/jsx-boolean-value': ['error', 'always'],
-    'react/jsx-props-no-spreading': [1],
     'react/jsx-sort-props': [1],
     'react/jsx-props-no-multi-spaces': [1],
     'react/jsx-newline': [1, { prevent: true }],

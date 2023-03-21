@@ -12,6 +12,8 @@ import {
 
 import styles from './styles/default.module.css';
 
+const ELEMENTS_THAT_CAN_BE_DISABLED = ['button', 'input'];
+
 export const PaginationItem: PropsBasedOnComponent<
   PaginationItemProps,
   'a'
@@ -25,6 +27,12 @@ export const PaginationItem: PropsBasedOnComponent<
   ...rest
 }) => {
   const Component = component;
+  const canUseDisabledProp =
+    typeof component === 'string' &&
+    ELEMENTS_THAT_CAN_BE_DISABLED.includes(component);
+  const disabledProp = {
+    [canUseDisabledProp ? 'disabled' : 'aria-disabled']: isDisabled,
+  };
 
   switch (itemType) {
     case PaginationItemType.PageNumber:
@@ -53,7 +61,8 @@ export const PaginationItem: PropsBasedOnComponent<
     case PaginationItemType.Previous:
       return (
         <Component
-          className={cn(styles.arrow, isDisabled && styles.disabled)}
+          className={styles.arrow}
+          {...disabledProp}
           {...rest}
           onClick={onClick}
         >
@@ -63,7 +72,8 @@ export const PaginationItem: PropsBasedOnComponent<
     case PaginationItemType.Next:
       return (
         <Component
-          className={cn(styles.arrow, isDisabled && styles.disabled)}
+          className={styles.arrow}
+          {...disabledProp}
           {...rest}
           onClick={onClick}
         >

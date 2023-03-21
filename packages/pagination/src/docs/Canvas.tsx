@@ -1,69 +1,33 @@
-import React from 'react';
+import React, { FC } from 'react';
 
+import { DEFAULT_LOCALE, Locale } from '../locale/defaultLocale';
 import { Pagination } from '../Pagination';
-import { PaginationItem } from '../PaginationItem';
+import { PaginationProps } from '../Pagination.types';
 
-import Link from './Link';
+interface PaginationCanvasProps extends PaginationProps {
+  pageLabel?: string;
+  gotoLabel?: string;
+  prevPageLabel?: string;
+  nextPageLabel?: string;
+}
 
-export const PaginationCanvas = () => {
+export const PaginationCanvas: FC<PaginationCanvasProps> = ({
+  pageLabel,
+  gotoLabel,
+  prevPageLabel,
+  nextPageLabel,
+  ...rest
+}) => {
+  const locale: Locale = {
+    page: pageLabel || DEFAULT_LOCALE.page,
+    goto: gotoLabel || DEFAULT_LOCALE.goto,
+    prevPage: prevPageLabel || DEFAULT_LOCALE.prevPage,
+    nextPage: nextPageLabel || DEFAULT_LOCALE.nextPage,
+  };
+
   return (
     <div style={{ maxWidth: '700px', margin: '0 auto' }}>
-      <Pagination currentPage={1} totalPages={1} />
-      <Pagination currentPage={1} totalPages={2} />
-      <Pagination currentPage={1} totalPages={3} />
-      <Pagination currentPage={1} totalPages={4} />
-      <Pagination currentPage={2} totalPages={4} />
-      <Pagination currentPage={1} totalPages={5} />
-      <Pagination currentPage={2} totalPages={5} />
-      <Pagination currentPage={3} totalPages={5} />
-      <Pagination
-        aria-label={'laaaabel'}
-        currentPage={8}
-        renderItem={item => (
-          <PaginationItem
-            component={Link}
-            link={`this is a link number ${item.page}`}
-            {...item}
-          />
-        )}
-        totalPages={10}
-      />
-      <Pagination
-        currentPage={1}
-        renderItem={item => (
-          <PaginationItem
-            href={`this is a href number ${item.page}`}
-            {...item}
-          />
-        )}
-        totalPages={10}
-      />
-      <Pagination
-        currentPage={5}
-        renderItem={item => <PaginationItem {...item} />}
-        totalPages={10}
-      />
-      <Pagination
-        currentPage={3}
-        onClick={itemNumber => console.log({ lol: 'ues', itemNumber })}
-        totalPages={3}
-      />
-      <Pagination
-        aria-label={'Pagination navigation'}
-        currentPage={8}
-        renderItem={item => <PaginationItem component={'a'} {...item} />}
-        totalPages={10}
-      />
-      <Pagination
-        currentPage={80}
-        locale={{
-          page: 'Pagina',
-          goto: 'Ga naar ${page} pagina ',
-          prevPage: 'Vorige pagina',
-          nextPage: 'Volgende pagina',
-        }}
-        totalPages={100}
-      />
+      <Pagination {...rest} locale={locale} />
     </div>
   );
 };

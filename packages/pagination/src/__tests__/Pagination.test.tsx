@@ -107,6 +107,15 @@ describe('Pagination', () => {
       expect(screen.queryByLabelText('Go to page 5')).not.toBeInTheDocument();
       expect(screen.getByLabelText('Go to page 6')).toBeInTheDocument();
     });
+
+    it('should disable buttons in an accessible way', () => {
+      const { getByLabelText } = render(
+        <Pagination currentPage={1} totalPages={1} />,
+      );
+
+      expect(getByLabelText('Go to previous page')).toBeDisabled();
+      expect(getByLabelText('Go to next page')).toBeDisabled();
+    });
   });
 
   it('should have a custom attribute (aria-label in this case) on pagination root element', () => {

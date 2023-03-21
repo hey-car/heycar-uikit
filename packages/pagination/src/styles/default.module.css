@@ -10,7 +10,7 @@
     padding: 0;
     margin: 0;
     list-style: none;
-    gap: var(--gap-m);
+    gap: var(--spacing-4);
   }
 
   & button,
@@ -26,25 +26,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: var(--gap-5xl);
-
-    &:hover:not(.disabled) {
-      background-color: var(--color-neutral-50);
-    }
-    &:active:not(.disabled) {
-      background-color: var(--color-neutral-100);
-    }
+    height: var(--spacing-10);
   }
 
   & .currentPage {
     color: var(--color-primary-500);
-    border: var(--color-primary-500) var(--gap-3xs);
+    border: var(--color-primary-500) 2px;
     border-bottom-style: solid;
-    padding-top: var(--gap-3xs);
+    padding-top: 2px;
   }
 
   & .itemNumber {
-    padding: 0 var(--gap-s);
+    padding: 0 var(--spacing-3);
   }
 
   & .arrow {
@@ -54,14 +47,22 @@
   & .ellipsis,
   & .slash {
     user-select: none;
-    height: var(--gap-5xl);
+    height: var(--spacing-10);
     display: flex;
     align-items: center;
   }
 
-  & .disabled {
+  & [aria-disabled='true'],
+  & [disabled='true'] {
     pointer-events: none;
     cursor: not-allowed;
     color: var(--color-neutral-300);
+
+    &:hover {
+      background-color: transparent;
+    }
+    &:active {
+      background-color: transparent;
+    }
   }
 }
