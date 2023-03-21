@@ -1,3 +1,10 @@
+# [5.4.0](https://github.com/hey-car/heycar-uikit/compare/v5.3.0...v5.4.0) (2023-03-21)
+
+
+### Features
+
+* **icons:** update changed icons ([#171](https://github.com/hey-car/heycar-uikit/issues/171)) ([c1f9390](https://github.com/hey-car/heycar-uikit/commit/c1f93901a146b79f0548d1ec390488aacb2dfe25))
+
 # [5.3.0](https://github.com/hey-car/heycar-uikit/compare/v5.2.0...v5.3.0) (2023-03-20)
 
 
