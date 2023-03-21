@@ -13,8 +13,6 @@ function Container<E extends React.ElementType = 'div'>({
 }: ContainerProps<E>) {
   const Component = component ?? 'div';
 
-  debugger;
-
   return React.createElement(
     Component,
     {
