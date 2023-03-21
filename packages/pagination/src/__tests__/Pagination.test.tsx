@@ -108,13 +108,28 @@ describe('Pagination', () => {
       expect(screen.getByLabelText('Go to page 6')).toBeInTheDocument();
     });
 
-    it('should disable buttons in an accessible way', () => {
+    it('should disable buttons in HTML', () => {
+      const { getByLabelText } = render(
+        <Pagination currentPage={1} onClick={jest.fn()} totalPages={1} />,
+      );
+
+      expect(getByLabelText('Go to previous page')).toBeDisabled();
+      expect(getByLabelText('Go to next page')).toBeDisabled();
+    });
+
+    it('should disable non buttons in an accessible way', () => {
       const { getByLabelText } = render(
         <Pagination currentPage={1} totalPages={1} />,
       );
 
-      expect(getByLabelText('Go to previous page')).toBeAriaDisabled();
-      expect(getByLabelText('Go to next page')).toBeAriaDisabled();
+      expect(getByLabelText('Go to previous page')).toHaveAttribute(
+        'aria-disabled',
+        'true',
+      );
+      expect(getByLabelText('Go to next page')).toHaveAttribute(
+        'aria-disabled',
+        'true',
+      );
     });
   });
 
