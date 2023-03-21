@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.1](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/chip@0.6.0...@heycar-uikit/chip@0.6.1) (2023-03-21)
+
+**Note:** Version bump only for package @heycar-uikit/chip
+
+
+
+
+
+# [0.6.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/chip@0.5.0...@heycar-uikit/chip@0.6.0) (2023-03-16)
+
+
+### Features
+
+* **vars:** update colours to match designs ([#162](https://github.com/hey-car/heycar-uikit/issues/162)) ([ca3d77a](https://github.com/hey-car/heycar-uikit/commit/ca3d77af1b635bf30a2ce33125146da8029c0617))
+
+
+
+
+
 # [0.5.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/chip@0.4.9...@heycar-uikit/chip@0.5.0) (2023-01-17)
 
 

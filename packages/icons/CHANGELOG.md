@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.1.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/icons@4.0.0...@heycar-uikit/icons@4.1.0) (2023-03-21)
+
+
+### Features
+
+* **icons:** update changed icons ([#171](https://github.com/hey-car/heycar-uikit/issues/171)) ([c1f9390](https://github.com/hey-car/heycar-uikit/commit/c1f93901a146b79f0548d1ec390488aacb2dfe25))
+
+
+
+
+
 # [4.0.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/icons@3.1.0...@heycar-uikit/icons@4.0.0) (2023-01-17)
 
 

@@ -1,3 +1,26 @@
+# [5.4.0](https://github.com/hey-car/heycar-uikit/compare/v5.3.0...v5.4.0) (2023-03-21)
+
+
+### Features
+
+* **icons:** update changed icons ([#171](https://github.com/hey-car/heycar-uikit/issues/171)) ([c1f9390](https://github.com/hey-car/heycar-uikit/commit/c1f93901a146b79f0548d1ec390488aacb2dfe25))
+
+# [5.3.0](https://github.com/hey-car/heycar-uikit/compare/v5.2.0...v5.3.0) (2023-03-20)
+
+
+### Features
+
+* **button:** the icon inside the button is centered ([#170](https://github.com/hey-car/heycar-uikit/issues/170)) ([d8d6d52](https://github.com/hey-car/heycar-uikit/commit/d8d6d52656b9f643db4d93f4c3dcd276c56d508c))
+
+# [5.2.0](https://github.com/hey-car/heycar-uikit/compare/v5.1.0...v5.2.0) (2023-03-16)
+
+
+### Features
+
+* **switch:** added new hover and active states to switch ([#168](https://github.com/hey-car/heycar-uikit/issues/168)) ([20942f7](https://github.com/hey-car/heycar-uikit/commit/20942f785cb9f59c0333f3a4eb60372aca47e0ea))
+* **textarea:** update to match designs ([#167](https://github.com/hey-car/heycar-uikit/issues/167)) ([1f67a01](https://github.com/hey-car/heycar-uikit/commit/1f67a01a72df2c11ccddf9ab6d4b38b3389796fa))
+* **vars:** update colours to match designs ([#162](https://github.com/hey-car/heycar-uikit/issues/162)) ([ca3d77a](https://github.com/hey-car/heycar-uikit/commit/ca3d77af1b635bf30a2ce33125146da8029c0617))
+
 # [5.1.0](https://github.com/hey-car/heycar-uikit/compare/v5.0.0...v5.1.0) (2023-03-15)
 
 

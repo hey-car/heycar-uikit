@@ -25,11 +25,9 @@
 }
 
 .primary {
-  fill: var(--icon-primary-color);
   color: var(--icon-primary-color);
 }
 .secondary {
-  fill: var(--icon-secondary-color);
   color: var(--icon-secondary-color);
 }
 .tertiary {
