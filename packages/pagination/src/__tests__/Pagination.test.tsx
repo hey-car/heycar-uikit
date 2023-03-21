@@ -113,8 +113,8 @@ describe('Pagination', () => {
         <Pagination currentPage={1} totalPages={1} />,
       );
 
-      expect(getByLabelText('Go to previous page')).toBeDisabled();
-      expect(getByLabelText('Go to next page')).toBeDisabled();
+      expect(getByLabelText('Go to previous page')).toBeAriaDisabled();
+      expect(getByLabelText('Go to next page')).toBeAriaDisabled();
     });
   });
 
