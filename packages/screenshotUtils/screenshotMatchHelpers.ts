@@ -1,7 +1,17 @@
-import { PageScreenshotOptions } from 'playwright';
+import { Locator, Page, PageScreenshotOptions } from 'playwright';
 import { delay } from 'q';
 
 import { closeBrowser, matchHtml, openBrowserPage } from '.';
+
+const mouseDown = async (page: Page, element: Locator) => {
+  //want to try to emulate real user behaviour, rather than forcing the event
+  const box = await element.boundingBox();
+
+  if (box) {
+    await page.mouse.move(box.x, box.y);
+    await page.mouse.down();
+  }
+};
 
 export const screenshotMatchClick = async (
   pageUrl: string,
@@ -13,22 +23,18 @@ export const screenshotMatchClick = async (
   const { browser, context, page } = await openBrowserPage(pageUrl);
 
   try {
-    const elements = await page.$$(selector);
+    const elements = await page.locator(selector).all();
 
+    // There may be multiple matches for selector
     for (const element of elements) {
-      const position = await element.boundingBox();
-
-      if (position) {
-        if (action === 'click') {
-          await page.mouse.click(position.x, position.y);
-        } else if (action === 'down') {
-          await page.mouse.move(position.x, position.y);
-          await page.mouse.down();
-        }
-
-        // Waiting for the rendering in case of a slight rendering lag
-        await delay(delayTime);
+      if (action === 'click') {
+        await element.click();
+      } else if (action === 'down') {
+        mouseDown(page, element);
       }
+
+      // Waiting for the rendering in case of a slight rendering lag
+      await delay(delayTime);
     }
     await matchHtml({
       page,
@@ -50,7 +56,10 @@ export const screenshotMatchHover = async (
   const { browser, context, page } = await openBrowserPage(pageUrl);
 
   try {
-    await page.hover(selector);
+    //unlike screenshotMatchClick we will only hove on first element in selector to emulate the limitation of user behavior
+    const element = await page.locator(selector).first();
+
+    await element.hover();
     // Waiting for the rendering in case of a slight rendering lag
     await delay(100);
 
