@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.4.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/accordion@2.3.1...@heycar-uikit/accordion@2.4.0) (2023-03-22)
+
+
+### Features
+
+* **icons:** added missing icons ([#172](https://github.com/hey-car/heycar-uikit/issues/172)) ([437483a](https://github.com/hey-car/heycar-uikit/commit/437483ab29f5fd88a5ed867ebba8a23c9a169728))
+
+
+
+
+
 ## [2.3.1](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/accordion@2.3.0...@heycar-uikit/accordion@2.3.1) (2023-03-21)
 
 **Note:** Version bump only for package @heycar-uikit/accordion
