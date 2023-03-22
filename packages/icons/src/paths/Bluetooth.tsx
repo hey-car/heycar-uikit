@@ -4,8 +4,10 @@ import createSvgIcon from '../utils/createSvgIcon';
 
 export const Bluetooth = createSvgIcon(
   <path
-    d="M10.5592 2.06628L18.16 8.14691L12.8934 12.3602L18.2267 16.0935L10.5592 22.2275L10.5592 14.2275L7.1839 16.9278L5.93451 15.366L9.55835 12.467L5.98574 9.96614L7.13267 8.32768L10.5592 10.7263L10.5592 2.06628ZM12.5592 14.5676L14.8917 16.2003L12.5592 18.0663L12.5592 14.5676ZM12.5592 10.0663V6.22753L14.9584 8.14691L12.5592 10.0663Z"
-    fillRule="evenodd"
+    d="m6 16 10-8-5-4v16l5-4L6 9"
+    fill="transparent"
+    stroke="currentColor"
+    strokeWidth="2"
   />,
   'Bluetooth',
 );

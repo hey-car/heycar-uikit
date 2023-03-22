@@ -34,6 +34,7 @@ export const IconTemplate = args => {
   const iconsList = Object.keys(Icons)
     .map(key => Icons[key])
     .filter(icon => 'displayName' in icon);
+  console.log(Object.keys(Icons));
   const maxCols = 10;
   const amountRows = new Array(Math.ceil(iconsList.length / maxCols)).fill(0);
   return amountRows.map((_, index) => (
