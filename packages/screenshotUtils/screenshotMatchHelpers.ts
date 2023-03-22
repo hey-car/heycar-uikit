@@ -18,7 +18,7 @@ export const screenshotMatchClick = async (
   selector: string,
   screenshotOpts?: PageScreenshotOptions,
   action: 'click' | 'down' = 'click',
-  delayTime = 200,
+  delayTime = 250,
 ) => {
   const { browser, context, page } = await openBrowserPage(pageUrl);
 
