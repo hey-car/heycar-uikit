@@ -32,7 +32,8 @@
   "dependencies": {
     "@heycar-uikit/icons": "^4.0.0",
     "@heycar-uikit/typography": "^3.5.0",
-    "classnames": "^2.3.1"
+    "classnames": "^2.3.1",
+    "uuid": "^9.0.0"
   },
   "author": "HeyCar Team",
   "license": "UNLICENSED"

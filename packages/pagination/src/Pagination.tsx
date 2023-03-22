@@ -1,4 +1,5 @@
 import React from 'react';
+import cn from 'classnames';
 import { v4 as uuidv4 } from 'uuid';
 
 import usePagination from './hooks/usePagination.hook';
@@ -21,6 +22,7 @@ export const Pagination = React.forwardRef<HTMLElement, PaginationProps>(
     },
     ref,
   ) => {
+    const classNames = cn(styles.pagination, className);
     const { items } = usePagination({
       onClick,
       totalPages,
@@ -29,7 +31,7 @@ export const Pagination = React.forwardRef<HTMLElement, PaginationProps>(
     });
 
     return (
-      <nav className={`${styles.pagination} ${className}`} ref={ref} {...rest}>
+      <nav className={classNames} ref={ref} {...rest}>
         <ul>
           {items.map(item => {
             const id = uuidv4();

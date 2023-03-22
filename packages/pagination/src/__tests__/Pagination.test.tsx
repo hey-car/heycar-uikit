@@ -110,7 +110,11 @@ describe('Pagination', () => {
 
     it('should disable buttons in HTML', () => {
       const { getByLabelText } = render(
-        <Pagination currentPage={1} onClick={jest.fn()} totalPages={1} />,
+        <Pagination
+          currentPage={1}
+          renderItem={item => <PaginationItem component={'button'} {...item} />}
+          totalPages={1}
+        />,
       );
 
       expect(getByLabelText('Go to previous page')).toBeDisabled();
