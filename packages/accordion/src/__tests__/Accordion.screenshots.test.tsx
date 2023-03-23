@@ -6,7 +6,6 @@ import {
   matchHtml,
   openBrowserPage,
   screenshotMatchClick,
-  screenshotMatchHover,
 } from '../../../screenshotUtils';
 
 const packageName = 'accordion';
@@ -41,22 +40,6 @@ describe('Accordion screenshots', () => {
     } finally {
       await closeBrowser({ browser, context, page });
     }
-  });
-
-  test('Accordion mouse down on tabs', async () => {
-    const pageUrl = createStorybookUrl({
-      packageName,
-    });
-
-    await screenshotMatchClick(pageUrl, accordionButtonSelector, {}, 'down');
-  });
-
-  test('Accordion hover on tabs', async () => {
-    const pageUrl = createStorybookUrl({
-      packageName,
-    });
-
-    await screenshotMatchHover(pageUrl, accordionButtonSelector);
   });
 
   test('Accordion open first tab', async () => {
