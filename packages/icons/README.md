@@ -64,4 +64,4 @@ function App() {
 
 ## Documentation and sandbox
 
-[Storybook](https://hey-car.github.io/heycar-uikit/main/?path=/docs/components-icons--icons) documentation and sandbox.
+[Storybook](https://hey-car.github.io/heycar-uikit/main/?path=/docs/components-atoms-icons--icons) documentation and sandbox.

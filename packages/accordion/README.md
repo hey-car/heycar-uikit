@@ -66,4 +66,4 @@ function App() {
 
 ## Documentation and sandbox
 
-[Storybook](https://hey-car.github.io/heycar-uikit/main/?path=/docs/components-accordion--accordion) documentation and sandbox
+[Storybook](https://hey-car.github.io/heycar-uikit/main/?path=/docs/components-molecules-accordion--accordion) documentation and sandbox
