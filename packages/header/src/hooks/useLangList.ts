@@ -10,6 +10,7 @@ const useLangList = () => {
   const [isHoverOnLangList, setIsHoverOnLangList] = useState<
     boolean | undefined
   >(undefined);
+  const [isKeyboardToggle, setIsKeyboardToggle] = useState(false);
   const [isLangListOpen, setIsLangListOpen] = useState(false);
 
   useEffect(() => {
@@ -29,10 +30,25 @@ const useLangList = () => {
     };
   }, [isHoverOnLangBtn, isHoverOnLangList]);
 
+  useEffect(() => {
+    if (timer.current) clearTimeout(timer.current);
+    setIsLangListOpen(isKeyboardToggle);
+  }, [isKeyboardToggle]);
+
+  const keyboardOpen = (
+    e: React.KeyboardEvent<HTMLAnchorElement | HTMLButtonElement>,
+  ) => {
+    if (e.code === 'Space') {
+      e.preventDefault();
+      setIsKeyboardToggle(!isKeyboardToggle);
+    }
+  };
+
   return {
+    isLangListOpen,
+    keyboardOpen,
     setIsHoverOnLangBtn,
     setIsHoverOnLangList,
-    isLangListOpen,
   };
 };
 

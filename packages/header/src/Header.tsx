@@ -50,8 +50,12 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
       : undefined;
     const LangIco = currentLang?.icon;
 
-    const { isLangListOpen, setIsHoverOnLangBtn, setIsHoverOnLangList } =
-      useLangList();
+    const {
+      isLangListOpen,
+      keyboardOpen,
+      setIsHoverOnLangBtn,
+      setIsHoverOnLangList,
+    } = useLangList();
 
     return (
       <header className={styles.header} data-test-id={dataTestId} ref={ref}>
@@ -78,6 +82,7 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
                */}
               {canShowSearch && (
                 <button
+                  aria-label={searchItemConfig.label}
                   className={`${styles.notHorizontalNav} ${styles.item}`}
                   onClick={searchItemConfig.onClick}
                 >
@@ -89,6 +94,7 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
                */}
               {canShowFaves && (
                 <Link
+                  aria-label={favoritesItemConfig.label}
                   className={styles.item}
                   href={favoritesItemConfig.href}
                   onClick={() =>
@@ -114,7 +120,10 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
                */}
               {canShowLang && (
                 <button
+                  aria-haspopup={true}
+                  aria-label={`${DEFAULT_LOCALE.langListHeading} - ${DEFAULT_LOCALE.spaceBarNotification}`}
                   className={`${styles.horizontalNavOnly} ${styles.item}`}
+                  onKeyDown={e => keyboardOpen(e)}
                   onMouseOut={() => setIsHoverOnLangBtn(false)}
                   onMouseOver={() => setIsHoverOnLangBtn(true)}
                 >
@@ -129,6 +138,7 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
                */}
               {canShowAccount && (
                 <button
+                  aria-label={accountItemConfig.label}
                   className={`${styles.horizontalNavOnly} ${styles.item}`}
                   onClick={() =>
                     itemOnClick(
@@ -149,6 +159,7 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
                */}
               {canShowCall && (
                 <Link
+                  aria-label={callItemConfig.label}
                   className={`${styles.desktopOnly} ${styles.item} ${styles.asideItem}`}
                   href={callItemConfig.href}
                   onClick={() =>
@@ -169,6 +180,7 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
                *** Mobile menu Toggle
                */}
               <button
+                aria-label={DEFAULT_LOCALE.burgerMenuButtonLabel}
                 className={`${styles.notHorizontalNav} ${styles.item}`}
                 onClick={() =>
                   itemOnClick('Toggle Menu', trackingFn, () =>

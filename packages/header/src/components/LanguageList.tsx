@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React from 'react';
 
 import Typography from '@heycar-uikit/typography';
 
@@ -9,46 +9,46 @@ import { LanguageListProps } from './LanguageList.types';
 
 import styles from '../styles/languageList.module.css';
 
-const LanguageList: FC<LanguageListProps> = ({
-  dataTestId,
-  heading,
-  onHover,
-  options = LANG_OPTIONS,
-  trackingFn,
-}) => {
-  return (
-    <div
-      className={styles.languageList}
-      data-test-id={dataTestId}
-      onMouseOut={() => onHover(false)}
-      onMouseOver={() => onHover(true)}
-    >
-      <Typography variant="subheading1">{heading}</Typography>
-      <ul>
-        {options.map(langItem => {
-          const Icon = getFlagIcon(langItem.langCode);
+const LanguageList = React.forwardRef<HTMLDivElement, LanguageListProps>(
+  (
+    { dataTestId, heading, onHover, options = LANG_OPTIONS, trackingFn },
+    ref,
+  ) => {
+    return (
+      <div
+        className={styles.languageList}
+        data-test-id={dataTestId}
+        onMouseOut={() => onHover(false)}
+        onMouseOver={() => onHover(true)}
+        ref={ref}
+      >
+        <Typography variant="subheading1">{heading}</Typography>
+        <ul>
+          {options.map(langItem => {
+            const Icon = getFlagIcon(langItem.langCode);
 
-          return (
-            <li key={langItem.langCode}>
-              <a
-                href={langItem.href}
-                onClick={() =>
-                  itemOnClick(
-                    `${langItem.label} language select`,
-                    trackingFn,
-                    langItem.onClick,
-                  )
-                }
-              >
-                {Icon}
-                <Typography variant="button3">{langItem.label}</Typography>
-              </a>
-            </li>
-          );
-        })}
-      </ul>
-    </div>
-  );
-};
+            return (
+              <li key={langItem.langCode}>
+                <a
+                  href={langItem.href}
+                  onClick={() =>
+                    itemOnClick(
+                      `${langItem.label} language select`,
+                      trackingFn,
+                      langItem.onClick,
+                    )
+                  }
+                >
+                  {Icon}
+                  <Typography variant="button3">{langItem.label}</Typography>
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    );
+  },
+);
 
 export default LanguageList;

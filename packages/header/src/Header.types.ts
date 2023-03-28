@@ -94,7 +94,8 @@ interface LangItemConfig {
   hide?: boolean;
 }
 
-interface SearchItemConfig extends Pick<HeaderItemConfig, 'onClick' | 'hide'> {
+interface SearchItemConfig
+  extends Pick<HeaderItemConfig, 'onClick' | 'hide' | 'label'> {
   Component: React.ReactElement;
 }
 

@@ -3,6 +3,8 @@ import { LangOption } from './Header.types';
 const DEFAULT_LOCALE = {
   logoLabel: 'heycar logo',
   langListHeading: 'Select Language',
+  burgerMenuButtonLabel: 'Navigation menu',
+  spaceBarNotification: 'Press the Space key to show sub-menus.',
 };
 
 const headerClickTracking = {
