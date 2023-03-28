@@ -99,7 +99,12 @@ describe('Input screenshots', () => {
       },
     });
 
-    await screenshotMatchClick(pageUrl, inputSelector, { clip }, 'down');
+    await screenshotMatchClick(
+      pageUrl,
+      inputSelector,
+      { animations: 'disabled', clip },
+      'down',
+    );
   });
 });
 
