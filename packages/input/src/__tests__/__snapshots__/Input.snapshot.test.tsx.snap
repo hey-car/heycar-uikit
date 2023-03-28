@@ -923,7 +923,7 @@ Object {
             >
               <input
                 aria-label="Label"
-                class="input hasLeftIcon"
+                class="input hasLeftIcon hasRightIcon"
                 type="text"
                 value="value"
               />
@@ -979,7 +979,7 @@ Object {
           >
             <input
               aria-label="Label"
-              class="input hasLeftIcon"
+              class="input hasLeftIcon hasRightIcon"
               type="text"
               value="value"
             />

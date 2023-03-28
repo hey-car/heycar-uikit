@@ -23,7 +23,7 @@ Object {
               >
                 <input
                   aria-disabled="true"
-                  class="input value"
+                  class="input value hasRightIcon"
                   type="text"
                   value="Mango"
                 />
@@ -124,7 +124,7 @@ Object {
             >
               <input
                 aria-disabled="true"
-                class="input value"
+                class="input value hasRightIcon"
                 type="text"
                 value="Mango"
               />
