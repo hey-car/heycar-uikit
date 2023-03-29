@@ -9,5 +9,9 @@
       "@heycar-uikit/*": ["../*/src"]
     }
   },
-  "references": [{ "path": "../icons" }, { "path": "../vars" }, { "path": "../typography" }]
+  "references": [
+    { "path": "../icons" },
+    { "path": "../typography" },
+    { "path": "../vars" }
+  ]
 }
