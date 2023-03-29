@@ -1,6 +1,7 @@
 import React, { useMemo } from 'react';
 import cn from 'classnames';
 
+import { PropsBasedOnComponent } from '../../../../shared/types/PropsBasedOnComponent';
 import getGridClassNames from '../utils/getGridClassNames';
 
 import { ColProps } from './Col.types';
@@ -8,7 +9,8 @@ import { ColProps } from './Col.types';
 import guttersStyles from '../styles/gutters.module.css';
 import styles from './Col.module.css';
 
-function Col<E extends React.ElementType = 'div'>({
+// export Col is necessary with PropsBasedOnComponent due to a Storybook bug
+export const Col: PropsBasedOnComponent<ColProps, 'div'> = ({
   component,
   className,
   align,
@@ -17,7 +19,7 @@ function Col<E extends React.ElementType = 'div'>({
   width,
   children,
   dataTestId,
-}: ColProps<E>) {
+}) => {
   const Component = component ?? 'div';
 
   const gridClassNames = useMemo(
@@ -38,6 +40,6 @@ function Col<E extends React.ElementType = 'div'>({
       {children}
     </Component>
   );
-}
+};
 
 export default Col;

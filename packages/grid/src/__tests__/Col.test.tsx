@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 
-import Col from '../components/Col';
+import { Col } from '../components/Col';
 
 describe('Grid.Col', () => {
   describe('Snapshots tests', () => {

@@ -4,11 +4,9 @@ import cn from 'classnames';
 import { ChevronLeft, ChevronRight } from '@heycar-uikit/icons';
 import Typography from '@heycar-uikit/typography';
 
-import {
-  PaginationItemProps,
-  PaginationItemType,
-  PropsBasedOnComponent,
-} from './Pagination.types';
+import { PropsBasedOnComponent } from '../../../shared/types/PropsBasedOnComponent';
+
+import { PaginationItemProps, PaginationItemType } from './Pagination.types';
 
 import styles from './styles/default.module.css';
 
