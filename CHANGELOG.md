@@ -1,3 +1,10 @@
+# [5.6.0](https://github.com/hey-car/heycar-uikit/compare/v5.5.0...v5.6.0) (2023-03-29)
+
+
+### Features
+
+* **pagination:** fix keys warning and properly disable buttons ([#173](https://github.com/hey-car/heycar-uikit/issues/173)) ([f1c31a4](https://github.com/hey-car/heycar-uikit/commit/f1c31a45f9bedb77829808489db8488a869169c1))
+
 # [5.5.0](https://github.com/hey-car/heycar-uikit/compare/v5.4.0...v5.5.0) (2023-03-22)
 
 
