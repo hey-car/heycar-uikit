@@ -31,4 +31,4 @@ for more info you checkout colour page in [Figma](https://www.figma.com/file/rrv
 
 ## Documentation and sandbox
 
-[Storybook](https://hey-car.github.io/heycar-uikit/main/?path=/docs/components-logo--logo) documentation and sandbox
+[Storybook](https://hey-car.github.io/heycar-uikit/main/?path=/docs/components-atoms-logo--logo) documentation and sandbox

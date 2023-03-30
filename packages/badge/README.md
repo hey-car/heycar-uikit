@@ -22,4 +22,4 @@ function App() {
 
 ## Documentation and sandbox
 
-[Storybook](https://hey-car.github.io/heycar-uikit/main/?path=/docs/components-badge--badge) documentation and sandbox.
+[Storybook](https://hey-car.github.io/heycar-uikit/main/?path=/docs/components-molecules-badge--badge) documentation and sandbox.
