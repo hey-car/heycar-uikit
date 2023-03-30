@@ -7,7 +7,7 @@ export function createStorybookUrl({
   moduleName,
   knobs = {},
 }: CreateStorybookUrlParams) {
-  const Atoms = ['Grid', 'Icons', 'Logo', 'Typography'];
+  const Atoms = ['grid', 'icons', 'logo', 'typography'];
 
   const knobsQuery = Object.keys(knobs)
     .reduce((acc, knobName) => `${acc};${knobName}:${knobs[knobName]}`, '')
@@ -17,6 +17,6 @@ export function createStorybookUrl({
   const component = componentPath.split('--').pop() || '';
 
   return `${url}?id=components-${
-    Atoms.includes(component) ? 'atoms' : 'molecules'
+    Atoms.includes(component.toLowerCase()) ? 'atoms' : 'molecules'
   }${componentPath}&args=${knobsQuery}`;
 }
