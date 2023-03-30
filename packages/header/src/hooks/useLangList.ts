@@ -2,33 +2,35 @@ import { useEffect, useRef, useState } from 'react';
 
 const CLOSE_TIMEOUT = 300;
 
+type boolOrUnset = boolean | undefined;
+
 const useLangList = () => {
   const timer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
-  const [isHoverOnLangBtn, setIsHoverOnLangBtn] = useState<boolean | undefined>(
-    undefined,
-  );
-  const [isHoverOnLangList, setIsHoverOnLangList] = useState<
-    boolean | undefined
-  >(undefined);
+  const [isHovering, setIsHovering] = useState<boolOrUnset>(undefined);
+  const [isFocused, setIsFocused] = useState<boolOrUnset>(undefined);
   const [isKeyboardToggle, setIsKeyboardToggle] = useState(false);
   const [isLangListOpen, setIsLangListOpen] = useState(false);
 
   useEffect(() => {
-    if (isHoverOnLangBtn === false || isHoverOnLangList === false) {
+    if (isHovering === false || isFocused === false) {
       timer.current = setTimeout(() => {
         setIsLangListOpen(false);
       }, CLOSE_TIMEOUT);
     }
 
-    if (isHoverOnLangBtn || isHoverOnLangList) {
+    if (isHovering) {
       setIsLangListOpen(true);
       if (timer.current) clearTimeout(timer.current);
+    }
+
+    if (isFocused && timer.current) {
+      clearTimeout(timer.current);
     }
 
     return () => {
       if (timer.current) clearTimeout(timer.current);
     };
-  }, [isHoverOnLangBtn, isHoverOnLangList]);
+  }, [isFocused, isHovering]);
 
   useEffect(() => {
     if (timer.current) clearTimeout(timer.current);
@@ -47,8 +49,9 @@ const useLangList = () => {
   return {
     isLangListOpen,
     keyboardOpen,
-    setIsHoverOnLangBtn,
-    setIsHoverOnLangList,
+    setIsHovering,
+    setIsFocused,
+    setIsLangListOpen,
   };
 };
 

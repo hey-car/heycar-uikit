@@ -5,8 +5,8 @@
 */
 .languageList {
   position: absolute;
-  right: 71px;
-  top: 56px;
+  left: 0;
+  top: 48px;
   padding: var(--spacing-4);
   min-width: 232px;
   border: solid 1px var(--color-neutral-100);

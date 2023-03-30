@@ -90,11 +90,23 @@
     }
   }
 
+  /* Dropdown nav starts here */
   @media (--tablet-l) {
+    padding: 0 var(--spacing-2);
     height: var(--spacing-12);
 
-    &:hover {
+    &:last-of-type {
+      padding-right: var(--spacing-3);
+    }
+
+    &:hover,
+    &:focus,
+    &.focused {
       background-color: var(--color-primary-800);
+    }
+
+    &:active {
+      background-color: var(--color-primary-900);
     }
 
     &.horizontalNavOnly {
@@ -115,4 +127,8 @@
       display: inline;
     }
   }
+}
+
+.langWrapper {
+  position: relative;
 }

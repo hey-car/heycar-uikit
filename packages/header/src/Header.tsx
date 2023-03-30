@@ -50,12 +50,8 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
       : undefined;
     const LangIco = currentLang?.icon;
 
-    const {
-      isLangListOpen,
-      keyboardOpen,
-      setIsHoverOnLangBtn,
-      setIsHoverOnLangList,
-    } = useLangList();
+    const { isLangListOpen, keyboardOpen, setIsFocused, setIsHovering } =
+      useLangList();
 
     return (
       <header className={styles.header} data-test-id={dataTestId} ref={ref}>
@@ -119,19 +115,34 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
                *** Lang Select
                */}
               {canShowLang && (
-                <button
-                  aria-haspopup={true}
-                  aria-label={`${DEFAULT_LOCALE.langListHeading} - ${DEFAULT_LOCALE.spaceBarNotification}`}
-                  className={`${styles.horizontalNavOnly} ${styles.item}`}
-                  onKeyDown={e => keyboardOpen(e)}
-                  onMouseOut={() => setIsHoverOnLangBtn(false)}
-                  onMouseOver={() => setIsHoverOnLangBtn(true)}
-                >
-                  {LangIco}
-                  <Typography variant="subheading3">
-                    {currentLang?.shortName}
-                  </Typography>
-                </button>
+                <div className={styles.langWrapper}>
+                  <button
+                    aria-haspopup="menu"
+                    aria-label={`${DEFAULT_LOCALE.langListHeading} - ${DEFAULT_LOCALE.spaceBarNotification}`}
+                    className={`${styles.horizontalNavOnly} ${styles.item} ${
+                      isLangListOpen ? styles.focused : ''
+                    }`}
+                    onBlur={() => setIsFocused(false)}
+                    onFocus={() => setIsFocused(true)}
+                    onKeyDown={e => keyboardOpen(e)}
+                    onMouseOut={() => setIsHovering(false)}
+                    onMouseOver={() => setIsHovering(true)}
+                  >
+                    {LangIco}
+                    <Typography variant="subheading3">
+                      {currentLang?.shortName}
+                    </Typography>
+                  </button>
+                  {isLangListOpen && (
+                    <LanguageList
+                      dataTestId="header-language-list"
+                      heading={DEFAULT_LOCALE.langListHeading}
+                      onFocusEvents={setIsFocused}
+                      onHoverEvents={setIsHovering}
+                      trackingFn={trackingFn}
+                    />
+                  )}
+                </div>
               )}
               {/*
                *** Account Button
@@ -193,14 +204,6 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
             </Grid.Col>
           </Grid.Row>
         </Grid.Container>
-        {isLangListOpen && (
-          <LanguageList
-            dataTestId="header-language-list"
-            heading={DEFAULT_LOCALE.langListHeading}
-            onHover={setIsHoverOnLangList}
-            trackingFn={trackingFn}
-          />
-        )}
       </header>
     );
   },

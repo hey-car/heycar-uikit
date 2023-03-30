@@ -20,7 +20,11 @@ interface LanguageListProps {
   /**
    * function to be called on moveOver/Out events. Used to keep the list open when being used
    */
-  onHover: (hovering: boolean) => void;
+  onHoverEvents: (hovering: boolean) => void;
+  /**
+   * function to be called on focus/blur events. Used to keep the list open when being used
+   */
+  onFocusEvents: (focused: boolean) => void;
 }
 
 export { LanguageListProps };

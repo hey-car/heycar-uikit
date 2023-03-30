@@ -17,7 +17,7 @@ const LANG_OPTIONS: LangOption[] = [
   {
     langCode: 'de-DE',
     label: 'Deutsch',
-    shortName: 'De',
+    shortName: 'Deu',
     href: '#de-DE',
   },
   {
@@ -29,7 +29,7 @@ const LANG_OPTIONS: LangOption[] = [
   {
     langCode: 'fr-FR',
     label: 'Français',
-    shortName: 'Fr',
+    shortName: 'Fra',
     href: '#fr-FR',
   },
   {
@@ -41,7 +41,7 @@ const LANG_OPTIONS: LangOption[] = [
   {
     langCode: 'nl-NL',
     label: 'Nederlands',
-    shortName: 'NL',
+    shortName: 'Nld',
     href: '#nl-NL',
   },
 ];
