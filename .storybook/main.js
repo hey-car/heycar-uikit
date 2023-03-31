@@ -37,7 +37,12 @@ module.exports = {
     '@storybook/preset-create-react-app',
     {
       name: '@storybook/addon-docs',
-      options: { transcludeMarkdown: true },
+      options: {
+        configureJSX: true,
+        babelOptions: {},
+        sourceLoaderOptions: null,
+        transcludeMarkdown: true,
+      },
     },
     '@storybook/addon-controls',
     'storybook-addon-live-examples',

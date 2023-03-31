@@ -9,7 +9,7 @@ Hovering makes the cursor as `pointer` and changes the Switch colour to `neutral
 Clicking on unchecked Switch also has a short pressed effect with colour `neutral-700`.
 The Switch thumb has always `championship-white` colour.
 
-```tsx live
+```tsx live desktopOnly
 render(
   <Container>
     <Switch checked={false} onChange={() => {}} />
@@ -24,7 +24,7 @@ Hovering makes the cursor as `pointer` but doesn't change the colour.
 The Switch thumb has `championship-white` colour.
 The component is currently available only in `primary` colour.
 
-```tsx live
+```tsx live desktopOnly
 render(
   <Container>
     <Switch checked={true} onChange={() => {}} />
@@ -39,7 +39,7 @@ The thumb position can be on the left or on the right side depending on the Swit
 The cursor is `default`.
 The component is currently available only in `primary` colour.
 
-```tsx live
+```tsx live desktopOnly
 render(
   <Container>
     <Switch checked={true} onChange={() => {}} disabled={true} />

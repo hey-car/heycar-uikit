@@ -13,34 +13,35 @@ Without the `component` prop of `PaginationItem`, its component will be either a
 If using `PaginationItem`, always spread `item` as shown below.
 
 ## Localization
+
 Localization is done with an object
 
-```tsx live
+```tsx live desktopOnly
 render(
- <Pagination
+  <Pagination
     totalPages={12}
     currentPage={3}
-    locale={
-     {
-        page: 'Page #{page}',
-        goto: 'Go to page #{page}',
-        prevPage: 'Previous page',
-        nextPage: 'Next page',
-      }
-    }
- />
+    locale={{
+      page: 'Page #{page}',
+      goto: 'Go to page #{page}',
+      prevPage: 'Previous page',
+      nextPage: 'Next page',
+    }}
+  />,
 );
 ```
 
 ## onClick
+
 Controlling the `Pagination` component with onClick event
-```tsx live
+
+```tsx live desktopOnly
 render(
- <Pagination
+  <Pagination
     totalPages={12}
     currentPage={3}
     onClick={itemNumber => console.log(itemNumber)}
- />
+  />,
 );
 ```
 
@@ -48,37 +49,37 @@ render(
 
 Remember to always spread `item`
 
-```tsx live
+```tsx live desktopOnly
 render(
-   <Pagination
-      totalPages={255}
-      currentPage={5}
-      renderItem={item => (
-          <PaginationItem
-            href={`https://hey.car/page/${item.page}`}
-            {...item}
-          />
-        )}
-   />
+  <Pagination
+    totalPages={255}
+    currentPage={5}
+    renderItem={item => (
+      <PaginationItem href={`https://hey.car/page/${item.page}`} {...item} />
+    )}
+  />,
 );
 ```
 
 ## Custom aria-labels
-```tsx live
+
+```tsx live desktopOnly
 render(
-   <Pagination
-      totalPages={10}
-      currentPage={10}
-      aria-label={'Pagination'} // For pagination main component
-      getItemAriaLabel={({ type, page, selected }) => {
-        return 'Go to page ' + page;
-      }}
-   />
+  <Pagination
+    totalPages={10}
+    currentPage={10}
+    aria-label={'Pagination'} // For pagination main component
+    getItemAriaLabel={({ type, page, selected }) => {
+      return 'Go to page ' + page;
+    }}
+  />,
 );
 ```
 
 ## Custom component
+
 The use of custom components to render different items, allows the use of components such as `Link` from Next.js and `Link` from react-router.
+
 ```tsx
 interface LinkProps {
   link: string;
@@ -90,17 +91,17 @@ const Link: React.FC<LinkProps> = ({ link, children, ...rest }) => (
 );
 
 render(
-   <Pagination
-      totalPages={3}
-      currentPage={3}
-      renderItem={item => (
-          <PaginationItem
-            component={Link}
-            link={`https://hey.car/page/${item.page}`}
-            {...item}
-          />
-        )}
-   />
+  <Pagination
+    totalPages={3}
+    currentPage={3}
+    renderItem={item => (
+      <PaginationItem
+        component={Link}
+        link={`https://hey.car/page/${item.page}`}
+        {...item}
+      />
+    )}
+  />,
 );
 ```
 
