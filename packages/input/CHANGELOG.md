@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/input@1.2.0...@heycar-uikit/input@1.3.0) (2023-04-06)
+
+
+### Features
+
+* **input:** update state styles to match designs ([#177](https://github.com/hey-car/heycar-uikit/issues/177)) ([5236eaa](https://github.com/hey-car/heycar-uikit/commit/5236eaa4bacdc45df1db5891c31768df4490b1bd))
+
+
+
+
+
 # [1.2.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/input@1.1.9...@heycar-uikit/input@1.2.0) (2023-02-27)
 
 

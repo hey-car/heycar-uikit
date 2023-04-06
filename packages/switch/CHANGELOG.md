@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.1](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/switch@4.1.0...@heycar-uikit/switch@4.1.1) (2023-04-06)
+
+**Note:** Version bump only for package @heycar-uikit/switch
+
+
+
+
+
 # [4.1.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/switch@4.0.0...@heycar-uikit/switch@4.1.0) (2023-03-20)
 
 
