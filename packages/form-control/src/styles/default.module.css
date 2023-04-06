@@ -42,7 +42,7 @@
 
   &.hasLeftIcon {
     & .label {
-      left: var(--gap-xs);
+      left: var(--spacing-2);
     }
 
     & .filled .label {
@@ -56,7 +56,7 @@
             )
           )
         )
-        translateX(calc(var(--gap-3xl) * -1));
+        translateX(calc(var(--spacing-8) * -1));
     }
   }
 
@@ -174,7 +174,7 @@
   position: absolute;
   display: flex;
   align-items: center;
-  left: var(--gap-m);
+  left: var(--spacing-4);
   right: 0;
   transform-origin: left top;
   transform: translateY(-50%);
@@ -212,15 +212,15 @@
 }
 
 .leftIcon {
-  padding-left: var(--gap-m);
+  padding-left: var(--spacing-4);
 }
 
 .rightIcon {
-  padding-right: var(--gap-xs);
+  padding-right: var(--spacing-2);
 }
 
 .rightAddons {
-  padding-right: var(--gap-m);
+  padding-right: var(--spacing-4);
 }
 
 /*
@@ -236,7 +236,7 @@
 */
 .sub {
   display: block;
-  padding-left: var(--gap-m);
+  padding-left: var(--spacing-4);
 
   @mixin typography-caption-5;
 

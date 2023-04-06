@@ -20,16 +20,19 @@
   text-overflow: ellipsis;
   box-sizing: border-box;
   -webkit-appearance: none;
-
-  padding-left: var(--gap-m);
-
+  padding-right: var(--spacing-4);
+  padding-left: var(--spacing-4);
   color: var(--input-color);
   caret-color: var(--input-caret-color);
   @mixin typography-subheading-4;
 }
 
 .hasLeftIcon {
-  padding-left: var(--gap-xs);
+  padding-left: var(--spacing-1);
+}
+
+.hasRightIcon {
+  padding-right: var(--spacing-1);
 }
 
 .input:-webkit-autofill {
