@@ -4,11 +4,17 @@ const DEFAULT_LOCALE = {
   logoLabel: 'heycar logo',
   langListHeading: 'Select Language',
   burgerMenuButtonLabel: 'Navigation menu',
+  showAllLabel: 'Show all',
   spaceBarNotification: 'Press the Space key to show sub-menus.',
+  subMenuLabel: 'sub-menu',
+  auxTelLabel: 'Call Us at',
+  auxEmailLabel: 'Email Us at',
+  auxAppHeading: 'Download our App now',
 };
 
 const headerClickTracking = {
   action: 'Click',
+  // TODO: category might be navigation
   category: 'Header',
   label: undefined,
 };
@@ -46,4 +52,31 @@ const LANG_OPTIONS: LangOption[] = [
   },
 ];
 
-export { DEFAULT_LOCALE, headerClickTracking, LANG_OPTIONS };
+const SUBNAV_CONFIG = {
+  quarter: {
+    className: 'quarterWidth',
+    colWidth: 3,
+    maxItem: 5,
+    maxCaptionItem: 3,
+  },
+  third: {
+    className: 'thirdWidth',
+    colWidth: 4,
+    maxItem: 5,
+    maxCaptionItem: 3,
+  },
+  half: {
+    className: 'halfWidth',
+    colWidth: 6,
+    maxItem: 10,
+    maxCaptionItem: 6,
+  },
+  full: {
+    className: 'fullWidth',
+    colWidth: 12,
+    maxItem: 15,
+    maxCaptionItem: 9,
+  },
+};
+
+export { DEFAULT_LOCALE, headerClickTracking, LANG_OPTIONS, SUBNAV_CONFIG };

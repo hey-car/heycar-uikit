@@ -10,7 +10,11 @@ import {
 } from '@heycar-uikit/icons';
 
 import { headerClickTracking } from '../Header.constants';
-import { getFlagIcon, itemOnClick } from '../utils/headerItemHelpers';
+import {
+  getCurrentLang,
+  getFlagIcon,
+  itemOnClick,
+} from '../utils/headerItemHelpers';
 
 describe('headerItemHelpers', () => {
   const label = 'Test';
@@ -81,6 +85,54 @@ describe('headerItemHelpers', () => {
 
       expect(tr).toEqual(<Language />);
       expect(string).toEqual(<Language />);
+    });
+  });
+
+  describe('getCurrentLang', () => {
+    it('returns lang obj from default languages given a valid ISO code', () => {
+      const de = getCurrentLang('de-DE');
+
+      expect(de?.langCode).toEqual('de-DE');
+      expect(de?.label).toEqual('Deutsch');
+      expect(de?.shortName).toEqual('Deu');
+      expect(de?.href).toEqual('#de-DE');
+    });
+
+    it('returns lang obj from given language list when given a valid ISO code', () => {
+      const trObj = {
+        langCode: 'tr-TR',
+        label: 'Turkish',
+        shortName: 'Trk',
+        href: '#tr-TR',
+      };
+      const tr = getCurrentLang('tr-TR', [trObj]);
+
+      expect(tr?.langCode).toEqual(trObj.langCode);
+      expect(tr?.label).toEqual(trObj.label);
+      expect(tr?.shortName).toEqual(trObj.shortName);
+      expect(tr?.href).toEqual(trObj.href);
+    });
+
+    it('tries to find and return an icon to match lang', () => {
+      const trObj = {
+        langCode: 'tr-TR',
+        label: 'Turkish',
+        shortName: 'Trk',
+        href: '#tr-TR',
+      };
+      const tr = getCurrentLang('tr-TR', [trObj]);
+      const de = getCurrentLang('de-DE');
+
+      expect(tr?.icon).toEqual(<Language />);
+      expect(de?.icon).toEqual(<Germany />);
+    });
+
+    it('returns undefined if not given a valid ISO code or ISO code doesnt match the language list', () => {
+      const tr = getCurrentLang('tr-TR');
+      const string = getCurrentLang('kjdhjkd');
+
+      expect(tr).toEqual(undefined);
+      expect(string).toEqual(undefined);
     });
   });
 });

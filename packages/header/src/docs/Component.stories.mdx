@@ -1,6 +1,7 @@
 import { Meta, Story, Props } from '@storybook/addon-docs';
 import { ComponentHeader, CssVars, TabContainer } from 'storybook/blocks';
 
+import { defaultData } from './story.constants';
 import Header from '../Header';
 import { version } from '../../package.json';
 //import Description from './Description.mdx';
@@ -15,48 +16,7 @@ export const HeaderTemplate = args => <Header {...args} />;
 
 <!-- Canvas -->
 
-<Story
-  name="Header"
-  args={{
-    logoHref: 'heycar.com',
-    trackingFn: obj => {
-      console.log('CLICK', obj);
-    },
-    favoritesItemConfig: {
-      label: 'Favorites',
-      href: 'www.google.com',
-    },
-    langItemConfig: {
-      currentLang: 'en-GB',
-    },
-    accountItemConfig: {
-      label: 'Login',
-      href: 'www.google.com',
-      onClick: () => {
-        alert('Login modal');
-      },
-    },
-    callItemConfig: {
-      label: 'Call us',
-      href: 'tel:00493030809241',
-    },
-    searchItemConfig: {
-      Component: (
-        <input
-          value="This is a seperate component"
-          style={{
-            minWidth: '424px',
-            height: '48px',
-            padding: '0 16px',
-            border: 'none',
-            background: '#123D82',
-            color: '#fff',
-          }}
-        />
-      ),
-    },
-  }}
->
+<Story name="Header" args={defaultData}>
   {HeaderTemplate.bind({})}
 </Story>
 

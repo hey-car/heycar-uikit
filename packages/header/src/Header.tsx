@@ -1,4 +1,4 @@
-import React, { FC, useState } from 'react';
+import React, { useState } from 'react';
 
 import Grid from '@heycar-uikit/grid';
 import {
@@ -14,32 +14,41 @@ import Logo from '@heycar-uikit/logo';
 import Typography from '@heycar-uikit/typography';
 
 import LanguageList from './components/LanguageList';
+import Navigation from './components/Navigation';
 import { useLangList } from './hooks/useLangList';
 import { getCurrentLang, itemOnClick } from './utils/headerItemHelpers';
 import { DEFAULT_LOCALE } from './Header.constants';
-import { HeaderProps } from './Header.types';
+import { HeaderLinkProps, HeaderProps } from './Header.types';
 
 import styles from './styles/default.module.css';
 
-const DefaultLinkComponent: FC = props => <a {...props} />;
+const DefaultLinkComponent = (props: HeaderLinkProps) => <a {...props} />;
 
 const Header = React.forwardRef<HTMLElement, HeaderProps>(
   (
     {
       accountItemConfig,
+      auxiliaryDetails,
       callItemConfig,
       dataTestId,
       favoritesItemConfig,
       langItemConfig,
       LinkComponent,
+      locale = DEFAULT_LOCALE,
       logoHref,
+      navigation,
       searchItemConfig,
       trackingFn,
     },
     ref,
   ) => {
     const [isNavTrayOpen, setIsNavTrayOpen] = useState(false);
-    const Link = LinkComponent || DefaultLinkComponent;
+    const [activeNavItem, setActiveNavItem] = useState<string | undefined>(
+      undefined,
+    );
+    const Link = (LinkComponent || DefaultLinkComponent) as (
+      props: HeaderLinkProps,
+    ) => JSX.Element;
     const canShowSearch = searchItemConfig && !searchItemConfig.hide;
     const canShowFaves = favoritesItemConfig && !favoritesItemConfig.hide;
     const canShowLang = langItemConfig && !langItemConfig.hide;
@@ -55,7 +64,7 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
 
     return (
       <header className={styles.header} data-test-id={dataTestId} ref={ref}>
-        <Grid.Container>
+        <Grid.Container className={styles.headerInner}>
           <Grid.Row gutter={{ mobile: 8, tablet: 12, desktop: 24 }}>
             <Grid.Col className={styles.colLeft}>
               <Link
@@ -118,7 +127,7 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
                 <div className={styles.langWrapper}>
                   <button
                     aria-haspopup="menu"
-                    aria-label={`${DEFAULT_LOCALE.langListHeading} - ${DEFAULT_LOCALE.spaceBarNotification}`}
+                    aria-label={`${locale.langListHeading} - ${locale.spaceBarNotification}`}
                     className={`${styles.horizontalNavOnly} ${styles.item} ${
                       isLangListOpen ? styles.focused : ''
                     }`}
@@ -204,6 +213,23 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
             </Grid.Col>
           </Grid.Row>
         </Grid.Container>
+        {/*
+         *** Navigation
+         */}
+        <div
+          className={`${styles.navWrapper} ${isNavTrayOpen ? 'navOpen' : ''}`}
+        >
+          <Navigation
+            Link={Link}
+            activeNavItem={activeNavItem}
+            auxiliaryDetails={auxiliaryDetails}
+            currentLang={currentLang?.langCode}
+            dataTestId={`${dataTestId}-navigation`}
+            navigation={navigation}
+            setActiveNavItem={setActiveNavItem}
+            trackingFn={trackingFn}
+          />
+        </div>
       </header>
     );
   },

@@ -1,8 +1,11 @@
 import React from 'react';
 
+import { NavItem } from './components/Navigation.types';
 import { DEFAULT_LOCALE } from './Header.constants';
 
-export type Locale = typeof DEFAULT_LOCALE;
+type Locale = typeof DEFAULT_LOCALE;
+
+// HEADER ITEM RELATED TYPES
 
 interface HeaderTrackingObj {
   action: 'Click';
@@ -14,7 +17,7 @@ interface HeaderLinkProps {
   /**
    * Class name(s)
    */
-  className: string;
+  className?: string;
   /**
    * Href for navigation on click
    */
@@ -27,25 +30,21 @@ interface HeaderLinkProps {
    * Function to run on hover
    */
   onHover?: () => void;
+  /**
+   * HTML role attribute
+   */
+  role?: string;
   /**
    * Children of the link
    */
-  children?: Element | JSX.Element | Array<Element | JSX.Element>;
+  children?:
+    | string
+    | Element
+    | JSX.Element
+    | Array<string | Element | JSX.Element | undefined>;
 }
 
 interface HeaderItemConfig extends HeaderLinkProps {
-  /**
-   * Href for navigation on click
-   */
-  href?: string;
-  /**
-   * Function to run on click
-   */
-  onClick?: () => void;
-  /**
-   * Function to run on hover
-   */
-  onHover?: () => void;
   /**
    * Text label for the button or link
    */
@@ -107,7 +106,28 @@ interface AccountItemConfig extends Omit<HeaderItemConfig, 'href'> {
   isLoggedIn?: number;
 }
 
+interface FavoritesItemConfig extends HeaderItemConfig {
+  favoritesNumber?: number;
+}
+
+interface ContactDetail {
+  /**
+   * Text label to be displayed before the number or email. Overrides default values in locale
+   */
+  label?: string;
+  /**
+   * Phone number or email address
+   */
+  value: string;
+}
+
+// HEADER COMPONENT PROPS
+
 interface HeaderProps {
+  /**
+   * Component to override <a /> used for links
+   */
+  LinkComponent?: (props: HeaderLinkProps) => JSX.Element;
   /**
    * href for the logo anchor
    */
@@ -141,13 +161,34 @@ interface HeaderProps {
    */
   callItemConfig?: HeaderItemConfig;
   /**
-   * Component to override <a /> used for links
+   * Supplementary information to be show in the burger menu
    */
-  LinkComponent: (props: HeaderLinkProps) => JSX.Element;
+  auxiliaryDetails?: {
+    tel?: ContactDetail;
+    email?: ContactDetail;
+    app?: {
+      /**
+       * Heading to be displayed over app store buttons. Overrides default value in locale
+       */
+      heading?: string;
+      /**
+       * Apple app store URL
+       */
+      appStoreUrl?: string;
+      /**
+       * Google play store URL
+       */
+      playStoreUrl?: string;
+    };
+  };
   /**
    * The id for testing
    */
   dataTestId?: string;
+  /**
+   * Data representing the nav and sub nav
+   */
+  navigation: NavItem[];
 }
 
-export { HeaderTrackingObj, HeaderProps, LangOption };
+export { HeaderLinkProps, HeaderTrackingObj, HeaderProps, LangOption, Locale };
