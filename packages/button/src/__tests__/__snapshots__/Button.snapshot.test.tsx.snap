@@ -218,7 +218,7 @@ Object {
         class="button primary contained large"
       >
         <span
-          class="icon icon icon_left"
+          class="icon iconLeft icon_left"
         >
           🚗
         </span>
@@ -230,7 +230,7 @@ Object {
       class="button primary contained large"
     >
       <span
-        class="icon icon icon_left"
+        class="icon iconLeft icon_left"
       >
         🚗
       </span>
@@ -540,7 +540,7 @@ Object {
         class="button primary contained large"
       >
         <span
-          class="icon icon icon_right"
+          class="icon iconRight icon_right"
         >
           🚗
         </span>
@@ -552,7 +552,7 @@ Object {
       class="button primary contained large"
     >
       <span
-        class="icon icon icon_right"
+        class="icon iconRight icon_right"
       >
         🚗
       </span>

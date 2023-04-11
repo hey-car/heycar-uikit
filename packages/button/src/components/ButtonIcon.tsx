@@ -9,8 +9,6 @@ function ButtonIcon({ children, className, side }: ButtonIconProps) {
   const iconSideClassName = `icon_${side}`;
   const classNames = cn(styles.icon, className, styles[iconSideClassName]);
 
-  console.log(className);
-
   return <span className={classNames}>{children}</span>;
 }
 
