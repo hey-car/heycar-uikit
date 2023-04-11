@@ -34,6 +34,14 @@
   }
 }
 
+.iconLeft {
+  margin-left: -4px;
+}
+
+.iconRight {
+  margin-right: -4px;
+}
+
 /* Full width */
 .fullWidth {
   display: flex;
