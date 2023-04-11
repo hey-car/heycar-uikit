@@ -1,3 +1,10 @@
+# [5.8.0](https://github.com/hey-car/heycar-uikit/compare/v5.7.0...v5.8.0) (2023-04-11)
+
+
+### Features
+
+* **button:** update margins for icon left right as 20px ([#178](https://github.com/hey-car/heycar-uikit/issues/178)) ([96e12d0](https://github.com/hey-car/heycar-uikit/commit/96e12d060715bb536b34d85a82f368e19f15fcb8))
+
 # [5.7.0](https://github.com/hey-car/heycar-uikit/compare/v5.6.0...v5.7.0) (2023-04-06)
 
 
