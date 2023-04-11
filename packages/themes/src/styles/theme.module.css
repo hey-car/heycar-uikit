@@ -312,3 +312,42 @@
 .whatsapp-700 {
   background-color: var(--color-whatsapp-700);
 }
+
+.shadowWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.xs {
+  box-shadow: 0 2px 4px rgba(29, 29, 29, 0.06);
+}
+
+.s {
+  box-shadow: 0 2px 8px rgba(2, 16, 39, 0.08);
+}
+.m {
+  box-shadow: 0 0 12px rgba(29, 29, 29, 0.16);
+}
+.xl {
+  box-shadow: 0 -4px 8px rgba(29, 29, 29, 0.04);
+}
+.xxl {
+  box-shadow: 2px 16px 64px rgba(29, 29, 29, 0.16);
+}
+.none {
+  box-shadow: none !important;
+}
+
+.shadow {
+  height: 195px;
+  width: 100%;
+  background: var(--color-championship-white);
+  border: 1px solid #e6e6e6;
+}
+
+.nameShadow {
+  padding: 30px;
+  font-size: 16px;
+  font-weight: bold;
+}

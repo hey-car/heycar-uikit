@@ -99,6 +99,33 @@ export const Colors = () => {
 </Story>
 <br />
 
+## Shadows
+
+There are 6 shadow options available as CSS variables on this design system.
+
+export const Shadows = () => {
+  const ShadowsBlock = ({ name }) => (
+    <div className={`${styles[name]} ${styles.shadow}`}>
+      <span className={`${styles.nameShadow}`}>{name}</span>
+    </div>
+  );
+  return (
+    <div className={`${styles.shadowWrapper}`}>
+      <ShadowsBlock name="none" />
+      <ShadowsBlock name="xs" />
+      <ShadowsBlock name="s" />
+      <ShadowsBlock name="m" />
+      <ShadowsBlock name="xl" />
+      <ShadowsBlock name="xxl" />
+    </div>
+  );
+};
+
+<Story name="Shadows">
+  <Shadows />
+</Story>
+<br />
+
 ## Spacing
 
 There are 15 spacing options available as CSS variables on this design system.
