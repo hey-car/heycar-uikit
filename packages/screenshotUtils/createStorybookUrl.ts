@@ -13,7 +13,8 @@ export function createStorybookUrl({
     .reduce((acc, knobName) => `${acc};${knobName}:${knobs[knobName]}`, '')
     .substring(1);
 
-  const componentPath = `-${packageName}--${moduleName || packageName}`;
+  const noHyphenName = packageName ? packageName.replace(/-/g, '') : '';
+  const componentPath = `-${noHyphenName}--${moduleName || packageName}`;
   const component = componentPath.split('--').pop() || '';
 
   return `${url}?id=components-${
