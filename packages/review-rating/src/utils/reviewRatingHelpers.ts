@@ -5,7 +5,7 @@ import {
 } from '../ReviewRating.constants';
 
 const getParsedScore = (score: number) => {
-  let parsedScore = Number.isNaN(score) ? 0 : Math.round(score);
+  let parsedScore = !score || isNaN(score) ? 0 : Math.round(score);
 
   if (parsedScore < 0) parsedScore = 0;
   if (parsedScore > MAX_SCORE) parsedScore = MAX_SCORE;

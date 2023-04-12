@@ -1,0 +1,3706 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Snapshots tests should match snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        aria-label="Rating"
+        class="s wrapper undefined"
+        id="rr-631b7fdc-a55c-4a8a-a44e-7aa7ab4f167a"
+      >
+        <svg
+          class="background"
+          fill="none"
+          viewBox="0 0 176 177"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="88"
+            cy="88.75"
+            fill="url(#paint0_linear_16561_735)"
+            r="88"
+          />
+          <defs>
+            <lineargradient
+              gradientUnits="userSpaceOnUse"
+              id="paint0_linear_16561_735"
+              x1="44"
+              x2="143"
+              y1="16.4643"
+              y2="165.75"
+            >
+              <stop
+                stop-color="#F3F3F3"
+              />
+              <stop
+                offset="1"
+                stop-color="white"
+              />
+            </lineargradient>
+          </defs>
+        </svg>
+        <svg
+          class="arrow"
+          fill="none"
+          height="12"
+          viewBox="0 0 12 12"
+          width="12"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0.408276 11.5864L11.7165 10.8571L6.69399 0.699226L0.408276 11.5864Z"
+            fill="#164CA3"
+          />
+        </svg>
+        <div
+          aria-label="0 / 10"
+          class="plainCircle"
+        >
+          <span
+            class="completeScore"
+          >
+            <span
+              class="score"
+            >
+              0
+            </span>
+            <span
+              class="max"
+            >
+              /10
+            </span>
+          </span>
+        </div>
+        <svg
+          class="donut"
+          viewBox="0 0 42 42"
+        >
+          <circle
+            class="scoreCircleTrack"
+            cx="21"
+            cy="21"
+            fill="transparent"
+            r="17"
+            stroke-linecap="round"
+            style="stroke-dasharray: 80.5, 107;"
+          />
+          <circle
+            class="scoreCircle "
+            cx="21"
+            cy="21"
+            fill="transparent"
+            r="17"
+            stroke-linecap="round"
+            style="stroke-dasharray: 0, 107;"
+          />
+        </svg>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      aria-label="Rating"
+      class="s wrapper undefined"
+      id="rr-631b7fdc-a55c-4a8a-a44e-7aa7ab4f167a"
+    >
+      <svg
+        class="background"
+        fill="none"
+        viewBox="0 0 176 177"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="88"
+          cy="88.75"
+          fill="url(#paint0_linear_16561_735)"
+          r="88"
+        />
+        <defs>
+          <lineargradient
+            gradientUnits="userSpaceOnUse"
+            id="paint0_linear_16561_735"
+            x1="44"
+            x2="143"
+            y1="16.4643"
+            y2="165.75"
+          >
+            <stop
+              stop-color="#F3F3F3"
+            />
+            <stop
+              offset="1"
+              stop-color="white"
+            />
+          </lineargradient>
+        </defs>
+      </svg>
+      <svg
+        class="arrow"
+        fill="none"
+        height="12"
+        viewBox="0 0 12 12"
+        width="12"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0.408276 11.5864L11.7165 10.8571L6.69399 0.699226L0.408276 11.5864Z"
+          fill="#164CA3"
+        />
+      </svg>
+      <div
+        aria-label="0 / 10"
+        class="plainCircle"
+      >
+        <span
+          class="completeScore"
+        >
+          <span
+            class="score"
+          >
+            0
+          </span>
+          <span
+            class="max"
+          >
+            /10
+          </span>
+        </span>
+      </div>
+      <svg
+        class="donut"
+        viewBox="0 0 42 42"
+      >
+        <circle
+          class="scoreCircleTrack"
+          cx="21"
+          cy="21"
+          fill="transparent"
+          r="17"
+          stroke-linecap="round"
+          style="stroke-dasharray: 80.5, 107;"
+        />
+        <circle
+          class="scoreCircle "
+          cx="21"
+          cy="21"
+          fill="transparent"
+          r="17"
+          stroke-linecap="round"
+          style="stroke-dasharray: 0, 107;"
+        />
+      </svg>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Button Snapshots tests should render L size 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        aria-label="Rating"
+        class="l wrapper undefined"
+        id="rr-f2afd283-349c-428b-a47f-96473b9ed136"
+      >
+        <svg
+          class="background"
+          fill="none"
+          viewBox="0 0 176 177"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="88"
+            cy="88.75"
+            fill="url(#paint0_linear_16561_735)"
+            r="88"
+          />
+          <defs>
+            <lineargradient
+              gradientUnits="userSpaceOnUse"
+              id="paint0_linear_16561_735"
+              x1="44"
+              x2="143"
+              y1="16.4643"
+              y2="165.75"
+            >
+              <stop
+                stop-color="#F3F3F3"
+              />
+              <stop
+                offset="1"
+                stop-color="white"
+              />
+            </lineargradient>
+          </defs>
+        </svg>
+        <svg
+          class="arrow"
+          fill="none"
+          height="12"
+          viewBox="0 0 12 12"
+          width="12"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0.408276 11.5864L11.7165 10.8571L6.69399 0.699226L0.408276 11.5864Z"
+            fill="#164CA3"
+          />
+        </svg>
+        <div
+          aria-label="0 / 10"
+          class="plainCircle"
+        >
+          <span
+            class="completeScore"
+          >
+            <span
+              class="score"
+            >
+              0
+            </span>
+            <span
+              class="max"
+            >
+              /10
+            </span>
+          </span>
+        </div>
+        <svg
+          class="donut"
+          viewBox="0 0 42 42"
+        >
+          <circle
+            class="scoreCircleTrack"
+            cx="21"
+            cy="21"
+            fill="transparent"
+            r="17"
+            stroke-linecap="round"
+            style="stroke-dasharray: 80.5, 107;"
+          />
+          <circle
+            class="scoreCircle "
+            cx="21"
+            cy="21"
+            fill="transparent"
+            r="17"
+            stroke-linecap="round"
+            style="stroke-dasharray: 0, 107;"
+          />
+        </svg>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      aria-label="Rating"
+      class="l wrapper undefined"
+      id="rr-f2afd283-349c-428b-a47f-96473b9ed136"
+    >
+      <svg
+        class="background"
+        fill="none"
+        viewBox="0 0 176 177"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="88"
+          cy="88.75"
+          fill="url(#paint0_linear_16561_735)"
+          r="88"
+        />
+        <defs>
+          <lineargradient
+            gradientUnits="userSpaceOnUse"
+            id="paint0_linear_16561_735"
+            x1="44"
+            x2="143"
+            y1="16.4643"
+            y2="165.75"
+          >
+            <stop
+              stop-color="#F3F3F3"
+            />
+            <stop
+              offset="1"
+              stop-color="white"
+            />
+          </lineargradient>
+        </defs>
+      </svg>
+      <svg
+        class="arrow"
+        fill="none"
+        height="12"
+        viewBox="0 0 12 12"
+        width="12"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0.408276 11.5864L11.7165 10.8571L6.69399 0.699226L0.408276 11.5864Z"
+          fill="#164CA3"
+        />
+      </svg>
+      <div
+        aria-label="0 / 10"
+        class="plainCircle"
+      >
+        <span
+          class="completeScore"
+        >
+          <span
+            class="score"
+          >
+            0
+          </span>
+          <span
+            class="max"
+          >
+            /10
+          </span>
+        </span>
+      </div>
+      <svg
+        class="donut"
+        viewBox="0 0 42 42"
+      >
+        <circle
+          class="scoreCircleTrack"
+          cx="21"
+          cy="21"
+          fill="transparent"
+          r="17"
+          stroke-linecap="round"
+          style="stroke-dasharray: 80.5, 107;"
+        />
+        <circle
+          class="scoreCircle "
+          cx="21"
+          cy="21"
+          fill="transparent"
+          r="17"
+          stroke-linecap="round"
+          style="stroke-dasharray: 0, 107;"
+        />
+      </svg>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Button Snapshots tests should render M size 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        aria-label="Rating"
+        class="m wrapper undefined"
+        id="rr-f217efbe-6182-4448-81e2-b055d8b3effa"
+      >
+        <svg
+          class="background"
+          fill="none"
+          viewBox="0 0 176 177"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="88"
+            cy="88.75"
+            fill="url(#paint0_linear_16561_735)"
+            r="88"
+          />
+          <defs>
+            <lineargradient
+              gradientUnits="userSpaceOnUse"
+              id="paint0_linear_16561_735"
+              x1="44"
+              x2="143"
+              y1="16.4643"
+              y2="165.75"
+            >
+              <stop
+                stop-color="#F3F3F3"
+              />
+              <stop
+                offset="1"
+                stop-color="white"
+              />
+            </lineargradient>
+          </defs>
+        </svg>
+        <svg
+          class="arrow"
+          fill="none"
+          height="12"
+          viewBox="0 0 12 12"
+          width="12"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0.408276 11.5864L11.7165 10.8571L6.69399 0.699226L0.408276 11.5864Z"
+            fill="#164CA3"
+          />
+        </svg>
+        <div
+          aria-label="0 / 10"
+          class="plainCircle"
+        >
+          <span
+            class="completeScore"
+          >
+            <span
+              class="score"
+            >
+              0
+            </span>
+            <span
+              class="max"
+            >
+              /10
+            </span>
+          </span>
+        </div>
+        <svg
+          class="donut"
+          viewBox="0 0 42 42"
+        >
+          <circle
+            class="scoreCircleTrack"
+            cx="21"
+            cy="21"
+            fill="transparent"
+            r="17"
+            stroke-linecap="round"
+            style="stroke-dasharray: 80.5, 107;"
+          />
+          <circle
+            class="scoreCircle "
+            cx="21"
+            cy="21"
+            fill="transparent"
+            r="17"
+            stroke-linecap="round"
+            style="stroke-dasharray: 0, 107;"
+          />
+        </svg>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      aria-label="Rating"
+      class="m wrapper undefined"
+      id="rr-f217efbe-6182-4448-81e2-b055d8b3effa"
+    >
+      <svg
+        class="background"
+        fill="none"
+        viewBox="0 0 176 177"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="88"
+          cy="88.75"
+          fill="url(#paint0_linear_16561_735)"
+          r="88"
+        />
+        <defs>
+          <lineargradient
+            gradientUnits="userSpaceOnUse"
+            id="paint0_linear_16561_735"
+            x1="44"
+            x2="143"
+            y1="16.4643"
+            y2="165.75"
+          >
+            <stop
+              stop-color="#F3F3F3"
+            />
+            <stop
+              offset="1"
+              stop-color="white"
+            />
+          </lineargradient>
+        </defs>
+      </svg>
+      <svg
+        class="arrow"
+        fill="none"
+        height="12"
+        viewBox="0 0 12 12"
+        width="12"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0.408276 11.5864L11.7165 10.8571L6.69399 0.699226L0.408276 11.5864Z"
+          fill="#164CA3"
+        />
+      </svg>
+      <div
+        aria-label="0 / 10"
+        class="plainCircle"
+      >
+        <span
+          class="completeScore"
+        >
+          <span
+            class="score"
+          >
+            0
+          </span>
+          <span
+            class="max"
+          >
+            /10
+          </span>
+        </span>
+      </div>
+      <svg
+        class="donut"
+        viewBox="0 0 42 42"
+      >
+        <circle
+          class="scoreCircleTrack"
+          cx="21"
+          cy="21"
+          fill="transparent"
+          r="17"
+          stroke-linecap="round"
+          style="stroke-dasharray: 80.5, 107;"
+        />
+        <circle
+          class="scoreCircle "
+          cx="21"
+          cy="21"
+          fill="transparent"
+          r="17"
+          stroke-linecap="round"
+          style="stroke-dasharray: 0, 107;"
+        />
+      </svg>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Button Snapshots tests should render S size 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        aria-label="Rating"
+        class="s wrapper undefined"
+        id="rr-f207d7f3-950f-456e-b1fe-2000413ca85b"
+      >
+        <svg
+          class="background"
+          fill="none"
+          viewBox="0 0 176 177"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="88"
+            cy="88.75"
+            fill="url(#paint0_linear_16561_735)"
+            r="88"
+          />
+          <defs>
+            <lineargradient
+              gradientUnits="userSpaceOnUse"
+              id="paint0_linear_16561_735"
+              x1="44"
+              x2="143"
+              y1="16.4643"
+              y2="165.75"
+            >
+              <stop
+                stop-color="#F3F3F3"
+              />
+              <stop
+                offset="1"
+                stop-color="white"
+              />
+            </lineargradient>
+          </defs>
+        </svg>
+        <svg
+          class="arrow"
+          fill="none"
+          height="12"
+          viewBox="0 0 12 12"
+          width="12"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0.408276 11.5864L11.7165 10.8571L6.69399 0.699226L0.408276 11.5864Z"
+            fill="#164CA3"
+          />
+        </svg>
+        <div
+          aria-label="0 / 10"
+          class="plainCircle"
+        >
+          <span
+            class="completeScore"
+          >
+            <span
+              class="score"
+            >
+              0
+            </span>
+            <span
+              class="max"
+            >
+              /10
+            </span>
+          </span>
+        </div>
+        <svg
+          class="donut"
+          viewBox="0 0 42 42"
+        >
+          <circle
+            class="scoreCircleTrack"
+            cx="21"
+            cy="21"
+            fill="transparent"
+            r="17"
+            stroke-linecap="round"
+            style="stroke-dasharray: 80.5, 107;"
+          />
+          <circle
+            class="scoreCircle "
+            cx="21"
+            cy="21"
+            fill="transparent"
+            r="17"
+            stroke-linecap="round"
+            style="stroke-dasharray: 0, 107;"
+          />
+        </svg>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      aria-label="Rating"
+      class="s wrapper undefined"
+      id="rr-f207d7f3-950f-456e-b1fe-2000413ca85b"
+    >
+      <svg
+        class="background"
+        fill="none"
+        viewBox="0 0 176 177"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="88"
+          cy="88.75"
+          fill="url(#paint0_linear_16561_735)"
+          r="88"
+        />
+        <defs>
+          <lineargradient
+            gradientUnits="userSpaceOnUse"
+            id="paint0_linear_16561_735"
+            x1="44"
+            x2="143"
+            y1="16.4643"
+            y2="165.75"
+          >
+            <stop
+              stop-color="#F3F3F3"
+            />
+            <stop
+              offset="1"
+              stop-color="white"
+            />
+          </lineargradient>
+        </defs>
+      </svg>
+      <svg
+        class="arrow"
+        fill="none"
+        height="12"
+        viewBox="0 0 12 12"
+        width="12"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0.408276 11.5864L11.7165 10.8571L6.69399 0.699226L0.408276 11.5864Z"
+          fill="#164CA3"
+        />
+      </svg>
+      <div
+        aria-label="0 / 10"
+        class="plainCircle"
+      >
+        <span
+          class="completeScore"
+        >
+          <span
+            class="score"
+          >
+            0
+          </span>
+          <span
+            class="max"
+          >
+            /10
+          </span>
+        </span>
+      </div>
+      <svg
+        class="donut"
+        viewBox="0 0 42 42"
+      >
+        <circle
+          class="scoreCircleTrack"
+          cx="21"
+          cy="21"
+          fill="transparent"
+          r="17"
+          stroke-linecap="round"
+          style="stroke-dasharray: 80.5, 107;"
+        />
+        <circle
+          class="scoreCircle "
+          cx="21"
+          cy="21"
+          fill="transparent"
+          r="17"
+          stroke-linecap="round"
+          style="stroke-dasharray: 0, 107;"
+        />
+      </svg>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Button Snapshots tests should render XS size 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        aria-label="Rating"
+        class="xs wrapper undefined"
+        id="rr-2b5c666b-cb7b-49df-be06-024dc8706937"
+      >
+        <svg
+          class="background"
+          fill="none"
+          viewBox="0 0 176 177"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="88"
+            cy="88.75"
+            fill="url(#paint0_linear_16561_735)"
+            r="88"
+          />
+          <defs>
+            <lineargradient
+              gradientUnits="userSpaceOnUse"
+              id="paint0_linear_16561_735"
+              x1="44"
+              x2="143"
+              y1="16.4643"
+              y2="165.75"
+            >
+              <stop
+                stop-color="#F3F3F3"
+              />
+              <stop
+                offset="1"
+                stop-color="white"
+              />
+            </lineargradient>
+          </defs>
+        </svg>
+        <svg
+          class="arrow"
+          fill="none"
+          height="12"
+          viewBox="0 0 12 12"
+          width="12"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0.408276 11.5864L11.7165 10.8571L6.69399 0.699226L0.408276 11.5864Z"
+            fill="#164CA3"
+          />
+        </svg>
+        <div
+          aria-label="0 / 10"
+          class="plainCircle"
+        >
+          <span
+            class="completeScore"
+          >
+            <span
+              class="score"
+            >
+              0
+            </span>
+            <span
+              class="max"
+            >
+              /10
+            </span>
+          </span>
+        </div>
+        <svg
+          class="donut"
+          viewBox="0 0 42 42"
+        >
+          <circle
+            class="scoreCircleTrack"
+            cx="21"
+            cy="21"
+            fill="transparent"
+            r="17"
+            stroke-linecap="round"
+            style="stroke-dasharray: 80.5, 107;"
+          />
+          <circle
+            class="scoreCircle "
+            cx="21"
+            cy="21"
+            fill="transparent"
+            r="17"
+            stroke-linecap="round"
+            style="stroke-dasharray: 0, 107;"
+          />
+        </svg>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      aria-label="Rating"
+      class="xs wrapper undefined"
+      id="rr-2b5c666b-cb7b-49df-be06-024dc8706937"
+    >
+      <svg
+        class="background"
+        fill="none"
+        viewBox="0 0 176 177"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="88"
+          cy="88.75"
+          fill="url(#paint0_linear_16561_735)"
+          r="88"
+        />
+        <defs>
+          <lineargradient
+            gradientUnits="userSpaceOnUse"
+            id="paint0_linear_16561_735"
+            x1="44"
+            x2="143"
+            y1="16.4643"
+            y2="165.75"
+          >
+            <stop
+              stop-color="#F3F3F3"
+            />
+            <stop
+              offset="1"
+              stop-color="white"
+            />
+          </lineargradient>
+        </defs>
+      </svg>
+      <svg
+        class="arrow"
+        fill="none"
+        height="12"
+        viewBox="0 0 12 12"
+        width="12"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0.408276 11.5864L11.7165 10.8571L6.69399 0.699226L0.408276 11.5864Z"
+          fill="#164CA3"
+        />
+      </svg>
+      <div
+        aria-label="0 / 10"
+        class="plainCircle"
+      >
+        <span
+          class="completeScore"
+        >
+          <span
+            class="score"
+          >
+            0
+          </span>
+          <span
+            class="max"
+          >
+            /10
+          </span>
+        </span>
+      </div>
+      <svg
+        class="donut"
+        viewBox="0 0 42 42"
+      >
+        <circle
+          class="scoreCircleTrack"
+          cx="21"
+          cy="21"
+          fill="transparent"
+          r="17"
+          stroke-linecap="round"
+          style="stroke-dasharray: 80.5, 107;"
+        />
+        <circle
+          class="scoreCircle "
+          cx="21"
+          cy="21"
+          fill="transparent"
+          r="17"
+          stroke-linecap="round"
+          style="stroke-dasharray: 0, 107;"
+        />
+      </svg>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Button Snapshots tests should render a score of 1 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        aria-label="Rating"
+        class="s wrapper undefined"
+        id="rr-6000f505-4191-450d-a532-f676cb196337"
+      >
+        <svg
+          class="background"
+          fill="none"
+          viewBox="0 0 176 177"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="88"
+            cy="88.75"
+            fill="url(#paint0_linear_16561_735)"
+            r="88"
+          />
+          <defs>
+            <lineargradient
+              gradientUnits="userSpaceOnUse"
+              id="paint0_linear_16561_735"
+              x1="44"
+              x2="143"
+              y1="16.4643"
+              y2="165.75"
+            >
+              <stop
+                stop-color="#F3F3F3"
+              />
+              <stop
+                offset="1"
+                stop-color="white"
+              />
+            </lineargradient>
+          </defs>
+        </svg>
+        <svg
+          class="arrow"
+          fill="none"
+          height="12"
+          viewBox="0 0 12 12"
+          width="12"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0.408276 11.5864L11.7165 10.8571L6.69399 0.699226L0.408276 11.5864Z"
+            fill="#164CA3"
+          />
+        </svg>
+        <div
+          aria-label="1 / 10"
+          class="plainCircle"
+        >
+          <span
+            class="completeScore"
+          >
+            <span
+              class="score"
+            >
+              1
+            </span>
+            <span
+              class="max"
+            >
+              /10
+            </span>
+          </span>
+        </div>
+        <svg
+          class="donut"
+          viewBox="0 0 42 42"
+        >
+          <circle
+            class="scoreCircleTrack"
+            cx="21"
+            cy="21"
+            fill="transparent"
+            r="17"
+            stroke-linecap="round"
+            style="stroke-dasharray: 80.5, 107;"
+          />
+          <circle
+            class="scoreCircle "
+            cx="21"
+            cy="21"
+            fill="transparent"
+            r="17"
+            stroke-linecap="round"
+            style="stroke-dasharray: 0, 107;"
+          />
+        </svg>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      aria-label="Rating"
+      class="s wrapper undefined"
+      id="rr-6000f505-4191-450d-a532-f676cb196337"
+    >
+      <svg
+        class="background"
+        fill="none"
+        viewBox="0 0 176 177"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="88"
+          cy="88.75"
+          fill="url(#paint0_linear_16561_735)"
+          r="88"
+        />
+        <defs>
+          <lineargradient
+            gradientUnits="userSpaceOnUse"
+            id="paint0_linear_16561_735"
+            x1="44"
+            x2="143"
+            y1="16.4643"
+            y2="165.75"
+          >
+            <stop
+              stop-color="#F3F3F3"
+            />
+            <stop
+              offset="1"
+              stop-color="white"
+            />
+          </lineargradient>
+        </defs>
+      </svg>
+      <svg
+        class="arrow"
+        fill="none"
+        height="12"
+        viewBox="0 0 12 12"
+        width="12"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0.408276 11.5864L11.7165 10.8571L6.69399 0.699226L0.408276 11.5864Z"
+          fill="#164CA3"
+        />
+      </svg>
+      <div
+        aria-label="1 / 10"
+        class="plainCircle"
+      >
+        <span
+          class="completeScore"
+        >
+          <span
+            class="score"
+          >
+            1
+          </span>
+          <span
+            class="max"
+          >
+            /10
+          </span>
+        </span>
+      </div>
+      <svg
+        class="donut"
+        viewBox="0 0 42 42"
+      >
+        <circle
+          class="scoreCircleTrack"
+          cx="21"
+          cy="21"
+          fill="transparent"
+          r="17"
+          stroke-linecap="round"
+          style="stroke-dasharray: 80.5, 107;"
+        />
+        <circle
+          class="scoreCircle "
+          cx="21"
+          cy="21"
+          fill="transparent"
+          r="17"
+          stroke-linecap="round"
+          style="stroke-dasharray: 0, 107;"
+        />
+      </svg>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Button Snapshots tests should render a score of 2 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        aria-label="Rating"
+        class="s wrapper undefined"
+        id="rr-689375f7-10b8-4707-9524-0fbff145cf37"
+      >
+        <svg
+          class="background"
+          fill="none"
+          viewBox="0 0 176 177"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="88"
+            cy="88.75"
+            fill="url(#paint0_linear_16561_735)"
+            r="88"
+          />
+          <defs>
+            <lineargradient
+              gradientUnits="userSpaceOnUse"
+              id="paint0_linear_16561_735"
+              x1="44"
+              x2="143"
+              y1="16.4643"
+              y2="165.75"
+            >
+              <stop
+                stop-color="#F3F3F3"
+              />
+              <stop
+                offset="1"
+                stop-color="white"
+              />
+            </lineargradient>
+          </defs>
+        </svg>
+        <svg
+          class="arrow"
+          fill="none"
+          height="12"
+          viewBox="0 0 12 12"
+          width="12"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0.408276 11.5864L11.7165 10.8571L6.69399 0.699226L0.408276 11.5864Z"
+            fill="#164CA3"
+          />
+        </svg>
+        <div
+          aria-label="2 / 10"
+          class="plainCircle"
+        >
+          <span
+            class="completeScore"
+          >
+            <span
+              class="score"
+            >
+              2
+            </span>
+            <span
+              class="max"
+            >
+              /10
+            </span>
+          </span>
+        </div>
+        <svg
+          class="donut"
+          viewBox="0 0 42 42"
+        >
+          <circle
+            class="scoreCircleTrack"
+            cx="21"
+            cy="21"
+            fill="transparent"
+            r="17"
+            stroke-linecap="round"
+            style="stroke-dasharray: 80.5, 107;"
+          />
+          <circle
+            class="scoreCircle "
+            cx="21"
+            cy="21"
+            fill="transparent"
+            r="17"
+            stroke-linecap="round"
+            style="stroke-dasharray: 0, 107;"
+          />
+        </svg>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      aria-label="Rating"
+      class="s wrapper undefined"
+      id="rr-689375f7-10b8-4707-9524-0fbff145cf37"
+    >
+      <svg
+        class="background"
+        fill="none"
+        viewBox="0 0 176 177"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="88"
+          cy="88.75"
+          fill="url(#paint0_linear_16561_735)"
+          r="88"
+        />
+        <defs>
+          <lineargradient
+            gradientUnits="userSpaceOnUse"
+            id="paint0_linear_16561_735"
+            x1="44"
+            x2="143"
+            y1="16.4643"
+            y2="165.75"
+          >
+            <stop
+              stop-color="#F3F3F3"
+            />
+            <stop
+              offset="1"
+              stop-color="white"
+            />
+          </lineargradient>
+        </defs>
+      </svg>
+      <svg
+        class="arrow"
+        fill="none"
+        height="12"
+        viewBox="0 0 12 12"
+        width="12"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0.408276 11.5864L11.7165 10.8571L6.69399 0.699226L0.408276 11.5864Z"
+          fill="#164CA3"
+        />
+      </svg>
+      <div
+        aria-label="2 / 10"
+        class="plainCircle"
+      >
+        <span
+          class="completeScore"
+        >
+          <span
+            class="score"
+          >
+            2
+          </span>
+          <span
+            class="max"
+          >
+            /10
+          </span>
+        </span>
+      </div>
+      <svg
+        class="donut"
+        viewBox="0 0 42 42"
+      >
+        <circle
+          class="scoreCircleTrack"
+          cx="21"
+          cy="21"
+          fill="transparent"
+          r="17"
+          stroke-linecap="round"
+          style="stroke-dasharray: 80.5, 107;"
+        />
+        <circle
+          class="scoreCircle "
+          cx="21"
+          cy="21"
+          fill="transparent"
+          r="17"
+          stroke-linecap="round"
+          style="stroke-dasharray: 0, 107;"
+        />
+      </svg>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Button Snapshots tests should render a score of 3 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        aria-label="Rating"
+        class="s wrapper undefined"
+        id="rr-e321d30f-5f65-4d3d-abcb-28fe2b473338"
+      >
+        <svg
+          class="background"
+          fill="none"
+          viewBox="0 0 176 177"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="88"
+            cy="88.75"
+            fill="url(#paint0_linear_16561_735)"
+            r="88"
+          />
+          <defs>
+            <lineargradient
+              gradientUnits="userSpaceOnUse"
+              id="paint0_linear_16561_735"
+              x1="44"
+              x2="143"
+              y1="16.4643"
+              y2="165.75"
+            >
+              <stop
+                stop-color="#F3F3F3"
+              />
+              <stop
+                offset="1"
+                stop-color="white"
+              />
+            </lineargradient>
+          </defs>
+        </svg>
+        <svg
+          class="arrow"
+          fill="none"
+          height="12"
+          viewBox="0 0 12 12"
+          width="12"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0.408276 11.5864L11.7165 10.8571L6.69399 0.699226L0.408276 11.5864Z"
+            fill="#164CA3"
+          />
+        </svg>
+        <div
+          aria-label="3 / 10"
+          class="plainCircle"
+        >
+          <span
+            class="completeScore"
+          >
+            <span
+              class="score"
+            >
+              3
+            </span>
+            <span
+              class="max"
+            >
+              /10
+            </span>
+          </span>
+        </div>
+        <svg
+          class="donut"
+          viewBox="0 0 42 42"
+        >
+          <circle
+            class="scoreCircleTrack"
+            cx="21"
+            cy="21"
+            fill="transparent"
+            r="17"
+            stroke-linecap="round"
+            style="stroke-dasharray: 80.5, 107;"
+          />
+          <circle
+            class="scoreCircle "
+            cx="21"
+            cy="21"
+            fill="transparent"
+            r="17"
+            stroke-linecap="round"
+            style="stroke-dasharray: 0, 107;"
+          />
+        </svg>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      aria-label="Rating"
+      class="s wrapper undefined"
+      id="rr-e321d30f-5f65-4d3d-abcb-28fe2b473338"
+    >
+      <svg
+        class="background"
+        fill="none"
+        viewBox="0 0 176 177"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="88"
+          cy="88.75"
+          fill="url(#paint0_linear_16561_735)"
+          r="88"
+        />
+        <defs>
+          <lineargradient
+            gradientUnits="userSpaceOnUse"
+            id="paint0_linear_16561_735"
+            x1="44"
+            x2="143"
+            y1="16.4643"
+            y2="165.75"
+          >
+            <stop
+              stop-color="#F3F3F3"
+            />
+            <stop
+              offset="1"
+              stop-color="white"
+            />
+          </lineargradient>
+        </defs>
+      </svg>
+      <svg
+        class="arrow"
+        fill="none"
+        height="12"
+        viewBox="0 0 12 12"
+        width="12"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0.408276 11.5864L11.7165 10.8571L6.69399 0.699226L0.408276 11.5864Z"
+          fill="#164CA3"
+        />
+      </svg>
+      <div
+        aria-label="3 / 10"
+        class="plainCircle"
+      >
+        <span
+          class="completeScore"
+        >
+          <span
+            class="score"
+          >
+            3
+          </span>
+          <span
+            class="max"
+          >
+            /10
+          </span>
+        </span>
+      </div>
+      <svg
+        class="donut"
+        viewBox="0 0 42 42"
+      >
+        <circle
+          class="scoreCircleTrack"
+          cx="21"
+          cy="21"
+          fill="transparent"
+          r="17"
+          stroke-linecap="round"
+          style="stroke-dasharray: 80.5, 107;"
+        />
+        <circle
+          class="scoreCircle "
+          cx="21"
+          cy="21"
+          fill="transparent"
+          r="17"
+          stroke-linecap="round"
+          style="stroke-dasharray: 0, 107;"
+        />
+      </svg>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Button Snapshots tests should render a score of 4 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        aria-label="Rating"
+        class="s wrapper undefined"
+        id="rr-48a9f642-4700-415e-847e-777267f5898c"
+      >
+        <svg
+          class="background"
+          fill="none"
+          viewBox="0 0 176 177"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="88"
+            cy="88.75"
+            fill="url(#paint0_linear_16561_735)"
+            r="88"
+          />
+          <defs>
+            <lineargradient
+              gradientUnits="userSpaceOnUse"
+              id="paint0_linear_16561_735"
+              x1="44"
+              x2="143"
+              y1="16.4643"
+              y2="165.75"
+            >
+              <stop
+                stop-color="#F3F3F3"
+              />
+              <stop
+                offset="1"
+                stop-color="white"
+              />
+            </lineargradient>
+          </defs>
+        </svg>
+        <svg
+          class="arrow"
+          fill="none"
+          height="12"
+          viewBox="0 0 12 12"
+          width="12"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0.408276 11.5864L11.7165 10.8571L6.69399 0.699226L0.408276 11.5864Z"
+            fill="#164CA3"
+          />
+        </svg>
+        <div
+          aria-label="4 / 10"
+          class="plainCircle"
+        >
+          <span
+            class="completeScore"
+          >
+            <span
+              class="score"
+            >
+              4
+            </span>
+            <span
+              class="max"
+            >
+              /10
+            </span>
+          </span>
+        </div>
+        <svg
+          class="donut"
+          viewBox="0 0 42 42"
+        >
+          <circle
+            class="scoreCircleTrack"
+            cx="21"
+            cy="21"
+            fill="transparent"
+            r="17"
+            stroke-linecap="round"
+            style="stroke-dasharray: 80.5, 107;"
+          />
+          <circle
+            class="scoreCircle "
+            cx="21"
+            cy="21"
+            fill="transparent"
+            r="17"
+            stroke-linecap="round"
+            style="stroke-dasharray: 0, 107;"
+          />
+        </svg>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      aria-label="Rating"
+      class="s wrapper undefined"
+      id="rr-48a9f642-4700-415e-847e-777267f5898c"
+    >
+      <svg
+        class="background"
+        fill="none"
+        viewBox="0 0 176 177"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="88"
+          cy="88.75"
+          fill="url(#paint0_linear_16561_735)"
+          r="88"
+        />
+        <defs>
+          <lineargradient
+            gradientUnits="userSpaceOnUse"
+            id="paint0_linear_16561_735"
+            x1="44"
+            x2="143"
+            y1="16.4643"
+            y2="165.75"
+          >
+            <stop
+              stop-color="#F3F3F3"
+            />
+            <stop
+              offset="1"
+              stop-color="white"
+            />
+          </lineargradient>
+        </defs>
+      </svg>
+      <svg
+        class="arrow"
+        fill="none"
+        height="12"
+        viewBox="0 0 12 12"
+        width="12"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0.408276 11.5864L11.7165 10.8571L6.69399 0.699226L0.408276 11.5864Z"
+          fill="#164CA3"
+        />
+      </svg>
+      <div
+        aria-label="4 / 10"
+        class="plainCircle"
+      >
+        <span
+          class="completeScore"
+        >
+          <span
+            class="score"
+          >
+            4
+          </span>
+          <span
+            class="max"
+          >
+            /10
+          </span>
+        </span>
+      </div>
+      <svg
+        class="donut"
+        viewBox="0 0 42 42"
+      >
+        <circle
+          class="scoreCircleTrack"
+          cx="21"
+          cy="21"
+          fill="transparent"
+          r="17"
+          stroke-linecap="round"
+          style="stroke-dasharray: 80.5, 107;"
+        />
+        <circle
+          class="scoreCircle "
+          cx="21"
+          cy="21"
+          fill="transparent"
+          r="17"
+          stroke-linecap="round"
+          style="stroke-dasharray: 0, 107;"
+        />
+      </svg>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Button Snapshots tests should render a score of 5 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        aria-label="Rating"
+        class="s wrapper undefined"
+        id="rr-cd8f88ec-c481-40a3-9d1a-fb91711ed049"
+      >
+        <svg
+          class="background"
+          fill="none"
+          viewBox="0 0 176 177"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="88"
+            cy="88.75"
+            fill="url(#paint0_linear_16561_735)"
+            r="88"
+          />
+          <defs>
+            <lineargradient
+              gradientUnits="userSpaceOnUse"
+              id="paint0_linear_16561_735"
+              x1="44"
+              x2="143"
+              y1="16.4643"
+              y2="165.75"
+            >
+              <stop
+                stop-color="#F3F3F3"
+              />
+              <stop
+                offset="1"
+                stop-color="white"
+              />
+            </lineargradient>
+          </defs>
+        </svg>
+        <svg
+          class="arrow"
+          fill="none"
+          height="12"
+          viewBox="0 0 12 12"
+          width="12"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0.408276 11.5864L11.7165 10.8571L6.69399 0.699226L0.408276 11.5864Z"
+            fill="#164CA3"
+          />
+        </svg>
+        <div
+          aria-label="5 / 10"
+          class="plainCircle"
+        >
+          <span
+            class="completeScore"
+          >
+            <span
+              class="score"
+            >
+              5
+            </span>
+            <span
+              class="max"
+            >
+              /10
+            </span>
+          </span>
+        </div>
+        <svg
+          class="donut"
+          viewBox="0 0 42 42"
+        >
+          <circle
+            class="scoreCircleTrack"
+            cx="21"
+            cy="21"
+            fill="transparent"
+            r="17"
+            stroke-linecap="round"
+            style="stroke-dasharray: 80.5, 107;"
+          />
+          <circle
+            class="scoreCircle "
+            cx="21"
+            cy="21"
+            fill="transparent"
+            r="17"
+            stroke-linecap="round"
+            style="stroke-dasharray: 0, 107;"
+          />
+        </svg>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      aria-label="Rating"
+      class="s wrapper undefined"
+      id="rr-cd8f88ec-c481-40a3-9d1a-fb91711ed049"
+    >
+      <svg
+        class="background"
+        fill="none"
+        viewBox="0 0 176 177"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="88"
+          cy="88.75"
+          fill="url(#paint0_linear_16561_735)"
+          r="88"
+        />
+        <defs>
+          <lineargradient
+            gradientUnits="userSpaceOnUse"
+            id="paint0_linear_16561_735"
+            x1="44"
+            x2="143"
+            y1="16.4643"
+            y2="165.75"
+          >
+            <stop
+              stop-color="#F3F3F3"
+            />
+            <stop
+              offset="1"
+              stop-color="white"
+            />
+          </lineargradient>
+        </defs>
+      </svg>
+      <svg
+        class="arrow"
+        fill="none"
+        height="12"
+        viewBox="0 0 12 12"
+        width="12"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0.408276 11.5864L11.7165 10.8571L6.69399 0.699226L0.408276 11.5864Z"
+          fill="#164CA3"
+        />
+      </svg>
+      <div
+        aria-label="5 / 10"
+        class="plainCircle"
+      >
+        <span
+          class="completeScore"
+        >
+          <span
+            class="score"
+          >
+            5
+          </span>
+          <span
+            class="max"
+          >
+            /10
+          </span>
+        </span>
+      </div>
+      <svg
+        class="donut"
+        viewBox="0 0 42 42"
+      >
+        <circle
+          class="scoreCircleTrack"
+          cx="21"
+          cy="21"
+          fill="transparent"
+          r="17"
+          stroke-linecap="round"
+          style="stroke-dasharray: 80.5, 107;"
+        />
+        <circle
+          class="scoreCircle "
+          cx="21"
+          cy="21"
+          fill="transparent"
+          r="17"
+          stroke-linecap="round"
+          style="stroke-dasharray: 0, 107;"
+        />
+      </svg>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Button Snapshots tests should render a score of 6 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        aria-label="Rating"
+        class="s wrapper undefined"
+        id="rr-4388b0ff-fcd4-4f6d-8c3f-0de9d1c0afcd"
+      >
+        <svg
+          class="background"
+          fill="none"
+          viewBox="0 0 176 177"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="88"
+            cy="88.75"
+            fill="url(#paint0_linear_16561_735)"
+            r="88"
+          />
+          <defs>
+            <lineargradient
+              gradientUnits="userSpaceOnUse"
+              id="paint0_linear_16561_735"
+              x1="44"
+              x2="143"
+              y1="16.4643"
+              y2="165.75"
+            >
+              <stop
+                stop-color="#F3F3F3"
+              />
+              <stop
+                offset="1"
+                stop-color="white"
+              />
+            </lineargradient>
+          </defs>
+        </svg>
+        <svg
+          class="arrow"
+          fill="none"
+          height="12"
+          viewBox="0 0 12 12"
+          width="12"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0.408276 11.5864L11.7165 10.8571L6.69399 0.699226L0.408276 11.5864Z"
+            fill="#164CA3"
+          />
+        </svg>
+        <div
+          aria-label="6 / 10"
+          class="plainCircle"
+        >
+          <span
+            class="completeScore"
+          >
+            <span
+              class="score"
+            >
+              6
+            </span>
+            <span
+              class="max"
+            >
+              /10
+            </span>
+          </span>
+        </div>
+        <svg
+          class="donut"
+          viewBox="0 0 42 42"
+        >
+          <circle
+            class="scoreCircleTrack"
+            cx="21"
+            cy="21"
+            fill="transparent"
+            r="17"
+            stroke-linecap="round"
+            style="stroke-dasharray: 80.5, 107;"
+          />
+          <circle
+            class="scoreCircle "
+            cx="21"
+            cy="21"
+            fill="transparent"
+            r="17"
+            stroke-linecap="round"
+            style="stroke-dasharray: 0, 107;"
+          />
+        </svg>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      aria-label="Rating"
+      class="s wrapper undefined"
+      id="rr-4388b0ff-fcd4-4f6d-8c3f-0de9d1c0afcd"
+    >
+      <svg
+        class="background"
+        fill="none"
+        viewBox="0 0 176 177"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="88"
+          cy="88.75"
+          fill="url(#paint0_linear_16561_735)"
+          r="88"
+        />
+        <defs>
+          <lineargradient
+            gradientUnits="userSpaceOnUse"
+            id="paint0_linear_16561_735"
+            x1="44"
+            x2="143"
+            y1="16.4643"
+            y2="165.75"
+          >
+            <stop
+              stop-color="#F3F3F3"
+            />
+            <stop
+              offset="1"
+              stop-color="white"
+            />
+          </lineargradient>
+        </defs>
+      </svg>
+      <svg
+        class="arrow"
+        fill="none"
+        height="12"
+        viewBox="0 0 12 12"
+        width="12"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0.408276 11.5864L11.7165 10.8571L6.69399 0.699226L0.408276 11.5864Z"
+          fill="#164CA3"
+        />
+      </svg>
+      <div
+        aria-label="6 / 10"
+        class="plainCircle"
+      >
+        <span
+          class="completeScore"
+        >
+          <span
+            class="score"
+          >
+            6
+          </span>
+          <span
+            class="max"
+          >
+            /10
+          </span>
+        </span>
+      </div>
+      <svg
+        class="donut"
+        viewBox="0 0 42 42"
+      >
+        <circle
+          class="scoreCircleTrack"
+          cx="21"
+          cy="21"
+          fill="transparent"
+          r="17"
+          stroke-linecap="round"
+          style="stroke-dasharray: 80.5, 107;"
+        />
+        <circle
+          class="scoreCircle "
+          cx="21"
+          cy="21"
+          fill="transparent"
+          r="17"
+          stroke-linecap="round"
+          style="stroke-dasharray: 0, 107;"
+        />
+      </svg>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Button Snapshots tests should render a score of 7 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        aria-label="Rating"
+        class="s wrapper undefined"
+        id="rr-87267c6f-b07e-4881-b4ef-3f18645eb42b"
+      >
+        <svg
+          class="background"
+          fill="none"
+          viewBox="0 0 176 177"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="88"
+            cy="88.75"
+            fill="url(#paint0_linear_16561_735)"
+            r="88"
+          />
+          <defs>
+            <lineargradient
+              gradientUnits="userSpaceOnUse"
+              id="paint0_linear_16561_735"
+              x1="44"
+              x2="143"
+              y1="16.4643"
+              y2="165.75"
+            >
+              <stop
+                stop-color="#F3F3F3"
+              />
+              <stop
+                offset="1"
+                stop-color="white"
+              />
+            </lineargradient>
+          </defs>
+        </svg>
+        <svg
+          class="arrow"
+          fill="none"
+          height="12"
+          viewBox="0 0 12 12"
+          width="12"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0.408276 11.5864L11.7165 10.8571L6.69399 0.699226L0.408276 11.5864Z"
+            fill="#164CA3"
+          />
+        </svg>
+        <div
+          aria-label="7 / 10"
+          class="plainCircle"
+        >
+          <span
+            class="completeScore"
+          >
+            <span
+              class="score"
+            >
+              7
+            </span>
+            <span
+              class="max"
+            >
+              /10
+            </span>
+          </span>
+        </div>
+        <svg
+          class="donut"
+          viewBox="0 0 42 42"
+        >
+          <circle
+            class="scoreCircleTrack"
+            cx="21"
+            cy="21"
+            fill="transparent"
+            r="17"
+            stroke-linecap="round"
+            style="stroke-dasharray: 80.5, 107;"
+          />
+          <circle
+            class="scoreCircle "
+            cx="21"
+            cy="21"
+            fill="transparent"
+            r="17"
+            stroke-linecap="round"
+            style="stroke-dasharray: 0, 107;"
+          />
+        </svg>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      aria-label="Rating"
+      class="s wrapper undefined"
+      id="rr-87267c6f-b07e-4881-b4ef-3f18645eb42b"
+    >
+      <svg
+        class="background"
+        fill="none"
+        viewBox="0 0 176 177"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="88"
+          cy="88.75"
+          fill="url(#paint0_linear_16561_735)"
+          r="88"
+        />
+        <defs>
+          <lineargradient
+            gradientUnits="userSpaceOnUse"
+            id="paint0_linear_16561_735"
+            x1="44"
+            x2="143"
+            y1="16.4643"
+            y2="165.75"
+          >
+            <stop
+              stop-color="#F3F3F3"
+            />
+            <stop
+              offset="1"
+              stop-color="white"
+            />
+          </lineargradient>
+        </defs>
+      </svg>
+      <svg
+        class="arrow"
+        fill="none"
+        height="12"
+        viewBox="0 0 12 12"
+        width="12"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0.408276 11.5864L11.7165 10.8571L6.69399 0.699226L0.408276 11.5864Z"
+          fill="#164CA3"
+        />
+      </svg>
+      <div
+        aria-label="7 / 10"
+        class="plainCircle"
+      >
+        <span
+          class="completeScore"
+        >
+          <span
+            class="score"
+          >
+            7
+          </span>
+          <span
+            class="max"
+          >
+            /10
+          </span>
+        </span>
+      </div>
+      <svg
+        class="donut"
+        viewBox="0 0 42 42"
+      >
+        <circle
+          class="scoreCircleTrack"
+          cx="21"
+          cy="21"
+          fill="transparent"
+          r="17"
+          stroke-linecap="round"
+          style="stroke-dasharray: 80.5, 107;"
+        />
+        <circle
+          class="scoreCircle "
+          cx="21"
+          cy="21"
+          fill="transparent"
+          r="17"
+          stroke-linecap="round"
+          style="stroke-dasharray: 0, 107;"
+        />
+      </svg>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Button Snapshots tests should render a score of 8 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        aria-label="Rating"
+        class="s wrapper undefined"
+        id="rr-86651822-96c8-4ce6-8590-a570139a7d80"
+      >
+        <svg
+          class="background"
+          fill="none"
+          viewBox="0 0 176 177"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="88"
+            cy="88.75"
+            fill="url(#paint0_linear_16561_735)"
+            r="88"
+          />
+          <defs>
+            <lineargradient
+              gradientUnits="userSpaceOnUse"
+              id="paint0_linear_16561_735"
+              x1="44"
+              x2="143"
+              y1="16.4643"
+              y2="165.75"
+            >
+              <stop
+                stop-color="#F3F3F3"
+              />
+              <stop
+                offset="1"
+                stop-color="white"
+              />
+            </lineargradient>
+          </defs>
+        </svg>
+        <svg
+          class="arrow"
+          fill="none"
+          height="12"
+          viewBox="0 0 12 12"
+          width="12"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0.408276 11.5864L11.7165 10.8571L6.69399 0.699226L0.408276 11.5864Z"
+            fill="#164CA3"
+          />
+        </svg>
+        <div
+          aria-label="8 / 10"
+          class="plainCircle"
+        >
+          <span
+            class="completeScore"
+          >
+            <span
+              class="score"
+            >
+              8
+            </span>
+            <span
+              class="max"
+            >
+              /10
+            </span>
+          </span>
+        </div>
+        <svg
+          class="donut"
+          viewBox="0 0 42 42"
+        >
+          <circle
+            class="scoreCircleTrack"
+            cx="21"
+            cy="21"
+            fill="transparent"
+            r="17"
+            stroke-linecap="round"
+            style="stroke-dasharray: 80.5, 107;"
+          />
+          <circle
+            class="scoreCircle "
+            cx="21"
+            cy="21"
+            fill="transparent"
+            r="17"
+            stroke-linecap="round"
+            style="stroke-dasharray: 0, 107;"
+          />
+        </svg>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      aria-label="Rating"
+      class="s wrapper undefined"
+      id="rr-86651822-96c8-4ce6-8590-a570139a7d80"
+    >
+      <svg
+        class="background"
+        fill="none"
+        viewBox="0 0 176 177"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="88"
+          cy="88.75"
+          fill="url(#paint0_linear_16561_735)"
+          r="88"
+        />
+        <defs>
+          <lineargradient
+            gradientUnits="userSpaceOnUse"
+            id="paint0_linear_16561_735"
+            x1="44"
+            x2="143"
+            y1="16.4643"
+            y2="165.75"
+          >
+            <stop
+              stop-color="#F3F3F3"
+            />
+            <stop
+              offset="1"
+              stop-color="white"
+            />
+          </lineargradient>
+        </defs>
+      </svg>
+      <svg
+        class="arrow"
+        fill="none"
+        height="12"
+        viewBox="0 0 12 12"
+        width="12"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0.408276 11.5864L11.7165 10.8571L6.69399 0.699226L0.408276 11.5864Z"
+          fill="#164CA3"
+        />
+      </svg>
+      <div
+        aria-label="8 / 10"
+        class="plainCircle"
+      >
+        <span
+          class="completeScore"
+        >
+          <span
+            class="score"
+          >
+            8
+          </span>
+          <span
+            class="max"
+          >
+            /10
+          </span>
+        </span>
+      </div>
+      <svg
+        class="donut"
+        viewBox="0 0 42 42"
+      >
+        <circle
+          class="scoreCircleTrack"
+          cx="21"
+          cy="21"
+          fill="transparent"
+          r="17"
+          stroke-linecap="round"
+          style="stroke-dasharray: 80.5, 107;"
+        />
+        <circle
+          class="scoreCircle "
+          cx="21"
+          cy="21"
+          fill="transparent"
+          r="17"
+          stroke-linecap="round"
+          style="stroke-dasharray: 0, 107;"
+        />
+      </svg>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Button Snapshots tests should render a score of 9 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        aria-label="Rating"
+        class="s wrapper undefined"
+        id="rr-887ca5fd-ffd2-4254-8b95-26f13f058d72"
+      >
+        <svg
+          class="background"
+          fill="none"
+          viewBox="0 0 176 177"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="88"
+            cy="88.75"
+            fill="url(#paint0_linear_16561_735)"
+            r="88"
+          />
+          <defs>
+            <lineargradient
+              gradientUnits="userSpaceOnUse"
+              id="paint0_linear_16561_735"
+              x1="44"
+              x2="143"
+              y1="16.4643"
+              y2="165.75"
+            >
+              <stop
+                stop-color="#F3F3F3"
+              />
+              <stop
+                offset="1"
+                stop-color="white"
+              />
+            </lineargradient>
+          </defs>
+        </svg>
+        <svg
+          class="arrow"
+          fill="none"
+          height="12"
+          viewBox="0 0 12 12"
+          width="12"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0.408276 11.5864L11.7165 10.8571L6.69399 0.699226L0.408276 11.5864Z"
+            fill="#164CA3"
+          />
+        </svg>
+        <div
+          aria-label="9 / 10"
+          class="plainCircle"
+        >
+          <span
+            class="completeScore"
+          >
+            <span
+              class="score"
+            >
+              9
+            </span>
+            <span
+              class="max"
+            >
+              /10
+            </span>
+          </span>
+        </div>
+        <svg
+          class="donut"
+          viewBox="0 0 42 42"
+        >
+          <circle
+            class="scoreCircleTrack"
+            cx="21"
+            cy="21"
+            fill="transparent"
+            r="17"
+            stroke-linecap="round"
+            style="stroke-dasharray: 80.5, 107;"
+          />
+          <circle
+            class="scoreCircle "
+            cx="21"
+            cy="21"
+            fill="transparent"
+            r="17"
+            stroke-linecap="round"
+            style="stroke-dasharray: 0, 107;"
+          />
+        </svg>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      aria-label="Rating"
+      class="s wrapper undefined"
+      id="rr-887ca5fd-ffd2-4254-8b95-26f13f058d72"
+    >
+      <svg
+        class="background"
+        fill="none"
+        viewBox="0 0 176 177"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="88"
+          cy="88.75"
+          fill="url(#paint0_linear_16561_735)"
+          r="88"
+        />
+        <defs>
+          <lineargradient
+            gradientUnits="userSpaceOnUse"
+            id="paint0_linear_16561_735"
+            x1="44"
+            x2="143"
+            y1="16.4643"
+            y2="165.75"
+          >
+            <stop
+              stop-color="#F3F3F3"
+            />
+            <stop
+              offset="1"
+              stop-color="white"
+            />
+          </lineargradient>
+        </defs>
+      </svg>
+      <svg
+        class="arrow"
+        fill="none"
+        height="12"
+        viewBox="0 0 12 12"
+        width="12"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0.408276 11.5864L11.7165 10.8571L6.69399 0.699226L0.408276 11.5864Z"
+          fill="#164CA3"
+        />
+      </svg>
+      <div
+        aria-label="9 / 10"
+        class="plainCircle"
+      >
+        <span
+          class="completeScore"
+        >
+          <span
+            class="score"
+          >
+            9
+          </span>
+          <span
+            class="max"
+          >
+            /10
+          </span>
+        </span>
+      </div>
+      <svg
+        class="donut"
+        viewBox="0 0 42 42"
+      >
+        <circle
+          class="scoreCircleTrack"
+          cx="21"
+          cy="21"
+          fill="transparent"
+          r="17"
+          stroke-linecap="round"
+          style="stroke-dasharray: 80.5, 107;"
+        />
+        <circle
+          class="scoreCircle "
+          cx="21"
+          cy="21"
+          fill="transparent"
+          r="17"
+          stroke-linecap="round"
+          style="stroke-dasharray: 0, 107;"
+        />
+      </svg>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Button Snapshots tests should render a score of 10 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        aria-label="Rating"
+        class="s wrapper undefined"
+        id="rr-2864fa46-b404-4bfa-a744-a1bcca925560"
+      >
+        <svg
+          class="background"
+          fill="none"
+          viewBox="0 0 176 177"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="88"
+            cy="88.75"
+            fill="url(#paint0_linear_16561_735)"
+            r="88"
+          />
+          <defs>
+            <lineargradient
+              gradientUnits="userSpaceOnUse"
+              id="paint0_linear_16561_735"
+              x1="44"
+              x2="143"
+              y1="16.4643"
+              y2="165.75"
+            >
+              <stop
+                stop-color="#F3F3F3"
+              />
+              <stop
+                offset="1"
+                stop-color="white"
+              />
+            </lineargradient>
+          </defs>
+        </svg>
+        <svg
+          class="arrow"
+          fill="none"
+          height="12"
+          viewBox="0 0 12 12"
+          width="12"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0.408276 11.5864L11.7165 10.8571L6.69399 0.699226L0.408276 11.5864Z"
+            fill="#164CA3"
+          />
+        </svg>
+        <div
+          aria-label="10 / 10"
+          class="plainCircle"
+        >
+          <span
+            class="completeScore"
+          >
+            <span
+              class="score"
+            >
+              10
+            </span>
+            <span
+              class="max"
+            >
+              /10
+            </span>
+          </span>
+        </div>
+        <svg
+          class="donut"
+          viewBox="0 0 42 42"
+        >
+          <circle
+            class="scoreCircleTrack"
+            cx="21"
+            cy="21"
+            fill="transparent"
+            r="17"
+            stroke-linecap="round"
+            style="stroke-dasharray: 80.5, 107;"
+          />
+          <circle
+            class="scoreCircle "
+            cx="21"
+            cy="21"
+            fill="transparent"
+            r="17"
+            stroke-linecap="round"
+            style="stroke-dasharray: 0, 107;"
+          />
+        </svg>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      aria-label="Rating"
+      class="s wrapper undefined"
+      id="rr-2864fa46-b404-4bfa-a744-a1bcca925560"
+    >
+      <svg
+        class="background"
+        fill="none"
+        viewBox="0 0 176 177"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="88"
+          cy="88.75"
+          fill="url(#paint0_linear_16561_735)"
+          r="88"
+        />
+        <defs>
+          <lineargradient
+            gradientUnits="userSpaceOnUse"
+            id="paint0_linear_16561_735"
+            x1="44"
+            x2="143"
+            y1="16.4643"
+            y2="165.75"
+          >
+            <stop
+              stop-color="#F3F3F3"
+            />
+            <stop
+              offset="1"
+              stop-color="white"
+            />
+          </lineargradient>
+        </defs>
+      </svg>
+      <svg
+        class="arrow"
+        fill="none"
+        height="12"
+        viewBox="0 0 12 12"
+        width="12"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0.408276 11.5864L11.7165 10.8571L6.69399 0.699226L0.408276 11.5864Z"
+          fill="#164CA3"
+        />
+      </svg>
+      <div
+        aria-label="10 / 10"
+        class="plainCircle"
+      >
+        <span
+          class="completeScore"
+        >
+          <span
+            class="score"
+          >
+            10
+          </span>
+          <span
+            class="max"
+          >
+            /10
+          </span>
+        </span>
+      </div>
+      <svg
+        class="donut"
+        viewBox="0 0 42 42"
+      >
+        <circle
+          class="scoreCircleTrack"
+          cx="21"
+          cy="21"
+          fill="transparent"
+          r="17"
+          stroke-linecap="round"
+          style="stroke-dasharray: 80.5, 107;"
+        />
+        <circle
+          class="scoreCircle "
+          cx="21"
+          cy="21"
+          fill="transparent"
+          r="17"
+          stroke-linecap="round"
+          style="stroke-dasharray: 0, 107;"
+        />
+      </svg>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
