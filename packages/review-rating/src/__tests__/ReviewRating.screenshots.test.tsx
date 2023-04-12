@@ -8,6 +8,10 @@ const packageName = 'review-rating';
 const scores = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 const clip = { x: 0, y: 0, width: 500, height: 200 };
+//const screenshotOpts = { clip, animations: 'disabled', scale: 'css' };
+
+// scale ?: "css"
+
 const screenshotTesting = setupScreenshotTesting({
   it,
   beforeAll,
@@ -28,7 +32,7 @@ describe(
         },
       }),
     ]),
-    screenshotOpts: { clip, animations: 'disabled' },
+    screenshotOpts: { clip, animations: 'disabled', scale: 'css' },
   }),
 );
 
@@ -45,7 +49,7 @@ describe(
         },
       }),
     ]),
-    screenshotOpts: { clip, animations: 'disabled' },
+    screenshotOpts: { clip, animations: 'disabled', scale: 'css' },
   }),
 );
 
@@ -62,7 +66,7 @@ describe(
         },
       }),
     ]),
-    screenshotOpts: { clip, animations: 'disabled' },
+    screenshotOpts: { clip, animations: 'disabled', scale: 'css' },
   }),
 );
 
@@ -79,6 +83,6 @@ describe(
         },
       }),
     ]),
-    screenshotOpts: { clip, animations: 'disabled' },
+    screenshotOpts: { clip, animations: 'disabled', scale: 'css' },
   }),
 );
