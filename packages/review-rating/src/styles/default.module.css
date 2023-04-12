@@ -1,0 +1,189 @@
+@import '../../../themes/src/default.css';
+
+.wrapper {
+  position: relative;
+
+  /* Center the circle content  */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    width: 100%;
+  }
+
+  &.xs {
+    width: 56px;
+    height: 56px;
+
+    & .arrow {
+      height: 4px;
+    }
+
+    & .plainCircle {
+      width: 32px;
+      height: 32px;
+    }
+
+    & .completeScore {
+      & .score {
+        @mixin typography-heading-5_mobile;
+        margin-right: 0;
+      }
+      & .max {
+        display: none;
+      }
+    }
+
+    & .scoreCircle,
+    & .scoreCircleTrack {
+      stroke-width: 2.8;
+    }
+  }
+
+  &.s {
+    width: 96px;
+    height: 96px;
+
+    & .arrow {
+      height: 6.8px;
+    }
+
+    & .plainCircle {
+      width: 56px;
+      height: 56px;
+    }
+
+    & .completeScore {
+      @mixin typography-caption-4;
+      & .score {
+        @mixin typography-heading-5;
+      }
+    }
+
+    & .scoreCircle,
+    & .scoreCircleTrack {
+      stroke-width: 2;
+    }
+  }
+
+  &.m {
+    width: 120px;
+    height: 120px;
+
+    & .arrow {
+      height: 8.5px;
+    }
+
+    & .plainCircle {
+      width: 70px;
+      height: 70px;
+    }
+
+    & .completeScore {
+      @mixin typography-overline-1;
+      & .score {
+        @mixin typography-heading-3_mobile;
+      }
+    }
+
+    & .scoreCircle,
+    & .scoreCircleTrack {
+      stroke-width: 2;
+    }
+  }
+
+  &.l {
+    width: 176px;
+    height: 176px;
+
+    & .arrow {
+      height: 12.5px;
+    }
+
+    & .plainCircle {
+      width: 102px;
+      height: 102px;
+    }
+
+    & .completeScore {
+      @mixin typography-subheading-4;
+
+      & .score {
+        @mixin typography-heading-3;
+      }
+    }
+
+    & .scoreCircle,
+    & .scoreCircleTrack {
+      stroke-width: 2;
+    }
+  }
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.arrow {
+  transform: rotate(133deg);
+  position: absolute;
+  width: 100%;
+  transition: transform 1s cubic-bezier(0.73, -0.06, 0.4, 1.37);
+
+  & path {
+    transform: translate(51px, -1px) rotate(332deg);
+    transform-origin: center;
+  }
+}
+
+.plainCircle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  background: #fff;
+  border-radius: 100%;
+  box-shadow: var(--shadow-m);
+}
+
+.completeScore {
+  color: var(--color-neutral-500);
+
+  & .score {
+    margin-right: var(--spacing-1);
+    color: var(--color-neutral-700);
+  }
+}
+
+.donut {
+  position: relative;
+  z-index: 1;
+}
+
+.scoreCircleTrack {
+  transform: rotate(134deg) translate3d(0, 0, 0);
+  transform-origin: center;
+  stroke: var(--color-neutral-100);
+}
+
+.scoreCircle {
+  transform: rotate(134deg) translate3d(0, 0, 0);
+  transform-origin: center;
+  stroke: var(--color-primary-500);
+  stroke-dasharray: 0, 100;
+  opacity: 0;
+  transition: opacity 1s ease,
+    stroke-dasharray 1s cubic-bezier(0.73, -0.06, 0.42, 1.07);
+  will-change: stroke-dasharray;
+
+  &.active {
+    opacity: 1;
+  }
+}

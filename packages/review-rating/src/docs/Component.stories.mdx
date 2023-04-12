@@ -1,0 +1,49 @@
+import { Meta, Story } from '@storybook/addon-docs';
+import { ComponentHeader } from 'storybook/blocks';
+
+import ReviewRating from '../ReviewRating';
+import { version } from '../../package.json';
+
+<!-- Meta -->
+
+<Meta title="Components/Molecules/ReviewRating" component={ReviewRating} />
+
+export const ReviewRatingTemplate = args => {
+  return (
+    <div style={{ maxWidth: '700px', margin: '0 auto' }}>
+      <ReviewRating {...args} />
+      <div style={{ marginTop: '100vh' }}>
+        <ReviewRating {...args} />
+      </div>
+    </div>
+  );
+};
+
+<!-- Canvas -->
+
+<Story
+  args={{
+    score: 9,
+    size: 'S',
+  }}
+  name="ReviewRating"
+>
+  {ReviewRatingTemplate.bind({})}
+</Story>
+
+<!-- Docs -->
+
+<ComponentHeader
+  name="ReviewRating"
+  version={version}
+  stage={1}
+  design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Global-Design-System?node-id=4289%3A100591"
+/>
+
+The accordion component allows the user to show and hide sections of related content on a page.
+
+```tsx
+import ReviewRating from '@heycar-uikit/review-rating';
+```
+
+<!-- Description -->
