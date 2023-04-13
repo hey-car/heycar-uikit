@@ -36,7 +36,7 @@ describe(
       clip,
       animations: 'disabled',
     },
-    matchImageSnapshotOptions: { blur: 2 },
+    matchImageSnapshotOptions: { blur: 1 },
   }),
 );
 
@@ -53,8 +53,8 @@ describe(
         },
       }),
     ]),
-    screenshotOpts: { clip, animations: 'disabled', scale: 'css' },
-    matchImageSnapshotOptions: { blur: 2 },
+    screenshotOpts: { clip, animations: 'disabled' },
+    matchImageSnapshotOptions: { blur: 1 },
   }),
 );
 
@@ -71,8 +71,8 @@ describe(
         },
       }),
     ]),
-    screenshotOpts: { clip, animations: 'disabled', scale: 'css' },
-    matchImageSnapshotOptions: { blur: 2 },
+    screenshotOpts: { clip, animations: 'disabled' },
+    matchImageSnapshotOptions: { blur: 1 },
   }),
 );
 
@@ -89,7 +89,7 @@ describe(
         },
       }),
     ]),
-    screenshotOpts: { clip, animations: 'disabled', scale: 'css' },
-    matchImageSnapshotOptions: { blur: 2 },
+    screenshotOpts: { clip, animations: 'disabled' },
+    matchImageSnapshotOptions: { blur: 1 },
   }),
 );
