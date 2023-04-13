@@ -8,9 +8,8 @@ const packageName = 'review-rating';
 const scores = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 const clip = { x: 0, y: 0, width: 500, height: 200 };
-//const screenshotOpts = { clip, animations: 'disabled', scale: 'css' };
-
-// scale ?: "css"
+// the svg "donut" renders slightly different at its edges on different devices. the blur gets around that
+const blur = 1.5;
 
 const screenshotTesting = setupScreenshotTesting({
   it,
@@ -36,7 +35,7 @@ describe(
       clip,
       animations: 'disabled',
     },
-    matchImageSnapshotOptions: { blur: 1 },
+    matchImageSnapshotOptions: { blur },
   }),
 );
 
@@ -54,7 +53,7 @@ describe(
       }),
     ]),
     screenshotOpts: { clip, animations: 'disabled' },
-    matchImageSnapshotOptions: { blur: 1 },
+    matchImageSnapshotOptions: { blur },
   }),
 );
 
@@ -72,7 +71,7 @@ describe(
       }),
     ]),
     screenshotOpts: { clip, animations: 'disabled' },
-    matchImageSnapshotOptions: { blur: 1 },
+    matchImageSnapshotOptions: { blur },
   }),
 );
 
@@ -90,6 +89,6 @@ describe(
       }),
     ]),
     screenshotOpts: { clip, animations: 'disabled' },
-    matchImageSnapshotOptions: { blur: 1 },
+    matchImageSnapshotOptions: { blur },
   }),
 );
