@@ -1,0 +1,79 @@
+import { Container, Row, Col } from 'storybook/blocks';
+import ReviewRating from '../ReviewRating';
+
+## Usage
+
+For the most basic implementation, simply pass an integer from 0 to 10 in the `score` prop.
+
+```tsx live
+render(
+  <Container>
+    <Row align="middle">
+      <Col>
+        <ReviewRating score={5} />
+      </Col>
+    </Row>
+  </Container>,
+);
+```
+
+## Sizes
+
+ReviewRating can be rendered at one of four sizes `XS | S | M | L`.
+
+Use the `M` size on the **car review tile** for desktop and `S` on mobile.
+For the **car review hero** use the `L` size on desktop and `S` on mobile.
+
+The default size is `S`.
+
+```tsx live
+const RatingVariants = [
+  { size: 'XS', score: 7 },
+  { size: 'S', score: 8 },
+  { size: 'M', score: 9 },
+  { size: 'L', score: 10 },
+];
+
+render(
+  <Container>
+    <Row align="middle">
+      {RatingVariants.map(variant => (
+        <Col key={variant.size}>
+          <ReviewRating score={variant.score} size={variant.size} />
+        </Col>
+      ))}
+    </Row>
+  </Container>,
+);
+```
+
+## IDs
+
+ReviewRating uses IntersectionObserver to toggle the animation as it goes in and out of the viewport.
+To help this work performantly, each component is given a unique id; a UUID V4 string prefixed with the string `rr-`.
+
+However, you can pass your own id though the standard HTML id attribute. Inspect the components below to see this working
+
+```tsx live
+const RatingVariants = [
+  { size: 'XS', score: 7 },
+  { size: 'S', score: 8 },
+  { size: 'M', score: 9 },
+  { size: 'L', score: 10 },
+];
+
+render(
+  <Container align="stretch">
+    <Row align="middle">
+      <Col span={6}>
+        <p>Generated ID</p>
+        <ReviewRating score={3} />
+      </Col>
+      <Col span={6}>
+        <p>Custom id</p>
+        <ReviewRating id="your-custom-id" score={6} />
+      </Col>
+    </Row>
+  </Container>,
+);
+```
