@@ -129,4 +129,6 @@ const ReviewRating = React.forwardRef<HTMLDivElement, ReviewRatingProps>(
   },
 );
 
+ReviewRating.displayName = 'ReviewRating';
+
 export default ReviewRating;
