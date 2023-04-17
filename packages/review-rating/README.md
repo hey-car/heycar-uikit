@@ -18,7 +18,7 @@ npm install @heycar-uikit/review-rating
 ## Usage
 
 ```tsx
-import Accordion from '@heycar-uikit/review-rating';
+import ReviewRating from '@heycar-uikit/review-rating';
 
 function App() {
   return <ReviewRating score={9} />;

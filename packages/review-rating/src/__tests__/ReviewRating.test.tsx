@@ -36,7 +36,7 @@ describe('ReviewRating', () => {
       expect(getByLabelText('5 / 10')).toBeInTheDocument();
     });
 
-    it('should forward ref to accordion', () => {
+    it('should forward ref to ReviewRating', () => {
       const textareaRef = jest.fn();
       const { getByTestId } = render(
         <ReviewRating dataTestId={dataTestId} ref={textareaRef} score={5} />,
