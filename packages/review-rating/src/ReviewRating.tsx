@@ -96,7 +96,7 @@ const ReviewRating = React.forwardRef<HTMLDivElement, ReviewRatingProps>(
           </span>
         </div>
         {/* Score donut */}
-        <svg className={styles.donut} viewBox="0 0 42 42">
+        <svg className={styles.donut} key={`donut-${size}`} viewBox="0 0 42 42">
           <circle
             className={`${styles.scoreCircleTrack}`}
             cx="21"
