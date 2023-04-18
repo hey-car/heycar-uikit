@@ -1,16 +1,13 @@
-import { Meta, Story, Props } from '@storybook/addon-docs';
-import { ComponentHeader, CssVars, TabContainer } from 'storybook/blocks';
+import { Meta, Story } from '@storybook/addon-docs';
+import { ComponentHeader } from 'storybook/blocks';
 
 import { defaultData } from './story.constants';
 import Header from '../Header';
 import { version } from '../../package.json';
-//import Description from './Description.mdx';
-//import Changelog from '../../CHANGELOG.md';
-//import styles from '!!raw-loader!../styles/default.module.css';
 
 <!-- Meta -->
 
-<Meta title="Components/Header" component={Header} />
+<Meta title="Components/Organisms/Header" component={Header} />
 
 export const HeaderTemplate = args => <Header {...args} />;
 
