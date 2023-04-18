@@ -14,6 +14,7 @@ import styles from '../styles/navigation.module.css';
 const SubNav = React.forwardRef<HTMLDivElement, SubNavProps>(
   (
     {
+      isDropDownMenu,
       isOpen,
       Link,
       locale = DEFAULT_LOCALE,
@@ -24,8 +25,7 @@ const SubNav = React.forwardRef<HTMLDivElement, SubNavProps>(
     },
     ref,
   ) => {
-    // TODO: this should take the full object and decide weather to return caption max or normal max
-    const groupDeets = getSubNavGroupDetails(subNavGroups.length);
+    const groupDeets = getSubNavGroupDetails(subNavGroups, isDropDownMenu);
 
     return (
       <Grid.Row
@@ -50,6 +50,7 @@ const SubNav = React.forwardRef<HTMLDivElement, SubNavProps>(
           return (
             <Grid.Col
               className={`${styles.subNavGroup} ${className}`}
+              key={`${navItemId}-${subNavGroup.heading}`}
               width={{
                 mobile: 12,
                 tablet: { s: 12, m: 12, l: colWidth },

@@ -2,9 +2,11 @@ import React from 'react';
 
 import Collapse from '@heycar-uikit/collapse';
 import { ChevronDown } from '@heycar-uikit/icons';
+import { useBreakpoint } from '@heycar-uikit/themes';
 import Typography from '@heycar-uikit/typography';
 
 import { DEFAULT_LOCALE } from '../Header.constants';
+import { useNavigationItem } from '../hooks/useNavigationItem';
 import { itemOnClick } from '../utils/headerItemHelpers';
 
 import { NavigationProps } from './Navigation.types';
@@ -29,6 +31,13 @@ const Navigation = React.forwardRef<HTMLDivElement, NavigationProps>(
   ) => {
     const hasAuxData = aux?.tel || aux?.email || aux?.app;
     const appLangCode = currentLang ? currentLang.substring(0, 2) : 'en';
+    const { toggleSubNav, keyboardOpen, closeSiblings } = useNavigationItem(
+      activeNavItem,
+      setActiveNavItem,
+    );
+    const {
+      breakpoints: { isTabletL: isDropDownMenu },
+    } = useBreakpoint();
 
     return (
       <nav
@@ -38,40 +47,26 @@ const Navigation = React.forwardRef<HTMLDivElement, NavigationProps>(
         role="navigation"
       >
         <ul aria-label="Main navigation" role="menubar" tabIndex={0}>
-          {navigation.map(navItem => {
-            const id = `nav-item-${navItem.label.replace(/ /g, '-')}`;
-            const hasSubNav = navItem.subNavGroups?.length;
+          {navigation.map((navItem, i) => {
+            const { label, subNavGroups } = navItem;
+            const id = `nav-item-${label.replace(/ /g, '-')}`;
+            const hasSubNav = subNavGroups && subNavGroups?.length > 0;
             const isActive = activeNavItem === id;
+            const isLastItem = i + 1 === navigation.length;
             const commonProps = {
               role: 'menuitem',
               className: `${styles.navItem} ${isActive ? styles.isActive : ''}`,
               id,
             };
 
-            const toggleSubNav = (forceId?: string) => {
-              const activeId = forceId
-                ? forceId
-                : isActive
-                ? undefined
-                : commonProps.id;
-
-              setActiveNavItem(activeId);
-            };
-
-            const keyboardOpen = (
-              e: React.KeyboardEvent<HTMLButtonElement>,
-            ) => {
-              if (e.code === 'Space') {
-                e.preventDefault();
-                toggleSubNav();
-              }
-            };
-
             return (
               <li
-                key={navItem.label}
-                onMouseOut={() => toggleSubNav()}
-                onMouseOver={() => toggleSubNav(commonProps.id)}
+                className={isLastItem ? styles.lastNavItem : ''}
+                key={label}
+                onMouseOut={() => isDropDownMenu && toggleSubNav(id, isActive)}
+                onMouseOver={() =>
+                  isDropDownMenu && toggleSubNav(id, isActive, true)
+                }
               >
                 {hasSubNav ? (
                   <>
@@ -79,31 +74,33 @@ const Navigation = React.forwardRef<HTMLDivElement, NavigationProps>(
                       {...commonProps}
                       aria-expanded={isActive}
                       aria-haspopup={true}
-                      aria-label={`${navItem.label} - ${locale.spaceBarNotification}`}
+                      aria-label={`${label} - ${locale.spaceBarNotification}`}
                       onClick={() =>
-                        itemOnClick(
-                          `${navItem.label}`,
-                          trackingFn,
-                          toggleSubNav,
+                        itemOnClick(`${label}`, trackingFn, () =>
+                          toggleSubNav(id, isActive),
                         )
                       }
-                      onKeyDown={e => keyboardOpen(e)}
+                      onFocus={() =>
+                        isDropDownMenu && closeSiblings(id, hasSubNav)
+                      }
+                      onKeyDown={e => keyboardOpen(e, id, isActive)}
                     >
-                      <Typography variant="button2">{navItem.label}</Typography>
+                      <Typography variant="button2">{label}</Typography>
                       <ChevronDown />
                     </button>
                     <Collapse
                       aria-hidden={!isActive}
-                      aria-label={`${navItem.label} ${locale.subMenuLabel}`}
+                      aria-label={`${label} ${locale.subMenuLabel}`}
                       className={styles.collapse}
                       open={isActive}
                     >
                       <SubNav
                         Link={Link}
+                        isDropDownMenu={isDropDownMenu}
                         isOpen={isActive}
                         navItemId={commonProps.id}
-                        navItemName={navItem.label}
-                        subNavGroups={navItem.subNavGroups!}
+                        navItemName={label}
+                        subNavGroups={subNavGroups!}
                         trackingFn={trackingFn}
                       />
                     </Collapse>
@@ -112,9 +109,9 @@ const Navigation = React.forwardRef<HTMLDivElement, NavigationProps>(
                   <Link
                     {...commonProps}
                     href={navItem.href}
-                    onClick={() => itemOnClick(`${navItem.label}`, trackingFn)}
+                    onClick={() => itemOnClick(`${label}`, trackingFn)}
                   >
-                    <Typography variant="button2">{navItem.label}</Typography>
+                    <Typography variant="button2">{label}</Typography>
                   </Link>
                 )}
               </li>

@@ -62,8 +62,28 @@ const defaultData: HeaderProps = {
               href: '#Audi-Q3-Sportback',
             },
             {
+              label: 'Audi A1',
+              href: '#Audi-a1',
+            },
+            {
               label: 'BMW 3 Series',
               href: '#BMW-3-Series',
+            },
+            {
+              label: 'BMW 2 Series',
+              href: '#BMW-2-Series',
+            },
+            {
+              label: 'BMW 5 Series',
+              href: '#BMW-5-Series',
+            },
+            {
+              label: 'BMW 7 Series',
+              href: '#BMW-7-Series',
+            },
+            {
+              label: 'BMW X5 Series',
+              href: '#BMW-x5-Series',
             },
           ],
         },
@@ -268,6 +288,11 @@ const defaultData: HeaderProps = {
             {
               label: 'London 6',
               desc: 'Everything you need to know about the UKs electric car market',
+              href: '#London',
+            },
+            {
+              label: 'London 7',
+              desc: 'This one shouldnt be showing',
               href: '#London',
             },
           ],

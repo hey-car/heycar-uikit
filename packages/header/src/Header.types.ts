@@ -35,6 +35,10 @@ interface HeaderLinkProps {
    */
   role?: string;
   /**
+   * Tab index
+   */
+  tabIndex?: number;
+  /**
    * Children of the link
    */
   children?:

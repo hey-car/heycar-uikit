@@ -140,6 +140,10 @@
   margin: 0 var(--spacing-5) var(--spacing-2);
   border-bottom: solid 1px var(--color-neutral-100);
 
+  .lastNavItem & {
+    border-bottom: none;
+  }
+
   /* Dropdown nav starts here */
   @media (--tablet-l) {
     box-sizing: border-box;
@@ -162,12 +166,13 @@
   & > ul {
     display: flex;
     flex-direction: column;
+    align-content: flex-start;
     flex-wrap: wrap;
     max-height: 204px;
     padding-bottom: 0;
 
     & > li {
-      max-width: calc(50% - var(--spacing-6));
+      width: 100%;
     }
   }
 
@@ -185,6 +190,22 @@
 
       & > li {
         margin-right: var(--spacing-6);
+      }
+    }
+
+    &:global(.fullWidth) {
+      & > ul {
+        & > li {
+          width: calc(33% - var(--spacing-6));
+        }
+      }
+    }
+
+    &:global(.halfWidth) {
+      & > ul {
+        & > li {
+          width: calc(50% - var(--spacing-6));
+        }
       }
     }
   }

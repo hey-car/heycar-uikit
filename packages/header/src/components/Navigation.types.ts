@@ -108,6 +108,10 @@ interface NavigationProps {
 
 interface SubNavProps {
   /**
+   * Is in Dropdown Menu display mode. from tablet-L breakpoint and up
+   */
+  isDropDownMenu: boolean;
+  /**
    * Is the subnav currently open
    */
   isOpen: boolean;
@@ -137,4 +141,4 @@ interface SubNavProps {
   trackingFn?: (trackingObj: HeaderTrackingObj) => void;
 }
 
-export { NavigationProps, NavItem, SubNavProps };
+export { NavigationProps, NavItem, SubNavGroup, SubNavProps };
