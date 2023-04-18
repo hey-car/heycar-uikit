@@ -105,6 +105,10 @@
         display: inline;
       }
 
+      & > li.burgerMenuOnly {
+        display: none;
+      }
+
       & .collapse {
         position: absolute;
         left: 0;

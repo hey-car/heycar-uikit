@@ -8,6 +8,7 @@ import Typography from '@heycar-uikit/typography';
 import { DEFAULT_LOCALE } from '../Header.constants';
 import { useNavigationItem } from '../hooks/useNavigationItem';
 import { itemOnClick } from '../utils/headerItemHelpers';
+import { extendNavigation } from '../utils/navigationHelpers';
 
 import { NavigationProps } from './Navigation.types';
 import SubNav from './SubNav';
@@ -17,10 +18,12 @@ import styles from '../styles/navigation.module.css';
 const Navigation = React.forwardRef<HTMLDivElement, NavigationProps>(
   (
     {
+      accountItemConfig,
       activeNavItem,
       auxiliaryDetails: aux,
       currentLang,
       dataTestId,
+      langItemConfig,
       Link,
       locale = DEFAULT_LOCALE,
       navigation,
@@ -39,6 +42,12 @@ const Navigation = React.forwardRef<HTMLDivElement, NavigationProps>(
       breakpoints: { isTabletL, isDesktopS, isDesktopM, isDesktopL },
     } = useBreakpoint();
     const isDropDownMenu = isTabletL || isDesktopS || isDesktopM || isDesktopL;
+    const extendedNavArray = extendNavigation(
+      navigation,
+      locale,
+      langItemConfig,
+      accountItemConfig,
+    );
 
     return (
       <nav
@@ -48,7 +57,7 @@ const Navigation = React.forwardRef<HTMLDivElement, NavigationProps>(
         role="navigation"
       >
         <ul aria-label="Main navigation" role="menubar" tabIndex={0}>
-          {navigation.map((navItem, i) => {
+          {extendedNavArray.map((navItem, i) => {
             const { label, subNavGroups } = navItem;
             const id = `nav-item-${label.replace(/ /g, '-')}`;
             const hasSubNav = subNavGroups && subNavGroups?.length > 0;
@@ -62,7 +71,9 @@ const Navigation = React.forwardRef<HTMLDivElement, NavigationProps>(
 
             return (
               <li
-                className={isLastItem ? styles.lastNavItem : ''}
+                className={`${isLastItem ? styles.lastNavItem : ''} ${
+                  navItem.isBurgerMenuOnly ? styles.burgerMenuOnly : ''
+                }`}
                 key={label}
                 onMouseOut={() => isDropDownMenu && toggleSubNav(id, isActive)}
                 onMouseOver={() =>

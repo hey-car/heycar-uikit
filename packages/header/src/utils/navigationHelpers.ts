@@ -1,5 +1,12 @@
-import { SubNavGroup } from '../components/Navigation.types';
-import { SUBNAV_CONFIG } from '../Header.constants';
+import {
+  NavigationProps,
+  NavItem,
+  SubNavGroup,
+} from '../components/Navigation.types';
+import { LANG_OPTIONS, SUBNAV_CONFIG } from '../Header.constants';
+import { Locale } from '../Header.types';
+
+import { getCurrentLang } from './headerItemHelpers';
 
 const getConfigType = (groupIndex: number, totalGroups: number) => {
   if (totalGroups === 1) return SUBNAV_CONFIG.full;
@@ -40,4 +47,49 @@ const getSubNavGroupDetails = (
   });
 };
 
-export { getSubNavGroupDetails };
+// in Burger menu mode (mobile) some of the header items are moved into the navigation
+// this function takes the header item data and adds it to the navigation array in the correct format
+const extendNavigation = (
+  navigation: NavItem[],
+  locale: Locale,
+  langItemConfig?: NavigationProps['langItemConfig'],
+  accountItemConfig?: NavigationProps['accountItemConfig'],
+): NavItem[] => {
+  const extendedNav = [...navigation];
+
+  if (langItemConfig && !langItemConfig.hide) {
+    const langOptions = langItemConfig.options || LANG_OPTIONS;
+    const currentLang = getCurrentLang(langItemConfig.currentLang, langOptions);
+    const items = langOptions.map(lang => ({
+      href: lang.href,
+      label: lang.label,
+    }));
+
+    const langListNavItem: NavItem = {
+      isBurgerMenuOnly: true,
+      label: currentLang?.label || locale.langListHeading,
+      subNavGroups: [
+        {
+          heading: locale.langListHeading,
+          items,
+        },
+      ],
+    };
+
+    extendedNav.push(langListNavItem);
+  }
+
+  if (accountItemConfig && !accountItemConfig.hide) {
+    const accountListNavItem: NavItem = {
+      isBurgerMenuOnly: true,
+      label: accountItemConfig.label,
+      onClick: accountItemConfig.onClick,
+    };
+
+    extendedNav.push(accountListNavItem);
+  }
+
+  return extendedNav;
+};
+
+export { extendNavigation, getSubNavGroupDetails };

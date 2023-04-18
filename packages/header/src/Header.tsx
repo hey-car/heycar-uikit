@@ -165,6 +165,7 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
                       heading={DEFAULT_LOCALE.langListHeading}
                       onFocusEvents={setIsFocused}
                       onHoverEvents={setIsHovering}
+                      options={langItemConfig.options}
                       trackingFn={trackingFn}
                     />
                   )}
@@ -238,10 +239,12 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
         >
           <Navigation
             Link={Link}
+            accountItemConfig={accountItemConfig}
             activeNavItem={activeNavItem}
             auxiliaryDetails={auxiliaryDetails}
             currentLang={currentLang?.langCode}
             dataTestId={`${dataTestId}-navigation`}
+            langItemConfig={langItemConfig}
             navigation={navigation}
             setActiveNavItem={setActiveNavItem}
             trackingFn={trackingFn}

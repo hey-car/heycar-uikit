@@ -62,12 +62,21 @@ interface NavItem {
    */
   href?: string;
   /**
+   * Function to run on click
+   */
+  onClick?: () => void;
+  /**
    * SubNavGroup array
    */
   subNavGroups?: SubNavGroup[];
+  /**
+   * Only show this item in the burger menu, Not on the dropdown version of the menu
+   */
+  isBurgerMenuOnly?: boolean;
 }
 
-interface NavigationProps {
+interface NavigationProps
+  extends Pick<HeaderProps, 'accountItemConfig' | 'langItemConfig'> {
   /**
    * Id of the current open nav item
    */
