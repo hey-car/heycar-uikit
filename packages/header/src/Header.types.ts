@@ -97,9 +97,12 @@ interface LangItemConfig {
   hide?: boolean;
 }
 
-interface SearchItemConfig
-  extends Pick<HeaderItemConfig, 'onClick' | 'hide' | 'label'> {
+interface SearchItemConfig extends Pick<HeaderItemConfig, 'hide' | 'label'> {
   Component: React.ReactElement;
+  /**
+   * Function to run on click
+   */
+  onClick?: (isOpen: boolean) => void;
 }
 
 interface FavoritesItemConfig extends HeaderItemConfig {

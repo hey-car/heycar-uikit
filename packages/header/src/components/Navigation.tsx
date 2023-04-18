@@ -36,8 +36,9 @@ const Navigation = React.forwardRef<HTMLDivElement, NavigationProps>(
       setActiveNavItem,
     );
     const {
-      breakpoints: { isTabletL: isDropDownMenu },
+      breakpoints: { isTabletL, isDesktopS, isDesktopM, isDesktopL },
     } = useBreakpoint();
+    const isDropDownMenu = isTabletL || isDesktopS || isDesktopM || isDesktopL;
 
     return (
       <nav

@@ -46,6 +46,7 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
     const [activeNavItem, setActiveNavItem] = useState<string | undefined>(
       undefined,
     );
+    const [isSearchOpen, setIsSearchOpen] = useState(false);
     const Link = (LinkComponent || DefaultLinkComponent) as (
       props: HeaderLinkProps,
     ) => JSX.Element;
@@ -62,6 +63,11 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
     const { isLangListOpen, keyboardOpen, setIsFocused, setIsHovering } =
       useLangList();
 
+    const handleSearchToggle = (newState: boolean) => {
+      setIsSearchOpen(newState);
+      if (searchItemConfig?.onClick) searchItemConfig.onClick(newState);
+    };
+
     return (
       <header className={styles.header} data-test-id={dataTestId} ref={ref}>
         <Grid.Container className={styles.headerInner}>
@@ -76,7 +82,18 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
                 <Logo />
               </Link>
               {canShowSearch && (
-                <div className={styles.searchWrapper}>
+                <div
+                  className={`${styles.searchWrapper} ${
+                    isSearchOpen ? styles.active : ''
+                  }`}
+                >
+                  <button
+                    aria-label={searchItemConfig.label}
+                    className={styles.closeSearch}
+                    onClick={() => handleSearchToggle(false)}
+                  >
+                    <Close />
+                  </button>
                   {searchItemConfig?.Component}
                 </div>
               )}
@@ -89,7 +106,7 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
                 <button
                   aria-label={searchItemConfig.label}
                   className={`${styles.notHorizontalNav} ${styles.item}`}
-                  onClick={searchItemConfig.onClick}
+                  onClick={() => handleSearchToggle(true)}
                 >
                   <Search />
                 </button>

@@ -58,9 +58,35 @@
 
 .searchWrapper {
   display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  & .closeSearch {
+    display: none;
+    position: absolute;
+    top: var(--spacing-5);
+    right: var(--spacing-4);
+    border: 0;
+    background: 0;
+    padding: 0;
+  }
+
+  &.active {
+    display: block;
+    & .closeSearch {
+      display: block;
+    }
+  }
 
   @media (--tablet-l) {
     display: block;
+    position: static;
+
+    & .closeSearch {
+      display: none;
+    }
   }
 }
 
