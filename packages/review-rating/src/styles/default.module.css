@@ -29,7 +29,6 @@
     & .completeScore {
       & .score {
         @mixin typography-heading-5_mobile;
-        margin-right: 0;
       }
       & .max {
         display: none;
@@ -157,7 +156,6 @@
   color: var(--color-neutral-500);
 
   & .score {
-    margin-right: var(--spacing-1);
     color: var(--color-neutral-700);
   }
 }

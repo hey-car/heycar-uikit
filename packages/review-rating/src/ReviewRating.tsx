@@ -46,16 +46,11 @@ const ReviewRating = React.forwardRef<HTMLDivElement, ReviewRatingProps>(
           viewBox="0 0 176 177"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <circle
-            cx="88"
-            cy="88.75"
-            fill="url(#paint0_linear_16561_735)"
-            r="88"
-          />
+          <circle cx="88" cy="88.75" fill={`url(#lg_${elementId})`} r="88" />
           <defs>
             <linearGradient
               gradientUnits="userSpaceOnUse"
-              id="paint0_linear_16561_735"
+              id={`lg_${elementId}`}
               x1="44"
               x2="143"
               y1="16.4643"
