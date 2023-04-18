@@ -1,0 +1,39 @@
+{
+  "name": "@heycar-uikit/review-rating",
+  "version": "1.0.0",
+  "description": "HeyCar-UIKit Review Rating",
+  "main": "dist/index.js",
+  "module": "./dist/esm/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ui",
+    "uikit",
+    "react",
+    "components",
+    "heycar",
+    "typescript",
+    "ui-components",
+    "design-systems",
+    "reviews",
+    "rating",
+    "review-rating"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hey-car/heycar-uikit.git"
+  },
+  "homepage": "https://github.com/hey-car/heycar-uikit/tree/main/packages/review-rating#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "react": "^17.0.1"
+  },
+  "dependencies": {
+    "uuid": "^9.0.0"
+  },
+  "author": "HeyCar Team",
+  "license": "UNLICENSED"
+}
