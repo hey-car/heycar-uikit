@@ -21,4 +21,4 @@ For the installation, documentation, sandbox and usage check Storybook
 
 ## Documentation
 
-[Storybook](https://hey-car.github.io/heycar-uikit/main/?path=/docs/components-pagination--pagination) documentation
+[Storybook](https://hey-car.github.io/heycar-uikit/main/?path=/docs/components-molecules-pagination--pagination) documentation

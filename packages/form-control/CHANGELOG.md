@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.6.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/form-control@1.5.1...@heycar-uikit/form-control@1.6.0) (2023-04-06)
+
+
+### Features
+
+* **input:** update state styles to match designs ([#177](https://github.com/hey-car/heycar-uikit/issues/177)) ([5236eaa](https://github.com/hey-car/heycar-uikit/commit/5236eaa4bacdc45df1db5891c31768df4490b1bd))
+
+
+
+
+
 ## [1.5.1](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/form-control@1.5.0...@heycar-uikit/form-control@1.5.1) (2022-11-15)
 
 

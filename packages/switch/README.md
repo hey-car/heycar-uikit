@@ -7,4 +7,4 @@
 
 The Switch component changes the state of a single boolean parameter to true or false.
 
-For the installation, documentation, sandbox and usage check [Storybook](https://hey-car.github.io/heycar-uikit/main/?path=/docs/components-switch--switch-story)
+For the installation, documentation, sandbox and usage check [Storybook](https://hey-car.github.io/heycar-uikit/main/?path=/docs/molecules-switch--switch-story)

@@ -5,18 +5,65 @@ import Pagination from '../Pagination';
 import { version } from '../../package.json';
 import Description from './Description.mdx';
 import Changelog from '../../CHANGELOG.md';
-import {
-  PaginationCanvas
-} from "./Canvas.tsx";
-import { PaginationItem } from "../PaginationItem";
+import { PaginationCanvas } from './Canvas.tsx';
+import { PaginationItem } from '../PaginationItem';
 
 <!-- Meta -->
 
-<Meta title="Components/Pagination" component={Pagination} />
+<Meta
+  title="Components/Molecules/Pagination"
+  component={Pagination}
+  argTypes={{
+    onClick: {
+      table: {
+        disable: true,
+      },
+    },
+    locale: {
+      table: {
+        disable: true,
+      },
+    },
+    renderItem: {
+      table: {
+        disable: true,
+      },
+    },
+    pageLabel: {
+      name: 'current page label',
+      control: 'text',
+      type: {
+        name: 'string',
+        required: false,
+      },
+    },
+    gotoLabel: {
+      name: 'page button label',
+      control: 'text',
+      type: { name: 'string', required: false },
+    },
+    prevPageLabel: {
+      name: 'prev button label',
+      control: 'text',
+      type: { name: 'string', required: false },
+    },
+    nextPageLabel: {
+      name: 'next button label',
+      control: 'text',
+      type: { name: 'string', required: false },
+    },
+  }}
+/>
 
 <!-- Canvas -->
 
-<Story parameters={{ controls: { disable: true } }} name="Pagination">
+<Story
+  name="Pagination"
+  args={{
+    currentPage: 1,
+    totalPages: 5,
+  }}
+>
   {PaginationCanvas.bind({})}
 </Story>
 
@@ -42,7 +89,7 @@ import Pagination from '@heycar-uikit/pagination';
   tabs={[
     { label: 'Description', component: <Description /> },
     { label: 'Props', component: <Props of={Pagination} /> },
-    { label: 'Props item', component: <Props of={PaginationItem} /> },
+    { label: 'PaginationItem Props', component: <Props of={PaginationItem} /> },
     { label: 'Changelog', component: <Changelog /> },
   ]}
 />

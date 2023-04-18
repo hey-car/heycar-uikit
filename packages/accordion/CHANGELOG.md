@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.4.2](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/accordion@2.4.1...@heycar-uikit/accordion@2.4.2) (2023-04-06)
+
+**Note:** Version bump only for package @heycar-uikit/accordion
+
+
+
+
+
+## [2.4.1](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/accordion@2.4.0...@heycar-uikit/accordion@2.4.1) (2023-03-29)
+
+**Note:** Version bump only for package @heycar-uikit/accordion
+
+
+
+
+
 # [2.4.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/accordion@2.3.1...@heycar-uikit/accordion@2.4.0) (2023-03-22)
 
 

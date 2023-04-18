@@ -50,11 +50,11 @@ const FormControl = React.forwardRef<HTMLDivElement, FormControlProps>(
           )}
           <div className={styles.inputWrapper}>
             {label && (
-              <React.Fragment>
+              <>
                 <label className={styles.label}>
                   <span className={styles.labelInner}>{label}</span>
                 </label>
-              </React.Fragment>
+              </>
             )}
             <div className={styles.input}>{children}</div>
           </div>

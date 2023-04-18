@@ -34,6 +34,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
   ) => {
     const inputClassNames = cn(styles.input, className, {
       [styles.hasLeftIcon]: leftIcon,
+      [styles.hasRightIcon]: rightIcon || rightAddons,
     });
     const ariaLabel = typeof label === 'string' ? label : undefined;
     const [isFocused, setFocused] = useState(restProps.autoFocus);
@@ -45,6 +46,13 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
         if (onFocus) onFocus(event);
       },
       [onFocus, readOnly],
+    );
+    const handleInputBlur = useCallback(
+      (event: FocusEvent<HTMLInputElement>) => {
+        setFocused(false);
+        if (onBlur) onBlur(event);
+      },
+      [onBlur],
     );
 
     return (
@@ -66,7 +74,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
           className={inputClassNames}
           data-test-id={dataTestId}
           disabled={disabled}
-          onBlur={onBlur}
+          onBlur={handleInputBlur}
           onChange={onChange}
           onFocus={handleInputFocus}
           onInput={onInput}

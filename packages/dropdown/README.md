@@ -37,4 +37,4 @@ function App() {
 
 ## Documentation and sandbox
 
-[Storybook](https://hey-car.github.io/heycar-uikit/main/?path=/docs/components-dropdown--dropdown) documentation and sandbox
+[Storybook](https://hey-car.github.io/heycar-uikit/main/?path=/docs/components-molecules-dropdown--dropdown) documentation and sandbox

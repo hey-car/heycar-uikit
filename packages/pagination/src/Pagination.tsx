@@ -1,5 +1,6 @@
 import React from 'react';
 import cn from 'classnames';
+import { v4 as uuidv4 } from 'uuid';
 
 import usePagination from './hooks/usePagination.hook';
 import { DEFAULT_LOCALE } from './locale/defaultLocale';
@@ -32,13 +33,17 @@ export const Pagination = React.forwardRef<HTMLElement, PaginationProps>(
     return (
       <nav className={classNames} ref={ref} {...rest}>
         <ul>
-          {items.map(item => (
-            <li>
-              {renderItem({
-                ...item,
-              })}
-            </li>
-          ))}
+          {items.map(item => {
+            const id = uuidv4();
+
+            return (
+              <li key={id}>
+                {renderItem({
+                  ...item,
+                })}
+              </li>
+            );
+          })}
         </ul>
       </nav>
     );

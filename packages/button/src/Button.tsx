@@ -51,13 +51,13 @@ const Button = React.forwardRef<
       >
         {loading && <ButtonLoader className={styles.loader} />}
         {leftIcon && (
-          <ButtonIcon className={styles.icon} side="left">
+          <ButtonIcon className={styles.iconLeft} side="left">
             {leftIcon}
           </ButtonIcon>
         )}
         {children && <span className={styles.text}>{children}</span>}
         {rightIcon && (
-          <ButtonIcon className={styles.icon} side="right">
+          <ButtonIcon className={styles.iconRight} side="right">
             {rightIcon}
           </ButtonIcon>
         )}

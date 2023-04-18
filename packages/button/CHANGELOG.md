@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.4.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/button@3.3.1...@heycar-uikit/button@3.4.0) (2023-04-11)
+
+
+### Features
+
+* **button:** update margins for icon left right as 20px ([#178](https://github.com/hey-car/heycar-uikit/issues/178)) ([96e12d0](https://github.com/hey-car/heycar-uikit/commit/96e12d060715bb536b34d85a82f368e19f15fcb8))
+
+
+
+
+
+## [3.3.1](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/button@3.3.0...@heycar-uikit/button@3.3.1) (2023-04-06)
+
+**Note:** Version bump only for package @heycar-uikit/button
+
+
+
+
+
 # [3.3.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/button@3.2.0...@heycar-uikit/button@3.3.0) (2023-03-20)
 
 

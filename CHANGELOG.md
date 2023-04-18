@@ -1,3 +1,24 @@
+# [5.8.0](https://github.com/hey-car/heycar-uikit/compare/v5.7.0...v5.8.0) (2023-04-11)
+
+
+### Features
+
+* **button:** update margins for icon left right as 20px ([#178](https://github.com/hey-car/heycar-uikit/issues/178)) ([96e12d0](https://github.com/hey-car/heycar-uikit/commit/96e12d060715bb536b34d85a82f368e19f15fcb8))
+
+# [5.7.0](https://github.com/hey-car/heycar-uikit/compare/v5.6.0...v5.7.0) (2023-04-06)
+
+
+### Features
+
+* **input:** update state styles to match designs ([#177](https://github.com/hey-car/heycar-uikit/issues/177)) ([5236eaa](https://github.com/hey-car/heycar-uikit/commit/5236eaa4bacdc45df1db5891c31768df4490b1bd))
+
+# [5.6.0](https://github.com/hey-car/heycar-uikit/compare/v5.5.0...v5.6.0) (2023-03-29)
+
+
+### Features
+
+* **pagination:** fix keys warning and properly disable buttons ([#173](https://github.com/hey-car/heycar-uikit/issues/173)) ([f1c31a4](https://github.com/hey-car/heycar-uikit/commit/f1c31a45f9bedb77829808489db8488a869169c1))
+
 # [5.5.0](https://github.com/hey-car/heycar-uikit/compare/v5.4.0...v5.5.0) (2023-03-22)
 
 

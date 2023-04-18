@@ -16,7 +16,7 @@ import styles from '!!raw-loader!../styles/default.module.css';
 <!-- Meta -->
 
 <Meta
-  title="Components/Input"
+  title="Components/Molecules/Input"
   component={Input}
   argTypes={{
     label: {
@@ -85,19 +85,27 @@ import styles from '!!raw-loader!../styles/default.module.css';
       },
     },
     rightAddons: {
-      table: {
-        disable: true,
-      },
+      name: 'right addon',
+      type: { name: 'boolean' },
+      defaultValue: false,
     },
   }}
 />
 
 export const InputTemplate = args => {
-  const { leftIcon, rightIcon } = args;
+  const { leftIcon, rightAddons, rightIcon } = args;
   const maxWidth = args.fullWidth ? '700px' : '250px';
   if (leftIcon) args.leftIcon = <Clock />;
   else delete args.leftIcon;
   if (rightIcon) args.rightIcon = <Calendar />;
+  if (rightAddons)
+    args.rightAddons = (
+      <b style={{ fontSize: '14px' }}>
+        <a style={{ color: '#164CA3' }} href="#">
+          This is link
+        </a>
+      </b>
+    );
   return (
     <div style={{ maxWidth, margin: '0 auto' }}>
       <Input {...args} />

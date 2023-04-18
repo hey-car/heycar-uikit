@@ -24,6 +24,7 @@ export const ComponentListItem: React.FC<ComponentListItemProps> = ({
     .toLowerCase();
   const githubLink = `https://github.com/hey-car/heycar-uikit/tree/main/packages/${packageName}`;
   const npmLink = `https://www.npmjs.com/package/@heycar-uikit/${packageName}`;
+  const Atoms = ['grid', 'icons', 'logo', 'typography'];
 
   return (
     <div className={styles.component}>
@@ -33,7 +34,9 @@ export const ComponentListItem: React.FC<ComponentListItemProps> = ({
             href={
               name === 'Fonts'
                 ? '/?path=/docs/guidelines-fonts--page'
-                : `/?path=/docs/components-${name}--${name}`
+                : `/?path=/docs/components-${
+                    Atoms.includes(name.toLowerCase()) ? 'atoms' : 'molecules'
+                  }--${name}`
             }
           >
             {name}
