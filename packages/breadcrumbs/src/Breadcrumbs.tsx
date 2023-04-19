@@ -1,21 +1,40 @@
 import React, { FC } from 'react';
+import cn from 'classnames';
 
-import { Breadcrumb, BreadcrumbsProps } from './Breadcrumbs.types';
+import {
+  Breadcrumb,
+  BreadcrumbLinkProps,
+  BreadcrumbsProps,
+} from './Breadcrumbs.types';
+
+import styles from './styles/default.module.css';
+
+const DefaultLink: React.FC<BreadcrumbLinkProps> = ({
+  link,
+  children,
+  ...rest
+}) => (
+  <a href={link} {...rest}>
+    {children}
+  </a>
+);
 
 const Breadcrumbs: FC<BreadcrumbsProps> = ({ breadcrumbs, className }) => {
-  console.log(breadcrumbs);
+  //TODO: LinkComponent
+  const Link = DefaultLink as (props: BreadcrumbLinkProps) => JSX.Element;
 
   return (
-    <ul className={className}>
+    <ul className={cn(styles.breadcrumbWrapper, className)}>
       {breadcrumbs &&
         breadcrumbs.map((breadcrumb, i) => {
+          console.log(i, breadcrumbs.length);
           if (breadcrumb.link && i + 1 !== breadcrumbs.length) {
             return (
               // eslint-disable-next-line react/no-array-index-key
               <li key={`${breadcrumb.title}-${i}`}>
-                <a href={breadcrumb.link}>
+                <Link link={breadcrumb.link}>
                   <span itemProp="name">{breadcrumb.title}</span>
-                </a>
+                </Link>
               </li>
             );
           }

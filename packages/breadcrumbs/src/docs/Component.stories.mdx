@@ -8,44 +8,36 @@ import Changelog from '../../CHANGELOG.md';
 
 <!-- Meta -->
 
-<Meta title="Components/Molecules/Breadcrumbs" component={Breadcrumbs} />
+<Meta
+  title="Components/Molecules/Breadcrumbs"
+  component={Breadcrumbs}
+  argTypes={{
+    breadcrumbs: {
+      table: {
+        disable: true,
+      },
+    },
+  }}
+/>
 
-export const BreadcrumbsTemplate = args => {
-  const breadcrumbs: Breadcrumb[] = [
-    {
-      link: '/',
-      title: 'Home',
-    },
-    {
-      link: '/vw',
-      title: 'VW',
-    },
-    {
-      link: '/ford',
-      title: 'Ford',
-    },
-  ];
-  return (
-    <div style={{ maxWidth: '700px', margin: '0 auto' }}>
-      <Breadcrumbs
-        breadcrumbs={[
-          {
-            link: '/',
-            title: 'Home',
-          },
-          {
-            link: '/vw',
-            title: 'VW',
-          },
-          {
-            link: '/ford',
-            title: 'Ford',
-          },
-        ]}
-      />
-    </div>
-  );
-};
+export const BreadcrumbsTemplate = args => (
+  <Breadcrumbs
+    breadcrumbs={[
+      {
+        link: '/',
+        title: 'Home',
+      },
+      {
+        link: '/vw',
+        title: 'VW',
+      },
+      {
+        link: '/ford',
+        title: 'Ford',
+      },
+    ]}
+  />
+);
 
 <!-- Canvas -->
 
