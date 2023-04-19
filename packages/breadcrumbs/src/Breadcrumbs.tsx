@@ -19,12 +19,19 @@ const DefaultLink: React.FC<BreadcrumbLinkProps> = ({
   </a>
 );
 
-const Breadcrumbs: FC<BreadcrumbsProps> = ({ breadcrumbs, className }) => {
+const Breadcrumbs: FC<BreadcrumbsProps> = ({
+  breadcrumbs,
+  dataTestId,
+  className,
+}) => {
   //TODO: LinkComponent
   const Link = DefaultLink as (props: BreadcrumbLinkProps) => JSX.Element;
 
   return (
-    <ul className={cn(styles.breadcrumbWrapper, className)}>
+    <ul
+      className={cn(styles.breadcrumbWrapper, className)}
+      data-test-id={dataTestId}
+    >
       {breadcrumbs &&
         breadcrumbs.map((breadcrumb, i) => {
           console.log(i, breadcrumbs.length);

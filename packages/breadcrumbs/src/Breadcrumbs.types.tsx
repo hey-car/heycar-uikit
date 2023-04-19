@@ -8,5 +8,6 @@ export interface Breadcrumb {
 }
 export interface BreadcrumbsProps {
   breadcrumbs: Breadcrumb[];
+  dataTestId?: string;
   className?: string;
 }
