@@ -10,7 +10,7 @@ import {
 } from '@heycar-uikit/icons';
 
 import { headerClickTracking, LANG_OPTIONS } from '../Header.constants';
-import { HeaderTrackingObj } from '../Header.types';
+import { HeaderProps, HeaderTrackingObj } from '../Header.types';
 
 const itemOnClick = (
   label: string,
@@ -55,4 +55,18 @@ const getCurrentLang = (
   };
 };
 
-export { getCurrentLang, getFlagIcon, itemOnClick };
+const hasHeaderItems = (
+  searchItemConfig: HeaderProps['searchItemConfig'],
+  favoritesItemConfig: HeaderProps['favoritesItemConfig'],
+  langItemConfig: HeaderProps['langItemConfig'],
+  accountItemConfig: HeaderProps['accountItemConfig'],
+  callItemConfig: HeaderProps['callItemConfig'],
+) => ({
+  hasSearch: !!searchItemConfig && !searchItemConfig.hide,
+  hasFaves: !!favoritesItemConfig && !favoritesItemConfig.hide,
+  hasLang: !!langItemConfig && !langItemConfig.hide,
+  hasAccount: !!accountItemConfig && !accountItemConfig.hide,
+  hasCall: !!callItemConfig && !callItemConfig.hide,
+});
+
+export { getCurrentLang, getFlagIcon, hasHeaderItems, itemOnClick };

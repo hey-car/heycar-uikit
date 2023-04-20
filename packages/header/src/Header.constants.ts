@@ -1,6 +1,7 @@
 import { LangOption } from './Header.types';
 
 const DEFAULT_LOCALE = {
+  closeSearchLabel: 'close search',
   logoLabel: 'heycar logo',
   langListHeading: 'Select Language',
   burgerMenuButtonLabel: 'Navigation menu',
@@ -79,4 +80,12 @@ const SUBNAV_CONFIG = {
   },
 };
 
-export { DEFAULT_LOCALE, headerClickTracking, LANG_OPTIONS, SUBNAV_CONFIG };
+const BURGER_MENU_SUBNAV_MAX_ITEMS = 5;
+
+export {
+  BURGER_MENU_SUBNAV_MAX_ITEMS,
+  DEFAULT_LOCALE,
+  headerClickTracking,
+  LANG_OPTIONS,
+  SUBNAV_CONFIG,
+};

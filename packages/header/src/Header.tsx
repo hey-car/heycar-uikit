@@ -16,7 +16,11 @@ import Typography from '@heycar-uikit/typography';
 import LanguageList from './components/LanguageList';
 import Navigation from './components/Navigation';
 import { useLangList } from './hooks/useLangList';
-import { getCurrentLang, itemOnClick } from './utils/headerItemHelpers';
+import {
+  getCurrentLang,
+  hasHeaderItems,
+  itemOnClick,
+} from './utils/headerItemHelpers';
 import { DEFAULT_LOCALE } from './Header.constants';
 import { HeaderLinkProps, HeaderProps } from './Header.types';
 
@@ -42,27 +46,37 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
     },
     ref,
   ) => {
+    // State items
     const [isNavTrayOpen, setIsNavTrayOpen] = useState(false);
     const [activeNavItem, setActiveNavItem] = useState<string | undefined>(
       undefined,
     );
     const [isSearchOpen, setIsSearchOpen] = useState(false);
+
+    // Link component
     const Link = (LinkComponent || DefaultLinkComponent) as (
       props: HeaderLinkProps,
     ) => JSX.Element;
-    const canShowSearch = searchItemConfig && !searchItemConfig.hide;
-    const canShowFaves = favoritesItemConfig && !favoritesItemConfig.hide;
-    const canShowLang = langItemConfig && !langItemConfig.hide;
-    const canShowAccount = accountItemConfig && !accountItemConfig.hide;
-    const canShowCall = callItemConfig && !callItemConfig.hide;
-    const currentLang = langItemConfig
-      ? getCurrentLang(langItemConfig?.currentLang, langItemConfig?.options)
+
+    // Header items
+    const { hasSearch, hasFaves, hasLang, hasAccount, hasCall } =
+      hasHeaderItems(
+        searchItemConfig,
+        favoritesItemConfig,
+        langItemConfig,
+        accountItemConfig,
+        callItemConfig,
+      );
+
+    // Lang
+    const currentLang = hasLang
+      ? getCurrentLang(langItemConfig!.currentLang, langItemConfig!.options)
       : undefined;
     const LangIco = currentLang?.icon;
-
     const { isLangListOpen, keyboardOpen, setIsFocused, setIsHovering } =
       useLangList();
 
+    // Event handlers
     const handleSearchToggle = (newState: boolean) => {
       setIsSearchOpen(newState);
       if (searchItemConfig?.onClick) searchItemConfig.onClick(newState);
@@ -81,14 +95,14 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
               >
                 <Logo />
               </Link>
-              {canShowSearch && (
+              {hasSearch && (
                 <div
                   className={`${styles.searchWrapper} ${
                     isSearchOpen ? styles.active : ''
                   }`}
                 >
                   <button
-                    aria-label={searchItemConfig.label}
+                    aria-label={locale.closeSearchLabel}
                     className={styles.closeSearch}
                     onClick={() => handleSearchToggle(false)}
                   >
@@ -102,9 +116,9 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
               {/*
                *** Mobile Search Button
                */}
-              {canShowSearch && (
+              {hasSearch && (
                 <button
-                  aria-label={searchItemConfig.label}
+                  aria-label={searchItemConfig!.label}
                   className={`${styles.notHorizontalNav} ${styles.item}`}
                   onClick={() => handleSearchToggle(true)}
                 >
@@ -114,33 +128,33 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
               {/*
                *** Favorite Button
                */}
-              {canShowFaves && (
+              {hasFaves && (
                 <Link
-                  aria-label={favoritesItemConfig.label}
+                  aria-label={favoritesItemConfig!.label}
                   className={styles.item}
-                  href={favoritesItemConfig.href}
+                  href={favoritesItemConfig!.href}
                   onClick={() =>
                     itemOnClick(
-                      favoritesItemConfig.label,
+                      favoritesItemConfig!.label,
                       trackingFn,
-                      favoritesItemConfig.onClick,
+                      favoritesItemConfig!.onClick,
                     )
                   }
                 >
-                  {favoritesItemConfig.favoritesNumber ? (
+                  {favoritesItemConfig!.favoritesNumber ? (
                     <HeartFilled />
                   ) : (
                     <HeartDefault />
                   )}
                   <Typography variant="subheading3">
-                    {favoritesItemConfig.label}
+                    {favoritesItemConfig!.label}
                   </Typography>
                 </Link>
               )}
               {/*
                *** Lang Select
                */}
-              {canShowLang && (
+              {hasLang && (
                 <div className={styles.langWrapper}>
                   <button
                     aria-haspopup="menu"
@@ -165,7 +179,7 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
                       heading={DEFAULT_LOCALE.langListHeading}
                       onFocusEvents={setIsFocused}
                       onHoverEvents={setIsHovering}
-                      options={langItemConfig.options}
+                      options={langItemConfig!.options}
                       trackingFn={trackingFn}
                     />
                   )}
@@ -174,43 +188,43 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
               {/*
                *** Account Button
                */}
-              {canShowAccount && (
+              {hasAccount && (
                 <button
-                  aria-label={accountItemConfig.label}
+                  aria-label={accountItemConfig!.label}
                   className={`${styles.horizontalNavOnly} ${styles.item}`}
                   onClick={() =>
                     itemOnClick(
-                      accountItemConfig.label,
+                      accountItemConfig!.label,
                       trackingFn,
-                      accountItemConfig.onClick,
+                      accountItemConfig!.onClick,
                     )
                   }
                 >
                   <Dealer />
                   <Typography variant="subheading3">
-                    {accountItemConfig.label}
+                    {accountItemConfig!.label}
                   </Typography>
                 </button>
               )}
               {/*
                *** Call Button
                */}
-              {canShowCall && (
+              {hasCall && (
                 <Link
-                  aria-label={callItemConfig.label}
+                  aria-label={callItemConfig!.label}
                   className={`${styles.desktopOnly} ${styles.item} ${styles.asideItem}`}
-                  href={callItemConfig.href}
+                  href={callItemConfig!.href}
                   onClick={() =>
                     itemOnClick(
-                      callItemConfig.label,
+                      callItemConfig!.label,
                       trackingFn,
-                      callItemConfig.onClick,
+                      callItemConfig!.onClick,
                     )
                   }
                 >
                   <Call />
                   <Typography variant="subheading3">
-                    {callItemConfig.label}
+                    {callItemConfig!.label}
                   </Typography>
                 </Link>
               )}

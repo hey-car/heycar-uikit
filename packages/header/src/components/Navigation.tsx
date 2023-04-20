@@ -33,7 +33,7 @@ const Navigation = React.forwardRef<HTMLDivElement, NavigationProps>(
     ref,
   ) => {
     const hasAuxData = aux?.tel || aux?.email || aux?.app;
-    const appLangCode = currentLang ? currentLang.substring(0, 2) : 'en';
+    const shortLangCode = currentLang ? currentLang.substring(0, 2) : 'en';
     const { toggleSubNav, keyboardOpen, closeSiblings } = useNavigationItem(
       activeNavItem,
       setActiveNavItem,
@@ -134,7 +134,7 @@ const Navigation = React.forwardRef<HTMLDivElement, NavigationProps>(
           <aside className={styles.auxDetails}>
             {aux?.tel && (
               <p className={styles.auxContact}>
-                <Typography variant="caption2">
+                <Typography Component="span" variant="caption2">
                   {aux.tel.label || locale.auxTelLabel}
                 </Typography>
                 <a href={`tel:${aux.tel.value}`}>{aux.tel.value}</a>
@@ -142,7 +142,7 @@ const Navigation = React.forwardRef<HTMLDivElement, NavigationProps>(
             )}
             {aux?.email && (
               <p className={styles.auxContact}>
-                <Typography variant="caption2">
+                <Typography Component="span" variant="caption2">
                   {aux.email.label || locale.auxEmailLabel}
                 </Typography>
                 <a href={`mailto:${aux.email.value}`}>{aux.email.value}</a>
@@ -159,7 +159,7 @@ const Navigation = React.forwardRef<HTMLDivElement, NavigationProps>(
                   >
                     <img
                       alt="Download on the App Store"
-                      src={`https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/${appLangCode}-${appLangCode}?size=250x83&amp;releaseDate=1670371200`}
+                      src={`https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/${shortLangCode}-${shortLangCode}?size=250x83&amp;releaseDate=1670371200`}
                     />
                   </a>
                 )}
@@ -169,7 +169,7 @@ const Navigation = React.forwardRef<HTMLDivElement, NavigationProps>(
                   >
                     <img
                       alt="Get it on Google Play"
-                      src={`https://play.google.com/intl/en_us/badges/static/images/badges/${appLangCode}_badge_web_generic.png`}
+                      src={`https://play.google.com/intl/en_us/badges/static/images/badges/${shortLangCode}_badge_web_generic.png`}
                     />
                   </a>
                 )}

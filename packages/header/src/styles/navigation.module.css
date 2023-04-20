@@ -16,7 +16,7 @@
   color: var(--color-neutral-700);
   transition: color 0.3s ease, background 0.3s ease;
 
-  & > caption {
+  & > q {
     display: none;
     text-align: left;
     overflow: hidden;
@@ -49,7 +49,7 @@
 
   /* Dropdown nav starts here */
   @media (--tablet-l) {
-    & > caption {
+    & > q {
       display: block;
     }
 
@@ -236,7 +236,7 @@
   margin: 0;
   padding: var(--spacing-2) 0;
 
-  & > caption {
+  & > span {
     display: inline;
     margin-right: var(--spacing-1);
   }

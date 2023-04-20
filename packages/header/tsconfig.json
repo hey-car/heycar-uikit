@@ -9,5 +9,13 @@
       "@heycar-uikit/*": ["../*/src"]
     },
     "plugins": [{ "name": "typescript-plugin-css-modules" }]
-  }
+  },
+  "references": [
+    { "path": "../collapse" },
+    { "path": "../grid" },
+    { "path": "../icons" },
+    { "path": "../logo" },
+    { "path": "../themes" },
+    { "path": "../typography" }
+  ]
 }

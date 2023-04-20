@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/naming-convention */
 import React from 'react';
 
 import {
@@ -13,6 +14,7 @@ import { headerClickTracking } from '../Header.constants';
 import {
   getCurrentLang,
   getFlagIcon,
+  hasHeaderItems,
   itemOnClick,
 } from '../utils/headerItemHelpers';
 
@@ -133,6 +135,42 @@ describe('headerItemHelpers', () => {
 
       expect(tr).toEqual(undefined);
       expect(string).toEqual(undefined);
+    });
+  });
+
+  describe('hasHeaderItems', () => {
+    it('returns hasXXXX as true if config object is present and hide property is falsy', () => {
+      const { hasSearch, hasFaves, hasLang, hasAccount, hasCall } =
+        hasHeaderItems(
+          { label: 'search', hide: false, Component: <a /> },
+          { label: 'favs', hide: undefined },
+          { currentLang: 'en-EN', hide: false },
+          { label: 'account' },
+          { label: 'call', hide: false },
+        );
+
+      expect(hasSearch).toEqual(true);
+      expect(hasFaves).toEqual(true);
+      expect(hasLang).toEqual(true);
+      expect(hasAccount).toEqual(true);
+      expect(hasCall).toEqual(true);
+    });
+
+    it('returns hasXXXX as false if config object missing or hide property is true', () => {
+      const { hasSearch, hasFaves, hasLang, hasAccount, hasCall } =
+        hasHeaderItems(
+          { label: 'search', hide: true, Component: <a /> },
+          undefined,
+          { currentLang: 'en-EN', hide: true },
+          undefined,
+          undefined,
+        );
+
+      expect(hasSearch).toEqual(false);
+      expect(hasFaves).toEqual(false);
+      expect(hasLang).toEqual(false);
+      expect(hasAccount).toEqual(false);
+      expect(hasCall).toEqual(false);
     });
   });
 });

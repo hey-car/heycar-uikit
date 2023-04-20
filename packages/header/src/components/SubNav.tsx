@@ -61,7 +61,10 @@ const SubNav = React.forwardRef<HTMLDivElement, SubNavProps>(
               <ul aria-label={`${subNavGroup.heading} menu`} role="menu">
                 {subNavGroup.items.slice(0, maxItem).map(subNavItem => {
                   return (
-                    <li role="none">
+                    <li
+                      key={`${navItemId}-${subNavGroup.heading}-${subNavItem.label}`}
+                      role="none"
+                    >
                       <Link
                         className={`${styles.navItem} ${
                           subNavItem.desc ? styles.hasCaption : ''
@@ -75,7 +78,7 @@ const SubNav = React.forwardRef<HTMLDivElement, SubNavProps>(
                       >
                         <span>{subNavItem.label}</span>
                         {subNavItem.desc && (
-                          <Typography Component="caption" variant="body4">
+                          <Typography Component="q" variant="body4">
                             {subNavItem.desc}
                           </Typography>
                         )}

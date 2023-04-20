@@ -1,0 +1,2800 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Snapshots tests should match snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <header
+        class="header"
+      >
+        <div
+          class="container headerInner"
+        >
+          <div
+            class="row component between gutter-mobile-8 gutter-tablet-12 gutter-desktop-24"
+          >
+            <div
+              class="col component colLeft"
+            >
+              <a
+                aria-label="heycar logo"
+                class="logo"
+                href="heycar.com"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="logo"
+                  style="font-size: 65px;"
+                  viewBox="0 0 199 65"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    class="dark_bg"
+                    clip-rule="evenodd"
+                    d="M11.5664 0.638184H0.457294V49.0283H11.5664V32.1802C11.5664 30.2074 11.9766 28.6943 12.8012 27.645C13.6237 26.5958 14.7946 26.0701 16.318 26.0701C19.1566 26.0701 20.5769 27.9625 20.5769 31.7473V49.0262H31.6859V29.6487C31.6859 25.2455 30.7501 21.9039 28.8783 19.6199C27.0065 17.3358 24.24 16.1938 20.5789 16.1938C18.602 16.1938 16.8333 16.5751 15.2708 17.3358C13.7061 18.0965 12.4713 19.1767 11.5664 20.5743V0.638184ZM44.8111 48.0079C47.6909 49.3437 50.5007 50.0137 54.3679 50.0137C56.7118 50.0137 58.969 49.8075 61.1706 49.3952C63.3723 48.985 66.3593 47.977 68.0476 47.1957L65.3842 39.5807C63.9866 40.2404 63.028 40.4486 61.2181 40.8176C59.4061 41.1866 57.6167 41.3721 55.848 41.3721C53.0919 41.3721 51.1335 40.8052 49.5503 39.9188C47.9651 39.0345 47.2374 37.7935 46.6623 35.9423H67.6456C67.8909 34.8333 68.0146 33.5572 68.0146 32.1163C68.0146 27.2224 66.6066 23.3428 63.7887 20.4836C60.9686 17.6244 57.1735 16.1938 52.4013 16.1938C49.068 16.1938 46.1366 16.9338 43.6072 18.416C41.0779 19.8961 39.1319 21.9143 37.7754 24.4642C36.417 27.0163 35.7387 29.8961 35.7387 33.1037C35.7387 36.6432 36.5303 39.6776 38.1135 42.207C39.6988 44.7364 41.9313 46.6721 44.8111 48.0079ZM55.9511 25.39C56.9179 26.3362 57.4828 27.6328 57.6477 29.2778V29.2799H46.4788C47.1777 25.7425 49.0907 23.9717 52.2179 23.9717C53.7392 23.9717 54.9843 24.4438 55.9511 25.39ZM75.4357 64.7013C74.0793 64.7013 72.7518 64.5673 71.4551 64.2993C70.1585 64.0314 68.4166 63.4768 67.6353 63.0254L70.7274 54.1839C71.9622 54.5817 72.391 54.6415 74.0773 54.6415C75.5574 54.6415 76.7303 54.2602 77.5941 53.4995C78.4578 52.7388 79.3009 51.3721 80.1235 49.3972L81.1109 47.1132L68.7753 17.1832H80.4945L87.0354 35.8825L92.8982 17.1832H104.685L91.3562 50.3228C89.7916 54.1901 88.2805 57.142 86.821 59.1787C85.3616 61.2154 83.7454 62.644 81.9767 63.4686C80.208 64.289 78.029 64.7013 75.4357 64.7013ZM141.288 47.946C143.469 49.3251 145.937 50.0137 148.695 50.0137C150.752 50.0137 152.593 49.6117 154.215 48.8098C155.84 48.0058 157.126 46.8658 158.072 45.3837L158.196 49.0242H168.625V17.1812H158.196L158.072 20.8835C157.124 19.4034 155.85 18.2531 154.246 17.4286C152.641 16.6061 150.892 16.1938 149 16.1938C146.12 16.1938 143.548 16.9668 141.286 18.5088C139.025 20.0528 137.277 22.1101 136.042 24.6807C134.807 27.2513 134.191 30.1023 134.191 33.2274C134.191 36.5607 134.828 39.5024 136.104 42.0524C137.38 44.6024 139.107 46.5669 141.288 47.946ZM156.347 38.1645C155.153 39.4818 153.611 40.1394 151.719 40.1394C149.827 40.1394 148.272 39.4818 147.06 38.1645C145.846 36.8473 145.24 35.161 145.24 33.1037C145.24 31.0464 145.846 29.3601 147.06 28.0429C148.272 26.7277 149.827 26.068 151.719 26.068C153.611 26.068 155.153 26.7277 156.347 28.0429C157.541 29.3601 158.136 31.0485 158.136 33.1037C158.136 35.161 157.541 36.8473 156.347 38.1645ZM174.902 17.1812H185.702L185.826 21.9328C186.607 20.2054 187.677 18.8778 189.035 17.9522C190.394 17.0266 191.977 16.5649 193.787 16.5649C195.184 16.5649 197.326 17.0864 198.355 17.5379L195.762 27.4369C194.659 27.0679 193.931 26.9318 192.49 26.9318C190.35 26.9318 188.736 27.641 187.646 29.0613C186.555 30.4795 186.011 32.5905 186.011 35.3878V49.0263H174.902V17.1812ZM117.825 38.1955C119.266 39.4097 121.259 40.0157 123.811 40.0157C125.527 40.0157 127.64 39.6426 129.534 39.1025L132.488 47.6637C131.233 48.2842 129.816 48.7933 128.219 49.1809C126.265 49.6529 124.279 49.89 122.263 49.89C118.808 49.89 115.753 49.2221 113.1 47.8842C110.447 46.5484 108.367 44.6251 106.866 42.1143C105.366 39.6055 104.615 36.6432 104.615 33.2274C104.615 30.0178 105.335 27.14 106.776 24.588C108.217 22.038 110.272 20.0198 112.948 18.5397C115.623 17.0576 118.707 16.3175 122.206 16.3175C124.139 16.3175 126.114 16.5422 128.13 16.9957C129.99 17.4142 131.538 17.9419 132.803 18.5686L129.775 27.2266C127.924 26.6453 125.576 26.1918 123.626 26.1918C121.156 26.1918 119.212 26.8102 117.794 28.0429C116.374 29.2777 115.665 30.9661 115.665 33.1038C115.665 35.2848 116.384 36.9834 117.825 38.1955Z"
+                    fill-rule="evenodd"
+                  />
+                  <path
+                    class="undermark_dark_bg"
+                    clip-rule="evenodd"
+                    d="M196.892 54.9758V63.8194L105.684 63.8194V54.9758L196.892 54.9758Z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </a>
+              <div
+                class="searchWrapper "
+              >
+                <button
+                  aria-label="close search"
+                  class="closeSearch"
+                >
+                  <svg
+                    class="svgIcon inherit"
+                    data-test-id="CloseIcon"
+                    focusable="false"
+                    style="font-size: 24px;"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M13.4142 12L20.7071 4.70709L19.2928 3.29288L12 10.5858L4.70706 3.29288L3.29285 4.70709L10.5857 12L3.29285 19.2929L4.70706 20.7071L12 13.4142L19.2928 20.7071L20.7071 19.2929L13.4142 12Z"
+                    />
+                  </svg>
+                </button>
+                <input
+                  aria-label="search-component"
+                  style="min-width: 100%; height: 48px; padding: 0px 16px; background: rgb(18, 61, 130); color: rgb(255, 255, 255);"
+                  value="This is a separate component"
+                />
+              </div>
+            </div>
+            <div
+              class="col component colRight"
+            >
+              <button
+                aria-label="Search"
+                class="notHorizontalNav item"
+              >
+                <svg
+                  class="svgIcon inherit"
+                  data-test-id="SearchIcon"
+                  focusable="false"
+                  style="font-size: 24px;"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M16.7619 17.969C15.3146 19.1113 13.4869 19.793 11.5 19.793C6.80562 19.793 3.00004 15.9874 3.00004 11.293C3.00004 6.59855 6.80562 2.79297 11.5 2.79297C16.1945 2.79297 20 6.59855 20 11.293C20 13.2798 19.3183 15.1075 18.1761 16.5548L21.2072 19.5859L19.7929 21.0001L16.7619 17.969ZM18 11.293C18 14.8828 15.0899 17.793 11.5 17.793C7.91019 17.793 5.00004 14.8828 5.00004 11.293C5.00004 7.70312 7.91019 4.79297 11.5 4.79297C15.0899 4.79297 18 7.70312 18 11.293Z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+              <a
+                aria-label="Favorites"
+                class="item"
+                href="www.google.com"
+              >
+                <svg
+                  class="svgIcon inherit"
+                  data-test-id="HeartDefaultIcon"
+                  focusable="false"
+                  style="font-size: 24px;"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M2.55566 9.5808C2.55567 6.49861 5.05428 4 8.13647 4C9.63656 4 10.9981 4.59232 12.0001 5.55382C13.0022 4.59232 14.3637 4 15.8637 4C18.9459 4 21.4445 6.49861 21.4446 9.5808C21.4446 10.1569 21.357 10.7142 21.1937 11.2393C20.4913 13.6367 18.4212 15.9475 16.5686 17.5998C15.6222 18.4439 14.6903 19.1533 13.9411 19.6566C13.5678 19.9074 13.2284 20.1148 12.9474 20.2636C12.8079 20.3375 12.6687 20.4045 12.5381 20.4555C12.4395 20.494 12.2328 20.5707 12.0001 20.5707C11.7674 20.5707 11.5607 20.494 11.4621 20.4555C11.3315 20.4045 11.1923 20.3375 11.0529 20.2636C10.7718 20.1148 10.4324 19.9074 10.0591 19.6566C9.30993 19.1533 8.37807 18.4439 7.43165 17.5998C5.57905 15.9475 3.50893 13.6367 2.80651 11.2393C2.64325 10.7142 2.55566 10.1569 2.55566 9.5808ZM8.13647 5.88889C6.09748 5.88889 4.44456 7.54181 4.44455 9.5808C4.44455 9.96671 4.50344 10.3371 4.61205 10.6844L4.61478 10.6931L4.61734 10.7019C5.16048 12.5646 6.88398 14.5803 8.68893 16.1901C9.57241 16.9781 10.4363 17.6344 11.1125 18.0887C11.4518 18.3167 11.7325 18.4861 11.9369 18.5944C11.9596 18.6064 11.9806 18.6173 12.0001 18.6271C12.0196 18.6173 12.0406 18.6064 12.0633 18.5944C12.2677 18.4861 12.5484 18.3167 12.8877 18.0887C13.5639 17.6344 14.4278 16.9781 15.3113 16.1901C17.1162 14.5803 18.8397 12.5646 19.3829 10.7019L19.3854 10.6931L19.3882 10.6844C19.4968 10.3371 19.5557 9.96671 19.5557 9.5808C19.5557 7.54181 17.9027 5.88889 15.8637 5.88889C14.5805 5.88889 13.4496 6.5428 12.7866 7.53998L12.0001 8.72284L11.2136 7.53998C10.5506 6.5428 9.41971 5.88889 8.13647 5.88889ZM11.8233 18.7057C11.8233 18.7057 11.8282 18.7037 11.8371 18.7013C11.8275 18.7047 11.8233 18.7057 11.8233 18.7057ZM12.1631 18.7013C12.172 18.7037 12.177 18.7057 12.177 18.7057C12.177 18.7057 12.1727 18.7047 12.1631 18.7013Z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <span
+                  class="typography subheading3"
+                >
+                  Favorites
+                </span>
+              </a>
+              <div
+                class="langWrapper"
+              >
+                <button
+                  aria-haspopup="menu"
+                  aria-label="Select Language - Press the Space key to show sub-menus."
+                  class="horizontalNavOnly item "
+                >
+                  <svg
+                    class="svgIcon inherit"
+                    data-test-id="UKIcon"
+                    focusable="false"
+                    style="font-size: 24px;"
+                    viewBox="-2 -4 24 24"
+                  >
+                    <g
+                      clip-path="url(#a)"
+                    >
+                      <path
+                        d="M0 0h20v16H0z"
+                        fill="#052962"
+                      />
+                      <path
+                        d="M18 16 0 2V0h2l18 14v2h-2Z"
+                        fill="#fff"
+                      />
+                      <path
+                        d="M0 0v1l19 15h1v-1L1 0H0Z"
+                        fill="#C7270A"
+                      />
+                      <path
+                        d="M2 16 20 2V0h-2L0 14v2h2Z"
+                        fill="#fff"
+                      />
+                      <path
+                        d="M20 0v1L1 16H0v-1L19 0h1Z"
+                        fill="#C7270A"
+                      />
+                      <path
+                        d="M8 0h4v18H8z"
+                        fill="#fff"
+                      />
+                      <path
+                        d="M20 6v4H0V6z"
+                        fill="#fff"
+                      />
+                      <path
+                        d="M9 0h2v18H9z"
+                        fill="#C7270A"
+                      />
+                      <path
+                        d="M20 7v2H0V7z"
+                        fill="#C7270A"
+                      />
+                    </g>
+                    <defs>
+                      <clippath
+                        id="a"
+                      >
+                        <path
+                          d="M0 0h20v16H0z"
+                          fill="#fff"
+                        />
+                      </clippath>
+                    </defs>
+                  </svg>
+                  <span
+                    class="typography subheading3"
+                  >
+                    Eng
+                  </span>
+                </button>
+              </div>
+              <button
+                aria-label="Login"
+                class="horizontalNavOnly item"
+              >
+                <svg
+                  class="svgIcon inherit"
+                  data-test-id="DealerIcon"
+                  focusable="false"
+                  style="font-size: 24px;"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8 15L16 15C17.1046 15 18 15.8954 18 17L18 20H6V17C6 15.8954 6.89543 15 8 15ZM4 17C4 14.7909 5.79086 13 8 13L16 13C18.2091 13 20 14.7909 20 17L20 20L20 22H18H6H4L4 20V17ZM15 7C15 8.65685 13.6569 10 12 10C10.3431 10 9 8.65685 9 7C9 5.34315 10.3431 4 12 4C13.6569 4 15 5.34315 15 7ZM17 7C17 9.76142 14.7614 12 12 12C9.23858 12 7 9.76142 7 7C7 4.23858 9.23857 2 12 2C14.7614 2 17 4.23858 17 7Z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <span
+                  class="typography subheading3"
+                >
+                  Login
+                </span>
+              </button>
+              <a
+                aria-label="Call us"
+                class="desktopOnly item asideItem"
+                href="tel:00493030809241"
+              >
+                <svg
+                  class="svgIcon inherit"
+                  data-test-id="CallIcon"
+                  focusable="false"
+                  style="font-size: 24px;"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M3.1997 5.65687C3.78748 4.75803 4.48089 4.02785 5.34671 3.38269C6.56003 2.4786 8.14038 2.83002 9.05002 3.79923L10.6766 5.53237C11.712 6.63557 11.7639 8.33711 10.7977 9.50134L9.93765 10.5376C10.5994 11.5911 11.092 12.2278 11.657 12.7528C12.2287 13.2841 12.9158 13.7399 14.0277 14.3837L14.7451 13.5297C15.8375 12.2294 17.7905 12.0943 19.0515 13.2318L20.4249 14.4707C21.5633 15.4976 21.7442 17.2177 20.8444 18.459L20.3888 19.0875C19.3009 20.5882 17.3757 21.4787 15.4512 20.8997C11.6266 19.7492 8.48388 17.5237 6.28924 14.9975C4.11242 12.4917 2.79099 9.59581 2.77788 7.06731C2.77522 6.55395 2.93219 6.06594 3.1997 5.65687ZM6.54172 4.98642C5.85853 5.4955 5.32906 6.05494 4.87357 6.75148C4.80714 6.85306 4.77735 6.96016 4.77786 7.05694C4.78767 8.95155 5.81626 11.4034 7.79907 13.6858C9.76405 15.9477 12.5905 17.9507 16.0273 18.9845C16.9922 19.2748 18.0863 18.8561 18.7695 17.9137L19.2251 17.2852C19.525 16.8714 19.4647 16.2981 19.0853 15.9557L17.7119 14.7169C17.2916 14.3377 16.6406 14.3828 16.2764 14.8162L15.5566 15.673C14.9383 16.409 13.8752 16.6062 13.0333 16.1189C11.8906 15.4576 11.0402 14.9098 10.2955 14.2179C9.54499 13.5204 8.94302 12.7154 8.23583 11.5883C7.77508 10.854 7.85339 9.91726 8.39463 9.26513L9.25867 8.22405C9.58075 7.83597 9.56345 7.26879 9.21832 6.90106L7.5917 5.16792C7.2486 4.80235 6.79628 4.79674 6.54172 4.98642Z"
+                  />
+                </svg>
+                <span
+                  class="typography subheading3"
+                >
+                  Call us
+                </span>
+              </a>
+              <button
+                aria-label="Navigation menu"
+                class="notHorizontalNav item"
+              >
+                <svg
+                  class="svgIcon inherit"
+                  data-test-id="HamburgerIcon"
+                  focusable="false"
+                  style="font-size: 24px;"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M2 4H22V6L2 6V4ZM2 11L22 11V13L2 13V11ZM22 18L2 18V20H22V18Z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="navWrapper "
+        >
+          <nav
+            class="nav"
+            data-test-id="undefined-navigation"
+            role="navigation"
+          >
+            <ul
+              aria-label="Main navigation"
+              role="menubar"
+              tabindex="0"
+            >
+              <li
+                class=" "
+              >
+                <a
+                  class="navItem "
+                  href="#used-cars"
+                  id="nav-item-Used-cars"
+                  role="menuitem"
+                >
+                  <span
+                    class="typography button2"
+                  >
+                    Used cars
+                  </span>
+                </a>
+              </li>
+              <li
+                class=" "
+              >
+                <a
+                  class="navItem "
+                  href="#new-cars"
+                  id="nav-item-New-cars"
+                  role="menuitem"
+                >
+                  <span
+                    class="typography button2"
+                  >
+                    New cars
+                  </span>
+                </a>
+              </li>
+              <li
+                class=" "
+              >
+                <button
+                  aria-expanded="false"
+                  aria-haspopup="true"
+                  aria-label="Car reviews - Press the Space key to show sub-menus."
+                  class="navItem "
+                  id="nav-item-Car-reviews"
+                  role="menuitem"
+                >
+                  <span
+                    class="typography button2"
+                  >
+                    Car reviews
+                  </span>
+                  <svg
+                    class="svgIcon inherit"
+                    data-test-id="ChevronDownIcon"
+                    focusable="false"
+                    style="font-size: 24px;"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      clip-rule="evenodd"
+                      d="M12.0711 14.7279L5.70718 8.36392L4.29297 9.77814L12.0711 17.5563L19.8493 9.77814L18.4351 8.36392L12.0711 14.7279Z"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+                <div
+                  aria-hidden="true"
+                  aria-label="Car reviews sub-menu"
+                  class="collapse collapse"
+                  style="height: 0px;"
+                >
+                  <div
+                    class="row component left gutter-tablet-l-24 gutter-desktop-24 subNav"
+                  >
+                    <div
+                      class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-12 width-desktop-12 subNavGroup fullWidth"
+                    >
+                      <span
+                        role="heading"
+                      >
+                        Toutes les voitures d'occasion
+                      </span>
+                      <ul
+                        aria-label="Toutes les voitures d'occasion menu"
+                        role="menu"
+                      >
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#Audi-Q3-Sportback"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              Audi Q3 Sportback
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#Audi-a1"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              Audi A1
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#BMW-3-Series"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              BMW 3 Series
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#BMW-2-Series"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              BMW 2 Series
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#BMW-5-Series"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              BMW 5 Series
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#BMW-7-Series"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              BMW 7 Series
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#BMW-x5-Series"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              BMW X5 Series
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                class=" "
+              >
+                <button
+                  aria-expanded="false"
+                  aria-haspopup="true"
+                  aria-label="Locations - Press the Space key to show sub-menus."
+                  class="navItem "
+                  id="nav-item-Locations"
+                  role="menuitem"
+                >
+                  <span
+                    class="typography button2"
+                  >
+                    Locations
+                  </span>
+                  <svg
+                    class="svgIcon inherit"
+                    data-test-id="ChevronDownIcon"
+                    focusable="false"
+                    style="font-size: 24px;"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      clip-rule="evenodd"
+                      d="M12.0711 14.7279L5.70718 8.36392L4.29297 9.77814L12.0711 17.5563L19.8493 9.77814L18.4351 8.36392L12.0711 14.7279Z"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+                <div
+                  aria-hidden="true"
+                  aria-label="Locations sub-menu"
+                  class="collapse collapse"
+                  style="height: 0px;"
+                >
+                  <div
+                    class="row component left gutter-tablet-l-24 gutter-desktop-24 subNav"
+                  >
+                    <div
+                      class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-4 width-desktop-4 subNavGroup thirdWidth"
+                    >
+                      <span
+                        role="heading"
+                      >
+                        Recent Locations
+                      </span>
+                      <ul
+                        aria-label="Recent Locations menu"
+                        role="menu"
+                      >
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#London"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              London
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#London"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              London 2
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#London"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              London 3
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div
+                      class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-6 width-desktop-6 subNavGroup halfWidth"
+                    >
+                      <span
+                        role="heading"
+                      >
+                        Popular Locations
+                      </span>
+                      <ul
+                        aria-label="Popular Locations menu"
+                        role="menu"
+                      >
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#London"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              London
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#London"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              London 2
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#London"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              London 3
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#London"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              London 4
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#London"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              London 5
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#London"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              London 6
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                      <a
+                        class="showAll"
+                        href="#locations"
+                        tabindex="-1"
+                      >
+                        Show all
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                class=" "
+              >
+                <a
+                  class="navItem "
+                  href="#Online-Bestellung"
+                  id="nav-item-Online-Bestellung"
+                  role="menuitem"
+                >
+                  <span
+                    class="typography button2"
+                  >
+                    Online Bestellung
+                  </span>
+                </a>
+              </li>
+              <li
+                class=" "
+              >
+                <a
+                  class="navItem "
+                  href="#Coches-de-segunda-mano"
+                  id="nav-item-Coches-de-segunda-mano"
+                  role="menuitem"
+                >
+                  <span
+                    class="typography button2"
+                  >
+                    Coches de segunda mano
+                  </span>
+                </a>
+              </li>
+              <li
+                class=" "
+              >
+                <button
+                  aria-expanded="false"
+                  aria-haspopup="true"
+                  aria-label="News & Guides - Press the Space key to show sub-menus."
+                  class="navItem "
+                  id="nav-item-News-&-Guides"
+                  role="menuitem"
+                >
+                  <span
+                    class="typography button2"
+                  >
+                    News & Guides
+                  </span>
+                  <svg
+                    class="svgIcon inherit"
+                    data-test-id="ChevronDownIcon"
+                    focusable="false"
+                    style="font-size: 24px;"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      clip-rule="evenodd"
+                      d="M12.0711 14.7279L5.70718 8.36392L4.29297 9.77814L12.0711 17.5563L19.8493 9.77814L18.4351 8.36392L12.0711 14.7279Z"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+                <div
+                  aria-hidden="true"
+                  aria-label="News & Guides sub-menu"
+                  class="collapse collapse"
+                  style="height: 0px;"
+                >
+                  <div
+                    class="row component left gutter-tablet-l-24 gutter-desktop-24 subNav"
+                  >
+                    <div
+                      class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-4 width-desktop-4 subNavGroup thirdWidth"
+                    >
+                      <span
+                        role="heading"
+                      >
+                        Recent News
+                      </span>
+                      <ul
+                        aria-label="Recent News menu"
+                        role="menu"
+                      >
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#London"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              London
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#London"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              London 2
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#London"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              London 3
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div
+                      class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-4 width-desktop-4 subNavGroup thirdWidth"
+                    >
+                      <span
+                        role="heading"
+                      >
+                        Deals und Specials
+                      </span>
+                      <ul
+                        aria-label="Deals und Specials menu"
+                        role="menu"
+                      >
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#London"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              London
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#London"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              London 2
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#London"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              London 3
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#London"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              London 4
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#London"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              London 5
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                      <a
+                        class="showAll"
+                        href="#locations"
+                        tabindex="-1"
+                      >
+                        Show all
+                      </a>
+                    </div>
+                    <div
+                      class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-4 width-desktop-4 subNavGroup thirdWidth"
+                    >
+                      <span
+                        role="heading"
+                      >
+                        Guides
+                      </span>
+                      <ul
+                        aria-label="Guides menu"
+                        role="menu"
+                      >
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#London"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              Hasta 1.200€ de bonificación
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#London"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              Fahrzeuge zum online finanzieren
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#London"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              Alles über Elektrofahrzeuge
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#London"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              London 4
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#London"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              London 5
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                      <a
+                        class="showAll"
+                        href="#locations"
+                        tabindex="-1"
+                      >
+                        Show all
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="lastNavItem "
+              >
+                <button
+                  aria-expanded="false"
+                  aria-haspopup="true"
+                  aria-label="Blog - Press the Space key to show sub-menus."
+                  class="navItem "
+                  id="nav-item-Blog"
+                  role="menuitem"
+                >
+                  <span
+                    class="typography button2"
+                  >
+                    Blog
+                  </span>
+                  <svg
+                    class="svgIcon inherit"
+                    data-test-id="ChevronDownIcon"
+                    focusable="false"
+                    style="font-size: 24px;"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      clip-rule="evenodd"
+                      d="M12.0711 14.7279L5.70718 8.36392L4.29297 9.77814L12.0711 17.5563L19.8493 9.77814L18.4351 8.36392L12.0711 14.7279Z"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+                <div
+                  aria-hidden="true"
+                  aria-label="Blog sub-menu"
+                  class="collapse collapse"
+                  style="height: 0px;"
+                >
+                  <div
+                    class="row component left gutter-tablet-l-24 gutter-desktop-24 subNav"
+                  >
+                    <div
+                      class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-4 width-desktop-4 subNavGroup thirdWidth"
+                    >
+                      <span
+                        role="heading"
+                      >
+                        Recently Viewed
+                      </span>
+                      <ul
+                        aria-label="Recently Viewed menu"
+                        role="menu"
+                      >
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#London"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              London
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#London"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              London 2
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#London"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              London 3
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div
+                      class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-6 width-desktop-6 subNavGroup halfWidth"
+                    >
+                      <span
+                        role="heading"
+                      >
+                        Articles
+                      </span>
+                      <ul
+                        aria-label="Articles menu"
+                        role="menu"
+                      >
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem hasCaption"
+                            href="#London"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              London
+                            </span>
+                            <q
+                              class="typography body4"
+                            >
+                              Everything you need to know about the UKs electric
+                            </q>
+                          </a>
+                        </li>
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem hasCaption"
+                            href="#London"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              London 2
+                            </span>
+                            <q
+                              class="typography body4"
+                            >
+                              Everything you need to know
+                            </q>
+                          </a>
+                        </li>
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem hasCaption"
+                            href="#London"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              London 3
+                            </span>
+                            <q
+                              class="typography body4"
+                            >
+                              Everything you need to know about the UKs electric car market
+                            </q>
+                          </a>
+                        </li>
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem hasCaption"
+                            href="#London"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              London 4
+                            </span>
+                            <q
+                              class="typography body4"
+                            >
+                              Que faut-il regarder avant d'acheter une voiture d'occasion ?
+                            </q>
+                          </a>
+                        </li>
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem hasCaption"
+                            href="#London"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              London 5
+                            </span>
+                            <q
+                              class="typography body4"
+                            >
+                              Everything you need to know
+                            </q>
+                          </a>
+                        </li>
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem hasCaption"
+                            href="#London"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              London 6
+                            </span>
+                            <q
+                              class="typography body4"
+                            >
+                              Everything you need to know about the UKs electric car market
+                            </q>
+                          </a>
+                        </li>
+                      </ul>
+                      <a
+                        class="showAll"
+                        href="#locations"
+                        tabindex="-1"
+                      >
+                        Show all
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                class=" burgerMenuOnly"
+              >
+                <button
+                  aria-expanded="false"
+                  aria-haspopup="true"
+                  aria-label="English - Press the Space key to show sub-menus."
+                  class="navItem "
+                  id="nav-item-English"
+                  role="menuitem"
+                >
+                  <span
+                    class="typography button2"
+                  >
+                    English
+                  </span>
+                  <svg
+                    class="svgIcon inherit"
+                    data-test-id="ChevronDownIcon"
+                    focusable="false"
+                    style="font-size: 24px;"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      clip-rule="evenodd"
+                      d="M12.0711 14.7279L5.70718 8.36392L4.29297 9.77814L12.0711 17.5563L19.8493 9.77814L18.4351 8.36392L12.0711 14.7279Z"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+                <div
+                  aria-hidden="true"
+                  aria-label="English sub-menu"
+                  class="collapse collapse"
+                  style="height: 0px;"
+                >
+                  <div
+                    class="row component left gutter-tablet-l-24 gutter-desktop-24 subNav"
+                  >
+                    <div
+                      class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-12 width-desktop-12 subNavGroup fullWidth"
+                    >
+                      <span
+                        role="heading"
+                      >
+                        Select Language
+                      </span>
+                      <ul
+                        aria-label="Select Language menu"
+                        role="menu"
+                      >
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#de-DE"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              Deutsch
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#en-GB"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              English
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#fr-FR"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              Français
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#es-ES"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              Español
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#nl-NL"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              Nederlands
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                class=" burgerMenuOnly"
+              >
+                <a
+                  class="navItem "
+                  id="nav-item-Login"
+                  role="menuitem"
+                >
+                  <span
+                    class="typography button2"
+                  >
+                    Login
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <aside
+              class="auxDetails"
+            >
+              <p
+                class="auxContact"
+              >
+                <span
+                  class="typography caption2"
+                >
+                  Call Us at
+                </span>
+                <a
+                  href="tel:00493030809241"
+                >
+                  00493030809241
+                </a>
+              </p>
+              <p
+                class="auxContact"
+              >
+                <span
+                  class="typography caption2"
+                >
+                  Email Us at
+                </span>
+                <a
+                  href="mailto:support@heycar.com"
+                >
+                  support@heycar.com
+                </a>
+              </p>
+            </aside>
+          </nav>
+        </div>
+      </header>
+    </div>
+  </body>,
+  "container": <div>
+    <header
+      class="header"
+    >
+      <div
+        class="container headerInner"
+      >
+        <div
+          class="row component between gutter-mobile-8 gutter-tablet-12 gutter-desktop-24"
+        >
+          <div
+            class="col component colLeft"
+          >
+            <a
+              aria-label="heycar logo"
+              class="logo"
+              href="heycar.com"
+            >
+              <svg
+                aria-hidden="true"
+                class="logo"
+                style="font-size: 65px;"
+                viewBox="0 0 199 65"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="dark_bg"
+                  clip-rule="evenodd"
+                  d="M11.5664 0.638184H0.457294V49.0283H11.5664V32.1802C11.5664 30.2074 11.9766 28.6943 12.8012 27.645C13.6237 26.5958 14.7946 26.0701 16.318 26.0701C19.1566 26.0701 20.5769 27.9625 20.5769 31.7473V49.0262H31.6859V29.6487C31.6859 25.2455 30.7501 21.9039 28.8783 19.6199C27.0065 17.3358 24.24 16.1938 20.5789 16.1938C18.602 16.1938 16.8333 16.5751 15.2708 17.3358C13.7061 18.0965 12.4713 19.1767 11.5664 20.5743V0.638184ZM44.8111 48.0079C47.6909 49.3437 50.5007 50.0137 54.3679 50.0137C56.7118 50.0137 58.969 49.8075 61.1706 49.3952C63.3723 48.985 66.3593 47.977 68.0476 47.1957L65.3842 39.5807C63.9866 40.2404 63.028 40.4486 61.2181 40.8176C59.4061 41.1866 57.6167 41.3721 55.848 41.3721C53.0919 41.3721 51.1335 40.8052 49.5503 39.9188C47.9651 39.0345 47.2374 37.7935 46.6623 35.9423H67.6456C67.8909 34.8333 68.0146 33.5572 68.0146 32.1163C68.0146 27.2224 66.6066 23.3428 63.7887 20.4836C60.9686 17.6244 57.1735 16.1938 52.4013 16.1938C49.068 16.1938 46.1366 16.9338 43.6072 18.416C41.0779 19.8961 39.1319 21.9143 37.7754 24.4642C36.417 27.0163 35.7387 29.8961 35.7387 33.1037C35.7387 36.6432 36.5303 39.6776 38.1135 42.207C39.6988 44.7364 41.9313 46.6721 44.8111 48.0079ZM55.9511 25.39C56.9179 26.3362 57.4828 27.6328 57.6477 29.2778V29.2799H46.4788C47.1777 25.7425 49.0907 23.9717 52.2179 23.9717C53.7392 23.9717 54.9843 24.4438 55.9511 25.39ZM75.4357 64.7013C74.0793 64.7013 72.7518 64.5673 71.4551 64.2993C70.1585 64.0314 68.4166 63.4768 67.6353 63.0254L70.7274 54.1839C71.9622 54.5817 72.391 54.6415 74.0773 54.6415C75.5574 54.6415 76.7303 54.2602 77.5941 53.4995C78.4578 52.7388 79.3009 51.3721 80.1235 49.3972L81.1109 47.1132L68.7753 17.1832H80.4945L87.0354 35.8825L92.8982 17.1832H104.685L91.3562 50.3228C89.7916 54.1901 88.2805 57.142 86.821 59.1787C85.3616 61.2154 83.7454 62.644 81.9767 63.4686C80.208 64.289 78.029 64.7013 75.4357 64.7013ZM141.288 47.946C143.469 49.3251 145.937 50.0137 148.695 50.0137C150.752 50.0137 152.593 49.6117 154.215 48.8098C155.84 48.0058 157.126 46.8658 158.072 45.3837L158.196 49.0242H168.625V17.1812H158.196L158.072 20.8835C157.124 19.4034 155.85 18.2531 154.246 17.4286C152.641 16.6061 150.892 16.1938 149 16.1938C146.12 16.1938 143.548 16.9668 141.286 18.5088C139.025 20.0528 137.277 22.1101 136.042 24.6807C134.807 27.2513 134.191 30.1023 134.191 33.2274C134.191 36.5607 134.828 39.5024 136.104 42.0524C137.38 44.6024 139.107 46.5669 141.288 47.946ZM156.347 38.1645C155.153 39.4818 153.611 40.1394 151.719 40.1394C149.827 40.1394 148.272 39.4818 147.06 38.1645C145.846 36.8473 145.24 35.161 145.24 33.1037C145.24 31.0464 145.846 29.3601 147.06 28.0429C148.272 26.7277 149.827 26.068 151.719 26.068C153.611 26.068 155.153 26.7277 156.347 28.0429C157.541 29.3601 158.136 31.0485 158.136 33.1037C158.136 35.161 157.541 36.8473 156.347 38.1645ZM174.902 17.1812H185.702L185.826 21.9328C186.607 20.2054 187.677 18.8778 189.035 17.9522C190.394 17.0266 191.977 16.5649 193.787 16.5649C195.184 16.5649 197.326 17.0864 198.355 17.5379L195.762 27.4369C194.659 27.0679 193.931 26.9318 192.49 26.9318C190.35 26.9318 188.736 27.641 187.646 29.0613C186.555 30.4795 186.011 32.5905 186.011 35.3878V49.0263H174.902V17.1812ZM117.825 38.1955C119.266 39.4097 121.259 40.0157 123.811 40.0157C125.527 40.0157 127.64 39.6426 129.534 39.1025L132.488 47.6637C131.233 48.2842 129.816 48.7933 128.219 49.1809C126.265 49.6529 124.279 49.89 122.263 49.89C118.808 49.89 115.753 49.2221 113.1 47.8842C110.447 46.5484 108.367 44.6251 106.866 42.1143C105.366 39.6055 104.615 36.6432 104.615 33.2274C104.615 30.0178 105.335 27.14 106.776 24.588C108.217 22.038 110.272 20.0198 112.948 18.5397C115.623 17.0576 118.707 16.3175 122.206 16.3175C124.139 16.3175 126.114 16.5422 128.13 16.9957C129.99 17.4142 131.538 17.9419 132.803 18.5686L129.775 27.2266C127.924 26.6453 125.576 26.1918 123.626 26.1918C121.156 26.1918 119.212 26.8102 117.794 28.0429C116.374 29.2777 115.665 30.9661 115.665 33.1038C115.665 35.2848 116.384 36.9834 117.825 38.1955Z"
+                  fill-rule="evenodd"
+                />
+                <path
+                  class="undermark_dark_bg"
+                  clip-rule="evenodd"
+                  d="M196.892 54.9758V63.8194L105.684 63.8194V54.9758L196.892 54.9758Z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </a>
+            <div
+              class="searchWrapper "
+            >
+              <button
+                aria-label="close search"
+                class="closeSearch"
+              >
+                <svg
+                  class="svgIcon inherit"
+                  data-test-id="CloseIcon"
+                  focusable="false"
+                  style="font-size: 24px;"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M13.4142 12L20.7071 4.70709L19.2928 3.29288L12 10.5858L4.70706 3.29288L3.29285 4.70709L10.5857 12L3.29285 19.2929L4.70706 20.7071L12 13.4142L19.2928 20.7071L20.7071 19.2929L13.4142 12Z"
+                  />
+                </svg>
+              </button>
+              <input
+                aria-label="search-component"
+                style="min-width: 100%; height: 48px; padding: 0px 16px; background: rgb(18, 61, 130); color: rgb(255, 255, 255);"
+                value="This is a separate component"
+              />
+            </div>
+          </div>
+          <div
+            class="col component colRight"
+          >
+            <button
+              aria-label="Search"
+              class="notHorizontalNav item"
+            >
+              <svg
+                class="svgIcon inherit"
+                data-test-id="SearchIcon"
+                focusable="false"
+                style="font-size: 24px;"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16.7619 17.969C15.3146 19.1113 13.4869 19.793 11.5 19.793C6.80562 19.793 3.00004 15.9874 3.00004 11.293C3.00004 6.59855 6.80562 2.79297 11.5 2.79297C16.1945 2.79297 20 6.59855 20 11.293C20 13.2798 19.3183 15.1075 18.1761 16.5548L21.2072 19.5859L19.7929 21.0001L16.7619 17.969ZM18 11.293C18 14.8828 15.0899 17.793 11.5 17.793C7.91019 17.793 5.00004 14.8828 5.00004 11.293C5.00004 7.70312 7.91019 4.79297 11.5 4.79297C15.0899 4.79297 18 7.70312 18 11.293Z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <a
+              aria-label="Favorites"
+              class="item"
+              href="www.google.com"
+            >
+              <svg
+                class="svgIcon inherit"
+                data-test-id="HeartDefaultIcon"
+                focusable="false"
+                style="font-size: 24px;"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M2.55566 9.5808C2.55567 6.49861 5.05428 4 8.13647 4C9.63656 4 10.9981 4.59232 12.0001 5.55382C13.0022 4.59232 14.3637 4 15.8637 4C18.9459 4 21.4445 6.49861 21.4446 9.5808C21.4446 10.1569 21.357 10.7142 21.1937 11.2393C20.4913 13.6367 18.4212 15.9475 16.5686 17.5998C15.6222 18.4439 14.6903 19.1533 13.9411 19.6566C13.5678 19.9074 13.2284 20.1148 12.9474 20.2636C12.8079 20.3375 12.6687 20.4045 12.5381 20.4555C12.4395 20.494 12.2328 20.5707 12.0001 20.5707C11.7674 20.5707 11.5607 20.494 11.4621 20.4555C11.3315 20.4045 11.1923 20.3375 11.0529 20.2636C10.7718 20.1148 10.4324 19.9074 10.0591 19.6566C9.30993 19.1533 8.37807 18.4439 7.43165 17.5998C5.57905 15.9475 3.50893 13.6367 2.80651 11.2393C2.64325 10.7142 2.55566 10.1569 2.55566 9.5808ZM8.13647 5.88889C6.09748 5.88889 4.44456 7.54181 4.44455 9.5808C4.44455 9.96671 4.50344 10.3371 4.61205 10.6844L4.61478 10.6931L4.61734 10.7019C5.16048 12.5646 6.88398 14.5803 8.68893 16.1901C9.57241 16.9781 10.4363 17.6344 11.1125 18.0887C11.4518 18.3167 11.7325 18.4861 11.9369 18.5944C11.9596 18.6064 11.9806 18.6173 12.0001 18.6271C12.0196 18.6173 12.0406 18.6064 12.0633 18.5944C12.2677 18.4861 12.5484 18.3167 12.8877 18.0887C13.5639 17.6344 14.4278 16.9781 15.3113 16.1901C17.1162 14.5803 18.8397 12.5646 19.3829 10.7019L19.3854 10.6931L19.3882 10.6844C19.4968 10.3371 19.5557 9.96671 19.5557 9.5808C19.5557 7.54181 17.9027 5.88889 15.8637 5.88889C14.5805 5.88889 13.4496 6.5428 12.7866 7.53998L12.0001 8.72284L11.2136 7.53998C10.5506 6.5428 9.41971 5.88889 8.13647 5.88889ZM11.8233 18.7057C11.8233 18.7057 11.8282 18.7037 11.8371 18.7013C11.8275 18.7047 11.8233 18.7057 11.8233 18.7057ZM12.1631 18.7013C12.172 18.7037 12.177 18.7057 12.177 18.7057C12.177 18.7057 12.1727 18.7047 12.1631 18.7013Z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+              <span
+                class="typography subheading3"
+              >
+                Favorites
+              </span>
+            </a>
+            <div
+              class="langWrapper"
+            >
+              <button
+                aria-haspopup="menu"
+                aria-label="Select Language - Press the Space key to show sub-menus."
+                class="horizontalNavOnly item "
+              >
+                <svg
+                  class="svgIcon inherit"
+                  data-test-id="UKIcon"
+                  focusable="false"
+                  style="font-size: 24px;"
+                  viewBox="-2 -4 24 24"
+                >
+                  <g
+                    clip-path="url(#a)"
+                  >
+                    <path
+                      d="M0 0h20v16H0z"
+                      fill="#052962"
+                    />
+                    <path
+                      d="M18 16 0 2V0h2l18 14v2h-2Z"
+                      fill="#fff"
+                    />
+                    <path
+                      d="M0 0v1l19 15h1v-1L1 0H0Z"
+                      fill="#C7270A"
+                    />
+                    <path
+                      d="M2 16 20 2V0h-2L0 14v2h2Z"
+                      fill="#fff"
+                    />
+                    <path
+                      d="M20 0v1L1 16H0v-1L19 0h1Z"
+                      fill="#C7270A"
+                    />
+                    <path
+                      d="M8 0h4v18H8z"
+                      fill="#fff"
+                    />
+                    <path
+                      d="M20 6v4H0V6z"
+                      fill="#fff"
+                    />
+                    <path
+                      d="M9 0h2v18H9z"
+                      fill="#C7270A"
+                    />
+                    <path
+                      d="M20 7v2H0V7z"
+                      fill="#C7270A"
+                    />
+                  </g>
+                  <defs>
+                    <clippath
+                      id="a"
+                    >
+                      <path
+                        d="M0 0h20v16H0z"
+                        fill="#fff"
+                      />
+                    </clippath>
+                  </defs>
+                </svg>
+                <span
+                  class="typography subheading3"
+                >
+                  Eng
+                </span>
+              </button>
+            </div>
+            <button
+              aria-label="Login"
+              class="horizontalNavOnly item"
+            >
+              <svg
+                class="svgIcon inherit"
+                data-test-id="DealerIcon"
+                focusable="false"
+                style="font-size: 24px;"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M8 15L16 15C17.1046 15 18 15.8954 18 17L18 20H6V17C6 15.8954 6.89543 15 8 15ZM4 17C4 14.7909 5.79086 13 8 13L16 13C18.2091 13 20 14.7909 20 17L20 20L20 22H18H6H4L4 20V17ZM15 7C15 8.65685 13.6569 10 12 10C10.3431 10 9 8.65685 9 7C9 5.34315 10.3431 4 12 4C13.6569 4 15 5.34315 15 7ZM17 7C17 9.76142 14.7614 12 12 12C9.23858 12 7 9.76142 7 7C7 4.23858 9.23857 2 12 2C14.7614 2 17 4.23858 17 7Z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+              <span
+                class="typography subheading3"
+              >
+                Login
+              </span>
+            </button>
+            <a
+              aria-label="Call us"
+              class="desktopOnly item asideItem"
+              href="tel:00493030809241"
+            >
+              <svg
+                class="svgIcon inherit"
+                data-test-id="CallIcon"
+                focusable="false"
+                style="font-size: 24px;"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M3.1997 5.65687C3.78748 4.75803 4.48089 4.02785 5.34671 3.38269C6.56003 2.4786 8.14038 2.83002 9.05002 3.79923L10.6766 5.53237C11.712 6.63557 11.7639 8.33711 10.7977 9.50134L9.93765 10.5376C10.5994 11.5911 11.092 12.2278 11.657 12.7528C12.2287 13.2841 12.9158 13.7399 14.0277 14.3837L14.7451 13.5297C15.8375 12.2294 17.7905 12.0943 19.0515 13.2318L20.4249 14.4707C21.5633 15.4976 21.7442 17.2177 20.8444 18.459L20.3888 19.0875C19.3009 20.5882 17.3757 21.4787 15.4512 20.8997C11.6266 19.7492 8.48388 17.5237 6.28924 14.9975C4.11242 12.4917 2.79099 9.59581 2.77788 7.06731C2.77522 6.55395 2.93219 6.06594 3.1997 5.65687ZM6.54172 4.98642C5.85853 5.4955 5.32906 6.05494 4.87357 6.75148C4.80714 6.85306 4.77735 6.96016 4.77786 7.05694C4.78767 8.95155 5.81626 11.4034 7.79907 13.6858C9.76405 15.9477 12.5905 17.9507 16.0273 18.9845C16.9922 19.2748 18.0863 18.8561 18.7695 17.9137L19.2251 17.2852C19.525 16.8714 19.4647 16.2981 19.0853 15.9557L17.7119 14.7169C17.2916 14.3377 16.6406 14.3828 16.2764 14.8162L15.5566 15.673C14.9383 16.409 13.8752 16.6062 13.0333 16.1189C11.8906 15.4576 11.0402 14.9098 10.2955 14.2179C9.54499 13.5204 8.94302 12.7154 8.23583 11.5883C7.77508 10.854 7.85339 9.91726 8.39463 9.26513L9.25867 8.22405C9.58075 7.83597 9.56345 7.26879 9.21832 6.90106L7.5917 5.16792C7.2486 4.80235 6.79628 4.79674 6.54172 4.98642Z"
+                />
+              </svg>
+              <span
+                class="typography subheading3"
+              >
+                Call us
+              </span>
+            </a>
+            <button
+              aria-label="Navigation menu"
+              class="notHorizontalNav item"
+            >
+              <svg
+                class="svgIcon inherit"
+                data-test-id="HamburgerIcon"
+                focusable="false"
+                style="font-size: 24px;"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M2 4H22V6L2 6V4ZM2 11L22 11V13L2 13V11ZM22 18L2 18V20H22V18Z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="navWrapper "
+      >
+        <nav
+          class="nav"
+          data-test-id="undefined-navigation"
+          role="navigation"
+        >
+          <ul
+            aria-label="Main navigation"
+            role="menubar"
+            tabindex="0"
+          >
+            <li
+              class=" "
+            >
+              <a
+                class="navItem "
+                href="#used-cars"
+                id="nav-item-Used-cars"
+                role="menuitem"
+              >
+                <span
+                  class="typography button2"
+                >
+                  Used cars
+                </span>
+              </a>
+            </li>
+            <li
+              class=" "
+            >
+              <a
+                class="navItem "
+                href="#new-cars"
+                id="nav-item-New-cars"
+                role="menuitem"
+              >
+                <span
+                  class="typography button2"
+                >
+                  New cars
+                </span>
+              </a>
+            </li>
+            <li
+              class=" "
+            >
+              <button
+                aria-expanded="false"
+                aria-haspopup="true"
+                aria-label="Car reviews - Press the Space key to show sub-menus."
+                class="navItem "
+                id="nav-item-Car-reviews"
+                role="menuitem"
+              >
+                <span
+                  class="typography button2"
+                >
+                  Car reviews
+                </span>
+                <svg
+                  class="svgIcon inherit"
+                  data-test-id="ChevronDownIcon"
+                  focusable="false"
+                  style="font-size: 24px;"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M12.0711 14.7279L5.70718 8.36392L4.29297 9.77814L12.0711 17.5563L19.8493 9.77814L18.4351 8.36392L12.0711 14.7279Z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+              <div
+                aria-hidden="true"
+                aria-label="Car reviews sub-menu"
+                class="collapse collapse"
+                style="height: 0px;"
+              >
+                <div
+                  class="row component left gutter-tablet-l-24 gutter-desktop-24 subNav"
+                >
+                  <div
+                    class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-12 width-desktop-12 subNavGroup fullWidth"
+                  >
+                    <span
+                      role="heading"
+                    >
+                      Toutes les voitures d'occasion
+                    </span>
+                    <ul
+                      aria-label="Toutes les voitures d'occasion menu"
+                      role="menu"
+                    >
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#Audi-Q3-Sportback"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            Audi Q3 Sportback
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#Audi-a1"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            Audi A1
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#BMW-3-Series"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            BMW 3 Series
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#BMW-2-Series"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            BMW 2 Series
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#BMW-5-Series"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            BMW 5 Series
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#BMW-7-Series"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            BMW 7 Series
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#BMW-x5-Series"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            BMW X5 Series
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li
+              class=" "
+            >
+              <button
+                aria-expanded="false"
+                aria-haspopup="true"
+                aria-label="Locations - Press the Space key to show sub-menus."
+                class="navItem "
+                id="nav-item-Locations"
+                role="menuitem"
+              >
+                <span
+                  class="typography button2"
+                >
+                  Locations
+                </span>
+                <svg
+                  class="svgIcon inherit"
+                  data-test-id="ChevronDownIcon"
+                  focusable="false"
+                  style="font-size: 24px;"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M12.0711 14.7279L5.70718 8.36392L4.29297 9.77814L12.0711 17.5563L19.8493 9.77814L18.4351 8.36392L12.0711 14.7279Z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+              <div
+                aria-hidden="true"
+                aria-label="Locations sub-menu"
+                class="collapse collapse"
+                style="height: 0px;"
+              >
+                <div
+                  class="row component left gutter-tablet-l-24 gutter-desktop-24 subNav"
+                >
+                  <div
+                    class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-4 width-desktop-4 subNavGroup thirdWidth"
+                  >
+                    <span
+                      role="heading"
+                    >
+                      Recent Locations
+                    </span>
+                    <ul
+                      aria-label="Recent Locations menu"
+                      role="menu"
+                    >
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#London"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            London
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#London"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            London 2
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#London"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            London 3
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div
+                    class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-6 width-desktop-6 subNavGroup halfWidth"
+                  >
+                    <span
+                      role="heading"
+                    >
+                      Popular Locations
+                    </span>
+                    <ul
+                      aria-label="Popular Locations menu"
+                      role="menu"
+                    >
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#London"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            London
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#London"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            London 2
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#London"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            London 3
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#London"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            London 4
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#London"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            London 5
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#London"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            London 6
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                    <a
+                      class="showAll"
+                      href="#locations"
+                      tabindex="-1"
+                    >
+                      Show all
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li
+              class=" "
+            >
+              <a
+                class="navItem "
+                href="#Online-Bestellung"
+                id="nav-item-Online-Bestellung"
+                role="menuitem"
+              >
+                <span
+                  class="typography button2"
+                >
+                  Online Bestellung
+                </span>
+              </a>
+            </li>
+            <li
+              class=" "
+            >
+              <a
+                class="navItem "
+                href="#Coches-de-segunda-mano"
+                id="nav-item-Coches-de-segunda-mano"
+                role="menuitem"
+              >
+                <span
+                  class="typography button2"
+                >
+                  Coches de segunda mano
+                </span>
+              </a>
+            </li>
+            <li
+              class=" "
+            >
+              <button
+                aria-expanded="false"
+                aria-haspopup="true"
+                aria-label="News & Guides - Press the Space key to show sub-menus."
+                class="navItem "
+                id="nav-item-News-&-Guides"
+                role="menuitem"
+              >
+                <span
+                  class="typography button2"
+                >
+                  News & Guides
+                </span>
+                <svg
+                  class="svgIcon inherit"
+                  data-test-id="ChevronDownIcon"
+                  focusable="false"
+                  style="font-size: 24px;"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M12.0711 14.7279L5.70718 8.36392L4.29297 9.77814L12.0711 17.5563L19.8493 9.77814L18.4351 8.36392L12.0711 14.7279Z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+              <div
+                aria-hidden="true"
+                aria-label="News & Guides sub-menu"
+                class="collapse collapse"
+                style="height: 0px;"
+              >
+                <div
+                  class="row component left gutter-tablet-l-24 gutter-desktop-24 subNav"
+                >
+                  <div
+                    class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-4 width-desktop-4 subNavGroup thirdWidth"
+                  >
+                    <span
+                      role="heading"
+                    >
+                      Recent News
+                    </span>
+                    <ul
+                      aria-label="Recent News menu"
+                      role="menu"
+                    >
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#London"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            London
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#London"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            London 2
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#London"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            London 3
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div
+                    class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-4 width-desktop-4 subNavGroup thirdWidth"
+                  >
+                    <span
+                      role="heading"
+                    >
+                      Deals und Specials
+                    </span>
+                    <ul
+                      aria-label="Deals und Specials menu"
+                      role="menu"
+                    >
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#London"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            London
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#London"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            London 2
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#London"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            London 3
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#London"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            London 4
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#London"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            London 5
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                    <a
+                      class="showAll"
+                      href="#locations"
+                      tabindex="-1"
+                    >
+                      Show all
+                    </a>
+                  </div>
+                  <div
+                    class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-4 width-desktop-4 subNavGroup thirdWidth"
+                  >
+                    <span
+                      role="heading"
+                    >
+                      Guides
+                    </span>
+                    <ul
+                      aria-label="Guides menu"
+                      role="menu"
+                    >
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#London"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            Hasta 1.200€ de bonificación
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#London"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            Fahrzeuge zum online finanzieren
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#London"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            Alles über Elektrofahrzeuge
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#London"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            London 4
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#London"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            London 5
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                    <a
+                      class="showAll"
+                      href="#locations"
+                      tabindex="-1"
+                    >
+                      Show all
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li
+              class="lastNavItem "
+            >
+              <button
+                aria-expanded="false"
+                aria-haspopup="true"
+                aria-label="Blog - Press the Space key to show sub-menus."
+                class="navItem "
+                id="nav-item-Blog"
+                role="menuitem"
+              >
+                <span
+                  class="typography button2"
+                >
+                  Blog
+                </span>
+                <svg
+                  class="svgIcon inherit"
+                  data-test-id="ChevronDownIcon"
+                  focusable="false"
+                  style="font-size: 24px;"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M12.0711 14.7279L5.70718 8.36392L4.29297 9.77814L12.0711 17.5563L19.8493 9.77814L18.4351 8.36392L12.0711 14.7279Z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+              <div
+                aria-hidden="true"
+                aria-label="Blog sub-menu"
+                class="collapse collapse"
+                style="height: 0px;"
+              >
+                <div
+                  class="row component left gutter-tablet-l-24 gutter-desktop-24 subNav"
+                >
+                  <div
+                    class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-4 width-desktop-4 subNavGroup thirdWidth"
+                  >
+                    <span
+                      role="heading"
+                    >
+                      Recently Viewed
+                    </span>
+                    <ul
+                      aria-label="Recently Viewed menu"
+                      role="menu"
+                    >
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#London"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            London
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#London"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            London 2
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#London"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            London 3
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div
+                    class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-6 width-desktop-6 subNavGroup halfWidth"
+                  >
+                    <span
+                      role="heading"
+                    >
+                      Articles
+                    </span>
+                    <ul
+                      aria-label="Articles menu"
+                      role="menu"
+                    >
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem hasCaption"
+                          href="#London"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            London
+                          </span>
+                          <q
+                            class="typography body4"
+                          >
+                            Everything you need to know about the UKs electric
+                          </q>
+                        </a>
+                      </li>
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem hasCaption"
+                          href="#London"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            London 2
+                          </span>
+                          <q
+                            class="typography body4"
+                          >
+                            Everything you need to know
+                          </q>
+                        </a>
+                      </li>
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem hasCaption"
+                          href="#London"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            London 3
+                          </span>
+                          <q
+                            class="typography body4"
+                          >
+                            Everything you need to know about the UKs electric car market
+                          </q>
+                        </a>
+                      </li>
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem hasCaption"
+                          href="#London"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            London 4
+                          </span>
+                          <q
+                            class="typography body4"
+                          >
+                            Que faut-il regarder avant d'acheter une voiture d'occasion ?
+                          </q>
+                        </a>
+                      </li>
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem hasCaption"
+                          href="#London"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            London 5
+                          </span>
+                          <q
+                            class="typography body4"
+                          >
+                            Everything you need to know
+                          </q>
+                        </a>
+                      </li>
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem hasCaption"
+                          href="#London"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            London 6
+                          </span>
+                          <q
+                            class="typography body4"
+                          >
+                            Everything you need to know about the UKs electric car market
+                          </q>
+                        </a>
+                      </li>
+                    </ul>
+                    <a
+                      class="showAll"
+                      href="#locations"
+                      tabindex="-1"
+                    >
+                      Show all
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li
+              class=" burgerMenuOnly"
+            >
+              <button
+                aria-expanded="false"
+                aria-haspopup="true"
+                aria-label="English - Press the Space key to show sub-menus."
+                class="navItem "
+                id="nav-item-English"
+                role="menuitem"
+              >
+                <span
+                  class="typography button2"
+                >
+                  English
+                </span>
+                <svg
+                  class="svgIcon inherit"
+                  data-test-id="ChevronDownIcon"
+                  focusable="false"
+                  style="font-size: 24px;"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M12.0711 14.7279L5.70718 8.36392L4.29297 9.77814L12.0711 17.5563L19.8493 9.77814L18.4351 8.36392L12.0711 14.7279Z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+              <div
+                aria-hidden="true"
+                aria-label="English sub-menu"
+                class="collapse collapse"
+                style="height: 0px;"
+              >
+                <div
+                  class="row component left gutter-tablet-l-24 gutter-desktop-24 subNav"
+                >
+                  <div
+                    class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-12 width-desktop-12 subNavGroup fullWidth"
+                  >
+                    <span
+                      role="heading"
+                    >
+                      Select Language
+                    </span>
+                    <ul
+                      aria-label="Select Language menu"
+                      role="menu"
+                    >
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#de-DE"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            Deutsch
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#en-GB"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            English
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#fr-FR"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            Français
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#es-ES"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            Español
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#nl-NL"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            Nederlands
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li
+              class=" burgerMenuOnly"
+            >
+              <a
+                class="navItem "
+                id="nav-item-Login"
+                role="menuitem"
+              >
+                <span
+                  class="typography button2"
+                >
+                  Login
+                </span>
+              </a>
+            </li>
+          </ul>
+          <aside
+            class="auxDetails"
+          >
+            <p
+              class="auxContact"
+            >
+              <span
+                class="typography caption2"
+              >
+                Call Us at
+              </span>
+              <a
+                href="tel:00493030809241"
+              >
+                00493030809241
+              </a>
+            </p>
+            <p
+              class="auxContact"
+            >
+              <span
+                class="typography caption2"
+              >
+                Email Us at
+              </span>
+              <a
+                href="mailto:support@heycar.com"
+              >
+                support@heycar.com
+              </a>
+            </p>
+          </aside>
+        </nav>
+      </div>
+    </header>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
