@@ -26,7 +26,7 @@ describe('Button Snapshots tests', () => {
 
   it('should render whatsapp color', () => {
     expect(
-      render(<Button color="whatsapp" children="WhatsApp" />),
+      render(<Button children="WhatsApp" color="whatsapp" />),
     ).toMatchSnapshot();
   });
 

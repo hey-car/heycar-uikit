@@ -1,0 +1,67 @@
+import { Meta, Story, Props } from '@storybook/addon-docs';
+import { ComponentHeader, CssVars, TabContainer } from 'storybook/blocks';
+
+import Description from './Description.mdx';
+import Changelog from '../../CHANGELOG.md';
+import ReviewRating from '../ReviewRating';
+import { version } from '../../package.json';
+import styles from '!!raw-loader!../styles/default.module.css';
+
+<!-- Meta -->
+
+<Meta title="Components/Molecules/ReviewRating" component={ReviewRating} />
+
+export const ReviewRatingTemplate = args => {
+  return (
+    <div style={{ maxWidth: '700px', margin: '0 auto' }}>
+      <ReviewRating {...args} />
+    </div>
+  );
+};
+
+<!-- Canvas -->
+
+<Story
+  args={{
+    score: 9,
+    size: 'S',
+  }}
+  name="ReviewRating"
+>
+  {ReviewRatingTemplate.bind({})}
+</Story>
+
+<!-- Docs -->
+
+<ComponentHeader
+  name="ReviewRating"
+  version={version}
+  stage={1}
+  design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/Design-system?node-id=11667-213068&t=cdniDk8YJcZcnIwr-0"
+/>
+
+Review ratings are a 0 to 10 rating with a dial, used in connection with reviews.
+
+```tsx
+import ReviewRating from '@heycar-uikit/review-rating';
+```
+
+<!-- Description -->
+
+<TabContainer
+  tabs={[
+    { label: 'Description', component: <Description /> },
+    { label: 'Props', component: <Props of={ReviewRating} /> },
+    {
+      label: 'CSS tokens',
+      component: (
+        <CssVars
+          css={`
+            ${styles}
+          `}
+        />
+      ),
+    },
+    { label: 'Changelog', component: <Changelog /> },
+  ]}
+/>

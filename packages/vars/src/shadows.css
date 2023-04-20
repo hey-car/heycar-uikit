@@ -4,4 +4,5 @@
   --shadow-xs: 0 2px 4px rgba(2, 16, 39, 0.04);
   --shadow-s: 0 4px 8px rgba(2, 16, 39, 0.06);
   --shadow-sm: 0 6px 12px rgba(2, 16, 39, 0.1);
+  --shadow-m: 0 0 12px rgba(2, 16, 39, 0.16);
 }

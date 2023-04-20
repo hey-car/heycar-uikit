@@ -117,7 +117,7 @@
     position: relative;
     padding-left: var(--spacing-2);
 
-    &::before {
+    &:before {
       content: '';
       position: absolute;
       left: -8px;
