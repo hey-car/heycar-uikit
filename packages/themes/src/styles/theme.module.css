@@ -320,20 +320,20 @@
 }
 
 .xs {
-  box-shadow: 0 2px 4px rgba(29, 29, 29, 0.06);
+  box-shadow: var(--shadow-xs);
 }
 
 .s {
-  box-shadow: 0 2px 8px rgba(2, 16, 39, 0.08);
+  box-shadow: var(--shadow-s);
 }
 .m {
-  box-shadow: 0 0 12px rgba(29, 29, 29, 0.16);
+  box-shadow: var(--shadow-m);
 }
 .xl {
-  box-shadow: 0 -4px 8px rgba(29, 29, 29, 0.04);
+  box-shadow: var(--shadow-xl);
 }
 .xxl {
-  box-shadow: 2px 16px 64px rgba(29, 29, 29, 0.16);
+  box-shadow: var(--shadow-xxl);
 }
 .none {
   box-shadow: none !important;
