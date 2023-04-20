@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { act, renderHook } from '@testing-library/react-hooks';
 
 import { useLangList } from '../hooks/useLangList';
@@ -106,16 +107,19 @@ describe('useLangList', () => {
   it('should switch isLangListOpen between true and false when pressing space on keyboard', () => {
     const { result } = renderHook(() => useLangList());
 
+    // had to use the TS Ignores because i cant/no point in mocking the whole keyboard event obj
+    const keyboardEvent = { code: 'Space', preventDefault: jest.fn() };
+
     act(() => {
       // @ts-ignore
-      result.current.keyboardOpen({ code: 'Space', preventDefault: jest.fn() });
+      result.current.keyboardOpen(keyboardEvent);
     });
 
     expect(result.current.isLangListOpen).toBe(true);
 
     act(() => {
       // @ts-ignore
-      result.current.keyboardOpen({ code: 'Space', preventDefault: jest.fn() });
+      result.current.keyboardOpen(keyboardEvent);
     });
 
     expect(result.current.isLangListOpen).toBe(false);
