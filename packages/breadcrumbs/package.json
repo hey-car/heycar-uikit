@@ -16,9 +16,7 @@
     "typescript",
     "ui-components",
     "design-systems",
-    "reviews",
-    "rating",
-    "review-rating"
+    "breadcrumbs"
   ],
   "repository": {
     "type": "git",
