@@ -46,15 +46,19 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
     },
     ref,
   ) => {
+    // State items
     const [isNavTrayOpen, setIsNavTrayOpen] = useState(false);
     const [activeNavItem, setActiveNavItem] = useState<string | undefined>(
       undefined,
     );
     const [isSearchOpen, setIsSearchOpen] = useState(false);
+
+    // Link component
     const Link = (LinkComponent || DefaultLinkComponent) as (
       props: HeaderLinkProps,
     ) => JSX.Element;
 
+    // Header items
     const { hasSearch, hasFaves, hasLang, hasAccount, hasCall } =
       hasHeaderItems(
         searchItemConfig,
@@ -63,14 +67,16 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
         accountItemConfig,
         callItemConfig,
       );
+
+    // Lang
     const currentLang = hasLang
       ? getCurrentLang(langItemConfig!.currentLang, langItemConfig!.options)
       : undefined;
     const LangIco = currentLang?.icon;
-    // TODO: pass hasLang into this? dont need this stuff if no lang
     const { isLangListOpen, keyboardOpen, setIsFocused, setIsHovering } =
       useLangList();
 
+    // Event handlers
     const handleSearchToggle = (newState: boolean) => {
       setIsSearchOpen(newState);
       if (searchItemConfig?.onClick) searchItemConfig.onClick(newState);
@@ -96,7 +102,7 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
                   }`}
                 >
                   <button
-                    aria-label={searchItemConfig!.label}
+                    aria-label={locale.closeSearchLabel}
                     className={styles.closeSearch}
                     onClick={() => handleSearchToggle(false)}
                   >

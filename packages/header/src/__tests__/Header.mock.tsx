@@ -29,9 +29,10 @@ const defaultData: HeaderProps = {
   searchItemConfig: {
     Component: (
       <input
+        aria-label="search-component"
         defaultValue="This is a separate component"
         style={{
-          minWidth: '424px',
+          minWidth: '100%',
           height: '48px',
           padding: '0 16px',
           border: 'none',

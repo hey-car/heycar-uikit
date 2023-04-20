@@ -1,6 +1,7 @@
 import { LangOption } from './Header.types';
 
 const DEFAULT_LOCALE = {
+  closeSearchLabel: 'close search',
   logoLabel: 'heycar logo',
   langListHeading: 'Select Language',
   burgerMenuButtonLabel: 'Navigation menu',

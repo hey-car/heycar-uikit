@@ -47,7 +47,7 @@ Object {
                 class="searchWrapper "
               >
                 <button
-                  aria-label="Search"
+                  aria-label="close search"
                   class="closeSearch"
                 >
                   <svg
@@ -63,7 +63,8 @@ Object {
                   </svg>
                 </button>
                 <input
-                  style="min-width: 424px; height: 48px; padding: 0px 16px; background: rgb(18, 61, 130); color: rgb(255, 255, 255);"
+                  aria-label="search-component"
+                  style="min-width: 100%; height: 48px; padding: 0px 16px; background: rgb(18, 61, 130); color: rgb(255, 255, 255);"
                   value="This is a separate component"
                 />
               </div>
@@ -1417,7 +1418,7 @@ Object {
               class="searchWrapper "
             >
               <button
-                aria-label="Search"
+                aria-label="close search"
                 class="closeSearch"
               >
                 <svg
@@ -1433,7 +1434,8 @@ Object {
                 </svg>
               </button>
               <input
-                style="min-width: 424px; height: 48px; padding: 0px 16px; background: rgb(18, 61, 130); color: rgb(255, 255, 255);"
+                aria-label="search-component"
+                style="min-width: 100%; height: 48px; padding: 0px 16px; background: rgb(18, 61, 130); color: rgb(255, 255, 255);"
                 value="This is a separate component"
               />
             </div>
