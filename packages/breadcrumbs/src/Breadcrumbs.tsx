@@ -34,7 +34,6 @@ const Breadcrumbs: FC<BreadcrumbsProps> = ({
     >
       {breadcrumbs &&
         breadcrumbs.map((breadcrumb, i) => {
-          console.log(i, breadcrumbs.length);
           if (breadcrumb.link && i + 1 !== breadcrumbs.length) {
             return (
               // eslint-disable-next-line react/no-array-index-key

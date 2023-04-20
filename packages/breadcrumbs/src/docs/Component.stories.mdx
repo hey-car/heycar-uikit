@@ -20,28 +20,31 @@ import Changelog from '../../CHANGELOG.md';
   }}
 />
 
-export const BreadcrumbsTemplate = args => (
-  <Breadcrumbs
-    breadcrumbs={[
-      {
-        link: '/',
-        title: 'Home',
-      },
-      {
-        link: '/vw',
-        title: 'VW',
-      },
-      {
-        link: '/ford',
-        title: 'Ford',
-      },
-    ]}
-  />
-);
+export const BreadcrumbsTemplate = args => <Breadcrumbs {...args} />;
 
 <!-- Canvas -->
 
-<Story parameters={{ controls: { disable: true } }} name="Breadcrumbs">
+<Story
+  args={{
+    breadcrumbs: [
+      {
+        link: '#breadcrumbs',
+        title: 'Breadcrumb Default',
+      },
+      {
+        link: '#breadcrumb',
+        title: 'Breadcrumb Default',
+      },
+      {
+        link: '#breadcrumb',
+        title: 'Breadcrumb Current',
+      },
+    ],
+    dataTestId: 'breadcrumbs-test',
+  }}
+  parameters={{ controls: { disable: true } }}
+  name="Breadcrumbs"
+>
   {BreadcrumbsTemplate.bind({})}
 </Story>
 
