@@ -1,9 +1,8 @@
-//NOTE: This has been moved to theme package. Please update references and remove this version when possible
 import { act, renderHook } from '@testing-library/react-hooks';
 
 import useBreakpoint, {
   RESETTED_BREAKPOINTS,
-} from '../../hooks/useBreakpoint.hook';
+} from '../hooks/useBreakpoint.hook';
 
 function setWidth(width: number) {
   Object.defineProperty(window, 'innerWidth', {

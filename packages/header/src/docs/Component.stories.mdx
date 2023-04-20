@@ -1,0 +1,35 @@
+import { Meta, Story } from '@storybook/addon-docs';
+import { ComponentHeader } from 'storybook/blocks';
+
+import { defaultData } from './story.constants';
+import Header from '../Header';
+import { version } from '../../package.json';
+
+<!-- Meta -->
+
+<Meta title="Components/Organisms/Header" component={Header} />
+
+export const HeaderTemplate = args => <Header {...args} />;
+
+<!-- Canvas -->
+
+<Story name="Header" args={defaultData}>
+  {HeaderTemplate.bind({})}
+</Story>
+
+<!-- Docs -->
+
+<ComponentHeader
+  name="Header"
+  version={version}
+  stage={1}
+  design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Global-Design-System?node-id=4496-100132"
+/>
+
+The Button component is used to trigger an action or event, such as submitting a form, opening a dialog, canceling an action, or performing a delete operation.
+
+```tsx
+import Header from '@heycar-uikit/header';
+```
+
+<!-- Description -->
