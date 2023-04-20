@@ -3,7 +3,11 @@ import {
   NavItem,
   SubNavGroup,
 } from '../components/Navigation.types';
-import { LANG_OPTIONS, SUBNAV_CONFIG } from '../Header.constants';
+import {
+  BURGER_MENU_SUBNAV_MAX_ITEMS,
+  LANG_OPTIONS,
+  SUBNAV_CONFIG,
+} from '../Header.constants';
 import { Locale } from '../Header.types';
 
 import { getCurrentLang } from './headerItemHelpers';
@@ -29,8 +33,8 @@ const getSubNavGroupDetails = (
 
   return groups.map((group, i) => {
     // NOTE: this makes an assumption that if there are going to be descriptions, all items in the list will have them.
-    // this can be changed for a .some Fn but im trying to keep things lightweight for now
-    const hasCaption = group.items[0].desc;
+    // This is a limitation of the design
+    const hasCaption = group.items[0]?.desc;
     const groupDetails = getConfigType(i, noOfGroups);
 
     // the max items we can display in a group varies based on the breakpoint, groups width and if the items have captions
@@ -38,7 +42,7 @@ const getSubNavGroupDetails = (
       ? groupDetails.maxCaptionItem
       : groupDetails.maxItem;
 
-    if (!isDropdownMenu) correctMaxItem = 5;
+    if (!isDropdownMenu) correctMaxItem = BURGER_MENU_SUBNAV_MAX_ITEMS;
 
     return {
       ...groupDetails,
@@ -92,4 +96,4 @@ const extendNavigation = (
   return extendedNav;
 };
 
-export { extendNavigation, getSubNavGroupDetails };
+export { extendNavigation, getConfigType, getSubNavGroupDetails };

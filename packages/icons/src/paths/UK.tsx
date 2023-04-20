@@ -6,7 +6,7 @@ import createSvgIcon from '../utils/createSvgIcon';
 
 export const UK = createSvgIcon(
   <>
-    <g clip-path="url(#a)">
+    <g clipPath="url(#a)">
       <path d="M0 0h20v16H0z" fill="#052962" />
       <path d="M18 16 0 2V0h2l18 14v2h-2Z" fill="#fff" />
       <path d="M0 0v1l19 15h1v-1L1 0H0Z" fill="#C7270A" />

@@ -134,7 +134,7 @@ const Navigation = React.forwardRef<HTMLDivElement, NavigationProps>(
           <aside className={styles.auxDetails}>
             {aux?.tel && (
               <p className={styles.auxContact}>
-                <Typography variant="caption2">
+                <Typography Component="span" variant="caption2">
                   {aux.tel.label || locale.auxTelLabel}
                 </Typography>
                 <a href={`tel:${aux.tel.value}`}>{aux.tel.value}</a>
@@ -142,7 +142,7 @@ const Navigation = React.forwardRef<HTMLDivElement, NavigationProps>(
             )}
             {aux?.email && (
               <p className={styles.auxContact}>
-                <Typography variant="caption2">
+                <Typography Component="span" variant="caption2">
                   {aux.email.label || locale.auxEmailLabel}
                 </Typography>
                 <a href={`mailto:${aux.email.value}`}>{aux.email.value}</a>

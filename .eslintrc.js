@@ -211,6 +211,7 @@ module.exports = {
     '@typescript-eslint/consistent-type-assertions': 'error',
     '@typescript-eslint/no-array-constructor': 'error',
     '@typescript-eslint/no-empty-interface': 'error',
+    '@typescript-eslint/no-non-null-assertion': 'off',
     '@typescript-eslint/no-shadow': 'warn',
     '@typescript-eslint/no-unused-vars': [
       'error',
