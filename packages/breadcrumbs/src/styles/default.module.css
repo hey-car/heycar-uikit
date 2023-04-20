@@ -1,3 +1,5 @@
+@import '../../../themes/src/default.css';
+
 .breadcrumbWrapper {
   display: flex;
   flex-direction: row;
@@ -6,6 +8,11 @@
   font-weight: var(--font-weight-medium);
   padding: 0;
   margin: 0;
+  font-size: 12px;
+
+  @media (--mobile) {
+    flex-wrap: wrap;
+  }
 }
 
 li:after {
@@ -35,5 +42,9 @@ span {
 }
 
 .currentBreadcrumb {
-  color: #838383;
+  color: var(--color-neutral-500);
+}
+
+.threeDots {
+  cursor: pointer;
 }
