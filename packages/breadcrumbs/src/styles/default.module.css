@@ -26,6 +26,14 @@ a {
   color: var(--color-tarmac-grey-700);
 }
 
+span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  max-width: 20ch;
+}
+
 .currentBreadcrumb {
   color: #838383;
 }

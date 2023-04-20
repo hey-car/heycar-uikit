@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 
-import Accordion from '../Accordion';
+import Breadcrumbs from '../Breadcrumbs';
 
 const accordionTitle = 'title';
 const accordionBodyText =
