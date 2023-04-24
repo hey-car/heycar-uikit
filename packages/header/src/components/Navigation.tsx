@@ -43,7 +43,7 @@ const Navigation = React.forwardRef<HTMLDivElement, NavigationProps>(
     } = useBreakpoint();
     const isDropDownMenu = isTabletL || isDesktopS || isDesktopM || isDesktopL;
     const extendedNavArray = extendNavigation(
-      navigation,
+      navigation || [],
       locale,
       langItemConfig,
       accountItemConfig,
@@ -110,6 +110,7 @@ const Navigation = React.forwardRef<HTMLDivElement, NavigationProps>(
                         Link={Link}
                         isDropDownMenu={isDropDownMenu}
                         isOpen={isActive}
+                        locale={locale}
                         navItemId={commonProps.id}
                         navItemName={label}
                         subNavGroups={subNavGroups!}

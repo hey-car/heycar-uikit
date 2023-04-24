@@ -4,6 +4,7 @@ import * as dateUtils from 'date-fns';
 
 import * as grid from './blocks/Grid';
 import * as AllIcons from '../packages/icons/src';
+import * as headerMocks from '../packages/header/src/__tests__/Header.mock';
 
 const componentsContext = require.context(
   '../packages',
@@ -33,4 +34,5 @@ export default {
   ...dateUtils,
   ...knobs,
   ...AllIcons,
+  ...headerMocks,
 };

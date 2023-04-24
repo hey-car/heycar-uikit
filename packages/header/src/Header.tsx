@@ -259,6 +259,7 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
             currentLang={currentLang?.langCode}
             dataTestId={`${dataTestId}-navigation`}
             langItemConfig={langItemConfig}
+            locale={locale}
             navigation={navigation}
             setActiveNavItem={setActiveNavItem}
             trackingFn={trackingFn}

@@ -12,15 +12,14 @@ const defaultData: HeaderProps = {
   favoritesItemConfig: {
     label: 'Favorites',
     href: 'www.google.com',
+    favoritesNumber: 0,
   },
   langItemConfig: {
     currentLang: 'en-GB',
   },
   accountItemConfig: {
     label: 'Login',
-    onClick: () => {
-      alert('Login modal');
-    },
+    onClick: () => alert('Runs given function'),
   },
   callItemConfig: {
     label: 'Call us',
@@ -53,10 +52,18 @@ const defaultData: HeaderProps = {
       href: '#new-cars',
     },
     {
+      label: 'Electric cars',
+      href: '#new-cars',
+    },
+    {
+      label: 'Buy online',
+      href: '#new-cars',
+    },
+    {
       label: 'Car reviews',
       subNavGroups: [
         {
-          heading: "Toutes les voitures d'occasion",
+          heading: 'Popular cars',
           items: [
             {
               label: 'Audi Q3 Sportback',
@@ -86,12 +93,59 @@ const defaultData: HeaderProps = {
               label: 'BMW X5 Series',
               href: '#BMW-x5-Series',
             },
+            {
+              label: 'Audi Q3 Sportback',
+              href: '#Audi-Q3-Sportback',
+            },
+            {
+              label: 'Audi A1',
+              href: '#Audi-a1',
+            },
+            {
+              label: 'BMW 3 Series',
+              href: '#BMW-3-Series',
+            },
+            {
+              label: 'BMW 2 Series',
+              href: '#BMW-2-Series',
+            },
+            {
+              label: 'BMW 5 Series',
+              href: '#BMW-5-Series',
+            },
+            {
+              label: 'BMW 7 Series',
+              href: '#BMW-7-Series',
+            },
+            {
+              label: 'BMW X5 Series',
+              href: '#BMW-x5-Series',
+            },
+            {
+              label: 'BMW 2 Series',
+              href: '#BMW-2-Series',
+            },
+            {
+              label: 'BMW 5 Series',
+              href: '#BMW-5-Series',
+            },
+            {
+              label: 'BMW 7 Series',
+              href: '#BMW-7-Series',
+            },
+            {
+              label: 'BMW X5 Series',
+              href: '#BMW-x5-Series',
+            },
           ],
+          showAllLink: {
+            href: '#reviews',
+          },
         },
       ],
     },
     {
-      label: 'Locations',
+      label: 'Cars by Location',
       subNavGroups: [
         {
           heading: 'Recent Locations',
@@ -137,6 +191,38 @@ const defaultData: HeaderProps = {
               label: 'London 6',
               href: '#London',
             },
+            {
+              label: 'London 7',
+              href: '#London',
+            },
+            {
+              label: 'London',
+              href: '#London',
+            },
+            {
+              label: 'London 2',
+              href: '#London',
+            },
+            {
+              label: 'London 3',
+              href: '#London',
+            },
+            {
+              label: 'London 4',
+              href: '#London',
+            },
+            {
+              label: 'London 5',
+              href: '#London',
+            },
+            {
+              label: 'London 6',
+              href: '#London',
+            },
+            {
+              label: 'London 7',
+              href: '#London',
+            },
           ],
           showAllLink: {
             href: '#locations',
@@ -145,58 +231,73 @@ const defaultData: HeaderProps = {
       ],
     },
     {
-      label: 'Online Bestellung',
+      label: 'Value my Car',
       href: '#Online-Bestellung',
     },
     {
-      label: 'Coches de segunda mano',
+      label: 'Finance',
       href: '#Coches-de-segunda-mano',
+    },
+    {
+      label: 'Insurance',
+      href: '#Insurance',
+      subNavGroups: [
+        {
+          heading: 'Insurance',
+          items: [
+            {
+              label: 'Learn about insurance',
+              href: '#London',
+            },
+            {
+              label: 'Learn about insurance',
+              href: '#London',
+            },
+            {
+              label: 'Learn about insurance',
+              href: '#London',
+            },
+          ],
+        },
+      ],
+    },
+    {
+      label: 'Deals',
+      href: '#Deals',
     },
     {
       label: 'News & Guides',
       subNavGroups: [
         {
-          heading: 'Recent News',
+          heading: 'Recently viewed',
           items: [
             {
-              label: 'London',
-              href: '#London',
-            },
-            {
-              label: 'London 2',
-              href: '#London',
-            },
-            {
-              label: 'London 3',
+              label: 'Fastest cars in the world 2023',
               href: '#London',
             },
           ],
         },
         {
-          heading: 'Deals und Specials',
+          heading: 'Latest news',
           items: [
             {
-              label: 'London',
+              label: 'New 2024 Volkswagen ID.7: price, specs and release date',
               href: '#London',
             },
             {
-              label: 'London 2',
+              label: 'New 2024 Volkswagen ID.7: price, specs and release date',
               href: '#London',
             },
             {
-              label: 'London 3',
+              label: 'New 2024 Volkswagen ID.7: price, specs and release date',
               href: '#London',
             },
             {
-              label: 'London 4',
+              label: 'New 2024 Volkswagen ID.7: price, specs and release date',
               href: '#London',
             },
             {
-              label: 'London 5',
-              href: '#London',
-            },
-            {
-              label: 'London 6',
+              label: 'New 2024 Volkswagen ID.7: price, specs and release date',
               href: '#London',
             },
           ],
@@ -205,95 +306,26 @@ const defaultData: HeaderProps = {
           },
         },
         {
-          heading: 'Guides',
+          heading: 'Trending Guides',
           items: [
             {
-              label: 'Hasta 1.200€ de bonificación',
+              label: 'New 2023 Car Tax rates and VED bands',
               href: '#London',
             },
             {
-              label: 'Fahrzeuge zum online finanzieren',
+              label: 'New 2023 Car Tax rates and VED bands',
               href: '#London',
             },
             {
-              label: 'Alles über Elektrofahrzeuge',
+              label: 'New 2023 Car Tax rates and VED bands',
               href: '#London',
             },
             {
-              label: 'London 4',
+              label: 'New 2023 Car Tax rates and VED bands',
               href: '#London',
             },
             {
-              label: 'London 5',
-              href: '#London',
-            },
-            {
-              label: 'London 6',
-              href: '#London',
-            },
-          ],
-          showAllLink: {
-            href: '#locations',
-          },
-        },
-      ],
-    },
-    {
-      label: 'Blog',
-      subNavGroups: [
-        {
-          heading: 'Recently Viewed',
-          items: [
-            {
-              label: 'London',
-              href: '#London',
-            },
-            {
-              label: 'London 2',
-              href: '#London',
-            },
-            {
-              label: 'London 3',
-              href: '#London',
-            },
-          ],
-        },
-        {
-          heading: 'Articles',
-          items: [
-            {
-              label: 'London',
-              desc: 'Everything you need to know about the UKs electric',
-              href: '#London',
-            },
-            {
-              label: 'London 2',
-              desc: 'Everything you need to know',
-              href: '#London',
-            },
-            {
-              label: 'London 3',
-              desc: 'Everything you need to know about the UKs electric car market',
-              href: '#London',
-            },
-            {
-              label: 'London 4',
-              desc: "Que faut-il regarder avant d'acheter une voiture d'occasion ?",
-              href: '#London',
-            },
-            {
-              label: 'London 5',
-              desc: 'Everything you need to know',
-              href: '#London',
-            },
-            {
-              label: 'London 6',
-              desc: 'Everything you need to know about the UKs electric car market',
-              href: '#London',
-            },
-            {
-              label: 'London 7',
-              desc: 'This one shouldnt be showing',
+              label: 'New 2023 Car Tax rates and VED bands',
               href: '#London',
             },
           ],
