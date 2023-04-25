@@ -1,0 +1,11 @@
+{
+  "name": "@heycar-uikit/all",
+  "version": "0.0.1",
+  "module": "./index.mjs",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./index.mjs"
+    }
+  }
+}
