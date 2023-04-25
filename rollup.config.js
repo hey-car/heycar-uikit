@@ -1,8 +1,10 @@
 import path from 'path';
 
 import json from '@rollup/plugin-json';
+import { nodeResolve } from '@rollup/plugin-node-resolve';
 import copy from 'rollup-plugin-copy';
 import multiInput from 'rollup-plugin-multi-input';
+import postcss from 'rollup-plugin-postcss';
 import typescript from 'rollup-plugin-ts';
 import { ScriptTarget } from 'typescript';
 
@@ -149,17 +151,15 @@ const cssm = {
  */
 const esm = {
   ...baseConfig,
+  external: baseConfig.external,
   output: [
     {
       dir: esmDist,
-      format: 'esm',
-      plugins: [
-        addCssImports({ currentPackageDir }),
-        coreComponentsResolver({ importFrom: esmDist }),
-      ],
+      format: 'es',
     },
   ],
   plugins: [
+    nodeResolve(),
     multiInputPlugin,
     typescript({
       outDir: esmDist,
@@ -169,7 +169,12 @@ const esm = {
       }),
     }),
     json(),
-    ...bundleCss(pkg.name, rootPkg.version, currentComponentName, esmDist),
+    postcss({
+      plugins: [],
+      sourceMap: true,
+      extract: true,
+      minimize: true,
+    }),
     copyPlugin(esmDist),
   ],
 };
