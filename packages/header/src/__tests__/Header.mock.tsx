@@ -4,6 +4,8 @@ import React from 'react';
 
 import { HeaderProps } from '../Header.types';
 
+import { englishStyle } from './navigationItems.mock';
+
 const defaultData: HeaderProps = {
   logoHref: 'heycar.com',
   trackingFn: (obj: Record<string, any>) => {
@@ -12,15 +14,14 @@ const defaultData: HeaderProps = {
   favoritesItemConfig: {
     label: 'Favorites',
     href: 'www.google.com',
+    favoritesNumber: 0,
   },
   langItemConfig: {
     currentLang: 'en-GB',
   },
   accountItemConfig: {
     label: 'Login',
-    onClick: () => {
-      alert('Login modal');
-    },
+    onClick: () => alert('Runs given function'),
   },
   callItemConfig: {
     label: 'Call us',
@@ -43,267 +44,7 @@ const defaultData: HeaderProps = {
     ),
     label: 'Search',
   },
-  navigation: [
-    {
-      label: 'Used cars',
-      href: '#used-cars',
-    },
-    {
-      label: 'New cars',
-      href: '#new-cars',
-    },
-    {
-      label: 'Car reviews',
-      subNavGroups: [
-        {
-          heading: "Toutes les voitures d'occasion",
-          items: [
-            {
-              label: 'Audi Q3 Sportback',
-              href: '#Audi-Q3-Sportback',
-            },
-            {
-              label: 'Audi A1',
-              href: '#Audi-a1',
-            },
-            {
-              label: 'BMW 3 Series',
-              href: '#BMW-3-Series',
-            },
-            {
-              label: 'BMW 2 Series',
-              href: '#BMW-2-Series',
-            },
-            {
-              label: 'BMW 5 Series',
-              href: '#BMW-5-Series',
-            },
-            {
-              label: 'BMW 7 Series',
-              href: '#BMW-7-Series',
-            },
-            {
-              label: 'BMW X5 Series',
-              href: '#BMW-x5-Series',
-            },
-          ],
-        },
-      ],
-    },
-    {
-      label: 'Locations',
-      subNavGroups: [
-        {
-          heading: 'Recent Locations',
-          items: [
-            {
-              label: 'London',
-              href: '#London',
-            },
-            {
-              label: 'London 2',
-              href: '#London',
-            },
-            {
-              label: 'London 3',
-              href: '#London',
-            },
-          ],
-        },
-        {
-          heading: 'Popular Locations',
-          items: [
-            {
-              label: 'London',
-              href: '#London',
-            },
-            {
-              label: 'London 2',
-              href: '#London',
-            },
-            {
-              label: 'London 3',
-              href: '#London',
-            },
-            {
-              label: 'London 4',
-              href: '#London',
-            },
-            {
-              label: 'London 5',
-              href: '#London',
-            },
-            {
-              label: 'London 6',
-              href: '#London',
-            },
-          ],
-          showAllLink: {
-            href: '#locations',
-          },
-        },
-      ],
-    },
-    {
-      label: 'Online Bestellung',
-      href: '#Online-Bestellung',
-    },
-    {
-      label: 'Coches de segunda mano',
-      href: '#Coches-de-segunda-mano',
-    },
-    {
-      label: 'News & Guides',
-      subNavGroups: [
-        {
-          heading: 'Recent News',
-          items: [
-            {
-              label: 'London',
-              href: '#London',
-            },
-            {
-              label: 'London 2',
-              href: '#London',
-            },
-            {
-              label: 'London 3',
-              href: '#London',
-            },
-          ],
-        },
-        {
-          heading: 'Deals und Specials',
-          items: [
-            {
-              label: 'London',
-              href: '#London',
-            },
-            {
-              label: 'London 2',
-              href: '#London',
-            },
-            {
-              label: 'London 3',
-              href: '#London',
-            },
-            {
-              label: 'London 4',
-              href: '#London',
-            },
-            {
-              label: 'London 5',
-              href: '#London',
-            },
-            {
-              label: 'London 6',
-              href: '#London',
-            },
-          ],
-          showAllLink: {
-            href: '#locations',
-          },
-        },
-        {
-          heading: 'Guides',
-          items: [
-            {
-              label: 'Hasta 1.200€ de bonificación',
-              href: '#London',
-            },
-            {
-              label: 'Fahrzeuge zum online finanzieren',
-              href: '#London',
-            },
-            {
-              label: 'Alles über Elektrofahrzeuge',
-              href: '#London',
-            },
-            {
-              label: 'London 4',
-              href: '#London',
-            },
-            {
-              label: 'London 5',
-              href: '#London',
-            },
-            {
-              label: 'London 6',
-              href: '#London',
-            },
-          ],
-          showAllLink: {
-            href: '#locations',
-          },
-        },
-      ],
-    },
-    {
-      label: 'Blog',
-      subNavGroups: [
-        {
-          heading: 'Recently Viewed',
-          items: [
-            {
-              label: 'London',
-              href: '#London',
-            },
-            {
-              label: 'London 2',
-              href: '#London',
-            },
-            {
-              label: 'London 3',
-              href: '#London',
-            },
-          ],
-        },
-        {
-          heading: 'Articles',
-          items: [
-            {
-              label: 'London',
-              desc: 'Everything you need to know about the UKs electric',
-              href: '#London',
-            },
-            {
-              label: 'London 2',
-              desc: 'Everything you need to know',
-              href: '#London',
-            },
-            {
-              label: 'London 3',
-              desc: 'Everything you need to know about the UKs electric car market',
-              href: '#London',
-            },
-            {
-              label: 'London 4',
-              desc: "Que faut-il regarder avant d'acheter une voiture d'occasion ?",
-              href: '#London',
-            },
-            {
-              label: 'London 5',
-              desc: 'Everything you need to know',
-              href: '#London',
-            },
-            {
-              label: 'London 6',
-              desc: 'Everything you need to know about the UKs electric car market',
-              href: '#London',
-            },
-            {
-              label: 'London 7',
-              desc: 'This one shouldnt be showing',
-              href: '#London',
-            },
-          ],
-          showAllLink: {
-            href: '#locations',
-          },
-        },
-      ],
-    },
-  ],
+  navigation: englishStyle,
   auxiliaryDetails: {
     tel: {
       value: '00493030809241',

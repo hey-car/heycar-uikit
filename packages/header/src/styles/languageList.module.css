@@ -27,7 +27,8 @@
   }
 
   & li {
-    margin-bottom: var(--spacing-4);
+    padding: var(--spacing-1);
+    margin-bottom: var(--spacing-2);
 
     &:last-child {
       margin-bottom: 0;
@@ -39,9 +40,10 @@
       align-items: center;
       color: var(--color-neutral-700);
       text-decoration: none;
+      transition: color 0.3s ease;
 
       &:hover {
-        background-color: var(--color-neutral-100);
+        color: var(--color-neutral-600);
       }
     }
   }

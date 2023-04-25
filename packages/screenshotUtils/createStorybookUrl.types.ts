@@ -14,4 +14,5 @@ export type CreateStorybookUrlParams = {
   packageName?: string;
   moduleName?: string;
   knobs?: Knobs;
+  componentCategory?: 'atoms' | 'molecules' | 'organisms';
 };
