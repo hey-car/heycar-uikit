@@ -154,7 +154,7 @@ const esm = {
   external: baseConfig.external,
   output: [
     {
-      dir: esDist,
+      dir: esmDist,
       format: 'es',
     },
   ],
@@ -214,7 +214,6 @@ const configs = [
   es5,
   modern,
   esm,
-  es,
   currentComponentName !== 'themes' && cssm,
   root,
 ].filter(Boolean);
