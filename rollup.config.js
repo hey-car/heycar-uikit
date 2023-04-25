@@ -169,7 +169,12 @@ const esm = {
       }),
     }),
     json(),
-    postcss({ plugins: [], sourceMap: true, extract: true, minimize: true }),
+    postcss({
+      plugins: [],
+      sourceMap: true,
+      extract: true,
+      minimize: true,
+    }),
     copyPlugin(esmDist),
   ],
 };
