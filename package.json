@@ -68,6 +68,7 @@
     "uuid": "^9.0.0"
   },
   "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.0.2",
     "@babel/plugin-proposal-class-properties": "^7.16.7",
     "@babel/plugin-transform-modules-commonjs": "^7.17.7",
     "@babel/preset-react": "^7.16.7",
