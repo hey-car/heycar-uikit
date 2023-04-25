@@ -1,3 +1,17 @@
+# [6.0.0](https://github.com/hey-car/heycar-uikit/compare/v5.9.0...v6.0.0) (2023-04-25)
+
+
+### chore
+
+* minor bump ([#192](https://github.com/hey-car/heycar-uikit/issues/192)) ([0e45aa4](https://github.com/hey-car/heycar-uikit/commit/0e45aa42b576fb2a27c21ca7fed227d6a9f89a3e))
+
+
+### BREAKING CHANGES
+
+* css will no longer be included automagically
+
+* chore: rollup formatting
+
 # [5.9.0](https://github.com/hey-car/heycar-uikit/compare/v5.8.0...v5.9.0) (2023-04-18)
 
 
