@@ -1,7 +1,7 @@
 import { LangOption } from './Header.types';
 
 const DEFAULT_LOCALE = {
-  closeSearchLabel: 'close search',
+  closeSearchLabel: 'Close search',
   logoLabel: 'heycar logo',
   langListHeading: 'Select Language',
   burgerMenuButtonLabel: 'Navigation menu',
@@ -15,7 +15,6 @@ const DEFAULT_LOCALE = {
 
 const headerClickTracking = {
   action: 'Click',
-  // TODO: category might be navigation
   category: 'Header',
   label: undefined,
 };

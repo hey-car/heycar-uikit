@@ -5,11 +5,9 @@ import {
   createStorybookUrl,
   matchHtml,
   openBrowserPage,
-  //screenshotMatchClick,
 } from '../../../screenshotUtils';
 
 const packageName = 'header';
-//const accordionButtonSelector = '#root div[data-test-id="snapshot-test-btn-wrapper"] div[role="button"]';
 const desktopWidth = 1440;
 const smallDesktopWidth = 1024;
 const mobileWidth = 365;
@@ -45,16 +43,6 @@ describe('Header screenshots', () => {
           await closeBrowser({ browser, context, page });
         }
       });
-
-      // test('Accordion open first tab', async () => {
-      //   const pageUrl = createStorybookUrl({
-      //     packageName,
-      //   });
-
-      //   await screenshotMatchClick(pageUrl, accordionButtonSelector, {
-      //     animations: 'disabled',
-      //   });
-      // });
     });
   });
 

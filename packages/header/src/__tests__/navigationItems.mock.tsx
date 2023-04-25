@@ -52,8 +52,8 @@ const englishStyle = [
             href: '#BMW-x5-Series',
           },
           {
-            label: 'Audi Q3 Sportback',
-            href: '#Audi-Q3-Sportback',
+            label: 'Audi Q2',
+            href: '#Audi-Q2',
           },
           {
             label: 'Audi A1',
@@ -552,8 +552,8 @@ const frenchStyle = [
         heading: 'Avis voitures',
         items: [
           {
-            label: 'Audi Q3 Sportback',
-            href: '#Audi-Q3-Sportback',
+            label: 'Audi Q7',
+            href: '#Audi-Q7',
           },
           {
             label: 'Audi A1',
@@ -572,8 +572,8 @@ const frenchStyle = [
             href: '#BMW-5-Series',
           },
           {
-            label: 'Audi Q3 Sportback',
-            href: '#Audi-Q3-Sportback',
+            label: 'Audi RS8',
+            href: '#Audi-RS8',
           },
           {
             label: 'Audi A1',

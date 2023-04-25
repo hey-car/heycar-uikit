@@ -21,7 +21,6 @@ const Navigation = React.forwardRef<HTMLDivElement, NavigationProps>(
       accountItemConfig,
       activeNavItem,
       auxiliaryDetails: aux,
-      currentLang,
       dataTestId,
       langItemConfig,
       Link,
@@ -33,7 +32,7 @@ const Navigation = React.forwardRef<HTMLDivElement, NavigationProps>(
     ref,
   ) => {
     const hasAuxData = aux?.tel || aux?.email || aux?.app;
-    const shortLangCode = currentLang ? currentLang.substring(0, 2) : 'en';
+
     const { toggleSubNav, keyboardOpen, closeSiblings } = useNavigationItem(
       activeNavItem,
       setActiveNavItem,
@@ -148,33 +147,6 @@ const Navigation = React.forwardRef<HTMLDivElement, NavigationProps>(
                 </Typography>
                 <a href={`mailto:${aux.email.value}`}>{aux.email.value}</a>
               </p>
-            )}
-            {aux.app && (
-              <div className={styles.appDetails}>
-                <Typography variant="button1">
-                  {aux?.app?.heading || locale.auxAppHeading}
-                </Typography>
-                {aux?.app?.appStoreUrl && (
-                  <a
-                    href={`${aux?.app?.appStoreUrl}?itsct=apps_box_badge&amp;itscg=30200`}
-                  >
-                    <img
-                      alt="Download on the App Store"
-                      src={`https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/${shortLangCode}-${shortLangCode}?size=250x83&amp;releaseDate=1670371200`}
-                    />
-                  </a>
-                )}
-                {aux?.app?.playStoreUrl && (
-                  <a
-                    href={`${aux?.app?.playStoreUrl}&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1`}
-                  >
-                    <img
-                      alt="Get it on Google Play"
-                      src={`https://play.google.com/intl/en_us/badges/static/images/badges/${shortLangCode}_badge_web_generic.png`}
-                    />
-                  </a>
-                )}
-              </div>
             )}
           </aside>
         )}

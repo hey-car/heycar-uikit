@@ -3,6 +3,9 @@ import { ComponentHeader, CssVars, TabContainer } from 'storybook/blocks';
 
 import { HeaderCanvas } from './Canvas';
 import Header from '../Header';
+import LanguageList from '../components/LanguageList';
+import Navigation from '../components/Navigation';
+import SubNav from '../components/SubNav';
 import { defaultData } from '../__tests__/Header.mock';
 import {
   englishStyle,
@@ -98,7 +101,7 @@ import Changelog from '../../CHANGELOG.md';
   design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Global-Design-System?node-id=4496-100132"
 />
 
-The Button component is used to trigger an action or event, such as submitting a form, opening a dialog, canceling an action, or performing a delete operation.
+Header wraps top-level navigation and branding.
 
 ```tsx
 import Header from '@heycar-uikit/header';
@@ -110,6 +113,9 @@ import Header from '@heycar-uikit/header';
   tabs={[
     { label: 'Description', component: <Description /> },
     { label: 'Props', component: <Props of={Header} /> },
+    { label: 'LanguageList Props', component: <Props of={LanguageList} /> },
+    { label: 'Navigation Props', component: <Props of={Navigation} /> },
+    { label: 'SubNav Props', component: <Props of={SubNav} /> },
     { label: 'Changelog', component: <Changelog /> },
   ]}
 />

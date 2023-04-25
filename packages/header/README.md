@@ -5,30 +5,55 @@
 [![Demo build](https://github.com/hey-car/heycar-uikit/actions/workflows/main.yml/badge.svg)](https://github.com/hey-car/heycar-uikit/actions/workflows/main.yml)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
-The Header component is used to trigger an action or event, such as submitting a form, opening a dialog, canceling an action, or performing a delete operation.
+Header wraps top-level navigation and branding.
 
 ## Installation
 
 To install and save in your package.json dependencies, run the command below using npm:
 
 ```bash
-npm install @heycar-uikit/button
+npm install @heycar-uikit/header
 ```
 
 ## Usage
 
 ```tsx
-import Button from '@heycar-uikit/button';
+import Header from '@heycar-uikit/header';
 
 function App() {
-  return (
-    <Button size="large" color="primary" variant="outlined">
-      Hello World
-    </Button>
-  );
+  const nav = [
+    {
+      label: 'Buy online',
+      href: '/buy-online',
+    },
+    {
+      label: 'Car reviews',
+      subNavGroups: [
+        {
+          heading: 'Popular cars',
+          items: [
+            {
+              label: 'Audi Q3 Sportback',
+              href: '#Audi-Q3-Sportback',
+            },
+            {
+              label: 'Audi A1',
+              href: '#Audi-a1',
+            },
+            {
+              label: 'BMW 3 Series',
+              href: '#BMW-3-Series',
+            },
+          ],
+        },
+      ],
+    },
+  ];
+
+  render(<Header logoHref="https://heycar.com" navigation={nav} />);
 }
 ```
 
 ## Documentation and sandbox
 
-[Storybook](https://hey-car.github.io/heycar-uikit/main/?path=/docs/components-button--button) documentation and sandbox
+[Storybook](https://hey-car.github.io/heycar-uikit/main/?path=/docs/components-organisms-header--header) documentation and sandbox

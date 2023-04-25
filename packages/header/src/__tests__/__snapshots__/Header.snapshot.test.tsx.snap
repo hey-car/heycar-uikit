@@ -47,7 +47,7 @@ Object {
                 class="searchWrapper "
               >
                 <button
-                  aria-label="close search"
+                  aria-label="Close search"
                   class="closeSearch"
                 >
                   <svg
@@ -297,6 +297,38 @@ Object {
               <li
                 class=" "
               >
+                <a
+                  class="navItem "
+                  href="#new-cars"
+                  id="nav-item-Electric-cars"
+                  role="menuitem"
+                >
+                  <span
+                    class="typography button2"
+                  >
+                    Electric cars
+                  </span>
+                </a>
+              </li>
+              <li
+                class=" "
+              >
+                <a
+                  class="navItem "
+                  href="#new-cars"
+                  id="nav-item-Buy-online"
+                  role="menuitem"
+                >
+                  <span
+                    class="typography button2"
+                  >
+                    Buy online
+                  </span>
+                </a>
+              </li>
+              <li
+                class=" "
+              >
                 <button
                   aria-expanded="false"
                   aria-haspopup="true"
@@ -339,10 +371,10 @@ Object {
                       <span
                         role="heading"
                       >
-                        Toutes les voitures d'occasion
+                        Popular cars
                       </span>
                       <ul
-                        aria-label="Toutes les voitures d'occasion menu"
+                        aria-label="Popular cars menu"
                         role="menu"
                       >
                         <li
@@ -443,7 +475,126 @@ Object {
                             </span>
                           </a>
                         </li>
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#Audi-Q2"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              Audi Q2
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#Audi-a1"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              Audi A1
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#BMW-3-Series"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              BMW 3 Series
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#BMW-2-Series"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              BMW 2 Series
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#BMW-5-Series"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              BMW 5 Series
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#BMW-7-Series"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              BMW 7 Series
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#BMW-x5-Series"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              BMW X5 Series
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#BMW-2-Series"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              BMW 2 Series
+                            </span>
+                          </a>
+                        </li>
                       </ul>
+                      <a
+                        class="showAll"
+                        href="#reviews"
+                        tabindex="-1"
+                      >
+                        Show all
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -454,15 +605,15 @@ Object {
                 <button
                   aria-expanded="false"
                   aria-haspopup="true"
-                  aria-label="Locations - Press the Space key to show sub-menus."
+                  aria-label="Cars by Location - Press the Space key to show sub-menus."
                   class="navItem "
-                  id="nav-item-Locations"
+                  id="nav-item-Cars-by-Location"
                   role="menuitem"
                 >
                   <span
                     class="typography button2"
                   >
-                    Locations
+                    Cars by Location
                   </span>
                   <svg
                     class="svgIcon inherit"
@@ -480,7 +631,7 @@ Object {
                 </button>
                 <div
                   aria-hidden="true"
-                  aria-label="Locations sub-menu"
+                  aria-label="Cars by Location sub-menu"
                   class="collapse collapse"
                   style="height: 0px;"
                 >
@@ -639,6 +790,62 @@ Object {
                             </span>
                           </a>
                         </li>
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#London"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              London 7
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#London"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              London
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#London"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              London 2
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#London"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              London 3
+                            </span>
+                          </a>
+                        </li>
                       </ul>
                       <a
                         class="showAll"
@@ -657,13 +864,13 @@ Object {
                 <a
                   class="navItem "
                   href="#Online-Bestellung"
-                  id="nav-item-Online-Bestellung"
+                  id="nav-item-Value-my-Car"
                   role="menuitem"
                 >
                   <span
                     class="typography button2"
                   >
-                    Online Bestellung
+                    Value my Car
                   </span>
                 </a>
               </li>
@@ -673,18 +880,132 @@ Object {
                 <a
                   class="navItem "
                   href="#Coches-de-segunda-mano"
-                  id="nav-item-Coches-de-segunda-mano"
+                  id="nav-item-Finance"
                   role="menuitem"
                 >
                   <span
                     class="typography button2"
                   >
-                    Coches de segunda mano
+                    Finance
                   </span>
                 </a>
               </li>
               <li
                 class=" "
+              >
+                <button
+                  aria-expanded="false"
+                  aria-haspopup="true"
+                  aria-label="Insurance - Press the Space key to show sub-menus."
+                  class="navItem "
+                  id="nav-item-Insurance"
+                  role="menuitem"
+                >
+                  <span
+                    class="typography button2"
+                  >
+                    Insurance
+                  </span>
+                  <svg
+                    class="svgIcon inherit"
+                    data-test-id="ChevronDownIcon"
+                    focusable="false"
+                    style="font-size: 24px;"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      clip-rule="evenodd"
+                      d="M12.0711 14.7279L5.70718 8.36392L4.29297 9.77814L12.0711 17.5563L19.8493 9.77814L18.4351 8.36392L12.0711 14.7279Z"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+                <div
+                  aria-hidden="true"
+                  aria-label="Insurance sub-menu"
+                  class="collapse collapse"
+                  style="height: 0px;"
+                >
+                  <div
+                    class="row component left gutter-tablet-l-24 gutter-desktop-24 subNav"
+                  >
+                    <div
+                      class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-12 width-desktop-12 subNavGroup fullWidth"
+                    >
+                      <span
+                        role="heading"
+                      >
+                        Insurance
+                      </span>
+                      <ul
+                        aria-label="Insurance menu"
+                        role="menu"
+                      >
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#London"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              Learn about insurance
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#London"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              Learn about insurance
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          role="none"
+                        >
+                          <a
+                            class="navItem "
+                            href="#London"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            <span>
+                              Learn about insurance
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                class=" "
+              >
+                <a
+                  class="navItem "
+                  href="#Deals"
+                  id="nav-item-Deals"
+                  role="menuitem"
+                >
+                  <span
+                    class="typography button2"
+                  >
+                    Deals
+                  </span>
+                </a>
+              </li>
+              <li
+                class="lastNavItem "
               >
                 <button
                   aria-expanded="false"
@@ -728,10 +1049,10 @@ Object {
                       <span
                         role="heading"
                       >
-                        Recent News
+                        Recently viewed
                       </span>
                       <ul
-                        aria-label="Recent News menu"
+                        aria-label="Recently viewed menu"
                         role="menu"
                       >
                         <li
@@ -744,35 +1065,7 @@ Object {
                             tabindex="-1"
                           >
                             <span>
-                              London
-                            </span>
-                          </a>
-                        </li>
-                        <li
-                          role="none"
-                        >
-                          <a
-                            class="navItem "
-                            href="#London"
-                            role="menuitem"
-                            tabindex="-1"
-                          >
-                            <span>
-                              London 2
-                            </span>
-                          </a>
-                        </li>
-                        <li
-                          role="none"
-                        >
-                          <a
-                            class="navItem "
-                            href="#London"
-                            role="menuitem"
-                            tabindex="-1"
-                          >
-                            <span>
-                              London 3
+                              Fastest cars in the world 2023
                             </span>
                           </a>
                         </li>
@@ -784,10 +1077,10 @@ Object {
                       <span
                         role="heading"
                       >
-                        Deals und Specials
+                        Latest news
                       </span>
                       <ul
-                        aria-label="Deals und Specials menu"
+                        aria-label="Latest news menu"
                         role="menu"
                       >
                         <li
@@ -800,7 +1093,7 @@ Object {
                             tabindex="-1"
                           >
                             <span>
-                              London
+                              New 2024 Volkswagen ID.7: price, specs and release date
                             </span>
                           </a>
                         </li>
@@ -814,7 +1107,7 @@ Object {
                             tabindex="-1"
                           >
                             <span>
-                              London 2
+                              New 2024 Volkswagen ID.7: price, specs and release date
                             </span>
                           </a>
                         </li>
@@ -828,7 +1121,7 @@ Object {
                             tabindex="-1"
                           >
                             <span>
-                              London 3
+                              New 2024 Volkswagen ID.7: price, specs and release date
                             </span>
                           </a>
                         </li>
@@ -842,7 +1135,7 @@ Object {
                             tabindex="-1"
                           >
                             <span>
-                              London 4
+                              New 2024 Volkswagen ID.7: price, specs and release date
                             </span>
                           </a>
                         </li>
@@ -856,7 +1149,7 @@ Object {
                             tabindex="-1"
                           >
                             <span>
-                              London 5
+                              New 2024 Volkswagen ID.7: price, specs and release date
                             </span>
                           </a>
                         </li>
@@ -875,10 +1168,10 @@ Object {
                       <span
                         role="heading"
                       >
-                        Guides
+                        Trending Guides
                       </span>
                       <ul
-                        aria-label="Guides menu"
+                        aria-label="Trending Guides menu"
                         role="menu"
                       >
                         <li
@@ -891,7 +1184,7 @@ Object {
                             tabindex="-1"
                           >
                             <span>
-                              Hasta 1.200€ de bonificación
+                              New 2023 Car Tax rates and VED bands
                             </span>
                           </a>
                         </li>
@@ -905,7 +1198,7 @@ Object {
                             tabindex="-1"
                           >
                             <span>
-                              Fahrzeuge zum online finanzieren
+                              New 2023 Car Tax rates and VED bands
                             </span>
                           </a>
                         </li>
@@ -919,7 +1212,7 @@ Object {
                             tabindex="-1"
                           >
                             <span>
-                              Alles über Elektrofahrzeuge
+                              New 2023 Car Tax rates and VED bands
                             </span>
                           </a>
                         </li>
@@ -933,7 +1226,7 @@ Object {
                             tabindex="-1"
                           >
                             <span>
-                              London 4
+                              New 2023 Car Tax rates and VED bands
                             </span>
                           </a>
                         </li>
@@ -947,241 +1240,8 @@ Object {
                             tabindex="-1"
                           >
                             <span>
-                              London 5
+                              New 2023 Car Tax rates and VED bands
                             </span>
-                          </a>
-                        </li>
-                      </ul>
-                      <a
-                        class="showAll"
-                        href="#locations"
-                        tabindex="-1"
-                      >
-                        Show all
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li
-                class="lastNavItem "
-              >
-                <button
-                  aria-expanded="false"
-                  aria-haspopup="true"
-                  aria-label="Blog - Press the Space key to show sub-menus."
-                  class="navItem "
-                  id="nav-item-Blog"
-                  role="menuitem"
-                >
-                  <span
-                    class="typography button2"
-                  >
-                    Blog
-                  </span>
-                  <svg
-                    class="svgIcon inherit"
-                    data-test-id="ChevronDownIcon"
-                    focusable="false"
-                    style="font-size: 24px;"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      clip-rule="evenodd"
-                      d="M12.0711 14.7279L5.70718 8.36392L4.29297 9.77814L12.0711 17.5563L19.8493 9.77814L18.4351 8.36392L12.0711 14.7279Z"
-                      fill-rule="evenodd"
-                    />
-                  </svg>
-                </button>
-                <div
-                  aria-hidden="true"
-                  aria-label="Blog sub-menu"
-                  class="collapse collapse"
-                  style="height: 0px;"
-                >
-                  <div
-                    class="row component left gutter-tablet-l-24 gutter-desktop-24 subNav"
-                  >
-                    <div
-                      class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-4 width-desktop-4 subNavGroup thirdWidth"
-                    >
-                      <span
-                        role="heading"
-                      >
-                        Recently Viewed
-                      </span>
-                      <ul
-                        aria-label="Recently Viewed menu"
-                        role="menu"
-                      >
-                        <li
-                          role="none"
-                        >
-                          <a
-                            class="navItem "
-                            href="#London"
-                            role="menuitem"
-                            tabindex="-1"
-                          >
-                            <span>
-                              London
-                            </span>
-                          </a>
-                        </li>
-                        <li
-                          role="none"
-                        >
-                          <a
-                            class="navItem "
-                            href="#London"
-                            role="menuitem"
-                            tabindex="-1"
-                          >
-                            <span>
-                              London 2
-                            </span>
-                          </a>
-                        </li>
-                        <li
-                          role="none"
-                        >
-                          <a
-                            class="navItem "
-                            href="#London"
-                            role="menuitem"
-                            tabindex="-1"
-                          >
-                            <span>
-                              London 3
-                            </span>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div
-                      class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-6 width-desktop-6 subNavGroup halfWidth"
-                    >
-                      <span
-                        role="heading"
-                      >
-                        Articles
-                      </span>
-                      <ul
-                        aria-label="Articles menu"
-                        role="menu"
-                      >
-                        <li
-                          role="none"
-                        >
-                          <a
-                            class="navItem hasCaption"
-                            href="#London"
-                            role="menuitem"
-                            tabindex="-1"
-                          >
-                            <span>
-                              London
-                            </span>
-                            <q
-                              class="typography body4"
-                            >
-                              Everything you need to know about the UKs electric
-                            </q>
-                          </a>
-                        </li>
-                        <li
-                          role="none"
-                        >
-                          <a
-                            class="navItem hasCaption"
-                            href="#London"
-                            role="menuitem"
-                            tabindex="-1"
-                          >
-                            <span>
-                              London 2
-                            </span>
-                            <q
-                              class="typography body4"
-                            >
-                              Everything you need to know
-                            </q>
-                          </a>
-                        </li>
-                        <li
-                          role="none"
-                        >
-                          <a
-                            class="navItem hasCaption"
-                            href="#London"
-                            role="menuitem"
-                            tabindex="-1"
-                          >
-                            <span>
-                              London 3
-                            </span>
-                            <q
-                              class="typography body4"
-                            >
-                              Everything you need to know about the UKs electric car market
-                            </q>
-                          </a>
-                        </li>
-                        <li
-                          role="none"
-                        >
-                          <a
-                            class="navItem hasCaption"
-                            href="#London"
-                            role="menuitem"
-                            tabindex="-1"
-                          >
-                            <span>
-                              London 4
-                            </span>
-                            <q
-                              class="typography body4"
-                            >
-                              Que faut-il regarder avant d'acheter une voiture d'occasion ?
-                            </q>
-                          </a>
-                        </li>
-                        <li
-                          role="none"
-                        >
-                          <a
-                            class="navItem hasCaption"
-                            href="#London"
-                            role="menuitem"
-                            tabindex="-1"
-                          >
-                            <span>
-                              London 5
-                            </span>
-                            <q
-                              class="typography body4"
-                            >
-                              Everything you need to know
-                            </q>
-                          </a>
-                        </li>
-                        <li
-                          role="none"
-                        >
-                          <a
-                            class="navItem hasCaption"
-                            href="#London"
-                            role="menuitem"
-                            tabindex="-1"
-                          >
-                            <span>
-                              London 6
-                            </span>
-                            <q
-                              class="typography body4"
-                            >
-                              Everything you need to know about the UKs electric car market
-                            </q>
                           </a>
                         </li>
                       </ul>
@@ -1418,7 +1478,7 @@ Object {
               class="searchWrapper "
             >
               <button
-                aria-label="close search"
+                aria-label="Close search"
                 class="closeSearch"
               >
                 <svg
@@ -1668,6 +1728,38 @@ Object {
             <li
               class=" "
             >
+              <a
+                class="navItem "
+                href="#new-cars"
+                id="nav-item-Electric-cars"
+                role="menuitem"
+              >
+                <span
+                  class="typography button2"
+                >
+                  Electric cars
+                </span>
+              </a>
+            </li>
+            <li
+              class=" "
+            >
+              <a
+                class="navItem "
+                href="#new-cars"
+                id="nav-item-Buy-online"
+                role="menuitem"
+              >
+                <span
+                  class="typography button2"
+                >
+                  Buy online
+                </span>
+              </a>
+            </li>
+            <li
+              class=" "
+            >
               <button
                 aria-expanded="false"
                 aria-haspopup="true"
@@ -1710,10 +1802,10 @@ Object {
                     <span
                       role="heading"
                     >
-                      Toutes les voitures d'occasion
+                      Popular cars
                     </span>
                     <ul
-                      aria-label="Toutes les voitures d'occasion menu"
+                      aria-label="Popular cars menu"
                       role="menu"
                     >
                       <li
@@ -1814,7 +1906,126 @@ Object {
                           </span>
                         </a>
                       </li>
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#Audi-Q2"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            Audi Q2
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#Audi-a1"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            Audi A1
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#BMW-3-Series"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            BMW 3 Series
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#BMW-2-Series"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            BMW 2 Series
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#BMW-5-Series"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            BMW 5 Series
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#BMW-7-Series"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            BMW 7 Series
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#BMW-x5-Series"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            BMW X5 Series
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#BMW-2-Series"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            BMW 2 Series
+                          </span>
+                        </a>
+                      </li>
                     </ul>
+                    <a
+                      class="showAll"
+                      href="#reviews"
+                      tabindex="-1"
+                    >
+                      Show all
+                    </a>
                   </div>
                 </div>
               </div>
@@ -1825,15 +2036,15 @@ Object {
               <button
                 aria-expanded="false"
                 aria-haspopup="true"
-                aria-label="Locations - Press the Space key to show sub-menus."
+                aria-label="Cars by Location - Press the Space key to show sub-menus."
                 class="navItem "
-                id="nav-item-Locations"
+                id="nav-item-Cars-by-Location"
                 role="menuitem"
               >
                 <span
                   class="typography button2"
                 >
-                  Locations
+                  Cars by Location
                 </span>
                 <svg
                   class="svgIcon inherit"
@@ -1851,7 +2062,7 @@ Object {
               </button>
               <div
                 aria-hidden="true"
-                aria-label="Locations sub-menu"
+                aria-label="Cars by Location sub-menu"
                 class="collapse collapse"
                 style="height: 0px;"
               >
@@ -2010,6 +2221,62 @@ Object {
                           </span>
                         </a>
                       </li>
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#London"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            London 7
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#London"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            London
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#London"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            London 2
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#London"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            London 3
+                          </span>
+                        </a>
+                      </li>
                     </ul>
                     <a
                       class="showAll"
@@ -2028,13 +2295,13 @@ Object {
               <a
                 class="navItem "
                 href="#Online-Bestellung"
-                id="nav-item-Online-Bestellung"
+                id="nav-item-Value-my-Car"
                 role="menuitem"
               >
                 <span
                   class="typography button2"
                 >
-                  Online Bestellung
+                  Value my Car
                 </span>
               </a>
             </li>
@@ -2044,18 +2311,132 @@ Object {
               <a
                 class="navItem "
                 href="#Coches-de-segunda-mano"
-                id="nav-item-Coches-de-segunda-mano"
+                id="nav-item-Finance"
                 role="menuitem"
               >
                 <span
                   class="typography button2"
                 >
-                  Coches de segunda mano
+                  Finance
                 </span>
               </a>
             </li>
             <li
               class=" "
+            >
+              <button
+                aria-expanded="false"
+                aria-haspopup="true"
+                aria-label="Insurance - Press the Space key to show sub-menus."
+                class="navItem "
+                id="nav-item-Insurance"
+                role="menuitem"
+              >
+                <span
+                  class="typography button2"
+                >
+                  Insurance
+                </span>
+                <svg
+                  class="svgIcon inherit"
+                  data-test-id="ChevronDownIcon"
+                  focusable="false"
+                  style="font-size: 24px;"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M12.0711 14.7279L5.70718 8.36392L4.29297 9.77814L12.0711 17.5563L19.8493 9.77814L18.4351 8.36392L12.0711 14.7279Z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+              <div
+                aria-hidden="true"
+                aria-label="Insurance sub-menu"
+                class="collapse collapse"
+                style="height: 0px;"
+              >
+                <div
+                  class="row component left gutter-tablet-l-24 gutter-desktop-24 subNav"
+                >
+                  <div
+                    class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-12 width-desktop-12 subNavGroup fullWidth"
+                  >
+                    <span
+                      role="heading"
+                    >
+                      Insurance
+                    </span>
+                    <ul
+                      aria-label="Insurance menu"
+                      role="menu"
+                    >
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#London"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            Learn about insurance
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#London"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            Learn about insurance
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        role="none"
+                      >
+                        <a
+                          class="navItem "
+                          href="#London"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          <span>
+                            Learn about insurance
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li
+              class=" "
+            >
+              <a
+                class="navItem "
+                href="#Deals"
+                id="nav-item-Deals"
+                role="menuitem"
+              >
+                <span
+                  class="typography button2"
+                >
+                  Deals
+                </span>
+              </a>
+            </li>
+            <li
+              class="lastNavItem "
             >
               <button
                 aria-expanded="false"
@@ -2099,10 +2480,10 @@ Object {
                     <span
                       role="heading"
                     >
-                      Recent News
+                      Recently viewed
                     </span>
                     <ul
-                      aria-label="Recent News menu"
+                      aria-label="Recently viewed menu"
                       role="menu"
                     >
                       <li
@@ -2115,35 +2496,7 @@ Object {
                           tabindex="-1"
                         >
                           <span>
-                            London
-                          </span>
-                        </a>
-                      </li>
-                      <li
-                        role="none"
-                      >
-                        <a
-                          class="navItem "
-                          href="#London"
-                          role="menuitem"
-                          tabindex="-1"
-                        >
-                          <span>
-                            London 2
-                          </span>
-                        </a>
-                      </li>
-                      <li
-                        role="none"
-                      >
-                        <a
-                          class="navItem "
-                          href="#London"
-                          role="menuitem"
-                          tabindex="-1"
-                        >
-                          <span>
-                            London 3
+                            Fastest cars in the world 2023
                           </span>
                         </a>
                       </li>
@@ -2155,10 +2508,10 @@ Object {
                     <span
                       role="heading"
                     >
-                      Deals und Specials
+                      Latest news
                     </span>
                     <ul
-                      aria-label="Deals und Specials menu"
+                      aria-label="Latest news menu"
                       role="menu"
                     >
                       <li
@@ -2171,7 +2524,7 @@ Object {
                           tabindex="-1"
                         >
                           <span>
-                            London
+                            New 2024 Volkswagen ID.7: price, specs and release date
                           </span>
                         </a>
                       </li>
@@ -2185,7 +2538,7 @@ Object {
                           tabindex="-1"
                         >
                           <span>
-                            London 2
+                            New 2024 Volkswagen ID.7: price, specs and release date
                           </span>
                         </a>
                       </li>
@@ -2199,7 +2552,7 @@ Object {
                           tabindex="-1"
                         >
                           <span>
-                            London 3
+                            New 2024 Volkswagen ID.7: price, specs and release date
                           </span>
                         </a>
                       </li>
@@ -2213,7 +2566,7 @@ Object {
                           tabindex="-1"
                         >
                           <span>
-                            London 4
+                            New 2024 Volkswagen ID.7: price, specs and release date
                           </span>
                         </a>
                       </li>
@@ -2227,7 +2580,7 @@ Object {
                           tabindex="-1"
                         >
                           <span>
-                            London 5
+                            New 2024 Volkswagen ID.7: price, specs and release date
                           </span>
                         </a>
                       </li>
@@ -2246,10 +2599,10 @@ Object {
                     <span
                       role="heading"
                     >
-                      Guides
+                      Trending Guides
                     </span>
                     <ul
-                      aria-label="Guides menu"
+                      aria-label="Trending Guides menu"
                       role="menu"
                     >
                       <li
@@ -2262,7 +2615,7 @@ Object {
                           tabindex="-1"
                         >
                           <span>
-                            Hasta 1.200€ de bonificación
+                            New 2023 Car Tax rates and VED bands
                           </span>
                         </a>
                       </li>
@@ -2276,7 +2629,7 @@ Object {
                           tabindex="-1"
                         >
                           <span>
-                            Fahrzeuge zum online finanzieren
+                            New 2023 Car Tax rates and VED bands
                           </span>
                         </a>
                       </li>
@@ -2290,7 +2643,7 @@ Object {
                           tabindex="-1"
                         >
                           <span>
-                            Alles über Elektrofahrzeuge
+                            New 2023 Car Tax rates and VED bands
                           </span>
                         </a>
                       </li>
@@ -2304,7 +2657,7 @@ Object {
                           tabindex="-1"
                         >
                           <span>
-                            London 4
+                            New 2023 Car Tax rates and VED bands
                           </span>
                         </a>
                       </li>
@@ -2318,241 +2671,8 @@ Object {
                           tabindex="-1"
                         >
                           <span>
-                            London 5
+                            New 2023 Car Tax rates and VED bands
                           </span>
-                        </a>
-                      </li>
-                    </ul>
-                    <a
-                      class="showAll"
-                      href="#locations"
-                      tabindex="-1"
-                    >
-                      Show all
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li
-              class="lastNavItem "
-            >
-              <button
-                aria-expanded="false"
-                aria-haspopup="true"
-                aria-label="Blog - Press the Space key to show sub-menus."
-                class="navItem "
-                id="nav-item-Blog"
-                role="menuitem"
-              >
-                <span
-                  class="typography button2"
-                >
-                  Blog
-                </span>
-                <svg
-                  class="svgIcon inherit"
-                  data-test-id="ChevronDownIcon"
-                  focusable="false"
-                  style="font-size: 24px;"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    clip-rule="evenodd"
-                    d="M12.0711 14.7279L5.70718 8.36392L4.29297 9.77814L12.0711 17.5563L19.8493 9.77814L18.4351 8.36392L12.0711 14.7279Z"
-                    fill-rule="evenodd"
-                  />
-                </svg>
-              </button>
-              <div
-                aria-hidden="true"
-                aria-label="Blog sub-menu"
-                class="collapse collapse"
-                style="height: 0px;"
-              >
-                <div
-                  class="row component left gutter-tablet-l-24 gutter-desktop-24 subNav"
-                >
-                  <div
-                    class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-4 width-desktop-4 subNavGroup thirdWidth"
-                  >
-                    <span
-                      role="heading"
-                    >
-                      Recently Viewed
-                    </span>
-                    <ul
-                      aria-label="Recently Viewed menu"
-                      role="menu"
-                    >
-                      <li
-                        role="none"
-                      >
-                        <a
-                          class="navItem "
-                          href="#London"
-                          role="menuitem"
-                          tabindex="-1"
-                        >
-                          <span>
-                            London
-                          </span>
-                        </a>
-                      </li>
-                      <li
-                        role="none"
-                      >
-                        <a
-                          class="navItem "
-                          href="#London"
-                          role="menuitem"
-                          tabindex="-1"
-                        >
-                          <span>
-                            London 2
-                          </span>
-                        </a>
-                      </li>
-                      <li
-                        role="none"
-                      >
-                        <a
-                          class="navItem "
-                          href="#London"
-                          role="menuitem"
-                          tabindex="-1"
-                        >
-                          <span>
-                            London 3
-                          </span>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div
-                    class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-6 width-desktop-6 subNavGroup halfWidth"
-                  >
-                    <span
-                      role="heading"
-                    >
-                      Articles
-                    </span>
-                    <ul
-                      aria-label="Articles menu"
-                      role="menu"
-                    >
-                      <li
-                        role="none"
-                      >
-                        <a
-                          class="navItem hasCaption"
-                          href="#London"
-                          role="menuitem"
-                          tabindex="-1"
-                        >
-                          <span>
-                            London
-                          </span>
-                          <q
-                            class="typography body4"
-                          >
-                            Everything you need to know about the UKs electric
-                          </q>
-                        </a>
-                      </li>
-                      <li
-                        role="none"
-                      >
-                        <a
-                          class="navItem hasCaption"
-                          href="#London"
-                          role="menuitem"
-                          tabindex="-1"
-                        >
-                          <span>
-                            London 2
-                          </span>
-                          <q
-                            class="typography body4"
-                          >
-                            Everything you need to know
-                          </q>
-                        </a>
-                      </li>
-                      <li
-                        role="none"
-                      >
-                        <a
-                          class="navItem hasCaption"
-                          href="#London"
-                          role="menuitem"
-                          tabindex="-1"
-                        >
-                          <span>
-                            London 3
-                          </span>
-                          <q
-                            class="typography body4"
-                          >
-                            Everything you need to know about the UKs electric car market
-                          </q>
-                        </a>
-                      </li>
-                      <li
-                        role="none"
-                      >
-                        <a
-                          class="navItem hasCaption"
-                          href="#London"
-                          role="menuitem"
-                          tabindex="-1"
-                        >
-                          <span>
-                            London 4
-                          </span>
-                          <q
-                            class="typography body4"
-                          >
-                            Que faut-il regarder avant d'acheter une voiture d'occasion ?
-                          </q>
-                        </a>
-                      </li>
-                      <li
-                        role="none"
-                      >
-                        <a
-                          class="navItem hasCaption"
-                          href="#London"
-                          role="menuitem"
-                          tabindex="-1"
-                        >
-                          <span>
-                            London 5
-                          </span>
-                          <q
-                            class="typography body4"
-                          >
-                            Everything you need to know
-                          </q>
-                        </a>
-                      </li>
-                      <li
-                        role="none"
-                      >
-                        <a
-                          class="navItem hasCaption"
-                          href="#London"
-                          role="menuitem"
-                          tabindex="-1"
-                        >
-                          <span>
-                            London 6
-                          </span>
-                          <q
-                            class="typography body4"
-                          >
-                            Everything you need to know about the UKs electric car market
-                          </q>
                         </a>
                       </li>
                     </ul>
