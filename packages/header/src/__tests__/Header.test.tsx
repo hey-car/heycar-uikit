@@ -9,19 +9,6 @@ import { HeaderLinkProps, HeaderProps } from '../Header.types';
 
 import { defaultData } from './Header.mock';
 
-jest.mock('@heycar-uikit/themes', () => ({
-  __esModule: true,
-  default: jest.fn(() => ({})),
-  useBreakpoint: jest.fn(() => ({
-    breakpoints: {
-      isTabletL: true,
-      isDesktopS: true,
-      isDesktopM: true,
-      isDesktopL: true,
-    },
-  })),
-}));
-
 const dataTestId = 'test-id';
 
 describe('ReviewRating', () => {

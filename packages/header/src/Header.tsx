@@ -14,7 +14,8 @@ import Logo from '@heycar-uikit/logo';
 import Typography from '@heycar-uikit/typography';
 
 import LanguageList from './components/LanguageList';
-import Navigation from './components/Navigation';
+import NavigationBurgerMenu from './components/NavigationBurgerMenu';
+import NavigationDropdown from './components/NavigationDropdown';
 import { useLangList } from './hooks/useLangList';
 import {
   getCurrentLang,
@@ -251,7 +252,7 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
         <div
           className={`${styles.navWrapper} ${isNavTrayOpen ? 'navOpen' : ''}`}
         >
-          <Navigation
+          <NavigationBurgerMenu
             Link={Link}
             accountItemConfig={accountItemConfig}
             activeNavItem={activeNavItem}
@@ -259,6 +260,15 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
             currentLang={currentLang?.langCode}
             dataTestId={`${dataTestId}-navigation`}
             langItemConfig={langItemConfig}
+            locale={locale}
+            navigation={navigation}
+            setActiveNavItem={setActiveNavItem}
+            trackingFn={trackingFn}
+          />
+          <NavigationDropdown
+            Link={Link}
+            activeNavItem={activeNavItem}
+            dataTestId={`${dataTestId}-navigation`}
             locale={locale}
             navigation={navigation}
             setActiveNavItem={setActiveNavItem}

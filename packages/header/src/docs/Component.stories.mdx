@@ -4,7 +4,8 @@ import { ComponentHeader, CssVars, TabContainer } from 'storybook/blocks';
 import { HeaderCanvas } from './Canvas';
 import Header from '../Header';
 import LanguageList from '../components/LanguageList';
-import Navigation from '../components/Navigation';
+import NavigationBurgerMenu from '../components/NavigationBurgerMenu';
+import NavigationDropdown from '../components/NavigationDropdown';
 import SubNav from '../components/SubNav';
 import { defaultData } from '../__tests__/Header.mock';
 import {
@@ -114,7 +115,14 @@ import Header from '@heycar-uikit/header';
     { label: 'Description', component: <Description /> },
     { label: 'Props', component: <Props of={Header} /> },
     { label: 'LanguageList Props', component: <Props of={LanguageList} /> },
-    { label: 'Navigation Props', component: <Props of={Navigation} /> },
+    {
+      label: 'Burger Menu Props',
+      component: <Props of={NavigationBurgerMenu} />,
+    },
+    {
+      label: 'Dropdown Menu Props',
+      component: <Props of={NavigationDropdown} />,
+    },
     { label: 'SubNav Props', component: <Props of={SubNav} /> },
     { label: 'Changelog', component: <Changelog /> },
   ]}

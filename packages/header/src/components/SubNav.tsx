@@ -9,7 +9,7 @@ import { getSubNavGroupDetails } from '../utils/navigationHelpers';
 
 import { SubNavProps } from './Navigation.types';
 
-import styles from '../styles/navigation.module.css';
+import styles from '../styles/subNav.module.css';
 
 const SubNav = React.forwardRef<HTMLDivElement, SubNavProps>(
   (
@@ -66,7 +66,7 @@ const SubNav = React.forwardRef<HTMLDivElement, SubNavProps>(
                       role="none"
                     >
                       <Link
-                        className={`${styles.navItem} ${
+                        className={`${styles.subNavItem} ${
                           subNavItem.desc ? styles.hasCaption : ''
                         }`}
                         href={subNavItem.href}
@@ -77,11 +77,11 @@ const SubNav = React.forwardRef<HTMLDivElement, SubNavProps>(
                         tabIndex={isOpen ? undefined : -1}
                       >
                         <span>{subNavItem.label}</span>
-                        {subNavItem.desc && (
+                        {subNavItem.desc && isDropDownMenu ? (
                           <Typography Component="q" variant="body4">
                             {subNavItem.desc}
                           </Typography>
-                        )}
+                        ) : undefined}
                       </Link>
                     </li>
                   );

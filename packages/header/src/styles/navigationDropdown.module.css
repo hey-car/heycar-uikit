@@ -1,0 +1,72 @@
+@import '../../../themes/src/default.css';
+
+/*
+* Base
+*/
+
+.navItem {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0;
+  padding: 0 var(--spacing-3);
+  width: auto;
+  height: 40px;
+  border: 0;
+  background: var(--color-primary-500);
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease, background 0.3s ease;
+
+  & > span {
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    white-space: nowrap;
+  }
+
+  &.isActive,
+  &:hover,
+  &:focus {
+    background: #fff;
+    color: var(--color-primary-500);
+  }
+}
+
+.nav {
+  display: none;
+  width: 100%;
+  height: auto;
+  background: var(--color-primary-500);
+
+  & > ul {
+    box-sizing: border-box;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 var(--spacing-8);
+    list-style: none;
+    max-width: 1440px;
+
+    & > li {
+      display: inline;
+    }
+  }
+
+  & .collapse {
+    position: absolute;
+    left: 0;
+    width: 100%;
+  }
+
+  /* Dropdown nav starts here */
+  @media (--tablet-l) {
+    display: block;
+  }
+
+  @media (--desktop-l) {
+    & ul {
+      padding: 0 var(--spacing-16);
+    }
+  }
+}

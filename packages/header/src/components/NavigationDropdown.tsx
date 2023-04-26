@@ -1,51 +1,33 @@
 import React from 'react';
 
 import Collapse from '@heycar-uikit/collapse';
-import { ChevronDown } from '@heycar-uikit/icons';
-import { useBreakpoint } from '@heycar-uikit/themes';
 import Typography from '@heycar-uikit/typography';
 
 import { DEFAULT_LOCALE } from '../Header.constants';
 import { useNavigationItem } from '../hooks/useNavigationItem';
 import { itemOnClick } from '../utils/headerItemHelpers';
-import { extendNavigation } from '../utils/navigationHelpers';
 
 import { NavigationProps } from './Navigation.types';
 import SubNav from './SubNav';
 
-import styles from '../styles/navigation.module.css';
+import styles from '../styles/navigationDropdown.module.css';
 
-const Navigation = React.forwardRef<HTMLDivElement, NavigationProps>(
+const NavigationDropdown = React.forwardRef<HTMLDivElement, NavigationProps>(
   (
     {
-      accountItemConfig,
       activeNavItem,
-      auxiliaryDetails: aux,
       dataTestId,
-      langItemConfig,
       Link,
       locale = DEFAULT_LOCALE,
-      navigation,
+      navigation = [],
       setActiveNavItem,
       trackingFn,
     },
     ref,
   ) => {
-    const hasAuxData = aux?.tel || aux?.email || aux?.app;
-
     const { toggleSubNav, keyboardOpen, closeSiblings } = useNavigationItem(
       activeNavItem,
       setActiveNavItem,
-    );
-    const {
-      breakpoints: { isTabletL, isDesktopS, isDesktopM, isDesktopL },
-    } = useBreakpoint();
-    const isDropDownMenu = isTabletL || isDesktopS || isDesktopM || isDesktopL;
-    const extendedNavArray = extendNavigation(
-      navigation || [],
-      locale,
-      langItemConfig,
-      accountItemConfig,
     );
 
     return (
@@ -56,7 +38,7 @@ const Navigation = React.forwardRef<HTMLDivElement, NavigationProps>(
         role="navigation"
       >
         <ul aria-label="Main navigation" role="menubar" tabIndex={0}>
-          {extendedNavArray.map((navItem, i) => {
+          {navigation.map((navItem, i) => {
             const { label, subNavGroups } = navItem;
             const id = `nav-item-${label.replace(/ /g, '-')}`;
             const hasSubNav = subNavGroups && subNavGroups?.length > 0;
@@ -70,14 +52,10 @@ const Navigation = React.forwardRef<HTMLDivElement, NavigationProps>(
 
             return (
               <li
-                className={`${isLastItem ? styles.lastNavItem : ''} ${
-                  navItem.isBurgerMenuOnly ? styles.burgerMenuOnly : ''
-                }`}
+                className={`${isLastItem ? styles.lastNavItem : ''}`}
                 key={label}
-                onMouseOut={() => isDropDownMenu && toggleSubNav(id, isActive)}
-                onMouseOver={() =>
-                  isDropDownMenu && toggleSubNav(id, isActive, true)
-                }
+                onMouseOut={() => toggleSubNav(id, isActive)}
+                onMouseOver={() => toggleSubNav(id, isActive, true)}
               >
                 {hasSubNav ? (
                   <>
@@ -91,13 +69,10 @@ const Navigation = React.forwardRef<HTMLDivElement, NavigationProps>(
                           toggleSubNav(id, isActive),
                         )
                       }
-                      onFocus={() =>
-                        isDropDownMenu && closeSiblings(id, hasSubNav)
-                      }
+                      onFocus={() => closeSiblings(id, hasSubNav)}
                       onKeyDown={e => keyboardOpen(e, id, isActive)}
                     >
                       <Typography variant="button2">{label}</Typography>
-                      <ChevronDown />
                     </button>
                     <Collapse
                       aria-hidden={!isActive}
@@ -107,7 +82,7 @@ const Navigation = React.forwardRef<HTMLDivElement, NavigationProps>(
                     >
                       <SubNav
                         Link={Link}
-                        isDropDownMenu={isDropDownMenu}
+                        isDropDownMenu={true}
                         isOpen={isActive}
                         locale={locale}
                         navItemId={commonProps.id}
@@ -130,29 +105,9 @@ const Navigation = React.forwardRef<HTMLDivElement, NavigationProps>(
             );
           })}
         </ul>
-        {hasAuxData && (
-          <aside className={styles.auxDetails}>
-            {aux?.tel && (
-              <p className={styles.auxContact}>
-                <Typography Component="span" variant="caption2">
-                  {aux.tel.label || locale.auxTelLabel}
-                </Typography>
-                <a href={`tel:${aux.tel.value}`}>{aux.tel.value}</a>
-              </p>
-            )}
-            {aux?.email && (
-              <p className={styles.auxContact}>
-                <Typography Component="span" variant="caption2">
-                  {aux.email.label || locale.auxEmailLabel}
-                </Typography>
-                <a href={`mailto:${aux.email.value}`}>{aux.email.value}</a>
-              </p>
-            )}
-          </aside>
-        )}
       </nav>
     );
   },
 );
 
-export default Navigation;
+export default NavigationDropdown;
