@@ -13,7 +13,6 @@ import { NavigationProps } from './Navigation.types';
 import SubNav from './SubNav';
 
 import styles from '../styles/navigationBurgerMenu.module.css';
-import subNavStyles from '../styles/subNav.module.css';
 
 const NavigationBurgerMenu = React.forwardRef<HTMLDivElement, NavigationProps>(
   (
