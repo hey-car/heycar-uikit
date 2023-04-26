@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/collapse@1.4.1...@heycar-uikit/collapse@2.0.0) (2023-04-26)
+
+
+### Build System
+
+* **bump versions:** bumping versions ([#193](https://github.com/hey-car/heycar-uikit/issues/193)) ([08bdb77](https://github.com/hey-car/heycar-uikit/commit/08bdb771e58c3bbecfd370bf3df8d3e2c7b490f2))
+
+
+### BREAKING CHANGES
+
+* **bump versions:** styles now need to be imported separately
+
+
+
+
+
 ## [1.4.1](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/collapse@1.4.0...@heycar-uikit/collapse@1.4.1) (2023-03-09)
 
 **Note:** Version bump only for package @heycar-uikit/collapse
