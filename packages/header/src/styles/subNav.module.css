@@ -98,6 +98,7 @@
     margin-bottom: 0;
 
     & > span[role='heading'] {
+      margin-bottom: var(--spacing-2);
       padding-bottom: var(--spacing-3);
       border-bottom: solid 1px var(--color-neutral-100);
     }

@@ -5,6 +5,7 @@ const DEFAULT_LOCALE = {
   logoLabel: 'heycar logo',
   langListHeading: 'Select Language',
   burgerMenuButtonLabel: 'Navigation menu',
+  favoritesCountLabel: 'Favorites count',
   showAllLabel: 'Show all',
   spaceBarNotification: 'Press the Space key to show sub-menus.',
   subMenuLabel: 'sub-menu',
@@ -81,10 +82,13 @@ const SUBNAV_CONFIG = {
 
 const BURGER_MENU_SUBNAV_MAX_ITEMS = 5;
 
+const MAX_FAVES_DISPLAY_NO = 99;
+
 export {
   BURGER_MENU_SUBNAV_MAX_ITEMS,
   DEFAULT_LOCALE,
   headerClickTracking,
   LANG_OPTIONS,
+  MAX_FAVES_DISPLAY_NO,
   SUBNAV_CONFIG,
 };

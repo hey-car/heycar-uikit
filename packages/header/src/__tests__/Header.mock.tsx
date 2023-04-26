@@ -14,7 +14,7 @@ const defaultData: HeaderProps = {
   favoritesItemConfig: {
     label: 'Favorites',
     href: 'www.google.com',
-    favoritesNumber: 0,
+    favoritesNumber: 8,
   },
   langItemConfig: {
     currentLang: 'en-GB',

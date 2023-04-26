@@ -17,6 +17,7 @@ interface HeaderCanvasProps
   > {
   searchItemConfig: boolean;
   favoritesItemConfig: boolean;
+  favoritesCount: number;
   langItemConfig: boolean;
   accountItemConfig: boolean;
   callItemConfig: boolean;
@@ -25,9 +26,13 @@ interface HeaderCanvasProps
 }
 
 const mapLabelsToValues = (canvasArgs: HeaderCanvasProps) => {
+  const favoritesCount = canvasArgs.favoritesCount;
+
   const headerProps: Record<string, any> = {
     ...canvasArgs,
   };
+
+  delete headerProps.favoritesCount;
 
   if (canvasArgs.searchItemConfig === true) {
     headerProps.searchItemConfig = defaultData.searchItemConfig;
@@ -37,6 +42,8 @@ const mapLabelsToValues = (canvasArgs: HeaderCanvasProps) => {
 
   if (canvasArgs.favoritesItemConfig === true) {
     headerProps.favoritesItemConfig = defaultData.favoritesItemConfig;
+
+    headerProps.favoritesItemConfig.favoritesNumber = favoritesCount;
   } else {
     headerProps.favoritesItemConfig = undefined;
   }

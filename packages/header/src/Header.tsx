@@ -7,7 +7,6 @@ import {
   Dealer,
   Hamburger,
   HeartDefault,
-  HeartFilled,
   Search,
 } from '@heycar-uikit/icons';
 import Logo from '@heycar-uikit/logo';
@@ -22,7 +21,7 @@ import {
   hasHeaderItems,
   itemOnClick,
 } from './utils/headerItemHelpers';
-import { DEFAULT_LOCALE } from './Header.constants';
+import { DEFAULT_LOCALE, MAX_FAVES_DISPLAY_NO } from './Header.constants';
 import { HeaderLinkProps, HeaderProps } from './Header.types';
 
 import styles from './styles/default.module.css';
@@ -68,6 +67,7 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
         accountItemConfig,
         callItemConfig,
       );
+    const favesCount = favoritesItemConfig!.favoritesNumber || 0;
 
     // Lang
     const currentLang = hasLang
@@ -132,7 +132,7 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
               {hasFaves && (
                 <Link
                   aria-label={favoritesItemConfig!.label}
-                  className={styles.item}
+                  className={`${styles.item} ${styles.faves}`}
                   href={favoritesItemConfig!.href}
                   onClick={() =>
                     itemOnClick(
@@ -142,11 +142,17 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
                     )
                   }
                 >
-                  {favoritesItemConfig!.favoritesNumber ? (
-                    <HeartFilled />
-                  ) : (
-                    <HeartDefault />
-                  )}
+                  <HeartDefault />
+                  <span
+                    aria-label={locale.favoritesCountLabel}
+                    className={`${styles.counter} ${
+                      favesCount > 0 ? styles.active : ''
+                    }`}
+                  >
+                    {favesCount > MAX_FAVES_DISPLAY_NO
+                      ? MAX_FAVES_DISPLAY_NO
+                      : favesCount}
+                  </span>
                   <Typography variant="subheading3">
                     {favoritesItemConfig!.label}
                   </Typography>

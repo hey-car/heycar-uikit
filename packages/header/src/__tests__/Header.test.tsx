@@ -11,7 +11,7 @@ import { defaultData } from './Header.mock';
 
 const dataTestId = 'test-id';
 
-describe('ReviewRating', () => {
+describe('Header', () => {
   /**
    * Attributes tests
    */
@@ -108,21 +108,13 @@ describe('ReviewRating', () => {
    * Default states tests
    */
   describe('Default states tests', () => {
-    it('should render default heart icon if favoritesNumber is falsy', () => {
-      const { getByTestId } = render(
-        <Header {...defaultData} dataTestId={dataTestId} />,
-      );
-
-      expect(getByTestId('HeartDefaultIcon')).toBeInTheDocument();
-    });
-
-    it('should render filled heart icon if favoritesNumber is > 0', () => {
+    it('should display number if favoritesNumber is > 0', () => {
       const updatedFavs: HeaderProps['favoritesItemConfig'] = {
         ...defaultData.favoritesItemConfig,
         label: 'faves',
-        favoritesNumber: 1,
+        favoritesNumber: 8,
       };
-      const { getByTestId, queryByTestId } = render(
+      const { getByLabelText } = render(
         <Header
           {...defaultData}
           dataTestId={dataTestId}
@@ -130,8 +122,24 @@ describe('ReviewRating', () => {
         />,
       );
 
-      expect(queryByTestId('HeartDefaultIcon')).not.toBeInTheDocument();
-      expect(getByTestId('HeartFilledIcon')).toBeInTheDocument();
+      expect(getByLabelText('Favorites count')).toHaveTextContent('8');
+    });
+
+    it('should display 99 if favoritesNumber is > 99', () => {
+      const updatedFavs: HeaderProps['favoritesItemConfig'] = {
+        ...defaultData.favoritesItemConfig,
+        label: 'faves',
+        favoritesNumber: 200,
+      };
+      const { getByLabelText } = render(
+        <Header
+          {...defaultData}
+          dataTestId={dataTestId}
+          favoritesItemConfig={updatedFavs}
+        />,
+      );
+
+      expect(getByLabelText('Favorites count')).toHaveTextContent('99');
     });
 
     it('should render correct flag if current lang is one of the default language iso codes', () => {
@@ -206,7 +214,7 @@ describe('ReviewRating', () => {
       const customLink = (props: HeaderLinkProps) => (
         <a {...props} data-special-prop="true" />
       );
-      const { getByRole } = render(
+      const { getByRole, getAllByRole } = render(
         <Header
           {...defaultData}
           LinkComponent={customLink}
@@ -221,25 +229,26 @@ describe('ReviewRating', () => {
         }),
       ).toHaveAttribute('data-special-prop');
 
+      // NOTE: these all render twice because of the desktop and mobile views
       // Nav item
       expect(
-        getByRole('menuitem', {
+        getAllByRole('menuitem', {
           name: 'Used cars',
-        }),
+        })[0],
       ).toHaveAttribute('data-special-prop');
 
       // Open menu to get to subnav item
       fireEvent.click(
-        getByRole('menuitem', {
+        getAllByRole('menuitem', {
           name: 'Car reviews - Press the Space key to show sub-menus.',
-        }),
+        })[0],
       );
 
       // subnav item
       expect(
-        getByRole('menuitem', {
+        getAllByRole('menuitem', {
           name: 'Audi Q3 Sportback',
-        }),
+        })[0],
       ).toHaveAttribute('data-special-prop');
     });
 
