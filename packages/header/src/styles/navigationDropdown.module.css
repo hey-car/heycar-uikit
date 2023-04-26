@@ -65,7 +65,7 @@
   }
 
   @media (--desktop-l) {
-    & ul {
+    & > ul {
       padding: 0 var(--spacing-16);
     }
   }

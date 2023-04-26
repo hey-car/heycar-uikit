@@ -54,10 +54,10 @@
 }
 
 .subNav {
-  margin: 0 var(--spacing-5) var(--spacing-2);
+  margin: 0 0 var(--spacing-2);
   border-bottom: solid 1px var(--color-neutral-100);
 
-  .lastNavItem & {
+  :global(.lastNavItem) & {
     border-bottom: none;
   }
 
@@ -68,6 +68,12 @@
     padding: var(--spacing-8) var(--spacing-8);
     max-width: 1440px;
     border-bottom: none;
+  }
+
+  @media (--desktop-l) {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: var(--spacing-8) var(--spacing-16);
   }
 }
 

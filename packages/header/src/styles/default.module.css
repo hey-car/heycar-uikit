@@ -95,13 +95,14 @@
 
   & .counter {
     @mixin typography-caption-4;
+    display: block;
     position: absolute;
-    top: 11px;
-    left: 14px;
+    top: 0;
+    left: 19px;
     width: 14px;
     height: 14px;
     border-radius: 50%;
-    border: solid 1px var(--color-primary-500);
+    border: solid 1px var(--color-primary-700);
     background: var(--color-secondary-500);
     text-align: center;
     line-height: 14px;
@@ -113,6 +114,11 @@
     &.active {
       opacity: 1;
       transform: translateY(0);
+    }
+
+    @media (--tablet-l) {
+      top: 11px;
+      left: 14px;
     }
   }
 }

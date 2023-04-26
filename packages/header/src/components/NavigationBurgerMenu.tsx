@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Collapse from '@heycar-uikit/collapse';
-import { ChevronDown } from '@heycar-uikit/icons';
+import { ChevronDown, Dealer } from '@heycar-uikit/icons';
 import Typography from '@heycar-uikit/typography';
 
 import { DEFAULT_LOCALE } from '../Header.constants';
@@ -13,6 +13,7 @@ import { NavigationProps } from './Navigation.types';
 import SubNav from './SubNav';
 
 import styles from '../styles/navigationBurgerMenu.module.css';
+import subNavStyles from '../styles/subNav.module.css';
 
 const NavigationBurgerMenu = React.forwardRef<HTMLDivElement, NavigationProps>(
   (
@@ -66,7 +67,9 @@ const NavigationBurgerMenu = React.forwardRef<HTMLDivElement, NavigationProps>(
 
             return (
               <li
-                className={`${isLastItem ? styles.lastNavItem : ''}`}
+                className={`${isLastItem ? 'lastNavItem' : ''} ${
+                  navItem.isBurgerMenuOnly ? styles.headerItems : ''
+                }`}
                 key={label}
               >
                 {hasSubNav ? (
@@ -83,7 +86,7 @@ const NavigationBurgerMenu = React.forwardRef<HTMLDivElement, NavigationProps>(
                       }
                       onKeyDown={e => keyboardOpen(e, id, isActive)}
                     >
-                      <Typography variant="button2">{label}</Typography>
+                      <Typography variant="subheading3">{label}</Typography>
                       <ChevronDown />
                     </button>
                     <Collapse
@@ -108,9 +111,14 @@ const NavigationBurgerMenu = React.forwardRef<HTMLDivElement, NavigationProps>(
                   <Link
                     {...commonProps}
                     href={navItem.href}
-                    onClick={() => itemOnClick(`${label}`, trackingFn)}
+                    onClick={() =>
+                      itemOnClick(`${label}`, trackingFn, navItem.onClick)
+                    }
                   >
-                    <Typography variant="button2">{label}</Typography>
+                    <Typography variant="subheading3">{label}</Typography>
+                    {label === accountItemConfig?.label ? (
+                      <Dealer />
+                    ) : undefined}
                   </Link>
                 )}
               </li>
