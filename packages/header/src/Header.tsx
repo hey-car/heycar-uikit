@@ -89,7 +89,7 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
           <Grid.Row gutter={{ mobile: 8, tablet: 12, desktop: 24 }}>
             <Grid.Col className={styles.colLeft}>
               <Link
-                aria-label={DEFAULT_LOCALE.logoLabel}
+                aria-label={locale.logoLabel}
                 className={styles.logo}
                 href={logoHref}
                 onClick={() => itemOnClick('Logo', trackingFn)}
@@ -183,7 +183,7 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
                   {isLangListOpen && (
                     <LanguageList
                       dataTestId="header-language-list"
-                      heading={DEFAULT_LOCALE.langListHeading}
+                      heading={locale.langListHeading}
                       onFocusEvents={setIsFocused}
                       onHoverEvents={setIsHovering}
                       options={langItemConfig!.options}

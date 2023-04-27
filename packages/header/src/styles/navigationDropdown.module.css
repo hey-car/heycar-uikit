@@ -1,9 +1,5 @@
 @import '../../../themes/src/default.css';
 
-/*
-* Base
-*/
-
 .navItem {
   display: inline-flex;
   align-items: center;

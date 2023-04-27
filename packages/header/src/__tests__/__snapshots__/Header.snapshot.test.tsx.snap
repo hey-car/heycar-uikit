@@ -260,6 +260,7 @@ Object {
         >
           <nav
             class="nav"
+            data-nav-type="burger-menu"
             data-test-id="undefined-navigation"
             role="navigation"
           >
@@ -274,7 +275,7 @@ Object {
                 <a
                   class="navItem "
                   href="#used-cars"
-                  id="nav-item-Used-cars"
+                  id="nav-item-Usedcars"
                   role="menuitem"
                 >
                   <span
@@ -290,7 +291,7 @@ Object {
                 <a
                   class="navItem "
                   href="#new-cars"
-                  id="nav-item-New-cars"
+                  id="nav-item-Newcars"
                   role="menuitem"
                 >
                   <span
@@ -306,7 +307,7 @@ Object {
                 <a
                   class="navItem "
                   href="#new-cars"
-                  id="nav-item-Electric-cars"
+                  id="nav-item-Electriccars"
                   role="menuitem"
                 >
                   <span
@@ -322,7 +323,7 @@ Object {
                 <a
                   class="navItem "
                   href="#new-cars"
-                  id="nav-item-Buy-online"
+                  id="nav-item-Buyonline"
                   role="menuitem"
                 >
                   <span
@@ -340,7 +341,7 @@ Object {
                   aria-haspopup="true"
                   aria-label="Car reviews - Press the Space key to show sub-menus."
                   class="navItem "
-                  id="nav-item-Car-reviews"
+                  id="nav-item-Carreviews"
                   role="menuitem"
                 >
                   <span
@@ -473,7 +474,7 @@ Object {
                   aria-haspopup="true"
                   aria-label="Cars by Location - Press the Space key to show sub-menus."
                   class="navItem "
-                  id="nav-item-Cars-by-Location"
+                  id="nav-item-CarsbyLocation"
                   role="menuitem"
                 >
                   <span
@@ -660,7 +661,7 @@ Object {
                 <a
                   class="navItem "
                   href="#Online-Bestellung"
-                  id="nav-item-Value-my-Car"
+                  id="nav-item-ValuemyCar"
                   role="menuitem"
                 >
                   <span
@@ -808,7 +809,7 @@ Object {
                   aria-haspopup="true"
                   aria-label="News & Guides - Press the Space key to show sub-menus."
                   class="navItem "
-                  id="nav-item-News-&-Guides"
+                  id="nav-item-NewsGuides"
                   role="menuitem"
                 >
                   <span
@@ -1241,6 +1242,7 @@ Object {
           </nav>
           <nav
             class="nav"
+            data-nav-type="dropdown-menu"
             data-test-id="undefined-navigation"
             role="navigation"
           >
@@ -1255,7 +1257,7 @@ Object {
                 <a
                   class="navItem "
                   href="#used-cars"
-                  id="nav-item-Used-cars"
+                  id="nav-item-Usedcars"
                   role="menuitem"
                 >
                   <span
@@ -1271,7 +1273,7 @@ Object {
                 <a
                   class="navItem "
                   href="#new-cars"
-                  id="nav-item-New-cars"
+                  id="nav-item-Newcars"
                   role="menuitem"
                 >
                   <span
@@ -1287,7 +1289,7 @@ Object {
                 <a
                   class="navItem "
                   href="#new-cars"
-                  id="nav-item-Electric-cars"
+                  id="nav-item-Electriccars"
                   role="menuitem"
                 >
                   <span
@@ -1303,7 +1305,7 @@ Object {
                 <a
                   class="navItem "
                   href="#new-cars"
-                  id="nav-item-Buy-online"
+                  id="nav-item-Buyonline"
                   role="menuitem"
                 >
                   <span
@@ -1321,7 +1323,7 @@ Object {
                   aria-haspopup="true"
                   aria-label="Car reviews - Press the Space key to show sub-menus."
                   class="navItem "
-                  id="nav-item-Car-reviews"
+                  id="nav-item-Carreviews"
                   role="menuitem"
                 >
                   <span
@@ -1581,7 +1583,7 @@ Object {
                   aria-haspopup="true"
                   aria-label="Cars by Location - Press the Space key to show sub-menus."
                   class="navItem "
-                  id="nav-item-Cars-by-Location"
+                  id="nav-item-CarsbyLocation"
                   role="menuitem"
                 >
                   <span
@@ -1825,7 +1827,7 @@ Object {
                 <a
                   class="navItem "
                   href="#Online-Bestellung"
-                  id="nav-item-Value-my-Car"
+                  id="nav-item-ValuemyCar"
                   role="menuitem"
                 >
                   <span
@@ -1960,7 +1962,7 @@ Object {
                   aria-haspopup="true"
                   aria-label="News & Guides - Press the Space key to show sub-menus."
                   class="navItem "
-                  id="nav-item-News-&-Guides"
+                  id="nav-item-NewsGuides"
                   role="menuitem"
                 >
                   <span
@@ -2453,6 +2455,7 @@ Object {
       >
         <nav
           class="nav"
+          data-nav-type="burger-menu"
           data-test-id="undefined-navigation"
           role="navigation"
         >
@@ -2467,7 +2470,7 @@ Object {
               <a
                 class="navItem "
                 href="#used-cars"
-                id="nav-item-Used-cars"
+                id="nav-item-Usedcars"
                 role="menuitem"
               >
                 <span
@@ -2483,7 +2486,7 @@ Object {
               <a
                 class="navItem "
                 href="#new-cars"
-                id="nav-item-New-cars"
+                id="nav-item-Newcars"
                 role="menuitem"
               >
                 <span
@@ -2499,7 +2502,7 @@ Object {
               <a
                 class="navItem "
                 href="#new-cars"
-                id="nav-item-Electric-cars"
+                id="nav-item-Electriccars"
                 role="menuitem"
               >
                 <span
@@ -2515,7 +2518,7 @@ Object {
               <a
                 class="navItem "
                 href="#new-cars"
-                id="nav-item-Buy-online"
+                id="nav-item-Buyonline"
                 role="menuitem"
               >
                 <span
@@ -2533,7 +2536,7 @@ Object {
                 aria-haspopup="true"
                 aria-label="Car reviews - Press the Space key to show sub-menus."
                 class="navItem "
-                id="nav-item-Car-reviews"
+                id="nav-item-Carreviews"
                 role="menuitem"
               >
                 <span
@@ -2666,7 +2669,7 @@ Object {
                 aria-haspopup="true"
                 aria-label="Cars by Location - Press the Space key to show sub-menus."
                 class="navItem "
-                id="nav-item-Cars-by-Location"
+                id="nav-item-CarsbyLocation"
                 role="menuitem"
               >
                 <span
@@ -2853,7 +2856,7 @@ Object {
               <a
                 class="navItem "
                 href="#Online-Bestellung"
-                id="nav-item-Value-my-Car"
+                id="nav-item-ValuemyCar"
                 role="menuitem"
               >
                 <span
@@ -3001,7 +3004,7 @@ Object {
                 aria-haspopup="true"
                 aria-label="News & Guides - Press the Space key to show sub-menus."
                 class="navItem "
-                id="nav-item-News-&-Guides"
+                id="nav-item-NewsGuides"
                 role="menuitem"
               >
                 <span
@@ -3434,6 +3437,7 @@ Object {
         </nav>
         <nav
           class="nav"
+          data-nav-type="dropdown-menu"
           data-test-id="undefined-navigation"
           role="navigation"
         >
@@ -3448,7 +3452,7 @@ Object {
               <a
                 class="navItem "
                 href="#used-cars"
-                id="nav-item-Used-cars"
+                id="nav-item-Usedcars"
                 role="menuitem"
               >
                 <span
@@ -3464,7 +3468,7 @@ Object {
               <a
                 class="navItem "
                 href="#new-cars"
-                id="nav-item-New-cars"
+                id="nav-item-Newcars"
                 role="menuitem"
               >
                 <span
@@ -3480,7 +3484,7 @@ Object {
               <a
                 class="navItem "
                 href="#new-cars"
-                id="nav-item-Electric-cars"
+                id="nav-item-Electriccars"
                 role="menuitem"
               >
                 <span
@@ -3496,7 +3500,7 @@ Object {
               <a
                 class="navItem "
                 href="#new-cars"
-                id="nav-item-Buy-online"
+                id="nav-item-Buyonline"
                 role="menuitem"
               >
                 <span
@@ -3514,7 +3518,7 @@ Object {
                 aria-haspopup="true"
                 aria-label="Car reviews - Press the Space key to show sub-menus."
                 class="navItem "
-                id="nav-item-Car-reviews"
+                id="nav-item-Carreviews"
                 role="menuitem"
               >
                 <span
@@ -3774,7 +3778,7 @@ Object {
                 aria-haspopup="true"
                 aria-label="Cars by Location - Press the Space key to show sub-menus."
                 class="navItem "
-                id="nav-item-Cars-by-Location"
+                id="nav-item-CarsbyLocation"
                 role="menuitem"
               >
                 <span
@@ -4018,7 +4022,7 @@ Object {
               <a
                 class="navItem "
                 href="#Online-Bestellung"
-                id="nav-item-Value-my-Car"
+                id="nav-item-ValuemyCar"
                 role="menuitem"
               >
                 <span
@@ -4153,7 +4157,7 @@ Object {
                 aria-haspopup="true"
                 aria-label="News & Guides - Press the Space key to show sub-menus."
                 class="navItem "
-                id="nav-item-News-&-Guides"
+                id="nav-item-NewsGuides"
                 role="menuitem"
               >
                 <span

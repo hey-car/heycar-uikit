@@ -11,7 +11,29 @@ import { defaultData } from './Header.mock';
 
 const dataTestId = 'test-id';
 
+function setWidthDesktop() {
+  Object.defineProperty(window, 'innerWidth', {
+    writable: true,
+    configurable: true,
+    value: 1280,
+  });
+  global.dispatchEvent(new Event('resize'));
+}
+
+function setWidthMobile() {
+  Object.defineProperty(window, 'innerWidth', {
+    writable: true,
+    configurable: true,
+    value: 240,
+  });
+  global.dispatchEvent(new Event('resize'));
+}
+
 describe('Header', () => {
+  beforeEach(() => {
+    setWidthDesktop();
+  });
+
   /**
    * Attributes tests
    */
@@ -155,12 +177,63 @@ describe('Header', () => {
 
       expect(getByTestId('GermanyIcon')).toBeInTheDocument();
     });
+
+    it('should not render Lang picker if lang config not passed', () => {
+      const { queryByRole } = render(
+        <Header
+          {...defaultData}
+          dataTestId={dataTestId}
+          langItemConfig={undefined}
+        />,
+      );
+
+      expect(
+        queryByRole('button', {
+          name: 'Select Language - Press the Space key to show sub-menus.',
+        }),
+      ).not.toBeInTheDocument();
+    });
   });
 
   /**
    * Interaction tests
    */
   describe('Interaction tests', () => {
+    it('calls passed onClick event when clicking search item in header', () => {
+      setWidthMobile();
+
+      const searchFn = jest.fn();
+      const searchConfig = {
+        Component: (
+          <input
+            aria-label="search-component"
+            defaultValue="This is a separate component"
+            style={{
+              minWidth: '100%',
+              height: '48px',
+              padding: '0 16px',
+              border: 'none',
+              background: '#123D82',
+              color: '#fff',
+            }}
+          />
+        ),
+        label: 'Search',
+        onClick: searchFn,
+      };
+      const { getByRole } = render(
+        <Header
+          {...defaultData}
+          dataTestId={dataTestId}
+          searchItemConfig={searchConfig}
+        />,
+      );
+
+      fireEvent.click(getByRole('button', { name: 'Search' }));
+
+      expect(searchFn).toBeCalledTimes(1);
+    });
+
     it('calls passed onClick event when clicking account item in header', () => {
       const accountFn = jest.fn();
       const updatedAccount = {
@@ -207,6 +280,47 @@ describe('Header', () => {
         getByRole('textbox', {
           name: 'search-component-render-test',
         }),
+      ).toBeInTheDocument();
+    });
+
+    it('renders custom locale values', () => {
+      const customLocale = {
+        closeSearchLabel: 'LT Close search',
+        logoLabel: 'LT heycar logo',
+        langListHeading: 'LT Select Language',
+        burgerMenuButtonLabel: 'LT Navigation menu',
+        favoritesCountLabel: 'LT Favorites count',
+        showAllLabel: 'LT Show all',
+        spaceBarNotification: 'LT Press the Space key to show sub-menus.',
+        subMenuLabel: 'LT sub-menu',
+        auxTelLabel: 'LT Call Us at',
+        auxEmailLabel: 'LT Email Us at',
+        auxAppHeading: 'LT Download our App now',
+      };
+
+      const { getAllByLabelText, getAllByRole, getByRole } = render(
+        <Header
+          {...defaultData}
+          dataTestId={dataTestId}
+          locale={customLocale}
+        />,
+      );
+
+      const ddMenuNavBtn = getAllByRole('menuitem', {
+        name: 'Car reviews - LT Press the Space key to show sub-menus.',
+      })[1];
+
+      expect(getByRole('link', { name: 'LT heycar logo' })).toBeInTheDocument();
+      expect(ddMenuNavBtn).toBeInTheDocument();
+      expect(
+        getAllByLabelText('Car reviews LT sub-menu')[1],
+      ).toBeInTheDocument();
+
+      // Open menu to get to subnav item
+      fireEvent.click(ddMenuNavBtn);
+
+      expect(
+        getAllByRole('link', { name: 'LT Show all' })[1],
       ).toBeInTheDocument();
     });
 

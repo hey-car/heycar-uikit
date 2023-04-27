@@ -47,6 +47,7 @@ const NavigationBurgerMenu = React.forwardRef<HTMLDivElement, NavigationProps>(
     return (
       <nav
         className={styles.nav}
+        data-nav-type="burger-menu"
         data-test-id={dataTestId}
         ref={ref}
         role="navigation"
@@ -54,7 +55,7 @@ const NavigationBurgerMenu = React.forwardRef<HTMLDivElement, NavigationProps>(
         <ul aria-label="Main navigation" role="menubar" tabIndex={0}>
           {extendedNavArray.map((navItem, i) => {
             const { label, subNavGroups } = navItem;
-            const id = `nav-item-${label.replace(/ /g, '-')}`;
+            const id = `nav-item-${label.replace(/^[^a-z]+|[^\w:.-]+/gi, '')}`;
             const hasSubNav = subNavGroups && subNavGroups?.length > 0;
             const isActive = activeNavItem === id;
             const isLastItem = i + 1 === navigation.length;
