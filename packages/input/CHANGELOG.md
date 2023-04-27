@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/input@2.0.0...@heycar-uikit/input@3.0.0) (2023-04-27)
+
+
+### chore
+
+* fix rollup css ([#194](https://github.com/hey-car/heycar-uikit/issues/194)) ([7d1fc92](https://github.com/hey-car/heycar-uikit/commit/7d1fc92711ce1ee6004359e39ecb46b8b6c49204))
+
+
+### BREAKING CHANGES
+
+* styles now need to be imported separately
+
+* build(rollup): update to fix css exports
+
+* build(package.json): updates to all packages to trigger version bump
+
+
+
+
+
 # [2.0.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/input@1.3.0...@heycar-uikit/input@2.0.0) (2023-04-26)
 
 
