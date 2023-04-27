@@ -1,3 +1,15 @@
+# [7.0.0](https://github.com/hey-car/heycar-uikit/compare/v6.0.0...v7.0.0) (2023-04-26)
+
+
+### Build System
+
+* **bump versions:** bumping versions ([#193](https://github.com/hey-car/heycar-uikit/issues/193)) ([08bdb77](https://github.com/hey-car/heycar-uikit/commit/08bdb771e58c3bbecfd370bf3df8d3e2c7b490f2))
+
+
+### BREAKING CHANGES
+
+* **bump versions:** styles now need to be imported separately
+
 # [6.0.0](https://github.com/hey-car/heycar-uikit/compare/v5.9.0...v6.0.0) (2023-04-25)
 
 

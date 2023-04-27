@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/chip@0.6.3...@heycar-uikit/chip@0.7.0) (2023-04-26)
+
+
+### Build System
+
+* **bump versions:** bumping versions ([#193](https://github.com/hey-car/heycar-uikit/issues/193)) ([08bdb77](https://github.com/hey-car/heycar-uikit/commit/08bdb771e58c3bbecfd370bf3df8d3e2c7b490f2))
+
+
+### BREAKING CHANGES
+
+* **bump versions:** styles now need to be imported separately
+
+
+
+
+
 ## [0.6.3](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/chip@0.6.2...@heycar-uikit/chip@0.6.3) (2023-04-06)
 
 **Note:** Version bump only for package @heycar-uikit/chip

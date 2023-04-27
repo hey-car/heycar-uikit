@@ -1,6 +1,6 @@
 {
   "name": "@heycar-uikit/dropdown",
-  "version": "2.2.0",
+  "version": "3.0.0",
   "description": "HeyCar-UIKit Dropdown",
   "main": "dist/index.js",
   "module": "./dist/esm/index.js",
@@ -12,6 +12,7 @@
     "uikit",
     "react",
     "components",
+    "modules",
     "heycar",
     "typescript",
     "ui-components",
@@ -30,8 +31,8 @@
     "react": "^17.0.1"
   },
   "dependencies": {
-    "@heycar-uikit/icons": "^4.2.1",
-    "@heycar-uikit/input": "^1.3.0",
+    "@heycar-uikit/icons": "^5.0.0",
+    "@heycar-uikit/input": "^2.0.0",
     "classnames": "^2.3.1"
   },
   "author": "HeyCar Team",

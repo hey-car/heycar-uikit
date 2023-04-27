@@ -1,6 +1,6 @@
 {
   "name": "@heycar-uikit/fonts",
-  "version": "1.5.0",
+  "version": "2.0.0",
   "description": "HeyCar-UIKit fonts",
   "main": "default.css",
   "scripts": {
@@ -11,6 +11,7 @@
     "uikit",
     "react",
     "components",
+    "modules",
     "heycar",
     "typescript",
     "ui-components",

@@ -1,6 +1,6 @@
 {
   "name": "@heycar-uikit/themes",
-  "version": "2.2.0",
+  "version": "3.0.0",
   "description": "HeyCar-UIKit themes",
   "main": "default.css",
   "keywords": [
@@ -8,6 +8,7 @@
     "uikit",
     "react",
     "components",
+    "modules",
     "heycar",
     "typescript",
     "ui-components",
