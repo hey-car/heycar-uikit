@@ -10,6 +10,7 @@ import { ScriptTarget } from 'typescript';
 
 import addCssImports from './tools/rollup/addCssImports';
 import bundleCss from './tools/rollup/bundleCss';
+import generateClassNameHash from './tools/rollup/generateClassNameHash';
 import {
   coreComponentsResolver,
   coreComponentsRootPackageResolver,
@@ -169,7 +170,25 @@ const esm = {
       }),
     }),
     json(),
-    postcss({ plugins: [], sourceMap: true, extract: true, minimize: true }),
+    postcss({
+      plugins: [],
+      sourceMap: true,
+      extract: true,
+      minimize: true,
+      modules: {
+        generateScopedName: function (name, fileName) {
+          const relativeFileName = path.relative(currentPackageDir, fileName);
+          const hash = generateClassNameHash(
+            pkg.name,
+            rootPkg.version,
+            relativeFileName,
+          );
+
+          return `${currentComponentName}__${name}_${hash}`;
+        },
+      },
+      autoModules: false,
+    }),
     copyPlugin(esmDist),
   ],
 };
