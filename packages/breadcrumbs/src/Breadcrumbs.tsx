@@ -1,6 +1,8 @@
 import React, { FC, useState } from 'react';
 import cn from 'classnames';
+import { v4 as uuidv4 } from 'uuid';
 
+import useBreakpoint from './hooks/useBreakpoint.hook';
 import {
   Breadcrumb,
   BreadcrumbLinkProps,
@@ -25,6 +27,13 @@ const Breadcrumbs: FC<BreadcrumbsProps> = ({
   dataTestId,
   className,
 }) => {
+  // eslint-disable-next-line @typescript-eslint/naming-convention
+  const [showHiddenBreadcrumbs, setShowHiddenBreadcrumbs] = useState(false);
+
+  const { breakpoints } = useBreakpoint();
+
+  const isMobile = breakpoints.isMobile;
+
   if (breadcrumbs.length === 0) {
     return null;
   }
@@ -34,9 +43,6 @@ const Breadcrumbs: FC<BreadcrumbsProps> = ({
   const firstBreadcrumb = breadcrumbs[0];
   const lastBreadcrumb = breadcrumbs[breadcrumbs.length - 1];
   const hiddenBreadcrumbs = breadcrumbs.slice(1, -1);
-
-  // eslint-disable-next-line react-hooks/rules-of-hooks, @typescript-eslint/naming-convention
-  const [showHiddenBreadcrumbs, setShowHiddenBreadcrumbs] = useState(false);
 
   const toggleHiddenBreadcrumbs = () => {
     setShowHiddenBreadcrumbs(!showHiddenBreadcrumbs);
@@ -60,9 +66,7 @@ const Breadcrumbs: FC<BreadcrumbsProps> = ({
           </li>
         )
       )}
-      {window.innerWidth < 768 &&
-      hiddenBreadcrumbs.length > 0 &&
-      !showHiddenBreadcrumbs ? (
+      {isMobile && hiddenBreadcrumbs.length > 0 && !showHiddenBreadcrumbs ? (
         <li className={styles.threeDots} onClick={toggleHiddenBreadcrumbs}>
           &#8230;
         </li>
@@ -72,8 +76,7 @@ const Breadcrumbs: FC<BreadcrumbsProps> = ({
             hiddenBreadcrumbs.map((breadcrumb, i) => {
               if (breadcrumb.link && i + 1 !== breadcrumbs.length) {
                 return (
-                  // eslint-disable-next-line react/no-array-index-key
-                  <li key={`${breadcrumb.title}-${i}`}>
+                  <li key={`${uuidv4()}`}>
                     <Link link={breadcrumb.link}>
                       <span itemProp="name">{breadcrumb.title}</span>
                     </Link>
