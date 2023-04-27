@@ -3,6 +3,42 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/form-control@2.0.0...@heycar-uikit/form-control@3.0.0) (2023-04-27)
+
+
+### chore
+
+* fix rollup css ([#194](https://github.com/hey-car/heycar-uikit/issues/194)) ([7d1fc92](https://github.com/hey-car/heycar-uikit/commit/7d1fc92711ce1ee6004359e39ecb46b8b6c49204))
+
+
+### BREAKING CHANGES
+
+* styles now need to be imported separately
+
+* build(rollup): update to fix css exports
+
+* build(package.json): updates to all packages to trigger version bump
+
+
+
+
+
+# [2.0.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/form-control@1.6.0...@heycar-uikit/form-control@2.0.0) (2023-04-26)
+
+
+### Build System
+
+* **bump versions:** bumping versions ([#193](https://github.com/hey-car/heycar-uikit/issues/193)) ([08bdb77](https://github.com/hey-car/heycar-uikit/commit/08bdb771e58c3bbecfd370bf3df8d3e2c7b490f2))
+
+
+### BREAKING CHANGES
+
+* **bump versions:** styles now need to be imported separately
+
+
+
+
+
 # [1.6.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/form-control@1.5.1...@heycar-uikit/form-control@1.6.0) (2023-04-06)
 
 

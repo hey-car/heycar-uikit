@@ -1,3 +1,45 @@
+# [8.0.0](https://github.com/hey-car/heycar-uikit/compare/v7.0.0...v8.0.0) (2023-04-27)
+
+
+### chore
+
+* fix rollup css ([#194](https://github.com/hey-car/heycar-uikit/issues/194)) ([7d1fc92](https://github.com/hey-car/heycar-uikit/commit/7d1fc92711ce1ee6004359e39ecb46b8b6c49204))
+
+
+### BREAKING CHANGES
+
+* styles now need to be imported separately
+
+* build(rollup): update to fix css exports
+
+* build(package.json): updates to all packages to trigger version bump
+
+# [7.0.0](https://github.com/hey-car/heycar-uikit/compare/v6.0.0...v7.0.0) (2023-04-26)
+
+
+### Build System
+
+* **bump versions:** bumping versions ([#193](https://github.com/hey-car/heycar-uikit/issues/193)) ([08bdb77](https://github.com/hey-car/heycar-uikit/commit/08bdb771e58c3bbecfd370bf3df8d3e2c7b490f2))
+
+
+### BREAKING CHANGES
+
+* **bump versions:** styles now need to be imported separately
+
+# [6.0.0](https://github.com/hey-car/heycar-uikit/compare/v5.9.0...v6.0.0) (2023-04-25)
+
+
+### chore
+
+* minor bump ([#192](https://github.com/hey-car/heycar-uikit/issues/192)) ([0e45aa4](https://github.com/hey-car/heycar-uikit/commit/0e45aa42b576fb2a27c21ca7fed227d6a9f89a3e))
+
+
+### BREAKING CHANGES
+
+* css will no longer be included automagically
+
+* chore: rollup formatting
+
 # [5.9.0](https://github.com/hey-car/heycar-uikit/compare/v5.8.0...v5.9.0) (2023-04-18)
 
 

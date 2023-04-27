@@ -1,13 +1,16 @@
 import path from 'path';
 
 import json from '@rollup/plugin-json';
+import { nodeResolve } from '@rollup/plugin-node-resolve';
 import copy from 'rollup-plugin-copy';
 import multiInput from 'rollup-plugin-multi-input';
+import postcss from 'rollup-plugin-postcss';
 import typescript from 'rollup-plugin-ts';
 import { ScriptTarget } from 'typescript';
 
 import addCssImports from './tools/rollup/addCssImports';
 import bundleCss from './tools/rollup/bundleCss';
+import generateClassNameHash from './tools/rollup/generateClassNameHash';
 import {
   coreComponentsResolver,
   coreComponentsRootPackageResolver,
@@ -149,17 +152,15 @@ const cssm = {
  */
 const esm = {
   ...baseConfig,
+  external: baseConfig.external,
   output: [
     {
       dir: esmDist,
-      format: 'esm',
-      plugins: [
-        addCssImports({ currentPackageDir }),
-        coreComponentsResolver({ importFrom: esmDist }),
-      ],
+      format: 'es',
     },
   ],
   plugins: [
+    nodeResolve(),
     multiInputPlugin,
     typescript({
       outDir: esmDist,
@@ -169,7 +170,25 @@ const esm = {
       }),
     }),
     json(),
-    ...bundleCss(pkg.name, rootPkg.version, currentComponentName, esmDist),
+    postcss({
+      plugins: [],
+      sourceMap: true,
+      extract: true,
+      minimize: true,
+      modules: {
+        generateScopedName: function (name, fileName) {
+          const relativeFileName = path.relative(currentPackageDir, fileName);
+          const hash = generateClassNameHash(
+            pkg.name,
+            rootPkg.version,
+            relativeFileName,
+          );
+
+          return `${currentComponentName}__${name}_${hash}`;
+        },
+      },
+      autoModules: false,
+    }),
     copyPlugin(esmDist),
   ],
 };
