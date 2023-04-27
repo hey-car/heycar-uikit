@@ -109,9 +109,9 @@ Object {
                 </svg>
                 <span
                   aria-label="Favorites count"
-                  class="counter active"
+                  class="counter "
                 >
-                  8
+                  0
                 </span>
                 <span
                   class="typography subheading3"
@@ -269,7 +269,7 @@ Object {
               tabindex="0"
             >
               <li
-                class=""
+                class=" "
               >
                 <a
                   class="navItem "
@@ -278,14 +278,14 @@ Object {
                   role="menuitem"
                 >
                   <span
-                    class="typography button2"
+                    class="typography subheading3"
                   >
                     Used cars
                   </span>
                 </a>
               </li>
               <li
-                class=""
+                class=" "
               >
                 <a
                   class="navItem "
@@ -294,14 +294,14 @@ Object {
                   role="menuitem"
                 >
                   <span
-                    class="typography button2"
+                    class="typography subheading3"
                   >
                     New cars
                   </span>
                 </a>
               </li>
               <li
-                class=""
+                class=" "
               >
                 <a
                   class="navItem "
@@ -310,14 +310,14 @@ Object {
                   role="menuitem"
                 >
                   <span
-                    class="typography button2"
+                    class="typography subheading3"
                   >
                     Electric cars
                   </span>
                 </a>
               </li>
               <li
-                class=""
+                class=" "
               >
                 <a
                   class="navItem "
@@ -326,14 +326,14 @@ Object {
                   role="menuitem"
                 >
                   <span
-                    class="typography button2"
+                    class="typography subheading3"
                   >
                     Buy online
                   </span>
                 </a>
               </li>
               <li
-                class=""
+                class=" "
               >
                 <button
                   aria-expanded="false"
@@ -344,7 +344,7 @@ Object {
                   role="menuitem"
                 >
                   <span
-                    class="typography button2"
+                    class="typography subheading3"
                   >
                     Car reviews
                   </span>
@@ -466,7 +466,7 @@ Object {
                 </div>
               </li>
               <li
-                class=""
+                class=" "
               >
                 <button
                   aria-expanded="false"
@@ -477,7 +477,7 @@ Object {
                   role="menuitem"
                 >
                   <span
-                    class="typography button2"
+                    class="typography subheading3"
                   >
                     Cars by Location
                   </span>
@@ -655,7 +655,7 @@ Object {
                 </div>
               </li>
               <li
-                class=""
+                class=" "
               >
                 <a
                   class="navItem "
@@ -664,14 +664,14 @@ Object {
                   role="menuitem"
                 >
                   <span
-                    class="typography button2"
+                    class="typography subheading3"
                   >
                     Value my Car
                   </span>
                 </a>
               </li>
               <li
-                class=""
+                class=" "
               >
                 <a
                   class="navItem "
@@ -680,14 +680,14 @@ Object {
                   role="menuitem"
                 >
                   <span
-                    class="typography button2"
+                    class="typography subheading3"
                   >
                     Finance
                   </span>
                 </a>
               </li>
               <li
-                class=""
+                class=" "
               >
                 <button
                   aria-expanded="false"
@@ -698,7 +698,7 @@ Object {
                   role="menuitem"
                 >
                   <span
-                    class="typography button2"
+                    class="typography subheading3"
                   >
                     Insurance
                   </span>
@@ -785,7 +785,7 @@ Object {
                 </div>
               </li>
               <li
-                class=""
+                class=" "
               >
                 <a
                   class="navItem "
@@ -794,14 +794,14 @@ Object {
                   role="menuitem"
                 >
                   <span
-                    class="typography button2"
+                    class="typography subheading3"
                   >
                     Deals
                   </span>
                 </a>
               </li>
               <li
-                class="lastNavItem"
+                class="lastNavItem "
               >
                 <button
                   aria-expanded="false"
@@ -812,7 +812,7 @@ Object {
                   role="menuitem"
                 >
                   <span
-                    class="typography button2"
+                    class="typography subheading3"
                   >
                     News & Guides
                   </span>
@@ -1053,7 +1053,7 @@ Object {
                 </div>
               </li>
               <li
-                class=""
+                class=" headerItems"
               >
                 <button
                   aria-expanded="false"
@@ -1064,7 +1064,7 @@ Object {
                   role="menuitem"
                 >
                   <span
-                    class="typography button2"
+                    class="typography subheading3"
                   >
                     English
                   </span>
@@ -1179,7 +1179,7 @@ Object {
                 </div>
               </li>
               <li
-                class=""
+                class=" headerItems"
               >
                 <a
                   class="navItem "
@@ -1187,10 +1187,22 @@ Object {
                   role="menuitem"
                 >
                   <span
-                    class="typography button2"
+                    class="typography subheading3"
                   >
                     Login
                   </span>
+                  <svg
+                    class="svgIcon inherit"
+                    data-test-id="DealerIcon"
+                    focusable="false"
+                    style="font-size: 24px;"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M8 15L16 15C17.1046 15 18 15.8954 18 17L18 20H6V17C6 15.8954 6.89543 15 8 15ZM4 17C4 14.7909 5.79086 13 8 13L16 13C18.2091 13 20 14.7909 20 17L20 20L20 22H18H6H4L4 20V17ZM15 7C15 8.65685 13.6569 10 12 10C10.3431 10 9 8.65685 9 7C9 5.34315 10.3431 4 12 4C13.6569 4 15 5.34315 15 7ZM17 7C17 9.76142 14.7614 12 12 12C9.23858 12 7 9.76142 7 7C7 4.23858 9.23857 2 12 2C14.7614 2 17 4.23858 17 7Z"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
                 </a>
               </li>
             </ul>
@@ -2290,9 +2302,9 @@ Object {
               </svg>
               <span
                 aria-label="Favorites count"
-                class="counter active"
+                class="counter "
               >
-                8
+                0
               </span>
               <span
                 class="typography subheading3"
@@ -2450,7 +2462,7 @@ Object {
             tabindex="0"
           >
             <li
-              class=""
+              class=" "
             >
               <a
                 class="navItem "
@@ -2459,14 +2471,14 @@ Object {
                 role="menuitem"
               >
                 <span
-                  class="typography button2"
+                  class="typography subheading3"
                 >
                   Used cars
                 </span>
               </a>
             </li>
             <li
-              class=""
+              class=" "
             >
               <a
                 class="navItem "
@@ -2475,14 +2487,14 @@ Object {
                 role="menuitem"
               >
                 <span
-                  class="typography button2"
+                  class="typography subheading3"
                 >
                   New cars
                 </span>
               </a>
             </li>
             <li
-              class=""
+              class=" "
             >
               <a
                 class="navItem "
@@ -2491,14 +2503,14 @@ Object {
                 role="menuitem"
               >
                 <span
-                  class="typography button2"
+                  class="typography subheading3"
                 >
                   Electric cars
                 </span>
               </a>
             </li>
             <li
-              class=""
+              class=" "
             >
               <a
                 class="navItem "
@@ -2507,14 +2519,14 @@ Object {
                 role="menuitem"
               >
                 <span
-                  class="typography button2"
+                  class="typography subheading3"
                 >
                   Buy online
                 </span>
               </a>
             </li>
             <li
-              class=""
+              class=" "
             >
               <button
                 aria-expanded="false"
@@ -2525,7 +2537,7 @@ Object {
                 role="menuitem"
               >
                 <span
-                  class="typography button2"
+                  class="typography subheading3"
                 >
                   Car reviews
                 </span>
@@ -2647,7 +2659,7 @@ Object {
               </div>
             </li>
             <li
-              class=""
+              class=" "
             >
               <button
                 aria-expanded="false"
@@ -2658,7 +2670,7 @@ Object {
                 role="menuitem"
               >
                 <span
-                  class="typography button2"
+                  class="typography subheading3"
                 >
                   Cars by Location
                 </span>
@@ -2836,7 +2848,7 @@ Object {
               </div>
             </li>
             <li
-              class=""
+              class=" "
             >
               <a
                 class="navItem "
@@ -2845,14 +2857,14 @@ Object {
                 role="menuitem"
               >
                 <span
-                  class="typography button2"
+                  class="typography subheading3"
                 >
                   Value my Car
                 </span>
               </a>
             </li>
             <li
-              class=""
+              class=" "
             >
               <a
                 class="navItem "
@@ -2861,14 +2873,14 @@ Object {
                 role="menuitem"
               >
                 <span
-                  class="typography button2"
+                  class="typography subheading3"
                 >
                   Finance
                 </span>
               </a>
             </li>
             <li
-              class=""
+              class=" "
             >
               <button
                 aria-expanded="false"
@@ -2879,7 +2891,7 @@ Object {
                 role="menuitem"
               >
                 <span
-                  class="typography button2"
+                  class="typography subheading3"
                 >
                   Insurance
                 </span>
@@ -2966,7 +2978,7 @@ Object {
               </div>
             </li>
             <li
-              class=""
+              class=" "
             >
               <a
                 class="navItem "
@@ -2975,14 +2987,14 @@ Object {
                 role="menuitem"
               >
                 <span
-                  class="typography button2"
+                  class="typography subheading3"
                 >
                   Deals
                 </span>
               </a>
             </li>
             <li
-              class="lastNavItem"
+              class="lastNavItem "
             >
               <button
                 aria-expanded="false"
@@ -2993,7 +3005,7 @@ Object {
                 role="menuitem"
               >
                 <span
-                  class="typography button2"
+                  class="typography subheading3"
                 >
                   News & Guides
                 </span>
@@ -3234,7 +3246,7 @@ Object {
               </div>
             </li>
             <li
-              class=""
+              class=" headerItems"
             >
               <button
                 aria-expanded="false"
@@ -3245,7 +3257,7 @@ Object {
                 role="menuitem"
               >
                 <span
-                  class="typography button2"
+                  class="typography subheading3"
                 >
                   English
                 </span>
@@ -3360,7 +3372,7 @@ Object {
               </div>
             </li>
             <li
-              class=""
+              class=" headerItems"
             >
               <a
                 class="navItem "
@@ -3368,10 +3380,22 @@ Object {
                 role="menuitem"
               >
                 <span
-                  class="typography button2"
+                  class="typography subheading3"
                 >
                   Login
                 </span>
+                <svg
+                  class="svgIcon inherit"
+                  data-test-id="DealerIcon"
+                  focusable="false"
+                  style="font-size: 24px;"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8 15L16 15C17.1046 15 18 15.8954 18 17L18 20H6V17C6 15.8954 6.89543 15 8 15ZM4 17C4 14.7909 5.79086 13 8 13L16 13C18.2091 13 20 14.7909 20 17L20 20L20 22H18H6H4L4 20V17ZM15 7C15 8.65685 13.6569 10 12 10C10.3431 10 9 8.65685 9 7C9 5.34315 10.3431 4 12 4C13.6569 4 15 5.34315 15 7ZM17 7C17 9.76142 14.7614 12 12 12C9.23858 12 7 9.76142 7 7C7 4.23858 9.23857 2 12 2C14.7614 2 17 4.23858 17 7Z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
               </a>
             </li>
           </ul>
