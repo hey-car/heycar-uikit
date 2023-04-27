@@ -24,9 +24,6 @@
     "directory": "dist"
   },
   "postinstall": "node ./dist/send-stats.js > /dev/null 2>&1 || exit 0",
-  "dependencies": {
-    "@heycar-uikit/vars": "^1.10.0"
-  },
   "author": "HeyCar Team",
   "license": "UNLICENSED"
 }
