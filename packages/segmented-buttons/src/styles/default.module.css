@@ -1,122 +1,26 @@
 @import '../../../themes/src/default.css';
 
 .wrapper {
-  position: relative;
-
-  /* Center the circle content  */
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
 
-  svg {
-    width: 100%;
-  }
+  & button {
+    @mixin typography-subheading-3;
+    flex: 1 1 0;
+    padding: 0 var(--spacing-3);
+    max-width: 200px;
+    height: 46px;
+    border: solid 1px var(--color-neutral-300);
+    background: #fff;
+    cursor: pointer;
 
-  &.xs {
-    width: 56px;
-    height: 56px;
-
-    & .arrow {
-      height: 4px;
+    &:hover {
+      background: var(--color-neutral-50);
     }
 
-    & .plainCircle {
-      width: 32px;
-      height: 32px;
-    }
-
-    & .completeScore {
-      & .score {
-        @mixin typography-heading-5_mobile;
-      }
-      & .max {
-        display: none;
-      }
-    }
-
-    & .scoreCircle,
-    & .scoreCircleTrack {
-      stroke-width: 2.8;
-    }
-  }
-
-  &.s {
-    width: 96px;
-    height: 96px;
-
-    & .arrow {
-      height: 6.8px;
-    }
-
-    & .plainCircle {
-      width: 56px;
-      height: 56px;
-    }
-
-    & .completeScore {
-      @mixin typography-caption-4;
-      & .score {
-        @mixin typography-heading-5;
-      }
-    }
-
-    & .scoreCircle,
-    & .scoreCircleTrack {
-      stroke-width: 2;
-    }
-  }
-
-  &.m {
-    width: 120px;
-    height: 120px;
-
-    & .arrow {
-      height: 8.5px;
-    }
-
-    & .plainCircle {
-      width: 70px;
-      height: 70px;
-    }
-
-    & .completeScore {
-      @mixin typography-overline-1;
-      & .score {
-        @mixin typography-heading-3_mobile;
-      }
-    }
-
-    & .scoreCircle,
-    & .scoreCircleTrack {
-      stroke-width: 2;
-    }
-  }
-
-  &.l {
-    width: 176px;
-    height: 176px;
-
-    & .arrow {
-      height: 12.5px;
-    }
-
-    & .plainCircle {
-      width: 102px;
-      height: 102px;
-    }
-
-    & .completeScore {
-      @mixin typography-subheading-4;
-
-      & .score {
-        @mixin typography-heading-3;
-      }
-    }
-
-    & .scoreCircle,
-    & .scoreCircleTrack {
-      stroke-width: 2;
+    &[aria-checked='true'] {
+      border: solid 2px var(--color-primary-500);
+      background: var(--color-primary-50);
+      color: var(--color-primary-500);
     }
   }
 }
