@@ -4,7 +4,6 @@ import React, {
   ChangeEvent,
   ReactNode,
 } from 'react';
-import cn from 'classnames';
 
 import styles from './Col.module.css';
 
@@ -21,7 +20,7 @@ export const Col: React.FC<ColProps> = ({
   ...restProps
 }) => (
   <div
-    className={cn(className, styles.col, styles[`span-${span}`])}
+    className={`${styles.col} ${styles[`span-${span}`]} ${className || ''}`}
     {...restProps}
   >
     {children}
