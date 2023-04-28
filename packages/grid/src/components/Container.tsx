@@ -1,5 +1,4 @@
 import React from 'react';
-import cn from 'classnames';
 
 import { ContainerProps } from './Container.types';
 
@@ -16,7 +15,7 @@ function Container<E extends React.ElementType = 'div'>({
   return React.createElement(
     Component,
     {
-      className: cn(styles.container, className),
+      className: `${styles.container} ${className || ''}`,
       ...rest,
     },
     children,

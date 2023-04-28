@@ -1,5 +1,4 @@
 import React, { useMemo } from 'react';
-import cn from 'classnames';
 
 import getGridClassNames from '../utils/getGridClassNames';
 
@@ -32,14 +31,9 @@ function Row<E extends React.ElementType = 'div'>({
     [gutter],
   );
 
-  const classNames = cn(
-    guttersStyles.row,
-    styles.component,
-    align && styles[align],
-    styles[justify],
-    ...gridClassNames,
-    className,
-  );
+  const classNames = `${guttersStyles.row} ${styles.component} ${
+    align ? styles[align] : ''
+  } ${styles[justify]} ${gridClassNames.join(' ')} ${className || ''}`;
 
   return (
     <Component className={classNames} data-test-id={dataTestId}>
