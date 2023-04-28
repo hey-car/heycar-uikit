@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.1](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/review-rating@3.0.0...@heycar-uikit/review-rating@3.0.1) (2023-04-28)
+
+
+### Bug Fixes
+
+* **review-rating:** gracefully handle no IntersectionObserver ([#196](https://github.com/hey-car/heycar-uikit/issues/196)) ([ea5d596](https://github.com/hey-car/heycar-uikit/commit/ea5d5969945b47dd6ab96ab1800de66761868c97))
+
+
+
+
+
 # [3.0.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/review-rating@2.0.0...@heycar-uikit/review-rating@3.0.0) (2023-04-27)
 
 
