@@ -26,7 +26,7 @@ const ReviewRating = React.forwardRef<HTMLDivElement, ReviewRatingProps>(
 
     useEffect(() => {
       setIntersectionObserver(elementId);
-    }, []);
+    }, [setIntersectionObserver]);
 
     return (
       <div
