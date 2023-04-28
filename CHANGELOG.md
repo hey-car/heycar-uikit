@@ -1,3 +1,10 @@
+## [8.0.1](https://github.com/hey-car/heycar-uikit/compare/v8.0.0...v8.0.1) (2023-04-28)
+
+
+### Bug Fixes
+
+* **review-rating:** gracefully handle no IntersectionObserver ([#196](https://github.com/hey-car/heycar-uikit/issues/196)) ([ea5d596](https://github.com/hey-car/heycar-uikit/commit/ea5d5969945b47dd6ab96ab1800de66761868c97))
+
 # [8.0.0](https://github.com/hey-car/heycar-uikit/compare/v7.0.0...v8.0.0) (2023-04-27)
 
 
