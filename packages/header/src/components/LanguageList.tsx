@@ -38,6 +38,7 @@ const LanguageList = React.forwardRef<HTMLDivElement, LanguageListProps>(
             return (
               <li key={langItem.langCode} role="menuitem">
                 <a
+                  aria-label={`${langItem.label} language select`}
                   href={langItem.href}
                   onBlur={() => onFocusEvents(false)}
                   onClick={() =>

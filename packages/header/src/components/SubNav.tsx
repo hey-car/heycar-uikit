@@ -50,7 +50,9 @@ const SubNav = React.forwardRef<HTMLDivElement, SubNavProps>(
           return (
             <Grid.Col
               className={`${styles.subNavGroup} ${className}`}
-              key={`${navItemId}-${subNavGroup.heading}`}
+              key={`${isDropDownMenu ? 'dropdown' : 'burger'}-${navItemId}-${
+                subNavGroup.heading
+              }`}
               width={{
                 mobile: 12,
                 tablet: { s: 12, m: 12, l: colWidth },
@@ -62,7 +64,11 @@ const SubNav = React.forwardRef<HTMLDivElement, SubNavProps>(
                 {subNavGroup.items.slice(0, maxItem).map(subNavItem => {
                   return (
                     <li
-                      key={`${navItemId}-${subNavGroup.heading}-${subNavItem.label}`}
+                      key={`${
+                        isDropDownMenu ? 'dropdown' : 'burger'
+                      }-${navItemId}-${subNavGroup.heading}-${
+                        subNavItem.label
+                      }`}
                       role="none"
                     >
                       <Link

@@ -54,7 +54,7 @@ const NavigationDropdown = React.forwardRef<HTMLDivElement, NavigationProps>(
             return (
               <li
                 className={`${isLastItem ? styles.lastNavItem : ''}`}
-                key={label}
+                key={`dropdown-${label}`}
                 onMouseOut={() => toggleSubNav(id, isActive)}
                 onMouseOver={() => toggleSubNav(id, isActive, true)}
               >

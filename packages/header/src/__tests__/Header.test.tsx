@@ -255,6 +255,92 @@ describe('Header', () => {
   });
 
   /**
+   * Tracking tests
+   */
+  describe('Tracking tests', () => {
+    const trackingFn = jest.fn();
+
+    const getMockTrackingPayload = (label = '') => ({
+      action: 'Click',
+      category: 'Header',
+      label,
+    });
+
+    it('calls tracking function when clicking logo', () => {
+      const { getByRole } = render(
+        <Header
+          {...defaultData}
+          dataTestId={dataTestId}
+          trackingFn={trackingFn}
+        />,
+      );
+
+      fireEvent.click(getByRole('link', { name: 'heycar logo' }));
+
+      expect(trackingFn).toBeCalledWith(getMockTrackingPayload('Logo'));
+    });
+
+    it('calls tracking function when clicking faves', () => {
+      const { getByRole } = render(
+        <Header
+          {...defaultData}
+          dataTestId={dataTestId}
+          trackingFn={trackingFn}
+        />,
+      );
+
+      fireEvent.click(
+        getByRole('link', { name: defaultData.favoritesItemConfig?.label }),
+      );
+
+      expect(trackingFn).toBeCalledWith(
+        getMockTrackingPayload(defaultData.favoritesItemConfig?.label),
+      );
+    });
+
+    // it('calls tracking function when clicking account', () => {
+    //   const { getByLabelText, getByRole } = render(
+    //     <Header
+    //       {...defaultData}
+    //       dataTestId={dataTestId}
+    //       trackingFn={trackingFn}
+    //     />,
+    //   );
+
+    //   fireEvent.keyPress(
+    //     getByRole('button', {
+    //       name: 'Select Language - Press the Space key to show sub-menus.',
+    //     }),
+    //     { key: 'Space', code: 'Space' },
+    //   );
+
+    //   fireEvent.click(getByLabelText('Deutsch language select'));
+
+    //   expect(trackingFn).toBeCalledWith(
+    //     getMockTrackingPayload('Deutsch language select'),
+    //   );
+    // });
+
+    it('calls tracking function when clicking account', () => {
+      const { getByRole } = render(
+        <Header
+          {...defaultData}
+          dataTestId={dataTestId}
+          trackingFn={trackingFn}
+        />,
+      );
+
+      fireEvent.click(
+        getByRole('button', { name: defaultData.accountItemConfig?.label }),
+      );
+
+      expect(trackingFn).toBeCalledWith(
+        getMockTrackingPayload(defaultData.accountItemConfig?.label),
+      );
+    });
+  });
+
+  /**
    * Render tests
    */
   describe('Render tests', () => {

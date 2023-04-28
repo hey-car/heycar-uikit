@@ -70,7 +70,7 @@ const NavigationBurgerMenu = React.forwardRef<HTMLDivElement, NavigationProps>(
                 className={`${isLastItem ? 'lastNavItem' : ''} ${
                   navItem.isBurgerMenuOnly ? styles.headerItems : ''
                 }`}
-                key={label}
+                key={`burger-${label}`}
               >
                 {hasSubNav ? (
                   <>

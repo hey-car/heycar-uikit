@@ -1,4 +1,3 @@
-//NOTE: This has been moved to theme package. Please update references and remove this version when possible
 import { act, renderHook } from '@testing-library/react-hooks';
 
 import useBreakpoint, {
