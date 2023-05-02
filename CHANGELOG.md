@@ -1,3 +1,10 @@
+## [8.0.2](https://github.com/hey-car/heycar-uikit/compare/v8.0.1...v8.0.2) (2023-05-02)
+
+
+### Bug Fixes
+
+* **review-rating:** fix CSS issue ([#198](https://github.com/hey-car/heycar-uikit/issues/198)) ([faff2ec](https://github.com/hey-car/heycar-uikit/commit/faff2ec9e73755ed235f2252a83763e84199ad35))
+
 ## [8.0.1](https://github.com/hey-car/heycar-uikit/compare/v8.0.0...v8.0.1) (2023-04-28)
 
 
