@@ -24,6 +24,7 @@ const DefaultLink: React.FC<BreadcrumbLinkProps> = ({
 
 const Breadcrumbs: FC<BreadcrumbsProps> = ({
   breadcrumbs,
+  LinkComponent,
   dataTestId,
   className,
 }) => {
@@ -38,7 +39,10 @@ const Breadcrumbs: FC<BreadcrumbsProps> = ({
     return null;
   }
 
-  const Link = DefaultLink as (props: BreadcrumbLinkProps) => JSX.Element;
+  // Link component
+  const Link = (LinkComponent || DefaultLink) as (
+    props: BreadcrumbLinkProps,
+  ) => JSX.Element;
 
   const firstBreadcrumb = breadcrumbs[0];
   const lastBreadcrumb = breadcrumbs[breadcrumbs.length - 1];
@@ -86,7 +90,9 @@ const Breadcrumbs: FC<BreadcrumbsProps> = ({
 
               return (
                 <li key={breadcrumb.title}>
-                  <span itemProp="name">{breadcrumb.title}</span>
+                  <span className={styles.disabled} itemProp="name">
+                    {breadcrumb.title}
+                  </span>
                 </li>
               );
             })}

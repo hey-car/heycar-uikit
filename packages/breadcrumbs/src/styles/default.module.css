@@ -15,6 +15,10 @@
   }
 }
 
+li {
+  display: flex;
+}
+
 li:after {
   content: '|';
   padding: 0 7px;
@@ -31,14 +35,23 @@ li:last-child {
 a {
   text-decoration: none;
   color: var(--color-tarmac-grey-700);
-}
 
-span {
+  display: inline-block;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 100%;
   max-width: 20ch;
+
+  &:hover {
+    color: var(--color-neutral-500);
+    text-decoration: underline;
+  }
+
+  &:focus,
+  &:active,
+  &:visited {
+    text-decoration: underline;
+  }
 }
 
 .currentBreadcrumb {
@@ -47,4 +60,8 @@ span {
 
 .threeDots {
   cursor: pointer;
+}
+
+.disabled {
+  color: var(--color-neutral-500);
 }

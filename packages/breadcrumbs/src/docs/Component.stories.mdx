@@ -8,28 +8,19 @@ import Changelog from '../../CHANGELOG.md';
 
 <!-- Meta -->
 
-<Meta
-  title="Components/Molecules/Breadcrumbs"
-  component={Breadcrumbs}
-  argTypes={{
-    breadcrumbs: {
-      table: {
-        disable: true,
-      },
-    },
-  }}
-/>
+<Meta title="Components/Molecules/Breadcrumbs" component={Breadcrumbs} />
 
 export const BreadcrumbsTemplate = args => <Breadcrumbs {...args} />;
 
 <!-- Canvas -->
 
 <Story
+  name="Breadcrumbs"
   args={{
     breadcrumbs: [
       {
         link: '#breadcrumbs',
-        title: 'Breadcrumb Default',
+        title: 'Breadcrumb Default Breadcrumb Default Breadcrumb Default',
       },
       {
         link: '#breadcrumb',
@@ -44,18 +35,26 @@ export const BreadcrumbsTemplate = args => <Breadcrumbs {...args} />;
         title: 'Breadcrumb Current',
       },
       {
-        link: '#breadcrumb',
-        title: 'Breadcrumb Default',
+        title: 'Breadcrumb Disabled',
       },
       {
         link: '#breadcrumb',
         title: 'Breadcrumb Current',
       },
     ],
-    dataTestId: 'breadcrumbs-test',
   }}
-  parameters={{ controls: { disable: true } }}
-  name="Breadcrumbs"
+  argTypes={{
+    dataTestId: {
+      table: {
+        disable: true,
+      },
+    },
+    Component: {
+      table: {
+        disable: true,
+      },
+    },
+  }}
 >
   {BreadcrumbsTemplate.bind({})}
 </Story>
