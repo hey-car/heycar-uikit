@@ -12,13 +12,13 @@ Review ratings are a 0 to 10 rating with a dial, used in connection with reviews
 To install and save in your package.json dependencies, run the command below using npm:
 
 ```bash
-npm install @heycar-uikit/review-rating
+npm install @heycar-uikit/app-store-button
 ```
 
 ## Usage
 
 ```tsx
-import ReviewRating from '@heycar-uikit/review-rating';
+import ReviewRating from '@heycar-uikit/app-store-button';
 
 function App() {
   return <ReviewRating score={9} />;
@@ -27,4 +27,4 @@ function App() {
 
 ## Documentation and sandbox
 
-[Storybook](https://hey-car.github.io/heycar-uikit/main/?path=/docs/components-molecules-reviewrating--review-rating) documentation and sandbox
+[Storybook](https://hey-car.github.io/heycar-uikit/main/?path=/docs/components-molecules-appstorebutton--app-store-button) documentation and sandbox

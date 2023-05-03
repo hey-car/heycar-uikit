@@ -1,5 +1,5 @@
 {
-  "name": "@heycar-uikit/review-rating",
+  "name": "@heycar-uikit/app-store-button",
   "version": "3.0.2",
   "description": "HeyCar-UIKit Review Rating",
   "main": "dist/index.js",
@@ -16,15 +16,15 @@
     "typescript",
     "ui-components",
     "design-systems",
-    "reviews",
-    "rating",
-    "review-rating"
+    "play-store",
+    "app-store",
+    "app-store-button"
   ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hey-car/heycar-uikit.git"
   },
-  "homepage": "https://github.com/hey-car/heycar-uikit/tree/main/packages/review-rating#readme",
+  "homepage": "https://github.com/hey-car/heycar-uikit/tree/main/packages/app-store-button#readme",
   "publishConfig": {
     "access": "public"
   },
