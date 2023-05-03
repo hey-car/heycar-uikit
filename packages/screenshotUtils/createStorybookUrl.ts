@@ -6,6 +6,7 @@ export function createStorybookUrl({
   packageName,
   moduleName,
   knobs = {},
+  componentCategory,
 }: CreateStorybookUrlParams) {
   const Atoms = ['grid', 'icons', 'logo', 'typography'];
 
@@ -16,8 +17,10 @@ export function createStorybookUrl({
   const noHyphenName = packageName ? packageName.replace(/-/g, '') : '';
   const componentPath = `-${noHyphenName}--${moduleName || packageName}`;
   const component = componentPath.split('--').pop() || '';
+  let category = componentCategory;
 
-  return `${url}?id=components-${
-    Atoms.includes(component.toLowerCase()) ? 'atoms' : 'molecules'
-  }${componentPath}&args=${knobsQuery}`;
+  if (!category)
+    category = Atoms.includes(component.toLowerCase()) ? 'atoms' : 'molecules';
+
+  return `${url}?id=components-${category}${componentPath}&args=${knobsQuery}`;
 }
