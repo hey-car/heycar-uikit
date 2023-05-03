@@ -1,7 +1,7 @@
 import { Locator, Page, PageScreenshotOptions } from 'playwright';
 import { delay } from 'q';
 
-import { closeBrowser, matchHtml, openBrowserPage } from '.';
+import { closeBrowser, matchHtml, openBrowserPage } from './helpers';
 
 const mouseDown = async (page: Page, element: Locator) => {
   //want to try to emulate real user behaviour, rather than forcing the event
