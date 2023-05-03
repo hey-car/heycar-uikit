@@ -1,0 +1,134 @@
+import { Meta, Story, Props } from '@storybook/addon-docs';
+import { ComponentHeader, CssVars, TabContainer } from 'storybook/blocks';
+
+import { HeaderCanvas } from './Canvas';
+import Header from '../Header';
+import LanguageList from '../components/LanguageList';
+import NavigationBurgerMenu from '../components/NavigationBurgerMenu';
+import NavigationDropdown from '../components/NavigationDropdown';
+import SubNav from '../components/SubNav';
+import { defaultData } from '../__tests__/Header.mock';
+import {
+  englishStyle,
+  frenchStyle,
+  germanStyle,
+  spanishStyle,
+} from '../__tests__/navigationItems.mock';
+import { DEFAULT_LOCALE } from '../Header.constants';
+import Description from './Description.mdx';
+import { version } from '../../package.json';
+import Changelog from '../../CHANGELOG.md';
+
+<!-- Meta -->
+
+<Meta
+  title="Components/Organisms/Header"
+  component={Header}
+  argTypes={{
+    searchItemConfig: {
+      name: 'searchItemConfig',
+      type: { name: 'boolean' },
+      defaultValue: true,
+    },
+    favoritesItemConfig: {
+      name: 'favoritesItemConfig',
+      type: { name: 'boolean' },
+      defaultValue: true,
+    },
+    favoritesCount: {
+      name: 'favoritesCount',
+      type: { name: 'number' },
+      defaultValue: 0,
+    },
+    langItemConfig: {
+      name: 'langItemConfig',
+      type: { name: 'boolean' },
+      defaultValue: true,
+    },
+    langItemConfig: {
+      name: 'langItemConfig',
+      type: { name: 'boolean' },
+      defaultValue: true,
+    },
+    accountItemConfig: {
+      name: 'accountItemConfig',
+      type: { name: 'boolean' },
+      defaultValue: true,
+    },
+    callItemConfig: {
+      name: 'callItemConfig',
+      type: { name: 'boolean' },
+      defaultValue: true,
+    },
+    navigation: {
+      options: [
+        'English Style',
+        'French Style',
+        'German Style',
+        'Spanish Style',
+      ],
+    },
+    auxiliaryDetails: {
+      name: 'auxiliaryDetails',
+      type: { name: 'boolean' },
+      defaultValue: true,
+    },
+    logoHref: {
+      table: {
+        disable: true,
+      },
+    },
+    LinkComponent: {
+      table: {
+        disable: true,
+      },
+    },
+  }}
+/>
+
+<!-- Canvas -->
+
+<Story
+  name="Header"
+  args={{
+    navigation: 'English Style',
+    logoHref: 'https://heycar.com',
+  }}
+>
+  {HeaderCanvas.bind({})}
+</Story>
+
+<!-- Docs -->
+
+<ComponentHeader
+  name="Header"
+  version={version}
+  stage={1}
+  design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Global-Design-System?node-id=4496-100132"
+/>
+
+Header wraps top-level navigation and branding.
+
+```tsx
+import Header from '@heycar-uikit/header';
+```
+
+<!-- Description -->
+
+<TabContainer
+  tabs={[
+    { label: 'Description', component: <Description /> },
+    { label: 'Props', component: <Props of={Header} /> },
+    { label: 'LanguageList Props', component: <Props of={LanguageList} /> },
+    {
+      label: 'Burger Menu Props',
+      component: <Props of={NavigationBurgerMenu} />,
+    },
+    {
+      label: 'Dropdown Menu Props',
+      component: <Props of={NavigationDropdown} />,
+    },
+    { label: 'SubNav Props', component: <Props of={SubNav} /> },
+    { label: 'Changelog', component: <Changelog /> },
+  ]}
+/>
