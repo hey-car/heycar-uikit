@@ -1,0 +1,25 @@
+@import '../../../themes/src/default.css';
+
+/*
+* Base
+*/
+.badge {
+  font-family: var(--font-family-system);
+  font-size: 14px;
+  padding: var(--spacing-1) var(--spacing-2);
+  display: inline-flex;
+  vertical-align: middle;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  border-style: solid;
+  font-weight: var(--font-weight-medium);
+  line-height: 24px;
+  color: var(--color-championship-white);
+  background-color: var(--color-primary-500);
+}

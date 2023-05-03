@@ -1,0 +1,23 @@
+import { Container, Row, Col } from 'storybook/blocks';
+import Test from '../Test';
+
+## Variants
+
+Use the `color` prop to change the visual style of the Test.
+You can set the value to `primary`, `secondary` or `tertiary`.
+
+```tsx live
+const badgeVariants = ['primary', 'secondary', 'tertiary'];
+
+render(
+  <Container>
+    <Row align="middle">
+      {badgeVariants.map(variant => (
+        <Col key={variant}>
+          <Test>$250 off</Test>
+        </Col>
+      ))}
+    </Row>
+  </Container>,
+);
+```
