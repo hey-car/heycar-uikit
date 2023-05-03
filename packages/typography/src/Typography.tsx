@@ -1,5 +1,4 @@
 import React from 'react';
-import cn from 'classnames';
 
 import { defaultVariantMapping } from './Typography.constants';
 import { TypographyProps } from './Typography.types';
@@ -14,7 +13,9 @@ export const Typography: React.FC<TypographyProps> = ({
   dataTestId,
   ...restProps
 }) => {
-  const classNames = cn(styles.typography, styles[variant], className);
+  const classNames = `${styles.typography} ${styles[variant]} ${
+    className || ''
+  }`;
 
   return (
     <Component className={classNames} data-test-id={dataTestId} {...restProps}>
