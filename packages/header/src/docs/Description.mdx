@@ -1,5 +1,5 @@
 import { Container, Row, Col } from 'storybook/blocks';
-import Test from '../Test';
+import Header from '../Header';
 
 ## Variants
 
@@ -14,7 +14,7 @@ render(
     <Row align="middle">
       {badgeVariants.map(variant => (
         <Col key={variant}>
-          <Test>$250 off</Test>
+          <Header>$250 off</Header>
         </Col>
       ))}
     </Row>

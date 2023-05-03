@@ -1,7 +1,7 @@
 import { Meta, Story, Props } from '@storybook/addon-docs';
 import { ComponentHeader, CssVars, TabContainer } from 'storybook/blocks';
 
-import Test from '../Test';
+import Header from '../Header';
 import { version } from '../../package.json';
 import Description from './Description.mdx';
 import Changelog from '../../CHANGELOG.md';
@@ -9,14 +9,14 @@ import styles from '!!raw-loader!../styles/default.module.css';
 
 <!-- Meta -->
 
-<Meta title="Components/Molecules/Test" component={Test} />
+<Meta title="Components/Molecules/Header" component={Header} />
 
-export const TestTemplate = args => <Test {...args} />;
+export const HeaderTemplate = args => <Header {...args} />;
 
 <!-- Canvas -->
 
 <Story
-  name="Test"
+  name="Header"
   args={{
     children: '$250 off',
   }}
@@ -28,22 +28,22 @@ export const TestTemplate = args => <Test {...args} />;
     },
   }}
 >
-  {TestTemplate.bind({})}
+  {HeaderTemplate.bind({})}
 </Story>
 
 <!-- Docs -->
 
 <ComponentHeader
-  name="Test"
+  name="Header"
   version={version}
   stage={3}
   design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Global-Design-System?node-id=4031%3A102387"
 />
 
-Test component can be added in the cards. These badges can contain dynamic information, such as promotion information.
+Header component can be added in the cards. These badges can contain dynamic information, such as promotion information.
 
 ```tsx
-import Test from '@heycar-uikit/test';
+import Header from '@heycar-uikit/header';
 ```
 
 <!-- Description -->
@@ -51,13 +51,13 @@ import Test from '@heycar-uikit/test';
 <TabContainer
   tabs={[
     { label: 'Description', component: <Description /> },
-    { label: 'Props', component: <Props of={Test} /> },
+    { label: 'Props', component: <Props of={Header} /> },
     {
       label: 'CSS tokens',
       component: (
         <CssVars
           css={`
-            ${styles}${variantStyles}
+            ${styles}
           `}
         />
       ),

@@ -1,7 +1,7 @@
 {
-  "name": "@heycar-uikit/test",
+  "name": "@heycar-uikit/header",
   "version": "4.0.0",
-  "description": "HeyCar-UIKit test",
+  "description": "HeyCar-UIKit header",
   "main": "dist/index.js",
   "module": "./dist/esm/index.js",
   "scripts": {
@@ -16,13 +16,13 @@
     "typescript",
     "ui-components",
     "design-systems",
-    "test"
+    "header"
   ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hey-car/heycar-uikit.git"
   },
-  "homepage": "https://github.com/hey-car/heycar-uikit/tree/main/packages/test#readme",
+  "homepage": "https://github.com/hey-car/heycar-uikit/tree/main/packages/header#readme",
   "publishConfig": {
     "access": "public"
   },

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { TestProps } from './Test.types';
+import { TestProps } from './Header.types';
 
 import styles from './styles/default.module.css';
 
