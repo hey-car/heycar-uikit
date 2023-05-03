@@ -30,7 +30,6 @@
   "peerDependencies": {
     "react": "^17.0.1"
   },
-  "dependencies": {},
   "author": "HeyCar Team",
   "license": "UNLICENSED"
 }
