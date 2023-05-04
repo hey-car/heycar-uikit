@@ -216,7 +216,7 @@ Object {
               </button>
               <a
                 aria-label="Call us"
-                class="desktopOnly item asideItem"
+                class="horizontalNavOnly item asideItem"
                 href="tel:00493030809241"
               >
                 <svg
@@ -506,7 +506,7 @@ Object {
                     class="row component left gutter-tablet-l-24 gutter-desktop-24 subNav"
                   >
                     <div
-                      class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-4 width-desktop-4 subNavGroup thirdWidth"
+                      class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-3 width-desktop-3 subNavGroup quarterWidth"
                     >
                       <span
                         role="heading"
@@ -1602,7 +1602,7 @@ Object {
                     class="row component left gutter-tablet-l-24 gutter-desktop-24 subNav"
                   >
                     <div
-                      class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-4 width-desktop-4 subNavGroup thirdWidth"
+                      class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-3 width-desktop-3 subNavGroup quarterWidth"
                     >
                       <span
                         role="heading"
@@ -2411,7 +2411,7 @@ Object {
             </button>
             <a
               aria-label="Call us"
-              class="desktopOnly item asideItem"
+              class="horizontalNavOnly item asideItem"
               href="tel:00493030809241"
             >
               <svg
@@ -2701,7 +2701,7 @@ Object {
                   class="row component left gutter-tablet-l-24 gutter-desktop-24 subNav"
                 >
                   <div
-                    class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-4 width-desktop-4 subNavGroup thirdWidth"
+                    class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-3 width-desktop-3 subNavGroup quarterWidth"
                   >
                     <span
                       role="heading"
@@ -3797,7 +3797,7 @@ Object {
                   class="row component left gutter-tablet-l-24 gutter-desktop-24 subNav"
                 >
                   <div
-                    class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-4 width-desktop-4 subNavGroup thirdWidth"
+                    class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-3 width-desktop-3 subNavGroup quarterWidth"
                   >
                     <span
                       role="heading"

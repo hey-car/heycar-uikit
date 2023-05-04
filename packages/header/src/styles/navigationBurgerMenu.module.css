@@ -27,10 +27,6 @@
     white-space: nowrap;
   }
 
-  &:hover {
-    color: var(--color-neutral-600);
-  }
-
   &.isActive {
     & > svg {
       transform: rotate(180deg);

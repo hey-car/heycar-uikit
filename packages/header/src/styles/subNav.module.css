@@ -25,8 +25,12 @@
     white-space: nowrap;
   }
 
-  &:hover {
-    color: var(--color-neutral-600);
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      color: var(--color-neutral-600);
+      text-decoration: underline;
+      text-decoration-color: var(--color-neutral-600);
+    }
   }
 
   @media (--tablet-l) {
@@ -140,4 +144,15 @@
   display: block;
   padding: var(--spacing-3) 0;
   color: var(--color-primary-500);
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      text-decoration-thickness: 2px;
+      color: var(--color-primary-600);
+    }
+  }
+
+  &:active {
+    color: var(--color-primary-700);
+  }
 }

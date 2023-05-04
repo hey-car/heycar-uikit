@@ -219,7 +219,7 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
               {hasCall && (
                 <Link
                   aria-label={callItemConfig!.label}
-                  className={`${styles.desktopOnly} ${styles.item} ${styles.asideItem}`}
+                  className={`${styles.horizontalNavOnly} ${styles.item} ${styles.asideItem}`}
                   href={callItemConfig!.href}
                   onClick={() =>
                     itemOnClick(

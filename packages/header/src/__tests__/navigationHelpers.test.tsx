@@ -25,7 +25,7 @@ describe('navigationHelpers', () => {
     it(' returns config for third if total groups is 2 and groupIndex is 0', () => {
       const groupDetails = getConfigType(0, 2);
 
-      expect(groupDetails).toEqual(SUBNAV_CONFIG.third);
+      expect(groupDetails).toEqual(SUBNAV_CONFIG.quarter);
     });
 
     it('returns config for half if total groups is 2 and groupIndex is > 0', () => {

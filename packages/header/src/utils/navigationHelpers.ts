@@ -14,6 +14,7 @@ import { getCurrentLang } from './headerItemHelpers';
 
 const getConfigType = (groupIndex: number, totalGroups: number) => {
   if (totalGroups === 1) return SUBNAV_CONFIG.full;
+  if (totalGroups === 2 && groupIndex === 0) return SUBNAV_CONFIG.quarter;
   if (totalGroups === 2 && groupIndex > 0) return SUBNAV_CONFIG.half;
   if (totalGroups === 3 || (totalGroups === 2 && groupIndex === 0))
     return SUBNAV_CONFIG.third;

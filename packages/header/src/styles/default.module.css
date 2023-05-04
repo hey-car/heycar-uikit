@@ -44,6 +44,10 @@
   @media (--tablet-l) {
     gap: var(--spacing-4);
   }
+
+  @media (--desktop) {
+    gap: var(--spacing-1);
+  }
 }
 
 .logo {
@@ -151,26 +155,13 @@
     display: none;
   }
 
-  &.asideItem {
-    position: relative;
-    padding-left: var(--spacing-2);
-
-    &:before {
-      content: '';
-      position: absolute;
-      left: -8px;
-      height: var(--spacing-12);
-      border-left: solid 2px var(--color-primary-600);
-    }
-  }
-
   /* Dropdown nav starts here */
   @media (--tablet-l) {
     padding: 0 var(--spacing-2);
     height: var(--spacing-12);
 
     &:last-of-type {
-      padding-right: var(--spacing-3);
+      padding-right: var(--spacing-2);
     }
 
     &:hover,
@@ -193,6 +184,10 @@
   }
 
   @media (--desktop) {
+    &:last-of-type {
+      padding-right: var(--spacing-3);
+    }
+
     &.desktopOnly {
       display: flex;
     }
@@ -200,18 +195,38 @@
     & > span {
       display: inline;
     }
+
+    &.asideItem {
+      position: relative;
+      margin-left: var(--spacing-3);
+      padding-left: var(--spacing-2);
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: -8px;
+        height: var(--spacing-12);
+        border-left: solid 2px var(--color-primary-600);
+      }
+    }
   }
 }
 
 .langWrapper {
   position: relative;
 
-  & .item {
-    @media (--tablet-l) {
+  @media (--tablet-l) {
+    order: -1;
+
+    & .item {
       & > span {
         display: inline;
       }
     }
+  }
+
+  @media (--desktop) {
+    order: 0;
   }
 }
 
