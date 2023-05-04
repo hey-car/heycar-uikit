@@ -109,7 +109,7 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
                   >
                     <Close />
                   </button>
-                  {searchItemConfig?.Component}
+                  {searchItemConfig!.Component}
                 </div>
               )}
             </Grid.Col>
@@ -161,7 +161,7 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
               {/*
                *** Lang Select
                */}
-              {hasLang && (
+              {hasLang && currentLang && (
                 <div className={styles.langWrapper}>
                   <button
                     aria-haspopup="menu"
@@ -177,7 +177,7 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
                   >
                     {LangIco}
                     <Typography variant="subheading3">
-                      {currentLang?.shortName}
+                      {currentLang.shortName}
                     </Typography>
                   </button>
                   {isLangListOpen && (
