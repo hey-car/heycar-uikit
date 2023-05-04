@@ -13,13 +13,17 @@ npm install @heycar-uikit/header
 ## Usage
 
 ```tsx
-import Badge from '@heycar-uikit/header';
+import Header from '@heycar-uikit/header';
 
 function App() {
   return <Header />;
 }
 ```
 
+```css
+@import '@heycar-uikit/input/dist/esm/Header.css';
+```
+
 ## Documentation and sandbox
 
-[Storybook](https://hey-car.github.io/heycar-uikit/main/?path=/docs/components-molecules-header--header) documentation and sandbox.
+[Storybook](https://hey-car.github.io/heycar-uikit/main/?path=/docs/components-organisms-header--header) documentation and sandbox.
