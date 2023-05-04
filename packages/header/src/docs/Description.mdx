@@ -1,0 +1,344 @@
+import { Container } from 'storybook/blocks';
+import Header from '../Header';
+import { defaultData } from '../__tests__/Header.mock';
+import { frenchStyle } from '../__tests__/navigationItems.mock';
+
+## Usage
+
+The Header component is designed to support the current functionality of any of the heycar websites. As well easily allowing for new functionality. e.g. the addition of Search or User Accounts
+
+The only mandatory props are `logoHref` and `navigation`.
+
+```tsx
+const nav = [
+  {
+    label: 'Buy online',
+    href: '/buy-online',
+  },
+  {
+    label: 'Car reviews',
+    subNavGroups: [
+      {
+        heading: 'Popular cars',
+        items: [
+          {
+            label: 'Audi Q3 Sportback',
+            href: '#Audi-Q3-Sportback',
+          },
+          {
+            label: 'Audi A1',
+            href: '#Audi-a1',
+          },
+          {
+            label: 'BMW 3 Series',
+            href: '#BMW-3-Series',
+          },
+        ],
+      },
+    ],
+  },
+];
+
+render(<Header logoHref="https://heycar.com" navigation={nav} />);
+```
+
+## Header items
+
+Each of the "header items" are hidden by default and a team can opt-in by passing a corresponding config object. The properties `label` and `hide` are common to all of the config objects.
+
+Label is a mandatory string that is used as the `aria-label` of the element. `hide` is an optional boolean that can be used to opt-out/hide the item from the header.
+
+### Search
+
+The Header can be passed a search component. At desktop sizes this will be displayed inline in the header. At mobile breakpoints it's hidden until the user taps the search icon.
+Then it will displayed at 100vw, positioned absolutly on a layer over the header.
+
+```tsx
+const nav = [
+  {
+    label: 'Buy online',
+    href: '/buy-online',
+  },
+];
+
+const search = {
+  Component: (
+    <input aria-label="search-component" defaultValue="Search for a vehicle" />
+  ),
+  label: 'Search',
+};
+
+render(
+  <Header
+    logoHref="https://heycar.com"
+    navigation={nav}
+    searchItemConfig={search}
+  />,
+);
+```
+
+### Favorites
+
+Favorites can be set up by passing an object with a `label`, `href` and optional `favoritesNumber`.
+
+```tsx
+const nav = [
+  {
+    label: 'Buy online',
+    href: '/buy-online',
+  },
+];
+
+const faves = {
+  label: 'Favorites',
+  href: '/favorites',
+  favoritesNumber: 2,
+};
+
+render(
+  <Header
+    logoHref="https://heycar.com"
+    navigation={nav}
+    favoritesItemConfig={faves}
+  />,
+);
+```
+
+### Language select
+
+The language select's most simple configuration is an object with the prop `currentLang`, who's value is one of the following ISO language codes `['de-DE','en-GB','fr-FR','es-ES','nl-NL']`.
+
+`currentLang` should represent the language that the site is currently displayed in. The Language select renders a dropdown menu that allows the user to select any of the above languages.
+By default, selecting a language will navigate to `#{iso-code}`.
+
+If different languages or `href`s are needed, you can pass an array of languange options via the `options` prop.
+
+The `aria-label` and dropdown title for language select is set in the `locale` object.
+
+```tsx
+const nav = [
+    {
+    label: 'Buy online',
+    href: '/buy-online',
+  },
+];
+
+const lang = {
+    currentLang: 'en-GB',
+    options: [
+      {
+        langCode: 'en-GB',
+        label: 'English',
+        shortName: 'ENG',
+        href: 'https://heycar.com/en';
+      },
+      {
+        langCode: 'pt-PT',
+        label: 'Portugues',
+        shortName: 'Prt',
+        href: '#',
+        onClick: () => {};
+      }
+    ]
+  };
+
+render(<Header logoHref="https://heycar.com" navigation={nav} langItemConfig={lang} />);
+```
+
+### Account
+
+The Account item can be set up by passing an object with a `label`, `onClick` and optional `isLoggedIn`.
+At the moment `isLoggedIn` is not used.
+
+```tsx
+const loggedIn = true;
+
+const nav = [
+  {
+    label: 'Buy online',
+    href: '/buy-online',
+  },
+];
+
+const account = loggedIn
+  ? {
+      label: 'Your Account',
+      onClick: () => {
+        //show account popup
+      },
+      isLoggedIn: true,
+    }
+  : {
+      label: 'Loggin',
+      onClick: () => {
+        //show login popup
+      },
+      isLoggedIn: false,
+    };
+
+render(
+  <Header
+    logoHref="https://heycar.com"
+    navigation={nav}
+    accountItemConfig={account}
+  />,
+);
+```
+
+### Call
+
+The Call item can be set up by passing an object with a `label` and `href`.
+Where `href` is not restricted to, but generally expected to be a `tel:` link.
+
+```tsx
+const loggedIn = true;
+
+const nav = [
+  {
+    label: 'Buy online',
+    href: '/buy-online',
+  },
+];
+
+const call = {
+  label: 'Call us',
+  href: 'tel:+493030809241',
+};
+
+render(
+  <Header
+    logoHref="https://heycar.com"
+    navigation={nav}
+    callItemConfig={call}
+  />,
+);
+```
+
+## Localization
+
+Localization can be set via an object. The default language is English.
+
+```tsx
+const nav = [
+  {
+    label: 'Buy online',
+    href: '/buy-online',
+  },
+];
+
+const locale = {
+  closeSearchLabel: 'close search',
+  logoLabel: 'heycar logo',
+  langListHeading: 'Select Language',
+  burgerMenuButtonLabel: 'Navigation menu',
+  showAllLabel: 'Show all',
+  spaceBarNotification: 'Press the Space key to show sub-menus.',
+  subMenuLabel: 'sub-menu',
+  auxTelLabel: 'Call Us at',
+  auxEmailLabel: 'Email Us at',
+  auxAppHeading: 'Download our App now',
+};
+
+render(
+  <Header logoHref="https://heycar.com" locale={locale} navigation={nav} />,
+);
+```
+
+## Link component
+
+By default, the Header uses a standard anchor element to build links. However you can pass a custom element to be used for all links.
+
+Your custome element should handle the following props
+
+```
+/**
+   * Class name(s)
+   */
+  className?: string;
+  /**
+   * Href for navigation on click
+   */
+  href?: string;
+  /**
+   * Function to run on click
+   */
+  onClick?: () => void;
+  /**
+   * Function to run on hover
+   */
+  onHover?: () => void;
+  /**
+   * HTML role attribute
+   */
+  role?: string;
+  /**
+   * Tab index
+   */
+  tabIndex?: number;
+  /**
+   * Children of the link
+   */
+  children?:
+    | string
+    | Element
+    | JSX.Element
+    | Array<string | Element | JSX.Element | undefined>;
+```
+
+```tsx
+const nav = [
+  {
+    label: 'Buy online',
+    href: '/buy-online',
+  },
+];
+
+const MyLink = ({ children, ...props }) => (
+  <a {...props} data-special-prop="special">
+    {children}
+  </a>
+);
+
+render(
+  <Header logoHref="https://heycar.com" CustomLink={MyLink} navigation={nav} />,
+);
+```
+
+## Tracking
+
+The Header takes an optional tracking function that will be called in the `onClick` event of every link and button.
+the function will be called with the following object:
+
+```
+{
+  action: 'Click';
+  category: 'Header';
+  label: string;
+}
+```
+
+`label` will often be the value passed in the label prop when setting up the link/button, or a value from the locale object.
+
+```tsx
+const nav = [
+  {
+    label: 'Buy online',
+    href: '/buy-online',
+  },
+];
+
+const track = props => {
+  //myTrackFn(props.label, props.action);
+};
+
+render(
+  <Header logoHref="https://heycar.com" trackingFn={track} navigation={nav} />,
+);
+```
+
+## Accessibility
+
+The Header supports keyboard navigation and is compatible with screen readers.
+Pressing the `Tab` and `Shift + Tab` keys will move focus between buttons.
+Pressing `Space` will open navigation menus.
+Pressing `Enter` will do a click event.
