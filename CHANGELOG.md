@@ -1,3 +1,10 @@
+# [8.1.0](https://github.com/hey-car/heycar-uikit/compare/v8.0.2...v8.1.0) (2023-05-04)
+
+
+### Features
+
+* **header:** add Header component ([#201](https://github.com/hey-car/heycar-uikit/issues/201)) ([7991a6d](https://github.com/hey-car/heycar-uikit/commit/7991a6df262188e9938acc81ad342bdf044d3e88))
+
 ## [8.0.2](https://github.com/hey-car/heycar-uikit/compare/v8.0.1...v8.0.2) (2023-05-02)
 
 
