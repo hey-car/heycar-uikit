@@ -58,14 +58,17 @@ const Breadcrumbs: FC<BreadcrumbsProps> = ({
       data-test-id={dataTestId}
     >
       {firstBreadcrumb?.link ? (
-        <li key={`${firstBreadcrumb.title}-${0}`}>
-          <Link link={firstBreadcrumb.link}>
+        <li
+          className={styles.breadcrumbsList}
+          key={`${firstBreadcrumb.title}-${0}`}
+        >
+          <Link className={styles.breadcrumbLink} link={firstBreadcrumb.link}>
             <span itemProp="name">{firstBreadcrumb.title}</span>
           </Link>
         </li>
       ) : (
         firstBreadcrumb.title && (
-          <li key={firstBreadcrumb.title}>
+          <li className={styles.breadcrumbsList} key={firstBreadcrumb.title}>
             <span itemProp="name">{firstBreadcrumb.title}</span>
           </li>
         )
@@ -80,8 +83,11 @@ const Breadcrumbs: FC<BreadcrumbsProps> = ({
             hiddenBreadcrumbs.map((breadcrumb, i) => {
               if (breadcrumb.link && i + 1 !== breadcrumbs.length) {
                 return (
-                  <li key={`${uuidv4()}`}>
-                    <Link link={breadcrumb.link}>
+                  <li className={styles.breadcrumbsList} key={`${uuidv4()}`}>
+                    <Link
+                      className={styles.breadcrumbLink}
+                      link={breadcrumb.link}
+                    >
                       <span itemProp="name">{breadcrumb.title}</span>
                     </Link>
                   </li>
@@ -89,7 +95,7 @@ const Breadcrumbs: FC<BreadcrumbsProps> = ({
               }
 
               return (
-                <li key={breadcrumb.title}>
+                <li className={styles.breadcrumbsList} key={breadcrumb.title}>
                   <span className={styles.disabled} itemProp="name">
                     {breadcrumb.title}
                   </span>
@@ -103,7 +109,10 @@ const Breadcrumbs: FC<BreadcrumbsProps> = ({
           className={styles.currentBreadcrumb}
           key={`${lastBreadcrumb.title}-${breadcrumbs.length - 1}`}
         >
-          <Link className={styles.currentBreadcrumb} link={lastBreadcrumb.link}>
+          <Link
+            className={cn(styles.currentBreadcrumb, styles.breadcrumbLink)}
+            link={lastBreadcrumb.link}
+          >
             <span itemProp="name">{lastBreadcrumb.title}</span>
           </Link>
         </li>

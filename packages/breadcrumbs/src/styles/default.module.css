@@ -15,24 +15,24 @@
   }
 }
 
-li {
+.breadcrumbsList {
   display: flex;
 }
 
-li:after {
+.breadcrumbsList:after {
   content: '|';
   padding: 0 7px;
 }
 
-li:last-child:after {
+.breadcrumbsList:last-child:after {
   content: '';
 }
 
-li:last-child {
+.breadcrumbsList:last-child {
   color: var(--color-neutral-500);
 }
 
-a {
+.breadcrumbLink {
   text-decoration: none;
   color: var(--color-tarmac-grey-700);
 
