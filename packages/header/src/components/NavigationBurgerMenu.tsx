@@ -4,7 +4,7 @@ import Collapse from '@heycar-uikit/collapse';
 import { ChevronDown, Dealer } from '@heycar-uikit/icons';
 import Typography from '@heycar-uikit/typography';
 
-import { DEFAULT_LOCALE } from '../Header.constants';
+import { DEFAULT_LOCALE } from '../constants/Header.constants';
 import { useNavigationItem } from '../hooks/useNavigationItem';
 import { itemOnClick } from '../utils/headerItemHelpers';
 import { extendNavigation } from '../utils/navigationHelpers';

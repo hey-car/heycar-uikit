@@ -5,7 +5,7 @@ import {
   DEFAULT_LOCALE,
   LANG_OPTIONS,
   SUBNAV_CONFIG,
-} from '../Header.constants';
+} from '../constants/Header.constants';
 import {
   extendNavigation,
   getConfigType,

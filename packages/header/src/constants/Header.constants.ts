@@ -1,4 +1,4 @@
-import { LangOption } from './Header.types';
+import { LangOption } from '../Header.types';
 
 const DEFAULT_LOCALE = {
   closeSearchLabel: 'Close search',

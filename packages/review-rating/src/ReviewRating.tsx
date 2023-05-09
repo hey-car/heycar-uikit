@@ -9,7 +9,7 @@ import {
   DONUT_DASH_LENGTH,
   MAX_CIRCLE_POINT,
   MAX_SCORE,
-} from './ReviewRating.constants';
+} from './constants/ReviewRating.constants';
 import { ReviewRatingProps } from './ReviewRating.types';
 
 import styles from './styles/default.module.css';

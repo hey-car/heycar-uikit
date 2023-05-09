@@ -3,8 +3,8 @@
 import React from 'react';
 import { fireEvent, render } from '@testing-library/react';
 
+import { DEFAULT_LOCALE } from '../constants/Header.constants';
 import Header from '../Header';
-import { DEFAULT_LOCALE } from '../Header.constants';
 import { HeaderLinkProps, HeaderProps } from '../Header.types';
 
 import { defaultData } from './Header.mock';

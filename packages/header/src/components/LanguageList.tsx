@@ -2,7 +2,7 @@ import React from 'react';
 
 import Typography from '@heycar-uikit/typography';
 
-import { LANG_OPTIONS } from '../Header.constants';
+import { LANG_OPTIONS } from '../constants/Header.constants';
 import { getFlagIcon, itemOnClick } from '../utils/headerItemHelpers';
 
 import { LanguageListProps } from './LanguageList.types';

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { NavItem } from './components/Navigation.types';
-import { DEFAULT_LOCALE } from './Header.constants';
+import { DEFAULT_LOCALE } from './constants/Header.constants';
 
 type Locale = typeof DEFAULT_LOCALE;
 
