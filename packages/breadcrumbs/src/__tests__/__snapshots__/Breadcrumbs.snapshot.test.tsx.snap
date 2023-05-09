@@ -8,8 +8,11 @@ Object {
       <ul
         class="breadcrumbWrapper"
       >
-        <li>
+        <li
+          class="breadcrumbsList"
+        >
           <a
+            class="breadcrumbLink"
             href="#breadcrumbs"
           >
             <span
@@ -19,8 +22,11 @@ Object {
             </span>
           </a>
         </li>
-        <li>
+        <li
+          class="breadcrumbsList"
+        >
           <a
+            class="breadcrumbLink"
             href="#breadcrumb"
           >
             <span
@@ -34,7 +40,7 @@ Object {
           class="currentBreadcrumb"
         >
           <a
-            class="currentBreadcrumb"
+            class="currentBreadcrumb breadcrumbLink"
             href="#breadcrumb"
           >
             <span
@@ -51,8 +57,11 @@ Object {
     <ul
       class="breadcrumbWrapper"
     >
-      <li>
+      <li
+        class="breadcrumbsList"
+      >
         <a
+          class="breadcrumbLink"
           href="#breadcrumbs"
         >
           <span
@@ -62,8 +71,11 @@ Object {
           </span>
         </a>
       </li>
-      <li>
+      <li
+        class="breadcrumbsList"
+      >
         <a
+          class="breadcrumbLink"
           href="#breadcrumb"
         >
           <span
@@ -77,7 +89,7 @@ Object {
         class="currentBreadcrumb"
       >
         <a
-          class="currentBreadcrumb"
+          class="currentBreadcrumb breadcrumbLink"
           href="#breadcrumb"
         >
           <span
