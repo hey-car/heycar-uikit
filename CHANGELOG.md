@@ -1,3 +1,10 @@
+## [8.1.1](https://github.com/hey-car/heycar-uikit/compare/v8.1.0...v8.1.1) (2023-05-09)
+
+
+### Bug Fixes
+
+* **header:** fix css bundle issue for header and review rating components ([#203](https://github.com/hey-car/heycar-uikit/issues/203)) ([7d04b6d](https://github.com/hey-car/heycar-uikit/commit/7d04b6dbceaa2c186dfde44de5a404ddfea5873d))
+
 # [8.1.0](https://github.com/hey-car/heycar-uikit/compare/v8.0.2...v8.1.0) (2023-05-04)
 
 
