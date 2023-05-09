@@ -19,7 +19,8 @@
   display: flex;
 }
 
-.breadcrumbsList:after {
+.breadcrumbsList:after,
+.threeDots:after {
   content: '|';
   padding: 0 7px;
 }
