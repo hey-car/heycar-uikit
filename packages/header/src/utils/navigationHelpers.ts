@@ -7,7 +7,7 @@ import {
   BURGER_MENU_SUBNAV_MAX_ITEMS,
   LANG_OPTIONS,
   SUBNAV_CONFIG,
-} from '../Header.constants';
+} from '../constants/Header.constants';
 import { Locale } from '../Header.types';
 
 import { getCurrentLang } from './headerItemHelpers';

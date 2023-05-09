@@ -3,7 +3,7 @@ import React from 'react';
 import Grid from '@heycar-uikit/grid';
 import Typography from '@heycar-uikit/typography';
 
-import { DEFAULT_LOCALE } from '../Header.constants';
+import { DEFAULT_LOCALE } from '../constants/Header.constants';
 import { itemOnClick } from '../utils/headerItemHelpers';
 import { getSubNavGroupDetails } from '../utils/navigationHelpers';
 

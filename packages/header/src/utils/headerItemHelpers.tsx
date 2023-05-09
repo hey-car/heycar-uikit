@@ -9,7 +9,10 @@ import {
   UK,
 } from '@heycar-uikit/icons';
 
-import { headerClickTracking, LANG_OPTIONS } from '../Header.constants';
+import {
+  headerClickTracking,
+  LANG_OPTIONS,
+} from '../constants/Header.constants';
 import { HeaderProps, HeaderTrackingObj } from '../Header.types';
 
 const itemOnClick = (

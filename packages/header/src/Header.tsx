@@ -15,13 +15,16 @@ import Typography from '@heycar-uikit/typography';
 import LanguageList from './components/LanguageList';
 import NavigationBurgerMenu from './components/NavigationBurgerMenu';
 import NavigationDropdown from './components/NavigationDropdown';
+import {
+  DEFAULT_LOCALE,
+  MAX_FAVES_DISPLAY_NO,
+} from './constants/Header.constants';
 import { useLangList } from './hooks/useLangList';
 import {
   getCurrentLang,
   hasHeaderItems,
   itemOnClick,
 } from './utils/headerItemHelpers';
-import { DEFAULT_LOCALE, MAX_FAVES_DISPLAY_NO } from './Header.constants';
 import { HeaderLinkProps, HeaderProps } from './Header.types';
 
 import styles from './styles/default.module.css';
