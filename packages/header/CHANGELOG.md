@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.2](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/header@4.1.1...@heycar-uikit/header@4.1.2) (2023-05-11)
+
+
+### Bug Fixes
+
+* **header:** change header import usage ([#204](https://github.com/hey-car/heycar-uikit/issues/204)) ([94bb3d1](https://github.com/hey-car/heycar-uikit/commit/94bb3d15ad5740ff5d199c3ece6099d020e27c81))
+
+
+
+
+
 ## [4.1.1](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/header@4.1.0...@heycar-uikit/header@4.1.1) (2023-05-09)
 
 

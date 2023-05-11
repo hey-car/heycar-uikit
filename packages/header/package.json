@@ -1,6 +1,6 @@
 {
   "name": "@heycar-uikit/header",
-  "version": "4.1.1",
+  "version": "4.1.2",
   "description": "HeyCar-UIKit header",
   "main": "dist/index.js",
   "module": "./dist/esm/index.js",
@@ -30,11 +30,11 @@
     "react": "^17.0.1"
   },
   "dependencies": {
-    "classnames": "^2.3.1",
     "@heycar-uikit/collapse": "^3.0.0",
-    "@heycar-uikit/typography": "^5.0.0",
     "@heycar-uikit/grid": "^4.0.0",
-    "@heycar-uikit/logo": "^3.0.0"
+    "@heycar-uikit/logo": "^3.0.0",
+    "@heycar-uikit/typography": "^5.0.0",
+    "classnames": "^2.3.1"
   },
   "author": "HeyCar Team",
   "license": "UNLICENSED"
