@@ -1,3 +1,10 @@
+## [8.1.2](https://github.com/hey-car/heycar-uikit/compare/v8.1.1...v8.1.2) (2023-05-11)
+
+
+### Bug Fixes
+
+* **header:** change header import usage ([#204](https://github.com/hey-car/heycar-uikit/issues/204)) ([94bb3d1](https://github.com/hey-car/heycar-uikit/commit/94bb3d15ad5740ff5d199c3ece6099d020e27c81))
+
 ## [8.1.1](https://github.com/hey-car/heycar-uikit/compare/v8.1.0...v8.1.1) (2023-05-09)
 
 
