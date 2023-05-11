@@ -70,7 +70,7 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
         accountItemConfig,
         callItemConfig,
       );
-    const favesCount = favoritesItemConfig!.favoritesNumber || 0;
+    const favesCount = favoritesItemConfig?.favoritesNumber || 0;
 
     // Lang
     const currentLang = hasLang
