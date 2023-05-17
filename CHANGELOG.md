@@ -1,3 +1,10 @@
+# [8.2.0](https://github.com/hey-car/heycar-uikit/compare/v8.1.2...v8.2.0) (2023-05-17)
+
+
+### Features
+
+* **icon:** add new settings icon ([#205](https://github.com/hey-car/heycar-uikit/issues/205)) ([57ab54f](https://github.com/hey-car/heycar-uikit/commit/57ab54f58256e450f70cc5783110a824c1ac54c1))
+
 ## [8.1.2](https://github.com/hey-car/heycar-uikit/compare/v8.1.1...v8.1.2) (2023-05-11)
 
 
