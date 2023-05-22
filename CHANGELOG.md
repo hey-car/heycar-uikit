@@ -1,3 +1,10 @@
+## [8.2.1](https://github.com/hey-car/heycar-uikit/compare/v8.2.0...v8.2.1) (2023-05-22)
+
+
+### Bug Fixes
+
+* **header:** add background color for nav and sticky header ([#206](https://github.com/hey-car/heycar-uikit/issues/206)) ([5683189](https://github.com/hey-car/heycar-uikit/commit/56831896bdf14fca11a79940ad084ef8aa40ed8e))
+
 # [8.2.0](https://github.com/hey-car/heycar-uikit/compare/v8.1.2...v8.2.0) (2023-05-17)
 
 
