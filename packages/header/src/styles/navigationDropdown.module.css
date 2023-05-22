@@ -57,6 +57,7 @@
     position: absolute;
     left: 0;
     width: 100%;
+    background: var(--color-championship-white);
   }
 
   /* Dropdown nav starts here */
