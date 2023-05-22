@@ -312,3 +312,42 @@
 .whatsapp-700 {
   background-color: var(--color-whatsapp-700);
 }
+
+.shadowWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.xs {
+  box-shadow: var(--shadow-xs);
+}
+
+.s {
+  box-shadow: var(--shadow-s);
+}
+.m {
+  box-shadow: var(--shadow-m);
+}
+.xl {
+  box-shadow: var(--shadow-xl);
+}
+.xxl {
+  box-shadow: var(--shadow-xxl);
+}
+.none {
+  box-shadow: none !important;
+}
+
+.shadow {
+  height: 195px;
+  width: 100%;
+  background: var(--color-championship-white);
+  border: 1px solid #e6e6e6;
+}
+
+.nameShadow {
+  padding: 30px;
+  font-size: 16px;
+  font-weight: bold;
+}
