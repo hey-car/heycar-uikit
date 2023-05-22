@@ -41,6 +41,11 @@
       text-overflow: ellipsis;
       width: 100%;
       white-space: nowrap;
+
+      &:before,
+      &:after {
+        display: none;
+      }
     }
 
     &.hasCaption {
@@ -86,6 +91,7 @@
 
   & > span[role='heading'] {
     @mixin typography-subheading-3;
+    color: var(--color-neutral-700);
     display: block;
   }
 
