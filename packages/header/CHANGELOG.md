@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.3](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/header@4.1.2...@heycar-uikit/header@4.1.3) (2023-05-22)
+
+
+### Bug Fixes
+
+* **header:** add background color for nav and sticky header ([#206](https://github.com/hey-car/heycar-uikit/issues/206)) ([5683189](https://github.com/hey-car/heycar-uikit/commit/56831896bdf14fca11a79940ad084ef8aa40ed8e))
+
+
+
+
+
 ## [4.1.2](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/header@4.1.1...@heycar-uikit/header@4.1.2) (2023-05-11)
 
 
