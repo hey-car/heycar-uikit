@@ -32,6 +32,7 @@
   "dependencies": {
     "@heycar-uikit/collapse": "^3.0.0",
     "@heycar-uikit/grid": "^4.0.0",
+    "@heycar-uikit/icons": "^6.1.0",
     "@heycar-uikit/logo": "^3.0.0",
     "@heycar-uikit/typography": "^5.0.0",
     "classnames": "^2.3.1"
