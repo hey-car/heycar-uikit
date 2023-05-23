@@ -1,5 +1,6 @@
 import path from 'path';
 
+import image from '@rollup/plugin-image';
 import json from '@rollup/plugin-json';
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 import copy from 'rollup-plugin-copy';
@@ -10,13 +11,13 @@ import { ScriptTarget } from 'typescript';
 
 import addCssImports from './tools/rollup/addCssImports';
 import bundleCss from './tools/rollup/bundleCss';
-import generateClassNameHash from './tools/rollup/generateClassNameHash';
 import {
   coreComponentsResolver,
   coreComponentsRootPackageResolver,
 } from './tools/rollup/coreComponentsResolver';
 import coreComponentsTypingsResolver from './tools/rollup/coreComponentsTypingsResolver';
 import createPackageJson from './tools/rollup/createPackageJson';
+import generateClassNameHash from './tools/rollup/generateClassNameHash';
 import ignoreCss from './tools/rollup/ignoreCss';
 import processCss from './tools/rollup/processCss';
 
@@ -74,6 +75,7 @@ const es5 = {
     },
   ],
   plugins: [
+    image(),
     multiInputPlugin,
     typescript({
       tsconfig: resolvedConfig => ({
@@ -103,6 +105,7 @@ const modern = {
     },
   ],
   plugins: [
+    image(),
     multiInputPlugin,
     typescript({
       outDir: modernDist,
@@ -132,6 +135,7 @@ const cssm = {
     },
   ],
   plugins: [
+    image(),
     multiInputPlugin,
     ignoreCss(),
     typescript({
@@ -160,6 +164,7 @@ const esm = {
     },
   ],
   plugins: [
+    image(),
     nodeResolve(),
     multiInputPlugin,
     typescript({
