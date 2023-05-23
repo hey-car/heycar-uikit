@@ -23,8 +23,10 @@ Object {
                 href="heycar.com"
               >
                 <svg
-                  aria-hidden="true"
+                  aria-hidden="false"
+                  aria-label="heycar"
                   class="logo"
+                  data-test-id="heycarHeaderLogo"
                   style="font-size: 65px;"
                   viewBox="0 0 199 65"
                   xmlns="http://www.w3.org/2000/svg"
@@ -2218,8 +2220,10 @@ Object {
               href="heycar.com"
             >
               <svg
-                aria-hidden="true"
+                aria-hidden="false"
+                aria-label="heycar"
                 class="logo"
+                data-test-id="heycarHeaderLogo"
                 style="font-size: 65px;"
                 viewBox="0 0 199 65"
                 xmlns="http://www.w3.org/2000/svg"

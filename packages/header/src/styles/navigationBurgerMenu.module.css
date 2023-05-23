@@ -28,7 +28,7 @@
   }
 
   &.isActive {
-    & > svg {
+    & > [data-test-id='ChevronDownIcon'] {
       transform: rotate(180deg);
     }
   }

@@ -55,7 +55,7 @@
   display: inline-block;
   height: 32px;
 
-  & > svg {
+  & > [data-test-id='heycarHeaderLogo'] {
     width: auto;
     height: 32px;
   }

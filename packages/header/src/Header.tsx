@@ -97,7 +97,11 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
                 href={logoHref}
                 onClick={() => itemOnClick('Logo', trackingFn)}
               >
-                <Logo />
+                <Logo
+                  ariaHidden={false}
+                  ariaLabel="heycar"
+                  dataTestId="heycarHeaderLogo"
+                />
               </Link>
               {hasSearch && (
                 <div
