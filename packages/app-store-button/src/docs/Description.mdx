@@ -2,63 +2,87 @@ import { Container, Row, Col } from 'storybook/blocks';
 
 ## Usage
 
-For the most basic implementation, simply pass an integer from 0 to 10 in the `score` prop.
+App store badges for iOS and Android
 
 ```tsx live
-render();
-```
-
-## Sizes
-
-ReviewRating can be rendered at one of four sizes `XS | S | M | L`.
-
-Use the `M` size on the **car review tile** for desktop and `S` on mobile.
-For the **car review hero** use the `L` size on desktop and `S` on mobile.
-
-The default size is `S`.
-
-```tsx live
-const RatingVariants = [
-  { size: 'XS', score: 7 },
-  { size: 'S', score: 8 },
-  { size: 'M', score: 9 },
-  { size: 'L', score: 10 },
-];
-
 render(
   <Container>
     <Row align="middle">
-      {RatingVariants.map(variant => (
-        <Col key={variant.size}></Col>
-      ))}
+      <Col>
+        <AppStoreButton
+          href="https://apps.apple.com/uk/app/heycar/id1490142063"
+          lang="en-EN"
+          store="apple"
+        />
+      </Col>
+      <Col>
+        <AppStoreButton
+          href="https://play.google.com/store/apps/details?id=com.mobility_trader_gmbh.heycar&pli=1"
+          lang="en-EN"
+          store="google"
+        />
+      </Col>
     </Row>
   </Container>,
 );
 ```
 
-## IDs
+## Languages
 
-ReviewRating uses IntersectionObserver to toggle the animation as it goes in and out of the viewport.
-To help this work performantly, each component is given a unique id; a UUID V4 string prefixed with the string `rr-`.
+You can render a button for the App Store or Google Play in one of 4 languages.
+Pass one of the following ISO codes to the `lang` prop
 
-However, you can pass your own id though the standard HTML id attribute. Inspect the components below to see this working
+`'de-DE' | 'en-EN' | 'es-ES' | 'fr-FR'`
 
 ```tsx live
-const RatingVariants = [
-  { size: 'XS', score: 7 },
-  { size: 'S', score: 8 },
-  { size: 'M', score: 9 },
-  { size: 'L', score: 10 },
-];
+const Languages = ['de-DE', 'en-EN', 'es-ES', 'fr-FR'];
 
+render(
+  <Container>
+    {Languages.map(lang => (
+      <Row key={lang} align="middle">
+        <Col>
+          <AppStoreButton
+            href="https://apps.apple.com/uk/app/heycar/id1490142063"
+            lang={lang}
+            store="apple"
+          />
+        </Col>
+        <Col>
+          <AppStoreButton
+            href="https://play.google.com/store/apps/details?id=com.mobility_trader_gmbh.heycar&pli=1"
+            lang={lang}
+            store="google"
+          />
+        </Col>
+      </Row>
+    ))}
+  </Container>,
+);
+```
+
+## Theme
+
+The Apple App Store badge can be rendered in one of two themes. `default` and `alt`
+
+```tsx live
 render(
   <Container align="stretch">
     <Row align="middle">
       <Col span={6}>
-        <p>Generated ID</p>
+        <AppStoreButton
+          href="https://apps.apple.com/uk/app/heycar/id1490142063"
+          lang="en-EN"
+          store="apple"
+        />
       </Col>
       <Col span={6}>
-        <p>Custom id</p>
+        <AppStoreButton
+          href="https://apps.apple.com/uk/app/heycar/id1490142063"
+          lang="en-EN"
+          store="apple"
+          theme="alt"
+        />
       </Col>
     </Row>
   </Container>,

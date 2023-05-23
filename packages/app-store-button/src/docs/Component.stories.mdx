@@ -21,6 +21,7 @@ export const AppStoreButtonTemplate = args => {
   args={{
     lang: 'en-EN',
     theme: 'default',
+    store: 'apple',
   }}
   name="AppStoreButton"
 >
@@ -33,19 +34,27 @@ export const AppStoreButtonTemplate = args => {
   name="AppStoreButton"
   version={version}
   stage={1}
-  design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/Design-system?node-id=11667-213068&t=cdniDk8YJcZcnIwr-0"
+  design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/Design-system?type=design&node-id=16183-216308&t=7R05xcivHCpVcg0r-0"
 />
 
 App store badges for iOS and Android
 
 ```tsx
 // TSX/JSX file
+// Core import is recomended
+import AppStoreButton from '@heycar-uikit/core/app-store-button';
+
+// or
 import AppStoreButton from '@heycar-uikit/app-store-button';
 ```
 
 ```css
 // CSS file
-@import '@heycar-uikit/input/dist/esm/AppStoreButton.css';
+// Core import is recomended
+@import '@heycar-uikit/core/app-store-button/esm/AppStoreButton.css';
+
+// or
+@import '@heycar-uikit/app-store-button/dist/esm/AppStoreButton.css';
 ```
 
 <!-- Description -->

@@ -1,7 +1,7 @@
 {
   "name": "@heycar-uikit/app-store-button",
-  "version": "3.0.2",
-  "description": "HeyCar-UIKit Review Rating",
+  "version": "1.0.0",
+  "description": "HeyCar-UIKit App Store Button",
   "main": "dist/index.js",
   "module": "./dist/esm/index.js",
   "scripts": {
@@ -30,9 +30,6 @@
   },
   "peerDependencies": {
     "react": "^17.0.1"
-  },
-  "dependencies": {
-    "uuid": "^9.0.0"
   },
   "author": "HeyCar Team",
   "license": "UNLICENSED"
