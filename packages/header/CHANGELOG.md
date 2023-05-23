@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.4](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/header@4.1.3...@heycar-uikit/header@4.1.4) (2023-05-23)
+
+
+### Bug Fixes
+
+* **header:** fix several typography issues ([#207](https://github.com/hey-car/heycar-uikit/issues/207)) ([0f8745d](https://github.com/hey-car/heycar-uikit/commit/0f8745df6b7b807edfdaf5aab0ce2b446f64ec72))
+
+
+
+
+
 ## [4.1.3](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/header@4.1.2...@heycar-uikit/header@4.1.3) (2023-05-22)
 
 
