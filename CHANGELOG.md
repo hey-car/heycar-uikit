@@ -1,3 +1,10 @@
+## [8.2.2](https://github.com/hey-car/heycar-uikit/compare/v8.2.1...v8.2.2) (2023-05-23)
+
+
+### Bug Fixes
+
+* **header:** fix several typography issues ([#207](https://github.com/hey-car/heycar-uikit/issues/207)) ([0f8745d](https://github.com/hey-car/heycar-uikit/commit/0f8745df6b7b807edfdaf5aab0ce2b446f64ec72))
+
 ## [8.2.1](https://github.com/hey-car/heycar-uikit/compare/v8.2.0...v8.2.1) (2023-05-22)
 
 
