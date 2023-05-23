@@ -22,7 +22,7 @@
 .breadcrumbsList:after,
 .threeDots:after {
   content: '|';
-  padding: 0 7px;
+  padding: 0 5px;
 }
 
 .breadcrumbsList:last-child:after {
@@ -44,7 +44,7 @@
   max-width: 20ch;
 
   &:hover {
-    color: var(--color-neutral-500);
+    color: var(--color-neutral-600);
     text-decoration: underline;
   }
 
