@@ -1,3 +1,45 @@
+## [8.2.2](https://github.com/hey-car/heycar-uikit/compare/v8.2.1...v8.2.2) (2023-05-23)
+
+
+### Bug Fixes
+
+* **header:** fix several typography issues ([#207](https://github.com/hey-car/heycar-uikit/issues/207)) ([0f8745d](https://github.com/hey-car/heycar-uikit/commit/0f8745df6b7b807edfdaf5aab0ce2b446f64ec72))
+
+## [8.2.1](https://github.com/hey-car/heycar-uikit/compare/v8.2.0...v8.2.1) (2023-05-22)
+
+
+### Bug Fixes
+
+* **header:** add background color for nav and sticky header ([#206](https://github.com/hey-car/heycar-uikit/issues/206)) ([5683189](https://github.com/hey-car/heycar-uikit/commit/56831896bdf14fca11a79940ad084ef8aa40ed8e))
+
+# [8.2.0](https://github.com/hey-car/heycar-uikit/compare/v8.1.2...v8.2.0) (2023-05-17)
+
+
+### Features
+
+* **icon:** add new settings icon ([#205](https://github.com/hey-car/heycar-uikit/issues/205)) ([57ab54f](https://github.com/hey-car/heycar-uikit/commit/57ab54f58256e450f70cc5783110a824c1ac54c1))
+
+## [8.1.2](https://github.com/hey-car/heycar-uikit/compare/v8.1.1...v8.1.2) (2023-05-11)
+
+
+### Bug Fixes
+
+* **header:** change header import usage ([#204](https://github.com/hey-car/heycar-uikit/issues/204)) ([94bb3d1](https://github.com/hey-car/heycar-uikit/commit/94bb3d15ad5740ff5d199c3ece6099d020e27c81))
+
+## [8.1.1](https://github.com/hey-car/heycar-uikit/compare/v8.1.0...v8.1.1) (2023-05-09)
+
+
+### Bug Fixes
+
+* **header:** fix css bundle issue for header and review rating components ([#203](https://github.com/hey-car/heycar-uikit/issues/203)) ([7d04b6d](https://github.com/hey-car/heycar-uikit/commit/7d04b6dbceaa2c186dfde44de5a404ddfea5873d))
+
+# [8.1.0](https://github.com/hey-car/heycar-uikit/compare/v8.0.2...v8.1.0) (2023-05-04)
+
+
+### Features
+
+* **header:** add Header component ([#201](https://github.com/hey-car/heycar-uikit/issues/201)) ([7991a6d](https://github.com/hey-car/heycar-uikit/commit/7991a6df262188e9938acc81ad342bdf044d3e88))
+
 ## [8.0.2](https://github.com/hey-car/heycar-uikit/compare/v8.0.1...v8.0.2) (2023-05-02)
 
 

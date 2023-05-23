@@ -1,0 +1,253 @@
+@import '../../../themes/src/default.css';
+
+/*
+* Base
+*/
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+
+  @media (--desktop) {
+    background: var(--color-primary-700);
+  }
+}
+
+.headerInner {
+  padding-top: var(--spacing-4);
+  padding-bottom: var(--spacing-4);
+  width: 100%;
+  background: var(--color-primary-700);
+
+  & > div {
+    width: 100%;
+  }
+
+  @media (--tablet) {
+    padding-top: var(--spacing-3);
+    padding-bottom: var(--spacing-3);
+  }
+}
+
+.colLeft {
+  display: flex;
+  gap: var(--spacing-12);
+  align-items: center;
+}
+
+.colRight {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  @media (--tablet-l) {
+    gap: var(--spacing-4);
+  }
+
+  @media (--desktop) {
+    gap: var(--spacing-1);
+  }
+}
+
+.logo {
+  display: inline-block;
+  height: 32px;
+
+  & > svg {
+    width: auto;
+    height: 32px;
+  }
+
+  @media (--desktop) {
+    margin-left: var(--spacing-3);
+  }
+}
+
+.searchWrapper {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+
+  & .closeSearch {
+    display: none;
+    position: absolute;
+    top: var(--spacing-5);
+    right: var(--spacing-4);
+    border: 0;
+    background: 0;
+    padding: 0;
+  }
+
+  &.active {
+    display: block;
+    & .closeSearch {
+      display: block;
+    }
+  }
+
+  @media (--tablet-l) {
+    display: block;
+    position: static;
+
+    & .closeSearch {
+      display: none;
+    }
+  }
+}
+
+.faves {
+  position: relative;
+
+  & .counter {
+    @mixin typography-caption-4;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 19px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: solid 1px var(--color-primary-700);
+    background: var(--color-secondary-500);
+    text-align: center;
+    line-height: 14px;
+
+    opacity: 0;
+    transform: translateY(5px);
+    transition: transform 0.25s ease, opacity 0.25s ease;
+
+    &.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (--tablet-l) {
+      top: 11px;
+      left: 14px;
+    }
+  }
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: 0 var(--spacing-3);
+  background: none;
+  border: none;
+  color: #fff;
+  text-decoration: none;
+
+  & > span {
+    display: none;
+    margin-left: var(--spacing-2);
+  }
+
+  &:last-of-type {
+    padding-right: 0;
+  }
+
+  &.horizontalNavOnly,
+  &.desktopOnly {
+    display: none;
+  }
+
+  /* Dropdown nav starts here */
+  @media (--tablet-l) {
+    padding: 0 var(--spacing-2);
+    height: var(--spacing-12);
+
+    &:last-of-type {
+      padding-right: var(--spacing-2);
+    }
+
+    &:hover,
+    &:focus,
+    &.focused {
+      background-color: var(--color-primary-800);
+    }
+
+    &:active {
+      background-color: var(--color-primary-900);
+    }
+
+    &.horizontalNavOnly {
+      display: flex;
+    }
+
+    &.notHorizontalNav {
+      display: none;
+    }
+  }
+
+  @media (--desktop) {
+    &:last-of-type {
+      padding-right: var(--spacing-3);
+    }
+
+    &.desktopOnly {
+      display: flex;
+    }
+
+    & > span {
+      display: inline;
+    }
+
+    &.asideItem {
+      position: relative;
+      margin-left: var(--spacing-3);
+      padding-left: var(--spacing-2);
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: -8px;
+        height: var(--spacing-12);
+        border-left: solid 2px var(--color-primary-600);
+      }
+    }
+  }
+}
+
+.langWrapper {
+  position: relative;
+
+  @media (--tablet-l) {
+    order: -1;
+
+    & .item {
+      & > span {
+        display: inline;
+      }
+    }
+  }
+
+  @media (--desktop) {
+    order: 0;
+  }
+}
+
+.navWrapper {
+  width: 100%;
+
+  & nav {
+    transition: transform 300ms ease-in-out 0s;
+    transform: translateX(110vw);
+  }
+
+  &:global(.navOpen) nav {
+    transform: translateX(0);
+  }
+
+  /* Dropdown nav starts here */
+  @media (--tablet-l) {
+    & nav {
+      transition: none;
+      transform: translateX(0) !important;
+    }
+  }
+}

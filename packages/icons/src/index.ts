@@ -104,6 +104,8 @@ export * from './paths/Saloon';
 export * from './paths/Satnav';
 export * from './paths/Search';
 export * from './paths/Seats';
+export * from './paths/Settings';
+
 export * from './paths/Share';
 export * from './paths/ShoppingBag';
 export * from './paths/Sort';
