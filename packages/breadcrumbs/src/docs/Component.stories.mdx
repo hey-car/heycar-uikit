@@ -1,0 +1,101 @@
+import { Meta, Story, Props } from '@storybook/addon-docs';
+import { ComponentHeader, CssVars, TabContainer } from 'storybook/blocks';
+
+import Breadcrumbs from '../Breadcrumbs';
+import { version } from '../../package.json';
+import Description from './Description.mdx';
+import Changelog from '../../CHANGELOG.md';
+
+<!-- Meta -->
+
+<Meta title="Components/Molecules/Breadcrumbs" component={Breadcrumbs} />
+
+export const BreadcrumbsTemplate = args => <Breadcrumbs {...args} />;
+
+<!-- Canvas -->
+
+<Story
+  name="Breadcrumbs"
+  args={{
+    breadcrumbs: [
+      {
+        link: '#breadcrumbs',
+        title: 'Breadcrumb Default Breadcrumb Default Breadcrumb Default',
+      },
+      {
+        link: '#breadcrumb',
+        title: 'Breadcrumb Current',
+      },
+      {
+        link: '#breadcrumb',
+        title: 'Breadcrumb Default',
+      },
+      {
+        link: '#breadcrumb',
+        title: 'Breadcrumb Current',
+      },
+      {
+        title: 'Breadcrumb Disabled',
+      },
+      {
+        link: '#breadcrumb',
+        title: 'Breadcrumb Current',
+      },
+    ],
+  }}
+  argTypes={{
+    dataTestId: {
+      table: {
+        disable: true,
+      },
+    },
+    Component: {
+      table: {
+        disable: true,
+      },
+    },
+  }}
+>
+  {BreadcrumbsTemplate.bind({})}
+</Story>
+
+<!-- Docs -->
+
+<ComponentHeader
+  name="Breadcrumbs"
+  version={version}
+  stage={3}
+  design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Global-Design-System?node-id=4289%3A100591"
+/>
+
+```tsx
+// TSX/JSX file
+// Core import is recomended
+import Breadcrumbs from '@heycar-uikit/core/breadcrumbs';
+
+// or
+import Breadcrumbs from '@heycar-uikit/breadcrumbs';
+
+function App() {
+  return <Breadcrumbs />;
+}
+```
+
+```css
+// CSS file
+// Core import is recomended
+@import '@heycar-uikit/core/breadcrumbs/esm/Breadcrumbs.css';
+
+// or
+@import '@heycar-uikit/breadcrumbs/dist/esm/Breadcrumbs.css';
+```
+
+<!-- Description -->
+
+<TabContainer
+  tabs={[
+    { label: 'Description', component: <Description /> },
+    { label: 'Props', component: <Props of={Breadcrumbs} /> },
+    { label: 'Changelog', component: <Changelog /> },
+  ]}
+/>
