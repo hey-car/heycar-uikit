@@ -38,6 +38,11 @@
     padding-top: var(--spacing-5);
     padding-bottom: var(--spacing-5);
   }
+
+  @media (--tablet-l) {
+    padding-top: var(--spacing-3);
+    padding-bottom: var(--spacing-3);
+  }
 }
 
 .colLeft {
