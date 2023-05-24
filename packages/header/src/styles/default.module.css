@@ -7,8 +7,17 @@
   position: sticky;
   top: 0;
   left: 0;
-  width: 100%;
   z-index: 999;
+  width: 100%;
+  height: 64px;
+
+  @media (--tablet) {
+    height: 72px;
+  }
+
+  @media (--tablet-l) {
+    height: auto;
+  }
 
   @media (--desktop) {
     background: var(--color-primary-700);
@@ -26,6 +35,11 @@
   }
 
   @media (--tablet) {
+    padding-top: var(--spacing-5);
+    padding-bottom: var(--spacing-5);
+  }
+
+  @media (--tablet-l) {
     padding-top: var(--spacing-3);
     padding-bottom: var(--spacing-3);
   }
