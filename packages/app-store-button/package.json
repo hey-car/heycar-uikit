@@ -1,6 +1,6 @@
 {
   "name": "@heycar-uikit/app-store-button",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "HeyCar-UIKit App Store Button",
   "main": "dist/index.js",
   "module": "./dist/esm/index.js",

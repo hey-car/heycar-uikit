@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.5](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/header@4.1.4...@heycar-uikit/header@4.1.5) (2023-05-24)
+
+
+### Bug Fixes
+
+* **header:** fix issue with header being full page height on mobile ([#209](https://github.com/hey-car/heycar-uikit/issues/209)) ([0401c56](https://github.com/hey-car/heycar-uikit/commit/0401c56f91badc1a1f406ce7b4319ff173cce1b7))
+
+
+
+
+
 ## [4.1.4](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/header@4.1.3...@heycar-uikit/header@4.1.4) (2023-05-23)
 
 
