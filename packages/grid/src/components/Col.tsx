@@ -17,6 +17,7 @@ function Col<E extends React.ElementType = 'div'>({
   width,
   children,
   dataTestId,
+  ...props
 }: ColProps<E>) {
   const Component = component ?? 'div';
 
@@ -34,7 +35,7 @@ function Col<E extends React.ElementType = 'div'>({
   );
 
   return (
-    <Component className={classNames} data-test-id={dataTestId}>
+    <Component className={classNames} data-test-id={dataTestId} {...props}>
       {children}
     </Component>
   );

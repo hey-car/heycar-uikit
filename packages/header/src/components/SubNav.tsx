@@ -41,6 +41,7 @@ const SubNav = React.forwardRef<HTMLDivElement, SubNavProps>(
         }}
         justify="left"
         ref={ref}
+        role="group"
       >
         {subNavGroups.map((subNavGroup, i) => {
           const { showAllLink } = subNavGroup;
@@ -53,13 +54,14 @@ const SubNav = React.forwardRef<HTMLDivElement, SubNavProps>(
               key={`${isDropDownMenu ? 'dropdown' : 'burger'}-${navItemId}-${
                 subNavGroup.heading
               }`}
+              role="none"
               width={{
                 mobile: 12,
                 tablet: { s: 12, m: 12, l: colWidth },
                 desktop: colWidth,
               }}
             >
-              <span role="heading">{subNavGroup.heading}</span>
+              <span role="separator">{subNavGroup.heading}</span>
               <ul aria-label={`${subNavGroup.heading} menu`} role="menu">
                 {subNavGroup.items.slice(0, maxItem).map(subNavItem => {
                   return (
@@ -97,6 +99,7 @@ const SubNav = React.forwardRef<HTMLDivElement, SubNavProps>(
                 <Link
                   className={styles.showAll}
                   href={showAllLink.href}
+                  role="menuitem"
                   tabIndex={isOpen ? undefined : -1}
                 >
                   {showAllLink.label || locale.showAllLabel}

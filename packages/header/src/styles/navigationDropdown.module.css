@@ -23,6 +23,7 @@
   }
 
   &.isActive,
+  &.isCurrentPage,
   &:hover,
   &:focus {
     background: #fff;

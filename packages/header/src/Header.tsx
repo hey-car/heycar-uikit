@@ -37,6 +37,7 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
       accountItemConfig,
       auxiliaryDetails,
       callItemConfig,
+      currentRoute,
       dataTestId,
       favoritesItemConfig,
       langItemConfig,
@@ -277,6 +278,7 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
           <NavigationDropdown
             Link={Link}
             activeNavItem={activeNavItem}
+            currentRoute={currentRoute}
             dataTestId={`${dataTestId}-navigation`}
             locale={locale}
             navigation={navigation}

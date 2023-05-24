@@ -384,13 +384,14 @@ describe('Header', () => {
         auxAppHeading: 'LT Download our App now',
       };
 
-      const { getAllByLabelText, getAllByRole, getByRole } = render(
-        <Header
-          {...defaultData}
-          dataTestId={dataTestId}
-          locale={customLocale}
-        />,
-      );
+      const { getAllByLabelText, getAllByText, getAllByRole, getByRole } =
+        render(
+          <Header
+            {...defaultData}
+            dataTestId={dataTestId}
+            locale={customLocale}
+          />,
+        );
 
       const ddMenuNavBtn = getAllByRole('menuitem', {
         name: 'Car reviews - LT Press the Space key to show sub-menus.',
@@ -405,9 +406,7 @@ describe('Header', () => {
       // Open menu to get to subnav item
       fireEvent.click(ddMenuNavBtn);
 
-      expect(
-        getAllByRole('link', { name: 'LT Show all' })[1],
-      ).toBeInTheDocument();
+      expect(getAllByText('LT Show all')[1]).toBeInTheDocument();
     });
 
     it('renders header, nav, and subnav links with custom link component if passed', () => {

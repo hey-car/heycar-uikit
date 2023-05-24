@@ -271,11 +271,12 @@ Object {
             >
               <li
                 class=" "
+                role="none"
               >
                 <a
                   class="navItem "
                   href="#used-cars"
-                  id="nav-item-Usedcars"
+                  id="burger-nav-item-Usedcars"
                   role="menuitem"
                 >
                   <span
@@ -287,11 +288,12 @@ Object {
               </li>
               <li
                 class=" "
+                role="none"
               >
                 <a
                   class="navItem "
                   href="#new-cars"
-                  id="nav-item-Newcars"
+                  id="burger-nav-item-Newcars"
                   role="menuitem"
                 >
                   <span
@@ -303,11 +305,12 @@ Object {
               </li>
               <li
                 class=" "
+                role="none"
               >
                 <a
                   class="navItem "
                   href="#new-cars"
-                  id="nav-item-Electriccars"
+                  id="burger-nav-item-Electriccars"
                   role="menuitem"
                 >
                   <span
@@ -319,11 +322,12 @@ Object {
               </li>
               <li
                 class=" "
+                role="none"
               >
                 <a
                   class="navItem "
                   href="#new-cars"
-                  id="nav-item-Buyonline"
+                  id="burger-nav-item-Buyonline"
                   role="menuitem"
                 >
                   <span
@@ -335,13 +339,14 @@ Object {
               </li>
               <li
                 class=" "
+                role="none"
               >
                 <button
                   aria-expanded="false"
                   aria-haspopup="true"
                   aria-label="Car reviews - Press the Space key to show sub-menus."
                   class="navItem "
-                  id="nav-item-Carreviews"
+                  id="burger-nav-item-Carreviews"
                   role="menuitem"
                 >
                   <span
@@ -367,16 +372,23 @@ Object {
                   aria-hidden="true"
                   aria-label="Car reviews sub-menu"
                   class="collapse collapse"
+                  role="group"
                   style="height: 0px;"
                 >
                   <div
+                    aria-expanded="false"
+                    aria-hidden="true"
+                    aria-label="Car reviews sub-menu"
                     class="row component left gutter-tablet-l-24 gutter-desktop-24 subNav"
+                    data-test-id="burger-nav-item-Carreviews-sub-nav"
+                    role="group"
                   >
                     <div
                       class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-12 width-desktop-12 subNavGroup fullWidth"
+                      role="none"
                     >
                       <span
-                        role="heading"
+                        role="separator"
                       >
                         Popular cars
                       </span>
@@ -458,6 +470,7 @@ Object {
                       <a
                         class="showAll"
                         href="#reviews"
+                        role="menuitem"
                         tabindex="-1"
                       >
                         Show all
@@ -468,13 +481,14 @@ Object {
               </li>
               <li
                 class=" "
+                role="none"
               >
                 <button
                   aria-expanded="false"
                   aria-haspopup="true"
                   aria-label="Cars by Location - Press the Space key to show sub-menus."
                   class="navItem "
-                  id="nav-item-CarsbyLocation"
+                  id="burger-nav-item-CarsbyLocation"
                   role="menuitem"
                 >
                   <span
@@ -500,16 +514,23 @@ Object {
                   aria-hidden="true"
                   aria-label="Cars by Location sub-menu"
                   class="collapse collapse"
+                  role="group"
                   style="height: 0px;"
                 >
                   <div
+                    aria-expanded="false"
+                    aria-hidden="true"
+                    aria-label="Cars by Location sub-menu"
                     class="row component left gutter-tablet-l-24 gutter-desktop-24 subNav"
+                    data-test-id="burger-nav-item-CarsbyLocation-sub-nav"
+                    role="group"
                   >
                     <div
                       class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-3 width-desktop-3 subNavGroup quarterWidth"
+                      role="none"
                     >
                       <span
-                        role="heading"
+                        role="separator"
                       >
                         Recent Locations
                       </span>
@@ -563,9 +584,10 @@ Object {
                     </div>
                     <div
                       class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-6 width-desktop-6 subNavGroup halfWidth"
+                      role="none"
                     >
                       <span
-                        role="heading"
+                        role="separator"
                       >
                         Popular Locations
                       </span>
@@ -647,6 +669,7 @@ Object {
                       <a
                         class="showAll"
                         href="#locations"
+                        role="menuitem"
                         tabindex="-1"
                       >
                         Show all
@@ -657,11 +680,12 @@ Object {
               </li>
               <li
                 class=" "
+                role="none"
               >
                 <a
                   class="navItem "
                   href="#Online-Bestellung"
-                  id="nav-item-ValuemyCar"
+                  id="burger-nav-item-ValuemyCar"
                   role="menuitem"
                 >
                   <span
@@ -673,11 +697,12 @@ Object {
               </li>
               <li
                 class=" "
+                role="none"
               >
                 <a
                   class="navItem "
                   href="#Coches-de-segunda-mano"
-                  id="nav-item-Finance"
+                  id="burger-nav-item-Finance"
                   role="menuitem"
                 >
                   <span
@@ -689,13 +714,14 @@ Object {
               </li>
               <li
                 class=" "
+                role="none"
               >
                 <button
                   aria-expanded="false"
                   aria-haspopup="true"
                   aria-label="Insurance - Press the Space key to show sub-menus."
                   class="navItem "
-                  id="nav-item-Insurance"
+                  id="burger-nav-item-Insurance"
                   role="menuitem"
                 >
                   <span
@@ -721,16 +747,23 @@ Object {
                   aria-hidden="true"
                   aria-label="Insurance sub-menu"
                   class="collapse collapse"
+                  role="group"
                   style="height: 0px;"
                 >
                   <div
+                    aria-expanded="false"
+                    aria-hidden="true"
+                    aria-label="Insurance sub-menu"
                     class="row component left gutter-tablet-l-24 gutter-desktop-24 subNav"
+                    data-test-id="burger-nav-item-Insurance-sub-nav"
+                    role="group"
                   >
                     <div
                       class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-12 width-desktop-12 subNavGroup fullWidth"
+                      role="none"
                     >
                       <span
-                        role="heading"
+                        role="separator"
                       >
                         Insurance
                       </span>
@@ -787,11 +820,12 @@ Object {
               </li>
               <li
                 class=" "
+                role="none"
               >
                 <a
                   class="navItem "
                   href="#Deals"
-                  id="nav-item-Deals"
+                  id="burger-nav-item-Deals"
                   role="menuitem"
                 >
                   <span
@@ -803,13 +837,14 @@ Object {
               </li>
               <li
                 class="lastNavItem "
+                role="none"
               >
                 <button
                   aria-expanded="false"
                   aria-haspopup="true"
                   aria-label="News & Guides - Press the Space key to show sub-menus."
                   class="navItem "
-                  id="nav-item-NewsGuides"
+                  id="burger-nav-item-NewsGuides"
                   role="menuitem"
                 >
                   <span
@@ -835,16 +870,23 @@ Object {
                   aria-hidden="true"
                   aria-label="News & Guides sub-menu"
                   class="collapse collapse"
+                  role="group"
                   style="height: 0px;"
                 >
                   <div
+                    aria-expanded="false"
+                    aria-hidden="true"
+                    aria-label="News & Guides sub-menu"
                     class="row component left gutter-tablet-l-24 gutter-desktop-24 subNav"
+                    data-test-id="burger-nav-item-NewsGuides-sub-nav"
+                    role="group"
                   >
                     <div
                       class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-4 width-desktop-4 subNavGroup thirdWidth"
+                      role="none"
                     >
                       <span
-                        role="heading"
+                        role="separator"
                       >
                         Recently viewed
                       </span>
@@ -870,9 +912,10 @@ Object {
                     </div>
                     <div
                       class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-4 width-desktop-4 subNavGroup thirdWidth"
+                      role="none"
                     >
                       <span
-                        role="heading"
+                        role="separator"
                       >
                         Latest news
                       </span>
@@ -954,6 +997,7 @@ Object {
                       <a
                         class="showAll"
                         href="#locations"
+                        role="menuitem"
                         tabindex="-1"
                       >
                         Show all
@@ -961,9 +1005,10 @@ Object {
                     </div>
                     <div
                       class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-4 width-desktop-4 subNavGroup thirdWidth"
+                      role="none"
                     >
                       <span
-                        role="heading"
+                        role="separator"
                       >
                         Trending Guides
                       </span>
@@ -1045,6 +1090,7 @@ Object {
                       <a
                         class="showAll"
                         href="#locations"
+                        role="menuitem"
                         tabindex="-1"
                       >
                         Show all
@@ -1055,13 +1101,14 @@ Object {
               </li>
               <li
                 class=" headerItems"
+                role="none"
               >
                 <button
                   aria-expanded="false"
                   aria-haspopup="true"
                   aria-label="English - Press the Space key to show sub-menus."
                   class="navItem "
-                  id="nav-item-English"
+                  id="burger-nav-item-English"
                   role="menuitem"
                 >
                   <span
@@ -1087,16 +1134,23 @@ Object {
                   aria-hidden="true"
                   aria-label="English sub-menu"
                   class="collapse collapse"
+                  role="group"
                   style="height: 0px;"
                 >
                   <div
+                    aria-expanded="false"
+                    aria-hidden="true"
+                    aria-label="English sub-menu"
                     class="row component left gutter-tablet-l-24 gutter-desktop-24 subNav"
+                    data-test-id="burger-nav-item-English-sub-nav"
+                    role="group"
                   >
                     <div
                       class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-12 width-desktop-12 subNavGroup fullWidth"
+                      role="none"
                     >
                       <span
-                        role="heading"
+                        role="separator"
                       >
                         Select Language
                       </span>
@@ -1181,10 +1235,11 @@ Object {
               </li>
               <li
                 class=" headerItems"
+                role="none"
               >
                 <a
                   class="navItem "
-                  id="nav-item-Login"
+                  id="burger-nav-item-Login"
                   role="menuitem"
                 >
                   <span
@@ -1253,9 +1308,10 @@ Object {
             >
               <li
                 class=""
+                role="none"
               >
                 <a
-                  class="navItem "
+                  class="navItem  "
                   href="#used-cars"
                   id="nav-item-Usedcars"
                   role="menuitem"
@@ -1269,9 +1325,10 @@ Object {
               </li>
               <li
                 class=""
+                role="none"
               >
                 <a
-                  class="navItem "
+                  class="navItem  "
                   href="#new-cars"
                   id="nav-item-Newcars"
                   role="menuitem"
@@ -1285,9 +1342,10 @@ Object {
               </li>
               <li
                 class=""
+                role="none"
               >
                 <a
-                  class="navItem "
+                  class="navItem  "
                   href="#new-cars"
                   id="nav-item-Electriccars"
                   role="menuitem"
@@ -1301,9 +1359,10 @@ Object {
               </li>
               <li
                 class=""
+                role="none"
               >
                 <a
-                  class="navItem "
+                  class="navItem  "
                   href="#new-cars"
                   id="nav-item-Buyonline"
                   role="menuitem"
@@ -1317,12 +1376,13 @@ Object {
               </li>
               <li
                 class=""
+                role="none"
               >
                 <button
                   aria-expanded="false"
                   aria-haspopup="true"
                   aria-label="Car reviews - Press the Space key to show sub-menus."
-                  class="navItem "
+                  class="navItem  "
                   id="nav-item-Carreviews"
                   role="menuitem"
                 >
@@ -1336,16 +1396,23 @@ Object {
                   aria-hidden="true"
                   aria-label="Car reviews sub-menu"
                   class="collapse collapse"
+                  role="group"
                   style="height: 0px;"
                 >
                   <div
+                    aria-expanded="false"
+                    aria-hidden="true"
+                    aria-label="Car reviews sub-menu"
                     class="row component left gutter-tablet-l-24 gutter-desktop-24 subNav"
+                    data-test-id="nav-item-Carreviews-sub-nav"
+                    role="group"
                   >
                     <div
                       class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-12 width-desktop-12 subNavGroup fullWidth"
+                      role="none"
                     >
                       <span
-                        role="heading"
+                        role="separator"
                       >
                         Popular cars
                       </span>
@@ -1567,6 +1634,7 @@ Object {
                       <a
                         class="showAll"
                         href="#reviews"
+                        role="menuitem"
                         tabindex="-1"
                       >
                         Show all
@@ -1577,12 +1645,13 @@ Object {
               </li>
               <li
                 class=""
+                role="none"
               >
                 <button
                   aria-expanded="false"
                   aria-haspopup="true"
                   aria-label="Cars by Location - Press the Space key to show sub-menus."
-                  class="navItem "
+                  class="navItem  "
                   id="nav-item-CarsbyLocation"
                   role="menuitem"
                 >
@@ -1596,16 +1665,23 @@ Object {
                   aria-hidden="true"
                   aria-label="Cars by Location sub-menu"
                   class="collapse collapse"
+                  role="group"
                   style="height: 0px;"
                 >
                   <div
+                    aria-expanded="false"
+                    aria-hidden="true"
+                    aria-label="Cars by Location sub-menu"
                     class="row component left gutter-tablet-l-24 gutter-desktop-24 subNav"
+                    data-test-id="nav-item-CarsbyLocation-sub-nav"
+                    role="group"
                   >
                     <div
                       class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-3 width-desktop-3 subNavGroup quarterWidth"
+                      role="none"
                     >
                       <span
-                        role="heading"
+                        role="separator"
                       >
                         Recent Locations
                       </span>
@@ -1659,9 +1735,10 @@ Object {
                     </div>
                     <div
                       class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-6 width-desktop-6 subNavGroup halfWidth"
+                      role="none"
                     >
                       <span
-                        role="heading"
+                        role="separator"
                       >
                         Popular Locations
                       </span>
@@ -1813,6 +1890,7 @@ Object {
                       <a
                         class="showAll"
                         href="#locations"
+                        role="menuitem"
                         tabindex="-1"
                       >
                         Show all
@@ -1823,9 +1901,10 @@ Object {
               </li>
               <li
                 class=""
+                role="none"
               >
                 <a
-                  class="navItem "
+                  class="navItem  "
                   href="#Online-Bestellung"
                   id="nav-item-ValuemyCar"
                   role="menuitem"
@@ -1839,9 +1918,10 @@ Object {
               </li>
               <li
                 class=""
+                role="none"
               >
                 <a
-                  class="navItem "
+                  class="navItem  "
                   href="#Coches-de-segunda-mano"
                   id="nav-item-Finance"
                   role="menuitem"
@@ -1855,12 +1935,13 @@ Object {
               </li>
               <li
                 class=""
+                role="none"
               >
                 <button
                   aria-expanded="false"
                   aria-haspopup="true"
                   aria-label="Insurance - Press the Space key to show sub-menus."
-                  class="navItem "
+                  class="navItem  "
                   id="nav-item-Insurance"
                   role="menuitem"
                 >
@@ -1874,16 +1955,23 @@ Object {
                   aria-hidden="true"
                   aria-label="Insurance sub-menu"
                   class="collapse collapse"
+                  role="group"
                   style="height: 0px;"
                 >
                   <div
+                    aria-expanded="false"
+                    aria-hidden="true"
+                    aria-label="Insurance sub-menu"
                     class="row component left gutter-tablet-l-24 gutter-desktop-24 subNav"
+                    data-test-id="nav-item-Insurance-sub-nav"
+                    role="group"
                   >
                     <div
                       class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-12 width-desktop-12 subNavGroup fullWidth"
+                      role="none"
                     >
                       <span
-                        role="heading"
+                        role="separator"
                       >
                         Insurance
                       </span>
@@ -1940,9 +2028,10 @@ Object {
               </li>
               <li
                 class=""
+                role="none"
               >
                 <a
-                  class="navItem "
+                  class="navItem  "
                   href="#Deals"
                   id="nav-item-Deals"
                   role="menuitem"
@@ -1956,12 +2045,13 @@ Object {
               </li>
               <li
                 class="lastNavItem"
+                role="none"
               >
                 <button
                   aria-expanded="false"
                   aria-haspopup="true"
                   aria-label="News & Guides - Press the Space key to show sub-menus."
-                  class="navItem "
+                  class="navItem  "
                   id="nav-item-NewsGuides"
                   role="menuitem"
                 >
@@ -1975,16 +2065,23 @@ Object {
                   aria-hidden="true"
                   aria-label="News & Guides sub-menu"
                   class="collapse collapse"
+                  role="group"
                   style="height: 0px;"
                 >
                   <div
+                    aria-expanded="false"
+                    aria-hidden="true"
+                    aria-label="News & Guides sub-menu"
                     class="row component left gutter-tablet-l-24 gutter-desktop-24 subNav"
+                    data-test-id="nav-item-NewsGuides-sub-nav"
+                    role="group"
                   >
                     <div
                       class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-4 width-desktop-4 subNavGroup thirdWidth"
+                      role="none"
                     >
                       <span
-                        role="heading"
+                        role="separator"
                       >
                         Recently viewed
                       </span>
@@ -2010,9 +2107,10 @@ Object {
                     </div>
                     <div
                       class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-4 width-desktop-4 subNavGroup thirdWidth"
+                      role="none"
                     >
                       <span
-                        role="heading"
+                        role="separator"
                       >
                         Latest news
                       </span>
@@ -2094,6 +2192,7 @@ Object {
                       <a
                         class="showAll"
                         href="#locations"
+                        role="menuitem"
                         tabindex="-1"
                       >
                         Show all
@@ -2101,9 +2200,10 @@ Object {
                     </div>
                     <div
                       class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-4 width-desktop-4 subNavGroup thirdWidth"
+                      role="none"
                     >
                       <span
-                        role="heading"
+                        role="separator"
                       >
                         Trending Guides
                       </span>
@@ -2185,6 +2285,7 @@ Object {
                       <a
                         class="showAll"
                         href="#locations"
+                        role="menuitem"
                         tabindex="-1"
                       >
                         Show all
@@ -2466,11 +2567,12 @@ Object {
           >
             <li
               class=" "
+              role="none"
             >
               <a
                 class="navItem "
                 href="#used-cars"
-                id="nav-item-Usedcars"
+                id="burger-nav-item-Usedcars"
                 role="menuitem"
               >
                 <span
@@ -2482,11 +2584,12 @@ Object {
             </li>
             <li
               class=" "
+              role="none"
             >
               <a
                 class="navItem "
                 href="#new-cars"
-                id="nav-item-Newcars"
+                id="burger-nav-item-Newcars"
                 role="menuitem"
               >
                 <span
@@ -2498,11 +2601,12 @@ Object {
             </li>
             <li
               class=" "
+              role="none"
             >
               <a
                 class="navItem "
                 href="#new-cars"
-                id="nav-item-Electriccars"
+                id="burger-nav-item-Electriccars"
                 role="menuitem"
               >
                 <span
@@ -2514,11 +2618,12 @@ Object {
             </li>
             <li
               class=" "
+              role="none"
             >
               <a
                 class="navItem "
                 href="#new-cars"
-                id="nav-item-Buyonline"
+                id="burger-nav-item-Buyonline"
                 role="menuitem"
               >
                 <span
@@ -2530,13 +2635,14 @@ Object {
             </li>
             <li
               class=" "
+              role="none"
             >
               <button
                 aria-expanded="false"
                 aria-haspopup="true"
                 aria-label="Car reviews - Press the Space key to show sub-menus."
                 class="navItem "
-                id="nav-item-Carreviews"
+                id="burger-nav-item-Carreviews"
                 role="menuitem"
               >
                 <span
@@ -2562,16 +2668,23 @@ Object {
                 aria-hidden="true"
                 aria-label="Car reviews sub-menu"
                 class="collapse collapse"
+                role="group"
                 style="height: 0px;"
               >
                 <div
+                  aria-expanded="false"
+                  aria-hidden="true"
+                  aria-label="Car reviews sub-menu"
                   class="row component left gutter-tablet-l-24 gutter-desktop-24 subNav"
+                  data-test-id="burger-nav-item-Carreviews-sub-nav"
+                  role="group"
                 >
                   <div
                     class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-12 width-desktop-12 subNavGroup fullWidth"
+                    role="none"
                   >
                     <span
-                      role="heading"
+                      role="separator"
                     >
                       Popular cars
                     </span>
@@ -2653,6 +2766,7 @@ Object {
                     <a
                       class="showAll"
                       href="#reviews"
+                      role="menuitem"
                       tabindex="-1"
                     >
                       Show all
@@ -2663,13 +2777,14 @@ Object {
             </li>
             <li
               class=" "
+              role="none"
             >
               <button
                 aria-expanded="false"
                 aria-haspopup="true"
                 aria-label="Cars by Location - Press the Space key to show sub-menus."
                 class="navItem "
-                id="nav-item-CarsbyLocation"
+                id="burger-nav-item-CarsbyLocation"
                 role="menuitem"
               >
                 <span
@@ -2695,16 +2810,23 @@ Object {
                 aria-hidden="true"
                 aria-label="Cars by Location sub-menu"
                 class="collapse collapse"
+                role="group"
                 style="height: 0px;"
               >
                 <div
+                  aria-expanded="false"
+                  aria-hidden="true"
+                  aria-label="Cars by Location sub-menu"
                   class="row component left gutter-tablet-l-24 gutter-desktop-24 subNav"
+                  data-test-id="burger-nav-item-CarsbyLocation-sub-nav"
+                  role="group"
                 >
                   <div
                     class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-3 width-desktop-3 subNavGroup quarterWidth"
+                    role="none"
                   >
                     <span
-                      role="heading"
+                      role="separator"
                     >
                       Recent Locations
                     </span>
@@ -2758,9 +2880,10 @@ Object {
                   </div>
                   <div
                     class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-6 width-desktop-6 subNavGroup halfWidth"
+                    role="none"
                   >
                     <span
-                      role="heading"
+                      role="separator"
                     >
                       Popular Locations
                     </span>
@@ -2842,6 +2965,7 @@ Object {
                     <a
                       class="showAll"
                       href="#locations"
+                      role="menuitem"
                       tabindex="-1"
                     >
                       Show all
@@ -2852,11 +2976,12 @@ Object {
             </li>
             <li
               class=" "
+              role="none"
             >
               <a
                 class="navItem "
                 href="#Online-Bestellung"
-                id="nav-item-ValuemyCar"
+                id="burger-nav-item-ValuemyCar"
                 role="menuitem"
               >
                 <span
@@ -2868,11 +2993,12 @@ Object {
             </li>
             <li
               class=" "
+              role="none"
             >
               <a
                 class="navItem "
                 href="#Coches-de-segunda-mano"
-                id="nav-item-Finance"
+                id="burger-nav-item-Finance"
                 role="menuitem"
               >
                 <span
@@ -2884,13 +3010,14 @@ Object {
             </li>
             <li
               class=" "
+              role="none"
             >
               <button
                 aria-expanded="false"
                 aria-haspopup="true"
                 aria-label="Insurance - Press the Space key to show sub-menus."
                 class="navItem "
-                id="nav-item-Insurance"
+                id="burger-nav-item-Insurance"
                 role="menuitem"
               >
                 <span
@@ -2916,16 +3043,23 @@ Object {
                 aria-hidden="true"
                 aria-label="Insurance sub-menu"
                 class="collapse collapse"
+                role="group"
                 style="height: 0px;"
               >
                 <div
+                  aria-expanded="false"
+                  aria-hidden="true"
+                  aria-label="Insurance sub-menu"
                   class="row component left gutter-tablet-l-24 gutter-desktop-24 subNav"
+                  data-test-id="burger-nav-item-Insurance-sub-nav"
+                  role="group"
                 >
                   <div
                     class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-12 width-desktop-12 subNavGroup fullWidth"
+                    role="none"
                   >
                     <span
-                      role="heading"
+                      role="separator"
                     >
                       Insurance
                     </span>
@@ -2982,11 +3116,12 @@ Object {
             </li>
             <li
               class=" "
+              role="none"
             >
               <a
                 class="navItem "
                 href="#Deals"
-                id="nav-item-Deals"
+                id="burger-nav-item-Deals"
                 role="menuitem"
               >
                 <span
@@ -2998,13 +3133,14 @@ Object {
             </li>
             <li
               class="lastNavItem "
+              role="none"
             >
               <button
                 aria-expanded="false"
                 aria-haspopup="true"
                 aria-label="News & Guides - Press the Space key to show sub-menus."
                 class="navItem "
-                id="nav-item-NewsGuides"
+                id="burger-nav-item-NewsGuides"
                 role="menuitem"
               >
                 <span
@@ -3030,16 +3166,23 @@ Object {
                 aria-hidden="true"
                 aria-label="News & Guides sub-menu"
                 class="collapse collapse"
+                role="group"
                 style="height: 0px;"
               >
                 <div
+                  aria-expanded="false"
+                  aria-hidden="true"
+                  aria-label="News & Guides sub-menu"
                   class="row component left gutter-tablet-l-24 gutter-desktop-24 subNav"
+                  data-test-id="burger-nav-item-NewsGuides-sub-nav"
+                  role="group"
                 >
                   <div
                     class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-4 width-desktop-4 subNavGroup thirdWidth"
+                    role="none"
                   >
                     <span
-                      role="heading"
+                      role="separator"
                     >
                       Recently viewed
                     </span>
@@ -3065,9 +3208,10 @@ Object {
                   </div>
                   <div
                     class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-4 width-desktop-4 subNavGroup thirdWidth"
+                    role="none"
                   >
                     <span
-                      role="heading"
+                      role="separator"
                     >
                       Latest news
                     </span>
@@ -3149,6 +3293,7 @@ Object {
                     <a
                       class="showAll"
                       href="#locations"
+                      role="menuitem"
                       tabindex="-1"
                     >
                       Show all
@@ -3156,9 +3301,10 @@ Object {
                   </div>
                   <div
                     class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-4 width-desktop-4 subNavGroup thirdWidth"
+                    role="none"
                   >
                     <span
-                      role="heading"
+                      role="separator"
                     >
                       Trending Guides
                     </span>
@@ -3240,6 +3386,7 @@ Object {
                     <a
                       class="showAll"
                       href="#locations"
+                      role="menuitem"
                       tabindex="-1"
                     >
                       Show all
@@ -3250,13 +3397,14 @@ Object {
             </li>
             <li
               class=" headerItems"
+              role="none"
             >
               <button
                 aria-expanded="false"
                 aria-haspopup="true"
                 aria-label="English - Press the Space key to show sub-menus."
                 class="navItem "
-                id="nav-item-English"
+                id="burger-nav-item-English"
                 role="menuitem"
               >
                 <span
@@ -3282,16 +3430,23 @@ Object {
                 aria-hidden="true"
                 aria-label="English sub-menu"
                 class="collapse collapse"
+                role="group"
                 style="height: 0px;"
               >
                 <div
+                  aria-expanded="false"
+                  aria-hidden="true"
+                  aria-label="English sub-menu"
                   class="row component left gutter-tablet-l-24 gutter-desktop-24 subNav"
+                  data-test-id="burger-nav-item-English-sub-nav"
+                  role="group"
                 >
                   <div
                     class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-12 width-desktop-12 subNavGroup fullWidth"
+                    role="none"
                   >
                     <span
-                      role="heading"
+                      role="separator"
                     >
                       Select Language
                     </span>
@@ -3376,10 +3531,11 @@ Object {
             </li>
             <li
               class=" headerItems"
+              role="none"
             >
               <a
                 class="navItem "
-                id="nav-item-Login"
+                id="burger-nav-item-Login"
                 role="menuitem"
               >
                 <span
@@ -3448,9 +3604,10 @@ Object {
           >
             <li
               class=""
+              role="none"
             >
               <a
-                class="navItem "
+                class="navItem  "
                 href="#used-cars"
                 id="nav-item-Usedcars"
                 role="menuitem"
@@ -3464,9 +3621,10 @@ Object {
             </li>
             <li
               class=""
+              role="none"
             >
               <a
-                class="navItem "
+                class="navItem  "
                 href="#new-cars"
                 id="nav-item-Newcars"
                 role="menuitem"
@@ -3480,9 +3638,10 @@ Object {
             </li>
             <li
               class=""
+              role="none"
             >
               <a
-                class="navItem "
+                class="navItem  "
                 href="#new-cars"
                 id="nav-item-Electriccars"
                 role="menuitem"
@@ -3496,9 +3655,10 @@ Object {
             </li>
             <li
               class=""
+              role="none"
             >
               <a
-                class="navItem "
+                class="navItem  "
                 href="#new-cars"
                 id="nav-item-Buyonline"
                 role="menuitem"
@@ -3512,12 +3672,13 @@ Object {
             </li>
             <li
               class=""
+              role="none"
             >
               <button
                 aria-expanded="false"
                 aria-haspopup="true"
                 aria-label="Car reviews - Press the Space key to show sub-menus."
-                class="navItem "
+                class="navItem  "
                 id="nav-item-Carreviews"
                 role="menuitem"
               >
@@ -3531,16 +3692,23 @@ Object {
                 aria-hidden="true"
                 aria-label="Car reviews sub-menu"
                 class="collapse collapse"
+                role="group"
                 style="height: 0px;"
               >
                 <div
+                  aria-expanded="false"
+                  aria-hidden="true"
+                  aria-label="Car reviews sub-menu"
                   class="row component left gutter-tablet-l-24 gutter-desktop-24 subNav"
+                  data-test-id="nav-item-Carreviews-sub-nav"
+                  role="group"
                 >
                   <div
                     class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-12 width-desktop-12 subNavGroup fullWidth"
+                    role="none"
                   >
                     <span
-                      role="heading"
+                      role="separator"
                     >
                       Popular cars
                     </span>
@@ -3762,6 +3930,7 @@ Object {
                     <a
                       class="showAll"
                       href="#reviews"
+                      role="menuitem"
                       tabindex="-1"
                     >
                       Show all
@@ -3772,12 +3941,13 @@ Object {
             </li>
             <li
               class=""
+              role="none"
             >
               <button
                 aria-expanded="false"
                 aria-haspopup="true"
                 aria-label="Cars by Location - Press the Space key to show sub-menus."
-                class="navItem "
+                class="navItem  "
                 id="nav-item-CarsbyLocation"
                 role="menuitem"
               >
@@ -3791,16 +3961,23 @@ Object {
                 aria-hidden="true"
                 aria-label="Cars by Location sub-menu"
                 class="collapse collapse"
+                role="group"
                 style="height: 0px;"
               >
                 <div
+                  aria-expanded="false"
+                  aria-hidden="true"
+                  aria-label="Cars by Location sub-menu"
                   class="row component left gutter-tablet-l-24 gutter-desktop-24 subNav"
+                  data-test-id="nav-item-CarsbyLocation-sub-nav"
+                  role="group"
                 >
                   <div
                     class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-3 width-desktop-3 subNavGroup quarterWidth"
+                    role="none"
                   >
                     <span
-                      role="heading"
+                      role="separator"
                     >
                       Recent Locations
                     </span>
@@ -3854,9 +4031,10 @@ Object {
                   </div>
                   <div
                     class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-6 width-desktop-6 subNavGroup halfWidth"
+                    role="none"
                   >
                     <span
-                      role="heading"
+                      role="separator"
                     >
                       Popular Locations
                     </span>
@@ -4008,6 +4186,7 @@ Object {
                     <a
                       class="showAll"
                       href="#locations"
+                      role="menuitem"
                       tabindex="-1"
                     >
                       Show all
@@ -4018,9 +4197,10 @@ Object {
             </li>
             <li
               class=""
+              role="none"
             >
               <a
-                class="navItem "
+                class="navItem  "
                 href="#Online-Bestellung"
                 id="nav-item-ValuemyCar"
                 role="menuitem"
@@ -4034,9 +4214,10 @@ Object {
             </li>
             <li
               class=""
+              role="none"
             >
               <a
-                class="navItem "
+                class="navItem  "
                 href="#Coches-de-segunda-mano"
                 id="nav-item-Finance"
                 role="menuitem"
@@ -4050,12 +4231,13 @@ Object {
             </li>
             <li
               class=""
+              role="none"
             >
               <button
                 aria-expanded="false"
                 aria-haspopup="true"
                 aria-label="Insurance - Press the Space key to show sub-menus."
-                class="navItem "
+                class="navItem  "
                 id="nav-item-Insurance"
                 role="menuitem"
               >
@@ -4069,16 +4251,23 @@ Object {
                 aria-hidden="true"
                 aria-label="Insurance sub-menu"
                 class="collapse collapse"
+                role="group"
                 style="height: 0px;"
               >
                 <div
+                  aria-expanded="false"
+                  aria-hidden="true"
+                  aria-label="Insurance sub-menu"
                   class="row component left gutter-tablet-l-24 gutter-desktop-24 subNav"
+                  data-test-id="nav-item-Insurance-sub-nav"
+                  role="group"
                 >
                   <div
                     class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-12 width-desktop-12 subNavGroup fullWidth"
+                    role="none"
                   >
                     <span
-                      role="heading"
+                      role="separator"
                     >
                       Insurance
                     </span>
@@ -4135,9 +4324,10 @@ Object {
             </li>
             <li
               class=""
+              role="none"
             >
               <a
-                class="navItem "
+                class="navItem  "
                 href="#Deals"
                 id="nav-item-Deals"
                 role="menuitem"
@@ -4151,12 +4341,13 @@ Object {
             </li>
             <li
               class="lastNavItem"
+              role="none"
             >
               <button
                 aria-expanded="false"
                 aria-haspopup="true"
                 aria-label="News & Guides - Press the Space key to show sub-menus."
-                class="navItem "
+                class="navItem  "
                 id="nav-item-NewsGuides"
                 role="menuitem"
               >
@@ -4170,16 +4361,23 @@ Object {
                 aria-hidden="true"
                 aria-label="News & Guides sub-menu"
                 class="collapse collapse"
+                role="group"
                 style="height: 0px;"
               >
                 <div
+                  aria-expanded="false"
+                  aria-hidden="true"
+                  aria-label="News & Guides sub-menu"
                   class="row component left gutter-tablet-l-24 gutter-desktop-24 subNav"
+                  data-test-id="nav-item-NewsGuides-sub-nav"
+                  role="group"
                 >
                   <div
                     class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-4 width-desktop-4 subNavGroup thirdWidth"
+                    role="none"
                   >
                     <span
-                      role="heading"
+                      role="separator"
                     >
                       Recently viewed
                     </span>
@@ -4205,9 +4403,10 @@ Object {
                   </div>
                   <div
                     class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-4 width-desktop-4 subNavGroup thirdWidth"
+                    role="none"
                   >
                     <span
-                      role="heading"
+                      role="separator"
                     >
                       Latest news
                     </span>
@@ -4289,6 +4488,7 @@ Object {
                     <a
                       class="showAll"
                       href="#locations"
+                      role="menuitem"
                       tabindex="-1"
                     >
                       Show all
@@ -4296,9 +4496,10 @@ Object {
                   </div>
                   <div
                     class="col component width-mobile-12 width-tablet-s-12 width-tablet-m-12 width-tablet-l-4 width-desktop-4 subNavGroup thirdWidth"
+                    role="none"
                   >
                     <span
-                      role="heading"
+                      role="separator"
                     >
                       Trending Guides
                     </span>
@@ -4380,6 +4581,7 @@ Object {
                     <a
                       class="showAll"
                       href="#locations"
+                      role="menuitem"
                       tabindex="-1"
                     >
                       Show all

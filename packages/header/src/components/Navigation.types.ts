@@ -76,7 +76,10 @@ interface NavItem {
 }
 
 interface NavigationProps
-  extends Pick<HeaderProps, 'accountItemConfig' | 'langItemConfig'> {
+  extends Pick<
+    HeaderProps,
+    'accountItemConfig' | 'currentRoute' | 'langItemConfig'
+  > {
   /**
    * Id of the current open nav item
    */
