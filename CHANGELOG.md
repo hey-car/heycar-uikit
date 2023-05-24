@@ -1,3 +1,15 @@
+# [8.3.0](https://github.com/hey-car/heycar-uikit/compare/v8.2.2...v8.3.0) (2023-05-24)
+
+
+### Bug Fixes
+
+* **header:** fix issue with header being full page height on mobile ([#209](https://github.com/hey-car/heycar-uikit/issues/209)) ([0401c56](https://github.com/hey-car/heycar-uikit/commit/0401c56f91badc1a1f406ce7b4319ff173cce1b7))
+
+
+### Features
+
+* **app-store-button:** app store badges for iOS and Android ([#199](https://github.com/hey-car/heycar-uikit/issues/199)) ([d0771a8](https://github.com/hey-car/heycar-uikit/commit/d0771a8c6fcbc96043cc78ec91824e410755db74))
+
 ## [8.2.2](https://github.com/hey-car/heycar-uikit/compare/v8.2.1...v8.2.2) (2023-05-23)
 
 
