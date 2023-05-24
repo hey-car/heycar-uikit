@@ -9,7 +9,7 @@ import {
 } from 'playwright';
 import { delay } from 'q';
 
-import { closeBrowser, matchHtml, openBrowserPage } from '.';
+import { closeBrowser, matchHtml, openBrowserPage } from './helpers';
 
 interface BrowserOptions {
   browserType?: BrowserType<ChromiumBrowser | FirefoxBrowser | WebKitBrowser>;

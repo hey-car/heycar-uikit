@@ -6,7 +6,6 @@
   "main": "index.js",
   "scripts": {
     "build": "./bin/build.sh",
-    "build:vite": "vite build",
     "clean": "rimraf packages/*/{tsconfig.tsbuildinfo,dist} && rimraf {dist,build}",
     "start": "start-storybook -p 9009 -c .storybook",
     "build-storybook": "build-storybook -o build --quiet",
@@ -65,14 +64,10 @@
     "packages/*"
   ],
   "dependencies": {
-    "@vitejs/plugin-react": "^4.0.0",
     "classnames": "^2.3.1",
     "uuid": "^9.0.0"
   },
   "devDependencies": {
-    "vite": "^4.3.1",
-    "vite-plugin-dts": "^2.3.0",
-    "vite-tsconfig-paths": "^4.2.0",
     "@babel/plugin-proposal-class-properties": "^7.16.7",
     "@babel/plugin-transform-modules-commonjs": "^7.17.7",
     "@babel/preset-react": "^7.16.7",
@@ -81,6 +76,7 @@
     "@commitlint/config-lerna-scopes": "^16.2.2",
     "@playwright/test": "1.32.1",
     "@pmmmwh/react-refresh-webpack-plugin": "github:pmmmwh/react-refresh-webpack-plugin",
+    "@rollup/plugin-image": "^3.0.2",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-multi-entry": "^4.1.0",
     "@rollup/plugin-node-resolve": "^15.0.2",

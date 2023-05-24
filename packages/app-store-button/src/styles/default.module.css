@@ -1,0 +1,19 @@
+@import '../../../themes/src/default.css';
+
+.wrapper {
+  display: inline-block;
+  height: 40px;
+
+  & img {
+    max-height: 100%;
+    width: auto;
+  }
+
+  &.apple {
+    width: 120px;
+  }
+
+  &.google {
+    width: 135px;
+  }
+}

@@ -1,0 +1,78 @@
+import { Meta, Story, Props } from '@storybook/addon-docs';
+import { ComponentHeader, CssVars, TabContainer } from 'storybook/blocks';
+
+import Description from './Description.mdx';
+import Changelog from '../../CHANGELOG.md';
+import AppStoreButton from '../AppStoreButton';
+import { version } from '../../package.json';
+import styles from '!!raw-loader!../styles/default.module.css';
+
+<!-- Meta -->
+
+<Meta title="Components/Molecules/AppStoreButton" component={AppStoreButton} />
+
+export const AppStoreButtonTemplate = args => {
+  return <AppStoreButton {...args} />;
+};
+
+<!-- Canvas -->
+
+<Story
+  args={{
+    lang: 'en-EN',
+    theme: 'default',
+    store: 'apple',
+  }}
+  name="AppStoreButton"
+>
+  {AppStoreButtonTemplate.bind({})}
+</Story>
+
+<!-- Docs -->
+
+<ComponentHeader
+  name="AppStoreButton"
+  version={version}
+  stage={1}
+  design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/Design-system?type=design&node-id=16183-216308&t=7R05xcivHCpVcg0r-0"
+/>
+
+App store badges for iOS and Android
+
+```tsx
+// TSX/JSX file
+// Core import is recomended
+import AppStoreButton from '@heycar-uikit/core/app-store-button';
+
+// or
+import AppStoreButton from '@heycar-uikit/app-store-button';
+```
+
+```css
+// CSS file
+// Core import is recomended
+@import '@heycar-uikit/core/app-store-button/esm/AppStoreButton.css';
+
+// or
+@import '@heycar-uikit/app-store-button/dist/esm/AppStoreButton.css';
+```
+
+<!-- Description -->
+
+<TabContainer
+  tabs={[
+    { label: 'Description', component: <Description /> },
+    { label: 'Props', component: <Props of={AppStoreButton} /> },
+    {
+      label: 'CSS tokens',
+      component: (
+        <CssVars
+          css={`
+            ${styles}
+          `}
+        />
+      ),
+    },
+    { label: 'Changelog', component: <Changelog /> },
+  ]}
+/>
