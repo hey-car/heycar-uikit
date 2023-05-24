@@ -1,3 +1,10 @@
+# [8.4.0](https://github.com/hey-car/heycar-uikit/compare/v8.3.0...v8.4.0) (2023-05-24)
+
+
+### Features
+
+* **breadcrumbs:** add new breadcrumbs component ([#210](https://github.com/hey-car/heycar-uikit/issues/210)) ([09017a2](https://github.com/hey-car/heycar-uikit/commit/09017a232afd5f3b0a7375b795c7ecc8b81e6e54))
+
 # [8.3.0](https://github.com/hey-car/heycar-uikit/compare/v8.2.2...v8.3.0) (2023-05-24)
 
 
