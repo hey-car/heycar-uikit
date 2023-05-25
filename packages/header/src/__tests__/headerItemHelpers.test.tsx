@@ -144,7 +144,7 @@ describe('headerItemHelpers', () => {
         hasHeaderItems(
           { label: 'search', hide: false, Component: <a /> },
           { label: 'favs', hide: undefined },
-          { currentLang: 'en-EN', hide: false },
+          { currentLang: 'en-GB', hide: false },
           { label: 'account' },
           { label: 'call', hide: false },
         );
@@ -161,7 +161,7 @@ describe('headerItemHelpers', () => {
         hasHeaderItems(
           { label: 'search', hide: true, Component: <a /> },
           undefined,
-          { currentLang: 'en-EN', hide: true },
+          { currentLang: 'en-GB', hide: true },
           undefined,
           undefined,
         );

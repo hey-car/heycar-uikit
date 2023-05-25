@@ -14,6 +14,11 @@
   color: #fff;
   transition: color 0.3s ease, background 0.3s ease;
 
+  & > span {
+    width: 100%;
+    white-space: nowrap;
+  }
+
   &.isActive,
   &.isCurrentPage,
   &:hover,
