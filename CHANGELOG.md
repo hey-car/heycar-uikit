@@ -1,3 +1,10 @@
+## [8.4.1](https://github.com/hey-car/heycar-uikit/compare/v8.4.0...v8.4.1) (2023-05-25)
+
+
+### Bug Fixes
+
+* **header:** accessibility fixes for header ([#211](https://github.com/hey-car/heycar-uikit/issues/211)) ([62b32d1](https://github.com/hey-car/heycar-uikit/commit/62b32d1d09219cd2fc77a43e9807e80363beb179))
+
 # [8.4.0](https://github.com/hey-car/heycar-uikit/compare/v8.3.0...v8.4.0) (2023-05-24)
 
 
