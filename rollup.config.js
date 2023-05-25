@@ -1,8 +1,11 @@
 import path from 'path';
 
+import image from '@rollup/plugin-image';
 import json from '@rollup/plugin-json';
+import { nodeResolve } from '@rollup/plugin-node-resolve';
 import copy from 'rollup-plugin-copy';
 import multiInput from 'rollup-plugin-multi-input';
+import postcss from 'rollup-plugin-postcss';
 import typescript from 'rollup-plugin-ts';
 import { ScriptTarget } from 'typescript';
 
@@ -14,6 +17,7 @@ import {
 } from './tools/rollup/coreComponentsResolver';
 import coreComponentsTypingsResolver from './tools/rollup/coreComponentsTypingsResolver';
 import createPackageJson from './tools/rollup/createPackageJson';
+import generateClassNameHash from './tools/rollup/generateClassNameHash';
 import ignoreCss from './tools/rollup/ignoreCss';
 import processCss from './tools/rollup/processCss';
 
@@ -71,6 +75,7 @@ const es5 = {
     },
   ],
   plugins: [
+    image(),
     multiInputPlugin,
     typescript({
       tsconfig: resolvedConfig => ({
@@ -100,6 +105,7 @@ const modern = {
     },
   ],
   plugins: [
+    image(),
     multiInputPlugin,
     typescript({
       outDir: modernDist,
@@ -129,6 +135,7 @@ const cssm = {
     },
   ],
   plugins: [
+    image(),
     multiInputPlugin,
     ignoreCss(),
     typescript({
@@ -149,17 +156,16 @@ const cssm = {
  */
 const esm = {
   ...baseConfig,
+  external: baseConfig.external,
   output: [
     {
       dir: esmDist,
-      format: 'esm',
-      plugins: [
-        addCssImports({ currentPackageDir }),
-        coreComponentsResolver({ importFrom: esmDist }),
-      ],
+      format: 'es',
     },
   ],
   plugins: [
+    image(),
+    nodeResolve(),
     multiInputPlugin,
     typescript({
       outDir: esmDist,
@@ -169,7 +175,25 @@ const esm = {
       }),
     }),
     json(),
-    ...bundleCss(pkg.name, rootPkg.version, currentComponentName, esmDist),
+    postcss({
+      plugins: [],
+      sourceMap: true,
+      extract: true,
+      minimize: true,
+      modules: {
+        generateScopedName: function (name, fileName) {
+          const relativeFileName = path.relative(currentPackageDir, fileName);
+          const hash = generateClassNameHash(
+            pkg.name,
+            rootPkg.version,
+            relativeFileName,
+          );
+
+          return `${currentComponentName}__${name}_${hash}`;
+        },
+      },
+      autoModules: false,
+    }),
     copyPlugin(esmDist),
   ],
 };

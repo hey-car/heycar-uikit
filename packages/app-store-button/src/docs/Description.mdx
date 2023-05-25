@@ -1,0 +1,90 @@
+import { Container, Row, Col } from 'storybook/blocks';
+
+## Usage
+
+App store badges for iOS and Android
+
+```tsx live
+render(
+  <Container>
+    <Row align="middle">
+      <Col>
+        <AppStoreButton
+          href="https://apps.apple.com/uk/app/heycar/id1490142063"
+          lang="en-EN"
+          store="apple"
+        />
+      </Col>
+      <Col>
+        <AppStoreButton
+          href="https://play.google.com/store/apps/details?id=com.mobility_trader_gmbh.heycar&pli=1"
+          lang="en-EN"
+          store="google"
+        />
+      </Col>
+    </Row>
+  </Container>,
+);
+```
+
+## Languages
+
+You can render a button for the App Store or Google Play in one of 4 languages.
+Pass one of the following ISO codes to the `lang` prop
+
+`'de-DE' | 'en-EN' | 'es-ES' | 'fr-FR'`
+
+```tsx live
+const Languages = ['de-DE', 'en-EN', 'es-ES', 'fr-FR'];
+
+render(
+  <Container>
+    {Languages.map(lang => (
+      <Row key={lang} align="middle">
+        <Col>
+          <AppStoreButton
+            href="https://apps.apple.com/uk/app/heycar/id1490142063"
+            lang={lang}
+            store="apple"
+          />
+        </Col>
+        <Col>
+          <AppStoreButton
+            href="https://play.google.com/store/apps/details?id=com.mobility_trader_gmbh.heycar&pli=1"
+            lang={lang}
+            store="google"
+          />
+        </Col>
+      </Row>
+    ))}
+  </Container>,
+);
+```
+
+## Theme
+
+The Apple App Store badge can be rendered in one of two themes. `default` and `alt`
+
+```tsx live
+render(
+  <Container align="stretch">
+    <Row align="middle">
+      <Col span={6}>
+        <AppStoreButton
+          href="https://apps.apple.com/uk/app/heycar/id1490142063"
+          lang="en-EN"
+          store="apple"
+        />
+      </Col>
+      <Col span={6}>
+        <AppStoreButton
+          href="https://apps.apple.com/uk/app/heycar/id1490142063"
+          lang="en-EN"
+          store="apple"
+          theme="alt"
+        />
+      </Col>
+    </Row>
+  </Container>,
+);
+```

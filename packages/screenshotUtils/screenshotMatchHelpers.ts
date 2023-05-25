@@ -1,7 +1,23 @@
-import { Locator, Page, PageScreenshotOptions } from 'playwright';
+import {
+  BrowserType,
+  ChromiumBrowser,
+  FirefoxBrowser,
+  Locator,
+  Page,
+  PageScreenshotOptions,
+  WebKitBrowser,
+} from 'playwright';
 import { delay } from 'q';
 
-import { closeBrowser, matchHtml, openBrowserPage } from '.';
+import { closeBrowser, matchHtml, openBrowserPage } from './helpers';
+
+interface BrowserOptions {
+  browserType?: BrowserType<ChromiumBrowser | FirefoxBrowser | WebKitBrowser>;
+  viewPort?: {
+    width: number;
+    height: number;
+  };
+}
 
 const mouseDown = async (page: Page, element: Locator) => {
   //want to try to emulate real user behaviour, rather than forcing the event
@@ -19,8 +35,13 @@ export const screenshotMatchClick = async (
   screenshotOpts?: PageScreenshotOptions,
   action: 'click' | 'down' = 'click',
   delayTime = 250,
+  browserOptions?: BrowserOptions,
 ) => {
-  const { browser, context, page } = await openBrowserPage(pageUrl);
+  const { browser, context, page } = await openBrowserPage(
+    pageUrl,
+    browserOptions?.browserType,
+    browserOptions?.viewPort,
+  );
 
   try {
     const elements = await page.locator(selector).all();
@@ -52,8 +73,13 @@ export const screenshotMatchHover = async (
   pageUrl: string,
   selector: string,
   screenshotOpts?: PageScreenshotOptions,
+  browserOptions?: BrowserOptions,
 ) => {
-  const { browser, context, page } = await openBrowserPage(pageUrl);
+  const { browser, context, page } = await openBrowserPage(
+    pageUrl,
+    browserOptions?.browserType,
+    browserOptions?.viewPort,
+  );
 
   try {
     //unlike screenshotMatchClick we will only hove on first element in selector to emulate the limitation of user behavior

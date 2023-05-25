@@ -3,6 +3,53 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.1.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/icons@6.0.0...@heycar-uikit/icons@6.1.0) (2023-05-17)
+
+
+### Features
+
+* **icon:** add new settings icon ([#205](https://github.com/hey-car/heycar-uikit/issues/205)) ([57ab54f](https://github.com/hey-car/heycar-uikit/commit/57ab54f58256e450f70cc5783110a824c1ac54c1))
+
+
+
+
+
+# [6.0.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/icons@5.0.0...@heycar-uikit/icons@6.0.0) (2023-04-27)
+
+
+### chore
+
+* fix rollup css ([#194](https://github.com/hey-car/heycar-uikit/issues/194)) ([7d1fc92](https://github.com/hey-car/heycar-uikit/commit/7d1fc92711ce1ee6004359e39ecb46b8b6c49204))
+
+
+### BREAKING CHANGES
+
+* styles now need to be imported separately
+
+* build(rollup): update to fix css exports
+
+* build(package.json): updates to all packages to trigger version bump
+
+
+
+
+
+# [5.0.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/icons@4.2.1...@heycar-uikit/icons@5.0.0) (2023-04-26)
+
+
+### Build System
+
+* **bump versions:** bumping versions ([#193](https://github.com/hey-car/heycar-uikit/issues/193)) ([08bdb77](https://github.com/hey-car/heycar-uikit/commit/08bdb771e58c3bbecfd370bf3df8d3e2c7b490f2))
+
+
+### BREAKING CHANGES
+
+* **bump versions:** styles now need to be imported separately
+
+
+
+
+
 ## [4.2.1](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/icons@4.2.0...@heycar-uikit/icons@4.2.1) (2023-04-06)
 
 **Note:** Version bump only for package @heycar-uikit/icons

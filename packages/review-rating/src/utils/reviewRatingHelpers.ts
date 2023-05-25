@@ -2,7 +2,7 @@ import {
   ARROW_DIFF_DEG,
   MAX_CIRCLE_POINT,
   MAX_SCORE,
-} from '../ReviewRating.constants';
+} from '../constants/ReviewRating.constants';
 
 const getParsedScore = (score: number) => {
   let parsedScore = !score || isNaN(score) ? 0 : Math.round(score);

@@ -1,3 +1,113 @@
+# [8.3.0](https://github.com/hey-car/heycar-uikit/compare/v8.2.2...v8.3.0) (2023-05-24)
+
+
+### Bug Fixes
+
+* **header:** fix issue with header being full page height on mobile ([#209](https://github.com/hey-car/heycar-uikit/issues/209)) ([0401c56](https://github.com/hey-car/heycar-uikit/commit/0401c56f91badc1a1f406ce7b4319ff173cce1b7))
+
+
+### Features
+
+* **app-store-button:** app store badges for iOS and Android ([#199](https://github.com/hey-car/heycar-uikit/issues/199)) ([d0771a8](https://github.com/hey-car/heycar-uikit/commit/d0771a8c6fcbc96043cc78ec91824e410755db74))
+
+## [8.2.2](https://github.com/hey-car/heycar-uikit/compare/v8.2.1...v8.2.2) (2023-05-23)
+
+
+### Bug Fixes
+
+* **header:** fix several typography issues ([#207](https://github.com/hey-car/heycar-uikit/issues/207)) ([0f8745d](https://github.com/hey-car/heycar-uikit/commit/0f8745df6b7b807edfdaf5aab0ce2b446f64ec72))
+
+## [8.2.1](https://github.com/hey-car/heycar-uikit/compare/v8.2.0...v8.2.1) (2023-05-22)
+
+
+### Bug Fixes
+
+* **header:** add background color for nav and sticky header ([#206](https://github.com/hey-car/heycar-uikit/issues/206)) ([5683189](https://github.com/hey-car/heycar-uikit/commit/56831896bdf14fca11a79940ad084ef8aa40ed8e))
+
+# [8.2.0](https://github.com/hey-car/heycar-uikit/compare/v8.1.2...v8.2.0) (2023-05-17)
+
+
+### Features
+
+* **icon:** add new settings icon ([#205](https://github.com/hey-car/heycar-uikit/issues/205)) ([57ab54f](https://github.com/hey-car/heycar-uikit/commit/57ab54f58256e450f70cc5783110a824c1ac54c1))
+
+## [8.1.2](https://github.com/hey-car/heycar-uikit/compare/v8.1.1...v8.1.2) (2023-05-11)
+
+
+### Bug Fixes
+
+* **header:** change header import usage ([#204](https://github.com/hey-car/heycar-uikit/issues/204)) ([94bb3d1](https://github.com/hey-car/heycar-uikit/commit/94bb3d15ad5740ff5d199c3ece6099d020e27c81))
+
+## [8.1.1](https://github.com/hey-car/heycar-uikit/compare/v8.1.0...v8.1.1) (2023-05-09)
+
+
+### Bug Fixes
+
+* **header:** fix css bundle issue for header and review rating components ([#203](https://github.com/hey-car/heycar-uikit/issues/203)) ([7d04b6d](https://github.com/hey-car/heycar-uikit/commit/7d04b6dbceaa2c186dfde44de5a404ddfea5873d))
+
+# [8.1.0](https://github.com/hey-car/heycar-uikit/compare/v8.0.2...v8.1.0) (2023-05-04)
+
+
+### Features
+
+* **header:** add Header component ([#201](https://github.com/hey-car/heycar-uikit/issues/201)) ([7991a6d](https://github.com/hey-car/heycar-uikit/commit/7991a6df262188e9938acc81ad342bdf044d3e88))
+
+## [8.0.2](https://github.com/hey-car/heycar-uikit/compare/v8.0.1...v8.0.2) (2023-05-02)
+
+
+### Bug Fixes
+
+* **review-rating:** fix CSS issue ([#198](https://github.com/hey-car/heycar-uikit/issues/198)) ([faff2ec](https://github.com/hey-car/heycar-uikit/commit/faff2ec9e73755ed235f2252a83763e84199ad35))
+
+## [8.0.1](https://github.com/hey-car/heycar-uikit/compare/v8.0.0...v8.0.1) (2023-04-28)
+
+
+### Bug Fixes
+
+* **review-rating:** gracefully handle no IntersectionObserver ([#196](https://github.com/hey-car/heycar-uikit/issues/196)) ([ea5d596](https://github.com/hey-car/heycar-uikit/commit/ea5d5969945b47dd6ab96ab1800de66761868c97))
+
+# [8.0.0](https://github.com/hey-car/heycar-uikit/compare/v7.0.0...v8.0.0) (2023-04-27)
+
+
+### chore
+
+* fix rollup css ([#194](https://github.com/hey-car/heycar-uikit/issues/194)) ([7d1fc92](https://github.com/hey-car/heycar-uikit/commit/7d1fc92711ce1ee6004359e39ecb46b8b6c49204))
+
+
+### BREAKING CHANGES
+
+* styles now need to be imported separately
+
+* build(rollup): update to fix css exports
+
+* build(package.json): updates to all packages to trigger version bump
+
+# [7.0.0](https://github.com/hey-car/heycar-uikit/compare/v6.0.0...v7.0.0) (2023-04-26)
+
+
+### Build System
+
+* **bump versions:** bumping versions ([#193](https://github.com/hey-car/heycar-uikit/issues/193)) ([08bdb77](https://github.com/hey-car/heycar-uikit/commit/08bdb771e58c3bbecfd370bf3df8d3e2c7b490f2))
+
+
+### BREAKING CHANGES
+
+* **bump versions:** styles now need to be imported separately
+
+# [6.0.0](https://github.com/hey-car/heycar-uikit/compare/v5.9.0...v6.0.0) (2023-04-25)
+
+
+### chore
+
+* minor bump ([#192](https://github.com/hey-car/heycar-uikit/issues/192)) ([0e45aa4](https://github.com/hey-car/heycar-uikit/commit/0e45aa42b576fb2a27c21ca7fed227d6a9f89a3e))
+
+
+### BREAKING CHANGES
+
+* css will no longer be included automagically
+
+* chore: rollup formatting
+
 # [5.9.0](https://github.com/hey-car/heycar-uikit/compare/v5.8.0...v5.9.0) (2023-04-18)
 
 
