@@ -88,7 +88,13 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
     };
 
     return (
-      <header className={styles.header} data-test-id={dataTestId} ref={ref}>
+      <header
+        className={`${styles.header} ${
+          isNavTrayOpen ? styles.isBurgerOpen : ''
+        }`}
+        data-test-id={dataTestId}
+        ref={ref}
+      >
         <Grid.Container className={styles.headerInner}>
           <Grid.Row gutter={{ mobile: 8, tablet: 12, desktop: 24 }}>
             <Grid.Col className={styles.colLeft}>
