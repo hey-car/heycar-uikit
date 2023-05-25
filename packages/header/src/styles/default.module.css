@@ -11,6 +11,10 @@
   overflow-x: hidden;
   width: 100%;
 
+  @media (--tablet-l) {
+    overflow-x: visible;
+  }
+
   @media (--desktop) {
     background: var(--color-primary-700);
   }
