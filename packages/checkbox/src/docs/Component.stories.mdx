@@ -1,0 +1,78 @@
+import { Meta, Story, Props } from '@storybook/addon-docs';
+import { ComponentHeader, CssVars, TabContainer } from 'storybook/blocks';
+
+import Checkbox from '../Checkbox';
+import { version } from '../../package.json';
+import Description from './Description.mdx';
+import Changelog from '../../CHANGELOG.md';
+
+<!-- Meta -->
+
+<Meta title="Components/Molecules/Checkbox" component={Checkbox} />
+
+export const CheckboxTemplate = args => <Checkbox {...args} />;
+
+export const handleCheckboxChange = () => {
+  console.log('Checkbox value changed:');
+};
+
+<!-- Canvas -->
+
+<Story
+  name="Checkbox"
+  args={{
+    label: 'Test',
+    checked: 'true',
+    onChange: handleCheckboxChange,
+  }}
+  argTypes={{
+    dataTestId: {
+      table: {
+        disable: true,
+      },
+    },
+  }}
+>
+  {CheckboxTemplate.bind({})}
+</Story>
+
+<!-- Docs -->
+
+<ComponentHeader
+  name="CheckboxTemplate"
+  version={version}
+  stage={3}
+  design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Global-Design-System?node-id=4289%3A100591"
+/>
+
+```tsx
+// TSX/JSX file
+// Core import is recomended
+import CheckboxTemplate from '@heycar-uikit/core/checkbox';
+
+// or
+import CheckboxTemplate from '@heycar-uikit/checkbox';
+
+function App() {
+  return <Checkbox />;
+}
+```
+
+```css
+// CSS file
+// Core import is recomended
+@import '@heycar-uikit/core/checkbox/esm/Checkbox.css';
+
+// or
+@import '@heycar-uikit/checkbox/dist/esm/Checkbox.css';
+```
+
+<!-- Description -->
+
+<TabContainer
+  tabs={[
+    { label: 'Description', component: <Description /> },
+    { label: 'Props', component: <Props of={Checkbox} /> },
+    { label: 'Changelog', component: <Changelog /> },
+  ]}
+/>

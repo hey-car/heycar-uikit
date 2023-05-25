@@ -1,0 +1,25 @@
+import { Container, Row, Col } from 'storybook/blocks';
+import Checkbox from '../Checkbox';
+
+## Usage
+
+Used for selecting multiple values from several options.
+
+```tsx live
+const handleCheckboxChange = () => {
+  console.log('Checkbox value changed:');
+};
+render(
+  <Container>
+    <Row align="middle">
+      <Col>
+        <Checkbox
+          label="My Checkbox"
+          checked="true"
+          onChange={handleCheckboxChange}
+        />
+      </Col>
+    </Row>
+  </Container>,
+);
+```
