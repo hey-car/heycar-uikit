@@ -144,6 +144,11 @@ interface HeaderProps {
    */
   trackingFn?: (trackingObj: HeaderTrackingObj) => void;
   /**
+   * The current route of the parent app, minus the domain etc.
+   * This is used to calculate if any nav item matches the current page
+   */
+  currentRoute?: string;
+  /**
    * `locale` - Object with localized strings
    */
   locale?: Locale;

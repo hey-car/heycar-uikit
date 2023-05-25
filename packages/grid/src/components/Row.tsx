@@ -24,6 +24,7 @@ function Row<E extends React.ElementType = 'div'>({
   justify = 'between',
   children,
   dataTestId,
+  ...props
 }: RowProps<E>) {
   const Component = component ?? 'div';
 
@@ -42,7 +43,7 @@ function Row<E extends React.ElementType = 'div'>({
   );
 
   return (
-    <Component className={classNames} data-test-id={dataTestId}>
+    <Component className={classNames} data-test-id={dataTestId} {...props}>
       {children}
     </Component>
   );
