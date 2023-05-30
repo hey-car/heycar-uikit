@@ -120,31 +120,6 @@ describe('SegmentedButtons', () => {
     });
   });
 
-  /**
-   * Interaction tests
-   */
-  // describe('Interaction tests', () => {
-  //   it('calls on change with correct value', () => {
-  //     const newOnChange = jest.fn();
-  //     const { getByRole } = render(
-  //       <SegmentedButtons
-  //         buttons={BTN_DATA}
-  //         dataTestId={dataTestId}
-  //         onChange={newOnChange}
-  //       />,
-  //     );
-
-  //     userEvent.click(getByRole('radio', { name: 'Left' }));
-  //     expect(newOnChange).toHaveBeenLastCalledWith(BTN_DATA[0].value);
-
-  //     // userEvent.click(getByRole('radio', { name: 'Middle' }));
-  //     // expect(newOnChange).toHaveBeenLastCalledWith(BTN_DATA[1].value);
-
-  //     // userEvent.click(getByRole('radio', { name: 'Right' }));
-  //     // expect(newOnChange).toHaveBeenLastCalledWith(BTN_DATA[2].value);
-  //   });
-  // });
-
   it('doesnt call on change when disabled', () => {
     const newOnChange = jest.fn();
     const btnsDisabled = modifyBtns(true, undefined);
