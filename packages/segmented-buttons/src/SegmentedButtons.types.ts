@@ -12,7 +12,7 @@ interface ButtonProps {
   /**
    * Icon to be displayed on the button, before the label
    */
-  icon?: JSX.Element;
+  icon?: React.ReactNode;
   /**
    * Disable the button
    */
@@ -23,11 +23,15 @@ interface ButtonProps {
   dataTestId?: string;
 }
 
+type Buttons =
+  | [ButtonProps, ButtonProps]
+  | [ButtonProps, ButtonProps, ButtonProps];
+
 interface ComponentProps {
   /**
    * An array of 2 or 3 buttons to display
    */
-  buttons: [ButtonProps, ButtonProps] | [ButtonProps, ButtonProps, ButtonProps];
+  buttons: Buttons;
   /**
    * The id for testing
    */
@@ -40,8 +44,12 @@ interface ComponentProps {
    * Current selected value
    */
   currentValue?: string;
+  /**
+   * render buttons with wide left anf right padding
+   */
+  wideView?: boolean;
 }
 
 type SegmentedButtonsProps = ComponentProps & HTMLAttributes<HTMLDivElement>;
 
-export { ButtonProps, ComponentProps, SegmentedButtonsProps };
+export { ButtonProps, Buttons, ComponentProps, SegmentedButtonsProps };

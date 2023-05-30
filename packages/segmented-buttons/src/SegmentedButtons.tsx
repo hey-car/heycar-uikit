@@ -10,12 +10,22 @@ const SegmentedButtons = React.forwardRef<
   SegmentedButtonsProps
 >(
   (
-    { className, currentValue, buttons, dataTestId, onChange, ...restProps },
+    {
+      className,
+      currentValue,
+      buttons,
+      dataTestId,
+      onChange,
+      wideView,
+      ...restProps
+    },
     ref,
   ) => {
     return (
       <div
-        className={`${styles.wrapper} ${className}`}
+        className={`${styles.wrapper} ${
+          wideView ? styles.isWideView : ''
+        } ${className}`}
         data-test-id={dataTestId}
         ref={ref}
         role="radiogroup"

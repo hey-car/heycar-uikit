@@ -1,7 +1,7 @@
 {
-  "name": "@heycar-uikit/review-rating",
-  "version": "1.1.0",
-  "description": "HeyCar-UIKit Review Rating",
+  "name": "@heycar-uikit/segmented-buttons",
+  "version": "1.0.0",
+  "description": "HeyCar-UIKit Segmented Buttons",
   "main": "dist/index.js",
   "module": "./dist/esm/index.js",
   "scripts": {
@@ -16,15 +16,14 @@
     "typescript",
     "ui-components",
     "design-systems",
-    "reviews",
-    "rating",
-    "review-rating"
+    "button",
+    "segmented-buttons"
   ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hey-car/heycar-uikit.git"
   },
-  "homepage": "https://github.com/hey-car/heycar-uikit/tree/main/packages/review-rating#readme",
+  "homepage": "https://github.com/hey-car/heycar-uikit/tree/main/packages/segmented-buttons#readme",
   "publishConfig": {
     "access": "public"
   },
@@ -32,7 +31,7 @@
     "react": "^17.0.1"
   },
   "dependencies": {
-    "uuid": "^9.0.0"
+    "@heycar-uikit/icons": "^6.1.0"
   },
   "author": "HeyCar Team",
   "license": "UNLICENSED"

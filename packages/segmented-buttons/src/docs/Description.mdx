@@ -1,32 +1,38 @@
 import { Container, Row, Col } from 'storybook/blocks';
+
 import SegmentedButtons from '../SegmentedButtons';
 
 ## Usage
 
-For the most basic implementation, simply pass an integer from 0 to 10 in the `score` prop.
+For the most basic implementation pass an array of 2 or 3 buttons, and `onChange` function and a `currentValue`
 
 ```tsx live
+const btns = [
+  {
+    label: 'Left',
+    value: 'lft',
+  },
+  {
+    label: 'Middle',
+    value: 'mid',
+  },
+  {
+    label: 'Right',
+    value: 'rht',
+  },
+];
+
 render(
   <Container>
     <Row align="middle">
-      <Col></Col>
+      <Col>
+        <SegmentedButtons
+          buttons={btns}
+          onChange={() => {}}
+          currentValue="lft"
+        />
+      </Col>
     </Row>
   </Container>,
 );
 ```
-
-## Sizes
-
-ReviewRating can be rendered at one of four sizes `XS | S | M | L`.
-
-Use the `M` size on the **car review tile** for desktop and `S` on mobile.
-For the **car review hero** use the `L` size on desktop and `S` on mobile.
-
-The default size is `S`.
-
-## IDs
-
-ReviewRating uses IntersectionObserver to toggle the animation as it goes in and out of the viewport.
-To help this work performantly, each component is given a unique id; a UUID V4 string prefixed with the string `rr-`.
-
-However, you can pass your own id though the standard HTML id attribute. Inspect the components below to see this working

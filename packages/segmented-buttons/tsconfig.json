@@ -9,5 +9,5 @@
       "@heycar-uikit/*": ["../*/src"]
     }
   },
-  "references": []
+  "references": [{ "path": "../icons" }]
 }

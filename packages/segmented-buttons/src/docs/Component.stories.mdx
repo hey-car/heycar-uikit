@@ -1,6 +1,6 @@
 import { Meta, Story, Props } from '@storybook/addon-docs';
 import { ComponentHeader, TabContainer } from 'storybook/blocks';
-import { Call } from '@heycar-uikit/icons';
+import { Gallery } from '@heycar-uikit/icons';
 
 import Description from './Description.mdx';
 import Changelog from '../../CHANGELOG.md';
@@ -23,14 +23,43 @@ import styles from '!!raw-loader!../styles/default.module.css';
       options: ['lft', 'mid', 'rht'],
       control: 'radio',
     },
+    disabled: {
+      control: 'boolean',
+    },
+    wideView: {
+      control: 'boolean',
+    },
+    icon: {
+      control: 'select',
+      options: ['Icon', 'No Icon'],
+      mapping: {
+        Icon: <Gallery />,
+        ['No Icon']: undefined,
+      },
+    },
   }}
 />
 
 export const SegmentedButtonsTemplate = ({ ...props }) => {
   const btns = [
-    { label: 'Left', value: 'lft' },
-    { label: 'Middle', value: 'mid' },
-    { label: 'Right', value: 'rht' },
+    {
+      label: 'Left',
+      value: 'lft',
+      isDisabled: props.disabled,
+      icon: props.icon,
+    },
+    {
+      label: 'Middle',
+      value: 'mid',
+      isDisabled: props.disabled,
+      icon: props.icon,
+    },
+    {
+      label: 'Right',
+      value: 'rht',
+      isDisabled: props.disabled,
+      icon: props.icon,
+    },
   ];
   return <SegmentedButtons buttons={btns} {...props} />;
 };
@@ -42,6 +71,9 @@ export const SegmentedButtonsTemplate = ({ ...props }) => {
     onChange: value => {
       console.log('Value: ', value);
     },
+    disabled: false,
+    wideView: false,
+    icon: 'No Icon',
   }}
   name="SegmentedButtons"
 >
