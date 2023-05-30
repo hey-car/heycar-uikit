@@ -38,6 +38,7 @@ const SegmentedButtons = React.forwardRef<
             <button
               aria-checked={isActive}
               aria-label={btn.label}
+              data-test-id={btn.dataTestId}
               disabled={btn.isDisabled}
               key={btn.label}
               onClick={() => {

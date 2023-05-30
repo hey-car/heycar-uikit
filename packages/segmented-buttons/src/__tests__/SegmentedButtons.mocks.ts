@@ -27,12 +27,14 @@ const TWO_BTNS: Buttons = [
     value: 'lft',
     isDisabled: false,
     icon: undefined,
+    dataTestId: 'btn-1',
   },
   {
     label: 'Right',
     value: 'rht',
     isDisabled: false,
     icon: undefined,
+    dataTestId: 'btn-2',
   },
 ];
 

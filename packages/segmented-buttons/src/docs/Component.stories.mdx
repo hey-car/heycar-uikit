@@ -86,13 +86,19 @@ export const SegmentedButtonsTemplate = ({ ...props }) => {
   name="SegmentedButtons"
   version={version}
   stage={1}
-  design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/Design-system?node-id=11667-213068&t=cdniDk8YJcZcnIwr-0"
+  design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/Design-system?type=design&node-id=2073-48212&t=5DXQ5Fj9xmmbEVBw-0"
 />
 
-Review ratings are a 0 to 10 rating with a dial, used in connection with reviews.
+Segmented buttons help people select options, switch views, or sort elements
 
 ```tsx
-import SegmentedButtons from '@heycar-uikit/segmented-buttons';
+// TSX/JSX file
+import SegmentedButtons from '@heycar-uikit/core/segmented-buttons';
+```
+
+```css
+// CSS file
+@import '@heycar-uikit/core/segmented-buttons/esm/SegmentedButtons.css';
 ```
 
 <!-- Description -->
@@ -104,3 +110,4 @@ import SegmentedButtons from '@heycar-uikit/segmented-buttons';
     { label: 'Changelog', component: <Changelog /> },
   ]}
 />
+```

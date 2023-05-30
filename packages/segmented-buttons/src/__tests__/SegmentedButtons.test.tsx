@@ -7,7 +7,7 @@ import { Gallery } from '@heycar-uikit/icons';
 
 import SegmentedButtons from '../SegmentedButtons';
 
-import { BTN_DATA, modifyBtns } from './SegmentedButtons.mocks';
+import { BTN_DATA, modifyBtns, TWO_BTNS } from './SegmentedButtons.mocks';
 
 const dataTestId = 'test-id';
 
@@ -28,6 +28,19 @@ describe('SegmentedButtons', () => {
       );
 
       expect(getByTestId(dataTestId).tagName).toBe('DIV');
+    });
+
+    it('should set `data-test-id` attribute on buttons', () => {
+      const { getByTestId } = render(
+        <SegmentedButtons
+          buttons={TWO_BTNS}
+          dataTestId={dataTestId}
+          onChange={onChange}
+        />,
+      );
+
+      expect(getByTestId('btn-1').tagName).toBe('BUTTON');
+      expect(getByTestId('btn-2').tagName).toBe('BUTTON');
     });
 
     it('should set className', () => {

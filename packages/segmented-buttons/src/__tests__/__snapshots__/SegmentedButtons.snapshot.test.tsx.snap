@@ -13,6 +13,7 @@ Object {
         <button
           aria-checked="false"
           aria-label="Left"
+          data-test-id="btn-1"
           role="radio"
         >
           Left
@@ -20,6 +21,7 @@ Object {
         <button
           aria-checked="false"
           aria-label="Right"
+          data-test-id="btn-2"
           role="radio"
         >
           Right
@@ -36,6 +38,7 @@ Object {
       <button
         aria-checked="false"
         aria-label="Left"
+        data-test-id="btn-1"
         role="radio"
       >
         Left
@@ -43,6 +46,7 @@ Object {
       <button
         aria-checked="false"
         aria-label="Right"
+        data-test-id="btn-2"
         role="radio"
       >
         Right

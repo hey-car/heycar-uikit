@@ -5,7 +5,7 @@
 [![Demo build](https://github.com/hey-car/heycar-uikit/actions/workflows/main.yml/badge.svg)](https://github.com/hey-car/heycar-uikit/actions/workflows/main.yml)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
-Review ratings are a 0 to 10 rating with a dial, used in connection with reviews.
+Segmented buttons help people select options, switch views, or sort elements
 
 ## Installation
 
@@ -18,11 +18,13 @@ npm install @heycar-uikit/segmented-buttons
 ## Usage
 
 ```tsx
-import SegmentedButtons from '@heycar-uikit/segmented-buttons';
+// TSX/JSX file
+import SegmentedButtons from '@heycar-uikit/core/segmented-buttons';
+```
 
-function App() {
-  return <SegmentedButtons />;
-}
+```css
+// CSS file
+@import '@heycar-uikit/core/segmented-buttons/esm/SegmentedButtons.css';
 ```
 
 ## Documentation and sandbox
