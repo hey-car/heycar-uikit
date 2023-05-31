@@ -72,8 +72,16 @@ const NavigationDropdown = React.forwardRef<HTMLDivElement, NavigationProps>(
                       aria-haspopup={true}
                       aria-label={`${label} - ${locale.spaceBarNotification}`}
                       onClick={() =>
-                        itemOnClick(`${label}`, trackingFn, () =>
-                          toggleSubNav(id, isActive),
+                        itemOnClick(
+                          {
+                            fn: trackingFn,
+                            obj: {
+                              label: `${label}`,
+                              type: 'nav_item',
+                              navType: 'dropdown',
+                            },
+                          },
+                          () => toggleSubNav(id, isActive),
                         )
                       }
                       onFocus={() => closeSiblings(id, hasSubNav)}
@@ -104,7 +112,20 @@ const NavigationDropdown = React.forwardRef<HTMLDivElement, NavigationProps>(
                   <Link
                     {...commonProps}
                     href={navItem.href}
-                    onClick={() => itemOnClick(`${label}`, trackingFn)}
+                    onClick={() =>
+                      itemOnClick(
+                        {
+                          fn: trackingFn,
+                          obj: {
+                            label: `${label}`,
+                            type: 'nav_item',
+                            href: navItem.href,
+                            navType: 'dropdown',
+                          },
+                        },
+                        navItem.onClick,
+                      )
+                    }
                   >
                     <Typography variant="button2">{label}</Typography>
                   </Link>

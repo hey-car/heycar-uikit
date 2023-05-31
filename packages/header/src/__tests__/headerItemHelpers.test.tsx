@@ -24,26 +24,20 @@ describe('headerItemHelpers', () => {
   const onClickCB = jest.fn();
 
   describe('itemOnClick', () => {
-    it('calls nothing if only given a label', () => {
-      itemOnClick(label);
-
-      expect(trackingFn).not.toHaveBeenCalled();
-      expect(onClickCB).not.toHaveBeenCalled();
-    });
-
-    it('calls tracking function with label details, if tracking function is passed', () => {
-      itemOnClick(label, trackingFn);
+    it('calls tracking function with object values if passed', () => {
+      itemOnClick({ fn: trackingFn, obj: { label, href: 'heycar.com' } });
 
       expect(trackingFn).toHaveBeenCalledTimes(1);
       expect(trackingFn).toHaveBeenLastCalledWith({
         ...headerClickTracking,
         label,
+        href: 'heycar.com',
       });
       expect(onClickCB).not.toHaveBeenCalled();
     });
 
-    it('only calls onClick if given a label and onClick, but no tracking function', () => {
-      itemOnClick(label, undefined, onClickCB);
+    it('only calls onClick if given an onClick, but no tracking object', () => {
+      itemOnClick(undefined, onClickCB);
 
       // call from previous 'it'
       expect(trackingFn).toHaveBeenCalledTimes(1);
@@ -51,15 +45,19 @@ describe('headerItemHelpers', () => {
       expect(onClickCB).toHaveBeenCalledTimes(1);
     });
 
-    it('calls tracking function with label details and onClick, if given a label, tracking function and onClick function', () => {
+    it('calls tracking function with details and onClick, if given a label, tracking function and onClick function', () => {
       const newLabel = 'Test 2';
 
-      itemOnClick(newLabel, trackingFn, onClickCB);
+      itemOnClick(
+        { fn: trackingFn, obj: { label: newLabel, href: 'hey.car' } },
+        onClickCB,
+      );
 
       expect(trackingFn).toHaveBeenCalledTimes(2);
       expect(trackingFn).toHaveBeenLastCalledWith({
         ...headerClickTracking,
         label: newLabel,
+        href: 'hey.car',
       });
 
       expect(onClickCB).toHaveBeenCalledTimes(2);

@@ -8,9 +8,13 @@ type Locale = typeof DEFAULT_LOCALE;
 // HEADER ITEM RELATED TYPES
 
 interface HeaderTrackingObj {
-  action: 'Click';
-  category: 'Header';
+  action: 'click' | 'open' | 'close';
+  category: 'header_navigation';
+  type: 'header_item' | 'nav_item' | 'subnav_item';
   label: string;
+  parentLabel?: string;
+  href?: string;
+  navType?: 'dropdown' | 'burger_menu';
 }
 
 interface HeaderLinkProps {

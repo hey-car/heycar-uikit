@@ -79,7 +79,18 @@ const SubNav = React.forwardRef<HTMLDivElement, SubNavProps>(
                         }`}
                         href={subNavItem.href}
                         onClick={() =>
-                          itemOnClick(`${subNavItem.label}`, trackingFn)
+                          itemOnClick({
+                            fn: trackingFn,
+                            obj: {
+                              label: `${subNavItem.label}`,
+                              parentLabel: navItemName,
+                              type: 'subnav_item',
+                              href: subNavItem.href,
+                              navType: isDropDownMenu
+                                ? 'dropdown'
+                                : 'burger_menu',
+                            },
+                          })
                         }
                         role="menuitem"
                         tabIndex={isOpen ? undefined : -1}
@@ -99,6 +110,18 @@ const SubNav = React.forwardRef<HTMLDivElement, SubNavProps>(
                 <Link
                   className={styles.showAll}
                   href={showAllLink.href}
+                  onClick={() =>
+                    itemOnClick({
+                      fn: trackingFn,
+                      obj: {
+                        label: `${subNavGroup.heading} show all link`,
+                        parentLabel: navItemName,
+                        type: 'subnav_item',
+                        href: showAllLink.href,
+                        navType: isDropDownMenu ? 'dropdown' : 'burger_menu',
+                      },
+                    })
+                  }
                   role="menuitem"
                   tabIndex={isOpen ? undefined : -1}
                 >
