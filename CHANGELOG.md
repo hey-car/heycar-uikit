@@ -1,3 +1,10 @@
+# [8.5.0](https://github.com/hey-car/heycar-uikit/compare/v8.4.1...v8.5.0) (2023-06-01)
+
+
+### Features
+
+* **header:** enhanced information sent to tracking function ([#214](https://github.com/hey-car/heycar-uikit/issues/214)) ([eeae6be](https://github.com/hey-car/heycar-uikit/commit/eeae6be3d7fa0efb1ac44a9d53b9ea2aaa8a3125))
+
 ## [8.4.1](https://github.com/hey-car/heycar-uikit/compare/v8.4.0...v8.4.1) (2023-05-25)
 
 
