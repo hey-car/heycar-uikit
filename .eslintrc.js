@@ -5,6 +5,7 @@ module.exports = {
     'prettier',
     'airbnb/hooks',
     'plugin:@typescript-eslint/recommended',
+    'plugin:mdx/recommended',
   ],
   parserOptions: {
     project: ['./tsconfig.json', './tsconfig.storybook.json'],
@@ -42,6 +43,7 @@ module.exports = {
     react: {
       version: 'detect',
     },
+    'mdx/code-blocks': true,
   },
   rules: {
     '@typescript-eslint/naming-convention': [
