@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.2.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/header@4.1.6...@heycar-uikit/header@4.2.0) (2023-06-01)
+
+
+### Features
+
+* **header:** enhanced information sent to tracking function ([#214](https://github.com/hey-car/heycar-uikit/issues/214)) ([eeae6be](https://github.com/hey-car/heycar-uikit/commit/eeae6be3d7fa0efb1ac44a9d53b9ea2aaa8a3125))
+
+
+
+
+
 ## [4.1.6](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/header@4.1.5...@heycar-uikit/header@4.1.6) (2023-05-25)
 
 
