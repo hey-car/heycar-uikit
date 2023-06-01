@@ -84,8 +84,16 @@ const NavigationBurgerMenu = React.forwardRef<HTMLDivElement, NavigationProps>(
                       aria-haspopup={true}
                       aria-label={`${label} - ${locale.spaceBarNotification}`}
                       onClick={() =>
-                        itemOnClick(`${label}`, trackingFn, () =>
-                          toggleSubNav(id, isActive),
+                        itemOnClick(
+                          {
+                            fn: trackingFn,
+                            obj: {
+                              label: `${label}`,
+                              type: 'nav_item',
+                              navType: 'burger_menu',
+                            },
+                          },
+                          () => toggleSubNav(id, isActive),
                         )
                       }
                       onKeyDown={e => keyboardOpen(e, id, isActive)}
@@ -117,7 +125,18 @@ const NavigationBurgerMenu = React.forwardRef<HTMLDivElement, NavigationProps>(
                     {...commonProps}
                     href={navItem.href}
                     onClick={() =>
-                      itemOnClick(`${label}`, trackingFn, navItem.onClick)
+                      itemOnClick(
+                        {
+                          fn: trackingFn,
+                          obj: {
+                            label: `${label}`,
+                            type: 'nav_item',
+                            href: navItem.href,
+                            navType: 'burger_menu',
+                          },
+                        },
+                        navItem.onClick,
+                      )
                     }
                   >
                     <Typography variant="subheading3">{label}</Typography>
@@ -137,7 +156,22 @@ const NavigationBurgerMenu = React.forwardRef<HTMLDivElement, NavigationProps>(
                 <Typography Component="span" variant="caption2">
                   {aux.tel.label || locale.auxTelLabel}
                 </Typography>
-                <a href={`tel:${aux.tel.value}`}>{aux.tel.value}</a>
+                <a
+                  href={`tel:${aux.tel.value}`}
+                  onClick={() =>
+                    itemOnClick({
+                      fn: trackingFn,
+                      obj: {
+                        label: 'aux telephone',
+                        type: 'nav_item',
+                        href: `tel:${aux.tel?.value}`,
+                        navType: 'burger_menu',
+                      },
+                    })
+                  }
+                >
+                  {aux.tel.value}
+                </a>
               </p>
             )}
             {aux?.email && (
@@ -145,7 +179,22 @@ const NavigationBurgerMenu = React.forwardRef<HTMLDivElement, NavigationProps>(
                 <Typography Component="span" variant="caption2">
                   {aux.email.label || locale.auxEmailLabel}
                 </Typography>
-                <a href={`mailto:${aux.email.value}`}>{aux.email.value}</a>
+                <a
+                  href={`mailto:${aux.email.value}`}
+                  onClick={() =>
+                    itemOnClick({
+                      fn: trackingFn,
+                      obj: {
+                        label: 'aux email',
+                        type: 'nav_item',
+                        href: `tel:${aux.email?.value}`,
+                        navType: 'burger_menu',
+                      },
+                    })
+                  }
+                >
+                  {aux.email.value}
+                </a>
               </p>
             )}
           </aside>

@@ -16,12 +16,14 @@ import {
 import { HeaderProps, HeaderTrackingObj } from '../Header.types';
 
 const itemOnClick = (
-  label: string,
-  trackFn?: (trackingObj: HeaderTrackingObj) => void,
+  track?: {
+    fn: ((trackingObj: HeaderTrackingObj) => void) | undefined;
+    obj: Partial<HeaderTrackingObj>;
+  },
   onClick?: () => void,
 ) => {
-  if (typeof trackFn === 'function')
-    trackFn({ ...headerClickTracking, label } as HeaderTrackingObj);
+  if (track && typeof track?.fn === 'function')
+    track.fn({ ...headerClickTracking, ...track.obj } as HeaderTrackingObj);
   if (typeof onClick === 'function') onClick();
 };
 

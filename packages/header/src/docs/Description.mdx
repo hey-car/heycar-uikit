@@ -393,13 +393,28 @@ the function will be called with the following object:
 
 ```
 {
-  action: 'Click';
-  category: 'Header';
+  action: 'click' | 'open' | 'close';
+  category: 'header_navigation';
+  type: 'header_item' | 'nav_item' | 'subnav_item';
   label: string;
+  parentLabel?: string;
+  href?: string;
+  navType?: 'dropdown' | 'burger_menu';
 }
 ```
 
-`label` will often be the value passed in the label prop when setting up the link/button, or a value from the locale object.
+**action**
+Will be `'open' | 'close'` for the burger menu and mobile search toggle buttons. `'click'` for everything else.
+
+**label**
+Will often be the value passed in the label prop when setting up the link/button, or a value from the locale object.
+
+**parentLabel**
+The label of the parent nav item. Only sent for sub nav items.
+
+**navType**
+The nav type that was being displayed at the time of the action. Although this data is often used as a synonym for "Mobile" or "Desktop", that is not accurate. The nav type is purely bassed on viewport width.
+Note: this prop is not sent for `header_item` types.
 
 ```tsx
 const nav = [
@@ -410,7 +425,7 @@ const nav = [
 ];
 
 const track = props => {
-  //myTrackFn(props.label, props.action);
+  //myTrackFn(props);
 };
 
 render(

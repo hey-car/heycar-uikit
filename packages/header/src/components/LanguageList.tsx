@@ -43,8 +43,13 @@ const LanguageList = React.forwardRef<HTMLDivElement, LanguageListProps>(
                   onBlur={() => onFocusEvents(false)}
                   onClick={() =>
                     itemOnClick(
-                      `${langItem.label} language select`,
-                      trackingFn,
+                      {
+                        fn: trackingFn,
+                        obj: {
+                          label: `${langItem.label} language select`,
+                          href: langItem.href,
+                        },
+                      },
                       langItem.onClick,
                     )
                   }

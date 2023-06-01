@@ -15,9 +15,10 @@ const DEFAULT_LOCALE = {
 };
 
 const headerClickTracking = {
-  action: 'Click',
-  category: 'Header',
-  label: undefined,
+  action: 'click',
+  category: 'header_navigation',
+  type: 'header_item',
+  label: '',
 };
 
 const LANG_OPTIONS: LangOption[] = [
