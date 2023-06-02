@@ -1,0 +1,33 @@
+import { Container, Row, Col } from 'storybook/blocks';
+import Breadcrumbs from '../Breadcrumbs';
+
+## Usage
+
+For the most basic implementation, simply pass a breadcrumbs array with link and title in the `breadcrumbs` property
+
+```tsx live
+render(
+  <Container>
+    <Row align="middle">
+      <Col>
+        <Breadcrumbs
+          breadcrumbs={[
+            {
+              link: '#breadcrumbs',
+              title: 'Breadcrumb Default',
+            },
+            {
+              link: '#breadcrumb',
+              title: 'Breadcrumb Default',
+            },
+            {
+              link: '#breadcrumb',
+              title: 'Breadcrumb Current',
+            },
+          ]}
+        />
+      </Col>
+    </Row>
+  </Container>,
+);
+```

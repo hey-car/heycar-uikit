@@ -37,6 +37,7 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
       accountItemConfig,
       auxiliaryDetails,
       callItemConfig,
+      currentRoute,
       dataTestId,
       favoritesItemConfig,
       langItemConfig,
@@ -87,7 +88,13 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
     };
 
     return (
-      <header className={styles.header} data-test-id={dataTestId} ref={ref}>
+      <header
+        className={`${styles.header} ${
+          isNavTrayOpen ? styles.isBurgerOpen : ''
+        }`}
+        data-test-id={dataTestId}
+        ref={ref}
+      >
         <Grid.Container className={styles.headerInner}>
           <Grid.Row gutter={{ mobile: 8, tablet: 12, desktop: 24 }}>
             <Grid.Col className={styles.colLeft}>
@@ -95,7 +102,12 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
                 aria-label={locale.logoLabel}
                 className={styles.logo}
                 href={logoHref}
-                onClick={() => itemOnClick('Logo', trackingFn)}
+                onClick={() =>
+                  itemOnClick({
+                    fn: trackingFn,
+                    obj: { label: 'Logo', href: logoHref },
+                  })
+                }
               >
                 <Logo />
               </Link>
@@ -108,7 +120,18 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
                   <button
                     aria-label={locale.closeSearchLabel}
                     className={styles.closeSearch}
-                    onClick={() => handleSearchToggle(false)}
+                    onClick={() =>
+                      itemOnClick(
+                        {
+                          fn: trackingFn,
+                          obj: {
+                            label: 'Mobile Search Toggle',
+                            action: 'close',
+                          },
+                        },
+                        () => handleSearchToggle(false),
+                      )
+                    }
                   >
                     <Close />
                   </button>
@@ -124,7 +147,15 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
                 <button
                   aria-label={searchItemConfig!.label}
                   className={`${styles.notHorizontalNav} ${styles.item}`}
-                  onClick={() => handleSearchToggle(true)}
+                  onClick={() =>
+                    itemOnClick(
+                      {
+                        fn: trackingFn,
+                        obj: { label: 'Mobile Search Toggle', action: 'open' },
+                      },
+                      () => handleSearchToggle(true),
+                    )
+                  }
                 >
                   <Search />
                 </button>
@@ -139,8 +170,13 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
                   href={favoritesItemConfig!.href}
                   onClick={() =>
                     itemOnClick(
-                      favoritesItemConfig!.label,
-                      trackingFn,
+                      {
+                        fn: trackingFn,
+                        obj: {
+                          label: favoritesItemConfig!.label,
+                          href: favoritesItemConfig!.href,
+                        },
+                      },
                       favoritesItemConfig!.onClick,
                     )
                   }
@@ -204,8 +240,10 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
                   className={`${styles.horizontalNavOnly} ${styles.item}`}
                   onClick={() =>
                     itemOnClick(
-                      accountItemConfig!.label,
-                      trackingFn,
+                      {
+                        fn: trackingFn,
+                        obj: { label: accountItemConfig!.label },
+                      },
                       accountItemConfig!.onClick,
                     )
                   }
@@ -226,8 +264,13 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
                   href={callItemConfig!.href}
                   onClick={() =>
                     itemOnClick(
-                      callItemConfig!.label,
-                      trackingFn,
+                      {
+                        fn: trackingFn,
+                        obj: {
+                          label: callItemConfig!.label,
+                          href: callItemConfig!.href,
+                        },
+                      },
                       callItemConfig!.onClick,
                     )
                   }
@@ -245,8 +288,15 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
                 aria-label={DEFAULT_LOCALE.burgerMenuButtonLabel}
                 className={`${styles.notHorizontalNav} ${styles.item}`}
                 onClick={() =>
-                  itemOnClick('Toggle Menu', trackingFn, () =>
-                    setIsNavTrayOpen(!isNavTrayOpen),
+                  itemOnClick(
+                    {
+                      fn: trackingFn,
+                      obj: {
+                        label: 'Burger Menu Toggle',
+                        action: isNavTrayOpen ? 'close' : 'open',
+                      },
+                    },
+                    () => setIsNavTrayOpen(!isNavTrayOpen),
                   )
                 }
               >
@@ -277,6 +327,7 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
           <NavigationDropdown
             Link={Link}
             activeNavItem={activeNavItem}
+            currentRoute={currentRoute}
             dataTestId={`${dataTestId}-navigation`}
             locale={locale}
             navigation={navigation}

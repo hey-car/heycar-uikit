@@ -3,7 +3,10 @@
 import React from 'react';
 import { fireEvent, render } from '@testing-library/react';
 
-import { DEFAULT_LOCALE } from '../constants/Header.constants';
+import {
+  DEFAULT_LOCALE,
+  headerClickTracking,
+} from '../constants/Header.constants';
 import Header from '../Header';
 import { HeaderLinkProps, HeaderProps } from '../Header.types';
 
@@ -260,10 +263,9 @@ describe('Header', () => {
   describe('Tracking tests', () => {
     const trackingFn = jest.fn();
 
-    const getMockTrackingPayload = (label = '') => ({
-      action: 'Click',
-      category: 'Header',
-      label,
+    const getMockTrackingPayload = (trackingObj: Record<string, any>) => ({
+      ...headerClickTracking,
+      ...trackingObj,
     });
 
     it('calls tracking function when clicking logo', () => {
@@ -277,7 +279,9 @@ describe('Header', () => {
 
       fireEvent.click(getByRole('link', { name: 'heycar logo' }));
 
-      expect(trackingFn).toBeCalledWith(getMockTrackingPayload('Logo'));
+      expect(trackingFn).toBeCalledWith(
+        getMockTrackingPayload({ label: 'Logo', href: defaultData.logoHref }),
+      );
     });
 
     it('calls tracking function when clicking faves', () => {
@@ -294,32 +298,12 @@ describe('Header', () => {
       );
 
       expect(trackingFn).toBeCalledWith(
-        getMockTrackingPayload(defaultData.favoritesItemConfig?.label),
+        getMockTrackingPayload({
+          label: defaultData.favoritesItemConfig?.label,
+          href: defaultData.favoritesItemConfig?.href,
+        }),
       );
     });
-
-    // it('calls tracking function when clicking account', () => {
-    //   const { getByLabelText, getByRole } = render(
-    //     <Header
-    //       {...defaultData}
-    //       dataTestId={dataTestId}
-    //       trackingFn={trackingFn}
-    //     />,
-    //   );
-
-    //   fireEvent.keyPress(
-    //     getByRole('button', {
-    //       name: 'Select Language - Press the Space key to show sub-menus.',
-    //     }),
-    //     { key: 'Space', code: 'Space' },
-    //   );
-
-    //   fireEvent.click(getByLabelText('Deutsch language select'));
-
-    //   expect(trackingFn).toBeCalledWith(
-    //     getMockTrackingPayload('Deutsch language select'),
-    //   );
-    // });
 
     it('calls tracking function when clicking account', () => {
       const { getByRole } = render(
@@ -335,7 +319,9 @@ describe('Header', () => {
       );
 
       expect(trackingFn).toBeCalledWith(
-        getMockTrackingPayload(defaultData.accountItemConfig?.label),
+        getMockTrackingPayload({
+          label: defaultData.accountItemConfig?.label,
+        }),
       );
     });
   });
@@ -384,13 +370,14 @@ describe('Header', () => {
         auxAppHeading: 'LT Download our App now',
       };
 
-      const { getAllByLabelText, getAllByRole, getByRole } = render(
-        <Header
-          {...defaultData}
-          dataTestId={dataTestId}
-          locale={customLocale}
-        />,
-      );
+      const { getAllByLabelText, getAllByText, getAllByRole, getByRole } =
+        render(
+          <Header
+            {...defaultData}
+            dataTestId={dataTestId}
+            locale={customLocale}
+          />,
+        );
 
       const ddMenuNavBtn = getAllByRole('menuitem', {
         name: 'Car reviews - LT Press the Space key to show sub-menus.',
@@ -405,9 +392,7 @@ describe('Header', () => {
       // Open menu to get to subnav item
       fireEvent.click(ddMenuNavBtn);
 
-      expect(
-        getAllByRole('link', { name: 'LT Show all' })[1],
-      ).toBeInTheDocument();
+      expect(getAllByText('LT Show all')[1]).toBeInTheDocument();
     });
 
     it('renders header, nav, and subnav links with custom link component if passed', () => {

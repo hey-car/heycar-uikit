@@ -161,7 +161,7 @@ describe('navigationHelpers', () => {
       },
     ];
     const langItemConfig = {
-      currentLang: 'en-EN',
+      currentLang: 'en-GB',
       options: LANG_OPTIONS,
       hide: true,
     };
@@ -189,7 +189,7 @@ describe('navigationHelpers', () => {
         ...testNav,
         {
           isBurgerMenuOnly: true,
-          label: 'Select Language',
+          label: 'English',
           subNavGroups: [
             {
               heading: DEFAULT_LOCALE.langListHeading,

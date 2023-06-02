@@ -1,0 +1,68 @@
+@import '../../../themes/src/default.css';
+
+.breadcrumbWrapper {
+  display: flex;
+  flex-direction: row;
+  color: var(--color-tarmac-grey-700);
+  list-style: none;
+  font-weight: var(--font-weight-medium);
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+
+  @media (--mobile) {
+    flex-wrap: wrap;
+  }
+}
+
+.breadcrumbsList {
+  display: flex;
+}
+
+.breadcrumbsList:after,
+.threeDots:after {
+  content: '|';
+  padding: 0 4px;
+}
+
+.breadcrumbsList:last-child:after {
+  content: '';
+}
+
+.breadcrumbsList:last-child {
+  color: var(--color-neutral-500);
+}
+
+.breadcrumbLink {
+  text-decoration: none;
+  color: var(--color-tarmac-grey-700);
+
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 20ch;
+
+  &:hover {
+    color: var(--color-neutral-600);
+    text-decoration: underline;
+  }
+
+  &:focus,
+  &:active,
+  &:visited {
+    text-decoration: underline;
+  }
+}
+
+.currentBreadcrumb {
+  color: var(--color-neutral-500);
+}
+
+.threeDots {
+  cursor: pointer;
+}
+
+.disabled {
+  color: var(--color-neutral-500);
+}

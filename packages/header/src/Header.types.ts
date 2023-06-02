@@ -8,9 +8,13 @@ type Locale = typeof DEFAULT_LOCALE;
 // HEADER ITEM RELATED TYPES
 
 interface HeaderTrackingObj {
-  action: 'Click';
-  category: 'Header';
+  action: 'click' | 'open' | 'close';
+  category: 'header_navigation';
+  type: 'header_item' | 'nav_item' | 'subnav_item';
   label: string;
+  parentLabel?: string;
+  href?: string;
+  navType?: 'dropdown' | 'burger_menu';
 }
 
 interface HeaderLinkProps {
@@ -143,6 +147,11 @@ interface HeaderProps {
    * Tracking function to be called with tracking object, onClick for any link or button within the Header
    */
   trackingFn?: (trackingObj: HeaderTrackingObj) => void;
+  /**
+   * The current route of the parent app, minus the domain etc.
+   * This is used to calculate if any nav item matches the current page
+   */
+  currentRoute?: string;
   /**
    * `locale` - Object with localized strings
    */

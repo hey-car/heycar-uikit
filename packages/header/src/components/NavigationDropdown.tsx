@@ -16,6 +16,7 @@ const NavigationDropdown = React.forwardRef<HTMLDivElement, NavigationProps>(
   (
     {
       activeNavItem,
+      currentRoute,
       dataTestId,
       Link,
       locale = DEFAULT_LOCALE,
@@ -44,10 +45,14 @@ const NavigationDropdown = React.forwardRef<HTMLDivElement, NavigationProps>(
             const id = `nav-item-${label.replace(/^[^a-z]+|[^\w:.-]+/gi, '')}`;
             const hasSubNav = subNavGroups && subNavGroups?.length > 0;
             const isActive = activeNavItem === id;
+            const isCurrentPage =
+              currentRoute && navItem.href && currentRoute === navItem.href;
             const isLastItem = i + 1 === navigation.length;
             const commonProps = {
               role: 'menuitem',
-              className: `${styles.navItem} ${isActive ? styles.isActive : ''}`,
+              className: `${styles.navItem} ${
+                isActive ? styles.isActive : ''
+              } ${isCurrentPage ? styles.isCurrentPage : ''}`,
               id,
             };
 
@@ -57,6 +62,7 @@ const NavigationDropdown = React.forwardRef<HTMLDivElement, NavigationProps>(
                 key={`dropdown-${label}`}
                 onMouseOut={() => toggleSubNav(id, isActive)}
                 onMouseOver={() => toggleSubNav(id, isActive, true)}
+                role="none"
               >
                 {hasSubNav ? (
                   <>
@@ -66,8 +72,16 @@ const NavigationDropdown = React.forwardRef<HTMLDivElement, NavigationProps>(
                       aria-haspopup={true}
                       aria-label={`${label} - ${locale.spaceBarNotification}`}
                       onClick={() =>
-                        itemOnClick(`${label}`, trackingFn, () =>
-                          toggleSubNav(id, isActive),
+                        itemOnClick(
+                          {
+                            fn: trackingFn,
+                            obj: {
+                              label: `${label}`,
+                              type: 'nav_item',
+                              navType: 'dropdown',
+                            },
+                          },
+                          () => toggleSubNav(id, isActive),
                         )
                       }
                       onFocus={() => closeSiblings(id, hasSubNav)}
@@ -80,6 +94,7 @@ const NavigationDropdown = React.forwardRef<HTMLDivElement, NavigationProps>(
                       aria-label={`${label} ${locale.subMenuLabel}`}
                       className={styles.collapse}
                       open={isActive}
+                      role="group"
                     >
                       <SubNav
                         Link={Link}
@@ -97,7 +112,20 @@ const NavigationDropdown = React.forwardRef<HTMLDivElement, NavigationProps>(
                   <Link
                     {...commonProps}
                     href={navItem.href}
-                    onClick={() => itemOnClick(`${label}`, trackingFn)}
+                    onClick={() =>
+                      itemOnClick(
+                        {
+                          fn: trackingFn,
+                          obj: {
+                            label: `${label}`,
+                            type: 'nav_item',
+                            href: navItem.href,
+                            navType: 'dropdown',
+                          },
+                        },
+                        navItem.onClick,
+                      )
+                    }
                   >
                     <Typography variant="button2">{label}</Typography>
                   </Link>

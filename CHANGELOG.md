@@ -1,3 +1,24 @@
+# [8.5.0](https://github.com/hey-car/heycar-uikit/compare/v8.4.1...v8.5.0) (2023-06-01)
+
+
+### Features
+
+* **header:** enhanced information sent to tracking function ([#214](https://github.com/hey-car/heycar-uikit/issues/214)) ([eeae6be](https://github.com/hey-car/heycar-uikit/commit/eeae6be3d7fa0efb1ac44a9d53b9ea2aaa8a3125))
+
+## [8.4.1](https://github.com/hey-car/heycar-uikit/compare/v8.4.0...v8.4.1) (2023-05-25)
+
+
+### Bug Fixes
+
+* **header:** accessibility fixes for header ([#211](https://github.com/hey-car/heycar-uikit/issues/211)) ([62b32d1](https://github.com/hey-car/heycar-uikit/commit/62b32d1d09219cd2fc77a43e9807e80363beb179))
+
+# [8.4.0](https://github.com/hey-car/heycar-uikit/compare/v8.3.0...v8.4.0) (2023-05-24)
+
+
+### Features
+
+* **breadcrumbs:** add new breadcrumbs component ([#210](https://github.com/hey-car/heycar-uikit/issues/210)) ([09017a2](https://github.com/hey-car/heycar-uikit/commit/09017a232afd5f3b0a7375b795c7ecc8b81e6e54))
+
 # [8.3.0](https://github.com/hey-car/heycar-uikit/compare/v8.2.2...v8.3.0) (2023-05-24)
 
 

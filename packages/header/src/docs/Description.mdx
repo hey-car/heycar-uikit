@@ -214,6 +214,88 @@ render(
 );
 ```
 
+## Navigation
+
+The Navigation is built from an array of `NavItem`s. `NavItem`s may contain `SubNavGroup`s which contain `SubNavItem`s.
+
+There are two ways the navigation data can be displayed: the Burger Menu Nav and the Dropdown Nav. The Burger Menu is show up until the viewport reaches the `tablet-l` width, when it switches to the Dropdown.
+
+```ts
+interface NavItem {
+  /**
+   * Text label to be displayed
+   */
+  label: string;
+  /**
+   * Href for navigation on click (only use if item has no sub nav groups)
+   */
+  href?: string;
+  /**
+   * Function to run on click
+   */
+  onClick?: () => void;
+  /**
+   * SubNavGroup array
+   */
+  subNavGroups?: SubNavGroup[];
+  /**
+   * Only show this item in the burger menu, Not on the dropdown version of the menu
+   */
+  isBurgerMenuOnly?: boolean;
+}
+```
+
+```ts
+interface SubNavGroup {
+  /**
+   * Heading for the group
+   */
+  heading: string;
+  /**
+   * SubNavItem array
+   */
+  items: SubNavItem[];
+  /**
+   * Text label for the link
+   */
+  showAllLink?: {
+    /**
+     * Href for navigation on click
+     */
+    href?: string;
+    /**
+     * Function to run on click
+     */
+    onClick?: () => void;
+    /**
+     * Text label to override the default value in locale
+     */
+    label?: string;
+    /**
+     * Hide this item
+     */
+    hide?: boolean;
+  };
+}
+```
+
+```ts
+interface SubNavItem {
+  /**
+   * Description text to be displayed under the label
+   */
+  desc?: string;
+  /**
+   * Href for navigation on click
+   */
+  href: string;
+  /**
+   * Text label for the link
+   */
+  label: string;
+}
+```
+
 ## Localization
 
 Localization can be set via an object. The default language is English.
@@ -311,13 +393,28 @@ the function will be called with the following object:
 
 ```
 {
-  action: 'Click';
-  category: 'Header';
+  action: 'click' | 'open' | 'close';
+  category: 'header_navigation';
+  type: 'header_item' | 'nav_item' | 'subnav_item';
   label: string;
+  parentLabel?: string;
+  href?: string;
+  navType?: 'dropdown' | 'burger_menu';
 }
 ```
 
-`label` will often be the value passed in the label prop when setting up the link/button, or a value from the locale object.
+**action**
+Will be `'open' | 'close'` for the burger menu and mobile search toggle buttons. `'click'` for everything else.
+
+**label**
+Will often be the value passed in the label prop when setting up the link/button, or a value from the locale object.
+
+**parentLabel**
+The label of the parent nav item. Only sent for sub nav items.
+
+**navType**
+The nav type that was being displayed at the time of the action. Although this data is often used as a synonym for "Mobile" or "Desktop", that is not accurate. The nav type is purely bassed on viewport width.
+Note: this prop is not sent for `header_item` types.
 
 ```tsx
 const nav = [
@@ -328,7 +425,7 @@ const nav = [
 ];
 
 const track = props => {
-  //myTrackFn(props.label, props.action);
+  //myTrackFn(props);
 };
 
 render(

@@ -182,7 +182,7 @@ describe('Header screenshots', () => {
       test('header open nav item w/ 1 subnav group', async () => {
         await screenshotMatchClick(
           mainPageURL,
-          '#root button[aria-label="Navigation menu"], nav[data-nav-type="burger-menu"] #nav-item-Carreviews',
+          '#root button[aria-label="Navigation menu"], nav[data-nav-type="burger-menu"] #burger-nav-item-Carreviews',
           {
             animations: 'disabled',
           },
@@ -195,7 +195,7 @@ describe('Header screenshots', () => {
       test('header open nav item w/ 2 subnav groups', async () => {
         await screenshotMatchClick(
           mainPageURL,
-          '#root button[aria-label="Navigation menu"], nav[data-nav-type="burger-menu"] #nav-item-CarsbyLocation',
+          '#root button[aria-label="Navigation menu"], nav[data-nav-type="burger-menu"] #burger-nav-item-CarsbyLocation',
           {
             animations: 'disabled',
           },
@@ -208,7 +208,7 @@ describe('Header screenshots', () => {
       test('header open nav item w/ 3 subnav groups', async () => {
         await screenshotMatchClick(
           mainPageURL,
-          '#root button[aria-label="Navigation menu"], nav[data-nav-type="burger-menu"] #nav-item-NewsGuides',
+          '#root button[aria-label="Navigation menu"], nav[data-nav-type="burger-menu"] #burger-nav-item-NewsGuides',
           {
             animations: 'disabled',
           },
