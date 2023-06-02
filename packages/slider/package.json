@@ -30,8 +30,7 @@
     "react": "^17.0.1"
   },
   "dependencies": {
-    "classnames": "^2.3.1",
-    "uuid": "^9.0.0"
+    "@heycar-uikit/typography": "^5.0.0"
   },
   "author": "HeyCar Team",
   "license": "UNLICENSED"

@@ -37,6 +37,8 @@
     "./.eslintrc.js",
     "**/*.ts",
     "**/*.test.tsx",
-    "**/*.tsx"
+    "**/*.tsx",
+    "packages/slider/src/__tests__/AppStoreButton.snapshot.test.tsx__",
+    "packages/slider/src/__tests__/AppStoreButton.screenshots.test.tsx____"
   ]
 }

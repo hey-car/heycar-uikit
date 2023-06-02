@@ -1,46 +1,66 @@
 import { Meta, Story, Props } from '@storybook/addon-docs';
 import { ComponentHeader, CssVars, TabContainer } from 'storybook/blocks';
 
-import Slider from '../Slider';
-import { version } from '../../package.json';
 import Description from './Description.mdx';
 import Changelog from '../../CHANGELOG.md';
+import Slider from '../Slider';
+import { version } from '../../package.json';
+import styles from '!!raw-loader!../styles/default.module.css';
+
+<!-- Meta -->
 
 <Meta title="Components/Molecules/Slider" component={Slider} />
 
+export const AppStoreButtonTemplate = args => {
+  return <Slider {...args} />;
+};
+
 <!-- Canvas -->
 
-<Story name="Slider">{Slider.bind({})}</Story>
+<Story
+  args={{
+    stepCount: 10,
+    onChange: (values, index) => {
+      console.log('onClick', values, index);
+    },
+    onAfterChange: (values, index) => {
+      console.log('onAfterClick', values, index);
+    },
+    selectedRangeIndexes: [0, 9],
+    ariaValueText: 'the label',
+  }}
+  name="Slider"
+>
+  {AppStoreButtonTemplate.bind({})}
+</Story>
 
 <!-- Docs -->
 
 <ComponentHeader
   name="Slider"
   version={version}
-  stage={3}
-  design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Global-Design-System?node-id=4289%3A100591"
+  stage={1}
+  design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/Design-system?type=design&node-id=16183-216308&t=7R05xcivHCpVcg0r-0"
 />
+
+App store badges for iOS and Android
 
 ```tsx
 // TSX/JSX file
 // Core import is recomended
-import Slider from '@heycar-uikit/core/slider';
+import AppStoreButton from '@heycar-uikit/core/app-store-button';
 
 // or
-import Slider from '@heycar-uikit/slider';
-
-function App() {
-  return <Slider />;
-}
+import AppStoreButton from '@heycar-uikit/app-store-button';
 ```
 
 ```css
 // CSS file
 // Core import is recomended
-@import '@heycar-uikit/core/slider/esm/Slider.css';
+@import '@heycar-uikit/core/app-store-button/esm/AppStoreButton.css';
 
 // or
-@import '@heycar-uikit/slider/dist/esm/Slider.css';
+@import '@heycar-uikit/app-store-button/dist/esm/AppStoreButton.css';
 ```
 
 <!-- Description -->
@@ -49,6 +69,16 @@ function App() {
   tabs={[
     { label: 'Description', component: <Description /> },
     { label: 'Props', component: <Props of={Slider} /> },
+    {
+      label: 'CSS tokens',
+      component: (
+        <CssVars
+          css={`
+            ${styles}
+          `}
+        />
+      ),
+    },
     { label: 'Changelog', component: <Changelog /> },
   ]}
 />

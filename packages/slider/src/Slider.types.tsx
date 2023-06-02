@@ -4,6 +4,11 @@ interface ValueState {
   valueNow: number;
 }
 
+interface Locale {
+  thumb1: string;
+  thumb2: string;
+}
+
 interface SliderProps {
   /**
    *  Function to call on every value change of the slider. Called with two arguments, the first being the result value(s) the second being thumb index.
@@ -37,6 +42,14 @@ interface SliderProps {
    * Class name(s)
    */
   className?: string;
+  /**
+   * `locale` - Object with localized strings
+   */
+  locale?: Locale;
+  /**
+   * Show value labels while dragging thumbs. Label can bu customised via ariaValueText
+   */
+  showThumbLabels?: boolean;
 }
 
-export { SliderProps, ValueState };
+export { Locale, SliderProps, ValueState };
