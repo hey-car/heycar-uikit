@@ -13,6 +13,7 @@ Object {
         <button
           aria-checked="false"
           aria-label="Left"
+          class="btn"
           data-test-id="btn-1"
           role="radio"
         >
@@ -21,6 +22,7 @@ Object {
         <button
           aria-checked="false"
           aria-label="Right"
+          class="btn"
           data-test-id="btn-2"
           role="radio"
         >
@@ -38,6 +40,7 @@ Object {
       <button
         aria-checked="false"
         aria-label="Left"
+        class="btn"
         data-test-id="btn-1"
         role="radio"
       >
@@ -46,6 +49,7 @@ Object {
       <button
         aria-checked="false"
         aria-label="Right"
+        class="btn"
         data-test-id="btn-2"
         role="radio"
       >
@@ -120,6 +124,7 @@ Object {
         <button
           aria-checked="false"
           aria-label="Left"
+          class="btn"
           role="radio"
         >
           Left
@@ -127,6 +132,7 @@ Object {
         <button
           aria-checked="false"
           aria-label="Middle"
+          class="btn"
           role="radio"
         >
           Middle
@@ -134,6 +140,7 @@ Object {
         <button
           aria-checked="false"
           aria-label="Right"
+          class="btn"
           role="radio"
         >
           Right
@@ -150,6 +157,7 @@ Object {
       <button
         aria-checked="false"
         aria-label="Left"
+        class="btn"
         role="radio"
       >
         Left
@@ -157,6 +165,7 @@ Object {
       <button
         aria-checked="false"
         aria-label="Middle"
+        class="btn"
         role="radio"
       >
         Middle
@@ -164,6 +173,7 @@ Object {
       <button
         aria-checked="false"
         aria-label="Right"
+        class="btn"
         role="radio"
       >
         Right
@@ -267,6 +277,7 @@ Object {
         <button
           aria-checked="true"
           aria-label="Left"
+          class="btn"
           disabled=""
           role="radio"
         >
@@ -275,6 +286,7 @@ Object {
         <button
           aria-checked="false"
           aria-label="Middle"
+          class="btn"
           disabled=""
           role="radio"
         >
@@ -283,6 +295,7 @@ Object {
         <button
           aria-checked="false"
           aria-label="Right"
+          class="btn"
           disabled=""
           role="radio"
         >
@@ -300,6 +313,7 @@ Object {
       <button
         aria-checked="true"
         aria-label="Left"
+        class="btn"
         disabled=""
         role="radio"
       >
@@ -308,6 +322,7 @@ Object {
       <button
         aria-checked="false"
         aria-label="Middle"
+        class="btn"
         disabled=""
         role="radio"
       >
@@ -316,6 +331,7 @@ Object {
       <button
         aria-checked="false"
         aria-label="Right"
+        class="btn"
         disabled=""
         role="radio"
       >
@@ -390,6 +406,7 @@ Object {
         <button
           aria-checked="false"
           aria-label="Left"
+          class="btn"
           disabled=""
           role="radio"
         >
@@ -398,6 +415,7 @@ Object {
         <button
           aria-checked="false"
           aria-label="Middle"
+          class="btn"
           disabled=""
           role="radio"
         >
@@ -406,6 +424,7 @@ Object {
         <button
           aria-checked="false"
           aria-label="Right"
+          class="btn"
           disabled=""
           role="radio"
         >
@@ -423,6 +442,7 @@ Object {
       <button
         aria-checked="false"
         aria-label="Left"
+        class="btn"
         disabled=""
         role="radio"
       >
@@ -431,6 +451,7 @@ Object {
       <button
         aria-checked="false"
         aria-label="Middle"
+        class="btn"
         disabled=""
         role="radio"
       >
@@ -439,6 +460,7 @@ Object {
       <button
         aria-checked="false"
         aria-label="Right"
+        class="btn"
         disabled=""
         role="radio"
       >
@@ -513,6 +535,7 @@ Object {
         <button
           aria-checked="false"
           aria-label="Left"
+          class="btn"
           role="radio"
         >
           <svg
@@ -532,6 +555,7 @@ Object {
         <button
           aria-checked="false"
           aria-label="Middle"
+          class="btn"
           role="radio"
         >
           <svg
@@ -551,6 +575,7 @@ Object {
         <button
           aria-checked="false"
           aria-label="Right"
+          class="btn"
           role="radio"
         >
           <svg
@@ -579,6 +604,7 @@ Object {
       <button
         aria-checked="false"
         aria-label="Left"
+        class="btn"
         role="radio"
       >
         <svg
@@ -598,6 +624,7 @@ Object {
       <button
         aria-checked="false"
         aria-label="Middle"
+        class="btn"
         role="radio"
       >
         <svg
@@ -617,6 +644,7 @@ Object {
       <button
         aria-checked="false"
         aria-label="Right"
+        class="btn"
         role="radio"
       >
         <svg
