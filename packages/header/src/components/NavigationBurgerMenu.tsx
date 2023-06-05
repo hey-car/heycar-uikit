@@ -20,6 +20,7 @@ const NavigationBurgerMenu = React.forwardRef<HTMLDivElement, NavigationProps>(
       activeNavItem,
       auxiliaryDetails: aux,
       dataTestId,
+      itemOnClick,
       langItemConfig,
       Link,
       locale = DEFAULT_LOCALE,
@@ -31,7 +32,7 @@ const NavigationBurgerMenu = React.forwardRef<HTMLDivElement, NavigationProps>(
   ) => {
     const hasAuxData = aux?.tel || aux?.email || aux?.app;
 
-    const { toggleSubNav, keyboardOpen, itemOnClick } = useNavigationItem(
+    const { toggleSubNav, keyboardOpen } = useNavigationItem(
       activeNavItem,
       setActiveNavItem,
     );
@@ -112,6 +113,7 @@ const NavigationBurgerMenu = React.forwardRef<HTMLDivElement, NavigationProps>(
                         Link={Link}
                         isDropDownMenu={false}
                         isOpen={isActive}
+                        itemOnClick={itemOnClick}
                         locale={locale}
                         navItemId={commonProps.id}
                         navItemName={label}

@@ -4,7 +4,6 @@ import Grid from '@heycar-uikit/grid';
 import Typography from '@heycar-uikit/typography';
 
 import { DEFAULT_LOCALE } from '../constants/Header.constants';
-import { useNavigationItem } from '../hooks/useNavigationItem';
 import { getSubNavGroupDetails } from '../utils/navigationHelpers';
 
 import { SubNavProps } from './Navigation.types';
@@ -16,6 +15,7 @@ const SubNav = React.forwardRef<HTMLDivElement, SubNavProps>(
     {
       isDropDownMenu,
       isOpen,
+      itemOnClick,
       Link,
       locale = DEFAULT_LOCALE,
       navItemId,
@@ -26,8 +26,6 @@ const SubNav = React.forwardRef<HTMLDivElement, SubNavProps>(
     ref,
   ) => {
     const groupDeets = getSubNavGroupDetails(subNavGroups, isDropDownMenu);
-
-    const { itemOnClick } = useNavigationItem(navItemId);
 
     return (
       <Grid.Row

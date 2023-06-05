@@ -144,21 +144,40 @@ describe('useNavigationItem', () => {
       expect(onClickCB).toHaveBeenCalledTimes(2);
     });
 
-    // it('sets isNavTrayOpen to false after calling itemOnClick', () => {
-    //   const newLabel = 'Test 2';
+    it('calls setIsNavTrayOpen with false after calling itemOnClick', () => {
+      const newLabel = 'Test 2';
 
-    //   const isTrayState = result.current.isNavTrayOpen;
+      const setIsNavTrayOpen = jest.fn();
+      const { result } = renderHook(() =>
+        useNavigationItem('test', setActiveNavItem, setIsNavTrayOpen),
+      );
 
-    //   result.current.setIsNavTrayOpen(true);
+      result.current.itemOnClick({
+        fn: trackingFn,
+        obj: { label: newLabel },
+      });
 
-    //   expect(isTrayState).toEqual(true);
+      expect(setIsNavTrayOpen).toBeCalledWith(false);
+    });
 
-    //   result.current.itemOnClick({
-    //     fn: trackingFn,
-    //     obj: { label: newLabel },
-    //   });
+    it('doesnt call setIsNavTrayOpen after calling itemOnClick if closeMenu is set to false', () => {
+      const newLabel = 'Test 2';
 
-    //   expect(isTrayState).toEqual(false);
-    // });
+      const setIsNavTrayOpen = jest.fn();
+      const { result } = renderHook(() =>
+        useNavigationItem('test', setActiveNavItem, setIsNavTrayOpen),
+      );
+
+      result.current.itemOnClick(
+        {
+          fn: trackingFn,
+          obj: { label: newLabel },
+        },
+        undefined,
+        false,
+      );
+
+      expect(setIsNavTrayOpen).not.toBeCalled();
+    });
   });
 });

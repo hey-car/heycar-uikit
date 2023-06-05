@@ -1,19 +1,18 @@
-import { useCallback, useState } from 'react';
+import { useCallback } from 'react';
 
 import { headerClickTracking } from '../constants/Header.constants';
 import { HeaderTrackingObj } from '../Header.types';
 
 const useNavigationItem = (
-  activeNavItem?: string | undefined,
-  setActiveNavItem?: (id: string | undefined) => void,
+  activeNavItem: string | undefined,
+  setActiveNavItem: (id: string | undefined) => void,
+  setIsNavTrayOpen?: (state: boolean) => void,
 ) => {
-  const [isNavTrayOpen, setIsNavTrayOpen] = useState(false);
-
   const toggleSubNav = useCallback(
     (id: string, isActive: boolean, force?: boolean) => {
       const nextActiveId = force || !isActive ? id : undefined;
 
-      if (setActiveNavItem) setActiveNavItem(nextActiveId);
+      setActiveNavItem(nextActiveId);
     },
     [setActiveNavItem],
   );
@@ -34,8 +33,7 @@ const useNavigationItem = (
 
   const closeSiblings = useCallback(
     (currentId: string, hasSubNav: boolean) => {
-      if (currentId !== activeNavItem && hasSubNav && setActiveNavItem)
-        setActiveNavItem(undefined);
+      if (currentId !== activeNavItem && hasSubNav) setActiveNavItem(undefined);
     },
     [activeNavItem, setActiveNavItem],
   );
@@ -48,7 +46,7 @@ const useNavigationItem = (
     onClick?: () => void,
     closeMenu = true,
   ) => {
-    if (closeMenu) setIsNavTrayOpen(false);
+    if (closeMenu && setIsNavTrayOpen) setIsNavTrayOpen(false);
     if (track && typeof track?.fn === 'function')
       track.fn({ ...headerClickTracking, ...track.obj } as HeaderTrackingObj);
     if (typeof onClick === 'function') onClick();
@@ -58,8 +56,6 @@ const useNavigationItem = (
     toggleSubNav,
     keyboardOpen,
     closeSiblings,
-    isNavTrayOpen,
-    setIsNavTrayOpen,
     itemOnClick,
   };
 };

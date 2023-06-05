@@ -1,5 +1,7 @@
 import { HeaderTrackingObj, LangOption } from '../Header.types';
 
+import { ItemOnClick } from './Navigation.types';
+
 interface LanguageListProps {
   /**
    * heading displayed above the list
@@ -25,6 +27,10 @@ interface LanguageListProps {
    * function to be called on focus/blur events. Used to keep the list open when being used
    */
   onFocusEvents: (focused: boolean) => void;
+  /**
+   * Helper function to be called on item click
+   */
+  itemOnClick: ItemOnClick;
 }
 
 export { LanguageListProps };

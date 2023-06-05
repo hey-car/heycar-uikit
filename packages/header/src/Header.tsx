@@ -48,15 +48,16 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
     ref,
   ) => {
     // State items
-    //const [isNavTrayOpen, setIsNavTrayOpen] = useState(false);
+    const [isNavTrayOpen, setIsNavTrayOpen] = useState(false);
     const [activeNavItem, setActiveNavItem] = useState<string | undefined>(
       undefined,
     );
     const [isSearchOpen, setIsSearchOpen] = useState(false);
 
-    const { isNavTrayOpen, setIsNavTrayOpen, itemOnClick } = useNavigationItem(
+    const { itemOnClick } = useNavigationItem(
       activeNavItem,
       setActiveNavItem,
+      setIsNavTrayOpen,
     );
 
     // Link component
@@ -225,6 +226,7 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
                     <LanguageList
                       dataTestId="header-language-list"
                       heading={locale.langListHeading}
+                      itemOnClick={itemOnClick}
                       onFocusEvents={setIsFocused}
                       onHoverEvents={setIsHovering}
                       options={langItemConfig!.options}
@@ -299,6 +301,7 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
                       },
                     },
                     () => setIsNavTrayOpen(!isNavTrayOpen),
+                    false,
                   )
                 }
               >
@@ -320,6 +323,7 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
             auxiliaryDetails={auxiliaryDetails}
             currentLang={currentLang?.langCode}
             dataTestId={`${dataTestId}-navigation`}
+            itemOnClick={itemOnClick}
             langItemConfig={langItemConfig}
             locale={locale}
             navigation={navigation}
@@ -331,6 +335,7 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
             activeNavItem={activeNavItem}
             currentRoute={currentRoute}
             dataTestId={`${dataTestId}-navigation`}
+            itemOnClick={itemOnClick}
             locale={locale}
             navigation={navigation}
             setActiveNavItem={setActiveNavItem}

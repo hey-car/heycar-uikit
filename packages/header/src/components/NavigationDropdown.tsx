@@ -17,6 +17,7 @@ const NavigationDropdown = React.forwardRef<HTMLDivElement, NavigationProps>(
       activeNavItem,
       currentRoute,
       dataTestId,
+      itemOnClick,
       Link,
       locale = DEFAULT_LOCALE,
       navigation = [],
@@ -25,8 +26,10 @@ const NavigationDropdown = React.forwardRef<HTMLDivElement, NavigationProps>(
     },
     ref,
   ) => {
-    const { toggleSubNav, keyboardOpen, closeSiblings, itemOnClick } =
-      useNavigationItem(activeNavItem, setActiveNavItem);
+    const { toggleSubNav, keyboardOpen, closeSiblings } = useNavigationItem(
+      activeNavItem,
+      setActiveNavItem,
+    );
 
     return (
       <nav
@@ -97,6 +100,7 @@ const NavigationDropdown = React.forwardRef<HTMLDivElement, NavigationProps>(
                         Link={Link}
                         isDropDownMenu={true}
                         isOpen={isActive}
+                        itemOnClick={itemOnClick}
                         locale={locale}
                         navItemId={commonProps.id}
                         navItemName={label}
