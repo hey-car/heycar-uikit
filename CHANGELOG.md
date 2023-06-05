@@ -1,3 +1,10 @@
+# [8.6.0](https://github.com/hey-car/heycar-uikit/compare/v8.5.0...v8.6.0) (2023-06-05)
+
+
+### Features
+
+* **segmented-buttons:** added segmented buttons component ([#213](https://github.com/hey-car/heycar-uikit/issues/213)) ([2813359](https://github.com/hey-car/heycar-uikit/commit/2813359d6258b86a8f4d7a6739a4d411213146d7))
+
 # [8.5.0](https://github.com/hey-car/heycar-uikit/compare/v8.4.1...v8.5.0) (2023-06-01)
 
 
