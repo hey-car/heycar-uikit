@@ -3,7 +3,8 @@ import React from 'react';
 import Typography from '@heycar-uikit/typography';
 
 import { LANG_OPTIONS } from '../constants/Header.constants';
-import { getFlagIcon, itemOnClick } from '../utils/headerItemHelpers';
+import { useNavigationItem } from '../hooks/useNavigationItem';
+import { getFlagIcon } from '../utils/headerItemHelpers';
 
 import { LanguageListProps } from './LanguageList.types';
 
@@ -21,6 +22,8 @@ const LanguageList = React.forwardRef<HTMLDivElement, LanguageListProps>(
     },
     ref,
   ) => {
+    const { itemOnClick } = useNavigationItem();
+
     return (
       <div
         className={styles.languageList}

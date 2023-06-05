@@ -6,7 +6,6 @@ import Typography from '@heycar-uikit/typography';
 
 import { DEFAULT_LOCALE } from '../constants/Header.constants';
 import { useNavigationItem } from '../hooks/useNavigationItem';
-import { itemOnClick } from '../utils/headerItemHelpers';
 import { extendNavigation } from '../utils/navigationHelpers';
 
 import { NavigationProps } from './Navigation.types';
@@ -32,7 +31,7 @@ const NavigationBurgerMenu = React.forwardRef<HTMLDivElement, NavigationProps>(
   ) => {
     const hasAuxData = aux?.tel || aux?.email || aux?.app;
 
-    const { toggleSubNav, keyboardOpen } = useNavigationItem(
+    const { toggleSubNav, keyboardOpen, itemOnClick } = useNavigationItem(
       activeNavItem,
       setActiveNavItem,
     );
@@ -94,6 +93,7 @@ const NavigationBurgerMenu = React.forwardRef<HTMLDivElement, NavigationProps>(
                             },
                           },
                           () => toggleSubNav(id, isActive),
+                          false,
                         )
                       }
                       onKeyDown={e => keyboardOpen(e, id, isActive)}

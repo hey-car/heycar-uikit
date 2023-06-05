@@ -20,11 +20,8 @@ import {
   MAX_FAVES_DISPLAY_NO,
 } from './constants/Header.constants';
 import { useLangList } from './hooks/useLangList';
-import {
-  getCurrentLang,
-  hasHeaderItems,
-  itemOnClick,
-} from './utils/headerItemHelpers';
+import { useNavigationItem } from './hooks/useNavigationItem';
+import { getCurrentLang, hasHeaderItems } from './utils/headerItemHelpers';
 import { HeaderLinkProps, HeaderProps } from './Header.types';
 
 import styles from './styles/default.module.css';
@@ -51,11 +48,16 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
     ref,
   ) => {
     // State items
-    const [isNavTrayOpen, setIsNavTrayOpen] = useState(false);
+    //const [isNavTrayOpen, setIsNavTrayOpen] = useState(false);
     const [activeNavItem, setActiveNavItem] = useState<string | undefined>(
       undefined,
     );
     const [isSearchOpen, setIsSearchOpen] = useState(false);
+
+    const { isNavTrayOpen, setIsNavTrayOpen, itemOnClick } = useNavigationItem(
+      activeNavItem,
+      setActiveNavItem,
+    );
 
     // Link component
     const Link = (LinkComponent || DefaultLinkComponent) as (

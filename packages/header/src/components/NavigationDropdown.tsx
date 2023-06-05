@@ -5,7 +5,6 @@ import Typography from '@heycar-uikit/typography';
 
 import { DEFAULT_LOCALE } from '../constants/Header.constants';
 import { useNavigationItem } from '../hooks/useNavigationItem';
-import { itemOnClick } from '../utils/headerItemHelpers';
 
 import { NavigationProps } from './Navigation.types';
 import SubNav from './SubNav';
@@ -26,10 +25,8 @@ const NavigationDropdown = React.forwardRef<HTMLDivElement, NavigationProps>(
     },
     ref,
   ) => {
-    const { toggleSubNav, keyboardOpen, closeSiblings } = useNavigationItem(
-      activeNavItem,
-      setActiveNavItem,
-    );
+    const { toggleSubNav, keyboardOpen, closeSiblings, itemOnClick } =
+      useNavigationItem(activeNavItem, setActiveNavItem);
 
     return (
       <nav

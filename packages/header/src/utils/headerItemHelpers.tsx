@@ -9,23 +9,8 @@ import {
   UK,
 } from '@heycar-uikit/icons';
 
-import {
-  headerClickTracking,
-  LANG_OPTIONS,
-} from '../constants/Header.constants';
-import { HeaderProps, HeaderTrackingObj } from '../Header.types';
-
-const itemOnClick = (
-  track?: {
-    fn: ((trackingObj: HeaderTrackingObj) => void) | undefined;
-    obj: Partial<HeaderTrackingObj>;
-  },
-  onClick?: () => void,
-) => {
-  if (track && typeof track?.fn === 'function')
-    track.fn({ ...headerClickTracking, ...track.obj } as HeaderTrackingObj);
-  if (typeof onClick === 'function') onClick();
-};
+import { LANG_OPTIONS } from '../constants/Header.constants';
+import { HeaderProps } from '../Header.types';
 
 const getFlagIcon = (langCode: string) => {
   switch (langCode) {
@@ -74,4 +59,4 @@ const hasHeaderItems = (
   hasCall: !!callItemConfig && !callItemConfig.hide,
 });
 
-export { getCurrentLang, getFlagIcon, hasHeaderItems, itemOnClick };
+export { getCurrentLang, getFlagIcon, hasHeaderItems };
