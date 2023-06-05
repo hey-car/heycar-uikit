@@ -1,0 +1,718 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Snapshots tests should render 2 buttons 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="wrapper  undefined"
+        id="sb-test-0"
+        role="radiogroup"
+      >
+        <button
+          aria-checked="false"
+          aria-label="Left"
+          class="btn"
+          data-test-id="btn-1"
+          role="radio"
+        >
+          Left
+        </button>
+        <button
+          aria-checked="false"
+          aria-label="Right"
+          class="btn"
+          data-test-id="btn-2"
+          role="radio"
+        >
+          Right
+        </button>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="wrapper  undefined"
+      id="sb-test-0"
+      role="radiogroup"
+    >
+      <button
+        aria-checked="false"
+        aria-label="Left"
+        class="btn"
+        data-test-id="btn-1"
+        role="radio"
+      >
+        Left
+      </button>
+      <button
+        aria-checked="false"
+        aria-label="Right"
+        class="btn"
+        data-test-id="btn-2"
+        role="radio"
+      >
+        Right
+      </button>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Button Snapshots tests should render 3 buttons 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="wrapper  undefined"
+        id="sb-test-1"
+        role="radiogroup"
+      >
+        <button
+          aria-checked="false"
+          aria-label="Left"
+          class="btn"
+          role="radio"
+        >
+          Left
+        </button>
+        <button
+          aria-checked="false"
+          aria-label="Middle"
+          class="btn"
+          role="radio"
+        >
+          Middle
+        </button>
+        <button
+          aria-checked="false"
+          aria-label="Right"
+          class="btn"
+          role="radio"
+        >
+          Right
+        </button>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="wrapper  undefined"
+      id="sb-test-1"
+      role="radiogroup"
+    >
+      <button
+        aria-checked="false"
+        aria-label="Left"
+        class="btn"
+        role="radio"
+      >
+        Left
+      </button>
+      <button
+        aria-checked="false"
+        aria-label="Middle"
+        class="btn"
+        role="radio"
+      >
+        Middle
+      </button>
+      <button
+        aria-checked="false"
+        aria-label="Right"
+        class="btn"
+        role="radio"
+      >
+        Right
+      </button>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Button Snapshots tests should render an active button 1`] = `
+<SegmentedButtons
+  buttons={
+    Array [
+      Object {
+        "icon": undefined,
+        "isDisabled": true,
+        "label": "Left",
+        "value": "lft",
+      },
+      Object {
+        "icon": undefined,
+        "isDisabled": true,
+        "label": "Middle",
+        "value": "mid",
+      },
+      Object {
+        "icon": undefined,
+        "isDisabled": true,
+        "label": "Right",
+        "value": "rht",
+      },
+    ]
+  }
+  currentValue="lft"
+  id="sb-test-4"
+  onChange={[Function]}
+/>
+`;
+
+exports[`Button Snapshots tests should render an active button disabled 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="wrapper  undefined"
+        id="sb-test-5"
+        role="radiogroup"
+      >
+        <button
+          aria-checked="true"
+          aria-label="Left"
+          class="btn"
+          disabled=""
+          role="radio"
+        >
+          Left
+        </button>
+        <button
+          aria-checked="false"
+          aria-label="Middle"
+          class="btn"
+          disabled=""
+          role="radio"
+        >
+          Middle
+        </button>
+        <button
+          aria-checked="false"
+          aria-label="Right"
+          class="btn"
+          disabled=""
+          role="radio"
+        >
+          Right
+        </button>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="wrapper  undefined"
+      id="sb-test-5"
+      role="radiogroup"
+    >
+      <button
+        aria-checked="true"
+        aria-label="Left"
+        class="btn"
+        disabled=""
+        role="radio"
+      >
+        Left
+      </button>
+      <button
+        aria-checked="false"
+        aria-label="Middle"
+        class="btn"
+        disabled=""
+        role="radio"
+      >
+        Middle
+      </button>
+      <button
+        aria-checked="false"
+        aria-label="Right"
+        class="btn"
+        disabled=""
+        role="radio"
+      >
+        Right
+      </button>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Button Snapshots tests should render buttons as disabled 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="wrapper  undefined"
+        id="sb-test-3"
+        role="radiogroup"
+      >
+        <button
+          aria-checked="false"
+          aria-label="Left"
+          class="btn"
+          disabled=""
+          role="radio"
+        >
+          Left
+        </button>
+        <button
+          aria-checked="false"
+          aria-label="Middle"
+          class="btn"
+          disabled=""
+          role="radio"
+        >
+          Middle
+        </button>
+        <button
+          aria-checked="false"
+          aria-label="Right"
+          class="btn"
+          disabled=""
+          role="radio"
+        >
+          Right
+        </button>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="wrapper  undefined"
+      id="sb-test-3"
+      role="radiogroup"
+    >
+      <button
+        aria-checked="false"
+        aria-label="Left"
+        class="btn"
+        disabled=""
+        role="radio"
+      >
+        Left
+      </button>
+      <button
+        aria-checked="false"
+        aria-label="Middle"
+        class="btn"
+        disabled=""
+        role="radio"
+      >
+        Middle
+      </button>
+      <button
+        aria-checked="false"
+        aria-label="Right"
+        class="btn"
+        disabled=""
+        role="radio"
+      >
+        Right
+      </button>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Button Snapshots tests should render buttons with icons 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="wrapper  undefined"
+        id="sb-test-2"
+        role="radiogroup"
+      >
+        <button
+          aria-checked="false"
+          aria-label="Left"
+          class="btn"
+          role="radio"
+        >
+          <svg
+            class="svgIcon inherit"
+            data-test-id="GalleryIcon"
+            focusable="false"
+            style="font-size: 24px;"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M5 19L19 19L19 5L5 5L5 19ZM19 21L21 21V19L21 5L21 3L19 3L5 3H3L3 5L3 19L3 21L5 21L19 21ZM17 17H13L13 13L17 13L17 17ZM13 11L17 11V7L13 7L13 11ZM11 17L7 17L7 13L11 13L11 17ZM7 11L11 11L11 7L7 7L7 11Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          Left
+        </button>
+        <button
+          aria-checked="false"
+          aria-label="Middle"
+          class="btn"
+          role="radio"
+        >
+          <svg
+            class="svgIcon inherit"
+            data-test-id="GalleryIcon"
+            focusable="false"
+            style="font-size: 24px;"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M5 19L19 19L19 5L5 5L5 19ZM19 21L21 21V19L21 5L21 3L19 3L5 3H3L3 5L3 19L3 21L5 21L19 21ZM17 17H13L13 13L17 13L17 17ZM13 11L17 11V7L13 7L13 11ZM11 17L7 17L7 13L11 13L11 17ZM7 11L11 11L11 7L7 7L7 11Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          Middle
+        </button>
+        <button
+          aria-checked="false"
+          aria-label="Right"
+          class="btn"
+          role="radio"
+        >
+          <svg
+            class="svgIcon inherit"
+            data-test-id="GalleryIcon"
+            focusable="false"
+            style="font-size: 24px;"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M5 19L19 19L19 5L5 5L5 19ZM19 21L21 21V19L21 5L21 3L19 3L5 3H3L3 5L3 19L3 21L5 21L19 21ZM17 17H13L13 13L17 13L17 17ZM13 11L17 11V7L13 7L13 11ZM11 17L7 17L7 13L11 13L11 17ZM7 11L11 11L11 7L7 7L7 11Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          Right
+        </button>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="wrapper  undefined"
+      id="sb-test-2"
+      role="radiogroup"
+    >
+      <button
+        aria-checked="false"
+        aria-label="Left"
+        class="btn"
+        role="radio"
+      >
+        <svg
+          class="svgIcon inherit"
+          data-test-id="GalleryIcon"
+          focusable="false"
+          style="font-size: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M5 19L19 19L19 5L5 5L5 19ZM19 21L21 21V19L21 5L21 3L19 3L5 3H3L3 5L3 19L3 21L5 21L19 21ZM17 17H13L13 13L17 13L17 17ZM13 11L17 11V7L13 7L13 11ZM11 17L7 17L7 13L11 13L11 17ZM7 11L11 11L11 7L7 7L7 11Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+        Left
+      </button>
+      <button
+        aria-checked="false"
+        aria-label="Middle"
+        class="btn"
+        role="radio"
+      >
+        <svg
+          class="svgIcon inherit"
+          data-test-id="GalleryIcon"
+          focusable="false"
+          style="font-size: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M5 19L19 19L19 5L5 5L5 19ZM19 21L21 21V19L21 5L21 3L19 3L5 3H3L3 5L3 19L3 21L5 21L19 21ZM17 17H13L13 13L17 13L17 17ZM13 11L17 11V7L13 7L13 11ZM11 17L7 17L7 13L11 13L11 17ZM7 11L11 11L11 7L7 7L7 11Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+        Middle
+      </button>
+      <button
+        aria-checked="false"
+        aria-label="Right"
+        class="btn"
+        role="radio"
+      >
+        <svg
+          class="svgIcon inherit"
+          data-test-id="GalleryIcon"
+          focusable="false"
+          style="font-size: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M5 19L19 19L19 5L5 5L5 19ZM19 21L21 21V19L21 5L21 3L19 3L5 3H3L3 5L3 19L3 21L5 21L19 21ZM17 17H13L13 13L17 13L17 17ZM13 11L17 11V7L13 7L13 11ZM11 17L7 17L7 13L11 13L11 17ZM7 11L11 11L11 7L7 7L7 11Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+        Right
+      </button>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

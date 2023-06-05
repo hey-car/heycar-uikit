@@ -1,0 +1,38 @@
+import { Container, Row, Col } from 'storybook/blocks';
+
+import SegmentedButtons from '../SegmentedButtons';
+
+## Usage
+
+For the most basic implementation pass an array of 2 or 3 buttons, and `onChange` function and a `currentValue`
+
+```tsx live
+const btns = [
+  {
+    label: 'Left',
+    value: 'lft',
+  },
+  {
+    label: 'Middle',
+    value: 'mid',
+  },
+  {
+    label: 'Right',
+    value: 'rht',
+  },
+];
+
+render(
+  <Container>
+    <Row align="middle">
+      <Col>
+        <SegmentedButtons
+          buttons={btns}
+          onChange={() => {}}
+          currentValue="lft"
+        />
+      </Col>
+    </Row>
+  </Container>,
+);
+```
