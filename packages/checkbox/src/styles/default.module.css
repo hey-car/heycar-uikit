@@ -1,0 +1,49 @@
+@import '../../../themes/src/default.css';
+
+input[type='checkbox'] {
+  position: relative;
+  border: 2px solid #838383;
+  cursor: pointer;
+  vertical-align: text-top;
+  height: 20px;
+  width: 20px;
+  -webkit-appearance: none;
+  margin-right: 5px;
+}
+
+input[type='checkbox']:hover {
+  border: 2px solid #303030;
+}
+
+input[type='checkbox']:checked {
+  background-color: #303030;
+  border: none;
+}
+
+input[type='checkbox']:before {
+  content: '';
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  width: 4px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  margin: -1px -1px 0;
+  transform: rotate(45deg) translate(-50%, -50%);
+  z-index: 2;
+}
+
+input[type='checkbox']:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+input[type='checkbox'].error {
+  border: 2px solid #c61a1a;
+}
+
+label {
+  font-weight: 400;
+  font-size: 16px;
+}

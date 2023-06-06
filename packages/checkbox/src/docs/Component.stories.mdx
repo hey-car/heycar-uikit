@@ -21,9 +21,11 @@ export const handleCheckboxChange = () => {
 <Story
   name="Checkbox"
   args={{
-    label: 'Test',
-    checked: 'true',
+    label: 'Checkbox',
+    checked: false,
+    className: 'error',
     onChange: handleCheckboxChange,
+    disabled: false,
   }}
   argTypes={{
     dataTestId: {
