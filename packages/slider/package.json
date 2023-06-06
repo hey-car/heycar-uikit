@@ -30,7 +30,8 @@
     "react": "^17.0.1"
   },
   "dependencies": {
-    "@heycar-uikit/typography": "^5.0.0"
+    "@heycar-uikit/typography": "^5.0.0",
+    "react-slider": "^2.0.4"
   },
   "author": "HeyCar Team",
   "license": "UNLICENSED"

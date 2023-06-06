@@ -11,7 +11,7 @@ import styles from '!!raw-loader!../styles/default.module.css';
 
 <Meta title="Components/Molecules/Slider" component={Slider} />
 
-export const AppStoreButtonTemplate = args => {
+export const SliderTemplate = args => {
   return <Slider {...args} />;
 };
 
@@ -31,7 +31,7 @@ export const AppStoreButtonTemplate = args => {
   }}
   name="Slider"
 >
-  {AppStoreButtonTemplate.bind({})}
+  {SliderTemplate.bind({})}
 </Story>
 
 <!-- Docs -->
@@ -48,19 +48,23 @@ Slider provides users with a way to interactively adjust a value or range within
 ```tsx
 // TSX/JSX file
 // Core import is recomended
-import AppStoreButton from '@heycar-uikit/core/app-store-button';
+import Slider from '@heycar-uikit/core/slider';
 
 // or
-import AppStoreButton from '@heycar-uikit/app-store-button';
+import Slider from '@heycar-uikit/slider';
+
+function App() {
+  return <Slider />;
+}
 ```
 
 ```css
 // CSS file
 // Core import is recomended
-@import '@heycar-uikit/core/app-store-button/esm/AppStoreButton.css';
+@import '@heycar-uikit/core/slider/esm/Slider.css';
 
 // or
-@import '@heycar-uikit/app-store-button/dist/esm/AppStoreButton.css';
+@import '@heycar-uikit/slider/dist/esm/Slider.css';
 ```
 
 <!-- Description -->
