@@ -101,7 +101,7 @@
     flex-direction: column;
     align-content: flex-start;
     flex-wrap: wrap;
-    max-height: 204px;
+    max-height: 224px;
     padding-bottom: 0;
 
     & > li {
