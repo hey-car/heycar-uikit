@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.2.1](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/header@4.2.0...@heycar-uikit/header@4.2.1) (2023-06-06)
+
+
+### Bug Fixes
+
+* **header:** some burger menu issues ([#215](https://github.com/hey-car/heycar-uikit/issues/215)) ([7c40121](https://github.com/hey-car/heycar-uikit/commit/7c40121a9425dfc35376bedd872df01fb827a1d3))
+
+
+
+
+
 # [4.2.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/header@4.1.6...@heycar-uikit/header@4.2.0) (2023-06-01)
 
 
