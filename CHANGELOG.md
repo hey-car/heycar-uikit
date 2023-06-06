@@ -1,3 +1,10 @@
+## [8.6.1](https://github.com/hey-car/heycar-uikit/compare/v8.6.0...v8.6.1) (2023-06-06)
+
+
+### Bug Fixes
+
+* **header:** some burger menu issues ([#215](https://github.com/hey-car/heycar-uikit/issues/215)) ([7c40121](https://github.com/hey-car/heycar-uikit/commit/7c40121a9425dfc35376bedd872df01fb827a1d3))
+
 # [8.6.0](https://github.com/hey-car/heycar-uikit/compare/v8.5.0...v8.6.0) (2023-06-05)
 
 
