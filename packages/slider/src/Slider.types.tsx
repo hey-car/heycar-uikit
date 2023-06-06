@@ -47,7 +47,7 @@ interface SliderProps {
    */
   locale?: Locale;
   /**
-   * Show value labels while dragging thumbs. Label can bu customised via ariaValueText
+   * Show value labels while dragging thumbs. Label can be customised via ariaValueText
    */
   showThumbLabels?: boolean;
 }

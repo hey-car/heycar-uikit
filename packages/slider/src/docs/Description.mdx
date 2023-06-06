@@ -1,15 +1,96 @@
 import { Container, Row, Col } from 'storybook/blocks';
 
+import Slider from '../Slider';
+
+NOTE: This component is a wrapper for [react-slider](https://www.npmjs.com/package/react-slider)
+
 ## Usage
 
-For the most basic implementation, simply pass a breadcrumbs array with link and title in the `breadcrumbs` property
+For a basic implementation, pass the number of steps to render the slider with, some initial values and an onChange function.
 
 ```tsx live
+const leftVal = 0;
+const rightVal = 9;
+const handleChange = (values, thumbIndex) => {
+  console.log(
+    `slider values: ${values.join(',')}`,
+    `thumb index: ${thumbIndex}`,
+  );
+
+  // UPDATE LEFT AND RIGHT VALS HERE
+  // ...
+};
+
 render(
-  <Container>
-    <Row align="middle">
-      <Col></Col>
-    </Row>
-  </Container>,
+  <div>
+    <Slider
+      selectedRangeIndexes={[leftVal, rightVal]}
+      stepCount={10}
+      onChange={handleChange}
+    />
+  </div>,
+);
+```
+
+## Events
+
+The slider allows you to pass two event handlers. `onChange` is called for every value change of the slider. `onAfterChange` is called once the thumb has stopped moving.
+
+```tsx live
+const leftVal = 2;
+const rightVal = 3;
+const handleChange = (values, thumbIndex) => {
+  console.log(
+    'ON_CHANGE',
+    `slider values: ${values.join(',')}`,
+    `thumb index: ${thumbIndex}`,
+  );
+};
+
+const handleAfterChange = (values, thumbIndex) => {
+  console.log(
+    'ON_AFTER_CHANGE',
+    `slider values: ${values.join(',')}`,
+    `thumb index: ${thumbIndex}`,
+  );
+};
+
+render(
+  <div>
+    <Slider
+      selectedRangeIndexes={[leftVal, rightVal]}
+      stepCount={10}
+      onChange={handleChange}
+      onAfterChange={handleAfterChange}
+    />
+  </div>,
+);
+```
+
+## Locale &amp; Labeling
+
+Aria labels can be set for each thumb via the `locale` object (the defaults are 'Lower thumb' & 'Upper thumb'). You can also set a more descriptive label for the current values via `ariaValueText`.
+Use the inspector to see the result.
+
+```tsx live
+const leftVal = 1;
+const rightVal = 8;
+const handleChange = () => {};
+const locale = {
+  thumb1: 'Left control',
+  thumb2: 'Right control',
+};
+const valueText = state => `The value is £${state.valueNow}`;
+
+render(
+  <div>
+    <Slider
+      ariaValueText={valueText}
+      locale={locale}
+      onChange={handleChange}
+      selectedRangeIndexes={[leftVal, rightVal]}
+      stepCount={10}
+    />
+  </div>,
 );
 ```
