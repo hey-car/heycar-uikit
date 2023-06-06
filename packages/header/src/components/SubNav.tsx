@@ -4,7 +4,6 @@ import Grid from '@heycar-uikit/grid';
 import Typography from '@heycar-uikit/typography';
 
 import { DEFAULT_LOCALE } from '../constants/Header.constants';
-import { itemOnClick } from '../utils/headerItemHelpers';
 import { getSubNavGroupDetails } from '../utils/navigationHelpers';
 
 import { SubNavProps } from './Navigation.types';
@@ -16,6 +15,7 @@ const SubNav = React.forwardRef<HTMLDivElement, SubNavProps>(
     {
       isDropDownMenu,
       isOpen,
+      itemOnClick,
       Link,
       locale = DEFAULT_LOCALE,
       navItemId,
@@ -114,7 +114,9 @@ const SubNav = React.forwardRef<HTMLDivElement, SubNavProps>(
                     itemOnClick({
                       fn: trackingFn,
                       obj: {
-                        label: `${subNavGroup.heading} show all link`,
+                        label: `${subNavGroup.heading} ${
+                          showAllLink.label || locale.showAllLabel
+                        }`,
                         parentLabel: navItemName,
                         type: 'subnav_item',
                         href: showAllLink.href,

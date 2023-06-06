@@ -5,7 +5,6 @@ import Typography from '@heycar-uikit/typography';
 
 import { DEFAULT_LOCALE } from '../constants/Header.constants';
 import { useNavigationItem } from '../hooks/useNavigationItem';
-import { itemOnClick } from '../utils/headerItemHelpers';
 
 import { NavigationProps } from './Navigation.types';
 import SubNav from './SubNav';
@@ -18,6 +17,7 @@ const NavigationDropdown = React.forwardRef<HTMLDivElement, NavigationProps>(
       activeNavItem,
       currentRoute,
       dataTestId,
+      itemOnClick,
       Link,
       locale = DEFAULT_LOCALE,
       navigation = [],
@@ -100,6 +100,7 @@ const NavigationDropdown = React.forwardRef<HTMLDivElement, NavigationProps>(
                         Link={Link}
                         isDropDownMenu={true}
                         isOpen={isActive}
+                        itemOnClick={itemOnClick}
                         locale={locale}
                         navItemId={commonProps.id}
                         navItemName={label}

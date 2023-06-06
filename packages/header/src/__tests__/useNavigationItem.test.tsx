@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 import { renderHook } from '@testing-library/react-hooks';
 
+import { headerClickTracking } from '../constants/Header.constants';
 import { useNavigationItem } from '../hooks/useNavigationItem';
 
 describe('useNavigationItem', () => {
@@ -90,6 +91,93 @@ describe('useNavigationItem', () => {
       result.current.closeSiblings('test-8', hasSubNav);
 
       expect(setActiveNavItem).toHaveBeenLastCalledWith(undefined);
+    });
+  });
+
+  describe('itemOnClick', () => {
+    const trackingFn = jest.fn();
+    const onClickCB = jest.fn();
+    const label = 'Test-label';
+    const { result } = renderHook(() =>
+      useNavigationItem('test', setActiveNavItem),
+    );
+
+    it('calls tracking function with object values if passed', () => {
+      result.current.itemOnClick({
+        fn: trackingFn,
+        obj: { label, href: 'heycar.com' },
+      });
+
+      expect(trackingFn).toHaveBeenCalledTimes(1);
+      expect(trackingFn).toHaveBeenLastCalledWith({
+        ...headerClickTracking,
+        label,
+        href: 'heycar.com',
+      });
+      expect(onClickCB).not.toHaveBeenCalled();
+    });
+
+    it('only calls onClick if given an onClick, but no tracking object', () => {
+      result.current.itemOnClick(undefined, onClickCB);
+
+      // call from previous 'it'
+      expect(trackingFn).toHaveBeenCalledTimes(1);
+      // call from this 'it'
+      expect(onClickCB).toHaveBeenCalledTimes(1);
+    });
+
+    it('calls tracking function with details and onClick, if given a label, tracking function and onClick function', () => {
+      const newLabel = 'Test 2';
+
+      result.current.itemOnClick(
+        { fn: trackingFn, obj: { label: newLabel, href: 'hey.car' } },
+        onClickCB,
+      );
+
+      expect(trackingFn).toHaveBeenCalledTimes(2);
+      expect(trackingFn).toHaveBeenLastCalledWith({
+        ...headerClickTracking,
+        label: newLabel,
+        href: 'hey.car',
+      });
+
+      expect(onClickCB).toHaveBeenCalledTimes(2);
+    });
+
+    it('calls setIsNavTrayOpen with false after calling itemOnClick', () => {
+      const newLabel = 'Test 2';
+
+      const setIsNavTrayOpen = jest.fn();
+      const { result } = renderHook(() =>
+        useNavigationItem('test', setActiveNavItem, setIsNavTrayOpen),
+      );
+
+      result.current.itemOnClick({
+        fn: trackingFn,
+        obj: { label: newLabel },
+      });
+
+      expect(setIsNavTrayOpen).toBeCalledWith(false);
+    });
+
+    it('doesnt call setIsNavTrayOpen after calling itemOnClick if closeMenu is set to false', () => {
+      const newLabel = 'Test 2';
+
+      const setIsNavTrayOpen = jest.fn();
+      const { result } = renderHook(() =>
+        useNavigationItem('test', setActiveNavItem, setIsNavTrayOpen),
+      );
+
+      result.current.itemOnClick(
+        {
+          fn: trackingFn,
+          obj: { label: newLabel },
+        },
+        undefined,
+        false,
+      );
+
+      expect(setIsNavTrayOpen).not.toBeCalled();
     });
   });
 });

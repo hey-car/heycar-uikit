@@ -10,60 +10,13 @@ import {
   UK,
 } from '@heycar-uikit/icons';
 
-import { headerClickTracking } from '../constants/Header.constants';
 import {
   getCurrentLang,
   getFlagIcon,
   hasHeaderItems,
-  itemOnClick,
 } from '../utils/headerItemHelpers';
 
 describe('headerItemHelpers', () => {
-  const label = 'Test';
-  const trackingFn = jest.fn();
-  const onClickCB = jest.fn();
-
-  describe('itemOnClick', () => {
-    it('calls tracking function with object values if passed', () => {
-      itemOnClick({ fn: trackingFn, obj: { label, href: 'heycar.com' } });
-
-      expect(trackingFn).toHaveBeenCalledTimes(1);
-      expect(trackingFn).toHaveBeenLastCalledWith({
-        ...headerClickTracking,
-        label,
-        href: 'heycar.com',
-      });
-      expect(onClickCB).not.toHaveBeenCalled();
-    });
-
-    it('only calls onClick if given an onClick, but no tracking object', () => {
-      itemOnClick(undefined, onClickCB);
-
-      // call from previous 'it'
-      expect(trackingFn).toHaveBeenCalledTimes(1);
-      // call from this 'it'
-      expect(onClickCB).toHaveBeenCalledTimes(1);
-    });
-
-    it('calls tracking function with details and onClick, if given a label, tracking function and onClick function', () => {
-      const newLabel = 'Test 2';
-
-      itemOnClick(
-        { fn: trackingFn, obj: { label: newLabel, href: 'hey.car' } },
-        onClickCB,
-      );
-
-      expect(trackingFn).toHaveBeenCalledTimes(2);
-      expect(trackingFn).toHaveBeenLastCalledWith({
-        ...headerClickTracking,
-        label: newLabel,
-        href: 'hey.car',
-      });
-
-      expect(onClickCB).toHaveBeenCalledTimes(2);
-    });
-  });
-
   describe('getFlagIcon', () => {
     it('returns correct components for default languages', () => {
       const de = getFlagIcon('de-DE');

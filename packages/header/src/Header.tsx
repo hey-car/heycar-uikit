@@ -20,11 +20,8 @@ import {
   MAX_FAVES_DISPLAY_NO,
 } from './constants/Header.constants';
 import { useLangList } from './hooks/useLangList';
-import {
-  getCurrentLang,
-  hasHeaderItems,
-  itemOnClick,
-} from './utils/headerItemHelpers';
+import { useNavigationItem } from './hooks/useNavigationItem';
+import { getCurrentLang, hasHeaderItems } from './utils/headerItemHelpers';
 import { HeaderLinkProps, HeaderProps } from './Header.types';
 
 import styles from './styles/default.module.css';
@@ -56,6 +53,12 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
       undefined,
     );
     const [isSearchOpen, setIsSearchOpen] = useState(false);
+
+    const { itemOnClick } = useNavigationItem(
+      activeNavItem,
+      setActiveNavItem,
+      setIsNavTrayOpen,
+    );
 
     // Link component
     const Link = (LinkComponent || DefaultLinkComponent) as (
@@ -223,6 +226,7 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
                     <LanguageList
                       dataTestId="header-language-list"
                       heading={locale.langListHeading}
+                      itemOnClick={itemOnClick}
                       onFocusEvents={setIsFocused}
                       onHoverEvents={setIsHovering}
                       options={langItemConfig!.options}
@@ -297,6 +301,7 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
                       },
                     },
                     () => setIsNavTrayOpen(!isNavTrayOpen),
+                    false,
                   )
                 }
               >
@@ -318,6 +323,7 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
             auxiliaryDetails={auxiliaryDetails}
             currentLang={currentLang?.langCode}
             dataTestId={`${dataTestId}-navigation`}
+            itemOnClick={itemOnClick}
             langItemConfig={langItemConfig}
             locale={locale}
             navigation={navigation}
@@ -329,6 +335,7 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
             activeNavItem={activeNavItem}
             currentRoute={currentRoute}
             dataTestId={`${dataTestId}-navigation`}
+            itemOnClick={itemOnClick}
             locale={locale}
             navigation={navigation}
             setActiveNavItem={setActiveNavItem}

@@ -3,7 +3,7 @@ import React from 'react';
 import Typography from '@heycar-uikit/typography';
 
 import { LANG_OPTIONS } from '../constants/Header.constants';
-import { getFlagIcon, itemOnClick } from '../utils/headerItemHelpers';
+import { getFlagIcon } from '../utils/headerItemHelpers';
 
 import { LanguageListProps } from './LanguageList.types';
 
@@ -14,6 +14,7 @@ const LanguageList = React.forwardRef<HTMLDivElement, LanguageListProps>(
     {
       dataTestId,
       heading,
+      itemOnClick,
       onFocusEvents,
       onHoverEvents,
       options = LANG_OPTIONS,

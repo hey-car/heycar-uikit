@@ -1,8 +1,12 @@
 import { useCallback } from 'react';
 
+import { headerClickTracking } from '../constants/Header.constants';
+import { HeaderTrackingObj } from '../Header.types';
+
 const useNavigationItem = (
   activeNavItem: string | undefined,
   setActiveNavItem: (id: string | undefined) => void,
+  setIsNavTrayOpen?: (state: boolean) => void,
 ) => {
   const toggleSubNav = useCallback(
     (id: string, isActive: boolean, force?: boolean) => {
@@ -34,10 +38,25 @@ const useNavigationItem = (
     [activeNavItem, setActiveNavItem],
   );
 
+  const itemOnClick = (
+    track?: {
+      fn: ((trackingObj: HeaderTrackingObj) => void) | undefined;
+      obj: Partial<HeaderTrackingObj>;
+    },
+    onClick?: () => void,
+    closeMenu = true,
+  ) => {
+    if (closeMenu && setIsNavTrayOpen) setIsNavTrayOpen(false);
+    if (track && typeof track?.fn === 'function')
+      track.fn({ ...headerClickTracking, ...track.obj } as HeaderTrackingObj);
+    if (typeof onClick === 'function') onClick();
+  };
+
   return {
     toggleSubNav,
     keyboardOpen,
     closeSiblings,
+    itemOnClick,
   };
 };
 
