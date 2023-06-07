@@ -1,0 +1,23 @@
+import { Container, Row, Col } from 'storybook/blocks';
+
+NOTE: This component is a wrapper for [react-slider](https://www.npmjs.com/package/react-slider)
+
+## Usage
+
+For a basic implementation, pass the number of steps to render the slider with, some initial values and an onChange function.
+
+```tsx live
+const leftVal = 0;
+const rightVal = 9;
+const handleChange = (values, thumbIndex) => {
+  console.log(
+    `slider values: ${values.join(',')}`,
+    `thumb index: ${thumbIndex}`,
+  );
+
+  // UPDATE LEFT AND RIGHT VALS HERE
+  // ...
+};
+
+render(<div></div>);
+```

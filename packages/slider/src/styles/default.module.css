@@ -9,7 +9,6 @@
 
 .sliderWrapper {
   & .heycarSlider {
-    margin-top: 30px;
     height: var(--slider-thumb-size);
     display: flex;
     align-items: center;
@@ -81,6 +80,12 @@
     & :global(.tooltip) {
       opacity: 1;
       transform: scale(1) translateY(0);
+    }
+  }
+
+  &.isWithHistogram {
+    & :global(.range-slider__track) {
+      height: 2px;
     }
   }
 }

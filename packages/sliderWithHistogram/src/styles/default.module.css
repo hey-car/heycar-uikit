@@ -1,0 +1,18 @@
+@import '../../../themes/src/default.css';
+
+:root {
+  --histogram-height: 64px;
+  --slider-height: 22px;
+}
+
+.wrapper {
+  & .sliderWrapper {
+    margin-top: -10px;
+  }
+}
+
+.histogramWrapper {
+  position: relative;
+  margin: 0 calc(var(--slider-height) / 2);
+  height: var(--histogram-height);
+}
