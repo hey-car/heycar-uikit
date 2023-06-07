@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Meta, Story, Props } from '@storybook/addon-docs';
 import { ComponentHeader, CssVars, TabContainer } from 'storybook/blocks';
 
@@ -12,7 +13,25 @@ import styles from '!!raw-loader!../styles/default.module.css';
 <Meta title="Components/Molecules/Slider" component={Slider} />
 
 export const SliderTemplate = args => {
-  return <Slider {...args} />;
+  const [selected, setSelected] = useState(args.selectedRangeIndexes);
+  const onChange = (values, index) => {
+    console.log('onClick', values, index);
+    setSelected(values);
+  };
+  const onAfterChange = (values, index) => {
+    console.log('onAfterClick', values, index);
+    setSelected(values);
+  };
+  return (
+    <div style={{ maxWidth: '500px' }}>
+      <Slider
+        {...args}
+        onChange={onChange}
+        onAfterChange={onAfterChange}
+        selectedRangeIndexes={selected}
+      />
+    </div>
+  );
 };
 
 <!-- Canvas -->
@@ -20,13 +39,6 @@ export const SliderTemplate = args => {
 <Story
   args={{
     stepCount: 10,
-    onChange: (values, index) => {
-      console.log('onClick', values, index);
-    },
-    onAfterChange: (values, index) => {
-      console.log('onAfterClick', values, index);
-    },
-    selectedRangeIndexes: [0, 9],
     ariaValueText: 'the label',
   }}
   name="Slider"
