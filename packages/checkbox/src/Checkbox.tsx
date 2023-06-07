@@ -9,9 +9,10 @@ const Checkbox: FC<CheckboxProps> = ({
   checked,
   onChange,
   disabled,
+  error,
   className,
 }) => {
-  const [isChecked, setIsChecked] = useState(checked);
+  const [isChecked, setIsChecked] = useState(checked ? true : false);
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const isNewChecked = event.target.checked;
@@ -24,7 +25,7 @@ const Checkbox: FC<CheckboxProps> = ({
     <label className={styles.label}>
       <input
         checked={isChecked}
-        className={className ? className : ''}
+        className={`${className ? className : ''} ${error ? 'error' : ''}`}
         disabled={disabled ? disabled : false}
         onChange={e => handleChange(e)}
         type="checkbox"
