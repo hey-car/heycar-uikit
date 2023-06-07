@@ -6,7 +6,7 @@ import Slider from '@heycar-uikit/slider';
 import Histogram from './components/Histogram';
 import { sanitiseRangeIndexes } from './utils/histogramHelpers';
 import {
-  DEFAULT_LOCALE,
+  DEFAULT_LOADING_STR,
   HISTOGRAM_HEIGHT,
   SLIDER_HEIGHT,
 } from './SliderWithHistogram.constants';
@@ -19,7 +19,7 @@ export const SliderWithHistogram: FC<SliderWithHistogramProps> = ({
   className,
   onChange,
   onAfterChange,
-  locale = DEFAULT_LOCALE,
+  locale,
   minDistance,
   selectedRangeIndexes,
   ariaValueText,
@@ -80,7 +80,7 @@ export const SliderWithHistogram: FC<SliderWithHistogramProps> = ({
       {!hide && (
         <div className={styles.histogramWrapper}>
           {isLoading ? (
-            'LOADING'
+            locale?.loading || DEFAULT_LOADING_STR
           ) : (
             <Histogram
               height={height}

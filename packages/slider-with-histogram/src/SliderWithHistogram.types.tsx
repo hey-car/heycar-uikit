@@ -7,6 +7,7 @@ interface ValueState {
 interface Locale {
   thumb1: string;
   thumb2: string;
+  loading: string;
 }
 
 interface SliderWithHistogramProps {

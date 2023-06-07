@@ -4,7 +4,7 @@
   "compilerOptions": {
     "outDir": "dist",
     "rootDirs": ["src"],
-    "baseUrl": ".",
+    "baseUrl": "",
     "paths": {
       "@heycar-uikit/*": ["../*/src"]
     }

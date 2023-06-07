@@ -1,7 +1,7 @@
 {
-  "name": "@heycar-uikit/slider",
+  "name": "@heycar-uikit/slider-with-histogram",
   "version": "1.0.0",
-  "description": "HeyCar-UIKit Slider",
+  "description": "HeyCar-UIKit SliderWithHistogram",
   "main": "dist/index.js",
   "module": "./dist/esm/index.js",
   "scripts": {
@@ -16,13 +16,15 @@
     "typescript",
     "ui-components",
     "design-systems",
-    "slider"
+    "slider",
+    "histogram",
+    "Slider With Histogram"
   ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hey-car/heycar-uikit.git"
   },
-  "homepage": "https://github.com/hey-car/heycar-uikit/tree/main/packages/slider#readme",
+  "homepage": "https://github.com/hey-car/heycar-uikit/tree/main/packages/slider-with-histogram#readme",
   "publishConfig": {
     "access": "public"
   },
@@ -30,7 +32,7 @@
     "react": "^17.0.1"
   },
   "dependencies": {
-    "@heycar-uikit/typography": "^5.0.0"
+    "@heycar-uikit/slider": "^1.0.0"
   },
   "author": "HeyCar Team",
   "license": "UNLICENSED"
