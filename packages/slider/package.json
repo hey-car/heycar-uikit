@@ -1,0 +1,38 @@
+{
+  "name": "@heycar-uikit/slider",
+  "version": "1.0.0",
+  "description": "HeyCar-UIKit Slider",
+  "main": "dist/index.js",
+  "module": "./dist/esm/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ui",
+    "uikit",
+    "react",
+    "components",
+    "heycar",
+    "typescript",
+    "ui-components",
+    "design-systems",
+    "slider"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hey-car/heycar-uikit.git"
+  },
+  "homepage": "https://github.com/hey-car/heycar-uikit/tree/main/packages/slider#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "react": "^17.0.1"
+  },
+  "dependencies": {
+    "@heycar-uikit/typography": "^5.0.0",
+    "react-slider": "^2.0.4"
+  },
+  "author": "HeyCar Team",
+  "license": "UNLICENSED"
+}

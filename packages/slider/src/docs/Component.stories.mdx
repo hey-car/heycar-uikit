@@ -1,0 +1,100 @@
+import { useState } from 'react';
+import { Meta, Story, Props } from '@storybook/addon-docs';
+import { ComponentHeader, CssVars, TabContainer } from 'storybook/blocks';
+
+import Description from './Description.mdx';
+import Changelog from '../../CHANGELOG.md';
+import Slider from '../Slider';
+import { version } from '../../package.json';
+import styles from '!!raw-loader!../styles/default.module.css';
+
+<!-- Meta -->
+
+<Meta title="Components/Molecules/Slider" component={Slider} />
+
+export const SliderTemplate = args => {
+  const [selected, setSelected] = useState(args.selectedRangeIndexes);
+  const onChange = (values, index) => {
+    console.log('onClick', values, index);
+    setSelected(values);
+  };
+  const onAfterChange = (values, index) => {
+    console.log('onAfterClick', values, index);
+    setSelected(values);
+  };
+  return (
+    <div style={{ maxWidth: '500px' }}>
+      <Slider
+        {...args}
+        onChange={onChange}
+        onAfterChange={onAfterChange}
+        selectedRangeIndexes={selected}
+      />
+    </div>
+  );
+};
+
+<!-- Canvas -->
+
+<Story
+  args={{
+    stepCount: 10,
+    ariaValueText: 'the label',
+  }}
+  name="Slider"
+>
+  {SliderTemplate.bind({})}
+</Story>
+
+<!-- Docs -->
+
+<ComponentHeader
+  name="Slider"
+  version={version}
+  stage={1}
+  design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/Design-system?type=design&node-id=16183-216308&t=7R05xcivHCpVcg0r-0"
+/>
+
+Slider provides users with a way to interactively adjust a value or range within a specific range or set of options.
+
+```tsx
+// TSX/JSX file
+// Core import is recomended
+import Slider from '@heycar-uikit/core/slider';
+
+// or
+import Slider from '@heycar-uikit/slider';
+
+function App() {
+  return <Slider />;
+}
+```
+
+```css
+// CSS file
+// Core import is recomended
+@import '@heycar-uikit/core/slider/esm/Slider.css';
+
+// or
+@import '@heycar-uikit/slider/dist/esm/Slider.css';
+```
+
+<!-- Description -->
+
+<TabContainer
+  tabs={[
+    { label: 'Description', component: <Description /> },
+    { label: 'Props', component: <Props of={Slider} /> },
+    {
+      label: 'CSS tokens',
+      component: (
+        <CssVars
+          css={`
+            ${styles}
+          `}
+        />
+      ),
+    },
+    { label: 'Changelog', component: <Changelog /> },
+  ]}
+/>
