@@ -26,9 +26,6 @@
   "peerDependencies": {
     "react": "^17.0.1"
   },
-  "dependencies": {
-    "classnames": "^2.3.1"
-  },
   "postinstall": "node ./dist/send-stats.js > /dev/null 2>&1 || exit 0",
   "author": "HeyCar Team",
   "license": "UNLICENSED",

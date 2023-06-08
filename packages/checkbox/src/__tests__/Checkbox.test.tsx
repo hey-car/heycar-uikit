@@ -6,7 +6,7 @@ import Checkbox from '../Checkbox';
 
 describe('Checkbox', () => {
   describe('Prop tests', () => {
-    it('should set value', () => {
+    it('should set label" & "sets component as "checked" on click', () => {
       const { container } = render(
         <Checkbox
           checked={false}

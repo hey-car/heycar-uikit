@@ -10,6 +10,7 @@ const Checkbox: FC<CheckboxProps> = ({
   onChange,
   disabled,
   error,
+  dataTestId,
   className,
 }) => {
   const [isChecked, setIsChecked] = useState(checked ? true : false);
