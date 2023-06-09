@@ -23,10 +23,10 @@ npm install @heycar-uikit/sliderWithHistogram
 ```tsx
 // TSX/JSX file
 // Core import is recomended
-import Slider from '@heycar-uikit/core/sliderWithHistogram';
+import SliderWithHistogram from '@heycar-uikit/core/slider-with-histogram';
 
 // or
-import Slider from '@heycar-uikit/sliderWithHistogram';
+import SliderWithHistogram from '@heycar-uikit/slider-with-histogram';
 
 function App() {
   return <SliderWithHistogram />;
@@ -36,10 +36,10 @@ function App() {
 ```css
 // CSS file
 // Core import is recomended
-@import '@heycar-uikit/core/slider-with-histogram/esm/SliderWithHistogram.css';
+@import '@heycar-uikit/core/slider-with-histogram/esm/SliderWithHistogram.constants.css';
 
 // or
-@import '@heycar-uikit/slider-with-histogram/dist/esm/SliderWithHistogram.css';
+@import '@heycar-uikit/slider-with-histogram/dist/esm/SliderWithHistogram.constants.css';
 ```
 
 ## Documentation and sandbox

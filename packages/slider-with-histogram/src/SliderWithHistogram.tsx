@@ -4,7 +4,7 @@ import React, { FC, useEffect, useRef, useState } from 'react';
 import Slider from '@heycar-uikit/slider';
 
 import Histogram from './components/Histogram';
-import { sanitiseRangeIndexes } from './utils/histogramHelpers';
+import { debounce, sanitiseRangeIndexes } from './utils/histogramHelpers';
 import {
   DEFAULT_LOADING_STR,
   HISTOGRAM_HEIGHT,
@@ -41,8 +41,7 @@ export const SliderWithHistogram: FC<SliderWithHistogramProps> = ({
     if (onChange) onChange([values[0], values[1]], thumbIndex);
   };
 
-  // TODO: write own debounce (100)
-  const updateCanvasSize = () => {
+  const updateCanvasSize = debounce(() => {
     if (internalRef.current) {
       // @ts-ignore
       const rect = internalRef.current.getBoundingClientRect();
@@ -54,7 +53,7 @@ export const SliderWithHistogram: FC<SliderWithHistogramProps> = ({
       setWidth(newWidth);
       setHeight(newHeight);
     }
-  };
+  });
 
   useEffect(() => {
     updateCanvasSize();

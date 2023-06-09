@@ -6,7 +6,13 @@ NOTE: This component is a wrapper for [react-slider](https://www.npmjs.com/packa
 
 ## Usage
 
-For a basic implementation, pass the number of steps to render the slider with, some initial values and an onChange function.
+For a basic implementation you need to pass:
+
+`stepCount` - number of steps (or options) to render the slider with.
+
+`selectedRangeIndexes` - initial selected indexs for the two thumbs. e.g. to set the thumbs at each end of a Slider with 10 steps, the `selectedRangeIndexes` would be `[0,9]`.
+
+`onChange` - a function to handle the change event
 
 ```tsx live
 const leftVal = 0;
@@ -87,6 +93,35 @@ render(
     <Slider
       ariaValueText={valueText}
       locale={locale}
+      onChange={handleChange}
+      selectedRangeIndexes={[leftVal, rightVal]}
+      stepCount={10}
+    />
+  </div>,
+);
+```
+
+## minDistance
+
+You can set a minimum distance between the two thumbs with the `minDistance` prop.
+If one thumb is dragged beyond the minDistance between the two, then the second thumb will be moved to maintain the distance.
+
+```tsx live
+const leftVal = 3;
+const rightVal = 6;
+const handleChange = () => {};
+const locale = {
+  thumb1: 'Left control',
+  thumb2: 'Right control',
+};
+const valueText = state => `The value is £${state.valueNow}`;
+
+render(
+  <div>
+    <Slider
+      ariaValueText={valueText}
+      locale={locale}
+      minDistance={3}
       onChange={handleChange}
       selectedRangeIndexes={[leftVal, rightVal]}
       stepCount={10}

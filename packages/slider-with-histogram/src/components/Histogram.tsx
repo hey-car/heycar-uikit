@@ -65,7 +65,6 @@ const Histogram = ({
       }
 
       if (selectedRangeIndexes) {
-        console.log('NAT', selectedRangeIndexes);
         ctx.beginPath();
         const [from, to] = selectedRangeIndexes;
 

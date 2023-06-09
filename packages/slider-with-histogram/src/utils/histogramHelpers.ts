@@ -42,4 +42,15 @@ const sanitiseRangeIndexes = (
   return [from, to];
 };
 
-export { drawCurve, sanitiseRangeIndexes };
+const debounce = (func: () => void, timeout = 100) => {
+  let timer: ReturnType<typeof setTimeout>;
+
+  return () => {
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      func.apply(this);
+    }, timeout);
+  };
+};
+
+export { debounce, drawCurve, sanitiseRangeIndexes };

@@ -36,10 +36,10 @@ function App() {
 ```css
 // CSS file
 // Core import is recomended
-@import '@heycar-uikit/core/slider/esm/Slider.css';
+@import '@heycar-uikit/core/slider/esm/Slider.constants.css';
 
 // or
-@import '@heycar-uikit/slider/dist/esm/Slider.css';
+@import '@heycar-uikit/slider/dist/esm/Slider.constants.css';
 ```
 
 ## Documentation and sandbox
