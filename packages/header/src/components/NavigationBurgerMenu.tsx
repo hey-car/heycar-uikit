@@ -6,7 +6,6 @@ import Typography from '@heycar-uikit/typography';
 
 import { DEFAULT_LOCALE } from '../constants/Header.constants';
 import { useNavigationItem } from '../hooks/useNavigationItem';
-import { itemOnClick } from '../utils/headerItemHelpers';
 import { extendNavigation } from '../utils/navigationHelpers';
 
 import { NavigationProps } from './Navigation.types';
@@ -21,6 +20,7 @@ const NavigationBurgerMenu = React.forwardRef<HTMLDivElement, NavigationProps>(
       activeNavItem,
       auxiliaryDetails: aux,
       dataTestId,
+      itemOnClick,
       langItemConfig,
       Link,
       locale = DEFAULT_LOCALE,
@@ -94,6 +94,7 @@ const NavigationBurgerMenu = React.forwardRef<HTMLDivElement, NavigationProps>(
                             },
                           },
                           () => toggleSubNav(id, isActive),
+                          false,
                         )
                       }
                       onKeyDown={e => keyboardOpen(e, id, isActive)}
@@ -112,6 +113,7 @@ const NavigationBurgerMenu = React.forwardRef<HTMLDivElement, NavigationProps>(
                         Link={Link}
                         isDropDownMenu={false}
                         isOpen={isActive}
+                        itemOnClick={itemOnClick}
                         locale={locale}
                         navItemId={commonProps.id}
                         navItemName={label}

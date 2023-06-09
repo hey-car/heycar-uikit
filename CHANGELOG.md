@@ -1,3 +1,31 @@
+# [8.7.0](https://github.com/hey-car/heycar-uikit/compare/v8.6.1...v8.7.0) (2023-06-08)
+
+
+### Features
+
+* **slider:** slider plus unit tests  ([#216](https://github.com/hey-car/heycar-uikit/issues/216)) ([4417cdc](https://github.com/hey-car/heycar-uikit/commit/4417cdc51979602797cad3e4e8753720ba91d615))
+
+## [8.6.1](https://github.com/hey-car/heycar-uikit/compare/v8.6.0...v8.6.1) (2023-06-06)
+
+
+### Bug Fixes
+
+* **header:** some burger menu issues ([#215](https://github.com/hey-car/heycar-uikit/issues/215)) ([7c40121](https://github.com/hey-car/heycar-uikit/commit/7c40121a9425dfc35376bedd872df01fb827a1d3))
+
+# [8.6.0](https://github.com/hey-car/heycar-uikit/compare/v8.5.0...v8.6.0) (2023-06-05)
+
+
+### Features
+
+* **segmented-buttons:** added segmented buttons component ([#213](https://github.com/hey-car/heycar-uikit/issues/213)) ([2813359](https://github.com/hey-car/heycar-uikit/commit/2813359d6258b86a8f4d7a6739a4d411213146d7))
+
+# [8.5.0](https://github.com/hey-car/heycar-uikit/compare/v8.4.1...v8.5.0) (2023-06-01)
+
+
+### Features
+
+* **header:** enhanced information sent to tracking function ([#214](https://github.com/hey-car/heycar-uikit/issues/214)) ([eeae6be](https://github.com/hey-car/heycar-uikit/commit/eeae6be3d7fa0efb1ac44a9d53b9ea2aaa8a3125))
+
 ## [8.4.1](https://github.com/hey-car/heycar-uikit/compare/v8.4.0...v8.4.1) (2023-05-25)
 
 

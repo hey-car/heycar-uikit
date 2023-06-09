@@ -222,6 +222,7 @@ module.exports = {
       'error',
       { functions: false, classes: true, variables: true },
     ],
+    '@typescript-eslint/no-non-null-assertion': 'off',
 
     // Imports, file extensions
     'import/no-extraneous-dependencies': [

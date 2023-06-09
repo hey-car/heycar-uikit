@@ -1,0 +1,113 @@
+import { Meta, Story, Props } from '@storybook/addon-docs';
+import { ComponentHeader, TabContainer } from 'storybook/blocks';
+import { Gallery } from '@heycar-uikit/icons';
+
+import Description from './Description.mdx';
+import Changelog from '../../CHANGELOG.md';
+import SegmentedButtons from '../SegmentedButtons';
+import { version } from '../../package.json';
+import styles from '!!raw-loader!../styles/default.module.css';
+
+<!-- Meta -->
+
+<Meta
+  title="Components/Molecules/SegmentedButtons"
+  component={SegmentedButtons}
+  argTypes={{
+    dataTestId: {
+      table: {
+        disable: true,
+      },
+    },
+    currentValue: {
+      options: ['lft', 'mid', 'rht'],
+      control: 'radio',
+    },
+    disabled: {
+      control: 'boolean',
+    },
+    wideView: {
+      control: 'boolean',
+    },
+    icon: {
+      control: 'select',
+      options: ['Icon', 'No Icon'],
+      mapping: {
+        Icon: <Gallery />,
+        ['No Icon']: undefined,
+      },
+    },
+  }}
+/>
+
+export const SegmentedButtonsTemplate = ({ ...props }) => {
+  const btns = [
+    {
+      label: 'Left',
+      value: 'lft',
+      isDisabled: props.disabled,
+      icon: props.icon,
+    },
+    {
+      label: 'Middle',
+      value: 'mid',
+      isDisabled: props.disabled,
+      icon: props.icon,
+    },
+    {
+      label: 'Right',
+      value: 'rht',
+      isDisabled: props.disabled,
+      icon: props.icon,
+    },
+  ];
+  return <SegmentedButtons buttons={btns} {...props} />;
+};
+
+<!-- Canvas -->
+
+<Story
+  args={{
+    onChange: value => {
+      console.log('Value: ', value);
+    },
+    disabled: false,
+    wideView: false,
+    icon: 'No Icon',
+  }}
+  name="SegmentedButtons"
+>
+  {SegmentedButtonsTemplate.bind({})}
+</Story>
+
+<!-- Docs -->
+
+<ComponentHeader
+  name="SegmentedButtons"
+  version={version}
+  stage={1}
+  design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/Design-system?type=design&node-id=2073-48212&t=5DXQ5Fj9xmmbEVBw-0"
+/>
+
+Segmented buttons help people select options, switch views, or sort elements
+
+```tsx
+// TSX/JSX file
+import SegmentedButtons from '@heycar-uikit/core/segmented-buttons';
+```
+
+```css
+// CSS file
+@import '@heycar-uikit/core/segmented-buttons/esm/SegmentedButtons.css';
+```
+
+<!-- Description -->
+
+<TabContainer
+  tabs={[
+    { label: 'Description', component: <Description /> },
+    { label: 'Props', component: <Props of={SegmentedButtons} /> },
+    { label: 'Changelog', component: <Changelog /> },
+  ]}
+/>
+```

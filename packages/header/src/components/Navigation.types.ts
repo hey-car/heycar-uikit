@@ -5,6 +5,15 @@ import {
   Locale,
 } from '../Header.types';
 
+type ItemOnClick = (
+  track?: {
+    fn: ((trackingObj: HeaderTrackingObj) => void) | undefined;
+    obj: Partial<HeaderTrackingObj>;
+  },
+  onClick?: () => void,
+  closeMenu?: boolean,
+) => void;
+
 interface SubNavItem {
   /**
    * Description text to be displayed under the label
@@ -116,6 +125,10 @@ interface NavigationProps
    * Tracking function to be called with tracking object, onClick for any link or button within the Header
    */
   trackingFn?: (trackingObj: HeaderTrackingObj) => void;
+  /**
+   * Helper function to be called on item click
+   */
+  itemOnClick: ItemOnClick;
 }
 
 interface SubNavProps {
@@ -151,6 +164,10 @@ interface SubNavProps {
    * Tracking function to be called with tracking object, onClick for any link or button within the Header
    */
   trackingFn?: (trackingObj: HeaderTrackingObj) => void;
+  /**
+   * Helper function to be called on item click
+   */
+  itemOnClick: ItemOnClick;
 }
 
-export { NavigationProps, NavItem, SubNavGroup, SubNavProps };
+export { ItemOnClick, NavigationProps, NavItem, SubNavGroup, SubNavProps };
