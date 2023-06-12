@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { FC, useEffect, useRef, useState } from 'react';
 
 import Slider from '@heycar-uikit/slider';
