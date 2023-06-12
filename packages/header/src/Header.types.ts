@@ -205,6 +205,10 @@ interface HeaderProps {
    * Data representing the nav and sub nav
    */
   navigation: NavItem[];
+  /**
+   * Event called when the burger menu is open or closed. Intended to be used by the parent app to block scrolling while burger menu is open
+   */
+  onToggleBurgerMenu?: (isOpen: boolean) => void;
 }
 
 export { HeaderLinkProps, HeaderTrackingObj, HeaderProps, LangOption, Locale };

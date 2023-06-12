@@ -42,6 +42,7 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
       locale = DEFAULT_LOCALE,
       logoHref,
       navigation,
+      onToggleBurgerMenu,
       searchItemConfig,
       trackingFn,
     },
@@ -54,10 +55,20 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
     );
     const [isSearchOpen, setIsSearchOpen] = useState(false);
 
+    const toggleBurgerMenu = (isOpen: boolean) => {
+      setIsNavTrayOpen(isOpen);
+      if (typeof onToggleBurgerMenu === 'function') onToggleBurgerMenu(isOpen);
+    };
+
+    const resetMenuState = () => {
+      setActiveNavItem(undefined);
+      toggleBurgerMenu(false);
+    };
+
     const { itemOnClick } = useNavigationItem(
       activeNavItem,
       setActiveNavItem,
-      setIsNavTrayOpen,
+      resetMenuState,
     );
 
     // Link component
@@ -300,7 +311,7 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
                         action: isNavTrayOpen ? 'close' : 'open',
                       },
                     },
-                    () => setIsNavTrayOpen(!isNavTrayOpen),
+                    () => toggleBurgerMenu(!isNavTrayOpen),
                     false,
                   )
                 }

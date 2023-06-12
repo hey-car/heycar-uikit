@@ -255,6 +255,21 @@ describe('Header', () => {
 
       expect(accountFn).toBeCalledTimes(1);
     });
+
+    it('calls passed onToggleBurgerMenu event when clicking burger menu toggle', () => {
+      const onToggleBurgerMenuFn = jest.fn();
+      const { getByRole } = render(
+        <Header
+          {...defaultData}
+          dataTestId={dataTestId}
+          onToggleBurgerMenu={onToggleBurgerMenuFn}
+        />,
+      );
+
+      fireEvent.click(getByRole('button', { name: 'Navigation menu' }));
+
+      expect(onToggleBurgerMenuFn).toBeCalledWith(true);
+    });
   });
 
   /**

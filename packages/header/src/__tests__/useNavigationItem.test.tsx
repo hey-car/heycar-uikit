@@ -144,12 +144,12 @@ describe('useNavigationItem', () => {
       expect(onClickCB).toHaveBeenCalledTimes(2);
     });
 
-    it('calls setIsNavTrayOpen with false after calling itemOnClick', () => {
+    it('calls resetMenuState after calling itemOnClick', () => {
       const newLabel = 'Test 2';
 
-      const setIsNavTrayOpen = jest.fn();
+      const resetMenuState = jest.fn();
       const { result } = renderHook(() =>
-        useNavigationItem('test', setActiveNavItem, setIsNavTrayOpen),
+        useNavigationItem('test', setActiveNavItem, resetMenuState),
       );
 
       result.current.itemOnClick({
@@ -157,7 +157,7 @@ describe('useNavigationItem', () => {
         obj: { label: newLabel },
       });
 
-      expect(setIsNavTrayOpen).toBeCalledWith(false);
+      expect(resetMenuState).toBeCalledWith();
     });
 
     it('doesnt call setIsNavTrayOpen after calling itemOnClick if closeMenu is set to false', () => {
