@@ -1,33 +1,96 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
-import { fireEvent, render } from '@testing-library/react';
+import { render } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 
 import Checkbox from '../Checkbox';
 
 describe('Checkbox', () => {
   describe('Prop tests', () => {
-    it('should set label" & "sets component as "checked" on click', () => {
-      const { container } = render(
+    it('sets `data-test-id` attribute', () => {
+      const { getByTestId } = render(
         <Checkbox
           checked={false}
-          label="Checkbox default value"
-          onChange={() => {
-            console.log('test');
-          }}
+          dataTestId="checkbox-test"
+          onChange={() => {}}
         />,
       );
 
-      expect(container.querySelector('label')).toHaveTextContent(
-        'Checkbox default value',
+      expect(getByTestId('checkbox-test').tagName).toBe('LABEL');
+    });
+
+    it('sets the label', () => {
+      const { getByLabelText } = render(
+        <Checkbox
+          checked={false}
+          label="Checkbox default value"
+          onChange={() => {}}
+        />,
       );
 
-      const checkbox = container.querySelectorAll(
-        "input[type='checkbox']",
-      )[0] as HTMLInputElement;
+      expect(getByLabelText('Checkbox default value')).toBeInTheDocument();
+    });
 
-      fireEvent.click(checkbox);
+    it('sets component as checked', () => {
+      const { getByRole } = render(
+        <Checkbox
+          checked={true}
+          label="Checkbox default value"
+          onChange={() => {}}
+        />,
+      );
 
-      expect(checkbox.checked).toBe(true);
+      expect(getByRole('checkbox')).toBeChecked();
+    });
+
+    it('sets component as disabled', () => {
+      const { getByRole } = render(
+        <Checkbox
+          checked={true}
+          disabled={true}
+          label="Checkbox default value"
+          onChange={() => {}}
+        />,
+      );
+
+      expect(getByRole('checkbox')).toBeDisabled();
+    });
+  });
+
+  describe('Interaction tests', () => {
+    it('calls on change event on click', () => {
+      const handleChange = jest.fn();
+      const { getByRole } = render(
+        <Checkbox
+          checked={false}
+          label="Checkbox default value"
+          onChange={handleChange}
+        />,
+      );
+
+      const checkbox = getByRole('checkbox');
+
+      userEvent.click(checkbox);
+
+      expect(handleChange).toHaveBeenCalled();
+    });
+
+    it('doesnt call on change event if disabled', () => {
+      const handleChange = jest.fn();
+      const { getByRole } = render(
+        <Checkbox
+          checked={false}
+          disabled={true}
+          label="Checkbox default value"
+          onChange={handleChange}
+        />,
+      );
+
+      const checkbox = getByRole('checkbox');
+
+      userEvent.click(checkbox);
+
+      expect(handleChange).not.toHaveBeenCalled();
     });
   });
 });

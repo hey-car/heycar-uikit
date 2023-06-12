@@ -6,7 +6,7 @@ import styles from './styles/default.module.css';
 
 const Checkbox: FC<CheckboxProps> = ({
   label,
-  checked = false,
+  checked,
   onChange,
   disabled,
   error,
