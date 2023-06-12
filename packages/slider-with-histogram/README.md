@@ -1,4 +1,4 @@
-# HeyCar-UIKit - Slider
+# HeyCar-UIKit - SliderWithHistogram
 
 [![Tests](https://github.com/hey-car/heycar-uikit/actions/workflows/build.yml/badge.svg)](https://github.com/hey-car/heycar-uikit/actions/workflows/build.yml)
 [![Coverage Status](https://coveralls.io/repos/github/hey-car/heycar-uikit/badge.svg)](https://coveralls.io/github/hey-car/heycar-uikit)
