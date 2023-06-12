@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 import { Meta, Story, Props } from '@storybook/addon-docs';
 import { ComponentHeader, CssVars, TabContainer } from 'storybook/blocks';
 
@@ -10,10 +12,13 @@ import Changelog from '../../CHANGELOG.md';
 
 <Meta title="Components/Molecules/Checkbox" component={Checkbox} />
 
-export const CheckboxTemplate = args => <Checkbox {...args} />;
-
-export const handleCheckboxChange = () => {
-  console.log('Checkbox value changed:');
+export const CheckboxTemplate = args => {
+  const [isChecked, setIsChecked] = useState(false);
+  const handleChange = event => {
+    const isNewChecked = event.target.checked;
+    setIsChecked(isNewChecked);
+  };
+  return <Checkbox {...args} checked={isChecked} onChange={handleChange} />;
 };
 
 <!-- Canvas -->
@@ -22,13 +27,16 @@ export const handleCheckboxChange = () => {
   name="Checkbox"
   args={{
     label: 'Checkbox',
-    checked: false,
     error: 'true',
-    onChange: handleCheckboxChange,
     disabled: false,
   }}
   argTypes={{
     dataTestId: {
+      table: {
+        disable: true,
+      },
+    },
+    checked: {
       table: {
         disable: true,
       },

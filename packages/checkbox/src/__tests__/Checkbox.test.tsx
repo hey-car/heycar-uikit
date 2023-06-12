@@ -12,7 +12,7 @@ describe('Checkbox', () => {
           checked={false}
           label="Checkbox default value"
           onChange={() => {
-            console.log('Checkbox value changed:');
+            console.log('test');
           }}
         />,
       );

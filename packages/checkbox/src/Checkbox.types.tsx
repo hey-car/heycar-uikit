@@ -5,5 +5,5 @@ export interface CheckboxProps {
   disabled?: boolean;
   error?: boolean;
   dataTestId?: string;
-  onChange: (checked: boolean) => void;
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }

@@ -6,18 +6,14 @@ import Checkbox from '../Checkbox';
 Used for selecting multiple values from several options.
 
 ```tsx live
-const handleCheckboxChange = () => {
-  console.log('Checkbox value changed:');
+const handleChange = event => {
+  //This is where you update the state
 };
 render(
   <Container>
     <Row align="middle">
       <Col>
-        <Checkbox
-          label="Checkbox"
-          checked={false}
-          onChange={handleCheckboxChange}
-        />
+        <Checkbox label="Checkbox" checked={false} onChange={handleChange} />
       </Col>
     </Row>
   </Container>,

@@ -1,4 +1,4 @@
-import React, { FC, useState } from 'react';
+import React, { FC } from 'react';
 
 import { CheckboxProps } from './Checkbox.types';
 
@@ -6,29 +6,20 @@ import styles from './styles/default.module.css';
 
 const Checkbox: FC<CheckboxProps> = ({
   label,
-  checked,
+  checked = false,
   onChange,
   disabled,
   error,
   dataTestId,
   className,
 }) => {
-  const [isChecked, setIsChecked] = useState(checked ? true : false);
-
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const isNewChecked = event.target.checked;
-
-    setIsChecked(isNewChecked);
-    onChange(isNewChecked);
-  };
-
   return (
-    <label className={styles.label}>
+    <label className={styles.label} data-test-id={dataTestId}>
       <input
-        checked={isChecked}
-        className={`${className ? className : ''} ${error ? 'error' : ''}`}
+        checked={checked}
+        className={`${className ? className : ''} ${error ? styles.error : ''}`}
         disabled={disabled ? disabled : false}
-        onChange={e => handleChange(e)}
+        onChange={e => onChange(e)}
         type="checkbox"
       />
       {label}
