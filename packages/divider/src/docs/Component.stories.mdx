@@ -1,0 +1,60 @@
+import { useState } from 'react';
+
+import { Meta, Story, Props } from '@storybook/addon-docs';
+import { ComponentHeader, CssVars, TabContainer } from 'storybook/blocks';
+
+import Divider from '../Divider';
+import { version } from '../../package.json';
+import Description from './Description.mdx';
+import Changelog from '../../CHANGELOG.md';
+
+<!-- Meta -->
+
+<Meta title="Components/Atoms/Divider" component={Divider} />
+
+export const DividerTemplate = args => <Divider {...args} />;
+
+<!-- Canvas -->
+
+<Story
+  name="Divider"
+>
+  {DividerTemplate.bind({})}
+</Story>
+<!-- Docs -->
+
+<ComponentHeader
+  name="DividerTemplate"
+  version={version}
+  stage={1}
+  design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/OTP-Global-Design-System?node-id=4289%3A100591"
+/>
+
+```tsx
+// TSX/JSX file
+// Core import is recomended
+import Divider from '@heycar-uikit/core/divider';
+// or
+import Divider from '@heycar-uikit/divider';
+function App() {
+  return <Divider />;
+}
+```
+
+```css
+// CSS file
+// Core import is recomended
+@import '@heycar-uikit/core/divider/esm/Divider.css';
+// or
+@import '@heycar-uikit/divider/dist/esm/Divider.css';
+```
+
+<!-- Description -->
+
+<TabContainer
+  tabs={[
+    { label: 'Description', component: <Description /> },
+    { label: 'Props', component: <Props of={Divider} /> },
+    { label: 'Changelog', component: <Changelog /> },
+  ]}
+/>
