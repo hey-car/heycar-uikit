@@ -1,3 +1,10 @@
+# [8.8.0](https://github.com/hey-car/heycar-uikit/compare/v8.7.0...v8.8.0) (2023-06-13)
+
+
+### Features
+
+* **sliderwithhistogram:** add slider with Histogram component  ([#218](https://github.com/hey-car/heycar-uikit/issues/218)) ([67be031](https://github.com/hey-car/heycar-uikit/commit/67be03198e4d660a56aabbbb64c7b1fbc23d463f))
+
 # [8.7.0](https://github.com/hey-car/heycar-uikit/compare/v8.6.1...v8.7.0) (2023-06-08)
 
 
