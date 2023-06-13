@@ -7,9 +7,10 @@ interface ValueState {
 interface Locale {
   thumb1: string;
   thumb2: string;
+  loading: string;
 }
 
-interface SliderProps {
+interface SliderWithHistogramProps {
   /**
    *  Function to call on every value change of the slider. Called with two arguments, the first being the result value(s) the second being thumb index.
    */
@@ -18,10 +19,6 @@ interface SliderProps {
    *  Callback called only after moving a thumb has ended. The callback will only be called if the action resulted in a change. Called with two arguments, the first being the result value(s) the second being thumb index.
    */
   onAfterChange?: (values: [number, number], thumbIndex: number) => void;
-  /**
-   *  Number of steps along the Slider
-   */
-  stepCount: number;
   /**
    *  The index of the current values for both thumbs
    */
@@ -47,9 +44,17 @@ interface SliderProps {
    */
   locale?: Locale;
   /**
-   * Alters the slider so it works with the histogram. Should not need to be used for implementation
+   * Data for Histogram
    */
-  isWithHistogram?: boolean;
+  data: number[];
+  /**
+   * Boolean to hide histogram
+   */
+  hide?: boolean;
+  /**
+   * Set histogram in loading state. Useful while fetching data
+   */
+  isLoading?: boolean;
 }
 
-export { Locale, SliderProps, ValueState };
+export { Locale, SliderWithHistogramProps, ValueState };

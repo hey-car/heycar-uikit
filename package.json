@@ -140,6 +140,7 @@
     "http-server": "^14.1.0",
     "husky": "^7.0.4",
     "jest": "^27.5.1",
+    "jest-canvas-mock": "^2.5.1",
     "jest-image-snapshot": "^4.5.1",
     "json": "^11.0.0",
     "lerna": "^4.0.0",

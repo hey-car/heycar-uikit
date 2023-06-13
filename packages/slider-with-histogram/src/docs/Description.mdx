@@ -1,0 +1,180 @@
+import { Container, Row, Col } from 'storybook/blocks';
+
+import SliderWithHistogram from '../SliderWithHistogram';
+
+NOTE: This component extends the [Slider](https://hey-car.github.io/heycar-uikit/main/?path=/docs/components-molecules-slider--slider), which is a wrapper for [react-slider](https://www.npmjs.com/package/react-slider)
+
+## Usage
+
+For a basic implementation you need to pass:
+
+`data` - an array of numbers used to build the histogram. Where then array length represents the Slider's stepCount and numbers represent the value associated with each step
+
+`selectedRangeIndexes` - initial selected indexs for the two thumbs. e.g. to set the thumbs at each end of a Slider with 10 steps, the `selectedRangeIndexes` would be `[0,9]`.
+
+`onChange` - a function to handle the change event
+
+```tsx live
+const data = [0, 2, 0, 4, 6, 8, 4, 7, 6, 0];
+const leftVal = 0;
+const rightVal = 9;
+const handleChange = (values, thumbIndex) => {
+  console.log(
+    `slider values: ${values.join(',')}`,
+    `thumb index: ${thumbIndex}`,
+  );
+
+  // UPDATE LEFT AND RIGHT VALS HERE
+  // ...
+};
+
+render(
+  <div>
+    <div
+      style={{
+        padding: '12px 20px',
+        background: '#fdeeee',
+        marginBottom: '20px',
+        fontSize: '14px',
+      }}
+    >
+      This is a controlled component (state is managed outside the component).
+      But due to a limitation in the docs we cannot use state. So the Histogram
+      highlighting will not work as intended. See the canvas for an accurate
+      example.
+    </div>
+    <SliderWithHistogram
+      selectedRangeIndexes={[leftVal, rightVal]}
+      data={data}
+      onChange={handleChange}
+    />
+  </div>,
+);
+```
+
+## Events
+
+The slider allows you to pass two event handlers. `onChange` is called for every value change of the slider. `onAfterChange` is called once the thumb has stopped moving.
+
+```tsx live
+const data = [0, 2, 0, 4, 6, 8, 4, 7, 6, 0];
+const leftVal = 2;
+const rightVal = 3;
+const handleChange = (values, thumbIndex) => {
+  console.log(
+    'ON_CHANGE',
+    `slider values: ${values.join(',')}`,
+    `thumb index: ${thumbIndex}`,
+  );
+};
+
+const handleAfterChange = (values, thumbIndex) => {
+  console.log(
+    'ON_AFTER_CHANGE',
+    `slider values: ${values.join(',')}`,
+    `thumb index: ${thumbIndex}`,
+  );
+};
+
+render(
+  <div>
+    <div
+      style={{
+        padding: '12px 20px',
+        background: '#fdeeee',
+        marginBottom: '20px',
+        fontSize: '14px',
+      }}
+    >
+      This is a controlled component (state is managed outside the component).
+      But due to a limitation in the docs we cannot use state. So the Histogram
+      highlighting will not work as intended. See the canvas for an accurate
+      example.
+    </div>
+    <SliderWithHistogram
+      selectedRangeIndexes={[leftVal, rightVal]}
+      data={data}
+      onChange={handleChange}
+      onAfterChange={handleAfterChange}
+    />
+  </div>,
+);
+```
+
+## Loading
+
+The `isLoading` pro can be used to set a loading state. This is usefull when the data has to be fetched asynchronously.
+
+```tsx live
+const data = [0, 2, 0, 4, 6, 8, 4, 7, 6, 0];
+const leftVal = 1;
+const rightVal = 8;
+const handleChange = () => {};
+
+render(
+  <div>
+    <div
+      style={{
+        padding: '12px 20px',
+        background: '#fdeeee',
+        marginBottom: '20px',
+        fontSize: '14px',
+      }}
+    >
+      This is a controlled component (state is managed outside the component).
+      But due to a limitation in the docs we cannot use state. So the Histogram
+      highlighting will not work as intended. See the canvas for an accurate
+      example.
+    </div>
+    <SliderWithHistogram
+      onChange={handleChange}
+      selectedRangeIndexes={[leftVal, rightVal]}
+      data={data}
+      isLoading={true}
+    />
+  </div>,
+);
+```
+
+## Locale &amp; Labeling
+
+The `locale` object can be used to set aria labels for each thumb as well as the loading text. You can also set a more descriptive label for the current values via `ariaValueText`.
+
+Drag a thumb to see the label.
+
+```tsx live
+const data = [0, 2, 0, 4, 6, 8, 4, 7, 6, 0];
+const leftVal = 1;
+const rightVal = 8;
+const handleChange = () => {};
+const locale = {
+  thumb1: 'Left control',
+  thumb2: 'Right control',
+};
+const valueText = state => `The value is £${state.valueNow}`;
+
+render(
+  <div>
+    <div
+      style={{
+        padding: '12px 20px',
+        background: '#fdeeee',
+        marginBottom: '20px',
+        fontSize: '14px',
+      }}
+    >
+      This is a controlled component (state is managed outside the component).
+      But due to a limitation in the docs we cannot use state. So the Histogram
+      highlighting will not work as intended. See the canvas for an accurate
+      example.
+    </div>
+    <SliderWithHistogram
+      ariaValueText={valueText}
+      locale={locale}
+      onChange={handleChange}
+      selectedRangeIndexes={[leftVal, rightVal]}
+      data={data}
+    />
+  </div>,
+);
+```

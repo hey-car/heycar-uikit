@@ -4,30 +4,29 @@ import { ComponentHeader, CssVars, TabContainer } from 'storybook/blocks';
 
 import Description from './Description.mdx';
 import Changelog from '../../CHANGELOG.md';
-import Slider from '../Slider';
+import SliderWithHistogram from '../SliderWithHistogram';
 import { version } from '../../package.json';
 import styles from '!!raw-loader!../styles/default.module.css';
 
 <!-- Meta -->
 
-<Meta title="Components/Molecules/Slider" component={Slider} />
+<Meta
+  title="Components/Molecules/SliderWithHistogram"
+  component={SliderWithHistogram}
+/>
 
 export const SliderTemplate = args => {
-  const [selected, setSelected] = useState([0, 9]);
+  const [selected, setSelected] = useState(args.selectedRangeIndexes);
   const onChange = (values, index) => {
     console.log('onClick', values, index);
     setSelected(values);
   };
-  const onAfterChange = (values, index) => {
-    console.log('onAfterClick', values, index);
-    setSelected(values);
-  };
   return (
     <div style={{ maxWidth: '500px' }}>
-      <Slider
+      <SliderWithHistogram
         {...args}
         onChange={onChange}
-        onAfterChange={onAfterChange}
+        onAfterChange={onChange}
         selectedRangeIndexes={selected}
       />
     </div>
@@ -38,10 +37,11 @@ export const SliderTemplate = args => {
 
 <Story
   args={{
-    stepCount: 10,
-    ariaValueText: 'the label',
+    data: [0, 2, 0, 4, 6, 8, 4, 7, 6, 0],
+    selectedRangeIndexes: [0, 9],
+    ariaValueText: 'the label €',
   }}
-  name="Slider"
+  name="SliderWithHistogram"
 >
   {SliderTemplate.bind({})}
 </Story>
@@ -49,34 +49,34 @@ export const SliderTemplate = args => {
 <!-- Docs -->
 
 <ComponentHeader
-  name="Slider"
+  name="SliderWithHistogram"
   version={version}
   stage={1}
   design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/Design-system?type=design&node-id=16183-216308&t=7R05xcivHCpVcg0r-0"
 />
 
-Slider provides users with a way to interactively adjust a value or range within a specific range or set of options.
+SliderWithHistogram provides users with a way to interactively adjust a value or range within a specific range or set of options.
 
 ```tsx
 // TSX/JSX file
 // Core import is recomended
-import Slider from '@heycar-uikit/core/slider';
+import SliderWithHistogram from '@heycar-uikit/core/slider-with-histogram';
 
 // or
-import Slider from '@heycar-uikit/slider';
+import SliderWithHistogram from '@heycar-uikit/slider-with-histogram';
 
 function App() {
-  return <Slider />;
+  return <SliderWithHistogram />;
 }
 ```
 
 ```css
 // CSS file
 // Core import is recomended
-@import '@heycar-uikit/core/slider/esm/Slider.constants.css';
+@import '@heycar-uikit/core/slider/esm/SliderWithHistogram.constants.css';
 
 // or
-@import '@heycar-uikit/slider/dist/esm/Slider.constants.css';
+@import '@heycar-uikit/slider/dist/esm/SliderWithHistogram.constants.css';
 ```
 
 <!-- Description -->
@@ -84,7 +84,7 @@ function App() {
 <TabContainer
   tabs={[
     { label: 'Description', component: <Description /> },
-    { label: 'Props', component: <Props of={Slider} /> },
+    { label: 'Props', component: <Props of={SliderWithHistogram} /> },
     {
       label: 'CSS tokens',
       component: (

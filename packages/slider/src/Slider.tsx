@@ -20,7 +20,7 @@ export const Slider = React.forwardRef<HTMLDivElement, SliderProps>(
       stepCount,
       selectedRangeIndexes,
       ariaValueText,
-      showThumbLabels,
+      isWithHistogram,
       ...rest
     },
     ref,
@@ -35,7 +35,9 @@ export const Slider = React.forwardRef<HTMLDivElement, SliderProps>(
 
     return (
       <div
-        className={`${styles.sliderWrapper} ${className}`}
+        className={`${styles.sliderWrapper} ${
+          isWithHistogram ? styles.isWithHistogram : ''
+        } ${className}`}
         data-test-id={dataTestId}
         ref={ref}
         {...rest}
@@ -58,7 +60,7 @@ export const Slider = React.forwardRef<HTMLDivElement, SliderProps>(
           pearling={true}
           renderThumb={(p: Record<string, any>, state: ValueState) => (
             <div {...p}>
-              {ariaValueText && showThumbLabels && (
+              {isWithHistogram && (
                 <Typography
                   Component="span"
                   className="tooltip"
@@ -66,7 +68,10 @@ export const Slider = React.forwardRef<HTMLDivElement, SliderProps>(
                 >
                   {typeof ariaValueText === 'function'
                     ? ariaValueText(state)
-                    : `${ariaValueText}${state.valueNow}`}
+                    : ariaValueText
+                    ? ariaValueText
+                    : ''}
+                  {state.valueNow}
                 </Typography>
               )}
             </div>
