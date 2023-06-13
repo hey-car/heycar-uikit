@@ -1,6 +1,6 @@
 {
   "name": "@heycar-uikit/slider-with-histogram",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "HeyCar-UIKit SliderWithHistogram",
   "main": "dist/index.js",
   "module": "./dist/esm/index.js",
@@ -32,7 +32,7 @@
     "react": "^17.0.1"
   },
   "dependencies": {
-    "@heycar-uikit/slider": "^1.0.0"
+    "@heycar-uikit/slider": "^1.2.0"
   },
   "author": "HeyCar Team",
   "license": "UNLICENSED"
