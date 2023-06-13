@@ -78,9 +78,18 @@ export const SliderWithHistogram: FC<SliderWithHistogramProps> = ({
       {...rest}
     >
       {!hide && (
-        <div className={styles.histogramWrapper}>
+        <div aria-busy={isLoading} className={styles.histogramWrapper}>
           {isLoading ? (
-            locale?.loading || DEFAULT_LOADING_STR
+            <div
+              aria-busy="true"
+              aria-label={locale?.loading || DEFAULT_LOADING_STR}
+              aria-live="polite"
+              className={styles.loader}
+            >
+              <div />
+              <div />
+              <div />
+            </div>
           ) : (
             <Histogram
               height={height}

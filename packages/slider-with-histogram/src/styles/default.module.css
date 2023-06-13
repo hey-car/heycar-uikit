@@ -16,3 +16,55 @@
   margin: 0 calc(var(--slider-height) / 2);
   height: var(--histogram-height);
 }
+
+.loader {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 0 auto;
+  color: var(--color-primary-700);
+
+  & div {
+    height: var(--spacing-2);
+    width: var(--spacing-2);
+    margin-right: var(--spacing-1);
+    border-radius: 100%;
+    background-color: currentColor;
+    animation-name: blink;
+    animation-duration: 950ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    transform: scale(0);
+  }
+
+  & div:nth-child(1) {
+    animation-delay: 0ms;
+    transform-origin: 15% 50%;
+  }
+
+  & div:nth-child(2) {
+    animation-delay: 150ms;
+    transform-origin: 50% 50%;
+  }
+
+  & div:nth-child(3) {
+    animation-delay: 300ms;
+    transform-origin: 85% 50%;
+  }
+}
+
+@keyframes blink {
+  21% {
+    transform: scale(1);
+  }
+
+  47% {
+    transform: scale(1);
+  }
+
+  68% {
+    transform: scale(0);
+  }
+}

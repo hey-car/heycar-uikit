@@ -58,7 +58,7 @@ describe('SliderWithHistogram', () => {
         thumb2: 'Test thumb 2',
         loading: 'please wait',
       };
-      const { getByRole, getByText } = render(
+      const { getByRole, getByLabelText } = render(
         <SliderWithHistogram
           data={defaultData}
           dataTestId={dataTestId}
@@ -69,7 +69,7 @@ describe('SliderWithHistogram', () => {
 
       expect(getByRole('slider', { name: locale.thumb1 })).toBeInTheDocument();
       expect(getByRole('slider', { name: locale.thumb2 })).toBeInTheDocument();
-      expect(getByText('please wait')).toBeInTheDocument();
+      expect(getByLabelText('please wait')).toBeInTheDocument();
     });
   });
 
@@ -97,7 +97,7 @@ describe('SliderWithHistogram', () => {
     });
 
     it('sets loading state and doesnt render histogram when isLoading is true', () => {
-      const { queryByTestId, getByText } = render(
+      const { queryByTestId, getByLabelText } = render(
         <SliderWithHistogram
           data={defaultData}
           dataTestId={dataTestId}
@@ -105,7 +105,7 @@ describe('SliderWithHistogram', () => {
         />,
       );
 
-      expect(getByText('Loading...')).toBeInTheDocument();
+      expect(getByLabelText('Loading')).toBeInTheDocument();
       expect(queryByTestId('histogram')).not.toBeInTheDocument();
     });
 
