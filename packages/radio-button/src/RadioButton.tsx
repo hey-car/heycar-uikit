@@ -1,13 +1,10 @@
-import React, { FC } from 'react';
+import React from 'react';
 
 import { RadioButtonProps } from './RadioButton.types';
 
 import styles from './styles/default.module.css';
 
-const RadioButton: FC<RadioButtonProps> = React.forwardRef<
-  HTMLInputElement,
-  RadioButtonProps
->(
+const RadioButton = React.forwardRef<HTMLInputElement, RadioButtonProps>(
   (
     {
       checked,

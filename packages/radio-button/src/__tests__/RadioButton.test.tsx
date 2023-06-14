@@ -50,6 +50,20 @@ describe('RadioButton', () => {
 
       expect(getByRole('radio')).toBeDisabled();
     });
+
+    it('forwards ref to component', () => {
+      const testRef = jest.fn();
+      const { getByTestId } = render(
+        <RadioButton
+          checked={true}
+          dataTestId="radioButton-test"
+          onChange={() => {}}
+          ref={testRef}
+        />,
+      );
+
+      expect(testRef.mock.calls).toEqual([[getByTestId('radioButton-test')]]);
+    });
   });
 
   describe('Interaction tests', () => {
