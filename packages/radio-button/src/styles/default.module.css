@@ -2,6 +2,7 @@
 
 .wrapper {
   display: inline-block;
+
   /* This is a bit of a hacky way to create 2px padding about the component without causing rendering issues
   All of the usual methods cause the circles to render imperfectly */
   border: solid 2px transparent;
