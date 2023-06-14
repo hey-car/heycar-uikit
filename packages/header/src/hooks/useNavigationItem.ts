@@ -6,7 +6,7 @@ import { HeaderTrackingObj } from '../Header.types';
 const useNavigationItem = (
   activeNavItem: string | undefined,
   setActiveNavItem: (id: string | undefined) => void,
-  setIsNavTrayOpen?: (state: boolean) => void,
+  resetMenuState?: () => void,
 ) => {
   const toggleSubNav = useCallback(
     (id: string, isActive: boolean, force?: boolean) => {
@@ -46,7 +46,7 @@ const useNavigationItem = (
     onClick?: () => void,
     closeMenu = true,
   ) => {
-    if (closeMenu && setIsNavTrayOpen) setIsNavTrayOpen(false);
+    if (closeMenu && resetMenuState) resetMenuState();
     if (track && typeof track?.fn === 'function')
       track.fn({ ...headerClickTracking, ...track.obj } as HeaderTrackingObj);
     if (typeof onClick === 'function') onClick();

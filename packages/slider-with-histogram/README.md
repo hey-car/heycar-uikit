@@ -1,4 +1,4 @@
-# HeyCar-UIKit - Slider
+# HeyCar-UIKit - SliderWithHistogram
 
 [![Tests](https://github.com/hey-car/heycar-uikit/actions/workflows/build.yml/badge.svg)](https://github.com/hey-car/heycar-uikit/actions/workflows/build.yml)
 [![Coverage Status](https://coveralls.io/repos/github/hey-car/heycar-uikit/badge.svg)](https://coveralls.io/github/hey-car/heycar-uikit)
@@ -15,7 +15,7 @@ To install and save in your package.json dependencies, run the command below usi
 npm install @heycar-uikit/core
 
 # Or
-npm install @heycar-uikit/slider
+npm install @heycar-uikit/sliderWithHistogram
 ```
 
 ## Usage
@@ -23,25 +23,25 @@ npm install @heycar-uikit/slider
 ```tsx
 // TSX/JSX file
 // Core import is recomended
-import Slider from '@heycar-uikit/core/slider';
+import SliderWithHistogram from '@heycar-uikit/core/slider-with-histogram';
 
 // or
-import Slider from '@heycar-uikit/slider';
+import SliderWithHistogram from '@heycar-uikit/slider-with-histogram';
 
 function App() {
-  return <Slider />;
+  return <SliderWithHistogram />;
 }
 ```
 
 ```css
 // CSS file
 // Core import is recomended
-@import '@heycar-uikit/core/slider/esm/Slider.constants.css';
+@import '@heycar-uikit/core/slider-with-histogram/esm/SliderWithHistogram.constants.css';
 
 // or
-@import '@heycar-uikit/slider/dist/esm/Slider.constants.css';
+@import '@heycar-uikit/slider-with-histogram/dist/esm/SliderWithHistogram.constants.css';
 ```
 
 ## Documentation and sandbox
 
-[Storybook](https://hey-car.github.io/heycar-uikit/main/?path=/docs/components-molecules-slider--slider) documentation and sandbox
+[Storybook](https://hey-car.github.io/heycar-uikit/main/?path=/docs/components-molecules-slider-with-histogram--sliderWithHistogram) documentation and sandbox

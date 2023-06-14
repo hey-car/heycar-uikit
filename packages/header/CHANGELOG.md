@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/header@4.2.1...@heycar-uikit/header@5.0.0) (2023-06-14)
+
+
+### Bug Fixes
+
+* **header:** reset subnav state on page change + position fixed ([#219](https://github.com/hey-car/heycar-uikit/issues/219)) ([0430432](https://github.com/hey-car/heycar-uikit/commit/04304320dac9633f52e015aef6920889ab222816))
+
+
+### BREAKING CHANGES
+
+* **header:** Header changed from position sticky to position fixed
+
+HEYUI-365
+
+* update docs
+
+
+
+
+
 ## [4.2.1](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/header@4.2.0...@heycar-uikit/header@4.2.1) (2023-06-06)
 
 

@@ -375,14 +375,18 @@ const nav = [
   },
 ];
 
-const MyLink = ({ children, ...props }) => (
+const MyLink = ({ children, ...props }: HeaderLinkProps) => (
   <a {...props} data-special-prop="special">
-    {children}
+    <>{children}</>
   </a>
 );
 
 render(
-  <Header logoHref="https://heycar.com" CustomLink={MyLink} navigation={nav} />,
+  <Header
+    logoHref="https://heycar.com"
+    LinkComponent={MyLink}
+    navigation={nav}
+  />,
 );
 ```
 
@@ -432,6 +436,12 @@ render(
   <Header logoHref="https://heycar.com" trackingFn={track} navigation={nav} />,
 );
 ```
+
+## Events
+
+You can pass in a function via the `onToggleBurgerMenu` prop that will be called when the burger menu is opened or closed.
+
+This was added so that the parent app can use the recommended pattern of disabled the page scroll while the burger menu is open
 
 ## Accessibility
 
