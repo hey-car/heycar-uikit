@@ -1,6 +1,6 @@
-import { Buttons } from '../SegmentedButtons.types';
+import { ButtonProps } from '../SegmentedButtons.types';
 
-const BTN_DATA: Buttons = [
+const BTN_DATA: ButtonProps[] = [
   {
     label: 'Left',
     value: 'lft',
@@ -21,7 +21,7 @@ const BTN_DATA: Buttons = [
   },
 ];
 
-const TWO_BTNS: Buttons = [
+const TWO_BTNS: ButtonProps[] = [
   {
     label: 'Left',
     value: 'lft',
@@ -39,7 +39,7 @@ const TWO_BTNS: Buttons = [
 ];
 
 const modifyBtns = (isDisabled: boolean, icon: React.ReactNode | undefined) => {
-  const output: Buttons = [...BTN_DATA];
+  const output = [...BTN_DATA];
 
   output[0].isDisabled = isDisabled;
   output[1].isDisabled = isDisabled;

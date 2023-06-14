@@ -23,15 +23,11 @@ interface ButtonProps {
   dataTestId?: string;
 }
 
-type Buttons =
-  | [ButtonProps, ButtonProps]
-  | [ButtonProps, ButtonProps, ButtonProps];
-
 interface ComponentProps {
   /**
    * An array of 2 or 3 buttons to display
    */
-  buttons: Buttons;
+  buttons: ButtonProps[];
   /**
    * The id for testing
    */
@@ -52,4 +48,4 @@ interface ComponentProps {
 
 type SegmentedButtonsProps = ComponentProps & HTMLAttributes<HTMLDivElement>;
 
-export { ButtonProps, Buttons, ComponentProps, SegmentedButtonsProps };
+export { ButtonProps, ComponentProps, SegmentedButtonsProps };
