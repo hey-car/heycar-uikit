@@ -1,0 +1,106 @@
+import { Container, Row, Col } from 'storybook/blocks';
+import RadioButton from '../RadioButton';
+
+## Usage
+
+For a basic implementation pass the `checked` value and an `onChange` function.
+
+```tsx live
+const state = true;
+const handleChange = event => {
+  //This is where you update the state
+};
+render(
+  <Container>
+    <Row align="middle">
+      <Col span={4}>
+        <RadioButton checked={state} onChange={handleChange} />
+      </Col>
+    </Row>
+  </Container>,
+);
+```
+
+## States
+
+As well as `checked` there are props to set the `disabled` and `error` states.
+
+```tsx live
+const handleChange = event => {
+  //This is where you update the state
+};
+render(
+  <Container>
+    <Row align="middle" style={{ width: '100%' }}>
+      <Col span={4}> </Col>
+      <Col span={4}>Default</Col>
+      <Col span={4}>Disabled</Col>
+      <Col span={4}>Error</Col>
+    </Row>
+    <Row align="middle" style={{ width: '100%' }}>
+      <Col span={4}>Unchecked</Col>
+      <Col span={4}>
+        <RadioButton checked={false} onChange={handleChange} />
+      </Col>
+      <Col span={4}>
+        <RadioButton checked={false} disabled onChange={handleChange} />
+      </Col>
+      <Col span={4}>
+        <RadioButton checked={false} error onChange={handleChange} />
+      </Col>
+    </Row>
+    <Row align="middle" style={{ width: '100%' }}>
+      <Col span={4}>Checked</Col>
+      <Col span={4}>
+        <RadioButton checked={true} onChange={handleChange} />
+      </Col>
+      <Col span={4}>
+        <RadioButton checked={true} disabled onChange={handleChange} />
+      </Col>
+      <Col span={4}>
+        <RadioButton checked={true} error onChange={handleChange} />
+      </Col>
+    </Row>
+  </Container>,
+);
+```
+
+## Radio Group
+
+You can setup a radio group as you would do in pure HTML, by adding the same `name` to each radio button.
+
+```tsx live
+const handleChange = event => {
+  //This is where you update the state
+};
+render(
+  <Container>
+    <Row align="middle" style={{ width: '100%' }}>
+      <Col span={3}>
+        <RadioButton
+          checked={false}
+          name="test-group"
+          onChange={handleChange}
+        />
+      </Col>
+      <Col span={3}>
+        <RadioButton checked={true} name="test-group" onChange={handleChange} />
+      </Col>
+      <Col span={3}>
+        <RadioButton
+          checked={false}
+          name="test-group"
+          onChange={handleChange}
+        />
+      </Col>
+      <Col span={3}>
+        <RadioButton
+          checked={false}
+          name="test-group"
+          onChange={handleChange}
+        />
+      </Col>
+    </Row>
+  </Container>,
+);
+```

@@ -1,0 +1,83 @@
+import { useState } from 'react';
+import { Meta, Story, Props } from '@storybook/addon-docs';
+import { ComponentHeader, CssVars, TabContainer } from 'storybook/blocks';
+
+import Description from './Description.mdx';
+import Changelog from '../../CHANGELOG.md';
+import RadioButton from '../RadioButton';
+import { version } from '../../package.json';
+import styles from '!!raw-loader!../styles/default.module.css';
+
+<!-- Meta -->
+
+<Meta title="Components/Molecules/RadioButton" component={RadioButton} />
+
+export const RadioButtonTemplate = args => {
+  const [isChecked, setIsChecked] = useState(false);
+  const handleChange = event => setIsChecked(event.target.checked);
+  return <RadioButton {...args} checked={isChecked} onChange={handleChange} />;
+};
+
+<!-- Canvas -->
+
+<Story
+  args={{
+    error: false,
+    disabled: false,
+  }}
+  argTypes={{
+    dataTestId: {
+      table: {
+        disable: true,
+      },
+    },
+    checked: {
+      table: {
+        disable: true,
+      },
+    },
+    onChange: {
+      table: {
+        disable: true,
+      },
+    },
+  }}
+  name="RadioButton"
+>
+  {RadioButtonTemplate.bind({})}
+</Story>
+
+<!-- Docs -->
+
+<ComponentHeader
+  name="RadioButton"
+  version={version}
+  stage={1}
+  design="https://www.figma.com/file/rrvkvQEoVTOHa7MzyKSaoz/Design-system?type=design&node-id=15322-205714&t=9hUt6KoF4AsXr7ui-0"
+/>
+
+Radio buttons allow users to select one option from a set.
+
+```tsx
+import RadioButton from '@heycar-uikit/radio-button';
+```
+
+<!-- Description -->
+
+<TabContainer
+  tabs={[
+    { label: 'Description', component: <Description /> },
+    { label: 'Props', component: <Props of={RadioButton} /> },
+    {
+      label: 'CSS tokens',
+      component: (
+        <CssVars
+          css={`
+            ${styles}
+          `}
+        />
+      ),
+    },
+    { label: 'Changelog', component: <Changelog /> },
+  ]}
+/>

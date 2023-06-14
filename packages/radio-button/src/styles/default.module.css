@@ -1,0 +1,63 @@
+@import '../../../themes/src/default.css';
+
+.wrapper {
+  display: inline-block;
+  /* This is a bit of a hacky way to create 2px padding about the component without causing rendering issues
+  All of the usual methods cause the circles to render imperfectly */
+  border: solid 2px transparent;
+}
+
+.radio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: var(--spacing-5);
+  width: var(--spacing-5);
+  border: 2px solid var(--color-neutral-500);
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-appearance: none;
+
+  &:before {
+    content: '';
+    margin: 0;
+    width: var(--spacing-3);
+    height: var(--spacing-3);
+    border-radius: 50%;
+    background-color: transparent;
+  }
+
+  &:hover {
+    border-color: var(--color-neutral-700);
+  }
+
+  &:checked {
+    border-color: var(--color-neutral-700);
+
+    &:before {
+      background-color: var(--color-neutral-700);
+    }
+  }
+
+  &:disabled {
+    border-color: var(--color-neutral-300);
+    cursor: not-allowed;
+
+    &:hover {
+      border-color: var(--color-neutral-300);
+    }
+
+    &:checked {
+      border-color: var(--color-neutral-300);
+
+      &:before {
+        background-color: var(--color-neutral-300);
+      }
+    }
+  }
+
+  &.error {
+    border-color: var(--color-error-700);
+  }
+}
