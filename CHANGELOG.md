@@ -1,3 +1,19 @@
+# [9.0.0](https://github.com/hey-car/heycar-uikit/compare/v8.8.0...v9.0.0) (2023-06-14)
+
+
+### Bug Fixes
+
+* **header:** reset subnav state on page change + position fixed ([#219](https://github.com/hey-car/heycar-uikit/issues/219)) ([0430432](https://github.com/hey-car/heycar-uikit/commit/04304320dac9633f52e015aef6920889ab222816))
+
+
+### BREAKING CHANGES
+
+* **header:** Header changed from position sticky to position fixed
+
+HEYUI-365
+
+* update docs
+
 # [8.8.0](https://github.com/hey-car/heycar-uikit/compare/v8.7.0...v8.8.0) (2023-06-13)
 
 
