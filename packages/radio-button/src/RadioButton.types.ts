@@ -1,4 +1,4 @@
-import { HTMLAttributes } from 'react';
+import { InputHTMLAttributes } from 'react';
 
 interface ComponentProps {
   /**
@@ -27,6 +27,6 @@ interface ComponentProps {
   dataTestId?: string;
 }
 
-type RadioButtonProps = ComponentProps & HTMLAttributes<HTMLInputElement>;
+type RadioButtonProps = ComponentProps & InputHTMLAttributes<HTMLInputElement>;
 
 export { ComponentProps, RadioButtonProps };
