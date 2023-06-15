@@ -2,63 +2,78 @@
 
 .wrapper {
   display: inline-block;
-
-  /* This is a bit of a hacky way to create 2px padding about the component without causing rendering issues
-  All of the usual methods cause the circles to render imperfectly */
-  border: solid 2px transparent;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
 }
 
 .radio {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
+  overflow: hidden;
+  z-index: 2;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
   margin: 0;
-  height: var(--spacing-5);
-  width: var(--spacing-5);
+  opacity: 0;
+  cursor: pointer;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+.fakeRadio {
+  position: relative;
+  display: inline-block;
+  height: var(--spacing-4);
+  width: var(--spacing-4);
   border: 2px solid var(--color-neutral-500);
   border-radius: 50%;
   cursor: pointer;
-  -webkit-appearance: none;
+  transition: border-color 0.2s;
 
   &:before {
     content: '';
-    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: var(--spacing-3);
     height: var(--spacing-3);
     border-radius: 50%;
-    background-color: transparent;
+    background-color: var(--color-neutral-700);
+    opacity: 0;
+    transition: opacity 0.2s;
   }
+}
 
-  &:hover {
-    border-color: var(--color-neutral-700);
+.wrapper:hover > .fakeRadio {
+  border-color: var(--color-neutral-700);
+}
+
+.wrapper:hover > input:disabled + .fakeRadio {
+  border-color: var(--color-neutral-300);
+}
+
+input:checked + .fakeRadio {
+  border-color: var(--color-neutral-700);
+
+  &:before {
+    opacity: 1;
   }
+}
 
-  &:checked {
-    border-color: var(--color-neutral-700);
+input:disabled + .fakeRadio {
+  border-color: var(--color-neutral-300);
+  cursor: not-allowed;
 
-    &:before {
-      background-color: var(--color-neutral-700);
-    }
+  &:before {
+    background-color: var(--color-neutral-300);
   }
+}
 
-  &:disabled {
-    border-color: var(--color-neutral-300);
-    cursor: not-allowed;
-
-    &:hover {
-      border-color: var(--color-neutral-300);
-    }
-
-    &:checked {
-      border-color: var(--color-neutral-300);
-
-      &:before {
-        background-color: var(--color-neutral-300);
-      }
-    }
-  }
-
-  &.error {
-    border-color: var(--color-error-700);
-  }
+.error > .fakeRadio,
+.error > input:checked + .fakeRadio {
+  border-color: var(--color-error-700);
 }

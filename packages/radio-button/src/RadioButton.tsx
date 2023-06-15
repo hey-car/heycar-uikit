@@ -18,12 +18,14 @@ const RadioButton = React.forwardRef<HTMLInputElement, RadioButtonProps>(
     ref,
   ) => {
     return (
-      <div className={styles.wrapper}>
+      <div
+        className={`${styles.wrapper} ${error ? styles.error : ''} ${
+          className ? className : ''
+        }`}
+      >
         <input
           checked={checked}
-          className={`${styles.radio} ${error ? styles.error : ''} ${
-            className ? className : ''
-          }`}
+          className={styles.radio}
           data-test-id={dataTestId}
           disabled={disabled}
           onChange={onChange}
@@ -31,6 +33,7 @@ const RadioButton = React.forwardRef<HTMLInputElement, RadioButtonProps>(
           type="radio"
           {...otherProps}
         />
+        <span className={styles.fakeRadio} />
       </div>
     );
   },
