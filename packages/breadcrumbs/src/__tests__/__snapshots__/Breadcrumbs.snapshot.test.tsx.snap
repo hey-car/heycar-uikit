@@ -7,47 +7,73 @@ Object {
     <div>
       <ul
         class="breadcrumbWrapper"
+        itemscope=""
+        itemtype="https://schema.org/BreadcrumbList"
       >
         <li
           class="breadcrumbsList"
+          itemprop="itemListElement"
+          itemscope=""
+          itemtype="https://schema.org/ListItem"
         >
           <a
             class="breadcrumbLink"
             href="#breadcrumbs"
+            itemprop="item"
           >
             <span
               itemprop="name"
             >
               Breadcrumb Default
             </span>
+            <meta
+              content="1"
+              itemprop="position"
+            />
           </a>
         </li>
         <li
           class="breadcrumbsList"
+          itemprop="itemListElement"
+          itemscope=""
+          itemtype="https://schema.org/ListItem"
         >
           <a
             class="breadcrumbLink"
             href="#breadcrumb"
+            itemprop="item"
           >
             <span
               itemprop="name"
             >
               Breadcrumb Default
             </span>
+            <meta
+              content="2"
+              itemprop="position"
+            />
           </a>
         </li>
         <li
           class="currentBreadcrumb"
+          itemprop="itemListElement"
+          itemscope=""
+          itemtype="https://schema.org/ListItem"
         >
           <a
             class="currentBreadcrumb breadcrumbLink"
             href="#breadcrumb"
+            itemprop="item"
           >
             <span
               itemprop="name"
             >
               Breadcrumb Current
             </span>
+            <meta
+              content="3"
+              itemprop="position"
+            />
           </a>
         </li>
       </ul>
@@ -56,47 +82,73 @@ Object {
   "container": <div>
     <ul
       class="breadcrumbWrapper"
+      itemscope=""
+      itemtype="https://schema.org/BreadcrumbList"
     >
       <li
         class="breadcrumbsList"
+        itemprop="itemListElement"
+        itemscope=""
+        itemtype="https://schema.org/ListItem"
       >
         <a
           class="breadcrumbLink"
           href="#breadcrumbs"
+          itemprop="item"
         >
           <span
             itemprop="name"
           >
             Breadcrumb Default
           </span>
+          <meta
+            content="1"
+            itemprop="position"
+          />
         </a>
       </li>
       <li
         class="breadcrumbsList"
+        itemprop="itemListElement"
+        itemscope=""
+        itemtype="https://schema.org/ListItem"
       >
         <a
           class="breadcrumbLink"
           href="#breadcrumb"
+          itemprop="item"
         >
           <span
             itemprop="name"
           >
             Breadcrumb Default
           </span>
+          <meta
+            content="2"
+            itemprop="position"
+          />
         </a>
       </li>
       <li
         class="currentBreadcrumb"
+        itemprop="itemListElement"
+        itemscope=""
+        itemtype="https://schema.org/ListItem"
       >
         <a
           class="currentBreadcrumb breadcrumbLink"
           href="#breadcrumb"
+          itemprop="item"
         >
           <span
             itemprop="name"
           >
             Breadcrumb Current
           </span>
+          <meta
+            content="3"
+            itemprop="position"
+          />
         </a>
       </li>
     </ul>

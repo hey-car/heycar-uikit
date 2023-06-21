@@ -2,6 +2,7 @@ export interface BreadcrumbLinkProps {
   link?: string;
   className?: string;
   children: React.ReactNode;
+  itemProp: string;
 }
 export interface Breadcrumb {
   link?: string;
