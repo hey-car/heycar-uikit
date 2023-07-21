@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.10.2](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/vars@1.10.1...@heycar-uikit/vars@1.10.2) (2023-07-21)
+
+
+### Bug Fixes
+
+* **typography:** change h2 font-size on mobile ([#223](https://github.com/hey-car/heycar-uikit/issues/223)) ([50f3041](https://github.com/hey-car/heycar-uikit/commit/50f30418ca9c200fa94a8aa33fdc2adb1c778c91))
+
+
+
+
+
 ## [1.10.1](https://github.com/hey-car/heycar-uikit/compare/@heycar-uikit/vars@1.10.0...@heycar-uikit/vars@1.10.1) (2023-05-23)
 
 **Note:** Version bump only for package @heycar-uikit/vars
