@@ -1,3 +1,10 @@
+## [9.0.1](https://github.com/hey-car/heycar-uikit/compare/v9.0.0...v9.0.1) (2023-07-21)
+
+
+### Bug Fixes
+
+* **typography:** change h2 font-size on mobile ([#223](https://github.com/hey-car/heycar-uikit/issues/223)) ([50f3041](https://github.com/hey-car/heycar-uikit/commit/50f30418ca9c200fa94a8aa33fdc2adb1c778c91))
+
 # [9.0.0](https://github.com/hey-car/heycar-uikit/compare/v8.8.0...v9.0.0) (2023-06-14)
 
 
