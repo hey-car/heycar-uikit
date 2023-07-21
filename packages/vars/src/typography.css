@@ -64,7 +64,7 @@
 
 @define-mixin typography-heading-2_mobile {
   @mixin typography-heading-2;
-  font-size: 28px;
+  font-size: 24px;
 }
 
 @define-mixin typography-heading-3 {
