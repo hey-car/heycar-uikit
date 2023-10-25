@@ -3,7 +3,7 @@ import { LangOption } from '../Header.types';
 const DEFAULT_LOCALE = {
   closeSearchLabel: 'Close search',
   logoLabel: 'heycar logo',
-  langListHeading: 'Select Language',
+  langListHeading: 'Select Country',
   burgerMenuButtonLabel: 'Navigation menu',
   favoritesCountLabel: 'Favorites count',
   showAllLabel: 'Show all',
@@ -30,14 +30,14 @@ const LANG_OPTIONS: LangOption[] = [
   },
   {
     langCode: 'en-GB',
-    label: 'English',
-    shortName: 'Eng',
+    label: 'UK',
+    shortName: 'UK',
     href: '#en-GB',
   },
   {
     langCode: 'fr-FR',
-    label: 'Français',
-    shortName: 'Fra',
+    label: 'France',
+    shortName: 'France',
     href: '#fr-FR',
   },
   {
