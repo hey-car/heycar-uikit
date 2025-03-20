@@ -1,0 +1,17 @@
+@import '../../../themes/src/default.css';
+
+.divider {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media (--mobile) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+.border {
+  background: var(--color-tarmac-grey-300);
+  max-width: 100%;
+  height: 1px;
+}
